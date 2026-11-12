@@ -1,0 +1,539 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "q_tape",
+            "title": "Audit event tape"
+          },
+          {
+            "id": "q_protocol",
+            "title": "Frozen statistical protocol"
+          },
+          {
+            "id": "q_registry",
+            "title": "Full research lineage ledger"
+          },
+          {
+            "id": "q_trial_log",
+            "title": "Complete executed-trial archive"
+          },
+          {
+            "id": "q_dashboard",
+            "title": "Finalist dashboard, limited scope"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "adjusted_p_value": "<typed value>",
+            "deploy": "<typed value>",
+            "eligible_rows": "<typed value>",
+            "independent_count": "<typed value>",
+            "mean_net_bps": "<typed value>",
+            "raw_p_value": "<typed value>",
+            "representative_rows": "<typed value>",
+            "research_hypotheses": "<typed value>"
+          },
+          "evidence": {
+            "adjusted_p_value": [
+              "<viewed supporting document ID>"
+            ],
+            "deploy": [
+              "<viewed supporting document ID>"
+            ],
+            "eligible_rows": [
+              "<viewed supporting document ID>"
+            ],
+            "independent_count": [
+              "<viewed supporting document ID>"
+            ],
+            "mean_net_bps": [
+              "<viewed supporting document ID>"
+            ],
+            "raw_p_value": [
+              "<viewed supporting document ID>"
+            ],
+            "representative_rows": [
+              "<viewed supporting document ID>"
+            ],
+            "research_hypotheses": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c202",
+          "turn": 1
+        },
+        "inputs": {
+          "observation_columns": [
+            "id",
+            "decision_day",
+            "inclusive_label_end_day",
+            "feature_first_available_day",
+            "latest_training_label_end_day",
+            "gross_bps"
+          ],
+          "observations": [
+            [
+              "r1",
+              10,
+              12,
+              9,
+              8,
+              4
+            ],
+            [
+              "r2",
+              11,
+              13,
+              12,
+              9,
+              20
+            ],
+            [
+              "r3",
+              12,
+              14,
+              11,
+              10,
+              8
+            ],
+            [
+              "r4",
+              13,
+              15,
+              12,
+              10,
+              5
+            ],
+            [
+              "r5",
+              16,
+              18,
+              15,
+              15,
+              20
+            ],
+            [
+              "r6",
+              16,
+              18,
+              16,
+              13,
+              6
+            ],
+            [
+              "r7",
+              17,
+              19,
+              16,
+              15,
+              9
+            ],
+            [
+              "r8",
+              19,
+              21,
+              18,
+              17,
+              4
+            ],
+            [
+              "r9",
+              22,
+              24,
+              23,
+              20,
+              20
+            ],
+            [
+              "r10",
+              22,
+              24,
+              21,
+              20,
+              7
+            ],
+            [
+              "r11",
+              25,
+              27,
+              24,
+              23,
+              5
+            ],
+            [
+              "r12",
+              27,
+              29,
+              26,
+              25,
+              9
+            ],
+            [
+              "r13",
+              28,
+              30,
+              27,
+              26,
+              6
+            ],
+            [
+              "r14",
+              31,
+              33,
+              30,
+              29,
+              3
+            ]
+          ],
+          "source_relationship": "These raw numeric inputs are identical in both evidence conditions and are repeated in source documents. Current contracts, timing/access rules, statistical protocols and event semantics are document-owned."
+        },
+        "outputs": {
+          "adjusted_p_value": {
+            "description": "Number, multiplicity-adjusted probability bound.",
+            "type": "number"
+          },
+          "deploy": {
+            "description": "Boolean under the frozen approval rule.",
+            "type": "boolean"
+          },
+          "eligible_rows": {
+            "description": "Array of eligible row-id strings in numeric row order, before overlap removal.",
+            "type": "array"
+          },
+          "independent_count": {
+            "description": "Integer number of retained independent observations.",
+            "type": "number"
+          },
+          "mean_net_bps": {
+            "description": "Number, arithmetic mean net return in basis points for retained rows.",
+            "type": "number"
+          },
+          "raw_p_value": {
+            "description": "Number, exact one-sided sign-test probability.",
+            "type": "number"
+          },
+          "representative_rows": {
+            "description": "Array of retained independent row-id strings in selection order.",
+            "type": "array"
+          },
+          "research_hypotheses": {
+            "description": "Integer number of policies in the research-universe correction.",
+            "type": "number"
+          }
+        },
+        "prompt": "Audit whether the selected policy earns deployment approval. Reconstruct the eligible and independent observations from the source tape, calculate its net evidence under the frozen protocol, and apply the research-lineage correction. Return the specified row lists, statistics and decision.",
+        "question_id": "c202",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c202",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "q_tape",
+            "release_stage": 1,
+            "text": "All days are integer dates in one synthetic month. Feature publication is effective at the start of the listed day, before decisions that day. The row columns are id | decision | inclusive label end | feature first available | latest training-label end | realized gross return in basis points. This tape is authoritative and includes every candidate observation.\nr1 | 10 | 12 | 9 | 8 | 4\nr2 | 11 | 13 | 12 | 9 | 20\nr3 | 12 | 14 | 11 | 10 | 8\nr4 | 13 | 15 | 12 | 10 | 5\nr5 | 16 | 18 | 15 | 15 | 20\nr6 | 16 | 18 | 16 | 13 | 6\nr7 | 17 | 19 | 16 | 15 | 9\nr8 | 19 | 21 | 18 | 17 | 4\nr9 | 22 | 24 | 23 | 20 | 20\nr10 | 22 | 24 | 21 | 20 | 7\nr11 | 25 | 27 | 24 | 23 | 5\nr12 | 27 | 29 | 26 | 25 | 9\nr13 | 28 | 30 | 27 | 26 | 6\nr14 | 31 | 33 | 30 | 29 | 3",
+            "title": "Audit event tape"
+          },
+          {
+            "id": "q_protocol",
+            "release_stage": 1,
+            "text": "An eligible observation must have feature first availability no later than its decision day and latest training-label end no later than decision day minus 2. For an independent representative sample, sort eligible rows by label end, then numeric row id; retain a row exactly when its decision day is strictly after the end of the last retained row. This fixed calendar rule was registered before returns were observed. Subtract 2 bps execution cost per retained row. The retained labels are assumed independent under the null, with independent fair signs; apply the exact one-sided binomial sign test for positive net return, dropping zero returns if any. Correct by min(1, raw p times total research hypotheses), without rounding before the decision. Deploy iff corrected p <=0.05 and mean net return >0.",
+            "title": "Frozen statistical protocol"
+          },
+          {
+            "id": "q_registry",
+            "release_stage": 1,
+            "text": "This strategy is the best surviving policy from one registered search family. The search ran 2 finalist policies, 10 discarded policies, and 12 archived policies, all distinct. No other policy was tried. Every tried policy belongs in the multiplicity correction, whether or not its evaluation file remains on the dashboard. The audit tape is for the selected policy, and the protocol requires a Bonferroni bound rather than estimates of policy dependence.",
+            "title": "Full research lineage ledger"
+          },
+          {
+            "id": "q_trial_log",
+            "release_stage": 1,
+            "text": "This is the complete executed search-family archive. Distinct policy identifiers P01 P02 P03 P04 P05 P06 P07 P08 P09 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P20 P21 P22 P23 P24 were each run once. P01 and P02 reached the finalist dashboard. All other identifiers were discarded or archived; there are no additional trials.",
+            "title": "Complete executed-trial archive"
+          }
+        ],
+        "title": "Audit a selected backtest",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "q_tape",
+        "title": "Audit event tape"
+      },
+      {
+        "id": "q_protocol",
+        "title": "Frozen statistical protocol"
+      },
+      {
+        "id": "q_registry",
+        "title": "Full research lineage ledger"
+      },
+      {
+        "id": "q_trial_log",
+        "title": "Complete executed-trial archive"
+      },
+      {
+        "id": "q_dashboard",
+        "title": "Finalist dashboard, limited scope"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "adjusted_p_value": "<typed value>",
+        "deploy": "<typed value>",
+        "eligible_rows": "<typed value>",
+        "independent_count": "<typed value>",
+        "mean_net_bps": "<typed value>",
+        "raw_p_value": "<typed value>",
+        "representative_rows": "<typed value>",
+        "research_hypotheses": "<typed value>"
+      },
+      "evidence": {
+        "adjusted_p_value": [
+          "<viewed supporting document ID>"
+        ],
+        "deploy": [
+          "<viewed supporting document ID>"
+        ],
+        "eligible_rows": [
+          "<viewed supporting document ID>"
+        ],
+        "independent_count": [
+          "<viewed supporting document ID>"
+        ],
+        "mean_net_bps": [
+          "<viewed supporting document ID>"
+        ],
+        "raw_p_value": [
+          "<viewed supporting document ID>"
+        ],
+        "representative_rows": [
+          "<viewed supporting document ID>"
+        ],
+        "research_hypotheses": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c202",
+      "turn": 1
+    },
+    "inputs": {
+      "observation_columns": [
+        "id",
+        "decision_day",
+        "inclusive_label_end_day",
+        "feature_first_available_day",
+        "latest_training_label_end_day",
+        "gross_bps"
+      ],
+      "observations": [
+        [
+          "r1",
+          10,
+          12,
+          9,
+          8,
+          4
+        ],
+        [
+          "r2",
+          11,
+          13,
+          12,
+          9,
+          20
+        ],
+        [
+          "r3",
+          12,
+          14,
+          11,
+          10,
+          8
+        ],
+        [
+          "r4",
+          13,
+          15,
+          12,
+          10,
+          5
+        ],
+        [
+          "r5",
+          16,
+          18,
+          15,
+          15,
+          20
+        ],
+        [
+          "r6",
+          16,
+          18,
+          16,
+          13,
+          6
+        ],
+        [
+          "r7",
+          17,
+          19,
+          16,
+          15,
+          9
+        ],
+        [
+          "r8",
+          19,
+          21,
+          18,
+          17,
+          4
+        ],
+        [
+          "r9",
+          22,
+          24,
+          23,
+          20,
+          20
+        ],
+        [
+          "r10",
+          22,
+          24,
+          21,
+          20,
+          7
+        ],
+        [
+          "r11",
+          25,
+          27,
+          24,
+          23,
+          5
+        ],
+        [
+          "r12",
+          27,
+          29,
+          26,
+          25,
+          9
+        ],
+        [
+          "r13",
+          28,
+          30,
+          27,
+          26,
+          6
+        ],
+        [
+          "r14",
+          31,
+          33,
+          30,
+          29,
+          3
+        ]
+      ],
+      "source_relationship": "These raw numeric inputs are identical in both evidence conditions and are repeated in source documents. Current contracts, timing/access rules, statistical protocols and event semantics are document-owned."
+    },
+    "outputs": {
+      "adjusted_p_value": {
+        "description": "Number, multiplicity-adjusted probability bound.",
+        "type": "number"
+      },
+      "deploy": {
+        "description": "Boolean under the frozen approval rule.",
+        "type": "boolean"
+      },
+      "eligible_rows": {
+        "description": "Array of eligible row-id strings in numeric row order, before overlap removal.",
+        "type": "array"
+      },
+      "independent_count": {
+        "description": "Integer number of retained independent observations.",
+        "type": "number"
+      },
+      "mean_net_bps": {
+        "description": "Number, arithmetic mean net return in basis points for retained rows.",
+        "type": "number"
+      },
+      "raw_p_value": {
+        "description": "Number, exact one-sided sign-test probability.",
+        "type": "number"
+      },
+      "representative_rows": {
+        "description": "Array of retained independent row-id strings in selection order.",
+        "type": "array"
+      },
+      "research_hypotheses": {
+        "description": "Integer number of policies in the research-universe correction.",
+        "type": "number"
+      }
+    },
+    "prompt": "Audit whether the selected policy earns deployment approval. Reconstruct the eligible and independent observations from the source tape, calculate its net evidence under the frozen protocol, and apply the research-lineage correction. Return the specified row lists, statistics and decision.",
+    "question_id": "c202",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c202",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "q_tape",
+        "release_stage": 1,
+        "text": "All days are integer dates in one synthetic month. Feature publication is effective at the start of the listed day, before decisions that day. The row columns are id | decision | inclusive label end | feature first available | latest training-label end | realized gross return in basis points. This tape is authoritative and includes every candidate observation.\nr1 | 10 | 12 | 9 | 8 | 4\nr2 | 11 | 13 | 12 | 9 | 20\nr3 | 12 | 14 | 11 | 10 | 8\nr4 | 13 | 15 | 12 | 10 | 5\nr5 | 16 | 18 | 15 | 15 | 20\nr6 | 16 | 18 | 16 | 13 | 6\nr7 | 17 | 19 | 16 | 15 | 9\nr8 | 19 | 21 | 18 | 17 | 4\nr9 | 22 | 24 | 23 | 20 | 20\nr10 | 22 | 24 | 21 | 20 | 7\nr11 | 25 | 27 | 24 | 23 | 5\nr12 | 27 | 29 | 26 | 25 | 9\nr13 | 28 | 30 | 27 | 26 | 6\nr14 | 31 | 33 | 30 | 29 | 3",
+        "title": "Audit event tape"
+      },
+      {
+        "id": "q_protocol",
+        "release_stage": 1,
+        "text": "An eligible observation must have feature first availability no later than its decision day and latest training-label end no later than decision day minus 2. For an independent representative sample, sort eligible rows by label end, then numeric row id; retain a row exactly when its decision day is strictly after the end of the last retained row. This fixed calendar rule was registered before returns were observed. Subtract 2 bps execution cost per retained row. The retained labels are assumed independent under the null, with independent fair signs; apply the exact one-sided binomial sign test for positive net return, dropping zero returns if any. Correct by min(1, raw p times total research hypotheses), without rounding before the decision. Deploy iff corrected p <=0.05 and mean net return >0.",
+        "title": "Frozen statistical protocol"
+      },
+      {
+        "id": "q_registry",
+        "release_stage": 1,
+        "text": "This strategy is the best surviving policy from one registered search family. The search ran 2 finalist policies, 10 discarded policies, and 12 archived policies, all distinct. No other policy was tried. Every tried policy belongs in the multiplicity correction, whether or not its evaluation file remains on the dashboard. The audit tape is for the selected policy, and the protocol requires a Bonferroni bound rather than estimates of policy dependence.",
+        "title": "Full research lineage ledger"
+      },
+      {
+        "id": "q_trial_log",
+        "release_stage": 1,
+        "text": "This is the complete executed search-family archive. Distinct policy identifiers P01 P02 P03 P04 P05 P06 P07 P08 P09 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P20 P21 P22 P23 P24 were each run once. P01 and P02 reached the finalist dashboard. All other identifiers were discarded or archived; there are no additional trials.",
+        "title": "Complete executed-trial archive"
+      }
+    ],
+    "title": "Audit a selected backtest",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

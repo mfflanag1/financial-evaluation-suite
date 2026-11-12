@@ -1,0 +1,82 @@
+{
+  "question_id": "q147",
+  "title": "Repurchase authorization across covenant amendments",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Build the maximum permissible buyback recommendation from the initial borrower packet. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "ebitda": 80,
+    "integration": 18,
+    "cap": 0.15,
+    "cash": 30,
+    "debt": 280,
+    "netting_cap": 30,
+    "limit": 3.5,
+    "reserve": 20,
+    "facility": 50,
+    "fee_rate": 0.01,
+    "objective": "maximum_buyback",
+    "required_buyback": 0
+  },
+  "sources": [
+    {
+      "id": "q147_facts",
+      "text": "Synthetic packet: Original audited borrower schedule and financing mandate, available at the initial cutoff."
+    },
+    {
+      "id": "q147_terms",
+      "text": "Synthetic governing terms: All cash/debt amounts are USD millions. Ongoing leverage after each action uses capped post-action unrestricted cash, unlike an opening-cash incurrence test. Integration addback is capped at cap times unadjusted EBITDA. New draws and repurchases must each be integer multiples of5. No debt repayment or other financing is allowed. Initial objective maximizes buyback then minimizes draw; minimum_draw objective requires exactly required_buyback and minimizes draw, then maximizes remaining cash."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "covenant_ebitda",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Corrected EBITDA plus capped integration addback.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "repurchase_cash",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash paid under the selected permissible repurchase plan.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "new_draw",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Incremental revolving draw.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "remaining_cash",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash after draw fee and repurchase.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_leverage",
+      "type": "number",
+      "unit": "multiple",
+      "description": "Post-action debt less capped post-action cash, divided by covenant EBITDA.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "plan_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the selected plan meets every current constraint."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "question_id": "q155",
+  "title": "Fallback currency fixing and the payment cutoff",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconcile the official fixing, net derivative settlement and supplier payment bridge. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "official_valid": true,
+    "official_rate": 4.8,
+    "dealer_quotes": [
+      {
+        "id": "independent_A",
+        "affiliated": false,
+        "published": 3,
+        "rate": 4.8
+      },
+      {
+        "id": "independent_B",
+        "affiliated": false,
+        "published": 4,
+        "rate": 5.2
+      },
+      {
+        "id": "affiliate",
+        "affiliated": true,
+        "published": 3,
+        "rate": 8
+      },
+      {
+        "id": "late",
+        "affiliated": false,
+        "published": 6,
+        "rate": 7
+      }
+    ],
+    "fixing_cutoff": 5,
+    "usd_notional": 10,
+    "strike": 4,
+    "usd_cash": 2,
+    "segregated": 1.5,
+    "customer_receipt": 8,
+    "customer_time": 990,
+    "ndf_time": 1005,
+    "deadline": 975,
+    "payable": 7,
+    "bridge_limit": 5
+  },
+  "sources": [
+    {
+      "id": "q155_facts",
+      "text": "Synthetic packet: Official fixing4.8 is initially valid. Dealer rows are fallback quotes only; affiliate and late rows are not eligible under that fallback. Cash receipts have explicit UTC payment times. The official fixing has the source-row identifier official. When official_valid is true, used_fixing_ids must contain only official; when false, it contains the identifiers of the eligible dealer rows used."
+    },
+    {
+      "id": "q155_terms",
+      "text": "Synthetic governing terms: All cash amounts are USD millions. Quote F is local units per USD; the contract receives N USD and pays N*K local units, net settled in USD at F. If official fixing is withdrawn, use the arithmetic average of nonaffiliated dealer quotes published by fixing_cutoff inclusive; never use the invalid official value. Intraday times are UTC minutes after midnight. Receipts at the deadline count, later receipts do not. Segregated cash cannot pay suppliers; no interest on the intraday bridge."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "valid_fixing",
+      "type": "number",
+      "unit": "local currency per USD",
+      "description": "Official fixing if valid, otherwise the arithmetic mean of eligible independent quotes.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "used_fixing_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Sorted source-row identifiers used for the fixing."
+    },
+    {
+      "name": "ndf_usd_receipt",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "USD net settlement to the USD buyer.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "available_deadline_cash",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Unsegregated opening USD plus receipts no later than the supplier deadline.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "bridge_required",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Supplier payable less available cash, floored at zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "bridge_facility_sufficient",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the required bridge fits the committed limit."
+    }
+  ]
+}

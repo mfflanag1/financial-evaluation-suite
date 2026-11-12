@@ -1,0 +1,1253 @@
+[
+  {
+    "name": "reference",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "greater_than_or_equal_trigger",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "base_trigger_active": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "greater than or equal trigger"
+  },
+  {
+    "name": "omit_existing_debt",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 2025.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "maximum_additional_spent_draw": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "omit existing debt"
+  },
+  {
+    "name": "confuse_revolver_with_term_repayment",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 130,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "stress_minimum_revolver_repayment_to_deactivate": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "confuse revolver with term repayment"
+  },
+  {
+    "name": "invent_lc_eligibility",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "unknown_lc_trigger_identifiable": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "invent lc eligibility"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": []
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "activation_exposure_threshold": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing evidence"
+  },
+  {
+    "name": "fabricated_quote",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "This is a fabricated supporting passage."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "activation_exposure_threshold": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated quote"
+  },
+  {
+    "name": "concise_ratio_without_irrelevant_trigger_sentence",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "contextual_covenant_ratio",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "(2) The Revolving Facility contains a springing financial covenant requiring compliance with a maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75. The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "missing_operating_trigger_clause",
+    "response": {
+      "case_id": "credit-003",
+      "answers": {
+        "activation_exposure_threshold": {
+          "value": 297.5,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "base_trigger_active": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_trigger_active": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "draw25_first_lien_net_leverage": {
+          "value": 6.75,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "maximum_additional_spent_draw": {
+          "value": 25,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_draw20_leverage": {
+          "value": 7.214285714285714,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "stress_minimum_revolver_repayment_to_deactivate": {
+          "value": 20,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        },
+        "stress_term_debt_repayment_to_meet_active_ratio": {
+          "value": 130.0,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75"
+            }
+          ]
+        },
+        "unknown_lc_trigger_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter."
+            },
+            {
+              "source_id": "expansion-dnb-2024-debt",
+              "quote": "The aggregate amount available under the Revolving Facility is $850 million."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "missing operating trigger clause",
+    "expected_failures": {
+      "maximum_additional_spent_draw": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

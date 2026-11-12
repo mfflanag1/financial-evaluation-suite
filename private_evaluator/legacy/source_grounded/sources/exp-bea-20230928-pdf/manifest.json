@@ -1,0 +1,24 @@
+{
+  "id": "exp-bea-20230928-pdf",
+  "url": "https://www.bea.gov/sites/default/files/2023-09/gdp2q23_3rd.pdf",
+  "title": "GDP Q2 2023 — third estimate, September 28, 2023",
+  "publisher": "U.S. Bureau of Economic Analysis",
+  "published_at": "2023-09-28T12:30:00Z",
+  "publication_precision": "second",
+  "availability_basis": "Official release header announces 8:30 a.m. Eastern; conversion uses the stated date's standard/daylight offset. This is an announced release time, not an independently observed first fetch. Case cutoff is end of release day.",
+  "retrieved_at": "2026-10-04T18:10:43.896076Z",
+  "redistribution_status": "Federal statistical publication with attribution retained.",
+  "raw_path": "sources/exp-bea-20230928-pdf/evidence.txt",
+  "text_path": "sources/exp-bea-20230928-pdf/evidence.txt",
+  "raw_sha256": "7448487f8128752574f0f11b2ae6548e91d0552a6ecbb045a2e47ae9716b83af",
+  "text_sha256": "7448487f8128752574f0f11b2ae6548e91d0552a6ecbb045a2e47ae9716b83af",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_pdf_selected_text",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_pdf_selected_text.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

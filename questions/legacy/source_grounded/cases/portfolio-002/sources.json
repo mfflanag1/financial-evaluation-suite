@@ -1,0 +1,20 @@
+[
+  {
+    "id": "portfolio-fed-20230322",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm",
+    "title": "Federal Reserve issues FOMC statement, March 22, 2023",
+    "publisher": "Board of Governors of the Federal Reserve System",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Primary-source bytes or rendered captures were retained by the recorded retrieval time and the observation bound 2026-10-04T18:14:08Z. Document date is not used as proof of historical first availability; this is a retrospective conditional-analysis pack.",
+    "text_sha256": "7002a70f765aa928153bae92090d25a6607a837e9e6dce3c3293f755c3396a00",
+    "available_by": "2026-10-04T18:14:08Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_html_with_selected_reproducible_excerpts.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

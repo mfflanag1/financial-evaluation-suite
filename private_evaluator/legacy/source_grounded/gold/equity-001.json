@@ -1,0 +1,272 @@
+{
+  "case_id": "equity-001",
+  "reference_solution": {
+    "adjusted_ebitda": 3608890,
+    "operating_cash_flow": 1826398,
+    "cash_capex": 1704811,
+    "operating_free_cash_flow": 1904079,
+    "free_cash_flow": 121587,
+    "metric_gap": 1782492,
+    "cash_flow_starting_metric": "free_cash_flow",
+    "meets_cash_hurdle": false,
+    "minimum_capex_reduction": 28413,
+    "replacement_capex_basis": "accrued_capital_expenditures",
+    "replacement_computable": false
+  },
+  "limitations": [
+    "Printed totals make this a low-difficulty construction control; it does not establish novel reasoning ability.",
+    "Letter is conditional and its original public dissemination time is unresolved.",
+    "No general claim about all possible accrued-capex disclosures is made; insufficiency is conditional on the specified three inputs.",
+    "Fixed synthetic hurdle is not a market or investment objective."
+  ],
+  "fields": [
+    {
+      "id": "adjusted_ebitda",
+      "expected": 3608890,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-release",
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-release": [
+          [
+            "Adjusted EBITDA  | 903,258   |  |  | 913,349   |  |  | 3,608,890   |  |  | 3,866,537   |",
+            "Adjusted EBITDA  | 903,258   |  |  | 913,349   |  |  | 3,608,890"
+          ]
+        ],
+        "altice-fy2023-10k": [
+          [
+            "Adjusted EBITDA  | 3,608,890   |  |  | 3,866,537   |  |  |",
+            "Adjusted EBITDA  | 3,608,890"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "operating_cash_flow",
+      "expected": 1826398,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-release",
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-release": [
+          [
+            "Net cash flows from operating activities  | $  | 496,213   |  |  | $  | 461,185   |  |  | $  | 1,826,398   |  |  | $  | 2,366,901   |",
+            "Net cash flows from operating activities  | $  | 496,213   |  |  | $  | 461,185   |  |  | $  | 1,826,398"
+          ]
+        ],
+        "altice-fy2023-10k": [
+          [
+            "Net cash flows from operating activities  | $  | 1,826,398   |  |  | $  | 2,366,901   |  |  |  |  |  |",
+            "Net cash flows from operating activities  | $  | 1,826,398"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cash_capex",
+      "expected": 1704811,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-release",
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-release": [
+          [
+            "Capital expenditures (cash)  | 295,250   |  |  | 543,226   |  |  | 1,704,811   |  |  | 1,914,282   |",
+            "Capital Expenditures (cash)  | 295,250   |  |  | 543,226   |  |  | 1,704,811   |  |  | 1,914,282   |",
+            "Capital expenditures (cash)  | 295,250   |  |  | 543,226   |  |  | 1,704,811",
+            "Capital Expenditures (cash)  | 295,250   |  |  | 543,226   |  |  | 1,704,811"
+          ]
+        ],
+        "altice-fy2023-10k": [
+          [
+            "Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |",
+            "Less: Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |  |  |  |",
+            "Capital expenditures (cash)  | 1,704,811",
+            "Less: Capital expenditures (cash)  | 1,704,811"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "operating_free_cash_flow",
+      "expected": 1904079,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-10k": [
+          [
+            "Adjusted EBITDA  | 3,608,890   |  |  | 3,866,537   |  |  |",
+            "Adjusted EBITDA  | 3,608,890"
+          ],
+          [
+            "Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |",
+            "Less: Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |  |  |  |",
+            "Capital expenditures (cash)  | 1,704,811",
+            "Less: Capital expenditures (cash)  | 1,704,811"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "free_cash_flow",
+      "expected": 121587,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-10k": [
+          [
+            "Net cash flows from operating activities  | $  | 1,826,398   |  |  | $  | 2,366,901   |  |  |  |  |  |",
+            "Net cash flows from operating activities  | $  | 1,826,398"
+          ],
+          [
+            "Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |",
+            "Less: Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |  |  |  |",
+            "Capital expenditures (cash)  | 1,704,811",
+            "Less: Capital expenditures (cash)  | 1,704,811"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "metric_gap",
+      "expected": 1782492,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-10k": [
+          [
+            "Adjusted EBITDA  | 3,608,890   |  |  | 3,866,537   |  |  |",
+            "Adjusted EBITDA  | 3,608,890"
+          ],
+          [
+            "Net cash flows from operating activities  | $  | 1,826,398   |  |  | $  | 2,366,901   |  |  |  |  |  |",
+            "Net cash flows from operating activities  | $  | 1,826,398"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cash_flow_starting_metric",
+      "expected": "free_cash_flow",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-10k": [
+          [
+            "Free Cash Flow (defined as net cash flows from operating activities less cash capital expenditures)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "meets_cash_hurdle",
+      "expected": false,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-10k": [
+          [
+            "Net cash flows from operating activities  | $  | 1,826,398   |  |  | $  | 2,366,901   |  |  |  |  |  |",
+            "Net cash flows from operating activities  | $  | 1,826,398"
+          ],
+          [
+            "Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |",
+            "Less: Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |  |  |  |",
+            "Capital expenditures (cash)  | 1,704,811",
+            "Less: Capital expenditures (cash)  | 1,704,811"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minimum_capex_reduction",
+      "expected": 28413,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-fy2023-10k"
+      ],
+      "evidence_anchor_groups": {
+        "altice-fy2023-10k": [
+          [
+            "Net cash flows from operating activities  | $  | 1,826,398   |  |  | $  | 2,366,901   |  |  |  |  |  |",
+            "Net cash flows from operating activities  | $  | 1,826,398"
+          ],
+          [
+            "Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |",
+            "Less: Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |  |  |  |",
+            "Capital expenditures (cash)  | 1,704,811",
+            "Less: Capital expenditures (cash)  | 1,704,811"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "replacement_capex_basis",
+      "expected": "accrued_capital_expenditures",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-20240724-response"
+      ],
+      "evidence_anchor_groups": {
+        "altice-20240724-response": [
+          [
+            "To the extent the Company decides to present such metric in future filings, the Company will instead present “Adjusted EBITDA less accrued capital expenditures,” which will exclude capital expenditures accrued for the period presented, and use it as a performance measure only."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "replacement_computable",
+      "expected": false,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "altice-20240724-response"
+      ],
+      "evidence_anchor_groups": {
+        "altice-20240724-response": [
+          [
+            "the Company will instead present “Adjusted EBITDA less accrued capital expenditures,” which will exclude capital expenditures accrued for the period presented"
+          ]
+        ]
+      }
+    }
+  ]
+}

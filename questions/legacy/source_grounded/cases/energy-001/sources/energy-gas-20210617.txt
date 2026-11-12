@@ -1,0 +1,23 @@
+‹ See the most recent Natural Gas Weekly Update Natural Gas Weekly Update for week ending June 16, 2021 | Release date: June 17, 2021 | Previous weeks
+
+The net injections into storage totaled 16 Bcf for the week ending June 11, compared with the five-year (2016–2020) average net injections of 87 Bcf and last year's net injections of 86 Bcf during the same week. Working natural gas stocks totaled 2,427 Bcf, which is 126 Bcf lower than the five-year average and 453 Bcf lower than last year at this time. This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11. Analysis of the impacts of this reclassification will appear in next week’s Natural Gas Weekly Update.
+
+Working gas in underground storage
+
+ | Stocks billion cubic feet (Bcf)
+
+Region | 2021-06-11 | 2021-06-04 | change
+
+East | 461 | 445 | 16
+
+Midwest | 570 | 547 | 23
+
+Mountain | 165 | 160 | 5
+
+Pacific | 236 C | 276 | -40
+
+South Central | 995 | 983 | 12
+
+Total | 2,427 C | 2,411 | 16
+
+Source: Form EIA-912, Weekly Underground Natural Gas Storage Report C=Reclassification Note: Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021. The implied flow for the week is an increase of 67 Bcf to working gas stocks.

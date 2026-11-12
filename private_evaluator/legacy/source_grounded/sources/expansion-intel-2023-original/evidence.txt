@@ -1,0 +1,30 @@
+All prior-period segment data has been retrospectively adjusted to reflect the way our CODM internally receives information and manages and monitors our operating segment performance starting in fiscal year 2023.
+We manage our business through the following operating segments:
+
+[Intervening source text omitted]
+
+Net revenue and operating income (loss) for each period were as follows:
+| | | | | | | | | | | | | | | | | | | |
+Years Ended (In Millions) | | Dec 30, 2023 | | Dec 31, 2022 | | Dec 25, 2021
+Net revenue: | | | | | |
+Client Computing | | | | | |
+Desktop | | $ | 10,166 | | | $ | 10,661 | | | $ | 12,437 |
+Notebook | | 16,990 | | | 18,781 | | | 25,443 |
+Other | | 2,102 | | | 2,331 | | | 3,201 |
+| | 29,258 | | | 31,773 | | | 41,081 |
+| | | | | |
+Data Center and AI | | $ | 15,521 | | | $ | 19,445 | | | $ | 22,774 |
+Network and Edge | | 5,774 | | | 8,409 | | | 7,665 |
+Mobileye | | 2,079 | | | 1,869 | | | 1,386 |
+Intel Foundry Services | | 952 | | | 469 | | | 347 |
+All other | | 644 | | | 1,089 | | | 5,771 |
+Total net revenue | | $ | 54,228 | | | $ | 63,054 | | | $ | 79,024 |
+| | | | | |
+Operating income (loss): | | | | | |
+Client Computing | | $ | 6,520 | | | $ | 5,569 | | | $ | 15,523 |
+Data Center and AI | | (530) | | | 1,300 | | | 7,376 |
+Network and Edge | | (482) | | | 1,033 | | | 1,935 |
+Mobileye | | 664 | | | 690 | | | 554 |
+Intel Foundry Services | | (482) | | | (281) | | | 76 |
+All other | | (5,597) | | | (5,977) | | | (6,008) |
+Total operating income (loss) | | $ | 93 | | | $ | 2,334 | | | $ | 19,456 |

@@ -1,0 +1,34 @@
+{
+  "status": "offline diagnostic; frozen scored cases unchanged",
+  "routes": {
+    "c227": {
+      "expected_query_cost": [
+        [
+          "in_query"
+        ]
+      ]
+    },
+    "c229": {
+      "expected_query_cost": [
+        [
+          "in_query"
+        ]
+      ],
+      "second_queries": [
+        [
+          "in_query",
+          "in_format"
+        ]
+      ],
+      "terminal_actions": [
+        [
+          "in_joint",
+          "in_actions",
+          "in_format"
+        ]
+      ]
+    }
+  },
+  "authored_field_routes": 4,
+  "observed_citation_penalties": 4
+}

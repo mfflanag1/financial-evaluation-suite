@@ -1,0 +1,74 @@
+{
+  "question_id": "q157",
+  "title": "Sequence a gated redemption with valuation and settlement amendments",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Plan this redemption event. Fill the maximum gated units, preserve the reserve, and sell only the liquid assets necessary. Return investor cash payments and unfilled units.",
+  "inputs": {
+    "cash_millions": 15,
+    "liquid_assets_millions": 60,
+    "locked_assets_millions": 25,
+    "initial_units": 100,
+    "requested_units": [
+      18,
+      12
+    ],
+    "gate_fraction": 0.2,
+    "cash_reserve_millions": 5
+  },
+  "sources": [
+    {
+      "id": "q157_register",
+      "text": "Original synthetic evaluation packet. Cash and assets are pre-dealing values in millions. Investor requests are units, not fixed cash. No borrowing or subscriptions initially. All turns are revised plans for this same dealing event; nothing has executed."
+    },
+    {
+      "id": "q157_dealing",
+      "text": "Original synthetic evaluation packet. Gate permits at most20% of the initial100 units, shared pro rata to requested units. Pay the current corrected pre-dealing NAV per unit. Keep cash reserve5. Initial liquid-asset sales settle before payment at carrying value with no transaction costs. Later subscriptions never enlarge this gate denominator."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "nav_per_unit",
+      "type": "number",
+      "unit": "USD millions/unit",
+      "description": "Corrected pre-dealing value of one original unit.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "redemption_payments",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "[investor A,investor B].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "pending_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "Unfilled [A,B] requests carried forward.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "asset_sale",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Liquid-asset sale required by the current settlement plan.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "bridge_draw",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Principal borrowed at T0.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

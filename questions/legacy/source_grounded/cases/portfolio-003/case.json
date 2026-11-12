@@ -1,0 +1,98 @@
+{
+  "id": "portfolio-003",
+  "case_group": "texas-2021-freeze-cross-pod-basis-dispatch",
+  "lane": "portfolio",
+  "epistemic_type": "conditional_analysis",
+  "information_cutoff": "2026-10-04T18:14:08Z",
+  "prompt": "Use EIA's May 10, 2021 report about the February freeze. The public fact needed is Henry Hub's February 17 spot price and its unit. This report is retrospective; the following scenarios are hypothetical, not reconstructed contemporaneous cross-market prices. Define d as that reported peak minus a supplied reference price 3.86 USD/MMBtu. The model uses energy units directly; do not substitute cubic feet for MMBtu.\nSynthetic baseline: Henry Hub 3.86 USD/MMBtu; local basis 0; local gas=Henry Hub+basis. A producer operating-margin pod produces 1000 MMBtu, variable costs assumed 0 for this exercise. A generator pod is committed to sell 100 MWh at fixed 100 USD/MWh, initially generates 100 MWh, heat rate 7 MMBtu/MWh. It buys any generation shortfall at scenario power price; fixed sales revenue is 10000 USD. No fixed cost changes, emissions costs, outages beyond stated dispatch, or other derivatives. Existing commodity pod is short 300 MMBtu of a synthetic Henry-Hub-linear contract, P&L=-300*Henry-Hub-change.\nScenarios F,R,B: Henry Hub changes=(+d,-2,+5) USD/MMBtu; local basis=(10,0,25) USD/MMBtu; power spot=(250,80,180) USD/MWh; producer output=(500,1000,750) MMBtu; generator dispatch=(40,100,60) MWh. Producer P&L=scenario output*scenario local gas minus 1000*3.86. Generator P&L=scenario fixed revenue minus dispatch*heat rate*local gas minus (100-dispatch)*power spot, less its baseline margin. Include existing commodity P&L. All quantities are energy over one supplied settlement period, not MW capacity or daily rates.\nMenu: A longs 300 MMBtu Henry-Hub exposure, P&L=300*Henry-Hub-change, fee 100, margin 1000. B buys a synthetic power call on 40 MWh at strike 100 USD/MWh, payoff=40*max(power spot-100,0), premium 500 paid once as its fee, margin 0. C longs 200 MMBtu of local-minus-Henry-Hub basis, P&L=200*basis-change, fee 200, margin 1500. Each block at most once; no extra power or basis position beyond these stated caps.\nFree cash is 23200. Base T1 outflow is the full cost of replacement power (100-dispatch)*power spot plus any loss on the existing short Henry-Hub contract. Fuel costs, producer receipts, fixed power-sale revenue, favorable commodity outcomes and hedge receipts occur only at T2. Negative new-hedge P&L adds gross T1 collateral calls under the common schedule. No future fuel/power/producer cash is reusable at T1.\nMissing-input branch: generator dispatch in F is omitted and may be any amount from 0 through 100 MWh. Keep every other datum unchanged. Can a unique feasible optimizer be determined? Return insufficient_data or determined.\n\nEverything in the scenario book, sensitivities, prices, hedge menu and collateral schedule below is an explicit synthetic assumption unless identified as a public source fact. This is a conditional stress calculation, not a recommendation, actual margin rule, actual historical trade or realized-return calculation. No probabilities apply: maximize the minimum terminal economic P&L over all three scenarios, including nonrefundable hedge fees/premiums. Initial margin and collateral are refundable/settlement resources, never additional economic losses. Choose any subset of A,B,C, at most one of each; no other trades, position resizing, borrowing or collateral rehypothecation. Plan codes have alphabetically ordered letters; empty subset is NONE. For feasible-set output, retain the fixed order NONE|A|B|C|AB|AC|BC|ABC and omit infeasible plans. Equality at a cash limit is feasible.\nCash sequencing is compulsory: T0 pays every selected hedge fee and posts its initial margin. Those amounts remain unavailable through T1. T1 then pays the expressly specified base-book outflows plus every negative selected-hedge scenario P&L as separate gross collateral outflows. No favorable base-book or hedge P&L, no cross-pod offsets, no returned initial margin and no T2 receipts can finance T0/T1. T2 returns collateral/releases margin and settles economic P&L; T2 has no further hard cash constraint. Only the specified T0/T1 flows determine feasibility. For each scenario, cash must remain nonnegative after T0 and after all T1 outflows. All other borrowing, mark-to-market collateral changes and cashflows are outside this supplied model. Source excerpts support public contract/event facts; they do not establish the synthetic settlement schedule.\nUse USD, ordinary shares, basis points and MMBtu/MWh exactly as stated. One percentage point is 100 bp; one bp is 0.0001 in a rate. Do not round intermediate calculations. Return P&L strings in stated scenario order with no spaces or trailing decimal zeros. All sources are retrospectively observed by the 2026 cutoff, not certified historical information sets. The missing-input question is a separate branch; do not contaminate the fully specified main answer with that omission.\n",
+  "source_ids": [
+    "portfolio-eia-freeze-2021"
+  ],
+  "output_fields": [
+    {
+      "id": "henry_hub_shock",
+      "type": "number",
+      "unit": "USD_per_MMBtu",
+      "description": "Reported February17 Henry Hub peak minus the supplied3.86 reference price.",
+      "evidence_required": true
+    },
+    {
+      "id": "freeze_generator_fuel",
+      "type": "number",
+      "unit": "MMBtu",
+      "description": "Fuel consumed by the generator in F; dispatch MWh times supplied heat rate.",
+      "evidence_required": false
+    },
+    {
+      "id": "base_scenario_pnl",
+      "type": "string",
+      "unit": "USD_by_scenario",
+      "description": "Unhedged aggregate three-pod P&L, format F=x;R=y;B=z.",
+      "evidence_required": true
+    },
+    {
+      "id": "feasible_plans",
+      "type": "string",
+      "unit": "plan_set",
+      "description": "All plans satisfying both cash stages, in the prescribed fixed order.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_plan",
+      "type": "string",
+      "unit": "plan_code",
+      "description": "Unique feasible plan maximizing worst-scenario terminal P&L after all hedge fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_worst_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum terminal economic P&L of the chosen plan over the three scenarios, net of fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_minimum_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum available cash across T0 and all scenario T1 paths for the optimal plan.",
+      "evidence_required": true
+    },
+    {
+      "id": "first_optimizer_change_budget",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum starting cash strictly above the stated budget where the optimal plan changes; all other assumptions fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "freeze_base_early_outflow",
+      "type": "number",
+      "unit": "USD",
+      "description": "Replacement-power payment plus existing commodity-pod collateral call in F, before new hedges.",
+      "evidence_required": true
+    },
+    {
+      "id": "missing_dispatch_optimizer_status",
+      "type": "string",
+      "unit": "status",
+      "description": "With F generator dispatch omitted, return insufficient_data or determined.",
+      "evidence_required": false
+    }
+  ],
+  "response_format": {
+    "case_id": "portfolio-003",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

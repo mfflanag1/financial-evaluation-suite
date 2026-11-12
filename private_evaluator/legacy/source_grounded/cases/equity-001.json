@@ -1,0 +1,93 @@
+{
+  "id": "equity-001",
+  "case_group": "altice-fy2023-definitions-and-2024-letter",
+  "lane": "fundamental_equity",
+  "status": "prototype",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2026-10-04T17:16:20Z",
+  "prompt": "Reconcile Altice USA FY2023 financial definitions using the supplied excerpts of its results release, 10-K, and letter dated July 24, 2024. Use Altice USA full-year 2023 amounts, not fourth-quarter or prior-year columns. Amounts are USD thousands; return integers and positive cash-capex magnitude. Recompute the two differently defined FCF metrics and their gap; identify which starts from operating cash flow. For a synthetic review policy, require operating cash flow minus cash capex to be at least 150,000; determine whether this is met and the smallest capex reduction needed with operating cash flow held fixed. Identify the capital-expenditure basis of the conditional replacement described in the letter. For the sufficiency question ONLY, permitted numeric inputs are the three extracted FY2023 amounts (Adjusted EBITDA, operating cash flow, cash capex); no cash-to-accrual equality may be assumed. Quote evidence for each factual input: separate quotes for separate operands are allowed. This is retrospective document analysis with a 2026 observed-evidence cutoff, not a claim that the letter was publicly available in July 2024 or an investment recommendation.",
+  "source_ids": [
+    "altice-fy2023-release",
+    "altice-fy2023-10k",
+    "altice-20240724-response"
+  ],
+  "output_fields": [
+    {
+      "id": "adjusted_ebitda",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "FY2023 Adjusted EBITDA; cite its annual row in both release and 10-K.",
+      "evidence_required": true
+    },
+    {
+      "id": "operating_cash_flow",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "FY2023 net cash flows from operating activities; cite annual row in both financial documents.",
+      "evidence_required": true
+    },
+    {
+      "id": "cash_capex",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "FY2023 cash capital expenditure positive magnitude; cite annual row in both financial documents.",
+      "evidence_required": true
+    },
+    {
+      "id": "operating_free_cash_flow",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "Recompute the issuer's FY2023 Operating Free Cash Flow; cite both input rows in 10-K.",
+      "evidence_required": true
+    },
+    {
+      "id": "free_cash_flow",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "Recompute the issuer's FY2023 Free Cash Flow; cite both input rows in 10-K.",
+      "evidence_required": true
+    },
+    {
+      "id": "metric_gap",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "Operating Free Cash Flow minus Free Cash Flow; cite Adjusted EBITDA and operating cash flow inputs in 10-K.",
+      "evidence_required": true
+    },
+    {
+      "id": "cash_flow_starting_metric",
+      "type": "string",
+      "unit": "categorical",
+      "description": "Which defined metric starts from net cash flows from operating activities? Exactly one of: free_cash_flow, operating_free_cash_flow, both, neither. Cite the 10-K definition.",
+      "evidence_required": true
+    },
+    {
+      "id": "meets_cash_hurdle",
+      "type": "boolean",
+      "unit": "categorical",
+      "description": "Does FY2023 operating cash flow minus cash capex meet the supplied 150,000 hurdle? Cite the two 10-K inputs.",
+      "evidence_required": true
+    },
+    {
+      "id": "minimum_capex_reduction",
+      "type": "number",
+      "unit": "USD_thousands",
+      "description": "Minimum cash-capex reduction to meet the hurdle, holding operating cash flow fixed and ignoring other changes; cite the two 10-K inputs.",
+      "evidence_required": true
+    },
+    {
+      "id": "replacement_capex_basis",
+      "type": "string",
+      "unit": "categorical",
+      "description": "Basis of the replacement the July letter says it may present. Exactly one of: cash_capital_expenditures, accrued_capital_expenditures, not_specified. Cite the issuer's conditional response.",
+      "evidence_required": true
+    },
+    {
+      "id": "replacement_computable",
+      "type": "boolean",
+      "unit": "categorical",
+      "description": "Can the hypothetical replacement be numerically computed from only the three FY2023 input amounts extracted here, without assuming cash capex equals accrued capex? Cite the replacement definition. Boolean.",
+      "evidence_required": true
+    }
+  ]
+}

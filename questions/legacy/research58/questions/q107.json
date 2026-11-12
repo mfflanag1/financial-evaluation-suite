@@ -1,0 +1,103 @@
+{
+  "question_id": "q107",
+  "title": "Segment perimeter and currency reconciliation",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconcile the new segment perimeter and acquisition/translation effects before deciding whether BOTH segments clear the organic-growth hurdle. Revenue amounts are USD million. Prior-year reclassification is additive to prior reported segments only. Translation effects are the amounts added to current revenue by current rather than prior-year FX. Acquired revenue is wholly absent from the prior comparison and is already at current FX. Remove it and the supplied translation effect from current reported revenue; do not restate current segment assignments. Aggregate growth must use aggregate comparable revenue, not an unweighted mean of segment growth rates. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "segment_order": [
+      "Industrial",
+      "Medical"
+    ],
+    "prior_reported": [
+      600,
+      400
+    ],
+    "prior_reclassification": [
+      -50,
+      50
+    ],
+    "current_reported": [
+      760,
+      450
+    ],
+    "acquired_current_revenue": [
+      120,
+      0
+    ],
+    "current_fx_translation_effect": [
+      -20,
+      10
+    ],
+    "required_organic_growth_pct": 5
+  },
+  "sources": [
+    {
+      "id": "q107_t1_1",
+      "text": "Synthetic packet. The filed segment schedule assigns the revenue and prior-year reclassification arrays to Industrial then Medical. Transfers change segment assignment without changing total prior revenue."
+    },
+    {
+      "id": "q107_t1_2",
+      "text": "Synthetic packet. The acquisition memorandum identifies acquired revenue and a separately measured FX effect on the remaining legacy perimeter. The committee requires at least the stated organic growth in each segment; equality qualifies."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "comparable_prior_revenue",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Industrial, Medical.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "organic_constant_currency_revenue",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Industrial, Medical.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "segment_growth_pct",
+      "type": "number_array",
+      "unit": "percent",
+      "description": "Industrial, Medical; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "aggregate_organic_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Revenue-weighted aggregate organic growth.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "reported_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Growth in total reported revenue.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "growth_bridge_pp",
+      "type": "number",
+      "unit": "percentage points",
+      "description": "Reported growth minus organic growth.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "both_segments_clear_hurdle",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "True only if both segment growth rates meet the threshold."
+    }
+  ]
+}

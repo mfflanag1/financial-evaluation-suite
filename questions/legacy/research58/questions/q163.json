@@ -1,0 +1,78 @@
+{
+  "question_id": "q163",
+  "title": "Choose paid research and contingent allocations under changing constraints",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Price the optional information and select the positive/negative-signal action policy. Compute posterior probabilities from likelihoods and compare the study net value with the best unconditional action.",
+  "inputs": {
+    "prior_good_probability": 0.4,
+    "payoffs_by_state": {
+      "A": [
+        100,
+        -40
+      ],
+      "B": [
+        30,
+        10
+      ],
+      "cash": [
+        0,
+        0
+      ]
+    },
+    "study_cost": 3,
+    "positive_given_good": 0.8,
+    "positive_given_bad": 0.2
+  },
+  "sources": [
+    {
+      "id": "q163_opportunity",
+      "text": "Original synthetic evaluation packet. One mutually exclusive investment action is chosen: A pays100 in good state and-40 in bad state, B pays30 or10, cash pays0. Prior good probability0.4. All values are terminal currency payoffs from equal earmarked capital; unused capital earns zero. No combinations or leverage. Maximize risk-neutral expected payoff."
+    },
+    {
+      "id": "q163_study",
+      "text": "Original synthetic evaluation packet. Before investment, an optional binary study costs3 regardless of result. Positive likelihoods are0.8 in good state and0.2 in bad state. Decide whether to buy the study before observing its result. If bought, choose a nonanticipative action for each possible signal. Report this conditional policy even if the study is not purchased. Purchase only if net expected payoff strictly exceeds the best action without study. Subtract cost once; it is not signal-dependent."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "signal_probabilities",
+      "type": "number_array",
+      "unit": "probability",
+      "description": "[positive,negative].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "posterior_good_probabilities",
+      "type": "number_array",
+      "unit": "probability",
+      "description": "P(good|positive),P(good|negative).",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "conditional_policy",
+      "type": "string_array",
+      "unit": "action labels",
+      "description": "[action after positive,action after negative]; use available action labels."
+    },
+    {
+      "name": "study_net_expected_payoff",
+      "type": "number",
+      "unit": "currency units",
+      "description": "Unconditional expectation after optimal contingent investment and study cost.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "purchase_study",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether buying the study beats the best unconditional admissible action."
+    }
+  ]
+}

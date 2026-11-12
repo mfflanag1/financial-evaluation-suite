@@ -1,0 +1,121 @@
+{
+  "question_id": "q131",
+  "title": "Allocate strategy capacity under shared nonlinear market impact",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Choose a joint deployment across three strategies that trade overlapping assets. Reconcile the chosen plan to asset-level execution capacity, impact and risk capital. Do not infer diversification from strategy labels. Report all arrays in the stated order and unused capital.",
+  "inputs": {
+    "deployment_grid": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "capital_limit": 10,
+    "risk_unit_limit": 20,
+    "risk_units": [
+      2,
+      3,
+      1
+    ],
+    "gross_alpha_per_unit": [
+      20,
+      17,
+      12
+    ],
+    "asset_flow_loadings": [
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "impact_coefficients": [
+      0.7,
+      0.4,
+      0.2
+    ],
+    "asset_flow_caps": [
+      12,
+      10,
+      10
+    ],
+    "active_strategy_fee": 2
+  },
+  "sources": [
+    {
+      "id": "q131_execution_model",
+      "text": "Original synthetic evaluation packet. Each strategy generates signed asset flow according to the loading table; all shown loadings are nonnegative. Impact is coefficient times squared AGGREGATE asset flow, not a sum of stand-alone strategy impact estimates. Costs and alpha are thousands of dollars for one common horizon. Matrix asset_flow_loadings has rows [asset1,asset2,asset3] and columns [strategy A,strategy B,strategy C]. Asset flow i equals the sum of asset_flow_loadings[i][j] times deployment[j] over strategies j."
+    },
+    {
+      "id": "q131_allocator",
+      "text": "Original synthetic evaluation packet. Allocate integer capital units0..6 per strategy. Capital, additive risk units and each asset flow cap apply jointly. A nonzero strategy also costs2 thousand. Maximize net expected alpha; ties choose less deployed capital then lexicographically smaller[A,B,C]. Idle capital has zero alpha and cost."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "deployment",
+      "type": "number_array",
+      "unit": "capital units",
+      "description": "[strategy A,B,C].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_expected_alpha",
+      "type": "number",
+      "unit": "USD thousands",
+      "description": "Gross alpha less shared-asset impact and active-strategy fees.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "asset_flows",
+      "type": "number_array",
+      "unit": "flow units",
+      "description": "[asset1,asset2,asset3].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "impact_costs",
+      "type": "number_array",
+      "unit": "USD thousands",
+      "description": "Quadratic cost in [asset1,asset2,asset3].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "risk_units_used",
+      "type": "number",
+      "unit": "risk units",
+      "description": "Fund aggregate risk capital.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "unused_capital",
+      "type": "number",
+      "unit": "capital units",
+      "description": "Capital limit less deployed units.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

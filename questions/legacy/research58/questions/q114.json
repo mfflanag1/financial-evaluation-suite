@@ -1,0 +1,128 @@
+{
+  "question_id": "q114",
+  "title": "Partial revenue identification and a cash-feasible remedy",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Determine sharp revenue and net-contract-asset bounds from the unresolved warehouse/acceptance records. Then choose a robust additional-order plan that meets the floor in every admissible state AND can be funded at production. Treat historical receipts as already reconciled, not newly available funding. Quantities are integers; enumerate only the declared caps. Do not invent a probability for missing evidence. All observations and rules are synthetic. Return the declared typed fields with supporting source IDs.",
+  "inputs": {
+    "channel_begin": 40,
+    "channel_shipped": 120,
+    "channel_end_reported": 90,
+    "channel_returns": 10,
+    "returned_units_in_closing_range": [
+      0,
+      10
+    ],
+    "channel_price": 1.5,
+    "direct_accepted_reported": 80,
+    "disputed_acceptances_range": [
+      0,
+      8
+    ],
+    "direct_price": 1.25,
+    "refund_allowance": 5,
+    "channel_receipts": 100,
+    "direct_receipts": 70,
+    "revenue_floor": 190,
+    "opening_unrestricted_cash": 1,
+    "incremental_channel_cap": 8,
+    "incremental_direct_cap": 8,
+    "incremental_unit_costs": [
+      1.4,
+      0.9
+    ],
+    "incremental_upfront_fractions": [
+      0.4,
+      1
+    ]
+  },
+  "sources": [
+    {
+      "id": "q114_warehouse",
+      "text": "Original synthetic packet. Input channel beginning40 plus shipments120 less closing90 less returns10 double-subtracts k returned units included in closing. k is an unknown integer0 through10. Consignment sell-through is beginning+shipped-closing-returns+k. Its unit price is1.5. Shipments alone never establish recognition."
+    },
+    {
+      "id": "q114_acceptance",
+      "text": "Original synthetic packet. Of the input80 reported direct acceptances, t is disputed and fails recognition; t may be any integer0 through8, independently of k. Direct unit price1.25 and fixed contra-receivable refund allowance5 apply. Direct revenue is1.25*(80-t)-5. No probabilities or other information identify k or t; do not replace them by means."
+    },
+    {
+      "id": "q114_cash_and_orders",
+      "text": "Original synthetic packet. Historical channel receipts100 and direct receipts70 are fully reconciled. Net contract asset means total recognized revenue minus those170 receipts, netting receivables, the stated allowance and customer advances; no other balances exist. Floor190 must hold for every k,t. Only1 of historical cash remains unrestricted now. Additional orders are separate, fully eligible before cutoff, never disputed, and increase revenue at the same channel/direct prices. Each integer quantity is0 through8. Unit production cash is1.4 channel and0.9 direct. Customers prepay40% of channel revenue and100% of direct revenue, before any production payment. Pool all prepayments with unrestricted1; later receivables cannot fund production. No borrowing or other cash costs. Minimize production outlay among robustly qualifying funded plans."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "recognized_revenue_bounds",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Sharp [minimum,maximum] before additional orders.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_received",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Historical receipts only.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_contract_asset_bounds",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Sharp recognized revenue less historical receipts; net contract asset if positive.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "floor_guaranteed_without_new_orders",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "True only if every admissible state meets the floor."
+    },
+    {
+      "name": "minimum_cost_order_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "[channel,direct] robustly qualifying funded plan minimizing production cash; ties fewer total units then fewer channel units.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "incremental_production_cash",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Production cash for the selected additional orders.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "incremental_receipts",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Upfront cash from those additional orders.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "guaranteed_post_order_revenue",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Worst admissible revenue including selected additional orders.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funded_qualifying_plan_count",
+      "type": "number",
+      "unit": "plans",
+      "description": "Number of integer plans meeting both robust revenue and cash constraints.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

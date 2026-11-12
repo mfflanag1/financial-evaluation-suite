@@ -1,0 +1,4143 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All specified values and required input citations are correct.",
+    "expected_failures": {}
+  },
+  {
+    "name": "omit_crude_transfer_from_adjustment",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 744,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Fails to include the explicit transfer-to-crude supply category.",
+    "expected_failures": {
+      "reconstructed_crude_adjustment": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "add_negative_product_stock_change",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 19752,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Adds the -770 stock change rather than subtracting it, reversing the draw's contribution.",
+    "expected_failures": {
+      "reconstructed_products_supplied": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "double_count_transfer_on_product_side",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 22060,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 768,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Treats the product-side transfer as positive and creates artificial supply across the combined boundary.",
+    "expected_failures": {
+      "reconstructed_products_supplied": [
+        "incorrect_value_or_type"
+      ],
+      "net_transfer_across_crude_and_products": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "daily_rates_are_weekly_barrels",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -0.227,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 1364,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.059,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits the seven-day conversion from average daily rate to weekly volume.",
+    "expected_failures": {
+      "weekly_stock_change_from_daily_rates": [
+        "incorrect_value_or_type"
+      ],
+      "flow_minus_stock_rounding_gap": [
+        "incorrect_value_or_type"
+      ],
+      "scenario_weekly_commercial_build": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "ignore_spr_in_import_shock",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 143,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 1.001,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 543,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Allocates the entire crude build to commercial storage despite the fixed SPR build.",
+    "expected_failures": {
+      "scenario_commercial_stock_change": [
+        "incorrect_value_or_type"
+      ],
+      "scenario_weekly_commercial_build": [
+        "incorrect_value_or_type"
+      ],
+      "maximum_import_reduction_without_commercial_draw": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "residuals_are_measured_production_and_loss",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "independently_measured_extra_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "demonstrated_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Assigns unsupported physical causes to the adjustment and the rounding gap.",
+    "expected_failures": {
+      "adjustment_interpretation": [
+        "incorrect_value_or_type"
+      ],
+      "rounding_gap_interpretation": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_total_without_component_evidence",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Products Supplied | (30) Total | 21,292"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Copies products supplied without supporting all six required balance components.",
+    "expected_failures": {
+      "reconstructed_products_supplied": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "concise_rows_direct_commercial_baseline",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Current-week operand rows suffice without units/date-header repetition; line14 is an equivalent commercial baseline and either CSV supports stocks.",
+    "expected_failures": {}
+  },
+  {
+    "name": "imports_exports_full_commercial_balance",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Full crude balance using imports minus exports is accepted without printed net imports, total stocks or commercial stocks.",
+    "expected_failures": {}
+  },
+  {
+    "name": "pdf_rate_rows_and_total_less_spr",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(8) Imports ............................................. 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(12) Exports ........................................... 4,022"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(17) Crude Oil Input to Refineries ........... 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(18) Production ......................................... 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(24) Net Imports12 .................................... -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(27) Stock Change (+/build; -/draw)3,13 -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(28) Adjustment14 .................................... 240"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(29) Transfers to Crude Oil Supply15 ..... -384"
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(13) Stock Change (+/build; -/draw) ........ 543"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(15) SPR Stock Change ......................... 84"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(13) Stock Change (+/build; -/draw) ........ 543"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(15) SPR Stock Change ......................... 84"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(13) Stock Change (+/build; -/draw) ........ 543"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(15) SPR Stock Change ......................... 84"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Equivalent current-week PDF rows support rate calculations; total crude less SPR is a valid commercial baseline.",
+    "expected_failures": {}
+  },
+  {
+    "name": "total_crude_baseline_without_spr_evidence",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Total crude build alone does not identify the commercial baseline while SPR build is held fixed.",
+    "expected_failures": {
+      "scenario_commercial_stock_change": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "full_commercial_balance_missing_export_operand",
+    "response": {
+      "case_id": "energy-002",
+      "answers": {
+        "net_crude_imports": {
+          "value": 2596.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "reconstructed_crude_adjustment": {
+          "value": 360.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (12) Exports | 4,022"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "reconstructed_products_supplied": {
+          "value": 21292.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (18) Production | 9,041"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (24) Net Imports | -4,272"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (28) Adjustment | 240"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply (line 29)."
+            }
+          ]
+        },
+        "net_transfer_across_crude_and_products": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            }
+          ]
+        },
+        "weekly_stock_change_from_daily_rates": {
+          "value": -1.589,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "weekly_stock_change_from_levels": {
+          "value": -1.591,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            }
+          ]
+        },
+        "flow_minus_stock_rounding_gap": {
+          "value": 2.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Million Barrels)"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "STUB_1 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table4-20240403",
+              "quote": "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            }
+          ]
+        },
+        "adjustment_interpretation": {
+          "value": "balancing_item_not_identified_production",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            }
+          ]
+        },
+        "rounding_gap_interpretation": {
+          "value": "rounding_consistent_not_evidence_of_physical_loss",
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            }
+          ]
+        },
+        "scenario_commercial_stock_change": {
+          "value": 59.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (8) Imports | 6,618"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            }
+          ]
+        },
+        "scenario_weekly_commercial_build": {
+          "value": 0.413,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (1) Domestic Production | 13,100"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (16) Adjustment | 360"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        },
+        "maximum_import_reduction_without_commercial_draw": {
+          "value": 459.0,
+          "evidence": [
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "STUB_1 | STUB_2 | 3/29/24 | 3/22/24 | Difference"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            },
+            {
+              "source_id": "energy-petroleum-table1-20240403",
+              "quote": "Crude Oil Supply | (15) SPR Stock Change | 84"
+            },
+            {
+              "source_id": "energy-petroleum-notes-20240403",
+              "quote": "(Thousand Barrels per Day)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+        "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "When reconstructing net imports from gross flows, the export operand remains necessary.",
+    "expected_failures": {
+      "scenario_commercial_stock_change": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

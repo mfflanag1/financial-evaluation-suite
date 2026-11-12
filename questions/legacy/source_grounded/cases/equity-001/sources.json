@@ -1,0 +1,56 @@
+[
+  {
+    "id": "altice-fy2023-release",
+    "url": "https://www.sec.gov/Archives/edgar/data/1702780/000162828024004788/a2023q4exhibit991.htm",
+    "title": "Altice USA fourth quarter and full year 2023 results",
+    "publisher": "Altice USA, Inc.; SEC EDGAR archive",
+    "published_at": "2024-02-14T23:59:59-05:00",
+    "publication_precision": "day",
+    "availability_basis": "Official EDGAR filing index gives the filing day; published_at conservatively encodes its New York end of day. available_by is a later observation bound recorded after the public-source capture was retained; no exact original dissemination timestamp is claimed.",
+    "text_sha256": "58649c2f809e5f5dd4bd67f7ae05f2d9065fe1aa9267c486e5219f26397a0e2b",
+    "available_by": "2026-10-04T17:16:20Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "altice-fy2023-10k",
+    "url": "https://www.sec.gov/Archives/edgar/data/1702780/000162828024004863/atus-20231231.htm",
+    "title": "Altice USA FY2023 Form 10-K, selected MD&A reconciliations",
+    "publisher": "Altice USA, Inc.; SEC EDGAR archive",
+    "published_at": "2024-02-15T23:59:59-05:00",
+    "publication_precision": "day",
+    "availability_basis": "Official EDGAR filing index gives the filing day; published_at conservatively encodes its New York end of day. available_by is a later observation bound recorded after the public-source capture was retained; no exact original dissemination timestamp is claimed.",
+    "text_sha256": "01bd81ffc0ae48a2259aa9efef4a053793386cbffa6f40be5bc5efd9d6d28e05",
+    "available_by": "2026-10-04T17:16:20Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "altice-20240724-response",
+    "url": "https://www.sec.gov/Archives/edgar/data/1702780/000094787124000635/filename1.htm",
+    "title": "Altice USA response letter dated July 24, 2024",
+    "publisher": "Altice USA, Inc.; SEC EDGAR archive",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Letter date is July 24, 2024; its first public dissemination date is unresolved. available_by is an observation bound recorded after the publicly accessible EDGAR capture was retained. The task is retrospective and does not assume July 2024 public availability.",
+    "text_sha256": "d4e9256ea7691d768f0029573f94e6a99554ed94dc3eca3e5fd57c2fa06c498b",
+    "available_by": "2026-10-04T17:16:20Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

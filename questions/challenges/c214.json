@@ -1,0 +1,287 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "qt_tape",
+            "title": "Timestamped independent-block audit"
+          },
+          {
+            "id": "qt_cost",
+            "title": "Frozen residual-return transformation"
+          },
+          {
+            "id": "qt_registry",
+            "title": "Complete selection universe and joint null"
+          },
+          {
+            "id": "qt_gate",
+            "title": "Deployment and stability rule"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "deploy": "<typed value>",
+            "eligible_blocks": "<typed value>",
+            "late_regime_mean": "<typed value>",
+            "selected_checkpoint": "<typed value>",
+            "selected_policy": "<typed value>",
+            "selected_statistic": "<typed value>",
+            "selection_adjusted_p": "<typed value>",
+            "unadjusted_p": "<typed value>"
+          },
+          "evidence": {
+            "deploy": [
+              "<viewed supporting document ID>"
+            ],
+            "eligible_blocks": [
+              "<viewed supporting document ID>"
+            ],
+            "late_regime_mean": [
+              "<viewed supporting document ID>"
+            ],
+            "selected_checkpoint": [
+              "<viewed supporting document ID>"
+            ],
+            "selected_policy": [
+              "<viewed supporting document ID>"
+            ],
+            "selected_statistic": [
+              "<viewed supporting document ID>"
+            ],
+            "selection_adjusted_p": [
+              "<viewed supporting document ID>"
+            ],
+            "unadjusted_p": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c214",
+          "turn": 1
+        },
+        "inputs": {
+          "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+        },
+        "outputs": {
+          "deploy": {
+            "description": "Boolean under all deployment gates.",
+            "type": "boolean"
+          },
+          "eligible_blocks": {
+            "description": "Array of block ids in numeric order.",
+            "type": "array"
+          },
+          "late_regime_mean": {
+            "description": "Number, selected policy late-regime residual net bps.",
+            "type": "number"
+          },
+          "selected_checkpoint": {
+            "description": "Integer3 or6.",
+            "type": "number"
+          },
+          "selected_policy": {
+            "description": "String A, B or C.",
+            "type": "string"
+          },
+          "selected_statistic": {
+            "description": "Number, selected standardized score.",
+            "type": "number"
+          },
+          "selection_adjusted_p": {
+            "description": "Number, exact search-adjusted probability.",
+            "type": "number"
+          },
+          "unadjusted_p": {
+            "description": "Number, exact selected-statistic sign-randomization probability.",
+            "type": "number"
+          }
+        },
+        "prompt": "Determine whether the published research winner can be deployed. Reconstruct point-in-time eligible net residual returns, account for every inspected policy and checkpoint with their shared block dependence, and apply the independent regime gates. Return the selected candidate and both exact inference probabilities.",
+        "question_id": "c214",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c214",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "qt_tape",
+            "release_stage": 1,
+            "text": "Columns are id | decision day | first feature publication day | latest training-label end day | market bps | gross bps [A,B,C]. Blocks have disjoint future P&L windows and independent sign shocks if eligible. No rows beyond this complete tape exist. Rows are ordered by numeric block id; publication is effective at start of its day.\nb1 | 10 | 9 | 7 | 2 | 12.0,7.5,5.0\nb2 | 15 | 14 | 12 | -1 | 8.0,6.5,7.0\nb3 | 17 | 18 | 14 | 4 | 40,35,30\nb4 | 20 | 19 | 17 | 3 | 11.0,8.5,2.0\nb5 | 25 | 24 | 22 | -2 | 5.0,0.5,5.0\nb6 | 27 | 26 | 26 | -4 | 30,25,20\nb7 | 30 | 29 | 27 | 1 | 7.0,-0.5,1.0\nb8 | 35 | 34 | 32 | -3 | -6.0,-1.5,3.0",
+            "title": "Timestamped independent-block audit"
+          },
+          {
+            "id": "qt_cost",
+            "release_stage": 1,
+            "text": "Eligible blocks require feature publication no later than decision, and latest training-label end no later than decision minus2. If a block fails, remove it for all policies before forming either checkpoint. For each eligible policy/block subtract spread0.5 bps plus half the square of traded units; traded units [A,B,C]=[1,2,1]. Then subtract beta times market bps using prespecified betas[1,0,-1]. These betas were frozen before this sample. The resulting residual net returns are the inputs for inference and regime diagnostics, not gross returns.",
+            "title": "Frozen residual-return transformation"
+          },
+          {
+            "id": "qt_registry",
+            "release_stage": 1,
+            "text": "Exactly policies A,B,C were inspected, each at two checkpoints: first3 eligible blocks and all6 eligible blocks. All six scores were inspected including archived scores. At checkpoint k, score is sum(x_i)/sqrt(sum(x_i^2)). The published candidate is the highest of all six scores; exact ties use alphabetical policy then longer checkpoint. Under the stipulated complete null, conditional on the absolute block vectors, all2^6 vectors of independent signs on whole blocks are equally likely. A block sign multiplies all three policies together; policy columns must not get independent signs. The selection-adjusted one-sided p is the fraction of these signs for which the maximum of all six recomputed scores is at least the observed selected score. The unadjusted p compares only the selected policy/checkpoint statistic. Include equality and all signs, with no Monte Carlo or plus-one correction.",
+            "title": "Complete selection universe and joint null"
+          },
+          {
+            "id": "qt_gate",
+            "release_stage": 1,
+            "text": "Deployment requires selection-adjusted p at most0.05, selected checkpoint equal to the full6 eligible blocks, and selected policy mean residual net return strictly positive separately in the first3 and last3 eligible blocks, with the late-regime mean at least half the early-regime mean. All gates bind. The late-regime mean always uses last3 eligible blocks, even if the selected checkpoint was first3. The regime diagnostic is an economic stability gate, not another p-value. Report the selected score without rounding it before comparisons.",
+            "title": "Deployment and stability rule"
+          }
+        ],
+        "title": "Audit a correlated research search with regime gates",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "qt_tape",
+        "title": "Timestamped independent-block audit"
+      },
+      {
+        "id": "qt_cost",
+        "title": "Frozen residual-return transformation"
+      },
+      {
+        "id": "qt_registry",
+        "title": "Complete selection universe and joint null"
+      },
+      {
+        "id": "qt_gate",
+        "title": "Deployment and stability rule"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "deploy": "<typed value>",
+        "eligible_blocks": "<typed value>",
+        "late_regime_mean": "<typed value>",
+        "selected_checkpoint": "<typed value>",
+        "selected_policy": "<typed value>",
+        "selected_statistic": "<typed value>",
+        "selection_adjusted_p": "<typed value>",
+        "unadjusted_p": "<typed value>"
+      },
+      "evidence": {
+        "deploy": [
+          "<viewed supporting document ID>"
+        ],
+        "eligible_blocks": [
+          "<viewed supporting document ID>"
+        ],
+        "late_regime_mean": [
+          "<viewed supporting document ID>"
+        ],
+        "selected_checkpoint": [
+          "<viewed supporting document ID>"
+        ],
+        "selected_policy": [
+          "<viewed supporting document ID>"
+        ],
+        "selected_statistic": [
+          "<viewed supporting document ID>"
+        ],
+        "selection_adjusted_p": [
+          "<viewed supporting document ID>"
+        ],
+        "unadjusted_p": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c214",
+      "turn": 1
+    },
+    "inputs": {
+      "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+    },
+    "outputs": {
+      "deploy": {
+        "description": "Boolean under all deployment gates.",
+        "type": "boolean"
+      },
+      "eligible_blocks": {
+        "description": "Array of block ids in numeric order.",
+        "type": "array"
+      },
+      "late_regime_mean": {
+        "description": "Number, selected policy late-regime residual net bps.",
+        "type": "number"
+      },
+      "selected_checkpoint": {
+        "description": "Integer3 or6.",
+        "type": "number"
+      },
+      "selected_policy": {
+        "description": "String A, B or C.",
+        "type": "string"
+      },
+      "selected_statistic": {
+        "description": "Number, selected standardized score.",
+        "type": "number"
+      },
+      "selection_adjusted_p": {
+        "description": "Number, exact search-adjusted probability.",
+        "type": "number"
+      },
+      "unadjusted_p": {
+        "description": "Number, exact selected-statistic sign-randomization probability.",
+        "type": "number"
+      }
+    },
+    "prompt": "Determine whether the published research winner can be deployed. Reconstruct point-in-time eligible net residual returns, account for every inspected policy and checkpoint with their shared block dependence, and apply the independent regime gates. Return the selected candidate and both exact inference probabilities.",
+    "question_id": "c214",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c214",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "qt_tape",
+        "release_stage": 1,
+        "text": "Columns are id | decision day | first feature publication day | latest training-label end day | market bps | gross bps [A,B,C]. Blocks have disjoint future P&L windows and independent sign shocks if eligible. No rows beyond this complete tape exist. Rows are ordered by numeric block id; publication is effective at start of its day.\nb1 | 10 | 9 | 7 | 2 | 12.0,7.5,5.0\nb2 | 15 | 14 | 12 | -1 | 8.0,6.5,7.0\nb3 | 17 | 18 | 14 | 4 | 40,35,30\nb4 | 20 | 19 | 17 | 3 | 11.0,8.5,2.0\nb5 | 25 | 24 | 22 | -2 | 5.0,0.5,5.0\nb6 | 27 | 26 | 26 | -4 | 30,25,20\nb7 | 30 | 29 | 27 | 1 | 7.0,-0.5,1.0\nb8 | 35 | 34 | 32 | -3 | -6.0,-1.5,3.0",
+        "title": "Timestamped independent-block audit"
+      },
+      {
+        "id": "qt_cost",
+        "release_stage": 1,
+        "text": "Eligible blocks require feature publication no later than decision, and latest training-label end no later than decision minus2. If a block fails, remove it for all policies before forming either checkpoint. For each eligible policy/block subtract spread0.5 bps plus half the square of traded units; traded units [A,B,C]=[1,2,1]. Then subtract beta times market bps using prespecified betas[1,0,-1]. These betas were frozen before this sample. The resulting residual net returns are the inputs for inference and regime diagnostics, not gross returns.",
+        "title": "Frozen residual-return transformation"
+      },
+      {
+        "id": "qt_registry",
+        "release_stage": 1,
+        "text": "Exactly policies A,B,C were inspected, each at two checkpoints: first3 eligible blocks and all6 eligible blocks. All six scores were inspected including archived scores. At checkpoint k, score is sum(x_i)/sqrt(sum(x_i^2)). The published candidate is the highest of all six scores; exact ties use alphabetical policy then longer checkpoint. Under the stipulated complete null, conditional on the absolute block vectors, all2^6 vectors of independent signs on whole blocks are equally likely. A block sign multiplies all three policies together; policy columns must not get independent signs. The selection-adjusted one-sided p is the fraction of these signs for which the maximum of all six recomputed scores is at least the observed selected score. The unadjusted p compares only the selected policy/checkpoint statistic. Include equality and all signs, with no Monte Carlo or plus-one correction.",
+        "title": "Complete selection universe and joint null"
+      },
+      {
+        "id": "qt_gate",
+        "release_stage": 1,
+        "text": "Deployment requires selection-adjusted p at most0.05, selected checkpoint equal to the full6 eligible blocks, and selected policy mean residual net return strictly positive separately in the first3 and last3 eligible blocks, with the late-regime mean at least half the early-regime mean. All gates bind. The late-regime mean always uses last3 eligible blocks, even if the selected checkpoint was first3. The regime diagnostic is an economic stability gate, not another p-value. Report the selected score without rounding it before comparisons.",
+        "title": "Deployment and stability rule"
+      }
+    ],
+    "title": "Audit a correlated research search with regime gates",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

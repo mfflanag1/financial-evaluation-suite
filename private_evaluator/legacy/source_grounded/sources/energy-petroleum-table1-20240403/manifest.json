@@ -1,0 +1,24 @@
+{
+  "id": "energy-petroleum-table1-20240403",
+  "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/csv/table1.csv",
+  "title": "Weekly Petroleum Status Report — Table 1 U.S. Petroleum Balance Sheet — week ending March 29, 2024",
+  "publisher": "U.S. Energy Information Administration",
+  "published_at": "2024-04-03T23:59:59-04:00",
+  "publication_precision": "day",
+  "availability_basis": "Dated official archive page energy-petroleum-index-20240403 states release April 3, 2024 for the March 29 reporting week and links the archived tables. Day-only availability uses 23:59:59 America/New_York (UTC-04:00). No exact publication time is claimed.",
+  "retrieved_at": "2026-10-04T17:53:49Z",
+  "redistribution_status": "EIA U.S. federal statistical material with official attribution and URLs retained; no linked third-party assets included. Extracted gas evidence excludes third-party market-price and analyst-survey sections. Raw HTML is retained locally for audit; broader redistribution of embedded third-party material requires review.",
+  "raw_path": "sources/energy-petroleum-table1-20240403/evidence.txt",
+  "text_path": "sources/energy-petroleum-table1-20240403/evidence.txt",
+  "raw_sha256": "5c97ad11cb4c666e7628917e66931b93a20225c7a22e15b8d0fbd0da3bc60ee7",
+  "text_sha256": "5c97ad11cb4c666e7628917e66931b93a20225c7a22e15b8d0fbd0da3bc60ee7",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_csv_with_complete_table_text",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_csv_with_complete_table_text.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

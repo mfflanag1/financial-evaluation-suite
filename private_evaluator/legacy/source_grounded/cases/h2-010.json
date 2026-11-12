@@ -1,0 +1,94 @@
+{
+  "id": "h2-010",
+  "case_group": "pjm-2025-26-location-and-elcc-column-vintage",
+  "lane": "energy_commodities",
+  "status": "candidate",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T20:05:48Z",
+  "source_ids": [
+    "h2b-pjm-elcc",
+    "h2b-pjm-auction"
+  ],
+  "prompt": "Value a synthetic PJM capacity portfolio for the inclusive June1,2025–May31,2026 delivery interval using the retained auction report and ELCC comparison presentation. It contains a100MW Gas CC resource in DOM, a100MW Solar Tracking Panel resource in BGE, and100MW of4-hour storage in the rest of RTO. For this exercise only, accredited MW equal nameplate times the delivery-year CLASS rating, each resource-specific adjustment factor is1, all of that capacity clears at the applicable stated auction price, and delivery is constant. No penalties, fees, outage adjustments or other revenues apply. The storage asset has a synthetic $6,000,000 annual fixed cost. Calculate portfolio revenue and the location uplift relative to pricing all its proxy accredited MW at rest-of-RTO. Show the revenue error from selecting the2026/27 rating column instead while leaving delivery days and2025/26 prices unchanged. Then determine the storage-only break-even capacity price. Distinguish this explicitly stipulated class-rating valuation from actual resource accreditation/awards, and determine whether the next-year rating update also identifies next-year auction prices.\n\nUse the supplied historical documents as specified; this packet is a retrospective conditional analysis with observed 2026 source availability, not a claim of contemporaneous historical execution. Return typed outputs with supporting verbatim clauses; declared support_dependencies permit explicit support_refs to reuse previously justified answers. Synthetic inputs need no invented citation.",
+  "output_fields": [
+    {
+      "id": "delivery_days",
+      "type": "number",
+      "unit": "days",
+      "description": "Inclusive number of days in the stated delivery interval.",
+      "evidence_required": false,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "portfolio_proxy_ucap",
+      "type": "number",
+      "unit": "MW",
+      "description": "Aggregate2025/26 class-rating proxy for the three100MW assets.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "annual_gross_capacity_revenue",
+      "type": "number",
+      "unit": "USD",
+      "description": "Annual capacity revenue under the stipulated clearing and accreditation proxy.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "delivery_days",
+        "portfolio_proxy_ucap"
+      ]
+    },
+    {
+      "id": "locational_revenue_uplift",
+      "type": "number",
+      "unit": "USD",
+      "description": "Revenue above valuing every asset proxy MW at the rest-of-RTO price.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "annual_gross_capacity_revenue",
+        "portfolio_proxy_ucap",
+        "delivery_days"
+      ]
+    },
+    {
+      "id": "future_rating_vintage_revenue_change",
+      "type": "number",
+      "unit": "USD",
+      "description": "Revenue using2026/27 class percentages minus revenue using2025/26 percentages, with all2025/26 prices unchanged.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "annual_gross_capacity_revenue"
+      ]
+    },
+    {
+      "id": "storage_break_even_capacity_price",
+      "type": "number",
+      "unit": "USD_per_MW_day",
+      "description": "Capacity price needed for the storage asset alone to cover its stipulated annual cost.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "delivery_days"
+      ]
+    },
+    {
+      "id": "actual_resource_revenue_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Without the hypothetical accreditation and clearing assumptions, do these two documents identify actual revenue for these three specific assets?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "next_year_auction_prices_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the ELCC2026/27 rating update identify the next delivery year auction prices?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ]
+}

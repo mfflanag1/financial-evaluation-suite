@@ -1,0 +1,53 @@
+[
+  {
+    "id": "bls-20240202",
+    "url": "https://www.bls.gov/news.release/archives/empsit_02022024.htm",
+    "title": "The Employment Situation \u2014 January 2024",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "published_at": "2024-02-02T13:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official dated archive header states an 8:30 a.m. ET embargo expiration. UTC conversion uses America/New_York including daylight saving time. This is the official announced release time, not an independently observed first-public-access timestamp. The task uses an end-of-release-day cutoff rather than an exact-release-instant cutoff.",
+    "text_sha256": "46f435c0df815c70a49dbcfd0d1df20f01ae42c7d7f6c6fdfd38d182d66f528c",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: unspecified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "bls-20240308",
+    "url": "https://www.bls.gov/news.release/archives/empsit_03082024.htm",
+    "title": "The Employment Situation \u2014 February 2024",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "published_at": "2024-03-08T13:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official dated archive header states an 8:30 a.m. ET embargo expiration. UTC conversion uses America/New_York including daylight saving time. This is the official announced release time, not an independently observed first-public-access timestamp. The task uses an end-of-release-day cutoff rather than an exact-release-instant cutoff.",
+    "text_sha256": "4225e3fcbbdc0011ced8fbd8c0bb82ed7acb74b7cf747fcf91e383c5596b9264",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: unspecified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "bls-20240405",
+    "url": "https://www.bls.gov/news.release/archives/empsit_04052024.htm",
+    "title": "The Employment Situation \u2014 March 2024",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "published_at": "2024-04-05T12:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official dated archive header states an 8:30 a.m. ET embargo expiration. UTC conversion uses America/New_York including daylight saving time. This is the official announced release time, not an independently observed first-public-access timestamp. The task uses an end-of-release-day cutoff rather than an exact-release-instant cutoff.",
+    "text_sha256": "667aad9f048d7c96c33b60ede86a854086b734b4f25fd9169612db3f149f4152",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: unspecified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

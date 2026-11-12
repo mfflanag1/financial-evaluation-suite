@@ -1,0 +1,357 @@
+{
+  "case_id": "h2-004",
+  "reference_solution": {
+    "timeline": "Export May2024 vsNewRevolverAug2024 difference3calendar months. November2025 limit2.5;February 2026 limit3.0.",
+    "optimization": "Interest caps3000/2.5=1200 and3000/3=1000. Required repayment(1200-1000)/.10=2000;liquidity capacity3000-1500=1500. Remaining interest1050;coverage3000/1050=20/7;required EBITDA3150 gives uplift150. Cash repayment alone cannot satisfy both."
+  },
+  "fields": [
+    {
+      "id": "export_credit_test_precedes_new_revolver_months",
+      "expected": 3,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "For certain unsecured loans and the New Revolving Facility, from the end of each fiscal quarter from August 31, 2024",
+              "For the export credit facilities, from the end of each fiscal quarter from May 31, 2024"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "november2025_maximum_net_interest",
+      "expected": 1200.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "not less than 2.5 to 1.0 for the August 31, 2025 and November 30, 2025 testing dates"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "not less than 2.5 to 1.0 for the August 31, 2025 and November 30, 2025 testing dates"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "february2026_maximum_net_interest",
+      "expected": 1000,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "repayment_required_for_feb2026_coverage",
+      "expected": 2000.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "maximum_repayment_from_liquidity",
+      "expected": 1500,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "coverage_after_maximum_liquidity_repayment",
+      "expected": 2.857142857142857,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "minimum_additional_ebitda_after_maximum_repayment",
+      "expected": 150,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "repayment_alone_feasible_under_both_tests",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "adjusted EBITDA to consolidated net interest charges, as defined in the agreements"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "Maintain minimum liquidity of $1.5 billion"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "all_contractual_permissions_and_covenants_established",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "minimum issued capital and consolidated reserves"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "Limit our debt to capital"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-2024",
+            "anchors": [
+              "Limit the amounts of our secured assets"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "minimum issued capital and consolidated reserves"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "Limit its debt to capital"
+            ]
+          },
+          {
+            "source_id": "h2a-carnival-mid2024",
+            "anchors": [
+              "Limit the amounts of our secured assets"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+    "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+    "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+  ]
+}

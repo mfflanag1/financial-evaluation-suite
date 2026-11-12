@@ -1,0 +1,61 @@
+{
+  "question_id": "q139",
+  "title": "Guidance coverage across recognition corrections and late contracts",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Bridge annual revenue guidance into the required fourth quarter. All amounts are USD million and annual guidance is an interval, not an expected value. The disclosed Q4 capacity is a hard ceiling on new revenue accepted within Q4. There is initially no deferred recognition entering Q4. Determine whether capacity can reach neither endpoint, only the floor, or the full range; equality supports an endpoint. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "annual_revenue_guidance": [
+      1000,
+      1100
+    ],
+    "h1_reported_revenue": 480,
+    "q3_reported_revenue": 260,
+    "q4_new_acceptance_capacity": 320
+  },
+  "sources": [
+    {
+      "id": "q139_t1_1",
+      "text": "Synthetic packet. The annual guidance and H1/Q3 revenue use the same consolidated perimeter and recognition policy. H1 is cumulative for six months; Q3 is standalone for three months."
+    },
+    {
+      "id": "q139_t1_2",
+      "text": "Synthetic packet. Operations states a ceiling on Q4 newly accepted revenue. This ceiling is capacity, not firm orders, and establishes feasibility rather than certainty."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "required_new_q4_revenue",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "To reach lower, upper annual guidance.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "recognized_carry_into_q4",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Deferred prior shipments eligible for Q4 recognition.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "q4_new_capacity",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Maximum new Q4 recognition.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "capacity_support",
+      "type": "string",
+      "unit": "label",
+      "description": "Exactly neither, floor_only, or full_range."
+    }
+  ]
+}

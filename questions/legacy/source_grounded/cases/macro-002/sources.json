@@ -1,0 +1,36 @@
+[
+  {
+    "id": "exp-cpi-20240111",
+    "url": "https://www.bls.gov/news.release/archives/cpi_01112024.htm",
+    "title": "CPI December 2023 \u2014 January 11, 2024 release",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "published_at": "2024-01-11T13:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official release header announces 8:30 a.m. Eastern; conversion uses the stated date's standard/daylight offset. This is an announced release time, not an independently observed first fetch. Case cutoff is end of release day.",
+    "text_sha256": "e14767e4b6f46f8de1ae228f78cfc6bfbb3dc37f10f7984d86065455bf35173c",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "exp-cpi-20240213",
+    "url": "https://www.bls.gov/news.release/archives/cpi_02132024.htm",
+    "title": "CPI January 2024 \u2014 February 13, 2024 release",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "published_at": "2024-02-13T13:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official release header announces 8:30 a.m. Eastern; conversion uses the stated date's standard/daylight offset. This is an announced release time, not an independently observed first fetch. Case cutoff is end of release day.",
+    "text_sha256": "4133d468d8e94c9ee611b1d9e3fec9ea91c82dea1037a2ab674e45db666b2292",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

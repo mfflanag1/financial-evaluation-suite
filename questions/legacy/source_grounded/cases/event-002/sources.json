@@ -1,0 +1,20 @@
+[
+  {
+    "id": "event-broadcom-vmware-contract",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312522161016/d525235dex21.htm",
+    "title": "Broadcom / VMware merger agreement: sections 3.3 and 3.4",
+    "publisher": "Broadcom Inc. and VMware Inc.; SEC EDGAR",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "This primary SEC URL was publicly accessible, and its capture was retained before the recorded UTC observation bound. Original public dissemination time has not been independently established; document_date is descriptive only. No historical trading eligibility is claimed.",
+    "text_sha256": "d88e074bf341f6453ca0a5254cc8e069ba94bb7492e9f7ae56e040024562e4c7",
+    "available_by": "2026-10-04T17:52:09Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

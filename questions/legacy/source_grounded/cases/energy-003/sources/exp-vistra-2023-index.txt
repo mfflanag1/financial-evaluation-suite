@@ -1,0 +1,26 @@
+Form 10-K - Annual report [Section 13 and 15(d), not S-K Item 405]:
+
+SEC Accession No. 0001692819-24-000012
+
+Filing Date
+
+2024-02-29
+
+Accepted
+
+2024-02-28 21:35:37
+
+Documents
+
+169
+
+Period of Report
+
+2023-12-31
+
+Interactive Data
+
+Document Format Files
+Seq | Description | Document | Type | Size
+--- | --- | --- | --- | ---
+1 | 10-K | vistra-20231231.htm iXBRL | 10-K | 5612691

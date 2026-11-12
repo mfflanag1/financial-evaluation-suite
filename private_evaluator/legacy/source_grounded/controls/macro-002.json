@@ -1,0 +1,1122 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All requested values and source operands supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "latest_vintage_leaks_into_first_proxy",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses revised history as the original first-vintage path.",
+    "expected_failures": {
+      "q4_annualized_proxy_jan11": [
+        "incorrect_value_or_type"
+      ],
+      "q4_annualized_proxy_revision": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "linear_sum_annualization",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.4,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Sums rounded monthly rates and multiplies by four instead of compounding.",
+    "expected_failures": {
+      "q4_annualized_proxy_jan11": [
+        "incorrect_value_or_type"
+      ],
+      "q4_annualized_proxy_feb13": [
+        "incorrect_value_or_type"
+      ],
+      "q4_annualized_proxy_revision": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "new_month_yoy_called_revision",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Confuses January versus December year-on-year change with a revision to December.",
+    "expected_failures": {
+      "december_nsa_yoy_revision": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "revision_netted_into_surprise",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Subtracts December's downward revision from a differently defined January surprise.",
+    "expected_failures": {
+      "january_surprise_given_expectation": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "invent_missing_expectation_and_precision",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": true,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": true,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Invents a consensus expectation and unrounded index precision.",
+    "expected_failures": {
+      "surprise_identifiable_without_expectation": [
+        "incorrect_value_or_type"
+      ],
+      "proxy_equals_exact_index_growth": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "wrong_vintage_evidence",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in December on a seasonally adjusted basis, after rising 0.1 percent in November"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct first-vintage proxy cites only the later release.",
+    "expected_failures": {
+      "q4_annualized_proxy_jan11": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "table_routes_without_revision_boilerplate",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "3.4-percent increase for the 12 months ending December"
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Equivalent Table A operands support the arithmetic; seasonal-method boilerplate is not a numeric input.",
+    "expected_failures": {}
+  },
+  {
+    "name": "concise_narrative_revision_operands",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "increased 0.3 percent in December on a seasonally adjusted basis"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "increased 0.3 percent in January on a seasonally adjusted basis"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "The all items index rose 3.4 percent for the 12 months ending December"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "3.4-percent increase for the 12 months ending December"
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "increased 0.3 percent in January on a seasonally adjusted basis"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Short narrative fragments preserve period/definition and support separate monthly and annual operands.",
+    "expected_failures": {}
+  },
+  {
+    "name": "revision_missing_original_operand",
+    "response": {
+      "case_id": "macro-002",
+      "answers": {
+        "december_sa_revision": {
+          "value": -0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "q4_annualized_proxy_jan11": {
+          "value": 1.6108400887200973,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            }
+          ]
+        },
+        "q4_annualized_proxy_feb13": {
+          "value": 2.018299965844161,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "q4_annualized_proxy_revision": {
+          "value": 0.40745987712406356,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "For January 2024, revised seasonal factors and seasonally adjusted indexes for 2019 to 2023 were calculated and published."
+            }
+          ]
+        },
+        "january_sa_acceleration": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "december_nsa_yoy_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240111",
+              "quote": "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            },
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The all items index rose 3.1 percent for the 12 months ending January, a smaller increase than the 3.4-percent increase for the 12 months ending December."
+            }
+          ]
+        },
+        "january_surprise_given_expectation": {
+          "value": 0.1,
+          "evidence": [
+            {
+              "source_id": "exp-cpi-20240213",
+              "quote": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            }
+          ]
+        },
+        "surprise_identifiable_without_expectation": {
+          "value": false,
+          "evidence": []
+        },
+        "proxy_equals_exact_index_growth": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+        "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "The later December observation alone cannot establish its revision from the first release.",
+    "expected_failures": {
+      "december_sa_revision": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

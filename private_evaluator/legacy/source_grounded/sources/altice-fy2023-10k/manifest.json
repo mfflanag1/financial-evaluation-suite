@@ -1,0 +1,26 @@
+{
+  "id": "altice-fy2023-10k",
+  "url": "https://www.sec.gov/Archives/edgar/data/1702780/000162828024004863/atus-20231231.htm",
+  "title": "Altice USA FY2023 Form 10-K, selected MD&A reconciliations",
+  "publisher": "Altice USA, Inc.; SEC EDGAR archive",
+  "published_at": "2024-02-15T23:59:59-05:00",
+  "publication_precision": "day",
+  "available_by": "2026-10-04T17:16:20Z",
+  "availability_basis": "Official EDGAR filing index gives the filing day; published_at conservatively encodes its New York end of day. available_by is a later observation bound recorded after the public-source capture was retained; no exact original dissemination timestamp is claimed.",
+  "document_date": "2024-02-15",
+  "retrieved_at": "2026-10-04T17:16:20Z",
+  "redistribution_status": "Publicly accessible SEC-hosted issuer material; underlying redistribution rights unverified. Local research only; no public dataset release authorized.",
+  "raw_path": "sources/altice-fy2023-10k/evidence.txt",
+  "text_path": "sources/altice-fy2023-10k/evidence.txt",
+  "raw_sha256": "01bd81ffc0ae48a2259aa9efef4a053793386cbffa6f40be5bc5efd9d6d28e05",
+  "text_sha256": "01bd81ffc0ae48a2259aa9efef4a053793386cbffa6f40be5bc5efd9d6d28e05",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

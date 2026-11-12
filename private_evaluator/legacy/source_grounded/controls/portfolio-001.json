@@ -1,0 +1,3919 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "minimal_quotes_whitespace_normalized",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit\nFacility\nwere\n$\n664\nmillion"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed\n$\n663\nmillion"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution\nratio\nis\n0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution\nratio\nis\n0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution\nratio\nis\n0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution\nratio\nis\n0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$\n500\nmillion\nterm\nloan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution\nratio\nis\n0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100\nKellanova\n(K)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25\n(New)\nWK\nKellogg\nCompany\n(KLG)\nCommon\nShares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier:\n100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Same minimal clauses with whitespace variation remain valid source evidence"
+  },
+  {
+    "name": "best_terminal_plan_ignores_early_cash",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "ABC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_plan": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Unconstrained best plan needs20850 before T2, above18000"
+  },
+  {
+    "name": "future_receipts_netted_into_cash",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 14250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_minimum_cash": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Lets S2 equity and credit receipts fund the option call early; the wrongly netted minimum becomes T0 cash"
+  },
+  {
+    "name": "basis_points_as_percent",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 10000000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "credit_participation_principal": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Interprets0.02% participation as2%"
+  },
+  {
+    "name": "allocation_percent_as_share_ratio",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=850",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "net_share_equivalents": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Uses5% operational settlement allocation for option KLG shares"
+  },
+  {
+    "name": "fees_omitted",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_worst_pnl": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Omits250 of selected hedge fees"
+  },
+  {
+    "name": "missing_margin_assumed_zero",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "determined",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "missing_margin_optimizer_status": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Unknown margin changes feasible set and optimizer"
+  },
+  {
+    "name": "cash_boundary_one_cent_early",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20849.99,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_optimizer_change_budget": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ABC still has a negative early cash balance one cent below the exact threshold"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": []
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "credit_participation_principal": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Required public input has no source evidence"
+  },
+  {
+    "name": "fabricated_evidence",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "The agency guarantees this synthetic portfolio is optimal."
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "credit_participation_principal": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Invented quote absent from frozen source"
+  },
+  {
+    "name": "wrong_source_evidence",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "credit_participation_principal": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Required valid evidence is retained; extra citation uses an available source lacking the quote"
+  },
+  {
+    "name": "concise_pricing_formula_optimizer_evidence",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Direct OCC quote formula times quotation multiplier establishes the dollar basket; redundant deliverable wording is unnecessary"
+  },
+  {
+    "name": "issuer_distribution_alternative",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "WK's one-for-four distribution establishes the equity entitlement as an alternative to OCC's decimal ratio"
+  },
+  {
+    "name": "cash_fields_without_equity_distribution",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Only loan participation and option cash-call inputs affect early funding; equity receipts are explicitly unavailable"
+  },
+  {
+    "name": "missing_loan_operand",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "base_scenario_pnl": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Option and equity terms do not establish the credit participation principal"
+  },
+  {
+    "name": "missing_quotation_multiplier",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "feasible_plans": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Quote formula alone does not convert option P&L and strike cash into dollars"
+  },
+  {
+    "name": "missing_equity_distribution_operand",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "K1 = K + 0.25 (KLG)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_plan": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Option terms and loan principal alone do not establish the equity pod's distributed-share entitlement"
+  },
+  {
+    "name": "missing_option_child_component",
+    "response": {
+      "case_id": "portfolio-001",
+      "answers": {
+        "financing_ledger_difference": {
+          "value": 1.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "Credit Facility were $ 664 million"
+            },
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "distributed $ 663 million"
+            }
+          ]
+        },
+        "credit_participation_principal": {
+          "value": 100000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            }
+          ]
+        },
+        "net_share_equivalents": {
+          "value": "K=1000;KLG=250",
+          "evidence": [
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "base_scenario_pnl": {
+          "value": "S1=-9500;S2=5000;S3=-1500",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AC|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AC",
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -5750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 250.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 20850.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-wk-2023-q3",
+              "quote": "$ 500 million term loan"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "distribution ratio is 0.25"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "100 Kellanova (K) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "25 (New) WK Kellogg Company (KLG) Common Shares"
+            },
+            {
+              "source_id": "portfolio-occ-53276",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "base_scenario_pnl": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Direct basket evidence omits its KLG component and supplies no equivalent complete pricing formula"
+  }
+]

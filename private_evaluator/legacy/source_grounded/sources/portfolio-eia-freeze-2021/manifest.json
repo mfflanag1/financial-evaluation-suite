@@ -1,0 +1,26 @@
+{
+  "id": "portfolio-eia-freeze-2021",
+  "url": "https://www.eia.gov/todayinenergy/detail.php?id=47896",
+  "title": "February 2021 weather triggers largest monthly decline in U.S. natural gas production",
+  "publisher": "U.S. Energy Information Administration",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T18:14:08Z",
+  "availability_basis": "Primary-source bytes or rendered captures were retained by the recorded retrieval time and the observation bound 2026-10-04T18:14:08Z. Document date is not used as proof of historical first availability; this is a retrospective conditional-analysis pack.",
+  "document_date": "2021-05-10",
+  "retrieved_at": "2026-10-04T18:14:00.600092+00:00",
+  "redistribution_status": "Public source, redistribution rights not adjudicated; local research only.",
+  "raw_path": "sources/portfolio-eia-freeze-2021/evidence.txt",
+  "text_path": "sources/portfolio-eia-freeze-2021/evidence.txt",
+  "raw_sha256": "07bd84ba06a7084330de8a951f485aeac7801a6d9f808e12d4669b89070ccee9",
+  "text_sha256": "07bd84ba06a7084330de8a951f485aeac7801a6d9f808e12d4669b89070ccee9",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_html_with_selected_reproducible_excerpts",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_html_with_selected_reproducible_excerpts.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

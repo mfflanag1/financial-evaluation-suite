@@ -1,0 +1,56 @@
+[
+  {
+    "id": "vol-occ-48921",
+    "url": "https://infomemo.theocc.com/infomemos?number=48921",
+    "title": "General Electric Company - Reverse Split Option Symbols: GE/1GE/2GE New Symbols: GE1/1GE1/2GE1",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+    "text_sha256": "b44a0a52f1cf160a9a3cd52be9ba6b949d571e6b24be79ddff9878352f37e316",
+    "available_by": "2026-10-04T17:52:56Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "vol-occ-49105",
+    "url": "https://infomemo.theocc.com/infomemos?number=49105",
+    "title": "GE1 Options - Expiration Pricing Consideration",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+    "text_sha256": "2561ddfff04d975f2a0c25ff7e9eebe866e69876091787489b657f5bfd5c7eb1",
+    "available_by": "2026-10-04T17:52:56Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "vol-occ-49146",
+    "url": "https://infomemo.theocc.com/infomemos?number=49146",
+    "title": "Adjusted General Electric Company - Cash In Lieu Settlement Adjusted Option Symbols: GE1/1GE1/2GE1",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+    "text_sha256": "67d33a5140033cf3f33d844f57882147ec035f0b89b4f01c4d7a2623f42e4dd4",
+    "available_by": "2026-10-04T17:52:56Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

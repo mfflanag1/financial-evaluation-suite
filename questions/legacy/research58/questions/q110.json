@@ -1,0 +1,94 @@
+{
+  "question_id": "q110",
+  "title": "Conflicting cash-flow publications and usable liquidity",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Resolve the conflicting nine-month cash-flow packets. The signed filed schedule supersedes the preliminary release for all overlapping CFO figures. FCF deducts both PPE and capitalized-software cash investment. For this research comparison remove the current-period factoring proceeds and customer advances from CFO; the prior period has neither. This normalization is an analytical convention, not a GAAP restatement. Evaluate the separate immediate cash obligation using balance-sheet unrestricted cash, without adding year-to-date FCF again. Amounts are USD million. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "press_release_cfo": 290,
+    "filed_ytd_cfo": 270,
+    "filed_ppe_capex": 85,
+    "filed_software_capex": 25,
+    "prior_ytd_cfo": 220,
+    "prior_ppe_capex": 70,
+    "prior_software_capex": 20,
+    "factoring_cash_current": 60,
+    "customer_advance_current": 30,
+    "cash_balance": 200,
+    "restricted_cash": 55,
+    "immediate_obligation": 160
+  },
+  "sources": [
+    {
+      "id": "q110_t1_1",
+      "text": "Synthetic packet. The preliminary release is unaudited management commentary. The later signed cash-flow schedule is controlling and reports CFO and two classes of investing outflow for the same nine-month period."
+    },
+    {
+      "id": "q110_t1_2",
+      "text": "Synthetic packet. The cash-quality memorandum identifies nonrecurring factoring receipts and advances already included in CFO. Restricted cash cannot fund the immediate obligation; FCF is a period flow already reflected in closing cash."
+    },
+    {
+      "id": "q110_t1_3",
+      "text": "Synthetic superseded preliminary commentary. The early release used the provisional CFO amount in inputs and described PPE-only free cash flow as the cash-generation headline. The later filed schedule overrides that overlapping amount and includes software investment."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "authoritative_basis",
+      "type": "string",
+      "unit": "label",
+      "description": "Exact label filed_schedule or preliminary_release."
+    },
+    {
+      "name": "reported_fcf",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Filed CFO less both investment classes.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "normalized_fcf",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Specified cash-quality normalization.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "normalized_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Normalized current FCF versus prior FCF; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "omitted_software_capex",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Amount by which PPE-only FCF overstates full FCF.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "usable_cash",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Unrestricted closing cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "immediate_funding_gap",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Unfunded immediate obligation; floor at zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

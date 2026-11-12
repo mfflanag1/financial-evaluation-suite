@@ -1,0 +1,393 @@
+{
+  "id": "q101",
+  "title": "Daily fund close across desks and currencies",
+  "prompt": "Reconstruct two daily fund closes from the unsorted raw tables. All data are synthetic. USD is the fund base currency; FX quotes are USD per one unit of local currency. Each security belongs to exactly one desk and its stated currency. Missing opening cash accounts have zero balance. Signed positions and fills are positive for long/buy and negative for short/sell. Every fill settles immediately in local cash; its nonnegative fee is charged in that same currency. No currency conversions, financing accruals, taxes or events exist beyond the tables. Prices and cash amounts are not rounded internally.\n\nAt each day's beginning, external investor flows occur at the previous close's FX; they precede all market moves, income and fills. A negative external flow is a withdrawal. Dividends are paid that day using the position carried from the previous close, before that day's fills; shorts pay the dividend. Cash expenses are nonnegative local cash charges. All supplied marks are closing, unadjusted prices.\n\nProduce each desk's four-component daily USD P&L attribution, in this exact convention: (1) local price change on opening positions, translated at current closing FX; (2) signed fill quantity times current closing mark minus fill price, translated at closing FX; (3) dividends minus fill fees and cash expenses, translated at closing FX; (4) FX movement on opening local cash plus opening positions valued at previous closing marks plus the day's beginning external flows. This assigns price/FX interactions to the local-price and fill components. Sum these components to obtain investment P&L, excluding the investor flow valued at previous closing FX. Compute daily returns with beginning-day flow-adjusted opening NAV in the denominator, then geometrically compound them. Do not count contributions as returns. Return the requested ledgers in the declared array order.",
+  "inputs": {
+    "opening_date": "2025-01-06",
+    "days": [
+      "2025-01-07",
+      "2025-01-08"
+    ],
+    "desks": [
+      "alpha",
+      "beta"
+    ],
+    "currencies": [
+      "USD",
+      "EUR",
+      "GBP"
+    ],
+    "security_order": [
+      "A",
+      "E",
+      "B",
+      "C"
+    ],
+    "securities": [
+      {
+        "id": "B",
+        "desk": "beta",
+        "currency": "GBP"
+      },
+      {
+        "id": "A",
+        "desk": "alpha",
+        "currency": "USD"
+      },
+      {
+        "id": "C",
+        "desk": "beta",
+        "currency": "USD"
+      },
+      {
+        "id": "E",
+        "desk": "alpha",
+        "currency": "EUR"
+      }
+    ],
+    "opening_positions": [
+      {
+        "security": "C",
+        "quantity": 200
+      },
+      {
+        "security": "B",
+        "quantity": -50
+      },
+      {
+        "security": "E",
+        "quantity": 80
+      },
+      {
+        "security": "A",
+        "quantity": 120
+      }
+    ],
+    "opening_cash": [
+      {
+        "desk": "beta",
+        "currency": "GBP",
+        "amount": 2500
+      },
+      {
+        "desk": "alpha",
+        "currency": "EUR",
+        "amount": 4000
+      },
+      {
+        "desk": "alpha",
+        "currency": "USD",
+        "amount": 12000
+      },
+      {
+        "desk": "beta",
+        "currency": "USD",
+        "amount": 8000
+      }
+    ],
+    "marks": [
+      {
+        "date": "2025-01-08",
+        "security": "E",
+        "price": 42
+      },
+      {
+        "date": "2025-01-06",
+        "security": "A",
+        "price": 50
+      },
+      {
+        "date": "2025-01-07",
+        "security": "B",
+        "price": 29
+      },
+      {
+        "date": "2025-01-06",
+        "security": "C",
+        "price": 20
+      },
+      {
+        "date": "2025-01-08",
+        "security": "A",
+        "price": 51
+      },
+      {
+        "date": "2025-01-07",
+        "security": "E",
+        "price": 41
+      },
+      {
+        "date": "2025-01-06",
+        "security": "B",
+        "price": 30
+      },
+      {
+        "date": "2025-01-08",
+        "security": "C",
+        "price": 20
+      },
+      {
+        "date": "2025-01-07",
+        "security": "A",
+        "price": 52
+      },
+      {
+        "date": "2025-01-06",
+        "security": "E",
+        "price": 40
+      },
+      {
+        "date": "2025-01-08",
+        "security": "B",
+        "price": 31
+      },
+      {
+        "date": "2025-01-07",
+        "security": "C",
+        "price": 19.5
+      }
+    ],
+    "fx": [
+      {
+        "date": "2025-01-07",
+        "currency": "GBP",
+        "usd_per_unit": 1.32
+      },
+      {
+        "date": "2025-01-06",
+        "currency": "EUR",
+        "usd_per_unit": 1.1
+      },
+      {
+        "date": "2025-01-08",
+        "currency": "USD",
+        "usd_per_unit": 1
+      },
+      {
+        "date": "2025-01-06",
+        "currency": "GBP",
+        "usd_per_unit": 1.3
+      },
+      {
+        "date": "2025-01-07",
+        "currency": "EUR",
+        "usd_per_unit": 1.08
+      },
+      {
+        "date": "2025-01-08",
+        "currency": "EUR",
+        "usd_per_unit": 1.12
+      },
+      {
+        "date": "2025-01-07",
+        "currency": "USD",
+        "usd_per_unit": 1
+      },
+      {
+        "date": "2025-01-06",
+        "currency": "USD",
+        "usd_per_unit": 1
+      },
+      {
+        "date": "2025-01-08",
+        "currency": "GBP",
+        "usd_per_unit": 1.28
+      }
+    ],
+    "external_flows": [
+      {
+        "date": "2025-01-08",
+        "desk": "beta",
+        "currency": "GBP",
+        "amount": 200
+      },
+      {
+        "date": "2025-01-07",
+        "desk": "alpha",
+        "currency": "EUR",
+        "amount": 1000
+      },
+      {
+        "date": "2025-01-08",
+        "desk": "alpha",
+        "currency": "USD",
+        "amount": -300
+      },
+      {
+        "date": "2025-01-07",
+        "desk": "beta",
+        "currency": "USD",
+        "amount": -500
+      }
+    ],
+    "fills": [
+      {
+        "date": "2025-01-08",
+        "fill_id": "f7",
+        "security": "B",
+        "quantity": -20,
+        "price": 30.5,
+        "fee": 1
+      },
+      {
+        "date": "2025-01-07",
+        "fill_id": "f2",
+        "security": "E",
+        "quantity": -30,
+        "price": 40.5,
+        "fee": 1.5
+      },
+      {
+        "date": "2025-01-08",
+        "fill_id": "f5",
+        "security": "A",
+        "quantity": -40,
+        "price": 51.4,
+        "fee": 2
+      },
+      {
+        "date": "2025-01-07",
+        "fill_id": "f4",
+        "security": "C",
+        "quantity": -50,
+        "price": 19.8,
+        "fee": 2
+      },
+      {
+        "date": "2025-01-07",
+        "fill_id": "f1",
+        "security": "A",
+        "quantity": 20,
+        "price": 51,
+        "fee": 2
+      },
+      {
+        "date": "2025-01-08",
+        "fill_id": "f8",
+        "security": "C",
+        "quantity": 25,
+        "price": 19.7,
+        "fee": 1
+      },
+      {
+        "date": "2025-01-07",
+        "fill_id": "f3",
+        "security": "B",
+        "quantity": 10,
+        "price": 29.5,
+        "fee": 1
+      },
+      {
+        "date": "2025-01-08",
+        "fill_id": "f6",
+        "security": "E",
+        "quantity": 10,
+        "price": 41.5,
+        "fee": 1
+      }
+    ],
+    "dividends": [
+      {
+        "date": "2025-01-08",
+        "security": "E",
+        "per_share": 0.5
+      },
+      {
+        "date": "2025-01-07",
+        "security": "B",
+        "per_share": 0.1
+      },
+      {
+        "date": "2025-01-08",
+        "security": "C",
+        "per_share": 0.1
+      },
+      {
+        "date": "2025-01-07",
+        "security": "A",
+        "per_share": 0.2
+      }
+    ],
+    "cash_expenses": [
+      {
+        "date": "2025-01-08",
+        "desk": "beta",
+        "currency": "GBP",
+        "amount": 4,
+        "kind": "borrow"
+      },
+      {
+        "date": "2025-01-07",
+        "desk": "beta",
+        "currency": "GBP",
+        "amount": 3,
+        "kind": "borrow"
+      },
+      {
+        "date": "2025-01-08",
+        "desk": "alpha",
+        "currency": "EUR",
+        "amount": 2,
+        "kind": "custody"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "name": "daily_nav_usd",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "One closing NAV per entry in days.",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "daily_desk_pnl_bridge_usd",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "Flatten date in days order, then desk in desks order, then [opening-position local-price P&L, fill-to-close P&L, net income/expenses, FX P&L].",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "daily_cash_local",
+      "type": "number_array",
+      "unit": "local currency units",
+      "description": "Flatten date in days order, then desk in desks order, then currency in currencies order; include zero accounts.",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "ending_quantities",
+      "type": "number_array",
+      "unit": "shares",
+      "description": "Last-close signed position quantities in security_order.",
+      "atol": 1e-08,
+      "rtol": 0.0
+    },
+    {
+      "name": "daily_returns",
+      "type": "number_array",
+      "unit": "decimal returns",
+      "description": "One flow-adjusted return per entry in days.",
+      "atol": 1e-07,
+      "rtol": 0.0
+    },
+    {
+      "name": "time_weighted_return",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Geometrically compounded daily flow-adjusted return.",
+      "atol": 1e-07,
+      "rtol": 0.0
+    }
+  ],
+  "instructions": "Submit strict JSON with exactly one key, code, whose value is Python source defining solve(data). The controller supplies the inputs object as data. Return a JSON-native dictionary mapping every declared output name to its answer. Use Python stdlib and NumPy only; do not read files, access the network, spawn processes, or use native tools. Write a general calculation from data, not constants for this instance. Your program will also be evaluated on undisclosed changed inputs under the same conventions. The controller will execute the first submission and give you its public outputs or error once, then ask for a final code submission. It never reveals reference answers or hidden test results. Supporting numerical ledgers and diagnostics are the declared array outputs; follow their ordering exactly. No markdown fences around your JSON.",
+  "workflow_area": "pnl",
+  "data_origin": "synthetic",
+  "provenance": {
+    "kind": "synthetic",
+    "sources": [],
+    "vintage_limits": "All instruments, quantities, dates, prices and events are stipulated; no observed market data."
+  }
+}

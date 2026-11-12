@@ -1,0 +1,87 @@
+{
+  "id": "h2-003",
+  "case_group": "danaher-2023-veralto-discontinued-cash-boundary",
+  "lane": "fundamental_equity",
+  "status": "phase2_candidate",
+  "epistemic_type": "retrospective_reconciliation_and_conditional_decision",
+  "information_cutoff": "2026-10-04T20:02:32Z",
+  "prompt": "An analyst compares Danaher's FY2023 sales and operating cash generation with the FY2022 annual report, counts the Veralto distribution as recurring cash generation, and retains Veralto financing in post-separation Danaher debt. Audit the memo using the two annual reports. Report comparable sales and continuing free cash flow, reconcile the cash removed from the old continuing perimeter, and separate recurring cash generation from separation financing. The requested financing counterfactual is a mechanical removal of only the two displayed separation transfers, not a claim that the business could have executed the remaining transactions without them.\n\nUse only the frozen document versions and the explicitly labeled hypothetical assumptions. These are retrospective research questions, not claims of historical tradability or forecasting skill. Discover and reconcile the relevant definitions and periods in the documents. Return every declared field with verbatim supporting evidence, preserving unrounded intermediate calculations. Money is USD millions unless the field specifies another unit. Percentages use the 0–100 scale. For every noninteger output, use at least eight decimal places unless the field explicitly allows a different precision. Source values displayed in millions are treated as exact only for these table-based arithmetic comparisons; do not infer greater economic precision.",
+  "source_ids": [
+    "h2a-danaher-2022",
+    "h2a-danaher-2023"
+  ],
+  "output_fields": [
+    {
+      "id": "comparable_sales_growth_2023_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2023 sales growth on the continuing-operations perimeter used in the newer report.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "stale_sales_denominator_growth_error_pp",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "Growth calculated using the old FY2022 sales denominator minus comparable growth. Signed error.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fy2022_operating_cash_removed_from_continuing",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Original FY2022 continuing operating cash flow minus the newer FY2022 continuing figure.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "continuing_free_cash_flow_2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "FY2023 continuing free cash flow using the issuer's operating-cash-minus-capital-expenditures-plus-disposals convention.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "continuing_free_cash_flow_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2023 continuing free cash flow growth versus comparable FY2022.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "net_cash_received_in_separation",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Net of the displayed distribution from discontinued operations and cash distributed to Veralto. Excludes all other flows.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "financing_cash_flow_without_separation_transfers",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "FY2023 total financing cash flow after arithmetically removing those two separation transfers, holding other entries fixed.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "veralto_debt_remains_danaher_obligation_after_separation",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does Veralto's separation financing remain Danaher's debt obligation after the distribution under the disclosed guarantee treatment?",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "no_separation_full_year_cash_flow_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Do the reported cash flows uniquely determine Danaher's counterfactual full-year FY2023 operating cash flow had Veralto remained for all four quarters? No post-separation Veralto cash flows or counterfactual shared-cost/working-capital effects are supplied.",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ]
+}

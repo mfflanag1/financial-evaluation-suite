@@ -1,0 +1,33 @@
+‹ See the most recent Natural Gas Weekly Update Natural Gas Weekly Update for week ending June 23, 2021 | Release date: June 24, 2021 | Previous weeks
+
+The net injections into storage totaled 55 Bcf for the week ending June 18, compared with the five-year (2016–2020) average net injections of 83 Bcf and last year's net injections of 115 Bcf during the same week. Working natural gas stocks totaled 2,482 Bcf, which is 154 Bcf lower than the five-year average and 513 Bcf lower than last year at this time.
+
+Working gas in underground storage
+
+ | Stocks billion cubic feet (Bcf)
+
+Region | 2021-06-18 | 2021-06-11 | change
+
+East | 488 | 461 | 27
+
+Midwest | 595 | 570 | 25
+
+Mountain | 169 | 165 | 4
+
+Pacific | 239 | 236 C | 3
+
+South Central | 991 | 995 | -4
+
+Total | 2,482 | 2,427 C | 55
+
+Source: U.S. Energy Information Administration Form EIA-912, Weekly Underground Natural Gas Storage Report C=Reclassification Note: Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021. The implied flow for the week is an increase of 67 Bcf to working gas stocks.
+
+Pacific Gas and Electric reports reclassification of working gas levels at their natural gas storage facilities in Northern California
+
+Pacific Gas and Electric (PG&E) reported a reclassification of 51 billion cubic feet (Bcf) of working natural gas storage (the amount of natural gas in storage that is available for withdrawal) to base gas as of June 11, 2021. The 51 Bcf reclassification —was the largest single day reduction in working gas ever reported at the PG&E storage facility, and it exceeded the total heating season (November–March), net withdrawals reported in any heating season since the 2013–14 heating season. As a result of this change, reported inventory at the PG&E natural gas storage facilities declined from 72.9 Bcf to 22.0 Bcf as of June 11.
+
+Although the reclassification resulted in a large decrease in working gas levels in the Pacific region for the week ending June 11, the reclassification is a non-flow related change that has no effect on the total natural gas in storage (base gas plus working gas). In fact, the withdrawal activity at PG&E storage facilities suggests that a significant portion of the working gas in storage has not been withdrawn or cycled in recent years. Since the 2013–14 heating season when 69 Bcf was withdrawn from working natural gas, net seasonal withdrawals have not exceeded 47 Bcf. Moreover, working gas levels at these fields never fell below 34 Bcf, suggesting that some of the working natural gas inventory was effectively acting as base gas even before the reclassification formalized the change.
+
+Prior to the reclassification, PG&E’s working gas capacity totaled 102 Bcf at three natural gas storage fields: McDonald Island (82 Bcf), Pleasant Creek (2.3 Bcf,) and Los Medanos (17.9 Bcf). At 102 Bcf, PG&E was the 10th largest storage operator in the United States, and the McDonald Island field was the 8th largest storage field in terms of working gas capacity. After the reclassification, PG&E’s working gas capacity still exceeds 51 Bcf.
+
+The reclassification is part of a permanent shift in how PG&E will operate its natural gas storage fields: using natural gas storage to ensure system reliability rather than as a commodity price management tool. In its application to the California Public Utilities Commission (CPUC), PG&E cited changing market conditions—such as seasonal price differentials that have been narrowing and regulatory changes that would require significant new capital investments in their fields—as the reason for the reassessment. This narrower operational mission means that PG&E can serve its customers with fewer natural gas storage assets. Under this plan, other storage operators in the region, such as Wild Goose, Central Valley, and Lodi, will continue to provide commodity price management services. Working natural gas storage capacity at those three facilities total almost 135 Bcf. In addition to maintaining larger base gas levels in its facilities to ensure deliverability, PG&E plans to sell or decommission the Pleasant Creek and Los Medanos fields in 2021. The CPUC approved this plan in September 2019.

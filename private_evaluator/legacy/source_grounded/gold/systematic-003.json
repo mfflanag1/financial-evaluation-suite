@@ -1,0 +1,187 @@
+{
+  "case_id": "systematic-003",
+  "reference_solution": {
+    "rename_required_turnover": 0,
+    "meta_total_return": 0.03,
+    "exiting_security_gross_profit": -2400,
+    "terminal_liquidation_cost": 6.12,
+    "valid_terminal_equity": 7773.88,
+    "valid_net_profit": -2226.12,
+    "naive_ticker_join_meta_return": 9.3,
+    "exit_proceeds_break_even": 47.8265,
+    "ticker_alone_unique_identity": false,
+    "empirical_total_return_status": "not_established"
+  },
+  "worked_derivation": [
+    "Issuer notice says new ticker before June 9 open, unchanged CUSIP and no shareholder action. Thus retain M and 60 shares; no forced rename trade.",
+    "M total return=(102-100+1)/100=.03. E settlement=80*20=1600; E profit=1600-4000=-2400.",
+    "M liquidation value=60*102=6120; dividend cash=60; exit settlement1600. Fee=.001*6120=6.12. Terminal=7773.88; net=-2226.12.",
+    "Bad ticker join return=(102-10+1)/10=9.3(930%), mixing unrelated X and M. Its impressive result cannot establish a valid identity join.",
+    "Break-even E per share=(10000-6120-60+6.12)/80=47.8265. This is a conditional threshold, not a predicted recovery.",
+    "Without E exit proceeds or M cash-distribution/adjustment records the empirical total-return ledger is unresolved. Dropping E or filling its return with zero changes the question."
+  ],
+  "limitations": [
+    "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+    "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+    "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+    "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+  ],
+  "fields": [
+    {
+      "id": "rename_required_turnover",
+      "expected": 0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "No action by the company's shareholders is required with respect to the ticker symbol change."
+            ]
+          },
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,",
+              "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "meta_total_return",
+      "expected": 0.03,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,",
+              "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "exiting_security_gross_profit",
+      "expected": -2400,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": []
+    },
+    {
+      "id": "terminal_liquidation_cost",
+      "expected": 6.12,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,",
+              "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "valid_terminal_equity",
+      "expected": 7773.88,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,",
+              "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "valid_net_profit",
+      "expected": -2226.12,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,",
+              "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "naive_ticker_join_meta_return",
+      "expected": 9.3,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": []
+    },
+    {
+      "id": "exit_proceeds_break_even",
+      "expected": 47.8265,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-meta-ticker",
+            "anchors": [
+              "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,",
+              "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "ticker_alone_unique_identity",
+      "expected": false,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": []
+    },
+    {
+      "id": "empirical_total_return_status",
+      "expected": "not_established",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "exp-vistra-2023-index",
+  "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281924000012/0001692819-24-000012-index.html",
+  "title": "Vistra 2023 Form 10-K filing index, accession 0001692819-24-000012",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "published_at": "2024-02-29T23:59:59-05:00",
+  "publication_precision": "day",
+  "availability_basis": "SEC index states filing date February29,2024 and acceptance February28 at21:35:37. Use the later filing date at23:59:59 New York standard time (UTC-05), not acceptance as proof of immediate dissemination.",
+  "retrieved_at": "2026-10-04T18:12:39.857548Z",
+  "redistribution_status": "Public SEC filing index; official attribution retained.",
+  "raw_path": "sources/exp-vistra-2023-index/evidence.txt",
+  "text_path": "sources/exp-vistra-2023-index/evidence.txt",
+  "raw_sha256": "3c36ab85bb132bd4be1024dde19f0641d45385bcfd32311d4af6136e7134f969",
+  "text_sha256": "3c36ab85bb132bd4be1024dde19f0641d45385bcfd32311d4af6136e7134f969",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

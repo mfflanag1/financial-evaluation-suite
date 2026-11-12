@@ -1,0 +1,109 @@
+{
+  "id": "systematic-002",
+  "case_group": "lyft-feb2024-guidance-correction-vintages",
+  "lane": "systematic",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2026-10-04T18:15:18Z",
+  "prompt": "Reconcile Lyft's original February 13, 2024 SEC results Exhibit 99.1 in accession 0001759509-24-000011 with its issuer 'CORRECTING and REPLACING' release. This episode concerns a correction to forward-looking margin guidance, NOT a restatement of realized GAAP earnings. Preserve both document vintages. For a SYNTHETIC model only, treat the originally reported rounded FY2023 Adjusted EBITDA margin of 1.6% as exact and add each vintage's FY2024 margin-expansion guidance; do not multiply 1.6% by the expansion. The margin denominator is Gross Bookings. Synthetic FY2024 Gross Bookings are exactly $16,000 million for both versions; compute each modeled Adjusted EBITDA. These are conditional model outputs, not predictions of actual 2024 results. For a SEPARATE SYNTHETIC vendor replay, original arrival=2024-02-13T21:10:00Z, corrected arrival=2024-02-14T21:45:00Z, each with 30 seconds processing. The one-day correction delay is an assumed vendor-replay scenario, not a historical public-release claim. A vintage becomes usable exactly at completion (inclusive), and a later correction never overwrites an earlier snapshot. Toy universe contains lyft and a fictitious peer with an invariant 3.0% modeled margin; select the higher projected margin (ties go to peer). Probe corrected-arrival day 21:45:29Z and 21:45:30Z. Trading snapshots are Feb 13 at 22:00Z and Feb 14 at 22:00Z. Execute at the next listed open in the complete synthetic calendar Feb 14, Feb 15, Feb 16 all 14:30Z; hold to the following listed open then fully liquidate. Each round enters exactly $10,000, fractional shares allowed, no compounding of sizing, initial cash $12,000 and idle cash earns zero. COMPLETE SYNTHETIC total-return panel: Feb 14 open \u2192 Feb 15 open lyft -8%, peer +1%; Feb 15 open \u2192 Feb 16 open lyft +2%, peer +1%. Charge 10 bps of actual entry and liquidation dollar notionals on each round, with no other cash flows or costs. Compute valid net profit and the inflation (defective minus valid net profit) from a current-vintage table that uses corrected guidance for BOTH historical snapshots. For the REAL EVIDENCE branch, can the supplied records establish that the correction was publicly accessible at 2024-02-13T21:30:00Z? Use eligible, ineligible, or not_established. Document date, original accession acceptance and synthetic vendor arrival are not proof of that correction's public-access time. For actual strategy performance use established or not_established; no historical public receipt log, execution costs, representative universe or observed total-return panel is supplied. Original-vintage numeric fields AND the categorical before_correction_ready_choice field permit citations ONLY from the original SEC exhibit. Later corrective text, even where it quotes the original error, cannot replace original-vintage evidence. Report modeled margin LEVELS in percent (1.6 means 1.6%); their changes from the base are measured in percentage points. Both versions remain visible in this single-packet case; field citation policy does not prove mental non-use of later information or constitute a committed sequential experiment.",
+  "source_ids": [
+    "systematic-lyft-original-index",
+    "systematic-lyft-original",
+    "systematic-lyft-correction"
+  ],
+  "output_fields": [
+    {
+      "id": "original_projected_margin",
+      "type": "number",
+      "unit": "percent",
+      "description": "Original-only modeled FY2024 margin level, e.g. report 1.6 for 1.6%; cite the original base and expansion, which both identify Gross Bookings.",
+      "evidence_required": true,
+      "allowed_source_ids": [
+        "systematic-lyft-original"
+      ]
+    },
+    {
+      "id": "corrected_projected_margin",
+      "type": "number",
+      "unit": "percent",
+      "description": "Corrected modeled FY2024 margin level, on the same exact synthetic base.",
+      "evidence_required": true
+    },
+    {
+      "id": "original_modeled_ebitda",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Conditional original-vintage Adjusted EBITDA using supplied $16,000 million Gross Bookings, not revenue.",
+      "evidence_required": true,
+      "allowed_source_ids": [
+        "systematic-lyft-original"
+      ]
+    },
+    {
+      "id": "corrected_modeled_ebitda",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Conditional corrected-vintage Adjusted EBITDA using the same Gross Bookings.",
+      "evidence_required": true
+    },
+    {
+      "id": "before_correction_ready_choice",
+      "type": "string",
+      "unit": "asset",
+      "description": "Synthetic choice at Feb 14 21:45:29Z: lyft or peer.",
+      "evidence_required": true,
+      "allowed_source_ids": [
+        "systematic-lyft-original"
+      ]
+    },
+    {
+      "id": "at_correction_ready_choice",
+      "type": "string",
+      "unit": "asset",
+      "description": "Synthetic choice at Feb 14 21:45:30Z: lyft or peer.",
+      "evidence_required": true
+    },
+    {
+      "id": "valid_toy_net_profit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Two-round immutable-vintage synthetic ledger profit after actual-notional costs.",
+      "evidence_required": true
+    },
+    {
+      "id": "backfill_net_profit_inflation",
+      "type": "number",
+      "unit": "USD",
+      "description": "Current-vintage backfilled net profit minus valid net profit.",
+      "evidence_required": true
+    },
+    {
+      "id": "actual_correction_213000_eligibility",
+      "type": "string",
+      "unit": "categorical",
+      "description": "Actual correction public-access eligibility at Feb 13 21:30Z: eligible, ineligible, or not_established. Incomplete original-public-time metadata do not establish a bound.",
+      "evidence_required": false
+    },
+    {
+      "id": "empirical_performance_status",
+      "type": "string",
+      "unit": "categorical",
+      "description": "Exactly established or not_established for actual tradable historical performance.",
+      "evidence_required": false
+    }
+  ],
+  "response_format": {
+    "case_id": "systematic-002",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

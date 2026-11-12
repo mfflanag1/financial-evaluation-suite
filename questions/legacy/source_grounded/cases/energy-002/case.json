@@ -1,0 +1,115 @@
+{
+  "id": "energy-002",
+  "case_group": "eia-us-petroleum-balance-march29-2024",
+  "lane": "commodities_energy",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2024-04-04T03:59:59Z",
+  "prompt": "Audit the EIA U.S. Petroleum Balance Sheet released April 3, 2024, using only information available by the end of that day in New York. Use the current week ending March 29, not the prior-week, four-week-average or year-to-date columns. This is historical balance reconstruction plus explicitly synthetic accounting scenarios, not a forecast or a trading recommendation.\n\nUse the current-week Table 1 supply rates and the higher-precision stock levels in Table 4 CSV (also identically reported in Table 1 CSV). Either matching CSV stock row is valid evidence. Current-week supply rates are also reproduced in the companion Table 1 PDF, which supplies units, definitions and footnotes. The stock CSV has more decimal places than the PDF. Stock levels are million barrels; supply rates are thousand barrels per day. A reporting week has seven days. Positive stock change is a build and negative stock change is a draw. Keep the displayed rounded rates as given; do not force them to reproduce higher-precision stock levels. Include SPR wherever the output says total crude or total petroleum stocks. Concise component citations suffice; do not repeat a header or units line with every answer.\n\nFor the crude balance use: refinery crude input = domestic production + net crude imports + transfers to crude supply + crude adjustment - crude stock change. Reconstruct the adjustment from the other terms, citing those operands. The adjustment is a residual in this identity; its presence does not establish an independently measured production source. Reconstruct products supplied using the six-component formula in PDF footnote 16 and retain the sign of transfers. Explain both the cross-category transfer cancellation and the numerical stocks-versus-flows rounding residual using the requested outputs.\n\nFor the explicitly SYNTHETIC scenario, reduce crude imports by 400 thousand barrels/day from the current week's level. Hold crude exports, domestic production, transfers to crude supply, the reported crude adjustment, refinery crude input and the SPR stock-change rate fixed at the current week's rounded rates. Let commercial stock change absorb the balance. Calculate the commercial daily change and its seven-day equivalent, then solve the largest import reduction that still leaves commercial stocks flat or increasing. The 400 reduction and all fixed-behavior assumptions are hypothetical task inputs; they are not an EIA forecast. Cite source baseline operands; scenario assumptions require no source citation. Report at least six decimals where non-integer and use the exact requested category tokens.",
+  "source_ids": [
+    "energy-petroleum-index-20240403",
+    "energy-petroleum-table1-20240403",
+    "energy-petroleum-table4-20240403",
+    "energy-petroleum-notes-20240403"
+  ],
+  "output_fields": [
+    {
+      "id": "net_crude_imports",
+      "type": "number",
+      "unit": "thousand_barrels_per_day",
+      "description": "Current-week crude imports minus crude exports, including SPR scope.",
+      "evidence_required": true
+    },
+    {
+      "id": "reconstructed_crude_adjustment",
+      "type": "number",
+      "unit": "thousand_barrels_per_day",
+      "description": "Solve the crude balance for its adjustment from production, net imports, transfers, stock change and refinery inputs; cite the components, not only the printed adjustment.",
+      "evidence_required": true
+    },
+    {
+      "id": "reconstructed_products_supplied",
+      "type": "number",
+      "unit": "thousand_barrels_per_day",
+      "description": "Reconstruct total products supplied from the six components in Table 1 footnote 16, respecting signed stock change and transfers; cite all component inputs.",
+      "evidence_required": true
+    },
+    {
+      "id": "net_transfer_across_crude_and_products",
+      "type": "number",
+      "unit": "thousand_barrels_per_day",
+      "description": "Combined contribution of transfers on the crude side and the product side, retaining both signs.",
+      "evidence_required": true
+    },
+    {
+      "id": "weekly_stock_change_from_daily_rates",
+      "type": "number",
+      "unit": "million_barrels",
+      "description": "Convert the sum of crude and other-supply stock-change daily rates into a seven-day total; include SPR.",
+      "evidence_required": true
+    },
+    {
+      "id": "weekly_stock_change_from_levels",
+      "type": "number",
+      "unit": "million_barrels",
+      "description": "Total petroleum stocks including SPR at March 29 minus March 22, using the matching higher-precision stock levels in Table 1 or Table 4 CSV rather than rounded PDF levels.",
+      "evidence_required": true
+    },
+    {
+      "id": "flow_minus_stock_rounding_gap",
+      "type": "number",
+      "unit": "thousand_barrels",
+      "description": "Signed difference: weekly change inferred from rounded daily rates minus weekly change inferred from CSV stock levels, converted to thousand barrels.",
+      "evidence_required": true
+    },
+    {
+      "id": "adjustment_interpretation",
+      "type": "string",
+      "unit": "category",
+      "description": "Return balancing_item_not_identified_production or independently_measured_extra_production for the crude adjustment. The balance alone cannot identify its economic cause.",
+      "evidence_required": true
+    },
+    {
+      "id": "rounding_gap_interpretation",
+      "type": "string",
+      "unit": "category",
+      "description": "Return rounding_consistent_not_evidence_of_physical_loss or demonstrated_physical_loss for this small stocks-versus-rounded-flows discrepancy.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_commercial_stock_change",
+      "type": "number",
+      "unit": "thousand_barrels_per_day",
+      "description": "Synthetic scenario: reduce crude imports by 400 thousand barrels/day; hold crude exports, production, transfers, the adjustment, refinery input and SPR stock-change rate fixed at current-week rounded levels; solve commercial stock change.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_weekly_commercial_build",
+      "type": "number",
+      "unit": "million_barrels",
+      "description": "Seven-day commercial stock change in the same synthetic import-reduction scenario; a negative result would be a draw.",
+      "evidence_required": true
+    },
+    {
+      "id": "maximum_import_reduction_without_commercial_draw",
+      "type": "number",
+      "unit": "thousand_barrels_per_day",
+      "description": "Maximum nonnegative crude-import reduction under the same fixed-flow and fixed-SPR assumptions before the commercial stock-change rate turns negative; equality is allowed.",
+      "evidence_required": true
+    }
+  ],
+  "response_format": {
+    "case_id": "energy-002",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

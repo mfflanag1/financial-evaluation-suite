@@ -1,0 +1,3881 @@
+[
+  {
+    "name": "gold_reference",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "All defined values and source-rule evidence are present."
+  },
+  {
+    "name": "include_out_of_perimeter_debt",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 2330,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "included_indebtedness": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Includes the separate Unrestricted Subsidiary's unguaranteed debt."
+  },
+  {
+    "name": "exclude_all_restricted_cash",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 170,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "eligible_cash": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Excludes 30 of cash restricted in favor of the Facilities even though the definition includes it."
+  },
+  {
+    "name": "net_customer_and_unrestricted_sub_cash",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 315,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "eligible_cash": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Nets customer escrow and cash outside the restricted perimeter."
+  },
+  {
+    "name": "use_expired_pre_march_ceiling",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 5.25,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "applicable_maximum_ratio": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Applies the earlier period's ceiling to the hypothetical September 2025 quarter."
+  },
+  {
+    "name": "declare_stress_pass_using_base_ebitda",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "stress_meets_leverage_condition": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Fails to propagate the isolated EBITDA decline into net leverage."
+  },
+  {
+    "name": "certify_missing_interest_coverage",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            }
+          ]
+        },
+        "eligible_cash": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "interest_coverage_compliance_identifiable": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Infers a separate coverage test without any interest-expense input."
+  },
+  {
+    "name": "correct_value_without_rule_evidence",
+    "response": {
+      "case_id": "credit-002",
+      "answers": {
+        "included_indebtedness": {
+          "value": 1930,
+          "evidence": []
+        },
+        "eligible_cash": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "excluded_cash": {
+          "value": 115,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            }
+          ]
+        },
+        "net_debt": {
+          "value": 1730,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "applicable_maximum_ratio": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "base_leverage": {
+          "value": 4.325,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            }
+          ]
+        },
+        "extra_spent_debt_capacity": {
+          "value": 70,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "minimum_ebitda_at_boundary": {
+          "value": 384.44444444444446,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ebitda_decline": {
+          "value": 15.555555555555555,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stressed_leverage": {
+          "value": 4.552631578947368,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "stress_meets_leverage_condition": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and the Restricted Subsidiaries on a consolidated basis"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Indebtedness for borrowed money"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Capitalized Lease Obligations"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to the extent of unreimbursed amounts thereunder"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "reimbursed within one Business Day"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "including unpaid termination payments under Hedge Agreements"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "undrawn amounts under revolving credit facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "unrestricted cash and cash equivalents of the U.S. Borrower and its Restricted Subsidiaries"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "Borrower and its Restricted Subsidiaries restricted in favor of the Facilities"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "the excess of (i) Consolidated Total Indebtedness"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "over (ii) an amount equal to the amount of Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "to (b) the aggregate amount of EBITDA"
+            },
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "any fiscal quarter ending on or after March 31, 2025, to exceed 4.50 to 1.00"
+            }
+          ]
+        },
+        "interest_coverage_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-vestis-agreement",
+              "quote": "(b) the Interest Coverage Ratio of the U.S. Borrower to be less than 2.00 to 1.00 as of the last day of any Test Period."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Positions, debt, cash, EBITDA, the isolated stress and assumed continued applicability of this document version are synthetic.",
+        "This is not a record of actual Vestis covenant calculations or all later amendments.",
+        "Only specified net-leverage arithmetic is tested; the separate interest-coverage input is deliberately absent.",
+        "Partial rendered amendment capture, original styling, complete-contract interpretation, and domain-expert review remain explicit dependencies. Calculation review is recorded separately."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "included_indebtedness": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "A correct numerical value lacks the required operative-rule evidence."
+  }
+]

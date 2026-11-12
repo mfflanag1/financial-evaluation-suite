@@ -1,0 +1,321 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "q_policy",
+            "title": "Research governance"
+          },
+          {
+            "id": "q_sample",
+            "title": "Initial timestamp and sample audit"
+          },
+          {
+            "id": "q_old",
+            "title": "Unrelated earlier universe"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "admissible_count": "<typed value>",
+            "deploy": "<typed value>",
+            "gross_mean": "<typed value>",
+            "p_value": "<typed value>",
+            "significance_cutoff": "<typed value>",
+            "status": "<typed value>"
+          },
+          "evidence": {
+            "admissible_count": [
+              "<viewed supporting document ID>"
+            ],
+            "deploy": [
+              "<viewed supporting document ID>"
+            ],
+            "gross_mean": [
+              "<viewed supporting document ID>"
+            ],
+            "p_value": [
+              "<viewed supporting document ID>"
+            ],
+            "significance_cutoff": [
+              "<viewed supporting document ID>"
+            ],
+            "status": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c208",
+          "turn": 1
+        },
+        "inputs": {
+          "observations": [
+            {
+              "data": {
+                "decision_time": "09:00",
+                "familywise_alpha": 0.05
+              },
+              "source_id": "q_policy"
+            },
+            {
+              "data": {
+                "audited_tests": [
+                  {
+                    "groups": [
+                      "A",
+                      "B"
+                    ],
+                    "p_value": 0.004
+                  },
+                  {
+                    "groups": [
+                      "A"
+                    ],
+                    "p_value": 0.009
+                  }
+                ],
+                "groups": [
+                  {
+                    "availability": "08:50",
+                    "gross_return_sum_pp": 64,
+                    "group": "A",
+                    "trades": 40
+                  },
+                  {
+                    "availability": "08:58",
+                    "gross_return_sum_pp": 56,
+                    "group": "B",
+                    "trades": 20
+                  },
+                  {
+                    "availability": "09:02",
+                    "gross_return_sum_pp": 160,
+                    "group": "C",
+                    "trades": 40
+                  }
+                ],
+                "recorded_pipeline_count": 1
+              },
+              "source_id": "q_sample"
+            }
+          ]
+        },
+        "outputs": {
+          "admissible_count": {
+            "description": "Number of admissible trades",
+            "type": "number"
+          },
+          "deploy": {
+            "description": "Whether deployment is supported by current evidence",
+            "type": "boolean"
+          },
+          "gross_mean": {
+            "description": "Gross arithmetic mean, percentage points per trade",
+            "type": "number"
+          },
+          "p_value": {
+            "description": "Audited p-value for admissible sample",
+            "type": "number"
+          },
+          "significance_cutoff": {
+            "description": "Bonferroni familywise p-value threshold",
+            "type": "number"
+          },
+          "status": {
+            "description": "reject or provisional research status",
+            "type": "string"
+          }
+        },
+        "prompt": "Assess the current experiment for the research committee using the available source record. Report the admissible result and defensible research status, including whether deployment is supported.",
+        "question_id": "c208",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c208",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "q_policy",
+            "release_stage": 1,
+            "text": "All returns are percentage points per trade; arithmetic means apply. Decisions occur at 09:00. A feature is admissible only if its availability timestamp is strictly before 09:00. Use only admissible trades. Familywise significance requires Bonferroni p <= 0.05 / number of tried pipelines, including discarded pipelines. A significant validation result permits only a provisional research claim. Deployment also requires positive executable mean net return and a prospectively evaluated untouched holdout. A failed criterion means status reject; otherwise status provisional until holdout passes. Never select a model using holdout outcomes.",
+            "title": "Research governance"
+          },
+          {
+            "id": "q_sample",
+            "release_stage": 1,
+            "text": "The audit owns these aggregates for disjoint trade groups: A has 40 trades, sum of gross returns 64 percentage points, feature available 08:50; B has 20 trades, sum 56 percentage points, available 08:58; C has 40 trades, sum 160 percentage points, available 09:02. Audit p-values for the prespecified test are 0.004 on A+B and 0.009 on A alone. No test p-value can be reconstructed from sums alone; use these audited p-values. Initial trial register contains one pipeline. No executable cost estimate or holdout result has been released.",
+            "title": "Initial timestamp and sample audit"
+          }
+        ],
+        "title": "Timestamp, trial family and execution review",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 4,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "q_policy",
+        "title": "Research governance"
+      },
+      {
+        "id": "q_sample",
+        "title": "Initial timestamp and sample audit"
+      },
+      {
+        "id": "q_old",
+        "title": "Unrelated earlier universe"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "admissible_count": "<typed value>",
+        "deploy": "<typed value>",
+        "gross_mean": "<typed value>",
+        "p_value": "<typed value>",
+        "significance_cutoff": "<typed value>",
+        "status": "<typed value>"
+      },
+      "evidence": {
+        "admissible_count": [
+          "<viewed supporting document ID>"
+        ],
+        "deploy": [
+          "<viewed supporting document ID>"
+        ],
+        "gross_mean": [
+          "<viewed supporting document ID>"
+        ],
+        "p_value": [
+          "<viewed supporting document ID>"
+        ],
+        "significance_cutoff": [
+          "<viewed supporting document ID>"
+        ],
+        "status": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c208",
+      "turn": 1
+    },
+    "inputs": {
+      "observations": [
+        {
+          "data": {
+            "decision_time": "09:00",
+            "familywise_alpha": 0.05
+          },
+          "source_id": "q_policy"
+        },
+        {
+          "data": {
+            "audited_tests": [
+              {
+                "groups": [
+                  "A",
+                  "B"
+                ],
+                "p_value": 0.004
+              },
+              {
+                "groups": [
+                  "A"
+                ],
+                "p_value": 0.009
+              }
+            ],
+            "groups": [
+              {
+                "availability": "08:50",
+                "gross_return_sum_pp": 64,
+                "group": "A",
+                "trades": 40
+              },
+              {
+                "availability": "08:58",
+                "gross_return_sum_pp": 56,
+                "group": "B",
+                "trades": 20
+              },
+              {
+                "availability": "09:02",
+                "gross_return_sum_pp": 160,
+                "group": "C",
+                "trades": 40
+              }
+            ],
+            "recorded_pipeline_count": 1
+          },
+          "source_id": "q_sample"
+        }
+      ]
+    },
+    "outputs": {
+      "admissible_count": {
+        "description": "Number of admissible trades",
+        "type": "number"
+      },
+      "deploy": {
+        "description": "Whether deployment is supported by current evidence",
+        "type": "boolean"
+      },
+      "gross_mean": {
+        "description": "Gross arithmetic mean, percentage points per trade",
+        "type": "number"
+      },
+      "p_value": {
+        "description": "Audited p-value for admissible sample",
+        "type": "number"
+      },
+      "significance_cutoff": {
+        "description": "Bonferroni familywise p-value threshold",
+        "type": "number"
+      },
+      "status": {
+        "description": "reject or provisional research status",
+        "type": "string"
+      }
+    },
+    "prompt": "Assess the current experiment for the research committee using the available source record. Report the admissible result and defensible research status, including whether deployment is supported.",
+    "question_id": "c208",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c208",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "q_policy",
+        "release_stage": 1,
+        "text": "All returns are percentage points per trade; arithmetic means apply. Decisions occur at 09:00. A feature is admissible only if its availability timestamp is strictly before 09:00. Use only admissible trades. Familywise significance requires Bonferroni p <= 0.05 / number of tried pipelines, including discarded pipelines. A significant validation result permits only a provisional research claim. Deployment also requires positive executable mean net return and a prospectively evaluated untouched holdout. A failed criterion means status reject; otherwise status provisional until holdout passes. Never select a model using holdout outcomes.",
+        "title": "Research governance"
+      },
+      {
+        "id": "q_sample",
+        "release_stage": 1,
+        "text": "The audit owns these aggregates for disjoint trade groups: A has 40 trades, sum of gross returns 64 percentage points, feature available 08:50; B has 20 trades, sum 56 percentage points, available 08:58; C has 40 trades, sum 160 percentage points, available 09:02. Audit p-values for the prespecified test are 0.004 on A+B and 0.009 on A alone. No test p-value can be reconstructed from sums alone; use these audited p-values. Initial trial register contains one pipeline. No executable cost estimate or holdout result has been released.",
+        "title": "Initial timestamp and sample audit"
+      }
+    ],
+    "title": "Timestamp, trial family and execution review",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 4,
+    "turn": 1
+  }
+}

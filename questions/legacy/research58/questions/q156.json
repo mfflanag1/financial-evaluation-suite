@@ -1,0 +1,87 @@
+{
+  "question_id": "q156",
+  "title": "Coverage-test diversion and a principal reinvestment decision",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconstruct coverage and cash allocation before approving an equity distribution. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "performing_and_default_par": 100,
+    "default_par": 20,
+    "default_credit": 0.5,
+    "ccc_nondefault": 15,
+    "ccc_limit": 7.5,
+    "ccc_haircut": 0.3,
+    "principal_cash": 4,
+    "senior": 60,
+    "mezz": 20,
+    "interest_cash": 8,
+    "expenses": 1,
+    "senior_interest": 3,
+    "mezz_interest": 1,
+    "senior_test": 1.3,
+    "combined_test": 1.15,
+    "purchase_allowed": false,
+    "purchase_face": 5,
+    "purchase_cost": 4,
+    "purchase_credit": 1
+  },
+  "sources": [
+    {
+      "id": "q156_facts",
+      "text": "Synthetic packet: The original trustee sheet supplies par buckets, principal cash and interest cash. Principal cash is separate from interest receipts and cannot directly pay coupons."
+    },
+    {
+      "id": "q156_terms",
+      "text": "Synthetic governing terms: All amounts are USD millions. Adjusted collateral equals total asset par plus principal cash, less the defaulted-par credit shortfall and haircut on nondefault low-rated par above ccc_limit. Defaulted and nondefault low-rated buckets never overlap. Coverage tests use principal before any diversion. Expenses and both stipulated interest coupons are paid first; all remaining interest goes to equity if both tests pass, otherwise to senior principal. When permitted, one whole new loan may be bought using principal cash only. Maximize current equity payout, then adjusted collateral, then alphabetical action label. No partial purchase or other trade is allowed."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "manager_action",
+      "type": "string",
+      "unit": "category",
+      "description": "Exact label: retain_cash or buy_loan."
+    },
+    {
+      "name": "adjusted_collateral",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Pre-distribution coverage-test numerator after selected principal action.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "senior_coverage",
+      "type": "number",
+      "unit": "multiple",
+      "description": "Adjusted collateral divided by senior principal before diversion.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "combined_coverage",
+      "type": "number",
+      "unit": "multiple",
+      "description": "Adjusted collateral divided by senior plus mezzanine principal before diversion.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_distributions",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "[senior interest, mezzanine interest, senior principal diversion, equity] in order.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "equity_release_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether both pre-distribution coverage tests permit residual cash to equity."
+    }
+  ]
+}

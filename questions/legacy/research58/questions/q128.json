@@ -1,0 +1,110 @@
+{
+  "question_id": "q128",
+  "title": "Repair a nested-manager concentration at minimum alpha cost",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Look through both managers and the nested vehicle, consolidate share classes, and evaluate the common-issuer stress. Then repair the issuer limit at minimum foregone annual alpha. Treat100 million as the fixed fund-capital denominator. State exposures in X,Y,Z order and allocations in A,B,cash order.",
+  "inputs": {
+    "capital_millions": [
+      60,
+      40
+    ],
+    "minimum_manager_allocations": [
+      40,
+      25
+    ],
+    "manager_A": {
+      "issuer_X_class1": 0.8,
+      "issuer_Y": 0.5,
+      "issuer_Z": -0.3
+    },
+    "manager_B": {
+      "issuer_X_class2": 0.4,
+      "vehicle_V": 0.7,
+      "issuer_Y": -0.1
+    },
+    "vehicle_V": {
+      "issuer_X_class1": 0.5,
+      "issuer_Z": 0.5
+    },
+    "issuer_aliases": {
+      "issuer_X_class1": "X",
+      "issuer_X_class2": "X",
+      "issuer_Y": "Y",
+      "issuer_Z": "Z"
+    },
+    "alpha_rates": [
+      0.06,
+      0.04
+    ],
+    "issuer_X_limit_millions": 65,
+    "stress_returns": {
+      "X": -0.3,
+      "Y": 0.05,
+      "Z": -0.1
+    }
+  },
+  "sources": [
+    {
+      "id": "q128_holdings",
+      "text": "Original synthetic evaluation packet. Manager tables are signed underlying exposure per dollar of allocated capital, not portfolio percentages to renormalize. Vehicle V is fully backed by its listed holdings with exact pass-through. Two X share classes share one issuer concentration bucket; different manager books are additive."
+    },
+    {
+      "id": "q128_mandate",
+      "text": "Original synthetic evaluation packet. Capital remains100 million including cash. Reduce manager A or B continuously, respecting each minimum, and move proceeds to zero-alpha cash. No increases or new shorts. Bring X exposure to at most65 million while minimizing annual alpha foregone. Manager alpha rates apply to allocation, not gross underlying holdings."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "issuer_exposures",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "Signed [X,Y,Z] exposure after full vehicle look-through and alias aggregation.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "gross_underlying_exposure",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Sum of absolute issuer exposures.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "stress_pnl",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "P&L under the stipulated simultaneous issuer shocks.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_reallocation",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "[manager A,manager B,cash] after the minimum-foregone-alpha reduction.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "annual_alpha_foregone",
+      "type": "number",
+      "unit": "USD millions/year",
+      "description": "Lost expected alpha from reduced manager allocations.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_x_exposure",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Issuer X exposure after the reallocation.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

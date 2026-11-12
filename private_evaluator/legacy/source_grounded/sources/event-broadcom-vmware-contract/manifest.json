@@ -1,0 +1,26 @@
+{
+  "id": "event-broadcom-vmware-contract",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312522161016/d525235dex21.htm",
+  "title": "Broadcom / VMware merger agreement: sections 3.3 and 3.4",
+  "publisher": "Broadcom Inc. and VMware Inc.; SEC EDGAR",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T17:52:09Z",
+  "availability_basis": "This primary SEC URL was publicly accessible, and its capture was retained before the recorded UTC observation bound. Original public dissemination time has not been independently established; document_date is descriptive only. No historical trading eligibility is claimed.",
+  "document_date": "2022-05-26",
+  "retrieved_at": "2026-10-04T17:52:09Z",
+  "redistribution_status": "Publicly accessible SEC-hosted issuer contract; underlying redistribution rights not assessed. Local research only; not approved for public dataset redistribution.",
+  "raw_path": "sources/event-broadcom-vmware-contract/evidence.txt",
+  "text_path": "sources/event-broadcom-vmware-contract/evidence.txt",
+  "raw_sha256": "d88e074bf341f6453ca0a5254cc8e069ba94bb7492e9f7ae56e040024562e4c7",
+  "text_sha256": "d88e074bf341f6453ca0a5254cc8e069ba94bb7492e9f7ae56e040024562e4c7",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "expansion-microsoft-2024",
+    "url": "https://www.microsoft.com/investor/reports/ar24/",
+    "title": "Microsoft FY2024 consolidated results and acquisition note",
+    "publisher": "Microsoft Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+    "text_sha256": "13b8f4b13baab890c6a2d8a0e8cc5c5765a9b05dba6898a7064976662d2b44fa",
+    "available_by": "2026-10-04T18:12:47Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

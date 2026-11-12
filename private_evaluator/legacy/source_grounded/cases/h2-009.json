@@ -1,0 +1,93 @@
+{
+  "id": "h2-009",
+  "case_group": "waha-2024-dislocation-monthly-basis-versus-physical-shape",
+  "lane": "energy_commodities",
+  "status": "candidate",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T20:05:48Z",
+  "source_ids": [
+    "h2b-ice-waha",
+    "h2b-waha"
+  ],
+  "prompt": "A gas risk desk is reviewing EIA's account of Waha's 2024 dislocation and a potential hedge under the retained ICE Waha Basis Future specification. The historical article is a risk-motivation document: this is a synthetic trade under the supplied2026 contract specification, not an assertion that this contract specification or prices describe a trade actually executed in2024. For one contract month, the producer sells62,500 MMBtu at a volume-weighted realized physical price of -$0.10/MMBtu. It shorts the quantity-matched number of whole Waha Basis Futures at -$0.60/MMBtu. Reference Price A finally fixes at -$0.30/MMBtu and Reference Price B at $2.20/MMBtu. Fees are $4 per futures contract, with no other costs. Reconcile physical receipts, derivative gain and combined net cash, then identify the remaining exposure. For the two local sensitivity calculations only, assume the realized physical price equals Henry Hub plus the monthly basis plus a fixed daily-to-monthly shape term: each of the first two components passes through one-for-one, volume and fees are constant, and the hedge entry price stays fixed. These assumptions define conditional sensitivities, not empirical hedge effectiveness. In separate missing-input questions, remove the realized physical sale price, and assess what the EIA negative-day frequency can establish about a producer's annual revenue.\n\nUse the supplied historical documents as specified; this packet is a retrospective conditional analysis with observed 2026 source availability, not a claim of contemporaneous historical execution. Return typed outputs with supporting verbatim clauses; declared support_dependencies permit explicit support_refs to reuse previously justified answers. Synthetic inputs need no invented citation.",
+  "output_fields": [
+    {
+      "id": "hedge_contracts",
+      "type": "number",
+      "unit": "contracts",
+      "description": "Number of whole short basis contracts to cover the stated quantity.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "final_basis_settlement",
+      "type": "number",
+      "unit": "USD_per_MMBtu",
+      "description": "Final settlement of the stated basis future.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "basis_hedge_gain",
+      "type": "number",
+      "unit": "USD",
+      "description": "Cash-settled gain on the short basis position before its fees.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "hedge_contracts",
+        "final_basis_settlement"
+      ]
+    },
+    {
+      "id": "net_physical_and_hedge_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Physical receipts plus basis-future cash settlement less the stated hedge fees.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "basis_hedge_gain"
+      ]
+    },
+    {
+      "id": "residual_henry_hub_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_per_MMBtu",
+      "description": "Change in combined physical-plus-hedge cash for a $1 Henry Hub increase with monthly basis and shape held fixed.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "final_basis_settlement"
+      ]
+    },
+    {
+      "id": "residual_monthly_basis_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_per_MMBtu",
+      "description": "Change in combined cash for a $1 monthly Waha-minus-Henry-Hub basis increase, with outright Henry Hub and shape fixed.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "hedge_contracts",
+        "final_basis_settlement"
+      ]
+    },
+    {
+      "id": "combined_cash_known_without_physical_price",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "If the realized physical price is removed, are the futures settlement and remaining inputs sufficient to identify combined cash?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "negative_day_share_determines_annual_revenue",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the historical negative-day percentage alone identify the sign of a producer annual realized gas revenue?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ]
+}

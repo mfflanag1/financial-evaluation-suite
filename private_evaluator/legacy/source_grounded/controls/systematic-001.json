@@ -1,0 +1,1938 @@
+[
+  {
+    "name": "reference_vintage_and_cost_ledger",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "filing_date_substituted_for_acceptance",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-02T00:00:00Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses official filing date rather than prior-evening acceptance",
+    "expected_failures": {
+      "apple_acceptance_utc": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "acceptance_equals_publication",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "eligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Confuses acceptance with unobserved public dissemination",
+    "expected_failures": {
+      "nvidia_public_eligibility_at_acceptance": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "period_end_lookahead",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Admits a future feature one second before its synthetic readiness",
+    "expected_failures": {
+      "before_ready_selected_asset": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "exclusive_instead_of_inclusive_boundary",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Rejects processing completion exactly at cutoff",
+    "expected_failures": {
+      "at_ready_selected_asset": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "ignore_execution_lag",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-21T21:40:56Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Executes on the decision snapshot instead of the next supplied open",
+    "expected_failures": {
+      "first_execution_utc": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "exit_cost_uses_entry_notional",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -120,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Charges identical entry/exit notionals despite changed liquidation values",
+    "expected_failures": {
+      "valid_toy_net_profit": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "gross_bias_presented_as_net_bias",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 800,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits the difference in liquidation costs",
+    "expected_failures": {
+      "leakage_net_profit_inflation": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "toy_profit_labeled_empirical",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Treats assumed returns and arrivals as actual observations",
+    "expected_failures": {
+      "empirical_performance_status": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_time_wrong_issuer_source",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "Acceptance Time: Time (EST) at which the submission was accepted by EDGAR. Format is HHMMSS"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct value cites Apple's timestamp instead of NVIDIA's",
+    "expected_failures": {
+      "nvidia_acceptance_utc": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "concise_apple_time_without_faq_format",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "Acceptance Time: Time (EST) at which the submission was accepted by EDGAR."
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "nvidia_time_uses_stipulated_timezone",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "public_time_caveat_suffices",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "unguaranteed_lag_caveat_suffices",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "We don’t guarantee and cannot predict this lag."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "period_end_is_not_acceptance_evidence",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-01-28"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            },
+            {
+              "source_id": "systematic-sec-time-faq",
+              "quote": "There is no timestamp to indicate when filing content is first available on sec.gov."
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "period end is not acceptance evidence",
+    "expected_failures": {
+      "nvidia_acceptance_utc": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "missing_real_availability_caveat",
+    "response": {
+      "case_id": "systematic-001",
+      "answers": {
+        "apple_acceptance_utc": {
+          "value": "2024-02-01T23:03:38Z",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            }
+          ]
+        },
+        "nvidia_acceptance_utc": {
+          "value": "2024-02-21T21:36:57Z",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_before_acceptance": {
+          "value": "ineligible",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "nvidia_public_eligibility_at_acceptance": {
+          "value": "not_established",
+          "evidence": [
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "before_ready_selected_asset": {
+          "value": "apple",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "at_ready_selected_asset": {
+          "value": "nvidia",
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "first_execution_utc": {
+          "value": "2024-02-22T14:30:00Z",
+          "evidence": []
+        },
+        "valid_toy_net_profit": {
+          "value": -119.95,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "leakage_net_profit_inflation": {
+          "value": 799.6,
+          "evidence": [
+            {
+              "source_id": "systematic-apple-index",
+              "quote": "2024-02-01 18:03:38"
+            },
+            {
+              "source_id": "systematic-nvidia-index",
+              "quote": "2024-02-21 16:36:57"
+            }
+          ]
+        },
+        "empirical_performance_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Primary input is accession metadata; financial feature scores and total returns are synthetic.",
+        "EDGAR acceptance does not establish contemporaneous public posting. Synthetic receipt latencies are not asserted actual or maximum lags.",
+        "The selected two-name cohort does not establish a representative, survivorship-free or executable equities backtest.",
+        "The fixed decision snapshot is one second before synthetic readiness. A valid later snapshot changes the choice roughly 17 hours before execution; this is decision-time sensitivity, not unavoidable pre-trade look-ahead.",
+        "The sources were captured retrospectively in 2026; no exact historical source bytes or receipt logs are claimed."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "missing real availability caveat",
+    "expected_failures": {
+      "nvidia_public_eligibility_at_acceptance": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

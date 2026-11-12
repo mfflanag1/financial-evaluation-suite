@@ -1,0 +1,1306 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "minimal_quotes_whitespace_normalized",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target\nrange\nfor\nthe\nfederal\nfunds\nrate\nto\n4-3/4\nto\n5\npercent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Same minimal clauses with whitespace variation remain valid source evidence"
+  },
+  {
+    "name": "terminal_best_ignores_cash",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_plan": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "BC has best terminal worst-case P&L but needs7300 cash before receipts"
+  },
+  {
+    "name": "policy_pp_as_decimal_rate",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "incremental_financing_expense": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Treats0.25 percentage points as decimal0.25"
+  },
+  {
+    "name": "parallel_dv01_implies_no_pnl",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=0;R=0;T=0",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "base_scenario_pnl": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Drops curve-shape exposure and financing despite zero parallel DV01"
+  },
+  {
+    "name": "late_funding_hedge_receipt_netted",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 2550.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_minimum_cash": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Counts the2500 T2 C receipt as T1 funding"
+  },
+  {
+    "name": "fee_omitted",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_worst_pnl": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Omits150 C fee"
+  },
+  {
+    "name": "unknown_margin_assumed",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "determined",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "missing_margin_optimizer_status": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Unknown C margin can exclude the nominal optimizer"
+  },
+  {
+    "name": "cash_boundary_one_cent_early",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7299.99,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_optimizer_change_budget": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "BC is still infeasible one cent below the exact threshold"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": []
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "policy_midpoint": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Required public input has no source evidence"
+  },
+  {
+    "name": "fabricated_evidence",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "The agency guarantees this synthetic portfolio is optimal."
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "policy_midpoint": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Invented quote absent from frozen source"
+  },
+  {
+    "name": "unknown_source_id",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            },
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "policy_midpoint": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Required valid evidence is retained; extra citation uses a source ID outside the case"
+  },
+  {
+    "name": "valid_source_irrelevant_quote",
+    "response": {
+      "case_id": "portfolio-002",
+      "answers": {
+        "policy_midpoint": {
+          "value": 4.875,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "Inflation remains elevated."
+            }
+          ]
+        },
+        "incremental_financing_expense": {
+          "value": 2500.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "combined_parallel_dv01": {
+          "value": 0.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "H=-1600;R=-3100;T=-700",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "C",
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -750.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 50.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 7300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "target range for the federal funds rate to 4-3/4 to 5 percent"
+            }
+          ]
+        },
+        "missing_margin_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "policy_midpoint": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Real quote in the permitted source does not substantiate the required numerical input"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "energy-petroleum-index-20240403",
+  "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/wpsr_2024_04_03.php",
+  "title": "Weekly Petroleum Status Report archive — April 3, 2024 release index",
+  "publisher": "U.S. Energy Information Administration",
+  "published_at": "2024-04-03T23:59:59-04:00",
+  "publication_precision": "day",
+  "availability_basis": "The official dated archive header explicitly states reporting week March 29 and release April 3, 2024. Day-only availability uses 23:59:59 America/New_York (UTC-04:00).",
+  "retrieved_at": "2026-10-04T17:53:50Z",
+  "redistribution_status": "EIA U.S. federal statistical material with official attribution and URLs retained; no linked third-party assets included. Extracted gas evidence excludes third-party market-price and analyst-survey sections. Raw HTML is retained locally for audit; broader redistribution of embedded third-party material requires review.",
+  "raw_path": "sources/energy-petroleum-index-20240403/evidence.txt",
+  "text_path": "sources/energy-petroleum-index-20240403/evidence.txt",
+  "raw_sha256": "6a71996348213f6e5d085c4ea7040a2dec15b55c08a1b523b1acf1b97bfd1ac7",
+  "text_sha256": "6a71996348213f6e5d085c4ea7040a2dec15b55c08a1b523b1acf1b97bfd1ac7",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_html_with_selected_header_text",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_html_with_selected_header_text.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "credit-003",
+  "case_group": "dnb-2024-springing-revolver-threshold",
+  "lane": "credit_capital_structure",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T18:12:47Z",
+  "prompt": "Use Dun & Bradstreet's Q1 2024 debt-note disclosure as a fixed conditional rule: springing first-lien net leverage limit 6.75 only when qualifying quarter-end revolver exposure EXCEEDS 35% of commitments. The disclosure states an aggregate facility amount of $850 million. For this synthetic exercise, STIPULATE total commitments of $850 million equal to that disclosed facility size; do not infer this equality from available-borrowing capacity. This note summarizes the trigger and does not provide every operative agreement definition. Therefore all contractual numerator/EBITDA and LC classifications below are explicitly stipulated. SYNTHETIC base: revolving loans 270, trigger-qualifying LC 27.5 (no overlapping loan amount), first-lien NET indebtedness 2000 INCLUDING the 270 loans, EBITDA 300. Additional drawn funds are immediately spent, increase first-lien net debt dollar-for-dollar, and add no nettable cash. No other commitment, LC, debt or EBITDA changes. For stress use an additional 20 draw and EBITDA 280. Compare two hypothetical externally funded repayments before a quarter-end test: repay revolver to deactivate the test, or repay term debt while keeping test active. No cash enters nettable cash; no cure right or retroactive default cure is assumed. Other borrowing covenants/limits are outside scope. In a separate incomplete branch, loans 290 and LC face amount 20 are known but which LC amount qualifies is unknown in [0,20]; infer only identifiable results. All money is USD millions.\n\nUse only the frozen document versions. The cutoff is an observed 2026 availability bound, not an invented historical publication time. Do not use subsequent real-world outcomes. Return all declared fields in standard structured form with verbatim rule/data evidence; scenario inputs need no fabricated source. Preserve unrounded intermediates; report money in the stated units and percentages as percentage points on the 0–100 scale, to at least 8 decimal places when needed.",
+  "source_ids": [
+    "expansion-dnb-2024-debt"
+  ],
+  "output_fields": [
+    {
+      "id": "activation_exposure_threshold",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Exposure boundary; covenant activates strictly ABOVE this amount.",
+      "evidence_required": true
+    },
+    {
+      "id": "base_trigger_active",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "270 loans plus 27.5 qualifying LC at quarter end: is the springing test active?",
+      "evidence_required": true
+    },
+    {
+      "id": "draw25_trigger_active",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Additional 25 immediately spent; qualifying LC unchanged.",
+      "evidence_required": true
+    },
+    {
+      "id": "draw25_first_lien_net_leverage",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "First-lien net debt after additional 25 divided by stipulated EBITDA 300; cite the ratio definition.",
+      "evidence_required": true
+    },
+    {
+      "id": "maximum_additional_spent_draw",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Maximum nonnegative added revolver draw compatible with this springing condition, base EBITDA 300; borrowing permissions under other terms are outside scope.",
+      "evidence_required": true
+    },
+    {
+      "id": "stress_draw20_leverage",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "With 20 additional draw spent and EBITDA 280, compute first-lien net leverage.",
+      "evidence_required": true
+    },
+    {
+      "id": "stress_minimum_revolver_repayment_to_deactivate",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "From stress+20draw, minimum externally funded revolver repayment to make test inactive at the hypothetical quarter-end snapshot; cash stays fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "stress_term_debt_repayment_to_meet_active_ratio",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Alternative external term-debt repayment leaves revolver exposure unchanged: minimum to meet 6.75 exactly.",
+      "evidence_required": true
+    },
+    {
+      "id": "unknown_lc_trigger_identifiable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Separate branch: revolver 290, LC face amount 20 with eligible amount 0..20. Is trigger status uniquely identified?",
+      "evidence_required": true
+    }
+  ]
+}

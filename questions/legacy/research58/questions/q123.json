@@ -1,0 +1,126 @@
+{
+  "question_id": "q123",
+  "title": "Storage policy under delayed demand information and pathwise funding",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Choose an implementable storage nomination policy on the information tree and reconcile each leaf. Compare it with the precise early-demand-information counterfactual. Enforce funding and maximum shortage path by path. A policy cannot choose different actions for leaves it cannot yet distinguish. All observations and rules are synthetic. Return the declared typed fields with supporting source IDs.",
+  "inputs": {
+    "opening_inventory": 20,
+    "initial_demand": 10,
+    "grid": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "storage_cap": 70,
+    "terminal_reserve": 10,
+    "terminal_withdrawal_cap": 50,
+    "initial_price": 2,
+    "signal_prices": [
+      3,
+      8
+    ],
+    "leaf_demand": [
+      20,
+      50,
+      30,
+      60
+    ],
+    "leaf_probability": [
+      0.35,
+      0.15,
+      0.15,
+      0.35
+    ],
+    "leaf_signal": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "purchase_cash_budget": 160,
+    "shortfall_penalty": 20,
+    "maximum_leaf_shortfall": 20
+  },
+  "sources": [
+    {
+      "id": "q123_tree",
+      "text": "Original synthetic packet. All input probabilities, demand leaves and signal memberships belong to this scenario tree. Choose q0 before any signal. Deliver initial demand10 certainly, then observe low or high price signal only, choose qLow or qHigh, then learn terminal demand. Leaves0/1 share low signal, leaves2/3 share high. A second-stage action MUST be identical within a signal; leaf probabilities are unconditional. Every action is in grid0,10,20,30,40. No other purchase, return or sale is possible."
+    },
+    {
+      "id": "q123_operations",
+      "text": "Original synthetic packet. Input opening inventory20, capacity70 and reserve10 apply in all leaves, with unit purchase-to-inventory conversion and no loss. Capacity applies just after each purchase, initial demand is met in full, then terminal delivery equals the minimum of demand, withdrawal cap50, and inventory above reserve10. Terminal shortfall may not exceed20 in ANY leaf. No salvage credit exists. Purchase price2 initially,3 after low signal,8 after high signal. Total purchase cash cannot exceed160 in ANY leaf. Terminal penalties20 per shortfall unit are billed after the purchase horizon and separately funded, so enter cost but not this purchase budget. Minimize expected purchase cost plus penalty; ties lower q0, then qLow, then qHigh. The early-information counterfactual reveals demand only before purchase2, not before q0."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "nonanticipative_purchase_policy",
+      "type": "number_array",
+      "unit": "inventory units",
+      "description": "[common initial purchase, low-signal purchase, high-signal purchase].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "expected_total_cost",
+      "type": "number",
+      "unit": "cash units",
+      "description": "Expected purchase payments plus terminal shortfall penalty.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "leaf_shortfalls",
+      "type": "number_array",
+      "unit": "inventory units",
+      "description": "Leaf order0,1,2,3.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "leaf_ending_inventory",
+      "type": "number_array",
+      "unit": "inventory units",
+      "description": "Leaf order0,1,2,3 after terminal delivery.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "leaf_purchase_cash",
+      "type": "number_array",
+      "unit": "cash units",
+      "description": "Total purchases in each leaf, before penalties.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "feasible_policy_count",
+      "type": "number",
+      "unit": "policies",
+      "description": "Count of admissible three-action policies.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "early_demand_information_cost",
+      "type": "number",
+      "unit": "cash units",
+      "description": "Minimum expected cost if demand is revealed immediately before the second purchase, keeping one common initial purchase and every physical/cash constraint.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "value_of_early_demand_information",
+      "type": "number",
+      "unit": "cash units",
+      "description": "Original optimum cost minus relaxed-information optimum cost.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

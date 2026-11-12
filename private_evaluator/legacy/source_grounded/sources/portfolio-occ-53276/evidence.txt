@@ -1,0 +1,55 @@
+#53276
+Date: September 28, 2023
+Subject: Kellogg Company – Distribution and Name Change
+Option Symbols: K/2K
+New Symbols: K1/2K1
+Date: 10/02/2023
+* * * Update * * *
+Contract Adjustment
+Effective Date: October 2, 2023
+Option Symbols: K changes to K1
+2K changes to 2K1
+Strike Prices: No Change
+Number of
+Contracts: No Change
+Multiplier: 100 (e.g., a premium of 1.50 yields $150; a strike of 60 yields $6,000.00)
+New Deliverable
+Per Contract: 1) 100 Kellanova (K) Common Shares
+2) 25 (New) WK Kellogg Company (KLG) Common Shares
+Settlement
+Allocation: K: 95%
+KLG: 5%
+CUSIPs: K: 487836108
+KLG: 92942W107
+THE SETTLEMENT ALLOCATION OF THE TOTAL STRIKE PRICE AMOUNT IS BEING PROVIDED
+SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY
+CLEARING CORPORATION (NSCC), AND IS NOT INTENDED TO BE USED FOR ANY OTHER
+PURPOSE, TRANSACTION OR CUSTOMER ACCOUNT STATEMENTS.
+Pricing
+The underlying price for K1/2K1 will be determined as follows:K1 = K + 0.25 (KLG)
+Background
+Kellogg Company (K) has announced a distribution of (New) WK Kellogg Company (KLG) Common
+Shares. The distribution ratio is 0.25 of an KLG share for each K share held. Upon completion of the
+distribution, Kellogg Company will change its name to Kellanova. The record date is September 21, 2023; the
+payable date is October 2, 2023. The NYSE has set October 2, 2023, as the ex-distribution date for this
+distribution.
+WK Kellogg Company Common Shares began trading on a when issued basis on September 27, 2023 on
+the NYSE under the trading symbol “KLG WI”.
+Disclaimer
+This Information Memo provides an unofficial summary of the terms of corporate events affecting listed
+options or futures prepared for the convenience of market participants. OCC accepts no responsibility for
+the accuracy or completeness of the summary, particularly for information which may be relevant to
+investment decisions. Option or futures investors should independently ascertain and evaluate all
+information concerning this corporate event(s).
+The determination to adjust options and the nature of any adjustment is made by OCC pursuant to OCC
+By-Laws, Article VI, Sections 11 and 11A. The determination to adjust futures and the nature of any
+adjustment is made by OCC pursuant to OCC By-Laws, Article XII, Sections 3, 4, or 4A, as applicable. For
+both options and futures, each adjustment decision is made on a case by case basis. Adjustment
+decisions are based on information available at the time and are subject to change as additional
+information becomes available or if there are material changes to the terms of the corporate event(s)
+occasioning the adjustment.
+ALL CLEARING MEMBERS ARE REQUESTED TO IMMEDIATELY ADVISE ALL BRANCH OFFICES
+AND CORRESPONDENTS ON THE ABOVE.
+For questions regarding this memo, please email the Investor Education team at options@theocc.com.
+Clearing Member Firms of OCC may contact Member Services at 1-800-544-6091 or, within Canada, at 1-
+800-424-7320, or email memberservices@theocc.com.

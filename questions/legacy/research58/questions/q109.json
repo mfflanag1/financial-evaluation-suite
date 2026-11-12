@@ -1,0 +1,174 @@
+{
+  "question_id": "q109",
+  "title": "Point-in-time consolidated-entity investment screen",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Run the screen at the stated date using only the listing then in force. Start is inclusive and end exclusive. Keep each issuer group’s active PRIMARY listing only; an additional receipt does not create another company. All financial amounts are USD million and represent consolidated groups known at the cutoff. FCF is CFO less capex; net debt subtracts unrestricted cash only. Require every stated screen threshold, with equality passing. Order the eligible groups alphabetically. Among passing groups choose the lowest EV/EBITDA, with a tie resolved by alphabetical listing ID; EV uses total market capitalization, not free float. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "as_of": "2025-06-30",
+    "groups": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "revenue": [
+      1200,
+      800,
+      1000,
+      900
+    ],
+    "cfo": [
+      180,
+      100,
+      160,
+      200
+    ],
+    "capex": [
+      60,
+      30,
+      50,
+      20
+    ],
+    "debt": [
+      350,
+      500,
+      420,
+      100
+    ],
+    "cash": [
+      100,
+      120,
+      150,
+      200
+    ],
+    "restricted_cash": [
+      20,
+      20,
+      50,
+      0
+    ],
+    "ebitda": [
+      150,
+      180,
+      160,
+      150
+    ],
+    "free_float_cap": [
+      600,
+      700,
+      900,
+      1000
+    ],
+    "market_cap": [
+      1000,
+      1100,
+      1200,
+      1200
+    ],
+    "listings": [
+      {
+        "id": "A1",
+        "group": "A",
+        "primary": true,
+        "start": "2020-01-01",
+        "end": "2099-01-01"
+      },
+      {
+        "id": "A2",
+        "group": "A",
+        "primary": false,
+        "start": "2020-01-01",
+        "end": "2099-01-01"
+      },
+      {
+        "id": "B1",
+        "group": "B",
+        "primary": true,
+        "start": "2020-01-01",
+        "end": "2099-01-01"
+      },
+      {
+        "id": "C1",
+        "group": "C",
+        "primary": true,
+        "start": "2020-01-01",
+        "end": "2025-07-01"
+      },
+      {
+        "id": "C2",
+        "group": "C",
+        "primary": true,
+        "start": "2025-07-01",
+        "end": "2099-01-01"
+      },
+      {
+        "id": "D1",
+        "group": "D",
+        "primary": true,
+        "start": "2025-07-01",
+        "end": "2099-01-01"
+      }
+    ],
+    "minimum_fcf_margin_pct": 8,
+    "maximum_net_debt_ebitda": 2,
+    "minimum_free_float_cap": 500
+  },
+  "sources": [
+    {
+      "id": "q109_t1_1",
+      "text": "Synthetic packet. The identity registry maps share lines to consolidated groups. The pending July listing transitions were announced but were not yet effective at the June cutoff. No unlisted or inactive primary line is eligible."
+    },
+    {
+      "id": "q109_t1_2",
+      "text": "Synthetic packet. The financial schedule separately identifies restricted cash and free-float capitalization. Restricted cash cannot reduce economic net debt; free-float capitalization is an investibility hurdle, not the equity component of enterprise value."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "eligible_primary_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Active primary listing IDs in group alphabetical order."
+    },
+    {
+      "name": "fcf_margin_pct",
+      "type": "number_array",
+      "unit": "percent",
+      "description": "Eligible-primary order; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_debt_ebitda",
+      "type": "number_array",
+      "unit": "ratio",
+      "description": "Eligible-primary order.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "passing_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Passing listing IDs in the same order."
+    },
+    {
+      "name": "passing_ev_ebitda",
+      "type": "number_array",
+      "unit": "ratio",
+      "description": "Order of passing_ids.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "selected_id",
+      "type": "string",
+      "unit": "label",
+      "description": "Exact selected primary listing ID."
+    }
+  ]
+}

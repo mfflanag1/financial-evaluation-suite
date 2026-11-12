@@ -1,0 +1,81 @@
+{
+  "question_id": "q161",
+  "title": "Reconsider a harvest plan as affiliated executions and mandates change",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Initially there are no identified affiliated P purchases. Evaluate selling the entire original P position and replacing its exposure with Q. Report allowed loss and net economic benefit under the stipulated fictional policy.",
+  "inputs": {
+    "original_P_shares": 100,
+    "basis_per_P_share": 100,
+    "current_P_price": 80,
+    "Q_price": 40,
+    "Q_per_P_exposure": 2,
+    "tax_rate": 0.3,
+    "P_sale_cost_per_share": 1,
+    "Q_purchase_cost_per_share": 0.5,
+    "basis_risk_charge_per_P_sold": 1,
+    "sale_grid": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ]
+  },
+  "sources": [
+    {
+      "id": "q161_holdings",
+      "text": "Original synthetic evaluation packet. The account has100 original P shares with tax basis100 and current price80; Q costs40 and two Q shares preserve exposure of one P. Synthetic model charges sale cost1 per P and purchase cost0.5 per Q, plus basis-risk penalty1 per P replaced. There are no other costs or returns. Plans remain unexecuted through all stages."
+    },
+    {
+      "id": "q161_policy",
+      "text": "Original synthetic evaluation packet. For this fictional tax policy only, realized loss equals basis minus sale price before transaction costs. A30% immediately usable credit applies to allowed loss. Identical P purchases by any affiliated account in the restricted window disallow losses one-for-one up to matched shares, and add disallowed loss to replacement basis. Q is not identical to P. Transaction costs and basis-risk charge do not create further tax deductions. Maximize credit less trading costs and basis-risk charge, using the supplied sale grid, ties smaller sale."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "shares_sold",
+      "type": "number",
+      "unit": "shares",
+      "description": "Shares sold.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "allowed_loss",
+      "type": "number",
+      "unit": "USD",
+      "description": "Allowed loss.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "tax_credit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Tax credit.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "total_trading_cost",
+      "type": "number",
+      "unit": "USD",
+      "description": "Total trading cost.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_economic_benefit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Net economic benefit.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

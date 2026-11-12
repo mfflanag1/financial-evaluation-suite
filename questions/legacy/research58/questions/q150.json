@@ -1,0 +1,110 @@
+{
+  "question_id": "q150",
+  "title": "Credit protection settlement and available cash",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Match deliverable obligations and calculate investment recovery separately from the expense funding test. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "obligations": [
+      {
+        "id": "A",
+        "senior": true,
+        "currency": "USD",
+        "published": 2,
+        "auction_price": 40
+      },
+      {
+        "id": "B",
+        "senior": true,
+        "currency": "USD",
+        "published": 2,
+        "auction_price": 35
+      },
+      {
+        "id": "C",
+        "senior": false,
+        "currency": "USD",
+        "published": 2,
+        "auction_price": 20
+      },
+      {
+        "id": "D",
+        "senior": true,
+        "currency": "EUR",
+        "published": 2,
+        "auction_price": 25
+      }
+    ],
+    "cutoff": 3,
+    "hedge_face": 12,
+    "bond_face": 20,
+    "basis": 70,
+    "premium": 0.4,
+    "opening_cash": 2,
+    "bond_pay_day": 7,
+    "protection_pay_day": 10,
+    "expense_day": 10,
+    "expense": 15
+  },
+  "sources": [
+    {
+      "id": "q150_facts",
+      "text": "Synthetic packet: The initial recovery packet includes an ineligible subordinate and a foreign-currency obligation; quotes are not interchangeable."
+    },
+    {
+      "id": "q150_terms",
+      "text": "Synthetic governing terms: The synthetic contract settles protection using the minimum eligible quotation among senior USD obligations published by cutoff. This is a stipulated auction rule, not a general auction model. Protection pays hedge_face*(1-recovery_price/100); the held bond pays bond_face*recovery_price/100. Both receipts are certain conditional on this scenario, but cash is usable only on its payment day. No discounting, interest or transfers; all cash amounts are USD millions. The input basis is the historical bond purchase price per 100 face, not a cash amount. Historical bond cost in USD millions equals bond_face*basis/100; premium is already a USD-million cash amount."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "eligible_obligation_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Sorted eligible senior USD obligation identifiers."
+    },
+    {
+      "name": "auction_recovery_price",
+      "type": "number",
+      "unit": "price per100",
+      "description": "Stipulated minimum eligible auction quotation.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "protection_receipt",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash protection settlement.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "combined_investment_pnl",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Bond recovery plus protection, less historical bond basis and premium; excludes the unrelated expense.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_at_expense_deadline",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Opening cash plus receipts paid no later than the current expense deadline.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_shortfall",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Additional cash needed for the current expense, floored at zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

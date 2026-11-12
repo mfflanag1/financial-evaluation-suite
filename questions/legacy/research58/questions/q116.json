@@ -1,0 +1,92 @@
+{
+  "question_id": "q116",
+  "title": "Operating-leverage bounds when cost decomposition is missing",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Assess what the current quarter actually identifies about next-quarter operating leverage. All amounts are USD million. The permitted model is cost=F+v*revenue with the SAME F and v in the base and next quarters; F lies in the supplied closed interval and v must exactly reconcile the base quarter. The older quarter has a different segment mix and no established common cost function, so it cannot supply a second identifying equation. Next cash is after-tax EBIT less the fixed maintenance-cash amount; no other cash flows apply. Give sharp bounds, the smallest F supporting the cash hurdle, feasibility of the analyst’s EBIT forecast, and whether hurdle compliance is identified. Labels: certainly_met, certainly_missed, not_identified; equality meets the hurdle. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "base_revenue": 240,
+    "base_cost": 160,
+    "next_revenue": 300,
+    "fixed_cost_bounds": [
+      40,
+      100
+    ],
+    "tax_rate": 0.25,
+    "maintenance_cash": 5,
+    "cash_hurdle": 80,
+    "analyst_ebit_forecast": 130,
+    "earlier_mixed_segment_quarter": {
+      "revenue": 200,
+      "cost": 150,
+      "same_cost_function_established": false
+    }
+  },
+  "sources": [
+    {
+      "id": "q116_t1_1",
+      "text": "Synthetic packet. Only one current-perimeter revenue/cost observation is available. The fixed-cost interval is the authorized external restriction. Earlier mixed-perimeter figures do not establish an additional equation for this model."
+    },
+    {
+      "id": "q116_t1_2",
+      "text": "Synthetic packet. The scenario fixes revenue, tax and maintenance cash. It asks for an identified set over all cost decompositions consistent with the stated restrictions, not a fitted point forecast."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "variable_cost_rate_bounds",
+      "type": "number_array",
+      "unit": "cost / revenue",
+      "description": "Ascending lower, upper.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "next_ebit_bounds",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Ascending lower, upper.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "next_cash_bounds",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Ascending lower, upper.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "minimum_fixed_cost_for_hurdle",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Smallest F that meets cash hurdle.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "analyst_forecast_feasible",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether stated analyst EBIT belongs to the admissible interval."
+    },
+    {
+      "name": "hurdle_identification",
+      "type": "string",
+      "unit": "label",
+      "description": "Exactly certainly_met, certainly_missed, or not_identified."
+    },
+    {
+      "name": "endpoint_base_costs",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "Reconstructed base costs at lower then upper F.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

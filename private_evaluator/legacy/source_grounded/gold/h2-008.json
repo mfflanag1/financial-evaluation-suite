@@ -1,0 +1,292 @@
+{
+  "case_id": "h2-008",
+  "reference_solution": {
+    "nonodd_shares_accepted": 184425910.0,
+    "nonodd_acceptance_fraction": 0.23229780464612185,
+    "cap_minus_final_ratio": 0.0225,
+    "oddlot_whole_kvue_shares": 795,
+    "oddlot_fractional_interest": 0.2076,
+    "oddlot_marked_economic_profit": 1756.7748,
+    "actual_fractional_cash_known": false,
+    "launch_only_exact_ratio_known": false
+  },
+  "worked_derivation": [
+    "Nonodd accepted=190955436-6529526=184425910; fraction=184425910/793920159; The aggregate count-derived fraction is distinct from the printed applied proration factor23.231832%; the retained disclosure does not explain their difference. All-book acceptance also has a different denominator and odd-lot composition.",
+    "Cap minus final=8.0549-8.0324=.0225. Eligible odd lot accepts all99; entitlement=99*8.0324=795.2076, whole795/fraction.2076. Marked profit=795.2076*23-99*167=1756.7748.",
+    "Unknown actual sale prices20 versus25 change fractional cash; future three-day VWAP values at launch also admit different final ratios within the cap."
+  ],
+  "fields": [
+    {
+      "id": "nonodd_shares_accepted",
+      "expected": 184425910.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "\"Odd-lot\" shares tendered that were not subject to proration: 6,529,526"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "Total number of shares of Johnson & Johnson common stock accepted: 190,955,436"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "All shares validly tendered by eligible \"odd-lot\" shareholders were accepted."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "nonodd_acceptance_fraction",
+      "expected": 0.23229780464612185,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "\"Odd-lot\" shares tendered that were not subject to proration: 6,529,526"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "Total number of shares of Johnson & Johnson common stock accepted: 190,955,436"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "All shares validly tendered by eligible \"odd-lot\" shareholders were accepted."
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "Shares tendered that were subject to proration: 793,920,159"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "cap_minus_final_ratio",
+      "expected": 0.0225,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-launch-pdf",
+            "anchors": [
+              "upper limit of 8.0549 shares"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "deliver 8.0324 shares of Kenvue common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "Final Exchange Ratio of 8.0324 in Split-O of Kenvue Inc."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "oddlot_whole_kvue_shares",
+      "expected": 795,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "owned fewer than 100 shares of Johnson & Johnson common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "who validly tendered all of their shares, were not subject to proration"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "deliver 8.0324 shares of Kenvue common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "Final Exchange Ratio of 8.0324 in Split-O of Kenvue Inc."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "oddlot_fractional_interest",
+      "expected": 0.2076,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "owned fewer than 100 shares of Johnson & Johnson common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "who validly tendered all of their shares, were not subject to proration"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "deliver 8.0324 shares of Kenvue common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "Final Exchange Ratio of 8.0324 in Split-O of Kenvue Inc."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "oddlot_marked_economic_profit",
+      "expected": 1756.7748,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 0.01,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "owned fewer than 100 shares of Johnson & Johnson common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "who validly tendered all of their shares, were not subject to proration"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "deliver 8.0324 shares of Kenvue common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-jnj-ratio-pdf",
+            "anchors": [
+              "Final Exchange Ratio of 8.0324 in Split-O of Kenvue Inc."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "actual_fractional_cash_known",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-final-pdf",
+            "anchors": [
+              "Checks in lieu of fractional shares of Kenvue common stock will be delivered after the exchange agent has aggregated all fractional shares and sold them in the open market."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "launch_only_exact_ratio_known",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-jnj-launch-pdf",
+            "anchors": [
+              "arithmetic average of the daily volume-weighted average prices"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-jnj-launch-pdf",
+            "anchors": [
+              "expected to be August 14, 15 and 16, 2023"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "All holder economics are synthetic. Share counts and terms are real retained issuer disclosures.",
+    "Marked fractional entitlement is not actual cash-in-lieu. No post-publication trading performance is claimed."
+  ]
+}

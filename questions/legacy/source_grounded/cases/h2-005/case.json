@@ -1,0 +1,101 @@
+{
+  "id": "h2-005",
+  "case_group": "boeing-2024-depositary-preferred-conversion-regimes",
+  "lane": "credit_capital_structure",
+  "epistemic_type": "retrospective_reconciliation_and_conditional_decision",
+  "information_cutoff": "2026-10-04T20:02:32Z",
+  "prompt": "Value the share entitlements of a 20,000-depositary-share position in Boeing's 2024 mandatory convertible preferred offering. The trader has applied the normal mandatory-conversion formula to an optional conversion and treated each depositary receipt as one preferred share. Use the pricing release and filed term sheet to repair the mapping. SYNTHETIC independent branches: normal mandatory conversion has contractual applicable market value 160; ordinary optional conversion is outside a fundamental-change period, with a 160 mark only for the requested comparison; a qualifying fundamental change has contractual stock price 155 and effective date April 15, 2026, with a timely valid conversion election. Assume no anti-dilution adjustments. For every conversion field, report only the aggregate mathematical common-share entitlement at the applicable table conversion rate, excluding dividends, make-whole amounts and all other additional consideration. Entitlements are BEFORE cash-in-lieu/fractional-share settlement; no executable fractional settlement or complete event consideration is inferred. For the dividend-only branch assume each scheduled dividend through October 15, 2025 is declared and paid in cash, and the position is continuously held over every relevant record date. These branches have different dates and cannot be treated as a same-horizon investment return. An additional incomplete branch supplies only one closing price and no contractual VWAP.\n\nUse only the frozen document versions and the explicitly labeled hypothetical assumptions. These are retrospective research questions, not claims of historical tradability or forecasting skill. Discover and reconcile the relevant definitions and periods in the documents. Return every declared field with verbatim supporting evidence, preserving unrounded intermediate calculations. Money is USD millions unless the field specifies another unit. Percentages use the 0\u2013100 scale. For every noninteger output, use at least eight decimal places unless the field explicitly allows a different precision. Source values displayed in millions are treated as exact only for these table-based arithmetic comparisons; do not infer greater economic precision.",
+  "source_ids": [
+    "h2a-boeing-pricing",
+    "h2a-boeing-terms"
+  ],
+  "output_fields": [
+    {
+      "id": "preferred_shares_represented",
+      "type": "number",
+      "unit": "preferred_shares",
+      "description": "Underlying preferred shares represented by the 20,000-depositary-share position.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "first_plus_next_three_dividends",
+      "type": "number",
+      "unit": "USD",
+      "description": "Cash dividends through October 15, 2025 under the declared-and-paid-in-cash assumption.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "normal_mandatory_common_share_entitlement",
+      "type": "number",
+      "unit": "common_shares",
+      "description": "Table-conversion-rate common-share entitlement only, before fractional-share settlement, at the stipulated applicable market value 160. Exclude dividends, make-whole amounts and other additional consideration.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "ordinary_optional_common_share_entitlement",
+      "type": "number",
+      "unit": "common_shares",
+      "description": "Ordinary optional table-conversion-rate common-share entitlement only; exclude dividends, make-whole amounts and other additional consideration. This is an alternative mode, not an option exercised after mandatory conversion.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "normal_minus_optional_marked_value",
+      "type": "number",
+      "unit": "USD",
+      "description": "Difference in table-conversion-rate common-share marked values at 160 between the independently stipulated modes; exclude dividends, make-whole amounts, other additional consideration and timing.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fundamental_change_common_share_entitlement",
+      "type": "number",
+      "unit": "common_shares",
+      "description": "Table-conversion-rate common-share entitlement only, before fractional-share settlement, in the April 15, 2026 fundamental-change branch at contractual stock price 155. Exclude dividends, make-whole amounts and other additional consideration. Interpolate in date and price; four decimal places are sufficient.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fundamental_minus_ordinary_optional_shares",
+      "type": "number",
+      "unit": "common_shares",
+      "description": "Fundamental-change less ordinary optional table-conversion-rate common-share entitlement only, before fractional-share settlement. Exclude dividends, make-whole amounts and other additional consideration; four decimal places are sufficient.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "single_close_identifies_mandatory_conversion",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Incomplete branch: only one common closing price 160 is supplied. Does that determine the contractual applicable market value and exact mandatory-conversion entitlement?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "dividends_contractually_guaranteed_in_cash",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Do the terms require every dividend to be paid in cash rather than permitting common shares subject to stated conditions?",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    }
+  ],
+  "response_format": {
+    "case_id": "h2-005",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

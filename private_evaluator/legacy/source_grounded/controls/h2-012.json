@@ -1,0 +1,717 @@
+[
+  {
+    "name": "separate_minimal_source_clauses",
+    "response": {
+      "case_id": "h2-012",
+      "answers": {
+        "shared_at1_mark_loss": {
+          "value": 1850000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "contractual_ubs_share_delivery": {
+          "value": 1000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "credit_suisse_equity_mark_pnl": {
+          "value": -26960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "eventual_net_ubs_share_exposure": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "aggregate_portfolio_mark_pnl": {
+          "value": -1904960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            },
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "immediate_cash_financing_need": {
+          "value": 803000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "tier2_zero_required_by_write_down": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "aggregate_pnl_known_without_tier2_mark": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "ultimate_at1_recovery_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All positions, market marks, cash balances and collateral timing are synthetic; the regulatory scope and announced exchange ratio are source facts.",
+        "The2023 write-down event is not a claim about current litigation, ultimate recoveries, or the valuation of legal claims.",
+        "The full UBS issuer warrants PDF reproduces the entire originalMarch19 acquisition release in AnnexE; direct news-page retrieval was blocked."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All required values and financial premises supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "reuse_verified_upstream_support",
+    "response": {
+      "case_id": "h2-012",
+      "answers": {
+        "shared_at1_mark_loss": {
+          "value": 1850000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "contractual_ubs_share_delivery": {
+          "value": 1000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "credit_suisse_equity_mark_pnl": {
+          "value": -26960.0,
+          "evidence": [],
+          "support_refs": [
+            "contractual_ubs_share_delivery"
+          ]
+        },
+        "eventual_net_ubs_share_exposure": {
+          "value": 0.0,
+          "evidence": [],
+          "support_refs": [
+            "contractual_ubs_share_delivery"
+          ]
+        },
+        "aggregate_portfolio_mark_pnl": {
+          "value": -1904960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ],
+          "support_refs": [
+            "shared_at1_mark_loss",
+            "credit_suisse_equity_mark_pnl"
+          ]
+        },
+        "immediate_cash_financing_need": {
+          "value": 803000.0,
+          "evidence": [],
+          "support_refs": [
+            "shared_at1_mark_loss"
+          ]
+        },
+        "tier2_zero_required_by_write_down": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "aggregate_pnl_known_without_tier2_mark": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "ultimate_at1_recovery_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All positions, market marks, cash balances and collateral timing are synthetic; the regulatory scope and announced exchange ratio are source facts.",
+        "The2023 write-down event is not a claim about current litigation, ultimate recoveries, or the valuation of legal claims.",
+        "The full UBS issuer warrants PDF reproduces the entire originalMarch19 acquisition release in AnnexE; direct news-page retrieval was blocked."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Explicit declared DAG reuses source-supported upstream proof; remaining independent premises still quoted.",
+    "expected_failures": {}
+  },
+  {
+    "name": "treat_wrapper_as_diversification",
+    "response": {
+      "case_id": "h2-012",
+      "answers": {
+        "shared_at1_mark_loss": {
+          "value": 800000,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "contractual_ubs_share_delivery": {
+          "value": 1000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "credit_suisse_equity_mark_pnl": {
+          "value": -26960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "eventual_net_ubs_share_exposure": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "aggregate_portfolio_mark_pnl": {
+          "value": -1904960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            },
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "immediate_cash_financing_need": {
+          "value": 803000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "tier2_zero_required_by_write_down": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "aggregate_pnl_known_without_tier2_mark": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "ultimate_at1_recovery_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All positions, market marks, cash balances and collateral timing are synthetic; the regulatory scope and announced exchange ratio are source facts.",
+        "The2023 write-down event is not a claim about current litigation, ultimate recoveries, or the valuation of legal claims.",
+        "The full UBS issuer warrants PDF reproduces the entire originalMarch19 acquisition release in AnnexE; direct news-page retrieval was blocked."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits identical underlying AT1 exposure held through another wrapper.",
+    "expected_failures": {
+      "shared_at1_mark_loss": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "extend_at1_write_down_to_tier2",
+    "response": {
+      "case_id": "h2-012",
+      "answers": {
+        "shared_at1_mark_loss": {
+          "value": 1850000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "contractual_ubs_share_delivery": {
+          "value": 1000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "credit_suisse_equity_mark_pnl": {
+          "value": -26960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "eventual_net_ubs_share_exposure": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "aggregate_portfolio_mark_pnl": {
+          "value": -2824960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            },
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "immediate_cash_financing_need": {
+          "value": 803000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "tier2_zero_required_by_write_down": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "aggregate_pnl_known_without_tier2_mark": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "ultimate_at1_recovery_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All positions, market marks, cash balances and collateral timing are synthetic; the regulatory scope and announced exchange ratio are source facts.",
+        "The2023 write-down event is not a claim about current litigation, ultimate recoveries, or the valuation of legal claims.",
+        "The full UBS issuer warrants PDF reproduces the entire originalMarch19 acquisition release in AnnexE; direct news-page retrieval was blocked."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Writes Tier2 to zero despite the explicit scope distinction and supplied mark.",
+    "expected_failures": {
+      "aggregate_portfolio_mark_pnl": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "spend_future_equity_delivery_now",
+    "response": {
+      "case_id": "h2-012",
+      "answers": {
+        "shared_at1_mark_loss": {
+          "value": 1850000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "contractual_ubs_share_delivery": {
+          "value": 1000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "credit_suisse_equity_mark_pnl": {
+          "value": -26960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "eventual_net_ubs_share_exposure": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "aggregate_portfolio_mark_pnl": {
+          "value": -1904960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            },
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "immediate_cash_financing_need": {
+          "value": 785000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "tier2_zero_required_by_write_down": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "aggregate_pnl_known_without_tier2_mark": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "ultimate_at1_recovery_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All positions, market marks, cash balances and collateral timing are synthetic; the regulatory scope and announced exchange ratio are source facts.",
+        "The2023 write-down event is not a claim about current litigation, ultimate recoveries, or the valuation of legal claims.",
+        "The full UBS issuer warrants PDF reproduces the entire originalMarch19 acquisition release in AnnexE; direct news-page retrieval was blocked."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Counts future noncash shares as immediate cash available for margin.",
+    "expected_failures": {
+      "immediate_cash_financing_need": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_value_missing_required_operand",
+    "response": {
+      "case_id": "h2-012",
+      "answers": {
+        "shared_at1_mark_loss": {
+          "value": 1850000.0,
+          "evidence": []
+        },
+        "contractual_ubs_share_delivery": {
+          "value": 1000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "credit_suisse_equity_mark_pnl": {
+          "value": -26960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "eventual_net_ubs_share_exposure": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "aggregate_portfolio_mark_pnl": {
+          "value": -1904960.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            },
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "Under the terms of the all-share transaction"
+            },
+            {
+              "source_id": "h2b-ubs-announce-warrants",
+              "quote": "1 UBS share for every 22.48 Credit Suisse shares held"
+            }
+          ]
+        },
+        "immediate_cash_financing_need": {
+          "value": 803000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        },
+        "tier2_zero_required_by_write_down": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "aggregate_pnl_known_without_tier2_mark": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "Tier 2 bonds are not written down."
+            }
+          ]
+        },
+        "ultimate_at1_recovery_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-finma-at1",
+              "quote": "completely write down its AT1 instruments"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All positions, market marks, cash balances and collateral timing are synthetic; the regulatory scope and announced exchange ratio are source facts.",
+        "The2023 write-down event is not a claim about current litigation, ultimate recoveries, or the valuation of legal claims.",
+        "The full UBS issuer warrants PDF reproduces the entire originalMarch19 acquisition release in AnnexE; direct news-page retrieval was blocked."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "A required source premise is omitted despite correct arithmetic.",
+    "expected_failures": {
+      "shared_at1_mark_loss": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

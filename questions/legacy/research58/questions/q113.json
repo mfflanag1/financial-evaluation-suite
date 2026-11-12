@@ -1,0 +1,107 @@
+{
+  "question_id": "q113",
+  "title": "Two-tier supply bottlenecks and a conditional capacity purchase",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Trace the production bottleneck through wafer yield and two bills of material, then choose deliveries. Only integer X and Y units are allowed; meet the minimum Y commitment, do not exceed demand, and maximize gross profit. If profit ties, choose smaller X, then smaller Y. Capacities are module units and margin/fees USD. Compare buying the stated additional B capacity for its fixed fee with receiving the alternative A capacity free. Capacities are separate resources: unused A cannot replace B. Reoptimize after each capacity change; capacity additions are available before production. Report whether paid B yields a strictly greater net improvement than free A. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "product_order": [
+      "X",
+      "Y"
+    ],
+    "demand": [
+      100,
+      100
+    ],
+    "minimum_y": 80,
+    "gross_profit_per_unit": [
+      50,
+      40
+    ],
+    "module_a_per_product": [
+      2,
+      1
+    ],
+    "module_b_per_product": [
+      1,
+      2
+    ],
+    "a_wafers": 150,
+    "a_yield": 0.9,
+    "a_modules_per_good_wafer": 2,
+    "b_nominal_capacity": 300,
+    "b_unavailable_fraction": 0.2,
+    "expedite_b_modules": 30,
+    "expedite_b_fee": 250,
+    "alternative_a_modules": 20
+  },
+  "sources": [
+    {
+      "id": "q113_t1_1",
+      "text": "Synthetic packet. The upstream process report measures wafers, good-wafer yield and modules per good wafer separately. The bill of materials counts A and B modules in each shipped finished product; materials cannot be interchanged."
+    },
+    {
+      "id": "q113_t1_2",
+      "text": "Synthetic packet. The commercial packet sets firm product demands, the minimum Y service obligation and unit gross profits before the expedite fee. The fee buys capacity, not additional demand or revenue."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "base_units",
+      "type": "number_array",
+      "unit": "finished units",
+      "description": "X, Y.",
+      "atol": 0,
+      "rtol": 1e-08
+    },
+    {
+      "name": "base_gross_profit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Gross profit before any expedite fee.",
+      "atol": 0.01,
+      "rtol": 1e-08
+    },
+    {
+      "name": "base_module_usage",
+      "type": "number_array",
+      "unit": "modules",
+      "description": "A, B.",
+      "atol": 0,
+      "rtol": 1e-08
+    },
+    {
+      "name": "unserved_demand",
+      "type": "number_array",
+      "unit": "finished units",
+      "description": "X, Y.",
+      "atol": 0,
+      "rtol": 1e-08
+    },
+    {
+      "name": "expedited_b_units",
+      "type": "number_array",
+      "unit": "finished units",
+      "description": "Optimal X, Y with additional B.",
+      "atol": 0,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_b_increment",
+      "type": "number",
+      "unit": "USD",
+      "description": "Reoptimized B gross profit less baseline and the expedite fee.",
+      "atol": 0.01,
+      "rtol": 1e-08
+    },
+    {
+      "name": "prefer_b_over_free_a",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Strict net-profit comparison against the free A alternative."
+    }
+  ]
+}

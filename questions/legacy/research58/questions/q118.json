@@ -1,0 +1,116 @@
+{
+  "question_id": "q118",
+  "title": "Recovery across operating and holding estates",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconstruct the as-of-day5 recovery waterfall rather than consolidating all assets. Report recoveries, loss and whether the analyst can net estate B against the junior A shortfall. All quantities are USD millions. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "cutoff": 5,
+    "valuations": [
+      {
+        "estate": "A",
+        "published": 2,
+        "value": 180
+      },
+      {
+        "estate": "B",
+        "published": 4,
+        "value": 90
+      },
+      {
+        "estate": "A",
+        "published": 4,
+        "value": 160
+      },
+      {
+        "estate": "A",
+        "published": 6,
+        "value": 200
+      }
+    ],
+    "haircuts": [
+      0.1,
+      0.2
+    ],
+    "costs": [
+      8,
+      6
+    ],
+    "secured": [
+      100,
+      50
+    ],
+    "junior_A": 70,
+    "holding_debt": 40,
+    "holding_cash": 12
+  },
+  "sources": [
+    {
+      "id": "q118_facts",
+      "text": "Synthetic packet: Valuation rows are complete dated opinions for the two operating estates; only latest eligible publications may be used. Claim amounts and Holding cash are fixed at the cutoff."
+    },
+    {
+      "id": "q118_terms",
+      "text": "Synthetic governing terms: All estate haircut, realization-cost and secured-debt arrays use [A,B] order. Estates are legally separate. In A, realization costs precede secured debt, junior A debt and equity. In B, costs precede secured debt and equity. Equity residuals upstream to Holding, where its own cash and those residuals pay Holding debt. No creditor has a cross-guarantee; junior A cannot claim B assets. Haircuts apply before fixed realization costs."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "estate_net_proceeds",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "Net estate cash in [A,B] order after haircuts and estate costs.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "secured_recoveries",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "Recoveries for secured A and secured B respectively.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "junior_a_recovery",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash recovered on the junior A claim.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "holding_recovery",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash recovered by holding-company creditors.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "creditor_loss",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Total stated creditor claims minus their cash recoveries.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "junior_a_recovery_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Junior A recovery on the 0–100 percentage scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cross_estate_netting_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the packet allows using B residual to satisfy junior A before it reaches the holding estate."
+    }
+  ]
+}

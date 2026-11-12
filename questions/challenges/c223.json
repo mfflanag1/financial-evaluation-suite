@@ -1,0 +1,325 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "c223_mechanics",
+            "title": "Execution and evidence rules"
+          },
+          {
+            "id": "c223_objective",
+            "title": "Decision criterion and measurement convention"
+          },
+          {
+            "id": "c223_round1",
+            "title": "Received round 1 book and terms"
+          },
+          {
+            "id": "c223_background",
+            "title": "Archived operating memorandum"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "action": "<typed value>",
+            "constraint_violation": "<typed value>",
+            "diagnostics": "<typed value>",
+            "objective": "<typed value>",
+            "state_round": "<typed value>",
+            "transaction_cost": "<typed value>"
+          },
+          "evidence": {
+            "action": [
+              "<viewed supporting document ID>"
+            ],
+            "constraint_violation": [
+              "<viewed supporting document ID>"
+            ],
+            "diagnostics": [
+              "<viewed supporting document ID>"
+            ],
+            "objective": [
+              "<viewed supporting document ID>"
+            ],
+            "state_round": [
+              "<viewed supporting document ID>"
+            ],
+            "transaction_cost": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c223",
+          "turn": 1
+        },
+        "inputs": {
+          "current_state": {
+            "budget": 9.0,
+            "decision": "OPEN",
+            "observations": {},
+            "realized_payoff": 0.0,
+            "rejected": 0,
+            "stage": 1,
+            "total_cost": 0.0
+          },
+          "current_terms": {
+            "costs": {
+              "A": 3.0,
+              "B": 4.0
+            },
+            "rounds_left": 4,
+            "worlds": [
+              {
+                "a": 0,
+                "b": 0,
+                "payoff": 100,
+                "probability": 0.3
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "payoff": -60,
+                "probability": 0.2
+              },
+              {
+                "a": 1,
+                "b": 0,
+                "payoff": -60,
+                "probability": 0.2
+              },
+              {
+                "a": 1,
+                "b": 1,
+                "payoff": 20,
+                "probability": 0.3
+              }
+            ]
+          }
+        },
+        "outputs": {
+          "action": {
+            "description": "Action in the exact type and economic units specified in the mechanics.",
+            "type": "string"
+          },
+          "constraint_violation": {
+            "description": "Sum of stated policy deficits in their declared units; zero does not erase prior costs.",
+            "type": "number"
+          },
+          "diagnostics": {
+            "description": "Ordered typed array as defined in the objective document; retain nested eligibility vector if applicable.",
+            "type": "array"
+          },
+          "objective": {
+            "description": "Minimized stated objective for this action; includes specified policy penalties.",
+            "type": "number"
+          },
+          "state_round": {
+            "description": "Integer identifier of the current book round.",
+            "type": "number"
+          },
+          "transaction_cost": {
+            "description": "Immediate economic transaction or evidence cost in cash units.",
+            "type": "number"
+          }
+        },
+        "prompt": "Choose and submit the economically optimal executable action using the received book, current terms, and stated decision criterion. Recompute from actual preceding execution rather than assuming a reference trajectory. Return the complete typed answer and cite the governing mechanics, objective, and current round snapshot. Report a nonzero policy deficit when the optimum cannot remove it; never invent a feasible action or hidden future event.",
+        "question_id": "c223",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c223",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "c223_mechanics",
+            "release_stage": 1,
+            "text": "Actions READ_A or READ_B purchase one previously unobserved binary signal at the public cost. The worlds table is the complete joint distribution of the two signals and the payoff of INVEST. Condition on every purchased observation; signals are correlated, so do not multiply marginal likelihoods. ABSTAIN gives zero payoff. INVEST or ABSTAIN is an irreversible terminal investment decision; all remaining rounds then require WAIT. Budget costs are paid immediately and never refunded. Signal observations become visible only after actual purchase. No action can use an unpurchased signal or the realized hidden world. Integer quantities may be encoded as JSON integers or finite exactly integral JSON numbers (for example 3 and 3.0 are equivalent); booleans and fractional quantities are invalid. This quantity convention does not relax the integer response turn identifier. A rejected action does not execute a default or substitute action and does not change assets or cash. The submission still consumes the current round and the simulation then processes its normal inter-round events.",
+            "title": "Execution and evidence rules"
+          },
+          {
+            "id": "c223_objective",
+            "release_stage": 1,
+            "text": "Maximize expected future investment payoff minus all future signal costs, conditional on current observations and budget. A purchase consumes one round, and a final investment decision must fit in remaining rounds; hence no purchase in the last round. Bellman value of READ_X is -cost_X plus expected optimal continuation value over its conditional signal outcomes. INVEST value is conditional mean payoff; ABSTAIN value is zero. Objective is negative value of the selected action under optimal continuation. Transaction cost is the immediate purchase cost. Diagnostics are [conditional_mean_payoff,selected_action_continuation_value,budget_after_action]. After commitment WAIT has continuation value zero; report the conditional mean from acquired signals. Realized payoff need not equal conditional expectation.",
+            "title": "Decision criterion and measurement convention"
+          },
+          {
+            "id": "c223_round1",
+            "release_stage": 1,
+            "text": "The current_state and current_terms supplied with round 1 are the authoritative snapshot after received events. They include actual consequences of preceding submitted actions. Use those balances, observations, and current contractual terms; do not replace them with a canonical or assumed path. Earlier estimates may have been superseded. No later snapshot is available yet.",
+            "title": "Received round 1 book and terms"
+          }
+        ],
+        "title": "Adaptive purchase of correlated costly evidence",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 4,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "c223_mechanics",
+        "title": "Execution and evidence rules"
+      },
+      {
+        "id": "c223_objective",
+        "title": "Decision criterion and measurement convention"
+      },
+      {
+        "id": "c223_round1",
+        "title": "Received round 1 book and terms"
+      },
+      {
+        "id": "c223_background",
+        "title": "Archived operating memorandum"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "action": "<typed value>",
+        "constraint_violation": "<typed value>",
+        "diagnostics": "<typed value>",
+        "objective": "<typed value>",
+        "state_round": "<typed value>",
+        "transaction_cost": "<typed value>"
+      },
+      "evidence": {
+        "action": [
+          "<viewed supporting document ID>"
+        ],
+        "constraint_violation": [
+          "<viewed supporting document ID>"
+        ],
+        "diagnostics": [
+          "<viewed supporting document ID>"
+        ],
+        "objective": [
+          "<viewed supporting document ID>"
+        ],
+        "state_round": [
+          "<viewed supporting document ID>"
+        ],
+        "transaction_cost": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c223",
+      "turn": 1
+    },
+    "inputs": {
+      "current_state": {
+        "budget": 9.0,
+        "decision": "OPEN",
+        "observations": {},
+        "realized_payoff": 0.0,
+        "rejected": 0,
+        "stage": 1,
+        "total_cost": 0.0
+      },
+      "current_terms": {
+        "costs": {
+          "A": 3.0,
+          "B": 4.0
+        },
+        "rounds_left": 4,
+        "worlds": [
+          {
+            "a": 0,
+            "b": 0,
+            "payoff": 100,
+            "probability": 0.3
+          },
+          {
+            "a": 0,
+            "b": 1,
+            "payoff": -60,
+            "probability": 0.2
+          },
+          {
+            "a": 1,
+            "b": 0,
+            "payoff": -60,
+            "probability": 0.2
+          },
+          {
+            "a": 1,
+            "b": 1,
+            "payoff": 20,
+            "probability": 0.3
+          }
+        ]
+      }
+    },
+    "outputs": {
+      "action": {
+        "description": "Action in the exact type and economic units specified in the mechanics.",
+        "type": "string"
+      },
+      "constraint_violation": {
+        "description": "Sum of stated policy deficits in their declared units; zero does not erase prior costs.",
+        "type": "number"
+      },
+      "diagnostics": {
+        "description": "Ordered typed array as defined in the objective document; retain nested eligibility vector if applicable.",
+        "type": "array"
+      },
+      "objective": {
+        "description": "Minimized stated objective for this action; includes specified policy penalties.",
+        "type": "number"
+      },
+      "state_round": {
+        "description": "Integer identifier of the current book round.",
+        "type": "number"
+      },
+      "transaction_cost": {
+        "description": "Immediate economic transaction or evidence cost in cash units.",
+        "type": "number"
+      }
+    },
+    "prompt": "Choose and submit the economically optimal executable action using the received book, current terms, and stated decision criterion. Recompute from actual preceding execution rather than assuming a reference trajectory. Return the complete typed answer and cite the governing mechanics, objective, and current round snapshot. Report a nonzero policy deficit when the optimum cannot remove it; never invent a feasible action or hidden future event.",
+    "question_id": "c223",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c223",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "c223_mechanics",
+        "release_stage": 1,
+        "text": "Actions READ_A or READ_B purchase one previously unobserved binary signal at the public cost. The worlds table is the complete joint distribution of the two signals and the payoff of INVEST. Condition on every purchased observation; signals are correlated, so do not multiply marginal likelihoods. ABSTAIN gives zero payoff. INVEST or ABSTAIN is an irreversible terminal investment decision; all remaining rounds then require WAIT. Budget costs are paid immediately and never refunded. Signal observations become visible only after actual purchase. No action can use an unpurchased signal or the realized hidden world. Integer quantities may be encoded as JSON integers or finite exactly integral JSON numbers (for example 3 and 3.0 are equivalent); booleans and fractional quantities are invalid. This quantity convention does not relax the integer response turn identifier. A rejected action does not execute a default or substitute action and does not change assets or cash. The submission still consumes the current round and the simulation then processes its normal inter-round events.",
+        "title": "Execution and evidence rules"
+      },
+      {
+        "id": "c223_objective",
+        "release_stage": 1,
+        "text": "Maximize expected future investment payoff minus all future signal costs, conditional on current observations and budget. A purchase consumes one round, and a final investment decision must fit in remaining rounds; hence no purchase in the last round. Bellman value of READ_X is -cost_X plus expected optimal continuation value over its conditional signal outcomes. INVEST value is conditional mean payoff; ABSTAIN value is zero. Objective is negative value of the selected action under optimal continuation. Transaction cost is the immediate purchase cost. Diagnostics are [conditional_mean_payoff,selected_action_continuation_value,budget_after_action]. After commitment WAIT has continuation value zero; report the conditional mean from acquired signals. Realized payoff need not equal conditional expectation.",
+        "title": "Decision criterion and measurement convention"
+      },
+      {
+        "id": "c223_round1",
+        "release_stage": 1,
+        "text": "The current_state and current_terms supplied with round 1 are the authoritative snapshot after received events. They include actual consequences of preceding submitted actions. Use those balances, observations, and current contractual terms; do not replace them with a canonical or assumed path. Earlier estimates may have been superseded. No later snapshot is available yet.",
+        "title": "Received round 1 book and terms"
+      }
+    ],
+    "title": "Adaptive purchase of correlated costly evidence",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 4,
+    "turn": 1
+  }
+}

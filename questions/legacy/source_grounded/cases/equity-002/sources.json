@@ -1,0 +1,38 @@
+[
+  {
+    "id": "expansion-intel-2023-original",
+    "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-24-000010/intc-20231230.htm",
+    "title": "Intel FY2023 original segment disclosure",
+    "publisher": "Intel Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+    "text_sha256": "5af8fe246a07ba17872fc102d5808673b0eb326f6d34c8c70ca56996cf43f512",
+    "available_by": "2026-10-04T18:12:47Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "expansion-intel-2024-recast",
+    "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-25-000009/intc-20241228.htm",
+    "title": "Intel FY2024 annual report: recast segment definitions and tables",
+    "publisher": "Intel Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+    "text_sha256": "f4cb5956ea25c0101db18da981b31d1a4eedbd0cd79d09d37b33b31947acb284",
+    "available_by": "2026-10-04T18:12:47Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

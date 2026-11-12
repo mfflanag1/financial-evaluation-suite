@@ -1,0 +1,109 @@
+{
+  "id": "h2-006",
+  "case_group": "occidental-2023-2024-preferred-cash-versus-common-income",
+  "lane": "credit_capital_structure",
+  "epistemic_type": "retrospective_reconciliation_and_conditional_decision",
+  "information_cutoff": "2026-10-04T20:02:32Z",
+  "prompt": "The desk equates Occidental's preferred-dividend deduction from common earnings with its cash preferred dividends and treats any redemption as an ordinary voluntary debt repayment. Reconcile the 2023 and 2024 disclosures, including the share rollforward, cash payments, accrued dividends, redemption premium and carrying-value difference. Use the stated ordinary 8% rate for the run-rate arithmetic and assume no unpaid-dividend escalation. A separate SYNTHETIC branch stipulates a valid mandatory redemption of 1000 preferred shares before August 2029; compute its redemption cash and the premium-only recovery time. The trigger itself is not inferred from this stipulated redemption. In the incomplete branch, the hypothetical company's applicable rolling per-share distribution history is withheld; do not substitute an annual-total/year-end-share-count proxy or data about actual OXY distributions.\n\nUse only the frozen document versions and the explicitly labeled hypothetical assumptions. These are retrospective research questions, not claims of historical tradability or forecasting skill. Discover and reconcile the relevant definitions and periods in the documents. Return every declared field with verbatim supporting evidence, preserving unrounded intermediate calculations. Money is USD millions unless the field specifies another unit. Percentages use the 0\u2013100 scale. For every noninteger output, use at least eight decimal places unless the field explicitly allows a different precision. Source values displayed in millions are treated as exact only for these table-based arithmetic comparisons; do not infer greater economic precision.",
+  "source_ids": [
+    "h2a-oxy-2023",
+    "h2a-oxy-2024"
+  ],
+  "output_fields": [
+    {
+      "id": "preferred_face_redeemed_2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Face value redeemed in 2023 derived from the share rollforward and unit face value, before redemption premium.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "preferred_face_remaining_end2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Face value remaining at year-end 2023 derived from the share rollforward.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "ordinary_annual_dividend_run_rate",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Full-year ordinary 8% dividend accrual on the year-end 2023 face balance; assume no redemption or unpaid-dividend rate escalation.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "cash_dividend_reduction_2024_vs2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Decline in actual preferred cash dividends paid, 2023 minus 2024.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "common_income_charge_reduction_2024_vs2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Decline in the preferred-dividend/redemption charge deducted in arriving at income available to common shareholders, 2023 minus 2024.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "redemption_related_charge_beyond_premium_2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Part of the 2023 common-income charge beyond accrued preferred dividends and redemption premium; this is the carrying-value/face-value difference.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "synthetic_redemption_cash_outlay",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Cash redemption price for a separately stipulated 1000 preferred-share mandatory redemption at the disclosed pre-August 2029 premium; exclude accrued dividends.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "premium_only_recovery_years",
+      "type": "number",
+      "unit": "years",
+      "description": "Undiscounted years of ordinary dividend savings needed to recover only that 10% redemption premium, not the returned principal. Assume a constant 8% ordinary rate.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "voluntary_2025_redemption_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the disclosed voluntary-redemption schedule permit unilateral optional redemption in 2025? Distinguish mandatory redemptions.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "year_end_common_share_count_identifies_trigger",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Incomplete hypothetical branch: only calendar-year aggregate common distributions and a year-end common share count are given, with no applicable rolling per-share distribution history. Do those inputs establish the exact mandatory-redemption trigger at an arbitrary intra-year test date?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ],
+  "response_format": {
+    "case_id": "h2-006",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

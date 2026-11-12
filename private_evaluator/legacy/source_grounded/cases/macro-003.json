@@ -1,0 +1,85 @@
+{
+  "id": "macro-003",
+  "case_group": "bea-q2-2023-gdp-comprehensive-update",
+  "lane": "macro_rates",
+  "status": "prototype",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2023-09-29T03:59:59Z",
+  "prompt": "Audit the Q2 2023 GDP estimate sequence using the August30 second-estimate and September28 third-estimate BEA PDFs, with an end-of-September28,2023 New York cutoff. The second release records the earlier advance estimate. The third release coincides with a comprehensive update. Compare the Q2 vintage columns in Table2; do not take a component's own Table1 growth rate as its GDP contribution.\n\nUse four exhaustive, non-overlapping Table2 contribution categories: personal consumption expenditures (PCE), gross private domestic investment (GPDI), net exports of goods and services, and government consumption expenditures and gross investment. GPDI already includes inventories. Compute third-minus-second revisions, and keep any displayed rounding residual. Do not add exports/imports again to net exports or inventories again to GPDI.\n\nFor the printed annualized headline g, calculate implied single-quarter growth as 100*((1+g/100)^(1/4)-1); dividing g by four is only an approximation. Table3 current-dollar GDP levels are seasonally adjusted annual rates (SAAR): divide the Q2 level by four for its seasonally adjusted quarter-equivalent flow, not actual unadjusted dollars during the quarter. This is national output, not a cash-flow measure. Report six decimal places where needed, retaining precision internally. For Table2 citations, either complete rows or separate row labels and their terminal Q1/Q2 values plus printed row number can identify the current Q2 column; unrelated historical values need not be quoted.\n\nThe package supplies no market consensus before September28. Judge whether an unchanged published headline identifies a unique expectation surprise. Separately assess whether dividing Q2 chained-dollar levels across the two different reference-year vintages gives meaningful economic growth. This is retrospective release reconstruction, not forecasting; the implied quarterly growth comes from a rounded headline, not unpublished exact growth.",
+  "source_ids": [
+    "exp-bea-20230830-pdf",
+    "exp-bea-20230928-pdf"
+  ],
+  "output_fields": [
+    {
+      "id": "advance_to_second_revision",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "Q2 2023 second-estimate headline minus the advance headline, using the historical release account.",
+      "evidence_required": true
+    },
+    {
+      "id": "second_to_third_revision",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "Third headline minus second headline, before considering component reallocations.",
+      "evidence_required": true
+    },
+    {
+      "id": "third_implied_quarterly_growth",
+      "type": "number",
+      "unit": "percent_quarter_over_quarter",
+      "description": "Convert the printed 2.1% annualized third estimate into its implied single-quarter percentage growth using compounding; this is implied by the rounded headline.",
+      "evidence_required": true
+    },
+    {
+      "id": "pce_contribution_revision",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "Third-minus-second revision to personal consumption expenditure contribution, not PCE's own growth rate.",
+      "evidence_required": true
+    },
+    {
+      "id": "other_components_contribution_revision",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "Third-minus-second aggregate revision to GPDI, net exports, and government contributions, using reported contribution rows.",
+      "evidence_required": true
+    },
+    {
+      "id": "third_component_sum",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "Sum the four mutually exclusive third-vintage top-level contribution categories PCE, GPDI, net exports and government.",
+      "evidence_required": true
+    },
+    {
+      "id": "headline_minus_component_revision_gap",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "Signed gap: displayed headline revision minus the sum of four displayed contribution revisions; retain the rounding discrepancy rather than forcing exact equality.",
+      "evidence_required": true
+    },
+    {
+      "id": "third_nominal_quarter_output",
+      "type": "number",
+      "unit": "billion_USD_seasonally_adjusted_quarter_equivalent",
+      "description": "Convert Table3's Q2 current-dollar GDP SAAR level into a seasonally adjusted quarter-equivalent flow. This is not actual unadjusted dollars. Do not use chained-dollar GDP or the rounded narrative trillions figure.",
+      "evidence_required": true
+    },
+    {
+      "id": "surprise_identifiable_without_consensus",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "No pre-release market consensus is supplied. Does the unchanged second-to-third headline establish a unique numerical surprise versus expectations?",
+      "evidence_required": false
+    },
+    {
+      "id": "cross_base_level_ratio_is_real_growth",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Can second-release chained-2012-dollar Q2 GDP divided into third-release chained-2017-dollar Q2 GDP be treated as economic growth? Cite the reference-year change.",
+      "evidence_required": true
+    }
+  ]
+}

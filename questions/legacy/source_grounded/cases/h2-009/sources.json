@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h2b-ice-waha",
+    "url": "https://www.ice.com/api/productguide/spec/6590171/pdf",
+    "title": "Waha Basis Future contract specification",
+    "publisher": "ICE Futures U.S.",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+    "text_sha256": "e2a1b799d19627c8c4933274d0196a9feec24d1043ac8a9ce0ddd506643760c3",
+    "available_by": "2026-10-04T20:02:32.022754Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_document.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "h2b-waha",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=64445",
+    "title": "Natural gas spot prices fell across key regional trading hubs in 2024",
+    "publisher": "U.S. EIA",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+    "text_sha256": "442d1c185b13588e62fe35a20daec2fdf133b3eb2e10a670c9c1351bf8f35398",
+    "available_by": "2026-10-04T19:58:24.554646Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_document.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

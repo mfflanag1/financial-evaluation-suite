@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h2b-pjm-elcc",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2024/20240724/20240724-item-01---irm-fpr-and-elcc-for-26-27-bra---presentation.pdf",
+    "title": "IRM, FPR and ELCC for 2026/27 BRA: comparison with 2025/26",
+    "publisher": "PJM",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+    "text_sha256": "fbaaff5928dffb2ce1101bbe68aa4894118efcc0be2812b1e2a0388bb755537a",
+    "available_by": "2026-10-04T19:58:17.533331Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_document.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "h2b-pjm-auction",
+    "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2025-2026/2025-2026-base-residual-auction-report.pdf",
+    "title": "2025/2026 Base Residual Auction Report",
+    "publisher": "PJM",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+    "text_sha256": "8a17ec746a04a6465269503f3f6d563bc6e2b79eadc1bbe2611820b75978a521",
+    "available_by": "2026-10-04T19:58:18.141022Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_document.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

@@ -1,0 +1,338 @@
+{
+  "case_id": "systematic-002",
+  "reference_solution": {
+    "original_projected_margin": 6.6,
+    "corrected_projected_margin": 2.1,
+    "original_modeled_ebitda": 1056,
+    "corrected_modeled_ebitda": 336,
+    "before_correction_ready_choice": "lyft",
+    "at_correction_ready_choice": "peer",
+    "valid_toy_net_profit": -739.3,
+    "backfill_net_profit_inflation": 899.1,
+    "actual_correction_213000_eligibility": "not_established",
+    "empirical_performance_status": "not_established"
+  },
+  "worked_derivation": [
+    "Original quoted expansion 500 bps = 5 percentage points; corrected 50 bps = .5 percentage points. On the supplied exact 1.6% base, modeled margins=6.6% and 2.1%.",
+    "Modeled EBITDA=16000*.066=1056 million versus16000*.021=336 million. Both are model implications of vintage guidance, not realized earnings.",
+    "Original and corrected processing complete Feb 13 21:10:30Z and Feb 14 21:45:30Z. Historical selections remain Lyft then peer; the just-before revision probe remains Lyft.",
+    "Lyft round 1=-800-.001*(10000+9200)=-819.20. Peer round 2=100-.001*(10000+10100)=79.90. Valid=-739.30.",
+    "Backfilled peer both rounds=159.80; bias159.80-(-739.30)=899.10."
+  ],
+  "limitations": [
+    "This adapts the card's revision target to a real reissued guidance release, not an amended GAAP filing or comparative restatement.",
+    "Synthetic replay arrivals are explicitly distinct from actual public dissemination; historical correction-access seconds are unresolved.",
+    "The issuer's 1.6% is rounded; the toy model alone treats it as exact.",
+    "The private reference uses both sources; original-field citation restrictions do not demonstrate actual sequential withholding.",
+    "A two-asset toy profit is not evidence of an investable empirical edge."
+  ],
+  "fields": [
+    {
+      "id": "original_projected_margin",
+      "expected": 6.6,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of approximately 500 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "approximately 500 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "corrected_projected_margin",
+      "expected": 2.1,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of",
+              "approximately 50 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "approximately 50 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "original_modeled_ebitda",
+      "expected": 1056,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of approximately 500 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "approximately 500 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "corrected_modeled_ebitda",
+      "expected": 336,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of",
+              "approximately 50 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "approximately 50 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "before_correction_ready_choice",
+      "expected": "lyft",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of approximately 500 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "approximately 500 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "at_correction_ready_choice",
+      "expected": "peer",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of",
+              "approximately 50 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "approximately 50 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "valid_toy_net_profit",
+      "expected": -739.3,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of approximately 500 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "approximately 500 basis points year-over-year."
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of",
+              "approximately 50 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "approximately 50 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "backfill_net_profit_inflation",
+      "expected": 899.1,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin (calculated as a percentage of Gross Bookings) was 1.6%"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of approximately 500 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-original",
+            "anchors": [
+              "approximately 500 basis points year-over-year."
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "Adjusted EBITDA margin expansion (calculated as a percentage of Gross Bookings) of",
+              "approximately 50 basis points year-over-year."
+            ]
+          },
+          {
+            "source_id": "systematic-lyft-correction",
+            "anchors": [
+              "approximately 50 basis points year-over-year."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "actual_correction_213000_eligibility",
+      "expected": "not_established",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": []
+    },
+    {
+      "id": "empirical_performance_status",
+      "expected": "not_established",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": []
+    }
+  ]
+}

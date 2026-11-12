@@ -1,0 +1,43 @@
+{
+  "main_bank_question_count": 224,
+  "supplement_related_variants": 6,
+  "independent_new_questions": 0,
+  "cases": [
+    {
+      "id": "c225",
+      "variant_of": "c217",
+      "mode": "single",
+      "outputs": 8
+    },
+    {
+      "id": "c226",
+      "variant_of": "c217",
+      "mode": "single",
+      "outputs": 8
+    },
+    {
+      "id": "c227",
+      "variant_of": "c217",
+      "mode": "single",
+      "outputs": 8
+    },
+    {
+      "id": "c228",
+      "variant_of": "c217",
+      "mode": "single",
+      "outputs": 8
+    },
+    {
+      "id": "c229",
+      "variant_of": "c217",
+      "mode": "single",
+      "outputs": 8
+    },
+    {
+      "id": "c230",
+      "variant_of": "c217",
+      "mode": "single",
+      "outputs": 8
+    }
+  ]
+}

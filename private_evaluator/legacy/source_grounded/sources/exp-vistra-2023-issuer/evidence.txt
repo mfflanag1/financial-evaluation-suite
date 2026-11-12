@@ -1,0 +1,15 @@
+The following table presents our asset fleet as of December 31, 2023 by segment. All of our facilities are 100% (fee simple) owned.
+
+Net Capacity
+
+(MW) (a)
+
+Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054
+
+Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:
+
+2024 2025 Nuclear/Renewable/Coal Generation: Texas 96 % 93 % Sunset 96 % 58 % Natural Gas Generation: Texas 89 % 80 % East 99 % 80 % West 100 % 81 %
+
+assumed Heat Rate of 7.2 MMBtu/MWh)
+
+difference between actual Heat Rates of our natural gas generation units and the assumed 7.2 Heat Rate used to calculate the sensitivity to spark spreads

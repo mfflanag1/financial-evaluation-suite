@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vol-occ-50944",
+    "url": "https://infomemo.theocc.com/infomemos?number=50944",
+    "title": "NatWest Group plc - Share Consolidation/Special Cash Distribution Option Symbol: NWG New Symbol: NWG1",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+    "text_sha256": "0809665ccf6330cf934afe1ba6b7eab5ef946b074cbe417a5a502a1d50e80c83",
+    "available_by": "2026-10-04T17:52:56Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "vol-occ-51041",
+    "url": "https://infomemo.theocc.com/infomemos?number=51041",
+    "title": "Adjusted NatWest Group plc - Cash Distribution Settlement/Cash in Lieu Settlement Adjusted Option Symbol: NWG1",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+    "text_sha256": "ac4e8362db26ddf1e49a1a677014858e6b9bdbc0ac86185cd86d803096a33034",
+    "available_by": "2026-10-04T17:52:56Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

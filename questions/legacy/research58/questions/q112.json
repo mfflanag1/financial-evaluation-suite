@@ -1,0 +1,120 @@
+{
+  "question_id": "q112",
+  "title": "Fiscal-year peer alignment with scoped impairment adjustments",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Compare peers A and B over the SAME trailing twelve months ending September 2025. A reports calendar years in USD; B reports June fiscal years in EUR. Triples are revenue, reported EBIT and the one-off impairment already deducted from that EBIT. Normalize by adding back only impairments that belong inside the selected TTM window. Use the fixed USD/EUR rate only when matching B earnings to USD enterprise value; local margins require no FX conversion. Return arrays A then B and select the lower EV/normalized-EBIT multiple, ties alphabetically. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "a_prior_fy": [
+      1000,
+      150,
+      20
+    ],
+    "a_prior_nine_months": [
+      710,
+      105,
+      20
+    ],
+    "a_current_nine_months": [
+      890,
+      143,
+      10
+    ],
+    "b_fy_june": [
+      900,
+      180,
+      25
+    ],
+    "b_prior_september": [
+      210,
+      35,
+      5
+    ],
+    "b_current_september": [
+      260,
+      60,
+      0
+    ],
+    "b_dec_mar_jun_revenue": [
+      220,
+      230,
+      240
+    ],
+    "b_dec_mar_jun_ebit": [
+      40,
+      50,
+      55
+    ],
+    "usd_per_eur": 1.1,
+    "enterprise_values_usd": [
+      2000,
+      2100
+    ],
+    "triple_columns": [
+      "revenue",
+      "reported_ebit",
+      "oneoff_impairment"
+    ]
+  },
+  "sources": [
+    {
+      "id": "q112_t1_1",
+      "text": "Synthetic packet. The calendar-period and June-year financial packets have different year ends. Their interim values overlap the annual values; reported impairment charges share those same period boundaries."
+    },
+    {
+      "id": "q112_t1_2",
+      "text": "Synthetic packet. The valuation memo supplies USD enterprise values and one comparison FX rate. Impairment add-backs are a stipulated comparability measure; no other expense can be excluded. The component B quarters independently reconcile its fiscal bridge."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ttm_revenue_local",
+      "type": "number_array",
+      "unit": "A USD million; B EUR million",
+      "description": "A, B.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "ttm_reported_ebit_local",
+      "type": "number_array",
+      "unit": "A USD million; B EUR million",
+      "description": "A, B.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "ttm_normalized_ebit_local",
+      "type": "number_array",
+      "unit": "A USD million; B EUR million",
+      "description": "A, B.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "normalized_margin_pct",
+      "type": "number_array",
+      "unit": "percent",
+      "description": "A, B; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "ev_normalized_ebit",
+      "type": "number_array",
+      "unit": "ratio",
+      "description": "A, B, with common-currency EV/EBIT.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cheaper_peer",
+      "type": "string",
+      "unit": "label",
+      "description": "Exact label A or B."
+    }
+  ]
+}

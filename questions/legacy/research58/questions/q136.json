@@ -1,0 +1,140 @@
+{
+  "question_id": "q136",
+  "title": "Produce a point-in-time analytic join without version or position fanout",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Design and execute the reproducible portfolio revenue-growth query for the specified cutoff. Resolve revisions before joining, prevent position-lot fanout, and retain the short issuer with absolute exposure weight. Return the selected data lineage, consolidated rows and aggregate metric; ignore unavailable restatements and unheld companies.",
+  "inputs": {
+    "cutoff": "2030-03-01T00:00:00Z",
+    "positions": [
+      {
+        "id": "p1",
+        "issuer": "X",
+        "market_value": 1000
+      },
+      {
+        "id": "p2",
+        "issuer": "X",
+        "market_value": 500
+      },
+      {
+        "id": "p3",
+        "issuer": "Y",
+        "market_value": -400
+      },
+      {
+        "id": "p4",
+        "issuer": "CASH",
+        "market_value": 200
+      }
+    ],
+    "facts": [
+      {
+        "id": "x24v1",
+        "issuer": "X",
+        "period": 2029,
+        "accepted_at": "2030-02-15T00:00:00Z",
+        "revenue": 100
+      },
+      {
+        "id": "x24v2",
+        "issuer": "X",
+        "period": 2029,
+        "accepted_at": "2030-04-01T00:00:00Z",
+        "revenue": 110
+      },
+      {
+        "id": "x23",
+        "issuer": "X",
+        "period": 2028,
+        "accepted_at": "2029-02-15T00:00:00Z",
+        "revenue": 90
+      },
+      {
+        "id": "y24",
+        "issuer": "Y",
+        "period": 2029,
+        "accepted_at": "2030-02-20T00:00:00Z",
+        "revenue": 80
+      },
+      {
+        "id": "y23",
+        "issuer": "Y",
+        "period": 2028,
+        "accepted_at": "2029-02-20T00:00:00Z",
+        "revenue": 100
+      },
+      {
+        "id": "z24",
+        "issuer": "Z",
+        "period": 2029,
+        "accepted_at": "2030-02-20T00:00:00Z",
+        "revenue": 10000
+      }
+    ],
+    "current_period": 2029,
+    "prior_period": 2028,
+    "excluded_issuers": [
+      "CASH"
+    ]
+  },
+  "sources": [
+    {
+      "id": "q136_data_dictionary",
+      "text": "Original synthetic evaluation packet. Facts are issuer-period versions. Choose the latest accepted_at no later than the inclusive cutoff, independently per issuer-period; a later restatement is unavailable at the cutoff. Positions are additive account lots in one common reporting currency; consolidate by issuer and exclude CASH before using absolute exposures."
+    },
+    {
+      "id": "q136_query_contract",
+      "text": "Original synthetic evaluation packet. Return one row per held noncash issuer after joining one selected current and one selected prior fact. Exclude unheld issuers. Compute revenue growth=current/prior-1 and aggregate using absolute NET issuer exposures divided by total absolute net issuer exposure. Candidate ASOF_VERSION_THEN_ISSUER_JOIN filters timestamps, selects eligible versions, then joins consolidated issuers. LATEST_THEN_CUTOFF selects latest versions first and then drops late rows. ACCOUNT_LOT_FACT_JOIN joins every account lot to every eligible version before aggregation."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "eligible_fact_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Selected fact IDs sorted lexicographically."
+    },
+    {
+      "name": "issuer_exposures",
+      "type": "number_array",
+      "unit": "USD thousands",
+      "description": "Signed[X,Y] consolidated exposure.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "issuer_growth",
+      "type": "number_array",
+      "unit": "decimal",
+      "description": "[X,Y] current/prior revenue minus1.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "gross_weighted_growth",
+      "type": "number",
+      "unit": "decimal",
+      "description": "Absolute consolidated issuer exposure weighting, excluding cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "final_join_row_count",
+      "type": "number",
+      "unit": "rows",
+      "description": "One output row per held noncash issuer.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "query_plan",
+      "type": "string",
+      "unit": "label",
+      "description": "Choose ASOF_VERSION_THEN_ISSUER_JOIN, LATEST_THEN_CUTOFF, or ACCOUNT_LOT_FACT_JOIN."
+    }
+  ]
+}

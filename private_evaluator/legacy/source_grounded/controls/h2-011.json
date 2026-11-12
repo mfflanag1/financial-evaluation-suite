@@ -1,0 +1,797 @@
+[
+  {
+    "name": "separate_minimal_source_clauses",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All required values and financial premises supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "reuse_verified_upstream_support",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [],
+          "support_refs": [
+            "insured_corporate_deposits"
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ],
+          "support_refs": [
+            "insured_corporate_deposits"
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ],
+          "support_refs": [
+            "initial_guaranteed_monday_access",
+            "minimum_sunday_bridge"
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ],
+          "support_refs": [
+            "minimum_sunday_bridge"
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Explicit declared DAG reuses source-supported upstream proof; remaining independent premises still quoted.",
+    "expected_failures": {}
+  },
+  {
+    "name": "insure_each_desk_separately",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 500000,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Mistakes two unincorporated desks for separately insured corporations.",
+    "expected_failures": {
+      "insured_corporate_deposits": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "use_monday_cash_on_sunday",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Applies subsequent Monday access to an earlier deadline.",
+    "expected_failures": {
+      "minimum_sunday_bridge": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "net_loan_obligation_against_protection",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 199500,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Skips a loan payment despite the explicit instruction to continue payments.",
+    "expected_failures": {
+      "later_monday_cash_surplus": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_value_missing_required_operand",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": []
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "A required source premise is omitted despite correct arithmetic.",
+    "expected_failures": {
+      "insured_corporate_deposits": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "alternative_primary_source_route_h2b-fdic-bridge",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "transferred all deposits—both insured and uninsured"
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Depositors will have full access to their money beginning this morning"
+            },
+            {
+              "source_id": "h2b-fdic-bridge",
+              "quote": "Loan customers should continue making loan payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Same necessary premise is supported by another retained primary-source passage.",
+    "expected_failures": {}
+  },
+  {
+    "name": "alternative_primary_source_route_svb_initial_loan_payment_clause",
+    "response": {
+      "case_id": "h2-011",
+      "answers": {
+        "insured_corporate_deposits": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_uninsured_balance": {
+          "value": 750000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            }
+          ]
+        },
+        "initial_guaranteed_monday_access": {
+          "value": 250000.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            }
+          ]
+        },
+        "minimum_sunday_bridge": {
+          "value": 50000.0,
+          "evidence": []
+        },
+        "initial_monday_guaranteed_funding_shortfall": {
+          "value": 650500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-ownership",
+              "quote": "the accounts would be aggregated and insured as the deposits of the corporation up to a total of $250,000"
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "All insured depositors will have full access to their insured deposits no later than Monday morning, March 13, 2023."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "later_monday_cash_surplus": {
+          "value": 99500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Depositors will have access to all of their money starting Monday, March 13."
+            },
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "Loan customers should continue to make their payments as usual."
+            }
+          ]
+        },
+        "initial_uninsured_recovery_amount_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-initial",
+              "quote": "The FDIC will pay uninsured depositors an advance dividend within the next week."
+            }
+          ]
+        },
+        "shareholders_protected_with_depositors": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-fdic-joint",
+              "quote": "Shareholders and certain unsecured debtholders will not be protected."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "The aggregation guide is a retained current document applied as an explicit scenario rule, not a proved contemporaneous2023 archived version.",
+        "Initial guaranteed funding is a lower-bound exercise, not an estimate of actual uninsured recoveries or actual intraday bank access."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Same necessary premise is supported by another retained primary-source passage.",
+    "expected_failures": {}
+  }
+]

@@ -1,0 +1,2397 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "preliminary_cash_used_as_final",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 39.58,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "final_cash_per_contract": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Drops CIL and uses superseded approximate special distribution"
+  },
+  {
+    "name": "gross_dividend_ignores_fee",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 39.07,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "net_special_dividend_unrounded": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Fails to subtract the depositary dividend fee"
+  },
+  {
+    "name": "standard_deliverable_assumed",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 2000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_share_delivery": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Mistakes 100 quotation multiplier for delivered share count"
+  },
+  {
+    "name": "no_premium_subtraction",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 414,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_expiry_pnl": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Reports intrinsic rather than requested net P&L"
+  },
+  {
+    "name": "fraction_kept_as_live_shares",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1857.142857142857,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_local_expiry_sensitivity": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Treats cash-in-lieu fractional interest as live shares after fixing"
+  },
+  {
+    "name": "initial_cash_mistaken_for_final",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "initial_total_cash_determined": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "An approximate distribution and an undetermined fractional cash component do not establish final total cash"
+  },
+  {
+    "name": "breakeven_ignores_premium",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 4.975,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "spot_breakeven": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Finds zero intrinsic value rather than zero net P&L"
+  },
+  {
+    "name": "minimal_initial_quote",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Short direct disclosure establishes the initial information gap"
+  },
+  {
+    "name": "alternative_net_dividend_quote",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$0.3907 less $0.009259 dividend fee"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Gross amount and fee support the supplied 100-ADS calculation; whitespace normalized"
+  },
+  {
+    "name": "minimal_split_basket_quotes",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 cash amount"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Two concise clauses support both deliverable components"
+  },
+  {
+    "name": "valid_initial_plus_forbidden_later_quote",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "initial_total_cash_determined": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "A correct early answer and valid early quote do not authorize citing the later memo"
+  },
+  {
+    "name": "missing_basket_cash_component",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "basket_value_per_contract": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Share-count evidence alone omits a required cash component"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": []
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_share_delivery": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Correct value without source evidence"
+  },
+  {
+    "name": "fabricated_evidence",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "OCC explicitly guarantees this hypothetical book profit."
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_share_delivery": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Invented disclosure does not occur in its cited memo"
+  },
+  {
+    "name": "wrong_source_evidence",
+    "response": {
+      "case_id": "vol-001",
+      "answers": {
+        "initial_total_cash_determined": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Until the cash amounts are determined"
+            }
+          ]
+        },
+        "net_special_dividend_unrounded": {
+          "value": 38.1441,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "final net special dividend amount is $0.381441"
+            }
+          ]
+        },
+        "final_cash_per_contract": {
+          "value": 42.3,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-50944",
+              "quote": "Approximately $39.58 Cash"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 10000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 520.7,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 414.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_premium": {
+          "value": 340.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 74.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 5.159782608695652,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "$42.30 Cash"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 1840,
+          "evidence": [
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "92 NatWest Group plc (NWG) American Depositary Shares"
+            },
+            {
+              "source_id": "vol-occ-51041",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_share_delivery": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Quote is real but the cited memo does not establish this field's contract terms"
+  }
+]

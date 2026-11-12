@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-portfolio/
+.DS_Store
+.env
+.env.*
+sessions/
+responses/
+outputs/

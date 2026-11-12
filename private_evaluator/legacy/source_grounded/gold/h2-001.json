@@ -1,0 +1,392 @@
+{
+  "case_id": "h2-001",
+  "reference_solution": {
+    "eps": "Comparable growth=(4.65/3.83-1)*100; stale growth=(4.65/5.10-1)*100. Recast net-income reduction=5646-4240=1406.",
+    "cash": "FCF growth=(6767/4220-1)*100; adjusted growth=(6634/4554-1)*100. Underlying Q4 timing inflow=2469-774=1695. Annual timing contribution=4220-4554=-334. First-nine-month contribution=-334-1695=-2029."
+  },
+  "fields": [
+    {
+      "id": "non_gaap_eps_growth_comparable_pct",
+      "expected": 21.409921671018278,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Non-GAAP",
+              "$ 4.65",
+              "$ 3.83",
+              "Prior period non-GAAP results have been recast to reflect this change"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Non-GAAP",
+              "Earnings per diluted share",
+              "$4.65",
+              "$3.83",
+              "Prior period non-GAAP results have been recast to reflect this change"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "old_basis_eps_growth_error_pp",
+      "expected": -30.23345108278298,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Non-GAAP",
+              "Earnings per diluted share",
+              "$5.10"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Diluted net income (loss) per share:",
+              "Non-GAAP",
+              "$ 5.10"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Non-GAAP",
+              "$ 4.65",
+              "$ 3.83",
+              "Prior period non-GAAP results have been recast to reflect this change"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Non-GAAP",
+              "Earnings per diluted share",
+              "$4.65",
+              "$3.83",
+              "Prior period non-GAAP results have been recast to reflect this change"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "prior_year_non_gaap_income_recast_reduction",
+      "expected": 1406,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Non-GAAP net income",
+              "5,646"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Non-GAAP net income",
+              "4,240"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes",
+              "Prior period non-GAAP results have been recast to reflect this change"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "fy2024_free_cash_flow_growth_pct",
+      "expected": 60.355450236966824,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Free cash flow",
+              "6,767",
+              "4,220"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "fy2024_adjusted_free_cash_flow_growth_pct",
+      "expected": 45.67413263065437,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Adjusted free cash flow",
+              "6,634",
+              "4,554"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "q42023_positive_bnpl_timing_contribution",
+      "expected": 1695,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Free cash flow",
+              "2,469",
+              "Adjusted free cash flow",
+              "774"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Free cash flow",
+              "2,469",
+              "Adjusted free cash flow",
+              "774"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables",
+              "(1,695)"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Net timing impact between originating European BNPL receivables as held for sale and the subsequent sale of receivables",
+              "(1,695)"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "first_nine_months_2023_bnpl_timing_contribution",
+      "expected": -2029,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Free cash flow",
+              "2,469",
+              "Adjusted free cash flow",
+              "774"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Free cash flow",
+              "2,469",
+              "Adjusted free cash flow",
+              "774"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables",
+              "(1,695)"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Net timing impact between originating European BNPL receivables as held for sale and the subsequent sale of receivables",
+              "(1,695)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Free cash flow",
+              "4,220",
+              "Adjusted free cash flow",
+              "4,554"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Free cash flow",
+              "4,220",
+              "Adjusted free cash flow",
+              "4,554"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables",
+              "334"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Net timing impact between originating European BNPL receivables as held for sale and the subsequent sale of receivables",
+              "334"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "q42023_timing_share_of_free_cash_flow_pct",
+      "expected": 68.65127582017011,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Free cash flow",
+              "2,469",
+              "Adjusted free cash flow",
+              "774"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Free cash flow",
+              "2,469",
+              "Adjusted free cash flow",
+              "774"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables",
+              "(1,695)"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Net timing impact between originating European BNPL receivables as held for sale and the subsequent sale of receivables",
+              "(1,695)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Free cash flow",
+              "2,469"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Free cash flow",
+              "2,469"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "old_and_new_non_gaap_eps_directly_comparable",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes",
+              "Prior period non-GAAP results have been recast to reflect this change"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "sold_bnpl_credit_loss_rate_identified",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-paypal-2023",
+            "anchors": [
+              "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            ]
+          },
+          {
+            "source_id": "h2a-paypal-2024",
+            "anchors": [
+              "Net timing impact between originating European BNPL receivables as held for sale and the subsequent sale of receivables"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+    "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+    "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+  ]
+}

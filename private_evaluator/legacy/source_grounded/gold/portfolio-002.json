@@ -1,0 +1,379 @@
+{
+  "case_id": "portfolio-002",
+  "reference_solution": {
+    "rate_ledger": "Range4.75–5%, midpoint4.875%; minus supplied4.625%=0.25pp=25bp. 12m*.0025*30/360=2500 incremental financing expense.",
+    "pod_scenario_pnl": {
+      "equity": [
+        "-1800",
+        "1200",
+        "-3600"
+      ],
+      "treasury": [
+        "2700",
+        "-1800",
+        "5400"
+      ],
+      "financing": [
+        "-2500",
+        "-2500",
+        "-2500"
+      ],
+      "aggregate": [
+        "-1600",
+        "-3100",
+        "-700"
+      ]
+    },
+    "parallel_dv01": "120-120-180+180=0; joint curve P&L is60*d2-60*d10, not zero.",
+    "enumeration": {
+      "NONE": {
+        "fees": "0",
+        "initial_locked": "0",
+        "scenario_pnl": [
+          "-1600",
+          "-3100",
+          "-700"
+        ],
+        "t1_outflows": [
+          "2500",
+          "4300",
+          "2500"
+        ],
+        "cash_path": [
+          "7000",
+          "4500",
+          "2700",
+          "4500"
+        ],
+        "cash_required": "4300",
+        "worst_pnl": "-3100",
+        "feasible": true
+      },
+      "A": {
+        "fees": "100",
+        "initial_locked": "2100",
+        "scenario_pnl": [
+          "-2600",
+          "-2600",
+          "-2600"
+        ],
+        "t1_outflows": [
+          "3400",
+          "4300",
+          "4300"
+        ],
+        "cash_path": [
+          "4900",
+          "1500",
+          "600",
+          "600"
+        ],
+        "cash_required": "6400",
+        "worst_pnl": "-2600",
+        "feasible": true
+      },
+      "B": {
+        "fees": "350",
+        "initial_locked": "350",
+        "scenario_pnl": [
+          "-1950",
+          "-1250",
+          "-1050"
+        ],
+        "t1_outflows": [
+          "2500",
+          "4300",
+          "2500"
+        ],
+        "cash_path": [
+          "6650",
+          "4150",
+          "2350",
+          "4150"
+        ],
+        "cash_required": "4650",
+        "worst_pnl": "-1950",
+        "feasible": true
+      },
+      "C": {
+        "fees": "150",
+        "initial_locked": "2650",
+        "scenario_pnl": [
+          "750",
+          "-750",
+          "1650"
+        ],
+        "t1_outflows": [
+          "2500",
+          "4300",
+          "2500"
+        ],
+        "cash_path": [
+          "4350",
+          "1850",
+          "50",
+          "1850"
+        ],
+        "cash_required": "6950",
+        "worst_pnl": "-750",
+        "feasible": true
+      },
+      "AB": {
+        "fees": "450",
+        "initial_locked": "2450",
+        "scenario_pnl": [
+          "-2950",
+          "-750",
+          "-2950"
+        ],
+        "t1_outflows": [
+          "3400",
+          "4300",
+          "4300"
+        ],
+        "cash_path": [
+          "4550",
+          "1150",
+          "250",
+          "250"
+        ],
+        "cash_required": "6750",
+        "worst_pnl": "-2950",
+        "feasible": true
+      },
+      "AC": {
+        "fees": "250",
+        "initial_locked": "4750",
+        "scenario_pnl": [
+          "-250",
+          "-250",
+          "-250"
+        ],
+        "t1_outflows": [
+          "3400",
+          "4300",
+          "4300"
+        ],
+        "cash_path": [
+          "2250",
+          "-1150",
+          "-2050",
+          "-2050"
+        ],
+        "cash_required": "9050",
+        "worst_pnl": "-250",
+        "feasible": false
+      },
+      "BC": {
+        "fees": "500",
+        "initial_locked": "3000",
+        "scenario_pnl": [
+          "400",
+          "1100",
+          "1300"
+        ],
+        "t1_outflows": [
+          "2500",
+          "4300",
+          "2500"
+        ],
+        "cash_path": [
+          "4000",
+          "1500",
+          "-300",
+          "1500"
+        ],
+        "cash_required": "7300",
+        "worst_pnl": "400",
+        "feasible": false
+      },
+      "ABC": {
+        "fees": "600",
+        "initial_locked": "5100",
+        "scenario_pnl": [
+          "-600",
+          "1600",
+          "-600"
+        ],
+        "t1_outflows": [
+          "3400",
+          "4300",
+          "4300"
+        ],
+        "cash_path": [
+          "1900",
+          "-1500",
+          "-2400",
+          "-2400"
+        ],
+        "cash_required": "9400",
+        "worst_pnl": "-600",
+        "feasible": false
+      }
+    },
+    "missing_input": "C margin2500 permits C; margin3000 makes C infeasible and B becomes optimal. Unknown margin prevents a unique answer.",
+    "decision_boundary": "The first strictly better optimizer becomes BC at starting cash 7300. Equality is feasible."
+  },
+  "fields": [
+    {
+      "id": "policy_midpoint",
+      "expected": 4.875,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "incremental_financing_expense",
+      "expected": 2500.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "combined_parallel_dv01",
+      "expected": 0.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    },
+    {
+      "id": "base_scenario_pnl",
+      "expected": "H=-1600;R=-3100;T=-700",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "feasible_plans",
+      "expected": "NONE|A|B|C|AB",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "optimal_plan",
+      "expected": "C",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "optimal_worst_pnl",
+      "expected": -750.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "optimal_minimum_cash",
+      "expected": 50.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "first_optimizer_change_budget",
+      "expected": 7300.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-fed-20230322"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-fed-20230322": [
+          [
+            "target range for the federal funds rate to 4-3/4 to 5 percent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "missing_margin_optimizer_status",
+      "expected": "insufficient_data",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    }
+  ],
+  "limitations": [
+    "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+    "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+    "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+    "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+  ]
+}

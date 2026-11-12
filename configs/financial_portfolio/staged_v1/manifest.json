@@ -1,0 +1,33 @@
+{
+  "protocol_id": "portfolio-staged-v1",
+  "packages": {
+    "financial-portfolio-staged": "0.4.0",
+    "financial-portfolio": "0.3.0",
+    "financial-research": "0.2.0",
+    "verifiers": "0.4.1"
+  },
+  "predecessor_manifest_sha256": "42fd124bf2a7c8edae8b9960b6e2b5af5e5a9cb1120e0aa65af55376c3dc69c3",
+  "runs": {
+    "smoke": {
+      "split": "train",
+      "seed_start": 4,
+      "num_tasks": 4,
+      "attempts_per_task": 1,
+      "expected_attempts": 4
+    }
+  },
+  "sha256": {
+    "configs/financial_portfolio/staged_v1/README.md": "881c9a7802e81faffce3048a18c5b5ec29da81919c8adf00611b62a9eef98d47",
+    "configs/financial_portfolio/staged_v1/smoke.toml": "577b1b88d683265b1d5cf1ae07446fa7d5ee10a458fae3e2849226ee98ce13bc",
+    "environments/financial_portfolio_staged/README.md": "556d96677b58bc41da451a77d68d3d97896f4cf3d27f8b32c07119e948decbda",
+    "environments/financial_portfolio_staged/VALIDATION.md": "63afa7a597843f943c8339a0594c6fd4dfbe197d67eeda72f2881f2801c547a9",
+    "environments/financial_portfolio_staged/pyproject.toml": "d56894b0d5de4e9481ffce623fc8a0c0048939d890cf3d00791dd1a75db18b39",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/THIRD_PARTY_LICENSES.txt": "5b2f121f9244240a7b2f3a741e5519344194580b06b3ba95c2c10becf41675ba",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/__init__.py": "e640c53afaccff5524efba30190a77f7219d69e1af024bbd31bab88487f2d4aa",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/_chat_core.py": "73193fe71594b9f58caa9bb9211cc82097bfb4bf165aee75ee836f2253afc6eb",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/harness.py": "4096f2a0cbb1376ac78647e31f83b66a7eda2fd885b2fbb8063d36e3936cdd8b",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/instructions.txt": "3168d064bd75f2b431f56d3baf35e0c268f9a06ab8442297bde3ccd8dbff72be",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/prime_adapter.py": "e5ca32787927d60b8d2e1750fba3b1df3c9031f403c88c1b8a9e218ce49bb6a4",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/validation.py": "fff62c50fad6222d375be3948d7e133459b6b93213932ed06c29d082689d29c5"
+  }
+}

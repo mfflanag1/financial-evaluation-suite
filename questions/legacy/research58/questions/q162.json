@@ -1,0 +1,73 @@
+{
+  "question_id": "q162",
+  "title": "Translate changing valuation evidence into a funded redemption",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Apply the stale-mark reserve and reconcile valuation P&L and Modified Dietz performance. Separate external capital and unrealized valuation changes from available cash.",
+  "inputs": {
+    "cash": 20000,
+    "A_shares": 100,
+    "A_mid_price": 100,
+    "B_shares": 50,
+    "B_stale_price": 200,
+    "B_markdown_fraction": 0.2,
+    "opening_NAV": 35000,
+    "external_deposit": 1000,
+    "deposit_remaining_period_fraction": 0.5
+  },
+  "sources": [
+    {
+      "id": "q162_valuation",
+      "text": "Original synthetic evaluation packet. Current cash20000 already includes the external deposit. Holdings are100 A shares marked100 and50 B shares stale-marked200. Initial policy applies a20% reserve to the B price. All stages revise the same unexecuted liquidity plan; no earlier hypothetical sales or redemptions have occurred."
+    },
+    {
+      "id": "q162_performance",
+      "text": "Original synthetic evaluation packet. Opening NAV35000; the only external performance-period flow is a1000 deposit halfway through the period. Use Modified Dietz return=(current NAV-opening NAV-deposit)/(opening NAV+0.5*deposit). All returns are period decimal returns, not annualized. Changes in marks affect valuation P&L but do not create cash."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "valuation_reserve",
+      "type": "number",
+      "unit": "USD",
+      "description": "Valuation reserve.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "current_nav",
+      "type": "number",
+      "unit": "USD",
+      "description": "Current nav.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "valuation_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Valuation pnl.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "modified_dietz_return",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Modified dietz return.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "available_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Available cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

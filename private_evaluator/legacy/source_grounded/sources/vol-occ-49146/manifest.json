@@ -1,0 +1,26 @@
+{
+  "id": "vol-occ-49146",
+  "url": "https://infomemo.theocc.com/infomemos?number=49146",
+  "title": "Adjusted General Electric Company - Cash In Lieu Settlement Adjusted Option Symbols: GE1/1GE1/2GE1",
+  "publisher": "The Options Clearing Corporation",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T17:52:56Z",
+  "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+  "document_date": "2021-08-18",
+  "retrieved_at": "2026-10-04T17:52:56Z",
+  "redistribution_status": "Public OCC notice; redistribution rights unverified. Local research only, no public release.",
+  "raw_path": "sources/vol-occ-49146/evidence.txt",
+  "text_path": "sources/vol-occ-49146/evidence.txt",
+  "raw_sha256": "67d33a5140033cf3f33d844f57882147ec035f0b89b4f01c4d7a2623f42e4dd4",
+  "text_sha256": "67d33a5140033cf3f33d844f57882147ec035f0b89b4f01c4d7a2623f42e4dd4",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "all_reported_tool_text_lines_layout_unverified",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

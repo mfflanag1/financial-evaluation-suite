@@ -1,0 +1,82 @@
+{
+  "question_id": "q142",
+  "title": "Dependent integration initiatives under successive evidence updates",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Select the finite initiative subset maximizing three-year NPV. USD million throughout; year-end savings are level and certain for this stipulated exercise. Include the no-project alternative. Apply cash and team caps, B requires C, and C platform cost. Ties choose lower cash cost, then alphabetical selected-ID list. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "initiative_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "annual_savings": [
+      15,
+      20,
+      10
+    ],
+    "cash_cost": [
+      20,
+      30,
+      12
+    ],
+    "team_units": [
+      2,
+      3,
+      2
+    ],
+    "budget": 55,
+    "team_capacity": 5,
+    "b_requires_c": true,
+    "c_recurring_platform_cost": 4,
+    "bc_overlap": 0,
+    "a_required_rebate": 0,
+    "discount_rate": 0.1,
+    "years": 3
+  },
+  "sources": [
+    {
+      "id": "q142_t1_1",
+      "text": "Synthetic packet. The integration plan lists indivisible initiatives A purchasing, B staffing and C systems. Staffing requires systems; annual savings occur at each of three year ends and implementation cash is paid immediately."
+    },
+    {
+      "id": "q142_t1_2",
+      "text": "Synthetic packet. The initial plan assumes no overlap between savings estimates. C requires a recurring platform charge; cash and team capacities both bind the implementation menu. The no-project option has zero NPV."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "selected_initiatives",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Selected IDs alphabetically; use [\"none\"] if no initiative is selected."
+    },
+    {
+      "name": "annual_net_savings",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Recurring net savings after dependencies, overlap, platform and rebate adjustments.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "upfront_cash",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Immediate implementation outlay.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "three_year_npv",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Discounted three year-end savings less time-zero implementation outlay.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

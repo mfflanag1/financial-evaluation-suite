@@ -1,0 +1,131 @@
+                                                                                                              FINANCIAL STATEMENTS
+                                                                                                                         FOOTNOTES
+December 31, 2024, Occidental would be required to repay approximately $1.4 billion in federal and state taxes and accrued
+interest of $760 million. A liability for the taxes and interest is included in deferred credits and other liabilities - other.
+
+INDEMNITIES TO THIRD PARTIES
+    Occidental, its subsidiaries, or both, have indemnified various parties against specified liabilities those parties might
+incur in the future in connection with purchases and other transactions that they have entered into with Occidental or its
+subsidiaries. These indemnities usually are contingent upon the other party incurring liabilities that reach specified
+thresholds. As of December 31, 2024, Occidental is not aware of circumstances that it believes would reasonably be
+expected to lead to indemnity claims that would result in payments materially in excess of reserves.
+
+PURCHASE OBLIGATIONS AND COMMITMENTS
+      Occidental, its subsidiaries, or both, have entered into agreements providing for future payments, primarily to secure
+terminal, pipeline and processing capacity, CO2, drilling rigs and services, electrical power, non-lease components, steam and
+certain chemical raw materials. Occidental has certain other commitments under contracts, guarantees and joint ventures,
+including purchase commitments for goods and services at market-related prices and certain other contingent liabilities. The
+amounts that will be paid for such outstanding off-balance sheet purchase obligations as of December 31, 2024 are $3.4
+billion in 2025, $4.4 billion in 2026 and 2027, $2.6 billion in 2028 and 2029 and $2.4 billion in 2030 and thereafter.
+
+
+ NOTE 14 - STOCKHOLDERS’ EQUITY
+
+   The following table presents Occidental's common share activity, including exercises of warrants, and other transactions
+in Occidental's common stock in 2024:
+
+
+                                 Exercise of                                                     Treasury             Common
+                                Warrants and           CrownRock                                    Stock                 Stock
+                                                                                        (b)
+ Period                              Options (a)       Acquisition              Other           Purchases (c)       Outstanding (d)
+ December 31, 2023                                                                                                  879,463,103
+      First Quarter 2024            3,277,628                     —         3,978,999                     —         886,719,730
+      Second Quarter 2024          18,875,864                     —            94,789              (130,424)        905,559,959
+      Third Quarter 2024            3,032,136           29,560,619             21,504                     —         938,174,218
+      Fourth Quarter 2024             246,049                     —           165,079              (127,363)        938,457,983
+      Total 2024                   25,431,677           29,560,619          4,260,371              (257,787)        938,457,983
+(a)
+      Approximately $559 million of cash was received as a result of the exercise of common stock warrants and options.
+(b)
+      Consisted of issuances for the 2015 long-term incentive plan, the OPC savings plan and the dividend reinvestment plan.
+(c)
+      Consisted of purchases of shares from the trustee of Occidental's defined contribution savings plan that are not part of publicly
+      announced plans or programs.
+(d)
+      As of December 31, 2024, Occidental had 74.0 million of outstanding warrants with a strike price of $22 per share and
+      83.9 million of warrants with a strike price of $59.62 per share.
+
+TREASURY STOCK
+    As of December 31, 2024, 2023 and 2022, treasury stock shares numbered 228.3 million, 228.1 million and
+198.7 million, respectively.
+
+PREFERRED STOCK
+    In connection with the Anadarko Acquisition, Occidental issued 100,000 shares of series A preferred stock, with a face
+value of $100,000 per share and a liquidation preference of $105,000 per share plus unpaid accrued dividends. Prior to
+August 2029, a mandatory redemption provision obligates Occidental to redeem preferred stock at a 10% premium to face
+value on a dollar-for-dollar basis for every dollar distributed to common shareholders (either via common stock dividends or
+share repurchases) above $4.00 per share, on a trailing 12-month basis. Preferred redemptions can settle between 30 and
+60 days from the date Berkshire Hathaway is notified of the redemption obligation and accrued unpaid dividends are paid up
+to but not including the redemption date. Occidental cannot voluntarily redeem preferred stock before August 2029. After
+August 2029, Occidental can voluntarily redeem preferred stock at a 5% premium to face value.
+
+
+
+
+104 OXY 2024 FORM 10-K
+
+
+                                                                                                      FINANCIAL STATEMENTS
+                                                                                                                 FOOTNOTES
+     Dividends on the preferred stock accrue on the face value at a rate per annum of 8%, but will be paid only when, as
+and if declared by Occidental’s Board of Directors. At any time, when such dividends have not been paid in full, the unpaid
+amounts will accrue dividends, compounded quarterly, at a rate per annum of 9%. Following the payment in full of any
+accrued but unpaid dividends, the dividend rate will remain at 9% per annum. If preferred dividends are not paid in full,
+Occidental is prohibited from paying dividends on common stock. Occidental paid $679 million in preferred stock dividends
+in 2024.
+     Occidental did not redeem preferred stock in 2024. To the extent Occidental's trailing 12-month distributions to common
+shareholders is above $4.00 per share, Occidental is required to match any common shareholder distributions with preferred
+stock redemptions. As of the date of this filing approximately $8.5 billion face value of the preferred stock remains
+outstanding.
+
+BERKSHIRE WARRANT
+    In connection with the preferred stock issuance, Occidental also issued the Berkshire Warrant. The Berkshire Warrant is
+exercisable at the holder’s option, in whole or in part, until the first anniversary of the date on which no shares of preferred
+stock remain outstanding, at which time the Berkshire Warrant expires. The holder of the Berkshire Warrant and the
+preferred stock may redeem the preferred stock as payment for the exercise price of the Warrant in lieu of cash payment
+upon exercise. As of December 31, 2024, the Berkshire Warrant would result in the issuance of 83.9 million shares of
+Occidental common stock, if exercised in full for its current strike price of $59.62 per share of Occidental common stock.
+
+COMMON STOCK WARRANTS
+    Occidental issued approximately 116 million Common Stock Warrants on August 3, 2020 to holders of record of
+outstanding shares of Occidental’s common stock as of the close of business on July 6, 2020. The Common Stock Warrants
+have an exercise price of $22.00 per share and will expire on August 3, 2027. As of December 31, 2024, Occidental had
+74.0 million outstanding warrants. The Common Stock Warrants are listed on the NYSE and trade under the symbol "OXY
+WS".
+
+EARNINGS PER SHARE
+     Occidental’s instruments containing rights to nonforfeitable dividends granted in stock-based awards are considered
+participating securities prior to vesting and, therefore, have been deducted from earnings in computing basic and diluted
+EPS under the two-class method.
+     Basic EPS was computed by dividing net income attributable to common stock, net of income allocated to participating
+securities, by the weighted-average number of common shares outstanding during each period, including vested but
+unissued shares and share units. The computation of diluted EPS reflects the additional dilutive effect of stock options,
+warrants and unvested stock awards.
+     The following table presents the calculation of basic and diluted EPS for the years ended December 31:
+
+millions except per share amounts                                                               2024         2023         2022
+   Income from continuing operations                                                     $     2,896 $      4,696 $     13,304
+   Income from discontinued operations, net of tax                                               182           —            —
+   Net income                                                                            $     3,078 $      4,696 $     13,304
+       Less: Net income attributable to noncontrolling interest                                  (22)          —            —
+       Less: Preferred stock dividends                                                          (679)        (923)        (800)
+   Net income attributable to common stock                                               $     2,377 $      3,773 $     12,504
+       Less: Net income allocated to participating securities                                    (13)         (23)         (83)
+   Net income, net of participating securities                                           $     2,364 $      3,750 $     12,421
+   Weighted-average number of basic shares                                                     911.8        889.2        926.2
+Basic earnings per common share                                                          $      2.59 $       4.22 $      13.41
+   Net income attributable to common stock                                               $     2,377 $      3,773 $     12,504
+       Less: Net income allocated to participating securities                                    (13)         (21)         (77)
+   Net income, net of participating securities                                           $     2,364 $      3,752 $     12,427
+   Weighted-average number of basic shares                                                     911.8        889.2        926.2
+   Dilutive securities                                                                          55.3         71.7         75.8
+   Total diluted weighted-average common shares                                                967.1        960.9      1,002.0
+Diluted earnings per common share                                                        $      2.44 $       3.90 $      12.40
+
+     For the years ended December 31, 2024, 2023 and 2022, there were no Occidental common stock warrants nor options
+that were excluded from diluted shares.
+
+
+
+                                                                                                     OXY 2024 FORM 10-K 105

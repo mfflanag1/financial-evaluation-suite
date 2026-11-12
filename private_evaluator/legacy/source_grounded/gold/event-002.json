@@ -1,0 +1,450 @@
+{
+  "case_id": "event-002",
+  "reference_solution": {
+    "s_stock_election_cash_fraction": 0.375,
+    "s_holder_cash": 42750,
+    "s_holder_broadcom_shares": 126,
+    "s_holder_settlement_value": 118350,
+    "s_holder_net_profit": 1150,
+    "s_meets_profit_policy": true,
+    "s_short_hedge_shares": 126,
+    "s_break_even_broadcom_price": 590.8730158730159,
+    "c_cash_fulfillment_fraction": 0.8333333333333334,
+    "c_holder_cash": 178125,
+    "c_holder_broadcom_shares": 63,
+    "c_non_election_consideration": "stock",
+    "u_exact_stock_fraction_known": false,
+    "u_marked_entitlement_lower_bound": 146850,
+    "u_marked_entitlement_upper_bound": 151200
+  },
+  "worked_derivation": [
+    "Maximum cash target-share count=0.5*10000=5000. In S the shortfall=5000-1000=4000; non-election priority consumes 1000, leaving 3000 cash allocations among 8000 stock elections.",
+    "S cash fraction=3000/8000=0.375; holder receives cash on 300 shares (42750) and 0.252 Broadcom shares on 500 shares (126 AVGO). V=42750+126*600=118350.",
+    "S all-in cost=800*146.50=117200; net=1150>=1000. Zero-profit AVGO price=(117200-42750)/126=590.873015873...; after fixed proration short 126 AVGO.",
+    "C fulfillment=5000/6000=5/6; 1500*(5/6)=1250 target shares receive cash (178125); remaining 250 target shares receive 63 AVGO. All C non-election shares receive stock.",
+    "For a valid stock election, the holder's stock-fulfillment fraction ranges from 1/2 (all eligible shares elect stock) to 1 (stock elections do not exceed 5000 and non-election/cash allocations satisfy cash capacity). At $600 stock consideration is $151.20>$142.50 cash. U holding 1000 receives 500 cash target shares plus 126 AVGO at the lower endpoint, or 252 AVGO at the upper endpoint, giving total-value bounds 146850 and 151200. Both bounds have feasible integer target allocations and Broadcom deliveries."
+  ],
+  "limitations": [
+    "Election counts, holder positions, prices and policy thresholds are synthetic.",
+    "The supplied original agreement version is applied conditionally, not represented as a complete amended closing record.",
+    "All shares are explicitly eligible; dissenting/excluded shares, awards and tax consequences would require additional analysis.",
+    "Unknown-election bounds concern economic entitlement at a fixed supplied price before fractional-share cash conversion. They do not determine an eventual cash-in-lieu payment or constitute probability forecasts.",
+    "Whole allocated target and Broadcom share counts avoid exchange-agent fractional-rounding discretion in S/C and bound endpoints; intermediate U mixes are valued before fractional-share cash conversion."
+  ],
+  "fields": [
+    {
+      "id": "s_stock_election_cash_fraction",
+      "expected": 0.375,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_holder_cash",
+      "expected": 42750,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_holder_broadcom_shares",
+      "expected": 126,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_holder_settlement_value",
+      "expected": 118350,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_holder_net_profit",
+      "expected": 1150,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_meets_profit_policy",
+      "expected": true,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_short_hedge_shares",
+      "expected": 126,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s_break_even_broadcom_price",
+      "expected": 590.8730158730159,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "the amount by which the Maximum Cash Share Number exceeds the Cash Election Number"
+          ],
+          [
+            "If the Shortfall Number exceeds the number of Non-Election Shares, then all Non-Election Shares shall be converted into the right to receive the Cash Consideration"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "c_cash_fulfillment_fraction",
+      "expected": 0.8333333333333334,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "a fraction, the numerator of which is the Maximum Cash Share Number and the denominator of which is the Cash Election Number"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "c_holder_cash",
+      "expected": 178125,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "a fraction, the numerator of which is the Maximum Cash Share Number and the denominator of which is the Cash Election Number"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "c_holder_broadcom_shares",
+      "expected": 63,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "a fraction, the numerator of which is the Maximum Cash Share Number and the denominator of which is the Cash Election Number"
+          ],
+          [
+            "with the remaining number of such holder’s Cash Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "c_non_election_consideration",
+      "expected": "stock",
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "equals or exceeds the Maximum Cash Share Number, then (x) all Stock Election Shares and Non-Election Shares shall be converted into the right to receive the Stock Consideration"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u_exact_stock_fraction_known",
+      "expected": false,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "then all Stock Election Shares shall be converted into the right to receive the Stock Consideration"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u_marked_entitlement_lower_bound",
+      "expected": 146850,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "shall be equal to 50% of the aggregate number of shares of Company Common Stock issued and outstanding immediately prior to the Closing Effective Time"
+          ],
+          [
+            "a fraction, the numerator of which is the amount by which the Shortfall Number exceeds the total number of Non-Election Shares, and the denominator of which is the total number of Stock Election Shares"
+          ],
+          [
+            "with the remaining number of such holder’s Stock Election Shares being converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Per Share Cash Consideration” means $142.50."
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u_marked_entitlement_upper_bound",
+      "expected": 151200,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-broadcom-vmware-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-broadcom-vmware-contract": [
+          [
+            "then all Stock Election Shares shall be converted into the right to receive the Stock Consideration"
+          ],
+          [
+            "“Exchange Ratio” means 0.25200."
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "h2b-finma-at1",
+  "url": "https://www.finma.ch/en/news/2023/03/20230323-mm-at1-kapitalinstrumente",
+  "title": "Basis for Credit Suisse AT1 write-down",
+  "publisher": "FINMA",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T19:58:17.716840Z",
+  "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+  "document_date": "2023-03-23",
+  "retrieved_at": "2026-10-04T19:58:17.716840Z",
+  "redistribution_status": "Local research only; public access does not grant broad redistribution rights.",
+  "raw_path": "sources/h2b-finma-at1/evidence.txt",
+  "text_path": "sources/h2b-finma-at1/evidence.txt",
+  "raw_sha256": "c5fd6eb07cb84d84918c82a839572bed410ddfddf318821213528858b6202a8a",
+  "text_sha256": "c5fd6eb07cb84d84918c82a839572bed410ddfddf318821213528858b6202a8a",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "complete_original_document",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: complete_original_document.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

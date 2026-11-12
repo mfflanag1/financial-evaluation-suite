@@ -1,0 +1,25 @@
+{
+  "id": "exp-vistra-2023-issuer",
+  "url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/312/VST%20%28Vistra%20Corp.%29%20%20%28ARS%29%202024-04-03.pdf_.pdf",
+  "title": "Vistra 2023 annual report — selected Odessa capacity and portfolio hedge/sensitivity disclosures",
+  "publisher": "Vistra Corp.",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T18:10:45.028480Z",
+  "availability_basis": "The issuer-hosted annual-report PDF was retained at available_by. A historical publication timestamp for this specific PDF was not established; no date is inferred from its filename. The 2023 reporting period and SEC filing date are separate facts. The case uses a 2026 observation cutoff.",
+  "retrieved_at": "2026-10-04T18:10:45.028480Z",
+  "redistribution_status": "Issuer-copyrighted annual report, not public domain. Short selected excerpts retained for local evaluation research; original downloaded PDF is an audit artifact. Broader redistribution/license clearance remains pending.",
+  "raw_path": "sources/exp-vistra-2023-issuer/evidence.txt",
+  "text_path": "sources/exp-vistra-2023-issuer/evidence.txt",
+  "raw_sha256": "19a4728184ef3f8729ef3ed888078545b154f84d57b203148b308b36f4d249b8",
+  "text_sha256": "19a4728184ef3f8729ef3ed888078545b154f84d57b203148b308b36f4d249b8",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_pdf_selected_text",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_pdf_selected_text.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

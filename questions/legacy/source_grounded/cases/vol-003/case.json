@@ -1,0 +1,112 @@
+{
+  "id": "vol-003",
+  "case_group": "3m-solventum-2024-spinoff-option-basket",
+  "lane": "volatility_derivatives",
+  "epistemic_type": "conditional_analysis",
+  "information_cutoff": "2026-10-04T17:52:56Z",
+  "prompt": "You hold 40 long adjusted MMM1 calls with strike 110.00 and premium quote 1.20. Hypothetical expiry prices are MMM=92.00 and SOLV=80.00. Reconstruct the option basket specified in OCC update 54392 and determine payoff. In an additional deterministic expiry stress, MMM rises by 1.00 while SOLV falls by 3.00. The calls remain in the money under that stress. Determine the P&L change, component sensitivities, and SOLV price giving zero book expiry P&L with MMM fixed at 92.00. Evaluate whether the memo's 80%/20% settlement allocation establishes customer tax basis. Do not replace contract share quantities with allocation percentages.\nAll prices, premiums, positions and stress moves in this prompt are supplied hypothetical inputs, not observed historical market data. Evaluate expiry payoff only; ignore fees, taxes, financing, early exercise and other corporate actions. A local expiry-payoff sensitivity is not a pre-expiry model Greek. Amounts are USD unless stated. Return numeric amounts without intermediate rounding except where a field specifies rounding. Quote each contract term used; scenario constants need no source citation. The 2026 cutoff is an observed evidence bound, not a historical trading claim. Source memos describe different information states; respect the memo subset named by each question.",
+  "source_ids": [
+    "vol-occ-54392"
+  ],
+  "output_fields": [
+    {
+      "id": "book_mmm_delivery",
+      "type": "number",
+      "unit": "MMM_shares",
+      "description": "MMM whole shares delivered upon exercise of all 40 calls.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_solv_delivery",
+      "type": "number",
+      "unit": "SOLV_shares",
+      "description": "SOLV whole shares delivered upon exercise of all 40 calls.",
+      "evidence_required": true
+    },
+    {
+      "id": "basket_value_per_contract",
+      "type": "number",
+      "unit": "USD_per_contract",
+      "description": "Value of the two-stock deliverable specified in this update at supplied expiry prices.",
+      "evidence_required": true
+    },
+    {
+      "id": "equivalent_underlying_quote",
+      "type": "number",
+      "unit": "USD_quote_units",
+      "description": "Deliverable value divided by the documented multiplier, not by total shares.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_strike_payment",
+      "type": "number",
+      "unit": "USD",
+      "description": "Cash strike payment for all contracts; original strike unchanged.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_expiry_intrinsic",
+      "type": "number",
+      "unit": "USD",
+      "description": "Nonnegative aggregate intrinsic, before premium.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_expiry_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Aggregate expiry intrinsic minus original premium.",
+      "evidence_required": true
+    },
+    {
+      "id": "stress_pnl_change",
+      "type": "number",
+      "unit": "USD",
+      "description": "Stressed minus original expiry P&L under the simultaneous two-stock move.",
+      "evidence_required": true
+    },
+    {
+      "id": "solv_breakeven",
+      "type": "number",
+      "unit": "USD_per_SOLV_share",
+      "description": "SOLV price giving zero expiry P&L with MMM fixed at 92.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_mmm_local_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_MMM_move",
+      "description": "Local expiry-P&L slope for MMM with SOLV fixed, remaining in the money.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_solv_local_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_SOLV_move",
+      "description": "Local expiry-P&L slope for SOLV with MMM fixed, remaining in the money.",
+      "evidence_required": true
+    },
+    {
+      "id": "settlement_allocation_proves_tax_basis",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does this memo establish an 80%/20% customer tax-basis allocation?",
+      "evidence_required": true
+    }
+  ],
+  "response_format": {
+    "case_id": "vol-003",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

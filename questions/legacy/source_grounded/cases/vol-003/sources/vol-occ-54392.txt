@@ -1,0 +1,54 @@
+#54392
+Date: March 28, 2024
+Subject: 3M Company – Distribution
+Option Symbols: MMM/2MMM
+New Symbols: MMM1/2MMM1
+Date: 04/01/2024
+* * * Update * * *
+Contract Adjustment
+Effective Date: April 1, 2024
+Option Symbols: MMM changes to MMM1
+2MMM changes to 2MMM1
+Strike Prices: No Change
+Number of
+Contracts: No Change
+Multiplier: 100 (e.g., a premium of 1.50 yields $150; a strike of 95 yields $9,500.00)
+New Deliverable
+Per Contract: 1) 100 3M Company (MMM) Common Shares
+2) 25 (New) Solventum Corporation (SOLV) Common Shares
+Settlement
+Allocation: MMM: 80%
+SOLV: 20%
+CUSIPs: MMM: 88579Y101
+SOLV: 83444M101
+THE SETTLEMENT ALLOCATION OF THE TOTAL STRIKE PRICE AMOUNT IS BEING PROVIDED
+SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY
+CLEARING CORPORATION (NSCC), AND IS NOT INTENDED TO BE USED FOR ANY OTHER
+PURPOSE, TRANSACTION OR CUSTOMER ACCOUNT STATEMENTS.
+Pricing
+The underlying price for MMM1/2MMM1 will be determined as follows:MMM1 = MMM + 0.25 (SOLV)
+Background
+3M Company (MMM) has announced a distribution of (New) Solventum Corporation (SOLV) Common
+Shares. The distribution ratio is 0.25 of a SOLV share for each MMM share held. The record date is March
+18, 2024; the payable date is April 1, 2024. The NYSE has set April 1, 2024, as the ex-distribution date for
+this distribution.
+Solventum Corporation Common Shares began trading on a when issued basis on March 26, 2024 on the
+NYSE under the trading symbol “SOLV WI”.
+Disclaimer
+This Information Memo provides an unofficial summary of the terms of corporate events affecting listed
+options or futures prepared for the convenience of market participants. OCC accepts no responsibility for
+the accuracy or completeness of the summary, particularly for information which may be relevant to
+investment decisions. Option or futures investors should independently ascertain and evaluate all
+information concerning this corporate event(s).
+The determination to adjust options and the nature of any adjustment is made by OCC pursuant to OCC
+By-Laws, Article VI, Sections 11 and 11A. The determination to adjust futures and the nature of any
+adjustment is made by OCC pursuant to OCC By-Laws, Article XII, Sections 3, 4, or 4A, as applicable. For
+both options and futures, each adjustment decision is made on a case by case basis. Adjustment
+decisions are based on information available at the time and are subject to change as additional
+information becomes available or if there are material changes to the terms of the corporate event(s)
+occasioning the adjustment.
+ALL CLEARING MEMBERS ARE REQUESTED TO IMMEDIATELY ADVISE ALL BRANCH OFFICES
+AND CORRESPONDENTS ON THE ABOVE.
+For questions regarding this memo, please email the Investor Education team at options@theocc.com.
+Clearing Member Firms of OCC may contact Member Services at 1-800-544-6091 or, within Canada, at 1-
+800-424-7320, or email memberservices@theocc.com.

@@ -1,0 +1,1898 @@
+[
+  {
+    "area": "credit_capital_structure",
+    "id": "credit-001",
+    "outputs": 13,
+    "path": "legacy/source_grounded/cases/credit-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "credit_capital_structure",
+    "id": "credit-002",
+    "outputs": 12,
+    "path": "legacy/source_grounded/cases/credit-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "credit_capital_structure",
+    "id": "credit-003",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/credit-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "commodities_energy",
+    "id": "energy-001",
+    "outputs": 11,
+    "path": "legacy/source_grounded/cases/energy-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "commodities_energy",
+    "id": "energy-002",
+    "outputs": 12,
+    "path": "legacy/source_grounded/cases/energy-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "commodities_energy",
+    "id": "energy-003",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/energy-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "fundamental_equity",
+    "id": "equity-001",
+    "outputs": 11,
+    "path": "legacy/source_grounded/cases/equity-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "fundamental_equity",
+    "id": "equity-002",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/equity-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "fundamental_equity",
+    "id": "equity-003",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/equity-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "event_driven",
+    "id": "event-001",
+    "outputs": 13,
+    "path": "legacy/source_grounded/cases/event-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "event_driven",
+    "id": "event-002",
+    "outputs": 15,
+    "path": "legacy/source_grounded/cases/event-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "event_driven",
+    "id": "event-003",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/event-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "fundamental_equity",
+    "id": "h2-001",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/h2-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "fundamental_equity",
+    "id": "h2-002",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/h2-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "fundamental_equity",
+    "id": "h2-003",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/h2-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "credit_capital_structure",
+    "id": "h2-004",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/h2-004/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "credit_capital_structure",
+    "id": "h2-005",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/h2-005/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "credit_capital_structure",
+    "id": "h2-006",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/h2-006/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "event_driven",
+    "id": "h2-007",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/h2-007/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "event_driven",
+    "id": "h2-008",
+    "outputs": 8,
+    "path": "legacy/source_grounded/cases/h2-008/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "energy_commodities",
+    "id": "h2-009",
+    "outputs": 8,
+    "path": "legacy/source_grounded/cases/h2-009/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "energy_commodities",
+    "id": "h2-010",
+    "outputs": 8,
+    "path": "legacy/source_grounded/cases/h2-010/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "cross_strategy_portfolio",
+    "id": "h2-011",
+    "outputs": 8,
+    "path": "legacy/source_grounded/cases/h2-011/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "cross_strategy_portfolio",
+    "id": "h2-012",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/h2-012/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "macro_rates",
+    "id": "macro-001",
+    "outputs": 12,
+    "path": "legacy/source_grounded/cases/macro-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "macro_rates",
+    "id": "macro-002",
+    "outputs": 9,
+    "path": "legacy/source_grounded/cases/macro-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "macro_rates",
+    "id": "macro-003",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/macro-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "portfolio",
+    "id": "portfolio-001",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/portfolio-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "portfolio",
+    "id": "portfolio-002",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/portfolio-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "portfolio",
+    "id": "portfolio-003",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/portfolio-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "systematic",
+    "id": "systematic-001",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/systematic-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "systematic",
+    "id": "systematic-002",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/systematic-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "systematic",
+    "id": "systematic-003",
+    "outputs": 10,
+    "path": "legacy/source_grounded/cases/systematic-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "volatility_derivatives",
+    "id": "vol-001",
+    "outputs": 11,
+    "path": "legacy/source_grounded/cases/vol-001/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "volatility_derivatives",
+    "id": "vol-002",
+    "outputs": 11,
+    "path": "legacy/source_grounded/cases/vol-002/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "volatility_derivatives",
+    "id": "vol-003",
+    "outputs": 12,
+    "path": "legacy/source_grounded/cases/vol-003/case.json",
+    "track": "source_grounded"
+  },
+  {
+    "area": "portfolio",
+    "id": "q001",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q001.json",
+    "title": "Funding a long-short book with restricted collateral",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q002",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q002.json",
+    "title": "Two-asset minimum-variance allocation",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q003",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q003.json",
+    "title": "Neutralize two factors without confusing dollar neutrality",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q004",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q004.json",
+    "title": "Risk parity after a concentration cap",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q005",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q005.json",
+    "title": "An active book plus its benchmark-beta overlay",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q006",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q006.json",
+    "title": "Covariance shrinkage and portfolio evaluation across regimes",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q007",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q007.json",
+    "title": "Robust selection with short positions and a drift box",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q008",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q008.json",
+    "title": "Allocation under a funded turnover budget",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q009",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q009.json",
+    "title": "Portfolio adjustment with proportional trading costs",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q010",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q010.json",
+    "title": "Active allocation under investment and tracking-error limits",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q011",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q011.json",
+    "title": "Three-asset allocation with position bounds",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q012",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q012.json",
+    "title": "Minimum-risk expression of a neutral stock signal",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q013",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q013.json",
+    "title": "Two desks sharing a hedged capital charge",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q014",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q014.json",
+    "title": "Portfolio adjustment with fixed ticket costs",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q015",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q015.json",
+    "title": "Robust allocation under ellipsoidal mean uncertainty",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q016",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q016.json",
+    "title": "Mean-variance allocation with partial covariance information",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q017",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q017.json",
+    "title": "Fund a withdrawal without liquidating the wrong tax lot",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q018",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q018.json",
+    "title": "A two-period contingent rebalance after execution costs",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q019",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q019.json",
+    "title": "A sector-neutral discrete active-risk frontier",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q020",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q020.json",
+    "title": "Cheapest cash-flow ladder without borrowing from the future",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q021",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q021.json",
+    "title": "A return-constrained allocation using partial probability mass in the tail",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q022",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q022.json",
+    "title": "Leverage choice with tiered funding costs",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q023",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q023.json",
+    "title": "Desk aggregation with partially observed security overlap",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q024",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q024.json",
+    "title": "Unequal risk budgets before a financing scale decision",
+    "track": "quant100"
+  },
+  {
+    "area": "portfolio",
+    "id": "q025",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q025.json",
+    "title": "Entropy-based allocation with return and concentration constraints",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q026",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q026.json",
+    "title": "VaR and expected shortfall for a discrete loss distribution",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q027",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q027.json",
+    "title": "Aggregating correlated desk losses",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q028",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q028.json",
+    "title": "Portfolio expected shortfall after a hedge trade",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q029",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q029.json",
+    "title": "Portfolio VaR and expected shortfall for rare defaults",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q030",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q030.json",
+    "title": "Least-severe correlated reverse stress",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q031",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q031.json",
+    "title": "Reverse stress with interacting risk factors",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q032",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q032.json",
+    "title": "Intraday margin and settlement funding",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q033",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q033.json",
+    "title": "Collateral is cheap only if it is eligible",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q034",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q034.json",
+    "title": "Same counterparty, different enforceable netting sets",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q035",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q035.json",
+    "title": "Conditional default states and tail capital",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q036",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q036.json",
+    "title": "Collateral gaps during the margin period of risk",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q037",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q037.json",
+    "title": "Factor risk and desk contributions",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q038",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q038.json",
+    "title": "Risk of a proxy currency hedge",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q039",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q039.json",
+    "title": "Tail risk across market regimes",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q040",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q040.json",
+    "title": "Who owns risk when tail scenarios tie?",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q041",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q041.json",
+    "title": "Drawdown and terminal-loss mandates",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q042",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q042.json",
+    "title": "Guarantee eligibility under portfolio stress",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q043",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q043.json",
+    "title": "Tail capital with marginal default information",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q044",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q044.json",
+    "title": "Margin-cure liquidation with price impact",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q045",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q045.json",
+    "title": "Portfolio risk with partially observed correlations",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q046",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q046.json",
+    "title": "Principal settlement exposure and liquidity",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q047",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q047.json",
+    "title": "Tranche losses under dependent defaults",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q048",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q048.json",
+    "title": "Two insured events share one annual limit",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q049",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q049.json",
+    "title": "Funding across entities with transfer constraints",
+    "track": "quant100"
+  },
+  {
+    "area": "risk",
+    "id": "q050",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q050.json",
+    "title": "Tail capital from partial distribution information",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q051",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q051.json",
+    "title": "A dividend liability inside put-call parity",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q052",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q052.json",
+    "title": "Currency quote direction and a funded receivable",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q053",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q053.json",
+    "title": "Implied volatility and option-parity consistency",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q054",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q054.json",
+    "title": "Integer gamma-vega hedge under a cash constraint",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q055",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q055.json",
+    "title": "Delta under a moving volatility smile",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q056",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q056.json",
+    "title": "A financed superhedge with stock liquidation costs",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q057",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q057.json",
+    "title": "American put exercise versus continuation",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q058",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q058.json",
+    "title": "Terminal option payoffs and sampled variance",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q059",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q059.json",
+    "title": "Discrete barrier exposure after recombination",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q060",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q060.json",
+    "title": "Option-quote fitting in a martingale model",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q061",
+    "outputs": 2,
+    "path": "legacy/quant100/questions/q061.json",
+    "title": "Coupon bootstrapping across an unequal maturity set",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q062",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q062.json",
+    "title": "Swap valuation and curve-specific sensitivities",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q063",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q063.json",
+    "title": "Collateral-constrained key-rate stress hedge",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q064",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q064.json",
+    "title": "Bond hedge performance under a large rate move",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q065",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q065.json",
+    "title": "Negative-forward caplet model admissibility",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q066",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q066.json",
+    "title": "A forward-start swap with state-dependent annuity",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q067",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q067.json",
+    "title": "Futures cash settlement with correlated reinvestment",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q068",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q068.json",
+    "title": "Storage carry constrained by financing and tank capacity",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q069",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q069.json",
+    "title": "A fixed-conversion quanto call",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q070",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q070.json",
+    "title": "Cross-currency coupons and collateral-consistent forwards",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q071",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q071.json",
+    "title": "CDS par spread with mid-period default accrual",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q072",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q072.json",
+    "title": "Recovery convention in a one-year credit inversion",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q073",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q073.json",
+    "title": "Capped collateral and wrong-way exposure",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q074",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q074.json",
+    "title": "Basket protection with marginal default information",
+    "track": "quant100"
+  },
+  {
+    "area": "derivatives",
+    "id": "q075",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q075.json",
+    "title": "Digital option extrapolation and terminal hedge payoffs",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q076",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q076.json",
+    "title": "Sharpe ratio standard error and minimum track record",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q077",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q077.json",
+    "title": "Net-of-cost return and break-even trading cost",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q078",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q078.json",
+    "title": "Factor regression: alpha, residual risk and information ratio",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q079",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q079.json",
+    "title": "HAC t-statistic and autocorrelation-adjusted annual volatility",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q080",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q080.json",
+    "title": "Expected maximum Sharpe under the null and family-wise p-values",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q081",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q081.json",
+    "title": "Bayesian shrinkage of a noisy return forecast",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q082",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q082.json",
+    "title": "AR(1) spread: half-life, stationary dispersion and expected path",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q083",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q083.json",
+    "title": "Purged and embargoed cross-validation fold sizes",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q084",
+    "outputs": 3,
+    "path": "legacy/quant100/questions/q084.json",
+    "title": "Signal alignment: look-ahead versus correctly lagged backtest",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q085",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q085.json",
+    "title": "Square-root market impact: cost, size elasticity and maximum order",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q086",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q086.json",
+    "title": "Adverse-selection spread with sequential Bayesian quote updating",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q087",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q087.json",
+    "title": "Deflated Sharpe ratio for the best of 25 backtests",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q088",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q088.json",
+    "title": "FDR versus FWER control over twelve signal tests",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q089",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q089.json",
+    "title": "Kalman local-level filter for a drifting signal mean",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q090",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q090.json",
+    "title": "Entry threshold for an Ornstein-Uhlenbeck spread trade",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q091",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q091.json",
+    "title": "Execution urgency after time-varying liquidity and price risk",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q092",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q092.json",
+    "title": "Quote selection with inventory and fill-conditioned marks",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q093",
+    "outputs": 4,
+    "path": "legacy/quant100/questions/q093.json",
+    "title": "Capital deployment, operating profit and break-even capacity",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q094",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q094.json",
+    "title": "Correlated forecast combination after covariance shrinkage",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q095",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q095.json",
+    "title": "Factor measurement error and noisy-proxy prediction",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q096",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q096.json",
+    "title": "Common trends, return correlation and a financed spread trade",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q097",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q097.json",
+    "title": "Survival-weighted research results with a known population size",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q098",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q098.json",
+    "title": "Repeated strategy promotion tests versus a sequential likelihood rule",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q099",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q099.json",
+    "title": "Fill selection and expected execution alpha",
+    "track": "quant100"
+  },
+  {
+    "area": "systematic",
+    "id": "q100",
+    "outputs": 5,
+    "path": "legacy/quant100/questions/q100.json",
+    "title": "Volatility targeting with cash-funded trading costs",
+    "track": "quant100"
+  },
+  {
+    "area": "pnl",
+    "id": "q101",
+    "outputs": 6,
+    "path": "legacy/workflows/questions/q101.json",
+    "title": "Daily fund close across desks and currencies",
+    "track": "workflows"
+  },
+  {
+    "area": "pnl",
+    "id": "q102",
+    "outputs": 6,
+    "path": "legacy/workflows/questions/q102.json",
+    "title": "Trade-date profit and settled cash after a corporate action",
+    "track": "workflows"
+  },
+  {
+    "area": "research",
+    "id": "q103",
+    "outputs": 6,
+    "path": "legacy/workflows/questions/q103.json",
+    "title": "Historical industry-basket research with explicit trading costs",
+    "track": "workflows"
+  },
+  {
+    "area": "research",
+    "id": "q104",
+    "outputs": 6,
+    "path": "legacy/workflows/questions/q104.json",
+    "title": "As-of company research across revisions and security changes",
+    "track": "workflows"
+  },
+  {
+    "area": "estimation",
+    "id": "q105",
+    "outputs": 6,
+    "path": "legacy/workflows/questions/q105.json",
+    "title": "Shrinkage covariance minimum-variance portfolio with chronological validation",
+    "track": "workflows"
+  },
+  {
+    "area": "estimation",
+    "id": "q106",
+    "outputs": 6,
+    "path": "legacy/workflows/questions/q106.json",
+    "title": "High-dimensional ridge return forecast with chronological penalty selection",
+    "track": "workflows"
+  },
+  {
+    "area": "company_research",
+    "id": "q107",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q107.json",
+    "title": "Segment perimeter and currency reconciliation",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q108",
+    "mode": "single",
+    "outputs": 8,
+    "path": "legacy/research58/questions/q108.json",
+    "title": "Estimate revisions separated from coverage turnover and currency",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q109",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q109.json",
+    "title": "Point-in-time consolidated-entity investment screen",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q110",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q110.json",
+    "title": "Conflicting cash-flow publications and usable liquidity",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q111",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q111.json",
+    "title": "An event-study residual with simultaneous issuer catalysts",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q112",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q112.json",
+    "title": "Fiscal-year peer alignment with scoped impairment adjustments",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q113",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q113.json",
+    "title": "Two-tier supply bottlenecks and a conditional capacity purchase",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q114",
+    "mode": "single",
+    "outputs": 9,
+    "path": "legacy/research58/questions/q114.json",
+    "title": "Partial revenue identification and a cash-feasible remedy",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q115",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q115.json",
+    "title": "Ownership-graph exposure with mixed physical units",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q116",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q116.json",
+    "title": "Operating-leverage bounds when cost decomposition is missing",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "credit",
+    "id": "q117",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q117.json",
+    "title": "Borrower perimeter and incremental debt capacity",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "credit",
+    "id": "q118",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q118.json",
+    "title": "Recovery across operating and holding estates",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "rates",
+    "id": "q119",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q119.json",
+    "title": "Funding a liability strip from dated curve quotes",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "fx",
+    "id": "q120",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q120.json",
+    "title": "Payment liquidity under a cash-settled currency hedge",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "derivatives",
+    "id": "q121",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q121.json",
+    "title": "Convertible rights and a cash put deadline",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "event",
+    "id": "q122",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q122.json",
+    "title": "Conditional merger economics and expiring financing",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "energy",
+    "id": "q123",
+    "mode": "single",
+    "outputs": 8,
+    "path": "legacy/research58/questions/q123.json",
+    "title": "Storage policy under delayed demand information and pathwise funding",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "energy",
+    "id": "q124",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q124.json",
+    "title": "Dispatch economics with ramp and fuel limits",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "cross_asset",
+    "id": "q125",
+    "mode": "single",
+    "outputs": 7,
+    "path": "legacy/research58/questions/q125.json",
+    "title": "Currency and spread attribution around an issuer event",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "derivatives",
+    "id": "q126",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q126.json",
+    "title": "Path information and a derivative hedge limit",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q127",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q127.json",
+    "title": "Fund a delta-limited execution package without spending short proceeds",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q128",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q128.json",
+    "title": "Repair a nested-manager concentration at minimum alpha cost",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q129",
+    "mode": "single",
+    "outputs": 11,
+    "path": "legacy/research58/questions/q129.json",
+    "title": "Investor-series redemptions with endogenous liquidation loss and fees",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q130",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q130.json",
+    "title": "Link active-return attribution through a changing sector book",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q131",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q131.json",
+    "title": "Allocate strategy capacity under shared nonlinear market impact",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q132",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q132.json",
+    "title": "Separate family-level research confirmation from capacity allocation",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q133",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q133.json",
+    "title": "Allocate with jointly censored event returns instead of a survivor-only record",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q134",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q134.json",
+    "title": "Coordinate collateral substitution with a maturing liquidity bridge",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q135",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q135.json",
+    "title": "Promote a forecast model after population drift without consuming its holdout",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "portfolio",
+    "id": "q136",
+    "mode": "single",
+    "outputs": 6,
+    "path": "legacy/research58/questions/q136.json",
+    "title": "Produce a point-in-time analytic join without version or position fanout",
+    "track": "research58",
+    "turns": 1
+  },
+  {
+    "area": "company_research",
+    "id": "q137",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q137.json",
+    "title": "Receivable financing, revised cash restrictions and a disposal",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q138",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q138.json",
+    "title": "Backlog acceptance, cancellation and changing product economics",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q139",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q139.json",
+    "title": "Guidance coverage across recognition corrections and late contracts",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q140",
+    "mode": "multi",
+    "outputs": 17,
+    "path": "legacy/research58/questions/q140.json",
+    "title": "Buyback accretion with a corrected share register and funding limits",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q141",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q141.json",
+    "title": "Customer continuity, recurring-value corrections and prospective churn",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q142",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q142.json",
+    "title": "Dependent integration initiatives under successive evidence updates",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q143",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q143.json",
+    "title": "Economic-profit comparison across research assets, leases and cash",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q144",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q144.json",
+    "title": "Cash-runway interventions under delayed receipts and intramonth tests",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q145",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q145.json",
+    "title": "Catalyst evidence with duplication, a model correction and a new gate",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "company_research",
+    "id": "q146",
+    "mode": "multi",
+    "outputs": 16,
+    "path": "legacy/research58/questions/q146.json",
+    "title": "Reverse valuation with cash restrictions, divestiture and growth bounds",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "credit",
+    "id": "q147",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q147.json",
+    "title": "Repurchase authorization across covenant amendments",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "cross_asset",
+    "id": "q148",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q148.json",
+    "title": "Collateral selection after eligibility corrections",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "rates",
+    "id": "q149",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q149.json",
+    "title": "Delivery basket economics and repo capacity",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "credit",
+    "id": "q150",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q150.json",
+    "title": "Credit protection settlement and available cash",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "energy",
+    "id": "q151",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q151.json",
+    "title": "Pipeline rights and emergency nomination",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "event",
+    "id": "q152",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q152.json",
+    "title": "Earnout definitions and a delayed closing screen",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "rates",
+    "id": "q153",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q153.json",
+    "title": "Indexed-bond settlement and a funding boundary",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "derivatives",
+    "id": "q154",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q154.json",
+    "title": "Option quote consistency under a margin mandate",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "fx",
+    "id": "q155",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q155.json",
+    "title": "Fallback currency fixing and the payment cutoff",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "credit",
+    "id": "q156",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "legacy/research58/questions/q156.json",
+    "title": "Coverage-test diversion and a principal reinvestment decision",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q157",
+    "mode": "multi",
+    "outputs": 21,
+    "path": "legacy/research58/questions/q157.json",
+    "title": "Sequence a gated redemption with valuation and settlement amendments",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q158",
+    "mode": "multi",
+    "outputs": 18,
+    "path": "legacy/research58/questions/q158.json",
+    "title": "Replan a clearing closeout as legal offsets and risk limits change",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q159",
+    "mode": "multi",
+    "outputs": 19,
+    "path": "legacy/research58/questions/q159.json",
+    "title": "Reconcile a futures roll through specification and account changes",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q160",
+    "mode": "multi",
+    "outputs": 17,
+    "path": "legacy/research58/questions/q160.json",
+    "title": "Evaluate a routing experiment through cost and population revisions",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q161",
+    "mode": "multi",
+    "outputs": 20,
+    "path": "legacy/research58/questions/q161.json",
+    "title": "Reconsider a harvest plan as affiliated executions and mandates change",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q162",
+    "mode": "multi",
+    "outputs": 20,
+    "path": "legacy/research58/questions/q162.json",
+    "title": "Translate changing valuation evidence into a funded redemption",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q163",
+    "mode": "multi",
+    "outputs": 20,
+    "path": "legacy/research58/questions/q163.json",
+    "title": "Choose paid research and contingent allocations under changing constraints",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio",
+    "id": "q164",
+    "mode": "multi",
+    "outputs": 21,
+    "path": "legacy/research58/questions/q164.json",
+    "title": "Maintain a portfolio order state through cancellation races and corrections",
+    "track": "research58",
+    "turns": 4
+  },
+  {
+    "area": "portfolio_repair",
+    "id": "c201",
+    "mode": "single",
+    "outputs": 7,
+    "path": "challenges/c201.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "quant_validity",
+    "id": "c202",
+    "mode": "single",
+    "outputs": 8,
+    "path": "challenges/c202.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "valuation_choice",
+    "id": "c203",
+    "mode": "single",
+    "outputs": 6,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "cross_strategy_funding",
+    "id": "c204",
+    "mode": "single",
+    "outputs": 6,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "information_value",
+    "id": "c205",
+    "mode": "single",
+    "outputs": 8,
+    "path": "challenges/c205.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "execution_state",
+    "id": "c206",
+    "mode": "single",
+    "outputs": 8,
+    "path": "challenges/c206.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "portfolio_repair",
+    "id": "c207",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "challenges/c207.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "quant_validity",
+    "id": "c208",
+    "mode": "multi",
+    "outputs": 25,
+    "path": "challenges/c208.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "valuation_choice",
+    "id": "c209",
+    "mode": "multi",
+    "outputs": 24,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "cross_strategy_funding",
+    "id": "c210",
+    "mode": "multi",
+    "outputs": 28,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "information_value",
+    "id": "c211",
+    "mode": "multi",
+    "outputs": 27,
+    "path": "challenges/c211.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "execution_state",
+    "id": "c212",
+    "mode": "multi",
+    "outputs": 32,
+    "path": "challenges/c212.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "portfolio_repair",
+    "id": "c213",
+    "mode": "single",
+    "outputs": 7,
+    "path": "challenges/c213.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "quant_validity",
+    "id": "c214",
+    "mode": "single",
+    "outputs": 8,
+    "path": "challenges/c214.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "valuation_choice",
+    "id": "c215",
+    "mode": "single",
+    "outputs": 7,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "cross_strategy_funding",
+    "id": "c216",
+    "mode": "single",
+    "outputs": 7,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "information_value",
+    "id": "c217",
+    "mode": "single",
+    "outputs": 8,
+    "path": "challenges/c217.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "execution_state",
+    "id": "c218",
+    "mode": "single",
+    "outputs": 9,
+    "path": "challenges/c218.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "portfolio_repair",
+    "id": "c219",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "challenges/c219.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "quant_validity",
+    "id": "c220",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "challenges/c220.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "valuation_choice",
+    "id": "c221",
+    "mode": "multi",
+    "outputs": 24,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "cross_strategy_funding",
+    "id": "c222",
+    "mode": "multi",
+    "outputs": 24,
+    "path": null,
+    "split": "holdout",
+    "track": "challenges"
+  },
+  {
+    "area": "information_value",
+    "id": "c223",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "challenges/c223.json",
+    "split": "development",
+    "track": "challenges"
+  },
+  {
+    "area": "execution_state",
+    "id": "c224",
+    "mode": "multi",
+    "outputs": 24,
+    "path": "challenges/c224.json",
+    "split": "development",
+    "track": "challenges"
+  }
+]

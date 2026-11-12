@@ -1,0 +1,85 @@
+{
+  "id": "equity-002",
+  "case_group": "intel-2024-segment-model-recast",
+  "lane": "fundamental_equity",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T18:12:47Z",
+  "prompt": "Reconcile Intel's FY2023 segment disclosure with the FY2024 report's retrospectively recast 2023 figures. Intel Foundry and original Intel Foundry Services (IFS) have different perimeters; the new foundry model includes intersegment manufacturing. Use fiscal-year labels exactly, including Intel's fiscal calendar; no 52/53-week normalization is requested. There are no synthetic reported numbers. The incomplete branch asks for Q1 2023 using ONLY annual data; do not invent an annual-to-quarter allocation. Evaluate the 10 specified reconciliations and identifiability conclusions. The annual DCAI difference is a net basis bridge, not an attribution of every dollar to one cause.\n\nUse only the frozen document versions. The cutoff is an observed 2026 availability bound, not an invented historical publication time. Do not use subsequent real-world outcomes. Return all declared fields in standard structured form with verbatim rule/data evidence; scenario inputs need no fabricated source. Preserve unrounded intermediates; report money in the stated units and percentages as percentage points on the 0–100 scale, to at least 8 decimal places when needed.",
+  "source_ids": [
+    "expansion-intel-2023-original",
+    "expansion-intel-2024-recast"
+  ],
+  "output_fields": [
+    {
+      "id": "dcai_2023_basis_difference",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Original 2023 DCAI revenue minus recast 2023 DCAI revenue; this is a reporting-basis difference, not growth.",
+      "evidence_required": true
+    },
+    {
+      "id": "dcai_comparable_growth_2024_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "2024 versus recast 2023 DCAI revenue growth using the final permitted segment basis.",
+      "evidence_required": true
+    },
+    {
+      "id": "dcai_old_new_growth_comparable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Would 2024 DCAI divided by original 2023 DCAI constitute growth on a comparable segment basis?",
+      "evidence_required": true
+    },
+    {
+      "id": "recast_2023_consolidated_revenue",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Reconcile Intel Products, Foundry, all other, and intersegment eliminations in 2023. Do not count Products and its child segments twice. Evidence may use the printed consolidated total or all four components plus the elimination rule.",
+      "evidence_required": true
+    },
+    {
+      "id": "revenue_overstatement_without_eliminations_2024",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Overstatement when 2024 Products, Foundry and all-other revenues are added without eliminations.",
+      "evidence_required": true
+    },
+    {
+      "id": "foundry_comparable_growth_2024_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "2024 versus recast 2023 total Intel Foundry revenue growth; do not use original IFS as denominator.",
+      "evidence_required": true
+    },
+    {
+      "id": "disclosed_external_revenue_share",
+      "type": "number",
+      "unit": "percent",
+      "description": "Disclosed 'certain' third-party foundry/assembly/test revenue as a percentage of 2024 Intel Foundry total revenue. This subset is not established as all external-customer revenue.",
+      "evidence_required": true
+    },
+    {
+      "id": "dcai_recast_operating_margin_2023_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "2023 DCAI operating margin on the recast basis.",
+      "evidence_required": true
+    },
+    {
+      "id": "segment_change_revises_prior_consolidated_statements",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does this segment model change revise prior consolidated financial statements?",
+      "evidence_required": true
+    },
+    {
+      "id": "q1_2023_recast_dcai_revenue_identifiable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Only annual tables are permitted. Can a unique Q1 2023 recast DCAI revenue be inferred? No quarterly allocation constraints are supplied; this is a prompt-defined insufficiency question, requiring no fabricated source quote.",
+      "evidence_required": false
+    }
+  ]
+}

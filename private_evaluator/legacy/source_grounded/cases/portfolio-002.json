@@ -1,0 +1,84 @@
+{
+  "id": "portfolio-002",
+  "case_group": "fomc-2023-03-22-cross-pod-curve-funding",
+  "lane": "portfolio",
+  "status": "prototype",
+  "epistemic_type": "conditional_analysis",
+  "information_cutoff": "2026-10-04T18:14:08Z",
+  "source_ids": [
+    "portfolio-fed-20230322"
+  ],
+  "prompt": "Use the March 22, 2023 FOMC statement. Extract the announced target-range midpoint. A supplied synthetic pre-decision reference midpoint is 4.625%; define u as the announced midpoint minus 4.625%, converted to basis points. This reference is supplied, not a claim about a separately captured prior Fed decision. Do not infer yield-curve moves from the policy statement: use only the following joint scenarios.\nThree synthetic pods: rate-sensitive equity spread pod has signed DV01 at 2y +120 USD/bp and 10y -120 USD/bp. Treasury pod has signed DV01 at 2y -180 and 10y +180 USD/bp. For either pod, rate P&L=-DV01_2*d2-DV01_10*d10. Financing pod borrows 12,000,000 USD; the full rate increment u applies immediately to a 30-day accrual on ACT/360, no compounding; incremental expense=notional*(u/10000)*30/360. Baseline principal repayment is outside incremental P&L. Both market pods have zero parallel DV01, but their curve exposure and financing cost remain.\nJoint scenarios ordered H,R,T: d2=(+u,-u,+10) bp; d10=(+10,-15,-20) bp. Funding increment is +u in every scenario. Aggregate P&L sums both market pods and subtracts financing expense.\nFinite hedge menu: A has signed 2y DV01 +60 and 10y DV01 -60, fee 100, margin 2000. B is a fully prepaid synthetic scenario-contingent claim paying (0,2200,0) in H,R,T, nonrefundable premium 350, margin 0; no other claim price or probabilistic value is implied. C receives exactly the incremental financing expense in every scenario, fee 150, margin 2500. A P&L follows the same signed-DV01 formula. The B premium is its fee, paid once at T0.\nStarting free cash is 7000. Base T1 outflows are the full incremental financing expense plus max(-Treasury-pod P&L,0). Equity P&L and all positive Treasury or hedge P&L settle only at T2. Add gross negative hedge P&L calls under the common schedule. This schedule is an assumption about the synthetic book, not Fed policy or a market convention.\nMissing-input branch: omit C's initial-margin amount, which may be any nonnegative value; retain all other facts. Can the feasible optimizer be uniquely determined? Return insufficient_data or determined.\n\nEverything in the scenario book, sensitivities, prices, hedge menu and collateral schedule below is an explicit synthetic assumption unless identified as a public source fact. This is a conditional stress calculation, not a recommendation, actual margin rule, actual historical trade or realized-return calculation. No probabilities apply: maximize the minimum terminal economic P&L over all three scenarios, including nonrefundable hedge fees/premiums. Initial margin and collateral are refundable/settlement resources, never additional economic losses. Choose any subset of A,B,C, at most one of each; no other trades, position resizing, borrowing or collateral rehypothecation. Plan codes have alphabetically ordered letters; empty subset is NONE. For feasible-set output, retain the fixed order NONE|A|B|C|AB|AC|BC|ABC and omit infeasible plans. Equality at a cash limit is feasible.\nCash sequencing is compulsory: T0 pays every selected hedge fee and posts its initial margin. Those amounts remain unavailable through T1. T1 then pays the expressly specified base-book outflows plus every negative selected-hedge scenario P&L as separate gross collateral outflows. No favorable base-book or hedge P&L, no cross-pod offsets, no returned initial margin and no T2 receipts can finance T0/T1. T2 returns collateral/releases margin and settles economic P&L; T2 has no further hard cash constraint. Only the specified T0/T1 flows determine feasibility. For each scenario, cash must remain nonnegative after T0 and after all T1 outflows. All other borrowing, mark-to-market collateral changes and cashflows are outside this supplied model. Source excerpts support public contract/event facts; they do not establish the synthetic settlement schedule.\nUse USD, ordinary shares, basis points and MMBtu/MWh exactly as stated. One percentage point is 100 bp; one bp is 0.0001 in a rate. Do not round intermediate calculations. Return P&L strings in stated scenario order with no spaces or trailing decimal zeros. All sources are retrospectively observed by the 2026 cutoff, not certified historical information sets. The missing-input question is a separate branch; do not contaminate the fully specified main answer with that omission.\n",
+  "output_fields": [
+    {
+      "id": "policy_midpoint",
+      "type": "number",
+      "unit": "percent",
+      "description": "Announced target-range midpoint, expressed in percent.",
+      "evidence_required": true
+    },
+    {
+      "id": "incremental_financing_expense",
+      "type": "number",
+      "unit": "USD",
+      "description": "Incremental30-day financing expense after converting the midpoint change to a decimal annual rate.",
+      "evidence_required": true
+    },
+    {
+      "id": "combined_parallel_dv01",
+      "type": "number",
+      "unit": "USD_per_bp",
+      "description": "Sum of both market pods' signed2y and10y DV01; do not interpret this as zero scenario risk.",
+      "evidence_required": false
+    },
+    {
+      "id": "base_scenario_pnl",
+      "type": "string",
+      "unit": "USD_by_scenario",
+      "description": "Unhedged aggregate pod P&L, format H=x;R=y;T=z.",
+      "evidence_required": true
+    },
+    {
+      "id": "feasible_plans",
+      "type": "string",
+      "unit": "plan_set",
+      "description": "All plans satisfying both cash stages, in the prescribed fixed order.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_plan",
+      "type": "string",
+      "unit": "plan_code",
+      "description": "Unique feasible plan maximizing worst-scenario terminal P&L after all hedge fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_worst_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum terminal economic P&L of the chosen plan over the three scenarios, net of fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_minimum_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum available cash across T0 and all scenario T1 paths for the optimal plan.",
+      "evidence_required": true
+    },
+    {
+      "id": "first_optimizer_change_budget",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum starting cash strictly above the stated budget where the optimal plan changes; all other assumptions fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "missing_margin_optimizer_status",
+      "type": "string",
+      "unit": "status",
+      "description": "With C initial margin omitted, return insufficient_data or determined.",
+      "evidence_required": false
+    }
+  ]
+}

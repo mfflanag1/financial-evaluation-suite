@@ -1,0 +1,119 @@
+{
+  "question_id": "q121",
+  "title": "Convertible rights and a cash put deadline",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Determine which rights are actually available and whether cash can meet the filed puts. A later indicative share price is not part of the trigger window. Report remaining shares only under the stated conditional voluntary-conversion assumption; do not assume holders’ future choices. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "principal": 1000,
+    "conversion_price": 25,
+    "trigger_multiple": 1.3,
+    "eligible_closes": [
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      34,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "required_count": 20,
+    "coupon": 0.04,
+    "accrual_years": 0.25,
+    "put_fraction": 0.6,
+    "gross_cash": 200,
+    "restricted_cash": 150,
+    "facility": 500,
+    "facility_fee": 5
+  },
+  "sources": [
+    {
+      "id": "q121_facts",
+      "text": "Synthetic packet: The synthetic note register contains validated notices and the complete final eligible close window. Cash restrictions and facility fees are binding at the put deadline."
+    },
+    {
+      "id": "q121_terms",
+      "text": "Synthetic governing terms: Amounts are USD millions and shares are millions. The issuer may force conversion only after at least20 of the final30 eligible closes are at least130% of conversion price. Holders who submitted valid put notices must receive cash principal plus simple accrued annual coupon; the issuer cannot override those notices with stock. Remaining holders may voluntarily convert principal only. The put and any conversions occur simultaneously after the eligible window."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "qualifying_close_count",
+      "type": "number",
+      "unit": "days",
+      "description": "Closes meeting the inclusive trigger within the supplied eligible 30-day window.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "call_trigger_price",
+      "type": "number",
+      "unit": "USD per share",
+      "description": "Share-price threshold for each qualifying close.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "forced_conversion_available",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the issuer’s call-trigger count is met."
+    },
+    {
+      "name": "put_cash_required",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash principal and accrued coupon due on valid put notices.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "remaining_conversion_shares",
+      "type": "number",
+      "unit": "millions of shares",
+      "description": "New shares if all principal not put voluntarily converts; no coupon is delivered in shares.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "additional_cash_needed",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Cash required beyond unrestricted cash and net facility proceeds.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funding_action",
+      "type": "string",
+      "unit": "category",
+      "description": "Exact label: additional_cash or existing_facility."
+    }
+  ]
+}

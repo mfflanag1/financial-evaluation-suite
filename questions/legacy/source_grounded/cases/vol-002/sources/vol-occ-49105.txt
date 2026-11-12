@@ -1,0 +1,31 @@
+#49105
+Date: August 06, 2021
+Subject: GE1 Options - Expiration Pricing Consideration
+
+GE1 (adjusted General Electric Company options) will be subject to special pricing consideration in
+expiration processing on August 6, 2021. The pricing consideration is due to the undetermined cash in lieu
+of fractional shares amount included in the option deliverable of GE1 as indicated below. These options
+will continue to be subject to normal exercise based on customary exercise thresholds in OCC’s Ex-by-Ex
+processing.
+MEMBERS SHOULD ADVISE THEIR CUSTOMERS TO TAKE THE FOLLOWING CONSIDERATIONS
+INTO ACCOUNT IN DECIDING TO EXERCISE, OR NOT TO EXERCISE, THESE OPTIONS.
+GE1
+GE1 options are adjusted General Electric Company options, adjusted August 2, 2021 (see OCC
+Information Memo #48921). The deliverable of GE1 options is:
+NEW DELIVERABLE
+PER CONTRACT: 1) 12 General Electric Company (GE) Common Shares
+2) Cash in lieu of 0.5 fractional GE Shares
+As of August 6, 2021, the GE Exchange Agent has not determined the price to be used to determine the cash
+in lieu amount.
+For purposes of calculating a GE1 price for use in expiration processing, OCC will use the following
+formula:
+GE1 = 0.125 (GE)
+For example, if GE closes at 103.02, the GE1 price would be:
+GE1 = 0.125 (103.02) = 12.88
+This formula includes an estimate for the value of the cash in lieu amount and not the actual amount
+applicable in the reverse split.
+ALL CLEARING MEMBERS ARE REQUESTED TO IMMEDIATELY ADVISE ALL BRANCH OFFICES
+AND CORRESPONDENTS ON THE ABOVE.
+For questions regarding this memo, call Investor Services at 1-888-678-4667 or email
+investorservices@theocc.com. Clearing Members may contact Member Services at 1-800-544-6091 or,
+within Canada, at 1-800-424-7320, or email memberservices@theocc.com.

@@ -1,0 +1,25 @@
+{
+  "id": "expansion-intel-2023-original",
+  "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-24-000010/intc-20231230.htm",
+  "title": "Intel FY2023 original segment disclosure",
+  "publisher": "Intel Corporation",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T18:12:47Z",
+  "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+  "retrieved_at": "2026-10-04T18:10:58Z",
+  "redistribution_status": "Public issuer disclosure; local research only. Underlying redistribution rights have not been cleared; no public release authorized.",
+  "raw_path": "sources/expansion-intel-2023-original/evidence.txt",
+  "text_path": "sources/expansion-intel-2023-original/evidence.txt",
+  "raw_sha256": "5af8fe246a07ba17872fc102d5808673b0eb326f6d34c8c70ca56996cf43f512",
+  "text_sha256": "5af8fe246a07ba17872fc102d5808673b0eb326f6d34c8c70ca56996cf43f512",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

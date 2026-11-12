@@ -1,0 +1,100 @@
+{
+  "id": "systematic-001",
+  "case_group": "apple-q1-2024-nvidia-fy2024-acceptance-cohort",
+  "lane": "systematic",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2026-10-04T18:15:18Z",
+  "prompt": "Audit the original Apple fiscal-Q1-2024 10-Q accession 0000320193-24-000006 and NVIDIA FY2024 10-K accession 0001045810-24-000029. For the REAL METADATA branch, distinguish period end, filing date, EDGAR acceptance, and first public availability. February displayed Accepted timestamps are EST (UTC-05:00). The eligibility question concerns access through EDGAR to the specified NVIDIA accession itself, not whether similar economic information appeared earlier elsewhere. Classify that accession at 2024-02-21T21:36:56Z and at 21:36:57Z using exactly ineligible, eligible, or not_established; an acceptance timestamp alone is not a public-dissemination observation. For a SEPARATE SYNTHETIC replay, stipulate vendor arrival exactly 180 seconds after each displayed acceptance and completed processing another 60 seconds later. These latencies are assumptions, not measured or guaranteed SEC lags. A feature is eligible iff processing completes at or before the snapshot. Both issuers are members of the toy universe throughout. Fixed synthetic scores are apple=2, nvidia=4; select the highest eligible score, or cash if none. Probe snapshots 2024-02-21T21:40:56Z and one second later. Only the first probe is a trading decision. The second trading decision is 2024-02-22T21:00:00Z. The complete toy execution calendar is Feb 22 14:30Z, Feb 23 14:30Z, Feb 26 14:30Z. Execute each decision at the next listed open, hold to the following listed open, and liquidate. Each of the two rounds starts a fresh $10,000 position; fractional shares are allowed, gains are not compounded into sizing, and initial capital is $12,000 with idle cash earning zero. COMPLETE SYNTHETIC total returns for Feb22-open to Feb23-open: apple +2%, nvidia +10%; for Feb23-open to Feb26-open: apple -1%, nvidia -3%. Charge 5 bps of actual traded dollar notional on EACH entry and exit, including the changed exit value. There are no other costs, dividends outside these total returns, borrow, financing or tax. Compare the valid ledger with a defective fiscal-period-end join that prematurely admits both features at the mandated snapshot and therefore chooses NVIDIA in both rounds. Report defective minus valid NET profit as leakage inflation under this fixed-snapshot policy. This comparison is sensitive to the exact decision time: a valid snapshot one second later also chooses NVIDIA, still about 17 hours before execution. The difference does not establish unavoidable pre-trade look-ahead or an empirical advantage from early information. This is retrospective source analysis plus a conditional toy simulation. No actual universe, public-feed receipt log or executable historical return panel is supplied; classify empirical performance as established or not_established. Cite actual timestamp clauses for outputs depending on them, and cite the SEC timing caveat for public-availability classification. Do not treat the synthetic latency rule as a primary-source fact.",
+  "source_ids": [
+    "systematic-apple-index",
+    "systematic-nvidia-index",
+    "systematic-sec-time-faq"
+  ],
+  "output_fields": [
+    {
+      "id": "apple_acceptance_utc",
+      "type": "string",
+      "unit": "UTC_timestamp",
+      "description": "Apple acceptance converted to UTC, exact YYYY-MM-DDTHH:MM:SSZ. Cite its timestamp; EST is stipulated in the prompt.",
+      "evidence_required": true
+    },
+    {
+      "id": "nvidia_acceptance_utc",
+      "type": "string",
+      "unit": "UTC_timestamp",
+      "description": "NVIDIA acceptance converted to UTC, exact YYYY-MM-DDTHH:MM:SSZ. Cite its timestamp; EST is stipulated in the prompt.",
+      "evidence_required": true
+    },
+    {
+      "id": "nvidia_public_eligibility_before_acceptance",
+      "type": "string",
+      "unit": "categorical",
+      "description": "EDGAR-access eligibility at 2024-02-21T21:36:56Z: ineligible, eligible, or not_established.",
+      "evidence_required": true
+    },
+    {
+      "id": "nvidia_public_eligibility_at_acceptance",
+      "type": "string",
+      "unit": "categorical",
+      "description": "EDGAR-access eligibility at 2024-02-21T21:36:57Z: ineligible, eligible, or not_established. Cite the NVIDIA time and either SEC first-public-time or unguaranteed-lag caveat.",
+      "evidence_required": true
+    },
+    {
+      "id": "before_ready_selected_asset",
+      "type": "string",
+      "unit": "asset",
+      "description": "Synthetic replay selection at 21:40:56Z: apple, nvidia, or cash.",
+      "evidence_required": true
+    },
+    {
+      "id": "at_ready_selected_asset",
+      "type": "string",
+      "unit": "asset",
+      "description": "Synthetic boundary probe at 21:40:57Z: apple, nvidia, or cash.",
+      "evidence_required": true
+    },
+    {
+      "id": "first_execution_utc",
+      "type": "string",
+      "unit": "UTC_timestamp",
+      "description": "Execution time for the first synthetic decision, using the supplied lag/calendar. This is a prompt-only policy calculation.",
+      "evidence_required": false
+    },
+    {
+      "id": "valid_toy_net_profit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Two-round valid synthetic profit after all four transaction charges.",
+      "evidence_required": true
+    },
+    {
+      "id": "leakage_net_profit_inflation",
+      "type": "number",
+      "unit": "USD",
+      "description": "Defective net profit minus valid net profit, with the same actual-notional cost rule.",
+      "evidence_required": true
+    },
+    {
+      "id": "empirical_performance_status",
+      "type": "string",
+      "unit": "categorical",
+      "description": "Exactly established or not_established for actual tradable strategy performance; the necessary empirical inputs are absent from this prompt.",
+      "evidence_required": false
+    }
+  ],
+  "response_format": {
+    "case_id": "systematic-001",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

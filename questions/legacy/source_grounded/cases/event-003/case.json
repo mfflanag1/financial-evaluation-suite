@@ -1,0 +1,99 @@
+{
+  "id": "event-003",
+  "case_group": "tegna-2023-extension-and-ticking-fee",
+  "lane": "event_driven",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T18:12:47Z",
+  "prompt": "Reconcile TEGNA's outside-date extension with its disclosed tiered ticking consideration. This is a retrospective hypothetical payoff exercise under the captured agreement summary; eventual completion is not assumed. The 10-K includes events after the synthetic entry date. Neither source is asserted to have been publicly available at that entry date; all historical dates below are counterfactual calculation inputs, not a point-in-time investment recommendation. Use the business-section schedule as printed to its stated decimal precision. The extension changes the outside date, not a guaranteed closing date; either the 10-K or the extension 8-K can support the repeated deadline facts. SYNTHETIC investment: buy one economically divisible eligible target share at $23 on February 22, 2023; charge total transaction costs of $0.05 once, and simple financing at 8% annually on entry $23 only using ACT/365, excluding entry day and including hypothetical settlement day. No dividends, taxes, borrow, compounding or other cash flows. Evaluate assumed settlement on March 21, April 21 and May 21, 2023, without within-day accrual. May 21 is a Sunday; the hypothetical scenario expressly allows settlement on that calendar date and does not claim an executable trading date. In a separate May 21 two-state scenario, failure liquidation is $17 and success is contractual cash plus ticking fee, with the SAME common funding horizon and costs. Solve a break-even probability, not an empirical probability inferred from a market quote. For deadline conversion, New York is UTC-04:00 on May 22, 2023. Return the UTC timestamp in exact format YYYY-MM-DDTHH:MM:SSZ. No formula for May 22-or-later ticking or shareholder distribution of company termination fees is supplied.\n\nUse only the frozen document versions. The cutoff is an observed 2026 availability bound, not an invented historical publication time. Do not use subsequent real-world outcomes. Return all declared fields in standard structured form with verbatim rule/data evidence; scenario inputs need no fabricated source. Preserve unrounded intermediates; report money in the stated units and percentages as percentage points on the 0\u2013100 scale, to at least 8 decimal places when needed.",
+  "source_ids": [
+    "expansion-tegna-2022-merger",
+    "expansion-tegna-extension"
+  ],
+  "output_fields": [
+    {
+      "id": "outside_date_extension_calendar_days",
+      "type": "number",
+      "unit": "calendar_days",
+      "description": "New minus old outside calendar date; ignore clock-hour DST difference for this calendar-day field.",
+      "evidence_required": true
+    },
+    {
+      "id": "new_outside_date_utc",
+      "type": "string",
+      "unit": "UTC_timestamp",
+      "description": "Convert the disclosed May 22 5 p.m. Eastern deadline to UTC using supplied New York offset UTC-04:00. Return exact string format YYYY-MM-DDTHH:MM:SSZ.",
+      "evidence_required": true
+    },
+    {
+      "id": "march21_ticking_fee",
+      "type": "number",
+      "unit": "USD_per_share",
+      "description": "Fee for hypothetical March 21 close; base plus days after February 22, including closing day. Cite tier (b) only.",
+      "evidence_required": true
+    },
+    {
+      "id": "april21_ticking_fee",
+      "type": "number",
+      "unit": "USD_per_share",
+      "description": "Fee for hypothetical April 21 close using tier (c).",
+      "evidence_required": true
+    },
+    {
+      "id": "may21_ticking_fee",
+      "type": "number",
+      "unit": "USD_per_share",
+      "description": "Fee for hypothetical May 21 close using tier (d); retain source decimal precision without rounding each day's accrual.",
+      "evidence_required": true
+    },
+    {
+      "id": "march21_net_profit",
+      "type": "number",
+      "unit": "USD_per_share",
+      "description": "Success consideration minus entry 23, total transaction cost .05 and 8% simple financing on entry for 27 calendar days/365.",
+      "evidence_required": true
+    },
+    {
+      "id": "april21_to_may21_incremental_net_profit",
+      "type": "number",
+      "unit": "USD_per_share",
+      "description": "Change in nominal success net profit from waiting 30 more days; same entry and transaction cost. Cite tiers (c) and (d).",
+      "evidence_required": true
+    },
+    {
+      "id": "may21_break_even_success_probability",
+      "type": "number",
+      "unit": "probability_0_to_1",
+      "description": "Two-state zero expected nominal profit probability at May 21: success pays contractual consideration; failure pays supplied 17; both incur same entry, cost and financing. Cite base cash and tier (d).",
+      "evidence_required": true
+    },
+    {
+      "id": "may22_fee_identifiable_from_supplied_schedule",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the shown schedule specify the ticking fee for a close ON May 22? Do not extrapolate the tier ending BEFORE May 22.",
+      "evidence_required": true
+    },
+    {
+      "id": "termination_fee_is_direct_per_share_consideration",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "May the disclosed 136m/272m termination fee simply be divided by shares and added to this holder's contractual per-share closing consideration? Recipient is the company; no shareholder distribution is supplied.",
+      "evidence_required": true
+    }
+  ],
+  "response_format": {
+    "case_id": "event-003",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

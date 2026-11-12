@@ -1,0 +1,130 @@
+{
+  "question_id": "q115",
+  "title": "Ownership-graph exposure with mixed physical units",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Join the physical asset records to company economic ownership. Include production rows only; transport rows describe movement of already produced material. Convert kg to tonnes before applying ownership, margins or emissions rates. Ownership columns follow mine_order and rows follow ownership_order; each mine is fully allocated across the two companies. No intercompany elimination or parent gross-up is appropriate because these are economic-interest measures. Compute annual operating profit before and after the supplied carbon charge, then after-carbon profit divided by the supplied equity value. USD amounts are dollars, not millions. Select the strictly higher-yield company; ties alphabetically. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "mine_order": [
+      "North",
+      "South"
+    ],
+    "production_records": [
+      {
+        "mine": "North",
+        "quantity": 300000,
+        "unit": "kg",
+        "scope": "production"
+      },
+      {
+        "mine": "South",
+        "quantity": 400,
+        "unit": "tonne",
+        "scope": "production"
+      },
+      {
+        "mine": "North",
+        "quantity": 100,
+        "unit": "tonne",
+        "scope": "transport"
+      }
+    ],
+    "ownership_order": [
+      "A",
+      "B"
+    ],
+    "ownership": [
+      [
+        0.6,
+        0.3
+      ],
+      [
+        0.4,
+        0.7
+      ]
+    ],
+    "price_per_tonne": 9000,
+    "cost_per_tonne": [
+      6000,
+      7000
+    ],
+    "emissions_per_tonne": [
+      2,
+      1
+    ],
+    "carbon_price": 100,
+    "equity_values": [
+      4000000,
+      5000000
+    ]
+  },
+  "sources": [
+    {
+      "id": "q115_t1_1",
+      "text": "Synthetic packet. The asset ledger includes both a production measurement and a transport movement at North. A transport event is not incremental extracted output; the unit tags are authoritative."
+    },
+    {
+      "id": "q115_t1_2",
+      "text": "Synthetic packet. The ownership register gives direct economic fractions, not accounting consolidation percentages. Carbon liability follows attributable production emissions. Prices, unit costs and equity values are stipulated common-period inputs."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "attributed_production_tonnes",
+      "type": "number_array",
+      "unit": "tonnes",
+      "description": "A, B.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "gross_operating_profit",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "A, B.",
+      "atol": 0.01,
+      "rtol": 1e-08
+    },
+    {
+      "name": "attributed_emissions_tonnes",
+      "type": "number_array",
+      "unit": "tonnes CO2",
+      "description": "A, B.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "after_carbon_profit",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "A, B.",
+      "atol": 0.01,
+      "rtol": 1e-08
+    },
+    {
+      "name": "after_carbon_yield_pct",
+      "type": "number_array",
+      "unit": "percent",
+      "description": "A, B; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "unique_physical_production",
+      "type": "number",
+      "unit": "tonnes",
+      "description": "Total unique production across mines.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "higher_yield_company",
+      "type": "string",
+      "unit": "label",
+      "description": "Exact label A or B."
+    }
+  ]
+}

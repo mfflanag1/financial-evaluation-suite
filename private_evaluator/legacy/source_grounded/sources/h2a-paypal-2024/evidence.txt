@@ -1,0 +1,187 @@
+Cash Flow
+• 4Q'24 cash flow from operations of $2.4 billion and free cash flow of $2.2 billion; FY'24 cash flow from operations of $7.5 billion
+  and free cash flow of $6.8 billion.
+
+• Adjusted free cash flow of $2.1 billion in 4Q'24 and $6.6 billion in FY'24, which excludes the net timing impact between originating
+  European buy now, pay later ("BNPL") receivables as held for sale and the subsequent sale of these receivables.
+
+Balance Sheet and Liquidity
+• Cash, cash equivalents, and investments totaled $15.4 billion as of December 31, 2024.
+
+• Debt totaled $11.1 billion as of December 31, 2024.
+
+• Returned $1.2 billion to stockholders by repurchasing approximately 15 million shares of common stock in 4Q'24.
+    ◦ For full year 2024, returned $6.0 billion to stockholders by repurchasing approximately 92 million shares of common stock.
+
+• Announced today that PayPal’s Board of Directors has authorized a new $15 billion stock repurchase program. This new repurchase
+  authorization is in addition to the Company’s June 2022 stock repurchase program, which had $4.86 billion remaining authorization
+  as of December 31, 2024.
+—————————————————————————————————————————————
+Financial Guidance
+    Presented in millions, except per share data and
+    percentages                                                         February 2025 Guidance                                             Prior year period
+    1Q'25
+        GAAP EPS                                                                 $1.11 - $1.13                                                  $0.83
+        Non-GAAP EPS1                                                            $1.15 - $1.17                                                  $1.08
+    FY'25
+        GAAP EPS2                                                                $4.80 - $4.95                                                  $3.99
+                                3
+        Non-GAAP EPS                                                             $4.95 - $5.10                                                  $4.65
+
+Please see "Non-GAAP Financial Measures" and "Non-GAAP Measures of Financial Performance" for reconciliations of non-GAAP
+financial measures to the most directly comparable GAAP financial measures and important additional information.
+
+
+
+
+             1. Estimated non-GAAP amounts for the three months ending March 31, 2025 reflect adjustments of approximately $50 million.
+             2. FY'24 GAAP EPS included a negative impact of ~$0.23 from PayPal’s strategic investment portfolio.
+             3. Estimated non-GAAP amounts for the full year ending December 31, 2025 reflect adjustments of approximately $200 million.         4Q & FY 2024 Results   2
+
+
+4Q'24 Financial Results
+                                                                                          YoY                 FXN
+  Presented in millions, except per share data and percentages    4Q'24       4Q'23
+                                                                                         Growth            YoY Growth
+  Total payment volume                                           $437,836    $409,832      7%                  7%
+  GAAP
+    Net revenues                                                  $8,366      $8,026         4%
+    Transaction margin dollars                                    $3,935      $3,672         7%
+    Operating income                                              $1,441      $1,728       (17%)
+    Operating margin                                              17.2%       21.5%      (431bps)
+    Effective tax rate                                            20.5%       21.8%       (1.3pts)
+    Net income (loss)                                             $1,121      $1,402       (20%)
+    Earnings per diluted share                                     $1.11       $1.29       (15%)
+    Net cash provided by operating activities                     $2,394      $2,614        (8%)
+  Non-GAAP
+    Net revenues                                                  $8,366      $8,026        4%                  4%
+    Transaction margin dollars                                    $3,935      $3,672        7%
+    Operating income                                              $1,502      $1,468        2%
+    Operating margin                                              18.0%       18.3%      (34bps)
+    Effective tax rate                                            21.0%       19.8%       1.2pts
+    Net income                                                    $1,209      $1,233       (2%)
+    Earnings per diluted share                                     $1.19       $1.14        5%
+    Free cash flow                                                $2,191      $2,469      (11%)
+    Adjusted free cash flow                                       $2,098       $774       171%
+
+FY'24 Financial Results
+                                                                                          YoY                 FXN
+  Presented in millions, except per share data and percentages    FY'24       FY'23
+                                                                                         Growth            YoY Growth
+  Total payment volume                                           1,681,150   1,528,579    10%                 10%
+  GAAP
+    Net revenues                                                 $31,797     $29,771        7%
+    Transaction margin dollars                                   $14,658     $13,704        7%
+    Operating income                                              $5,325      $5,028        6%
+    Operating margin                                              16.7%       16.9%      (14bps)
+    Effective tax rate                                            22.2%       21.5%       0.7pts
+    Net income (loss)                                             $4,147      $4,246       (2%)
+    Earnings per diluted share                                     $3.99       $3.84        4%
+    Net cash provided by operating activities                     $7,450      $4,843       54%
+  Non-GAAP
+    Net revenues                                                 $31,797     $29,771       7%                    7%
+    Transaction margin dollars                                   $14,658     $13,704       7%
+    Operating income                                              $5,838      $5,121      14%
+    Operating margin                                              18.4%       17.2%      116bps
+    Effective tax rate                                            21.1%       20.0%      1.0pts
+    Net income                                                    $4,835      $4,240      14%
+    Earnings per diluted share                                     $4.65       $3.83      21%
+    Free cash flow                                                $6,767      $4,220      60%
+    Adjusted free cash flow                                       $6,634      $4,554      46%
+
+
+
+
+                                                                                                     4Q & FY 2024 Results   3
+
+
+                                                        PayPal Holdings, Inc.
+                          Reconciliation of GAAP Operating Income to Non-GAAP Operating Income and
+                                    GAAP Operating Margin to Non-GAAP Operating Margin
+
+                                                                       Three Months Ended December 31,               Year Ended December 31,
+                                                                          2024               2023(1)                 2024              2023(1)
+                                                                                            (In millions, except percentages)
+                                                                                                       (unaudited)
+  GAAP net revenues                                                $        8,366       $        8,026        $       31,797       $    29,771
+
+  GAAP operating income                                                     1,441                1,728                 5,325              5,028
+    Amortization of acquired intangible assets                                 48                   54                   207                227
+    Restructuring(2)                                                           13                    4                   306                180
+    Other(3)                                                                   —                  (318)                   —                (314)
+       Total non-GAAP operating income adjustments                             61                 (260)                  513                 93
+  Non-GAAP operating income                                        $        1,502       $        1,468        $        5,838       $      5,121
+
+  GAAP operating margin                                                          17 %                  22 %                 17 %                 17 %
+  Non-GAAP operating margin                                                      18 %                  18 %                 18 %                 17 %
+(1)
+    As announced on February 7, 2024, the Company’s non-GAAP results now include the impact of stock-based compensation expense and
+related employer payroll taxes. Prior period non-GAAP results have been recast to reflect this change.
+(2)
+    Beginning in 2024, restructuring includes any stock-based compensation associated with the restructuring activities. The three months
+and year ended December 31, 2024 include $12 million and $100 million of stock-based compensation expense. The year ended
+December 31, 2023 primarily includes $61 million in asset impairment charges for right-of-use lease assets and related leasehold
+improvements in conjunction with exiting certain leased properties.
+(3)
+    The three months and year ended December 31, 2023 primarily includes $339 million in pre-tax gain, net of transaction costs, related to
+the sale of Happy Returns and $21 million in fees related to credit externalization.
+
+
+
+
+                                                                                                                                   4Q & FY 2024 Results   13
+
+
+                                                        PayPal Holdings, Inc.
+      Reconciliation of GAAP Net Income (Loss) to Non-GAAP Net Income, GAAP Diluted EPS to Non-GAAP Diluted EPS, and
+                                    GAAP Effective Tax Rate to Non-GAAP Effective Tax Rate
+
+                                                                    Three Months Ended December 31,                   Year Ended December 31,
+                                                                       2024                 2023(1)                   2024              2023(1)
+
+                                                                                 (In millions, except per share data and percentages)
+                                                                                                       (unaudited)
+  GAAP income before income taxes                               $        1,410        $        1,793          $         5,329       $      5,411
+  GAAP income tax expense                                                  289                   391                    1,182              1,165
+  GAAP net income (loss)                                                 1,121                 1,402                    4,147              4,246
+  Non-GAAP adjustments to net income (loss):
+    Non-GAAP operating income adjustments (see table above)                 61                  (260)                     513                 93
+    Net (gains) losses on strategic investments                             59                     4                      285               (201)
+    Other(2)                                                                —                     21                       31                 39
+    Tax effect of non-GAAP adjustments                                     (32)                   66                     (141)                63
+  Non-GAAP net income                                           $        1,209        $        1,233          $         4,835       $      4,240
+
+  Diluted net income (loss) per share:
+   GAAP                                                         $         1.11        $         1.29          $          3.99       $       3.84
+   Non-GAAP                                                     $         1.19        $         1.14          $          4.65       $       3.83
+  Shares used in GAAP diluted share calculation                          1,014                 1,084                    1,039              1,107
+  Shares used in non-GAAP diluted share calculation                      1,014                 1,084                    1,039              1,107
+
+  GAAP effective tax rate                                                     20 %                    22 %                   22 %                 22 %
+  Tax effect of non-GAAP adjustments to net income (loss)                      1%                     (2)%                   (1)%                 (2)%
+  Non-GAAP effective tax rate                                                 21 %                    20 %                   21 %                 20 %
+(1)
+    As announced on February 7, 2024, the Company’s non-GAAP results now include the impact of stock-based compensation expense and
+related employer payroll taxes. Prior period non-GAAP results have been recast to reflect this change.
+(2)
+    The year ended December 31, 2024 and the three months and year ended December 31, 2023 consist primarily of tax expense related to
+intra-group transfer of assets.
+
+
+                      Reconciliation of Operating Cash Flow to Free Cash Flow and Adjusted Free Cash Flow
+                                                                    Three Months Ended December 31,                   Year Ended December 31,
+                                                                       2024                  2023                     2024               2023
+                                                                                                      (In millions)
+                                                                                                      (unaudited)
+  Net cash provided by operating activities                     $             2,394 $               2,614 $                  7,450 $            4,843
+     Less: Purchases of property and equipment                                 (203)                 (145)                    (683)              (623)
+  Free cash flow                                                              2,191                 2,469                    6,767              4,220
+  Net timing impact between originating European BNPL
+  receivables as held for sale and the subsequent sale of
+  receivables                                                                   (93)             (1,695)                      (133)               334
+  Adjusted free cash flow                                       $             2,098 $               774 $                    6,634 $            4,554
+
+
+
+
+                                                                                                                                    4Q & FY 2024 Results   14

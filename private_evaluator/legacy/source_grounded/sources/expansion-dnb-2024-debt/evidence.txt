@@ -1,0 +1,41 @@
+XML 26 R13.htm IDEA: XBRL DOCUMENT v3.24.1.u1
+
+Notes Payable and Indebtedness
+
+3 Months Ended
+
+Mar. 31, 2024
+
+Debt Disclosure [Abstract]
+Notes Payable and Indebtedness Notes Payable and Indebtedness
+
+Our borrowings are summarized in the following table:
+
+March 31, 2024 December 31, 2023
+Maturity Principal amount Debt issuance costs and discount*Carrying value Principal amount Debt issuance costs and discount*Carrying value
+
+[Intervening source text omitted]
+
+*Initial debt issuance costs were recorded as a reduction of the carrying amount of the debt and amortized over the contractual term of the debt. Balances represent the unamortized portion of debt issuance costs and discounts.
+(1) The 5.000% Senior Unsecured Notes and the Senior Secured Credit Facilities contain certain covenants that limit our ability to incur additional indebtedness and guarantee indebtedness, create liens, engage in mergers or acquisitions, sell, transfer or otherwise dispose of assets, pay dividends and distributions or repurchase capital stock, prepay certain indebtedness and make investments, loans and advances.
+We were in compliance with these non-financial covenants at March 31, 2024 and December 31, 2023.
+(2) The Revolving Facility contains a springing financial covenant requiring compliance with a maximum ratio of first lien net indebtedness to consolidated EBITDA of 6.75. The financial covenant applies only if the aggregate principal amount of borrowings under the Revolving Facility and certain outstanding letters of credit exceeds 35% of the total amount of commitments under the Revolving Facility on the last day of any fiscal quarter.
+The financial covenant did not apply at March 31, 2024 and December 31, 2023.
+Senior Secured Credit Facilities
+
+On February 8, 2019, the Company entered into a credit agreement governing its Senior Secured Credit Facilities (the "Senior Secured Credit Facilities"). Subsequently, the credit agreement has been amended several times. Currently, the Senior Secured Credit Facilities consist of a senior secured term loan facility and a senior secured revolving credit facility.
+On January 29, 2024, we amended our credit agreement related to the then existing $451.9 million term loan with a maturity date of January 18, 2029 (the "2029 Term Loan"), to reduce its interest rate by 0.25%, resulting in a margin spread of SOFR plus 2.75% per annum and to increase the then existing term loan facility by $2,651.7 million to establish a new term loan with an aggregate principal amount of $3,103.6 million and a maturity date of January 18, 2029 (“2029 Term Loan B”).
+The proceeds from the 2029 Term Loan B were used to fully repay the previously existing term loans, including the senior secured term loan with a maturity date of February 8, 2026 (the "2026 Term Loan") and the 2029 Term Loan. As a result, we recorded a loss on debt extinguishment of $37.1 million related to the unamortized debt issuance costs associated with the then existing 2026 and 2029 Term Loan.
+The loss was recorded within “Non-operating income (expense)-net” for the three months ended March 31, 2024. Initial debt issuance costs of $21.6 million related to the 2029 Term Loan B were recorded as a reduction of the carrying amount of long term debt and will be amortized over the contractual term of the term loan.
+Concurrently, we also amended our credit agreement governing the Revolving Facility to extend the maturity date to February 15, 2029, and to reduce the applicable margin by 50 basis points, resulting in a margin spread of SOFR plus 2.50% per annum, subject to a leverage-based pricing grid. The Credit Spread Adjustment under the Revolving Facility was also removed as part of the amendment.
+Total fees paid associated with the amendment of the Revolving Facility were $5.0 million, which is deferred and amortized over the term of the new arrangement, together with the original unamortized deferred costs.
+Borrowings under the Senior Secured Credit Facilities bear interest at a rate per annum equal to an applicable margin over a SOFR or LIBOR for the interest period relevant to such borrowing, subject to interest rate floors, and secured by substantially all of the Company’s assets. We completed the transition of reference rate from LIBOR to SOFR in the second quarter of 2023.
+We utilized the expedients set forth in ASC Topic 848, including those relating to derivative instruments used in hedging relationships. This transition did not result in a financial impact to our consolidated financial statements.
+Other details of the Senior Secured Credit Facilities:
+•For the 2029 Term Loan B, beginning June 30, 2024, the principal amount is required to be paid down in equal quarterly installments in an aggregate annual amount equal to 1.00% of the original principal amount, with the balance being payable on January 18, 2029. The 2029 Term Loan B bears interest at a rate per annum equal to 275 basis points over a SOFR rate for the interest period. The interest rate associated with the outstanding balance of the 2029 Term Loan B at March 31, 2024 was 8.082%.
+•For the previously existing 2029 Term Loan, beginning June 30, 2022, the principal amount was required to be paid down in equal quarterly installments in an aggregate annual amount equal to 1.00% of the original principal amount, with the balance being payable on January 18, 2029. The interest rate per annum for the 2029 Term Loan was based on a SOFR rate plus a margin of 325 basis points at December 31, 2023.
+The interest rate associated with the outstanding balance of the 2029 Term Loan at December 31, 2023 was 8.355%.
+•For the previously existing 2026 Term Loan, beginning June 30, 2020, the principal amount was required to be paid down in equal quarterly installments in an aggregate annual amount equal to 1.00% of the original principal amount, with the balance being payable on February 8, 2026. The interest rate per annum for the 2026 Term Loan was based on a SOFR rate plus a margin of 285 basis points, inclusive of the SOFR credit spread adjustment, at December 31, 2023.
+The interest rate associated with the outstanding balance of the 2026 Term Loan at December 31, 2023 was 8.205%.
+•Borrowings under the Revolving Facility bear interest at a rate per annum equal to SOFR plus 250 basis points, subject to a leverage-based pricing grid, at March 31, 2024 and 310 basis points over a SOFR rate, inclusive of the SOFR credit spread adjustment, at December 31, 2023. The aggregate amount available under the Revolving
+Facility is $850 million. The available borrowings under the Revolving Facility at March 31, 2024 and December 31, 2023 were $850.0 million and $825.0 million, respectively. The interest rate associated with the outstanding balance of the Revolving Facility at December 31, 2023 was 8.462%. Initial debt issuance costs related to the Revolving Facility were included in "Other non-current assets" on the consolidated balance sheet and are amortized over the term of the Revolving Facility.

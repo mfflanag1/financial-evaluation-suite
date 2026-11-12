@@ -1,0 +1,248 @@
+{
+  "case_id": "h2-003",
+  "reference_solution": {
+    "sales": "23890/26643-1; stale comparator23890/31471-1. FY2022 continuing CFO bridge8519-7613=906.",
+    "cash": "2023 FCF6490-1383+12=5119;2022 FCF7613-1118+9=6504. Separation net cash2600-427=2173. Ex-separation financing=-273-2173=-2446. Guarantee termination prevents counting Veralto debt as a continuing Danaher obligation."
+  },
+  "fields": [
+    {
+      "id": "comparable_sales_growth_2023_pct",
+      "expected": -10.332920466914386,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Sales",
+              "23,890",
+              "26,643"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "stale_sales_denominator_growth_error_pp",
+      "expected": -13.755923230457798,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2022",
+            "anchors": [
+              "Sales",
+              "31,471"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Sales",
+              "23,890",
+              "26,643"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "fy2022_operating_cash_removed_from_continuing",
+      "expected": 906,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2022",
+            "anchors": [
+              "Total operating cash provided by continuing operations",
+              "8,519"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Total operating cash provided by continuing operations",
+              "7,613"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "continuing_free_cash_flow_2023",
+      "expected": 5119,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Total operating cash provided by continuing operations",
+              "6,490",
+              "Payments for additions to property, plant and equipment",
+              "(1,383)",
+              "Proceeds from sales of property, plant and equipment",
+              "12"
+            ]
+          },
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Free Cash Flow",
+              "5,119"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "continuing_free_cash_flow_growth_pct",
+      "expected": -21.29458794587946,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Free Cash Flow",
+              "5,119",
+              "6,504"
+            ]
+          },
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Total operating cash provided by continuing operations",
+              "6,490",
+              "7,613",
+              "Payments for additions to property, plant and equipment",
+              "(1,383)",
+              "(1,118)",
+              "Proceeds from sales of property, plant and equipment",
+              "12",
+              "9"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "net_cash_received_in_separation",
+      "expected": 2173,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Cash flows from financing activities",
+              "Distribution from discontinued operations",
+              "2,600",
+              "Cash distributions to Veralto Corporation, net",
+              "(427)"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "financing_cash_flow_without_separation_transfers",
+      "expected": -2446,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Cash flows from financing activities",
+              "Distribution from discontinued operations",
+              "2,600",
+              "Cash distributions to Veralto Corporation, net",
+              "(427)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Net cash (used in) provided by financing activities",
+              "(273)"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "veralto_debt_remains_danaher_obligation_after_separation",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "the guarantee automatically terminated effective as of the Distribution Date"
+            ]
+          },
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "As of September 30, 2023 in connection with the Separation, the Veralto Debt was solely an obligation of Veralto"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "no_separation_full_year_cash_flow_identified",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-danaher-2023",
+            "anchors": [
+              "Total operating cash provided by discontinued operations",
+              "674",
+              "As of September 30, 2023 in connection with the Separation"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+    "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+    "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+  ]
+}

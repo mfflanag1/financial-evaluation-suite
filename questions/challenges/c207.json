@@ -1,0 +1,293 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "c207_rules",
+            "title": "Current trading and funding mandate"
+          },
+          {
+            "id": "c207_obsolete",
+            "title": "Superseded preliminary settlement assumption"
+          },
+          {
+            "id": "c207_snapshot_1",
+            "title": "Authoritative current account snapshot, decision 1"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "decision": "<typed value>",
+            "foregone_value": "<typed value>",
+            "post_cash": "<typed value>",
+            "post_positions": "<typed value>",
+            "trade_lots": "<typed value>",
+            "worst_stress_loss": "<typed value>"
+          },
+          "evidence": {
+            "decision": [
+              "<viewed supporting document ID>"
+            ],
+            "foregone_value": [
+              "<viewed supporting document ID>"
+            ],
+            "post_cash": [
+              "<viewed supporting document ID>"
+            ],
+            "post_positions": [
+              "<viewed supporting document ID>"
+            ],
+            "trade_lots": [
+              "<viewed supporting document ID>"
+            ],
+            "worst_stress_loss": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c207",
+          "turn": 1
+        },
+        "inputs": {
+          "current_book": {
+            "cash": 18.0,
+            "positions": [
+              6,
+              4,
+              0
+            ],
+            "receivable": 0.0,
+            "stage": 1,
+            "unpaid": 0.0
+          },
+          "terms": {
+            "hedge_buy": 5,
+            "hedge_cap": 3,
+            "hedge_sell": 4,
+            "liability": 20,
+            "max_action_lots": 6,
+            "reserve": 10,
+            "risk_cap": 35,
+            "sell_prices": [
+              10,
+              10
+            ],
+            "stress_loss_per_lot": [
+              [
+                8,
+                5,
+                -6
+              ],
+              [
+                -2,
+                7,
+                -2
+              ]
+            ]
+          }
+        },
+        "outputs": {
+          "decision": {
+            "description": "EXECUTE or NO_FEASIBLE_PLAN.",
+            "type": "string"
+          },
+          "foregone_value": {
+            "description": "Current objective value in cash units.",
+            "type": "number"
+          },
+          "post_cash": {
+            "description": "Cash units after current action fees and liability, excluding unsettled B proceeds.",
+            "type": "number"
+          },
+          "post_positions": {
+            "description": "Integer [A,B,hedge] resulting holdings.",
+            "type": "array"
+          },
+          "trade_lots": {
+            "description": "Integer [A sold,B sold,hedge change]; positive hedge change buys, negative sells.",
+            "type": "array"
+          },
+          "worst_stress_loss": {
+            "description": "Maximum of zero and the two specified stress losses, cash units.",
+            "type": "number"
+          }
+        },
+        "prompt": "Decision 1: review the authoritative current account and mandate. Choose the minimum-opportunity-loss feasible repair; a current economic optimum must also settle and fund the liability. Your declared trade is executed in this simulated account and determines later available positions and cash.",
+        "question_id": "c207",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c207",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "c207_rules",
+            "release_stage": 1,
+            "text": "All amounts are cash units and holdings are integer lots. The current book and stage terms in inputs belong to the current stage snapshot, which is authoritative after actual prior simulated actions. Choose a single [A lots sold,B lots sold,hedge units changed] action. A sale settles immediately; B proceeds settle only at the next stage and cannot pay the current liability. Buying hedge costs5 per unit, selling an existing hedge returns4; total hedge units must stay0..3. Other holdings cannot be bought or shorted. Each nonzero leg costs one cash unit plus impact0.2*A_sold\u00b2+0.1*B_sold\u00b2. Pay the current liability and any unpaid earlier liabilities after trades; skipped or rejected actions do not erase liabilities, which carry into the next stage; require cash>=reserve and worst nonnegative loss across both stated stress rows<=risk_cap. Minimize current opportunity loss:2 per A sold,1 per B sold,2 per hedge bought,1 per hedge sold, plus trading fees/impact. Accept any tied minimum. No undocumented capital transfers. If no qualifying plan exists, report NO_FEASIBLE_PLAN with zero action, unchanged book/cash/current stress and zero foregone value. Final JSON commits the declared plan once if it is mechanically legal and pays the liability; it may still be financially suboptimal. Later books reflect that action, never the reference plan. At stage2 the account settles earlier B sales and pays a cash call of2 per hedge held; future user stages announce changed current liability, prices and risk limit. No future prices or targets are known at the current decision.",
+            "title": "Current trading and funding mandate"
+          },
+          {
+            "id": "c207_snapshot_1",
+            "release_stage": 1,
+            "text": "The current_book and current terms in this user stage are the reconciled record after actual submitted simulated actions and authoritative subsequent events. This snapshot supersedes older numerical balances but does not withdraw the mandate. It supplies every current position, cash, price, risk/cash limit or target in inputs.",
+            "title": "Authoritative current account snapshot, decision 1"
+          }
+        ],
+        "title": "Repair a portfolio as executed trades change subsequent funding",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 4,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "c207_rules",
+        "title": "Current trading and funding mandate"
+      },
+      {
+        "id": "c207_obsolete",
+        "title": "Superseded preliminary settlement assumption"
+      },
+      {
+        "id": "c207_snapshot_1",
+        "title": "Authoritative current account snapshot, decision 1"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "decision": "<typed value>",
+        "foregone_value": "<typed value>",
+        "post_cash": "<typed value>",
+        "post_positions": "<typed value>",
+        "trade_lots": "<typed value>",
+        "worst_stress_loss": "<typed value>"
+      },
+      "evidence": {
+        "decision": [
+          "<viewed supporting document ID>"
+        ],
+        "foregone_value": [
+          "<viewed supporting document ID>"
+        ],
+        "post_cash": [
+          "<viewed supporting document ID>"
+        ],
+        "post_positions": [
+          "<viewed supporting document ID>"
+        ],
+        "trade_lots": [
+          "<viewed supporting document ID>"
+        ],
+        "worst_stress_loss": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c207",
+      "turn": 1
+    },
+    "inputs": {
+      "current_book": {
+        "cash": 18.0,
+        "positions": [
+          6,
+          4,
+          0
+        ],
+        "receivable": 0.0,
+        "stage": 1,
+        "unpaid": 0.0
+      },
+      "terms": {
+        "hedge_buy": 5,
+        "hedge_cap": 3,
+        "hedge_sell": 4,
+        "liability": 20,
+        "max_action_lots": 6,
+        "reserve": 10,
+        "risk_cap": 35,
+        "sell_prices": [
+          10,
+          10
+        ],
+        "stress_loss_per_lot": [
+          [
+            8,
+            5,
+            -6
+          ],
+          [
+            -2,
+            7,
+            -2
+          ]
+        ]
+      }
+    },
+    "outputs": {
+      "decision": {
+        "description": "EXECUTE or NO_FEASIBLE_PLAN.",
+        "type": "string"
+      },
+      "foregone_value": {
+        "description": "Current objective value in cash units.",
+        "type": "number"
+      },
+      "post_cash": {
+        "description": "Cash units after current action fees and liability, excluding unsettled B proceeds.",
+        "type": "number"
+      },
+      "post_positions": {
+        "description": "Integer [A,B,hedge] resulting holdings.",
+        "type": "array"
+      },
+      "trade_lots": {
+        "description": "Integer [A sold,B sold,hedge change]; positive hedge change buys, negative sells.",
+        "type": "array"
+      },
+      "worst_stress_loss": {
+        "description": "Maximum of zero and the two specified stress losses, cash units.",
+        "type": "number"
+      }
+    },
+    "prompt": "Decision 1: review the authoritative current account and mandate. Choose the minimum-opportunity-loss feasible repair; a current economic optimum must also settle and fund the liability. Your declared trade is executed in this simulated account and determines later available positions and cash.",
+    "question_id": "c207",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c207",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "c207_rules",
+        "release_stage": 1,
+        "text": "All amounts are cash units and holdings are integer lots. The current book and stage terms in inputs belong to the current stage snapshot, which is authoritative after actual prior simulated actions. Choose a single [A lots sold,B lots sold,hedge units changed] action. A sale settles immediately; B proceeds settle only at the next stage and cannot pay the current liability. Buying hedge costs5 per unit, selling an existing hedge returns4; total hedge units must stay0..3. Other holdings cannot be bought or shorted. Each nonzero leg costs one cash unit plus impact0.2*A_sold\u00b2+0.1*B_sold\u00b2. Pay the current liability and any unpaid earlier liabilities after trades; skipped or rejected actions do not erase liabilities, which carry into the next stage; require cash>=reserve and worst nonnegative loss across both stated stress rows<=risk_cap. Minimize current opportunity loss:2 per A sold,1 per B sold,2 per hedge bought,1 per hedge sold, plus trading fees/impact. Accept any tied minimum. No undocumented capital transfers. If no qualifying plan exists, report NO_FEASIBLE_PLAN with zero action, unchanged book/cash/current stress and zero foregone value. Final JSON commits the declared plan once if it is mechanically legal and pays the liability; it may still be financially suboptimal. Later books reflect that action, never the reference plan. At stage2 the account settles earlier B sales and pays a cash call of2 per hedge held; future user stages announce changed current liability, prices and risk limit. No future prices or targets are known at the current decision.",
+        "title": "Current trading and funding mandate"
+      },
+      {
+        "id": "c207_snapshot_1",
+        "release_stage": 1,
+        "text": "The current_book and current terms in this user stage are the reconciled record after actual submitted simulated actions and authoritative subsequent events. This snapshot supersedes older numerical balances but does not withdraw the mandate. It supplies every current position, cash, price, risk/cash limit or target in inputs.",
+        "title": "Authoritative current account snapshot, decision 1"
+      }
+    ],
+    "title": "Repair a portfolio as executed trades change subsequent funding",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 4,
+    "turn": 1
+  }
+}

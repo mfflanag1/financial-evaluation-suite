@@ -1,0 +1,105 @@
+{
+  "id": "event-001",
+  "case_group": "att-timewarner-2016-contract-collar",
+  "lane": "event_driven",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T17:52:09Z",
+  "source_ids": [
+    "event-att-timewarner-contract"
+  ],
+  "prompt": "Apply the supplied AT&T/Time Warner agreement clauses to explicitly SYNTHETIC closing scenarios. Assume the merger closes under these unchanged clauses; all holdings are eligible ordinary shares, with no appraisal, excluded shares, taxes, dividends or corporate-action adjustments. A is the contract's completed averaging-window price; P is the separate price used to mark delivered AT&T stock. Scenario A: A=$36, P=$34. Scenario B: A=$40, P=$42. Scenario C: A=$44, P=$40. Apply the contract's three-decimal exchange-ratio rounding, then value cash plus delivered stock. Per-target-share values represent a 1,000-target-share holding divided by 1,000, avoiding fractional-share settlement. For B, a synthetic desk pays $108 per target share and incurs $0.20 per target share of total other costs. Its sole objective is positive net settlement profit conditional on closing. Find the break-even P as a continuous price (do not round to an exchange tick), and report whether B meets the objective. For the hedge, A has already been fixed at $40: report the positive number of AT&T shares to SHORT against 1,000 target shares so a subsequent small change in P leaves the marked closing payoff unchanged. Scenario U is separate: only P=$40 is known; A is missing and may be any positive value. Determine whether consideration is unique and give tight per-target-share lower and upper bounds from the collar. Return prices/values to at least six decimals when non-terminating, booleans as JSON booleans, and quote the governing clauses for each output; separate clause quotes are allowed. These are conditional contract calculations using a 2026 observed-source cutoff, not actual historical market observations, a completion forecast or a recommended trade.",
+  "output_fields": [
+    {
+      "id": "a_exchange_ratio",
+      "type": "number",
+      "unit": "ATT_shares_per_TWX_share",
+      "description": "Scenario A contractual exchange ratio.",
+      "evidence_required": true
+    },
+    {
+      "id": "b_exchange_ratio",
+      "type": "number",
+      "unit": "ATT_shares_per_TWX_share",
+      "description": "Scenario B exchange ratio after contractual rounding.",
+      "evidence_required": true
+    },
+    {
+      "id": "c_exchange_ratio",
+      "type": "number",
+      "unit": "ATT_shares_per_TWX_share",
+      "description": "Scenario C contractual exchange ratio.",
+      "evidence_required": true
+    },
+    {
+      "id": "a_value_per_target",
+      "type": "number",
+      "unit": "USD_per_TWX_share",
+      "description": "Scenario A cash plus stock marked at its supplied P.",
+      "evidence_required": true
+    },
+    {
+      "id": "b_value_per_target",
+      "type": "number",
+      "unit": "USD_per_TWX_share",
+      "description": "Scenario B cash plus stock marked at its supplied P.",
+      "evidence_required": true
+    },
+    {
+      "id": "c_value_per_target",
+      "type": "number",
+      "unit": "USD_per_TWX_share",
+      "description": "Scenario C cash plus stock marked at its supplied P.",
+      "evidence_required": true
+    },
+    {
+      "id": "b_net_profit_per_target",
+      "type": "number",
+      "unit": "USD_per_TWX_share",
+      "description": "B settlement value minus supplied purchase price and total other costs.",
+      "evidence_required": true
+    },
+    {
+      "id": "b_break_even_settlement_price",
+      "type": "number",
+      "unit": "USD_per_ATT_share",
+      "description": "P giving zero net profit while A remains fixed at $40.",
+      "evidence_required": true
+    },
+    {
+      "id": "b_positive_net_profit",
+      "type": "boolean",
+      "unit": "categorical",
+      "description": "Does B produce strictly positive net settlement profit under the supplied objective?",
+      "evidence_required": true
+    },
+    {
+      "id": "b_short_hedge_shares",
+      "type": "number",
+      "unit": "ATT_shares",
+      "description": "Positive AT&T share count to short against 1,000 TWX shares, with averaging price already fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "u_unique_value",
+      "type": "boolean",
+      "unit": "categorical",
+      "description": "Is P=$40 alone sufficient to uniquely determine consideration when A is missing?",
+      "evidence_required": true
+    },
+    {
+      "id": "u_value_lower_bound",
+      "type": "number",
+      "unit": "USD_per_TWX_share",
+      "description": "Tight lower bound for U across all positive averaging prices.",
+      "evidence_required": true
+    },
+    {
+      "id": "u_value_upper_bound",
+      "type": "number",
+      "unit": "USD_per_TWX_share",
+      "description": "Tight upper bound for U across all positive averaging prices.",
+      "evidence_required": true
+    }
+  ]
+}

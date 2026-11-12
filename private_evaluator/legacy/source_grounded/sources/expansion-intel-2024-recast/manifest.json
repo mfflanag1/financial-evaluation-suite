@@ -1,0 +1,25 @@
+{
+  "id": "expansion-intel-2024-recast",
+  "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-25-000009/intc-20241228.htm",
+  "title": "Intel FY2024 annual report: recast segment definitions and tables",
+  "publisher": "Intel Corporation",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T18:12:47Z",
+  "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+  "retrieved_at": "2026-10-04T18:12:47Z",
+  "redistribution_status": "Public issuer disclosure; local research only. Underlying redistribution rights have not been cleared; no public release authorized.",
+  "raw_path": "sources/expansion-intel-2024-recast/evidence.txt",
+  "text_path": "sources/expansion-intel-2024-recast/evidence.txt",
+  "raw_sha256": "f4cb5956ea25c0101db18da981b31d1a4eedbd0cd79d09d37b33b31947acb284",
+  "text_sha256": "f4cb5956ea25c0101db18da981b31d1a4eedbd0cd79d09d37b33b31947acb284",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

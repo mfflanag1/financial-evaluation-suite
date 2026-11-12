@@ -1,0 +1,61 @@
+{
+  "question_id": "q140",
+  "title": "Buyback accretion with a corrected share register and funding limits",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Evaluate the authorized buyback assuming it occurs at the beginning of the year and is initially funded entirely from cash. Earnings and shares are millions, price/EPS USD per share. Cash spent loses a full year of after-tax interest income. There are no fees or other share changes. Compute the revised annual EPS and test the stated hurdle. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "earnings_before_financing": 120,
+    "reported_share_count": 100,
+    "authorized_buyback_shares": 20,
+    "repurchase_price": 10,
+    "cash_yield": 0.05,
+    "tax_rate": 0.25,
+    "minimum_eps": 1.35
+  },
+  "sources": [
+    {
+      "id": "q140_t1_1",
+      "text": "Synthetic packet. The initial capitalization memo labels its share figure outstanding shares; a separate treasury reconciliation has not yet arrived. The authorization is a maximum repurchase quantity."
+    },
+    {
+      "id": "q140_t1_2",
+      "text": "Synthetic packet. The financing assumption is an all-cash beginning-year purchase, with interest income taxed at the stated rate. No interest cost is deducted from the starting earnings twice."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "post_financing_earnings",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Annual earnings after financing opportunity cost.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_buyback_shares",
+      "type": "number",
+      "unit": "million shares",
+      "description": "Applicable outstanding/diluted denominator.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_buyback_eps",
+      "type": "number",
+      "unit": "USD per share",
+      "description": "Annual post-transaction EPS.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "eps_hurdle_met",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "EPS meets or exceeds the original hurdle."
+    }
+  ]
+}

@@ -1,0 +1,2274 @@
+[
+  {
+    "name": "gold_reference",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All declared values and required source anchors are present.",
+    "expected_failures": {}
+  },
+  {
+    "name": "split_input_evidence",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Separate concise January, February and March quotes jointly support the April-vintage quarter sum.",
+    "expected_failures": {}
+  },
+  {
+    "name": "concise_january_evidence",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "The January revision clause supports January's March-vintage value without quoting unrelated December text.",
+    "expected_failures": {}
+  },
+  {
+    "name": "table_row_evidence",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm | 146 | 256 | 270 | 303"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm | 287 | 290 | 229 | 275"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm | 146 | 256 | 270 | 303"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Summary B rows independently support all components of the two compared ledger states.",
+    "expected_failures": {}
+  },
+  {
+    "name": "wrong_vintage_january",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses April's January estimate for a March 8 as-of output.",
+    "expected_failures": {
+      "jan_asof_mar08": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "includes_december_in_q1_revision",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -145,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Adds release-wide -167 and +22 revision totals, incorrectly including December's -43 revision in Q1.",
+    "expected_failures": {
+      "q1_cumulative_revision_vs_first_prints": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "jobs_instead_of_thousands",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829000,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Returns jobs rather than declared thousands of jobs.",
+    "expected_failures": {
+      "q1_asof_apr05_sum": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "headline_ignores_prior_revisions",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Reports March headline 303 for the explicitly defined tracked cumulative increment, omitting +22 in earlier-month revisions.",
+    "expected_failures": {
+      "apr05_increment_to_tracked_q1_change": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "unsupported_same_source_quote",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "In January, average hourly earnings for all employees on private nonfarm payrolls rose by 19 cents, or 0.6 percent, to $34.55."
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct value but cites unrelated earnings text instead of evidence for payroll vintage.",
+    "expected_failures": {
+      "jan_first_print": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "quote_attributed_to_wrong_release",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct January first-print quote is assigned to April's source rather than February's source.",
+    "expected_failures": {
+      "jan_first_print": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "missing_cumulative_revision",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits a required critical derived output.",
+    "expected_failures": {
+      "q1_cumulative_revision_vs_first_prints": [
+        "missing_answer",
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "headline_only_supports_quarter_sum",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct quarter sum but citation omits January/February revision evidence.",
+    "expected_failures": {
+      "q1_asof_apr05_sum": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "missing_one_summand_evidence",
+    "response": {
+      "case_id": "macro-001",
+      "answers": {
+        "jan_first_print": {
+          "value": 353,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            }
+          ]
+        },
+        "jan_asof_mar08": {
+          "value": 229,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "feb_first_print": {
+          "value": 275,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            }
+          ]
+        },
+        "mar08_prior_two_month_revision": {
+          "value": -167,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            }
+          ]
+        },
+        "jan_asof_apr05": {
+          "value": 256,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            }
+          ]
+        },
+        "feb_asof_apr05": {
+          "value": 270,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "mar_first_print": {
+          "value": 303,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "apr05_prior_two_month_revision": {
+          "value": 22,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "q1_first_print_sum": {
+          "value": 931,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_asof_apr05_sum": {
+          "value": 829,
+          "evidence": [
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        },
+        "q1_cumulative_revision_vs_first_prints": {
+          "value": -102,
+          "evidence": [
+            {
+              "source_id": "bls-20240202",
+              "quote": "Total nonfarm payroll employment rose by 353,000 in January"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            }
+          ]
+        },
+        "apr05_increment_to_tracked_q1_change": {
+          "value": 325,
+          "evidence": [
+            {
+              "source_id": "bls-20240308",
+              "quote": "the change for January was revised down by 124,000, from +353,000 to +229,000"
+            },
+            {
+              "source_id": "bls-20240308",
+              "quote": "Total nonfarm payroll employment rose by 275,000 in February"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "the change for February was revised down by 5,000, from +275,000 to +270,000"
+            },
+            {
+              "source_id": "bls-20240405",
+              "quote": "Total nonfarm payroll employment rose by 303,000 in March"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+        "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+        "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct quarter sum with valid January/March quotes still lacks evidence for February's April-vintage summand.",
+    "expected_failures": {
+      "q1_asof_apr05_sum": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

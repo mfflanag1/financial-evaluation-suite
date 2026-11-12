@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-portfolio"
+version = "0.3.0"
+description = "Experimental constrained portfolio research evaluation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["financial-research==0.2.0"]
+
+[project.optional-dependencies]
+prime = ["verifiers==0.4.1"]
+
+[project.scripts]
+financial-portfolio = "financial_portfolio.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_portfolio"]

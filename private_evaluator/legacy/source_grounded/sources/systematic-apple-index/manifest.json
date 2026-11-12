@@ -1,0 +1,26 @@
+{
+  "id": "systematic-apple-index",
+  "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000006/0000320193-24-000006-index.htm",
+  "title": "Apple fiscal Q1 2024 Form 10-Q accession index",
+  "publisher": "SEC EDGAR",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T18:15:18Z",
+  "availability_basis": "The primary-source capture was retained before the recorded UTC observation bound. Original first-public dissemination time is not established. Document dates and EDGAR acceptance timestamps are separate descriptive fields, not substitutes for public availability. The cases use a 2026 observed-source cutoff and explicitly synthetic replay arrival times where exact gating is required.",
+  "document_date": "2024-02-02",
+  "retrieved_at": "2026-10-04T18:15:18Z",
+  "redistribution_status": "Public primary source retained for local research. Issuer-document redistribution rights have not been assessed; not approved for public dataset redistribution.",
+  "raw_path": "sources/systematic-apple-index/evidence.txt",
+  "text_path": "sources/systematic-apple-index/evidence.txt",
+  "raw_sha256": "b0eabf90c56c9156884f68523720e68023835e0e3a12d88fd65df9711006a3f7",
+  "text_sha256": "b0eabf90c56c9156884f68523720e68023835e0e3a12d88fd65df9711006a3f7",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

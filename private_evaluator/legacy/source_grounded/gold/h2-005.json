@@ -1,0 +1,490 @@
+{
+  "case_id": "h2-005",
+  "reference_solution": {
+    "units": "20000/20=1000preferred;dividends20000*(.625+3*.75)=57500. Normal20000*50/160=6250;optional20000*.2914=5828;marked difference422*160=67520.",
+    "fundamental": "At155 interpolate6.144/6.092 to6.118 in 2025 and6.260/6.180 to6.220 in2026. April15 is182days afterOct15,2025 in365dayinterval. Rate=6.118+.102*182/365;1000preferred gives6168.8602739726 shares. Same result from depositary table; subtract5828 for incremental shares."
+  },
+  "fields": [
+    {
+      "id": "preferred_shares_represented",
+      "expected": 1000,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "first_plus_next_three_dividends",
+      "expected": 57500.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to $0.625 per Depositary Share",
+              "equivalent to $0.75 per Depositary Share"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "January 15, April 15, July 15 and October 15 of each year",
+              "commencing on, and including, January 15, 2025"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "January 15, April 15, July 15 and October 15 of each year",
+              "beginning on January 15, 2025"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "normal_mandatory_common_share_entitlement",
+      "expected": 6250.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$142.9797",
+              "$171.5854"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "determined by dividing $50 by the applicable market value"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "determined by dividing $1,000 by the applicable market value"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "determined by dividing $50 by the applicable market value"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "ordinary_optional_common_share_entitlement",
+      "expected": 5828.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "Minimum Conversion Rate of 5.8280 shares of Common Stock per share of Mandatory Convertible Preferred Stock"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "minimum conversion rate of 5.8280"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "normal_minus_optional_marked_value",
+      "expected": 67520.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$142.9797",
+              "$171.5854"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "determined by dividing $50 by the applicable market value"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "determined by dividing $1,000 by the applicable market value"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "determined by dividing $50 by the applicable market value"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "Minimum Conversion Rate of 5.8280 shares of Common Stock per share of Mandatory Convertible Preferred Stock"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "minimum conversion rate of 5.8280"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "fundamental_change_common_share_entitlement",
+      "expected": 6168.860273972603,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$150.00",
+              "$160.00",
+              "October 15, 2025",
+              "6.1440",
+              "6.0920",
+              "October 15, 2026",
+              "6.2600",
+              "6.1800",
+              "straight-line interpolation",
+              "365-day or 366-day year"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$150.00",
+              "$160.00",
+              "October 15, 2025",
+              "0.3072",
+              "0.3046",
+              "October 15, 2026",
+              "0.3130",
+              "0.3090",
+              "straight-line interpolation",
+              "365-day or 366-day year"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$150.00",
+              "$160.00",
+              "October 15, 2025",
+              "0.3072",
+              "0.3046",
+              "October 15, 2026",
+              "0.3130",
+              "0.3090",
+              "straight-line interpolation",
+              "365-day or 366-day year"
+            ]
+          }
+        ]
+      ],
+      "atol": 0.0001,
+      "rtol": 0
+    },
+    {
+      "id": "fundamental_minus_ordinary_optional_shares",
+      "expected": 340.8602739726027,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$150.00",
+              "$160.00",
+              "October 15, 2025",
+              "6.1440",
+              "6.0920",
+              "October 15, 2026",
+              "6.2600",
+              "6.1800",
+              "straight-line interpolation",
+              "365-day or 366-day year"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$150.00",
+              "$160.00",
+              "October 15, 2025",
+              "0.3072",
+              "0.3046",
+              "October 15, 2026",
+              "0.3130",
+              "0.3090",
+              "straight-line interpolation",
+              "365-day or 366-day year"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "$150.00",
+              "$160.00",
+              "October 15, 2025",
+              "0.3072",
+              "0.3046",
+              "October 15, 2026",
+              "0.3130",
+              "0.3090",
+              "straight-line interpolation",
+              "365-day or 366-day year"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "Minimum Conversion Rate of 5.8280 shares of Common Stock per share of Mandatory Convertible Preferred Stock"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "minimum conversion rate of 5.8280"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "each of which represents a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "each representing a 1/20th interest"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            ]
+          }
+        ]
+      ],
+      "atol": 0.0001,
+      "rtol": 0
+    },
+    {
+      "id": "single_close_identifies_mandatory_conversion",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "volume-weighted average price",
+              "20 consecutive trading day period"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "dividends_contractually_guaranteed_in_cash",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-boeing-pricing",
+            "anchors": [
+              "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            ]
+          },
+          {
+            "source_id": "h2a-boeing-terms",
+            "anchors": [
+              "pay such dividends in cash or, subject to certain limitations, by delivery of shares of Common Stock"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+    "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+    "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+  ]
+}

@@ -1,0 +1,30 @@
+### What is the lag time between the filing acceptance time from the EDGAR Filer System and availability of the documents on sec.gov?
+
+Filings are often available on sec.gov within 1-3 minutes of the EDGAR system timestamp. The lag time can increase significantly with high server load. We don’t guarantee and cannot predict this lag.
+
+[Intervening source text omitted]
+
+### How can I understand EDGAR Timestamps?
+
+The EDGAR Filer System assigns various timestamps to the filing when approved. You can see these in the top header part of the “Complete submission text file.” For example:
+
+[…]
+<ACCEPTANCE-DATETIME>20190311165759
+[…]
+CONFORMED PERIOD OF REPORT: 20181231
+FILED AS OF DATE: 20190311
+DATE AS OF CHANGE: 20190311
+
+Consult EDGAR PDS Technical Specification for definitions of these timestamps.
+  * CONFORMED PERIOD OF REPORT: End date of reporting period of filing.
+  * FILED AS OF DATE: EDGAR assigned official filing date, or post acceptance new filing date (Post Acceptance Correction).
+  * DATE AS OF CHANGE: Date when the last Post Acceptance occurred.
+  * Acceptance Date: Date the submission was accepted by EDGAR. Format is YYYYMMDD
+  * Acceptance Time: Time (EST) at which the submission was accepted by EDGAR. Format is HHMMSS
+There is no timestamp to indicate when filing content is first available on sec.gov.
+### When will the XBRL taxonomies be updated?
+
+Please monitor the SEC's EDGAR page at https://www.sec.gov/info/edgar.shtml for news of changes to accepted taxonomies. In addition, you may sign up to receive announcements from the Office of Structured Disclosure, by email at https://www.sec.gov/structureddata/news or via RSS feed at https://www.sec.gov/structureddata/article/announcement.rss .
+### Does the accession number pattern have any meaning?
+0001193125-15-118890 is an example of an "accession number," a unique identifier assigned automatically to an accepted submission by the EDGAR Filer System. The first 10 digits (0001193125) comprise the Central Index Key (CIK) of the entity submitting the filing. This could be the company or a third-party filer agent.
+Some filer agents without a regulatory requirement to make disclosure filings with the SEC have a CIK but no searchable presence in the public EDGAR database (they have no filing documents in the public database). The next 2 digits (15) represent the year. The last series of digits comprise a sequential count of submitted filings from that CIK. The count is usually, but not always, reset to 0 at the start of each calendar year.

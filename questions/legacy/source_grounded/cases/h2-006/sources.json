@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h2a-oxy-2023",
+    "url": "https://www.oxy.com/siteassets/documents/investors/2023-annual-report.pdf",
+    "title": "Occidental FY2023 annual report",
+    "publisher": "Occidental Petroleum Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+    "text_sha256": "7e6fd47b3c4c1a5af0c22ef91c350b67a21f8de3ff1ae56a4c0472d2416f9d28",
+    "available_by": "2026-10-04T20:02:32Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_pdf.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "h2a-oxy-2024",
+    "url": "https://www.oxy.com/siteassets/documents/investors/2024-annual-report.pdf",
+    "title": "Occidental FY2024 annual report",
+    "publisher": "Occidental Petroleum Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+    "text_sha256": "a7df6d3193df959a47a12125f9341d4409c7fa129f5d0f1c3439e52e37b2f6c1",
+    "available_by": "2026-10-04T20:02:32Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_pdf.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

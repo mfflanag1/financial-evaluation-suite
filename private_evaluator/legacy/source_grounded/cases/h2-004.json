@@ -1,0 +1,87 @@
+{
+  "id": "h2-004",
+  "case_group": "carnival-2024-coverage-stepups-versus-liquidity",
+  "lane": "credit_capital_structure",
+  "status": "phase2_candidate",
+  "epistemic_type": "retrospective_reconciliation_and_conditional_decision",
+  "information_cutoff": "2026-10-04T20:02:32Z",
+  "prompt": "The credit team proposes a cash-funded debt repayment as a complete solution to Carnival's scheduled covenant tightening. Reconstruct which coverage schedule applies from the midyear and year-end 2024 disclosures, and test the proposal jointly with the liquidity floor. These annual/interim notes summarize agreements; they are not complete operative contracts. CONDITIONAL SCENARIO (USDm): contract-defined adjusted EBITDA 3000, consolidated net interest charges 1200, and qualifying liquidity 3000 entirely in unrestricted cash. Every 100 of principal repaid reduces the relevant full-period interest measure by 10; assume the entire benefit is effective for each hypothetical test and cash liquidity falls dollar-for-dollar. There are no fees, taxes, nettable interest-income effects or other cash changes. The amount of debt available to repay is sufficient. Only the displayed coverage and liquidity restrictions constrain the numerical scenario; do not infer actual permission under omitted covenants. Use the November 30, 2025 and February 28, 2026 tests, holding EBITDA fixed unless explicitly asked for the minimum increase.\n\nUse only the frozen document versions and the explicitly labeled hypothetical assumptions. These are retrospective research questions, not claims of historical tradability or forecasting skill. Discover and reconcile the relevant definitions and periods in the documents. Return every declared field with verbatim supporting evidence, preserving unrounded intermediate calculations. Money is USD millions unless the field specifies another unit. Percentages use the 0–100 scale. For every noninteger output, use at least eight decimal places unless the field explicitly allows a different precision. Source values displayed in millions are treated as exact only for these table-based arithmetic comparisons; do not infer greater economic precision.",
+  "source_ids": [
+    "h2a-carnival-2024",
+    "h2a-carnival-mid2024"
+  ],
+  "output_fields": [
+    {
+      "id": "export_credit_test_precedes_new_revolver_months",
+      "type": "number",
+      "unit": "calendar_months",
+      "description": "Using the half-year report, how many calendar months earlier does the export-credit interest-coverage test begin than the New Revolving Facility test?",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "november2025_maximum_net_interest",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Maximum net interest charges at the November 30, 2025 test for the stipulated adjusted EBITDA.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "february2026_maximum_net_interest",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Maximum net interest charges under the February 28, 2026 test, holding stipulated EBITDA fixed.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "repayment_required_for_feb2026_coverage",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Debt repayment needed to satisfy only the February 2026 coverage test using the stipulated full-period interest sensitivity.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "maximum_repayment_from_liquidity",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Largest repayment consistent with the disclosed minimum-liquidity rule and synthetic cash-only liquidity.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "coverage_after_maximum_liquidity_repayment",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Coverage after using all liquidity capacity for repayment.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "minimum_additional_ebitda_after_maximum_repayment",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Minimum nonnegative incremental EBITDA still required at the February 2026 threshold after the maximum liquidity-permitted repayment.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "repayment_alone_feasible_under_both_tests",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Can cash repayment alone satisfy the February 2026 interest test while preserving minimum liquidity?",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "all_contractual_permissions_and_covenants_established",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Do the stipulated EBITDA/interest/liquidity inputs establish compliance with every disclosed covenant and all borrowing/repayment permissions? Contract-defined capital and secured-asset inputs are not supplied. One unestablished necessary constraint suffices to refute the claim.",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ]
+}

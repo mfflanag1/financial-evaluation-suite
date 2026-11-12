@@ -1,0 +1,65 @@
+{
+  "question_id": "q159",
+  "title": "Reconcile a futures roll through specification and account changes",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconcile the actual roll fills against a naive continuous-series return. Use recorded multipliers for now. Report gross currency P&L before any later fee posting.",
+  "inputs": {
+    "old_contract_quantity": 10,
+    "old_multiplier": 50,
+    "old_previous_settlement": 100,
+    "old_exit_bid": 102.8,
+    "new_contract_quantity": 10,
+    "new_entry_ask": 105.2,
+    "new_settlement": 105,
+    "reported_new_multiplier": 50,
+    "initial_cash": 12000
+  },
+  "sources": [
+    {
+      "id": "q159_fills",
+      "text": "Original synthetic evaluation packet. Actual fills: sell all10 old futures at102.8, buy10 new futures at105.2. Old prior settlement100. New current settlement105. Initially recorded multipliers are50 currency units per price point for both contracts. The account began with cash12000 and only the old futures."
+    },
+    {
+      "id": "q159_accounting",
+      "text": "Original synthetic evaluation packet. Mark futures from each contract own previous settlement or actual entry price. The raw continuous series jumps from old100 to new105, but is not a self-financing position. No principal is paid to buy futures. Quoted fills already include spread. All execution fees are posted only in the final reconciliation. Margin is collateral."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "old_contract_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Old contract pnl.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "new_contract_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "New contract pnl.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "total_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Total pnl.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "continuous_series_overstatement",
+      "type": "number",
+      "unit": "USD",
+      "description": "Continuous series overstatement.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

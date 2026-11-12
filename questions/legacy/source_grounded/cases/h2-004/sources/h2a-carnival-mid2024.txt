@@ -1,0 +1,98 @@
+ We have agreements with a number of credit card processors that transact customer deposits related to our cruise vacations.
+Certain of these agreements allow the credit card processors to request, under certain circumstances, that we provide a capped
+reserve fund in cash.
+
+   Contract Costs
+
+We recognize incremental travel agent commissions and credit and debit card fees incurred as a result of obtaining the ticket
+contract as assets when paid prior to the start of a voyage. We record these amounts within prepaid expenses and related and
+subsequently recognize these amounts as commissions, transportation and related at the time of revenue recognition or at the
+time of voyage cancellation. We had incremental costs of obtaining contracts with customers recognized as assets of $71
+million and $75 million as of May 31, 2024 and November 30, 2023.
+
+NOTE 3 - Property and Equipment
+ (in millions)
+ At November 30, 2023                                                                                           $         11,480
+ Additions                                                                                                                   796
+ Disposals                                                                                                                  (701)
+ Depreciation                                                                                                               (292)
+ Exchange movements                                                                                                         (134)
+ At May 31, 2024                                                                                                $         11,148
+
+We review our long-lived assets for impairment whenever events or circumstances indicate potential impairment. During the six
+months ended May 31, 2024, we did not identify any triggers indicating possible impairment and therefore, did not record any
+impairments.
+
+Refer to Note 1 - “General, Use of Estimates and Risks and Uncertainty” for additional discussion and refer to Note 8 -
+“Related Party Transactions” for details on ship sales to Carnival Corporation group.
+
+NOTE 4 - Other Assets
+(in millions)                                                                         May 31, 2024        November 30, 2023
+ Long-term deposits                                                               $                  1    $                 108
+ VAT receivables                                                                                    74                       68
+ Debt issuance costs (a)                                                                            —                        35
+ Post-employment benefits                                                                            5                       11
+ Other long-term assets and other receivables                                                      130                      103
+                                                                                  $                210    $                 324
+
+    (a) Debt issuance costs are for undrawn facilities.
+
+NOTE 5 - Debt and Interest Expense
+
+   Export Credit Facility Borrowings
+
+During the six months ended May 31, 2024, we borrowed $1.6 billion under export credit facilities due in semi-annual
+installments through 2036. As of May 31, 2024, the net book value of the Carnival plc vessels subject to negative pledges was
+$4.1 billion.
+
+   Revolving Facilities
+
+Carnival Corporation & plc had $3.0 billion available for borrowing under its Revolving Facility as of May 31, 2024. Carnival
+Corporation & plc may continue to borrow or otherwise utilize available amounts under the Revolving Facility through August
+2024, subject to satisfaction of the conditions in the facility.
+
+Carnival Holdings II, a subsidiary of Carnival Corporation, has a $2.5 billion New Revolving Facility which may be utilized
+from August 2024 through August 2027, replacing our Revolving Facility upon its maturity in August 2024. The New
+Revolving Facility was extended from 2025 to 2027 and contains an accordion feature, which Carnival Holdings II partially
+
+
+                                                               10
+
+
+exercised in 2024 to increase commitments from $2.1 billion to $2.5 billion. The accordion feature allows for further additional
+commitments not to exceed the aggregate commitments under our Revolving Facility.
+
+   Covenant Compliance
+
+As of May 31, 2024, Carnival Corporation & plc's Revolving Facility, New Revolving Facility, unsecured loans and export
+credit facilities contain certain covenants listed below:
+
+    •    Maintain minimum interest coverage (adjusted EBITDA to consolidated net interest charges, as defined in the
+         agreements) (the “Interest Coverage Covenant”) as follows:
+             ◦ For certain unsecured loans and the New Revolving Facility, from the end of each fiscal quarter from August
+                   31, 2024, at a ratio of not less than 2.0 to 1.0 for each testing date occurring from August 31, 2024 until May
+                   31, 2025, at a ratio of not less than 2.5 to 1.0 for the August 31, 2025 and November 30, 2025 testing dates,
+                   and at a ratio of not less than 3.0 to 1.0 for the February 28, 2026 testing date onwards and as applicable
+                   through their respective maturity dates.
+             ◦ For the export credit facilities, from the end of each fiscal quarter from May 31, 2024, at a ratio of not less
+                   than 2.0 to 1.0 for each testing date occurring from May 31, 2024 until May 31, 2025, at a ratio of not less
+                   than 2.5 to 1.0 for the August 31, 2025 and November 30, 2025 testing dates, and at a ratio of not less than
+                   3.0 to 1.0 for the February 28, 2026 testing date onwards.
+    •    For certain unsecured loans and export credit facilities, maintain minimum issued capital and consolidated reserves (as
+         defined in the agreements) of $5.0 billion.
+    •    Limit its debt to capital (as defined in the agreements) percentage to a percentage not to exceed 65%.
+    •    Maintain minimum liquidity of $1.5 billion.
+    •    Adhere to certain restrictive covenants through August 2027 (subject to such covenants terminating if the Company
+         reaches an investment grade credit rating in accordance with the agreement governing the New Revolving Facility).
+    •    Limit the amounts of our secured assets as well as secured and other indebtedness.
+
+At May 31, 2024, Carnival Corporation & plc was in compliance with the applicable covenants under its debt agreements.
+Generally, if an event of default under any debt agreement occurs, then, pursuant to cross-default and/or cross-acceleration
+clauses therein, substantially all of its outstanding debt and derivative contract payables could become due, and its debt and
+derivative contracts could be terminated. Any financial covenant amendment may lead to increased costs, increased interest
+rates, additional restrictive covenants and other available lender protections that would be applicable.
+
+
+
+
+                                                                11

@@ -1,0 +1,25 @@
+{
+  "id": "h2a-oxy-2023",
+  "url": "https://www.oxy.com/siteassets/documents/investors/2023-annual-report.pdf",
+  "title": "Occidental FY2023 annual report",
+  "publisher": "Occidental Petroleum Corporation",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T20:02:32Z",
+  "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+  "retrieved_at": "2026-10-04T19:58:38.792231Z",
+  "redistribution_status": "Public primary corporate disclosure retained for local research. Redistribution rights not adjudicated; no public release authorized.",
+  "raw_path": "sources/h2a-oxy-2023/evidence.txt",
+  "text_path": "sources/h2a-oxy-2023/evidence.txt",
+  "raw_sha256": "7e6fd47b3c4c1a5af0c22ef91c350b67a21f8de3ff1ae56a4c0472d2416f9d28",
+  "text_sha256": "7e6fd47b3c4c1a5af0c22ef91c350b67a21f8de3ff1ae56a4c0472d2416f9d28",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "complete_original_pdf",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: complete_original_pdf.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

@@ -1,0 +1,5018 @@
+[
+  {
+    "name": "concise_reference",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "contextual_primary_pages",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": " Boeing Announces Pricing of Upsized Concurrent Offerings of Common Stock and Depositary Shares\n\n\nBoeing Announces Pricing of Upsized Concurrent Offerings of Common Stock\nand Depositary Shares\nARLINGTON, Va., Oct. 28, 2024 /PRNewswire/ -- The Boeing Company [NYSE: BA] (\"Boeing\" or the \"Company\") announced\ntoday the pricing of its previously announced separate underwritten public offerings of (i) 112,500,000 shares of common stock,\npar value $5.00 per share (\"Common Stock\"), of the Company at a public offering price of$143.00 per share (the \"Common\nStock Offering\") and (ii) $5 billion of depositary shares (\"Depositary Shares\"), each representing a 1/20th interest in a share of\nnewly issued 6.00% Series A Mandatory Convertible Preferred Stock, par value $1.00 per share (\"Preferred Stock\") at a public\noffering price of $50.00 per Depositary Share (the \"Depositary Shares Offering\" and, together, the \"Offerings\"). Boeing has\ngranted the underwriters in each respective offering a 30-day option to purchase up to an additional (i) 16,875,000 shares of\nCommon Stock and (ii) $750 million of Depositary Shares, solely to cover over-allotments, if any, in each case at the public\noffering price less the applicable underwriting discount. The Common Stock Offering is expected to close on October 30, 2024\nand the Depositary Shares Offering is expected to close on October 31, 2024, subject to customary closing conditions.\n\nThe net proceeds from the Common Stock Offering will be approximately $15.81 billion (assuming the underwriters do not\nexercise the option to purchase additional shares of Common Stock) and the net proceeds from the Depositary Shares Offering\nwill be approximately $4.91 billion (assuming the underwriters do not exercise the over-allotment option to purchase additional\nDepositary Shares), in each case after deducting the applicable underwriting discount and estimated offering expenses payable\nby Boeing. Boeing intends to use the net proceeds from the Offerings for general corporate purposes, which may include,\namong other things, repayment of debt, additions to working capital, capital expenditures, and funding and investments in the\nCompany's subsidiaries.\n\nHolders of the Depositary Shares will be entitled to a proportional fractional interest in the rights and preferences of the\nPreferred Stock, including conversion, dividend, liquidation and voting rights, subject to the provisions of a deposit agreement.\nThe Preferred Stock will accumulate dividends (which may be paid in cash or, subject to certain limitations, in shares of\nCommon Stock or in any combination of cash and Common Stock) at a rate per annum equal to 6.00% on the liquidation\npreference thereof, which is $1,000 per share, payable when, as and if declared by Boeing's board of directors (or an authorized\ncommittee thereof), on January 15, April 15, July 15 and October 15 of each year, beginning on January 15, 2025 and ending\non, and including, October 15, 2027. Unless earlier converted, each outstanding share of Preferred Stock will automatically\nconvert for settlement on or about October 15, 2027, into between 5.8280 and 6.9940 shares of Common Stock (and,\ncorrespondingly, each Depositary Share will automatically convert into between 0.2914 and 0.3497 shares of Common Stock),\nsubject to customary anti-dilution adjustments, determined based on the volume-weighted average price of the Common Stock\nover the 20 consecutive trading day period beginning on, and including, the 21st scheduled trading day prior to October 15,\n2027. Other than during a fundamental change conversion period (as defined in the prospectus supplement relating to the\nDepositary Shares Offering), at any time prior to the mandatory conversion settlement date, a holder of 20 Depositary Shares\nmay cause the bank depositary to convert one share of Preferred Stock, on such holder's behalf, into a number of shares of\nCommon Stock equal to the minimum conversion rate of 5.8280, subject to certain anti-dilution and other adjustments.\nCurrently, there is no public market for the Depositary Shares or the Preferred Stock. Boeing has applied to list the Depositary\nShares on the New York Stock Exchange under the symbol \"BA-PRA.\"\n\nGoldman Sachs & Co. LLC, BofA Securities, Citigroup and J.P. Morgan are acting as lead joint bookrunning managers for the\nOfferings. Wells Fargo Securities, BNP PARIBAS, Deutsche Bank Securities, Mizuho, Morgan Stanley, RBC Capital Markets\nand SMBC Nikko are also acting as joint bookrunning managers for the Offerings. Credit Agricole CIB, MUFG,\nCOMMERZBANK, Santander, Academy Securities, Loop Capital Markets, Raymond James and Siebert Williams Shank are\nacting as co-managers for the Offerings. BTIG is acting as a co-manager for the Common Stock Offering and US Bancorp is\nacting as a co-manager for the Depositary Shares Offering. PJT Partners is acting as Boeing's financial advisor for the\nOfferings.\n\nA registration statement on Form S-3 relating to these securities has been filed with the Securities and Exchange Commission\n(the \"SEC\") and has become effective. Each Offering may be made only by means of a prospectus supplement and\naccompanying prospectus. When available, copies of the final prospectus supplements and accompanying prospectuses\nrelated to the Offerings can be obtained by visiting the SEC's website at http://www.sec.gov or by contacting Goldman Sachs &\nCo. LLC, Attention: Prospectus Department, 200 West Street, New York, NY 10282, by telephone at 1-866-471-2526 or by\nemail at prospectus-ny@ny.email.gs.com; BofA Securities, NC1-022-02-25, 201 North Tryon Street, Charlotte, NC 28255-0001,\nAttention: Prospectus Department, or by email at dg.prospectus_requests@bofa.com; Citigroup, c/o Broadridge Financial\nSolutions, 1155 Long Island Avenue, Edgewood, NY 11717 or by telephone at 1-800-831-9146; or J.P. Morgan Securities LLC,\nc/o Broadridge Financial Solutions, 1155 Long Island Avenue, Edgewood, NY 11717, or by email at prospectus-\neq_fi@jpmchase.com and postsalemanualrequests@broadridge.com.\n\nThis release does not constitute an offer to sell or a solicitation of an offer to buy these securities, nor does it constitute an offer,\nsolicitation or sale of these securities, in any jurisdiction in which such offer, solicitation or sale is unlawful.\n\nCaution Concerning Forward-Looking Statements\n"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "This press release contains \"forward-looking statements\" within the meaning of the Private Securities Litigation Reform Act of\n1995. Words such as \"may,\" \"should,\" \"expects,\" \"intends,\" \"projects,\" \"plans,\" \"believes,\" \"estimates,\" \"targets,\" \"anticipates,\"\nand other similar words or expressions, or the negative thereof, generally can be used to help identify these forward-looking\nstatements. Examples of forward-looking statements include statements relating to the offerings of Common Stock, Preferred\nStock and Depositary Shares, our ability to complete the Offerings on the anticipated timeline or at all and the anticipated use of\nthe net proceeds therefrom, as well as any other statement that does not directly relate to any historical or current fact. Forward-\nlooking statements are based on expectations and assumptions that we believe to be reasonable when made, but that may not\nprove to be accurate. These statements are not guarantees and are subject to risks, uncertainties, and changes in\ncircumstances that are difficult to predict. Many factors could cause actual results to differ materially and adversely from these\nforward-looking statements. Among these factors are risks related to: (1) general conditions in the economy and our industry,\nincluding those due to regulatory changes; (2) our reliance on our commercial airline customers; (3) the overall health of our\naircraft production system, production quality issues, commercial airplane production rates, our ability to successfully develop\nand certify new aircraft or new derivative aircraft, and the ability of our aircraft to meet stringent performance and reliability\nstandards; (4) our pending acquisition of Spirit AeroSystems Holdings, Inc. (Spirit), including the satisfaction of closing\nconditions in the expected timeframe or at all, (5) changing budget and appropriation levels and acquisition priorities of the U.S.\ngovernment, as well as significant delays in U.S. government appropriations; (6) our dependence on our subcontractors and\nsuppliers, as well as the availability of highly skilled labor and raw materials; (7) work stoppages or other labor disruptions; (8)\ncompetition within our markets; (9) our non-U.S. operations and sales to non-U.S. customers; (10) changes in accounting\nestimates; (11) realizing the anticipated benefits of mergers, acquisitions, joint ventures/strategic alliances or divestitures,\nincluding anticipated synergies and quality improvements related to our pending acquisition of Spirit; (12) our dependence on\nU.S. government contracts; (13) our reliance on fixed-price contracts; (14) our reliance on cost-type contracts; (15) contracts\nthat include in-orbit incentive payments; (16) unauthorized access to our, our customers' and/or our suppliers' information and\nsystems; (17) potential business disruptions, including threats to physical security or our information technology systems,\nextreme weather (including effects of climate change) or other acts of nature, and pandemics or other public health crises; (18)\npotential adverse developments in new or pending litigation and/or government inquiries or investigations; (19) potential\nenvironmental liabilities; (20) effects of climate change and legal, regulatory or market responses to such change; (21) credit\nrating agency actions and changes in our ability to obtain debt financing on commercially reasonable terms, at competitive rates\nand in sufficient amounts; (22) substantial pension and other postretirement benefit obligations; (23) the adequacy of our\ninsurance coverage; and (24) customer and aircraft concentration in our customer financing portfolio.\n\nAdditional information concerning these and other factors can be found in our filings with the Securities and Exchange\nCommission, including our most recent Annual Report on Form 10-K, Quarterly Reports on Form 10-Q and Current Reports on\nForm 8-K. Any forward-looking statement speaks only as of the date on which it is made, and we assume no obligation to\nupdate or revise any forward-looking statement, whether as a result of new information, future events, or otherwise, except as\nrequired by law.\n\nContact:\nInvestor Relations: BoeingInvestorRelations@boeing.com\nCommunications: media@boeing.com\n\n\n\nSOURCE Boeing\n"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "Pricing Term Sheet                                                                                                      Free Writing Prospectus\ndated as of October 28, 2024                                                                                          Filed pursuant to Rule 433\n                                                                                                                                  Relating to the\n                                                                            Preliminary Prospectus Supplements each dated October 28, 2024 to the\n                                                                                                               Prospectus dated October 22, 2024\n                                                                                                                     Registration No. 333-282628\n\n\n                                                                 The Boeing Company\n\n                                                                Concurrent Offerings of\n\n                               112,500,000 Shares of Common Stock, par value $5.00 per Share (the “Common Stock”)\n                                                        (the “Common Stock Offering”)\n\n                                                                           and\n\n                                              100,000,000 Depositary Shares (the “Depositary Shares”)\n                                                  Each Representing a 1/20th Interest in a Share of\n                                               6.00% Series A Mandatory Convertible Preferred Stock\n                                                        (the “Depositary Shares Offering”)\n\nThe information in this pricing term sheet relates only to the Common Stock Offering and the Depositary Shares Offering and should be read together\nwith (i) the preliminary prospectus supplement dated October 28, 2024 relating to the Common Stock Offering (the “Common Stock Preliminary\nProspectus Supplement”), including the documents incorporated by reference therein, (ii) the preliminary prospectus supplement dated October 28,\n2024 relating to the Depositary Shares Offering (the “Depositary Shares Preliminary Prospectus Supplement”), including the documents incorporated\nby reference therein and (iii) the related base prospectus dated October 22, 2024, each filed pursuant to Rule 424(b) under the Securities Act of 1933, as\namended, Registration No. 333-282628. Neither the Common Stock Offering nor the Depositary Shares Offering is contingent on the successful\ncompletion of the other offering. Terms not defined in this pricing term sheet have the meanings given to such terms in the Common Stock Preliminary\nProspectus Supplement or the Depositary Shares Preliminary Prospectus Supplement, as applicable. All references to dollar amounts are references to\nU.S. dollars. The Boeing Company has increased the size of the Common Stock Offering to 112,500,000 shares of Common Stock (or 129,375,000\nshares of Common Stock if the underwriters in the Common Stock Offering exercise in full their option to purchase additional Common Stock). The final\nprospectus supplement relating to the Common Stock Offering will reflect conforming changes relating to such increase in the size of the Common Stock\nOffering.\n\nIssuer:                                        The Boeing Company\n\nTicker / Exchange for the Common Stock:        BA / New York Stock Exchange (“NYSE”)\n\nPricing Date:                                  October 28, 2024.\n\nTrade Date:                                    October 29, 2024 (“T”).\n\nSettlement Date for the Common Stock\nOffering:                                      October 30, 2024 (T+1).\n\nSettlement Date for the Depositary Shares      October 31, 2024 (T+2), which is the second business day following the trade date for the Depositary\nOffering:                                      Shares (such settlement cycle being referred to as “T+2”). Under Rule 15c6-1 under the Securities\n                                               Exchange Act of 1934, as amended, trades in the secondary market\n"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "                                      Wells Fargo Securities, LLC\n                                      BNP Paribas Securities Corp.\n                                      Deutsche Bank Securities Inc.\n                                      Mizuho Securities USA LLC\n                                      Morgan Stanley & Co. LLC\n                                      RBC Capital Markets, LLC\n                                      SMBC Nikko Securities America, Inc.\n\nCo-Managers:                          Credit Agricole Securities (USA) Inc.\n                                      MUFG Securities Americas Inc.\n                                      Commerz Markets LLC\n                                      Santander US Capital Markets LLC\n                                      Academy Securities, Inc.\n                                      BTIG, LLC\n                                      Loop Capital Markets LLC\n                                      Raymond James & Associates, Inc.\n                                      Siebert Williams Shank & Co., LLC\n\n                                                          Depositary Shares Offering\n\nDepositary Shares Offered:      100,000,000 Depositary Shares, each of which represents a 1/20th interest in a share of the Issuer’s 6.00% Series A\n                                Mandatory Convertible Preferred Stock (the “Mandatory Convertible Preferred Stock”). At settlement of the\n                                Depositary Shares Offering, the Issuer will issue 5,000,000 shares of Mandatory Convertible Preferred Stock, subject\n                                to the underwriters’ over-allotment option.\n\nOver-allotment Option for\nUnderwriters to Purchase        15,000,000 additional Depositary Shares (corresponding to 750,000 additional shares of the Mandatory Convertible\nAdditional Depositary Shares:   Preferred Stock), solely to cover over-allotments.\n\nPublic Offering Price of the\nDepositary Shares:              $50.00 per Depositary Share.\n\nDividends:                      6.00% of the liquidation preference of $1,000 per share of the Mandatory Convertible Preferred Stock per year.\n                                Dividends will accumulate from the Settlement Date for the Depositary Shares and, to the extent that the Issuer is\n                                legally permitted to pay dividends and its board of directors, or an authorized committee thereof, declares a dividend\n                                payable with respect to the Mandatory Convertible Preferred Stock, the Issuer will pay such dividends in cash or,\n                                subject to certain limitations, by delivery of shares of Common Stock or through any combination of cash and shares\n                                of Common Stock, as determined by the Issuer’s board of directors in its sole discretion; provided that any unpaid\n                                dividends will continue to accumulate.\n\n                                The expected dividend payable on the first Dividend Payment Date is $12.50 per share of Mandatory Convertible\n                                Preferred Stock (equivalent to $0.625 per Depositary Share). Each subsequent dividend is expected to be $15.00 per\n                                share of Mandatory Convertible Preferred Stock (equivalent to $0.75 per Depositary Share).\n\nDividend Record Dates:          The January 1, April 1, July 1 and October 1 immediately preceding the relevant Dividend Payment Date.\n\n                                                                         3\n"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "Dividend Payment Dates:          January 15, April 15, July 15 and October 15 of each year, commencing on, and including, January 15, 2025 and\n                                 ending on, and including, October 15, 2027.\n\nMandatory Conversion Date:       The second business day immediately following the last trading day of the 20 consecutive trading day period\n                                 beginning on, and including, the 21st scheduled trading day immediately preceding October 15, 2027.\n\nInitial Price:                   Equal to $1,000, divided by the Maximum Conversion Rate, rounded to the nearest $0.0001, which initially is\n                                 $142.9797.\n\nThreshold Appreciation Price:    Equal to $1,000, divided by the Minimum Conversion Rate, rounded to the nearest $0.0001, which initially is\n                                 $171.5854 and represents a premium of approximately 20% over the Initial Price.\n\nFloor Price:                     $50.04 (approximately 35% of the Initial Price), subject to adjustment as described in the Depositary Shares\n                                 Preliminary Prospectus Supplement.\n\nConversion Rate per Share of\nMandatory Convertible Preferred\nStock:                          The conversion rate for each share of Mandatory Convertible Preferred Stock will not be more than 6.9940 shares of\n                                Common Stock and not less than 5.8280 shares of Common Stock (respectively, the “Maximum Conversion Rate”\n                                and “Minimum Conversion Rate”), depending on the applicable market value (as defined in the Depositary Shares\n                                Preliminary Prospectus Supplement) of the Common Stock, as described below and subject to certain anti-dilution\n                                adjustments. Correspondingly, the conversion rate per Depositary Share will be not more than 0.3497 shares of\n                                Common Stock and not less than 0.2914 shares of Common Stock.\n\n                                 The following table illustrates the conversion rate per share of the Mandatory Convertible Preferred Stock, subject to\n                                 certain anti-dilution adjustments described in the Depositary Shares Preliminary Prospectus Supplement, based on\n                                 the applicable market value of the Common Stock:\n\n                                                Applicable Market Value of                               Conversion Rate per Share of\n                                                   the Common Stock                                     Mandatory Convertible Preferred\n                                                                                                                    Stock\n\n                                 Greater than the Threshold Appreciation Price               5.8280 shares of Common Stock\n\n                                 Equal to or less than the Threshold Appreciation Price but Between 5.8280 and 6.9940 shares of Common Stock,\n                                 greater than or equal to the Initial Price                 determined by dividing $1,000 by the applicable market\n                                                                                            value\n                                 Less than the Initial Price\n                                                                                             6.9940 shares of Common Stock\n\n                                                                          4\n"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "                       The following table illustrates the conversion rate per Depositary Share, subject to certain anti-dilution adjustments\n                       described in the Depositary Shares Preliminary Prospectus Supplement, based on the applicable market value of the\n                       Common Stock:\n\n                                      Applicable Market Value of                                      Conversion Rate per Depositary\n                                         the Common Stock                                                         Share\n\n                       Greater than the Threshold Appreciation Price                       0.2914 shares of Common Stock\n\n                       Equal to or less than the Threshold Appreciation Price but Between 0.2914 and 0.3497 shares of Common Stock,\n                       greater than or equal to the Initial Price                 determined by dividing $50 by the applicable market\n                                                                                  value\n\n                       Less than the Initial Price                                         0.3497 shares of Common Stock\n\nOptional Conversion:   Other than during a fundamental change conversion period (as defined in the Depositary Shares Preliminary\n                       Prospectus Supplement), at any time prior to October 15, 2027, a holder of Mandatory Convertible Preferred Stock\n                       may elect to convert such holder’s shares of Mandatory Convertible Preferred Stock, in whole or in part, at the\n                       Minimum Conversion Rate of 5.8280 shares of Common Stock per share of Mandatory Convertible Preferred Stock\n                       (equivalent to 0.2914 shares of Common Stock per Depositary Share), subject to adjustment as described in the\n                       Depositary Shares Preliminary Prospectus Supplement. Because each Depositary Share represents a 1/20th fractional\n                       interest in a share of Mandatory Convertible Preferred Stock, a holder of Depositary Shares may convert its\n                       Depositary Shares only in lots of 20 Depositary Shares.\n\nFundamental Change:    If a fundamental change (as defined in the Depositary Shares Preliminary Prospectus Supplement) occurs on or prior\n                       to October 15, 2027, holders of the Mandatory Convertible Preferred Stock will have the right to convert their shares\n                       of Mandatory Convertible Preferred Stock, in whole or in part, into shares of Common Stock at the fundamental\n                       change conversion rate (as defined in the Depositary Shares Preliminary Prospectus Supplement) during the period\n                       beginning on, and including, the effective date (as defined in the Depositary Shares Preliminary Prospectus\n                       Supplement) of such fundamental change and ending on, and including, the earlier of (a) the date that is 20 calendar\n                       days after such effective date (or, if later, the date that is 20 calendar days after holders receive notice of such\n                       fundamental change) and (b) October 15, 2027. For the avoidance of doubt, the period described in the immediately\n                       preceding sentence may not end on a date that is later than October 15, 2027.\n\n                       The following table sets forth the fundamental change conversion rate per share of Mandatory Convertible Preferred\n                       Stock based on the effective date of the fundamental change and the stock price (as defined in the Depositary Shares\n                       Preliminary Prospectus Supplement) in the fundamental change:\n\n                                                                                     Stock Price\nEffective Date             $100.00   $110.00    $120.00   $130.00       $142.98   $150.00   $160.00   $171.59   $180.00   $190.00   $200.00   $210.00\nOctober 31, 2024           6.3600    6.2860     6.2200    6.1600        6.0940    6.0620     6.0200   5.9800    5.9540    5.9280    5.9040    5.8840\nOctober 15, 2025           6.5120    6.4260     6.3460    6.2720        6.1860    6.1440     6.0920   6.0380    6.0060    5.9720    5.9420    5.9160\nOctober 15, 2026           6.7420    6.6480     6.5480    6.4460        6.3220    6.2600     6.1800   6.1000    6.0520    6.0020    5.9620    5.9280\nOctober 15, 2027           6.9940    6.9940     6.9940    6.9940        6.9940    6.6660     6.2500   5.8280    5.8280    5.8280    5.8280    5.8280\n\n\n\n                                                                    5\n"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "                   The exact stock price and effective date may not be set forth on the table, in which case:\n                         •   if the stock price is between two stock prices on the table or the effective date is between two effective\n                             dates on the table, the fundamental change conversion rate per share of Mandatory Convertible Preferred\n                             Stock will be determined by straight-line interpolation between the fundamental change conversion rates\n                             per share of Mandatory Convertible Preferred Stock set forth for the higher and lower stock prices and the\n                             earlier and later effective dates, as applicable, based on a 365-day or 366-day year, as applicable;\n                         •   if the stock price is in excess of $210.00 per share (subject to adjustment in the same manner as the stock\n                             prices in the column headings of the table above as described in the Depositary Shares Preliminary\n                             Prospectus Supplement), then the fundamental change conversion rate per share of Mandatory Convertible\n                             Preferred Stock will be the Minimum Conversion Rate; and\n                         •   if the stock price is less than $100.00 per share (subject to adjustment in the same manner as the stock\n                             prices in the column headings of the table above as described in the Depositary Shares Preliminary\n                             Prospectus Supplement), then the fundamental change conversion rate per share of Mandatory Convertible\n                             Preferred Stock will be the Maximum Conversion Rate.\n\n                        The following table sets forth the fundamental change conversion rate per Depositary Share based on the\n                        effective date of the fundamental change and the stock price in the fundamental change:\n\n                                                                                Stock Price\nEffective Date         $100.00   $110.00   $120.00   $130.00       $142.98   $150.00   $160.00   $171.59   $180.00   $190.00   $200.00   $210.00\nOctober 31, 2024       0.3180    0.3143    0.3110    0.3080        0.3047    0.3031    0.3010    0.2990    0.2977    0.2964    0.2952    0.2942\nOctober 15, 2025       0.3256    0.3213    0.3173    0.3136        0.3093    0.3072    0.3046    0.3019    0.3003    0.2986    0.2971    0.2958\nOctober 15, 2026       0.3371    0.3324    0.3274    0.3223        0.3161    0.3130    0.3090    0.3050    0.3026    0.3001    0.2981    0.2964\nOctober 15, 2027       0.3497    0.3497    0.3497    0.3497        0.3497    0.3333    0.3125    0.2914    0.2914    0.2914    0.2914    0.2914\n\n                   The exact stock price and effective date may not be set forth on the table, in which case:\n                         •   if the stock price is between two stock prices on the table or the effective date is between two effective\n                             dates on the table, the fundamental change conversion rate per Depositary Share will be determined by\n                             straight-line interpolation between the fundamental change conversion rates per Depositary Share set forth\n                             for the higher and lower stock prices and the earlier and later effective dates, as applicable, based on a\n                             365-day or 366-day year, as applicable;\n                         •   if the stock price is in excess of $210.00 per share (subject to adjustment in the same manner as the stock\n                             prices in the column headings of the table above as described in the Depositary Shares Preliminary\n                             Prospectus Supplement), then the fundamental change conversion rate per Depositary Share will be the\n                             Minimum Conversion Rate, divided by 20; and\n                         •   if the stock price is less than $100.00 per share (subject to adjustment in the same manner as the stock\n                             prices in the column headings of the table above as described in the Depositary Shares Preliminary\n                             Prospectus Supplement), then the fundamental change conversion rate per Depositary Share will be the\n                             Maximum Conversion Rate, divided by 20.\n\n                                                               6\n"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "depositary_receipt_equals_preferred_share",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 20000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "preferred_shares_represented": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "depositary receipt equals preferred share"
+  },
+  {
+    "name": "ignore_short_first_dividend",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 60000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_plus_next_three_dividends": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ignore short first dividend"
+  },
+  {
+    "name": "optional_uses_mandatory_middle_regime",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 6250,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "ordinary_optional_common_share_entitlement": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "optional uses mandatory middle regime"
+  },
+  {
+    "name": "ignore_date_interpolation",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6118.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "fundamental_change_common_share_entitlement": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ignore date interpolation"
+  },
+  {
+    "name": "spot_equals_contractual_vwap",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "single_close_identifies_mandatory_conversion": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "spot equals contractual vwap"
+  },
+  {
+    "name": "missing_support",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": []
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "preferred_shares_represented": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing support"
+  },
+  {
+    "name": "fabricated_support",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "This source states the invented answer exactly."
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "preferred_shares_represented": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated support"
+  },
+  {
+    "name": "alternative_primary_evidence_route",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "each representing a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "depositary_fundamental_table_no_preferred_unit_mapping",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "0.3072"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "0.3046"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "0.3130"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "0.3090"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "preferred_unit_route_to_normal_conversion",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $1,000 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "each representing a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "optional_operative_rate_without_heading",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "pricing_release_optional_conversion",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "each representing a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "minimum conversion rate of 5.8280"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "term_sheet_cash_or_stock_dividends",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "pay such dividends in cash or, subject to certain limitations, by delivery of shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "pricing_release_dividend_schedule",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "beginning on January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "fundamental_change_common_share_entitlement_four_decimal_rounding",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.8603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "fundamental_minus_ordinary_optional_shares_four_decimal_rounding",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "fundamental_entitlement_outside_rounding_tolerance",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "commencing on, and including, January 15, 2025"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.861,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "fundamental_change_common_share_entitlement": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "value exceeds the declared absolute tolerance"
+  },
+  {
+    "name": "dividend_count_missing_payment_schedule",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_plus_next_three_dividends": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "dividend count missing payment schedule"
+  },
+  {
+    "name": "dividend_schedule_missing_first_payment_date",
+    "response": {
+      "case_id": "h2-005",
+      "answers": {
+        "preferred_shares_represented": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "first_plus_next_three_dividends": {
+          "value": 57500.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.625 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to $0.75 per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "January 15, April 15, July 15 and October 15 of each year"
+            }
+          ]
+        },
+        "normal_mandatory_common_share_entitlement": {
+          "value": 6250.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "ordinary_optional_common_share_entitlement": {
+          "value": 5828.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "normal_minus_optional_marked_value": {
+          "value": 67520.0,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$142.9797"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$171.5854"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "determined by dividing $50 by the applicable market value"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_change_common_share_entitlement": {
+          "value": 6168.860273972603,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "fundamental_minus_ordinary_optional_shares": {
+          "value": 340.8602739726027,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$150.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "$160.00"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2025"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1440"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.0920"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "October 15, 2026"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.2600"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "6.1800"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "straight-line interpolation"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "365-day or 366-day year"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "equivalent to 0.2914 shares of Common Stock per Depositary Share"
+            },
+            {
+              "source_id": "h2a-boeing-terms",
+              "quote": "each of which represents a 1/20th interest"
+            }
+          ]
+        },
+        "single_close_identifies_mandatory_conversion": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "volume-weighted average price"
+            },
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "20 consecutive trading day period"
+            }
+          ]
+        },
+        "dividends_contractually_guaranteed_in_cash": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-boeing-pricing",
+              "quote": "which may be paid in cash or, subject to certain limitations, in shares of Common Stock"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_plus_next_three_dividends": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "dividend schedule missing first payment date"
+  }
+]

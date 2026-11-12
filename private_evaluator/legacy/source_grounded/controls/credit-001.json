@@ -1,0 +1,3127 @@
+[
+  {
+    "name": "gold_reference",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "All defined values and source-rule evidence are present."
+  },
+  {
+    "name": "ignore_later_cash_settlement",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 430,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "covenant_ebitda": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Omits the deduction of cash settlement for an earlier noncash add-back."
+  },
+  {
+    "name": "net_all_cash_without_cap",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 200,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "permitted_cash_netting": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Ignores the contractual 150 cash-netting cap."
+  },
+  {
+    "name": "count_incomplete_closing_quarter_as_full",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "maximum_ratio_june_2025": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Counts the closing quarter as a full post-closing quarter and steps down one quarter early."
+  },
+  {
+    "name": "ignore_september_step_down",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "september_2025_external_paydown_needed": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Carries June's ceiling into September and misses required conditional paydown."
+  },
+  {
+    "name": "unnecessary_certainty_on_unclassified_cash",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "cash_unknown_branch_compliance_identifiable": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Treats total cash as qualifying cash despite the explicit unknown classification."
+  },
+  {
+    "name": "signing_equals_closing_effectiveness",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "closing_amendments_effective_on_signing_alone": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Ignores separate Acquisition Closing Date conditions."
+  },
+  {
+    "name": "correct_value_without_rule_evidence",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": []
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "covenant_ebitda": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "A correct numerical value lacks the required operative-rule evidence."
+  },
+  {
+    "name": "derived_ratio_without_cash_settlement_rule",
+    "response": {
+      "case_id": "credit-001",
+      "answers": {
+        "covenant_ebitda": {
+          "value": 420,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            }
+          ]
+        },
+        "permitted_cash_netting": {
+          "value": 150,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            }
+          ]
+        },
+        "net_debt_numerator": {
+          "value": 2050,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "maximum_ratio_june_2025": {
+          "value": 5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_september_2025": {
+          "value": 4.5,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "maximum_ratio_march_2026": {
+          "value": 4,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iv) the last day of the fifth consecutive full fiscal quarter ending after the Acquisition Closing Date and the last day of each fiscal quarter ending thereafter to be greater than 4.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_leverage": {
+          "value": 4.880952380952381,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            }
+          ]
+        },
+        "june_2025_extra_debt_capacity": {
+          "value": 50,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "september_2025_external_paydown_needed": {
+          "value": 160,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(iii) the last day of each of the third and fourth consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 4.50 to 1.00"
+            }
+          ]
+        },
+        "june_2025_maximum_ebitda_decline": {
+          "value": 10,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "june_2025_minimum_qualifying_cash": {
+          "value": 100,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "cash_unknown_branch_compliance_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Net Income plus"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "without duplication and to the extent deducted from revenues"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (c) to the extent included in Consolidated Net Income"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "any cash payments made during such period"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated Funded Indebtedness of the Borrower and its Subsidiaries"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "minus (ii) the aggregate Unrestricted Cash"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "in an amount not to exceed $150,000,000"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "Consolidated EBITDA for the most recent period of four fiscal quarters"
+            },
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "(ii) the last day of the first fiscal quarter ending on or after the Acquisition Closing Date and the last day of each of the first and second consecutive full fiscal quarters ending after the Acquisition Closing Date to be greater than 5.00 to 1.00"
+            }
+          ]
+        },
+        "closing_amendments_effective_on_signing_alone": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "credit-arcosa-amendment",
+              "quote": "shall become effective on the date on which the conditions precedent set forth in Section 4.03 of the Amended Credit Agreement are satisfied or waived"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "All financial ledger values and the October 15 hypothetical close are supplied synthetic assumptions, not Arcosa actual data.",
+        "Selected rendered redline clauses require original styled-document and credit/legal expert review before release.",
+        "Only mathematical leverage-condition boundaries are tested; no actual breach, permitted financing, or complete covenant opinion is established.",
+        "Original-publication timing and styled operative-document verification remain pending; the net-ratio and full-quarter interpretation is stipulated in this exercise."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "The derived leverage denominator includes the earlier noncash item's cash settlement; an otherwise valid bridge must cite that deduction rule for this field.",
+    "expected_failures": {
+      "june_2025_leverage": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "question_id": "q164",
+  "title": "Maintain a portfolio order state through cancellation races and corrections",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconstruct inventory and outstanding commitments from the event log. Assess overfill risk without treating a cancel request as confirmation, and choose the permitted next action.",
+  "inputs": {
+    "target_shares": 100,
+    "starting_inventory": 0,
+    "orders": [
+      {
+        "id": "O1",
+        "side": "buy",
+        "quantity": 100
+      },
+      {
+        "id": "O2",
+        "side": "buy",
+        "quantity": 60
+      }
+    ],
+    "events": [
+      {
+        "event": "fill",
+        "execution_id": "F1",
+        "order": "O1",
+        "shares": 40
+      },
+      {
+        "event": "fill_duplicate",
+        "execution_id": "F1",
+        "order": "O1",
+        "shares": 40
+      },
+      {
+        "event": "cancel_requested",
+        "order": "O1"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "q164_event_log",
+      "text": "Original synthetic evaluation packet. Target inventory100 shares, starting inventory zero. Buy order O1 is for100. Execution F1 fills40 shares and appears twice in transport; both messages carry the same execution ID. A cancel request for O1 is pending. A second buy order O2 for60 is already live and unfilled."
+    },
+    {
+      "id": "q164_order_rules",
+      "text": "Original synthetic evaluation packet. Deduplicate fills by execution ID. Cancel requests do not remove live quantity until authoritative acknowledgement. Worst-case inventory equals confirmed inventory plus all remaining live buy orders. Acknowledgements may later disclose fills effective before cancellation. Historical recommendations are not executions; subsequent packets explicitly report actual desk actions. This desk serializes cancellation requests: while O1 cancellation is unresolved, WAIT and send no O2 cancellation or replacement. Once O1 is resolved, if live O2 would exceed the target and no O2 cancel request is pending, use CANCEL_O2_WAIT to request cancellation of its remainder. While O2 cancellation is pending, WAIT; do not send duplicate cancellations. Only after both orders are resolved may SUBMIT place a newly sized and funded residual order. WAIT sends no new request; CANCEL_O2_WAIT sends one cancel request and waits; SUBMIT sends the specified new order."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "confirmed_inventory",
+      "type": "number",
+      "unit": "shares",
+      "description": "Confirmed inventory.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "live_buy_quantity",
+      "type": "number",
+      "unit": "shares",
+      "description": "Live buy quantity.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "worst_case_inventory",
+      "type": "number",
+      "unit": "shares",
+      "description": "Worst case inventory.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "potential_overfill",
+      "type": "number",
+      "unit": "shares",
+      "description": "Potential overfill.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "next_action",
+      "type": "string",
+      "unit": "action code",
+      "description": "Next action."
+    }
+  ]
+}

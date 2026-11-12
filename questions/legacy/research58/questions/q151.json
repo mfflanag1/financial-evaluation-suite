@@ -1,0 +1,91 @@
+{
+  "question_id": "q151",
+  "title": "Pipeline rights and emergency nomination",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Recommend least-cost nominations that meet demand from the initial firm-rights packet. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "caps": [
+      25,
+      30,
+      20
+    ],
+    "loss": [
+      0.02,
+      0,
+      0
+    ],
+    "supply_prices": [
+      1.9,
+      3,
+      5
+    ],
+    "transport": [
+      0.5,
+      0.2,
+      0
+    ],
+    "demand": 45,
+    "cash_budget": 250,
+    "objective": "meet_demand"
+  },
+  "sources": [
+    {
+      "id": "q151_facts",
+      "text": "Synthetic packet: Firm route caps are25,30,20. An informal claim of additional interruptible A capacity is not a confirmed delivery right."
+    },
+    {
+      "id": "q151_terms",
+      "text": "Synthetic governing terms: Only three routes exist: upstream A, upstream B, and direct hub supply. Each gross nomination is a multiple of5, bounded by current caps. A loses2% in transit; supplied route caps include both supply and firm transportation rights. No inventory, spot resale or interruptible rights are available. meet_demand requires full net delivery then minimizes cost and lexicographic nominations. min_shortfall first minimizes unserved volume within the cash budget, then minimizes cost and lexicographic nominations."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "nominations",
+      "type": "number_array",
+      "unit": "gas units",
+      "description": "Gross route[A,B,hub] nominations.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "delivered_by_route",
+      "type": "number_array",
+      "unit": "gas units",
+      "description": "Net delivered units after route-specific losses.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_cost",
+      "type": "number",
+      "unit": "USD",
+      "description": "Supply plus route transportation cash cost.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "unserved_volume",
+      "type": "number",
+      "unit": "gas units",
+      "description": "Demand less net delivery, floored at zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_budget_satisfied",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether chosen nominations fit the current cash budget."
+    },
+    {
+      "name": "demand_fully_met",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether every required unit is delivered."
+    }
+  ]
+}

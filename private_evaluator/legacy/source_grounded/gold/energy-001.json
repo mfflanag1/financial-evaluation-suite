@@ -1,0 +1,602 @@
+{
+  "case_id": "energy-001",
+  "reference_solution": {
+    "stock_dates": "June 4, June 11, June 18, 2021; release dates June 17 and June 24.",
+    "week_one": "Working change 2427-2411=16; classification contribution -51; physical flow 16-(-51)=67 Bcf. Pacific 236-276=-40; physical flow -40-(-51)=11 Bcf.",
+    "window": "June 18 working stocks 2482; June 11–18 flow 55. Two-week stock change 71; two-week physical flow 67+55=122; 122/14=8.714285714285714285714285714 Bcf/day. Residual stock change minus physical flow = -51 Bcf, the single reclassification.",
+    "classification": "No-reclassification June 18 working inventory = 2482+51=2533 Bcf. The reclassification alone changes working plus base storage by zero, not by -51.",
+    "scenario": "Synthetic terminal working stock = 2482+122-7*14=2506. Maximum extra demand = (2482+122-2500)/14=7.428571428571428571428571429 Bcf/day. This is a conditional accounting threshold, not a forecast."
+  },
+  "fields": [
+    {
+      "id": "june11_working_stock_change",
+      "expected": 16.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The net injections into storage totaled 16 Bcf for the week ending June 11"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "june11_implied_flow",
+      "expected": 67.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "june11_pacific_implied_flow",
+      "expected": 11.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Pacific | 236 C | 276 | -40"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "two_week_working_stock_change",
+      "expected": 71.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Working natural gas stocks totaled 2,482 Bcf"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "two_week_implied_flow",
+      "expected": 122.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The net injections into storage totaled 55 Bcf for the week ending June 18"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "two_week_average_implied_flow",
+      "expected": 8.714285714285714,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The net injections into storage totaled 55 Bcf for the week ending June 18"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "no_reclassification_june18_working_stock",
+      "expected": 2533.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Working natural gas stocks totaled 2,482 Bcf"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "reclassification_effect_on_total_gas",
+      "expected": 0.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "the reclassification is a non-flow related change that has no effect on the total natural gas in storage (base gas plus working gas)"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scenario_terminal_working_stock",
+      "expected": 2506.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The net injections into storage totaled 55 Bcf for the week ending June 18"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Working natural gas stocks totaled 2,482 Bcf"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scenario_max_extra_demand",
+      "expected": 7.428571428571429,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Total | 2,427 C | 2,411 | 16"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The implied flow for the week is an increase of 67 Bcf to working gas stocks."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "The net injections into storage totaled 55 Bcf for the week ending June 18"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Working natural gas stocks totaled 2,482 Bcf"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Total | 2,482 | 2,427 C | 55"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "stock_flow_interpretation",
+      "expected": "working_stock_change_includes_nonflow_reclassification",
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "Reclassifications from working gas to base gas resulted in decreased working gas stocks of 51 Bcf in the Pacific region for the week ending June 11, 2021."
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210617",
+            "anchors": [
+              "This week’s working gas total reflects reclassifications from working to base gas that reduced working gas inventories by 51 Bcf in the Pacific region, for the week ending June 11"
+            ]
+          },
+          {
+            "source_id": "energy-gas-20210624",
+            "anchors": [
+              "the reclassification is a non-flow related change that has no effect on the total natural gas in storage (base gas plus working gas)"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Retrospective official archive captures do not eliminate model-weight hindsight or prove the exact contemporaneous byte state. No historical trading edge or predictive score is claimed.",
+    "Regional totals and reclassification amounts are published rounded Bcf. Implied physical flow is a storage-accounting inference, not an independent measurement of every pipeline movement.",
+    "The 14-day scenario is synthetic; fixed baseline flows and unconstrained one-for-one demand effects omit price response, deliverability and capacity constraints.",
+    "Independent calculation review is recorded in docs/expansion-review-record.md; commodity-domain expert acceptance remains pending."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "macro-001",
+  "case_group": "us-payrolls-q1-2024-release-vintages",
+  "lane": "macro_rates",
+  "status": "prototype",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2024-04-05T23:59:59Z",
+  "prompt": "You are checking a macro desk's payroll-release ledger, as of 2024-04-05 23:59:59 UTC. This is historical reconstruction, not forecasting or a trading recommendation. Use only the supplied narrative and summary-table excerpts of the official February 2, March 8, and April 5, 2024 BLS Employment Situation releases. The target statistic throughout is the seasonally adjusted monthly change in total nonfarm payroll employment from the establishment survey, not the household survey employment change or a payroll level.\n\nReconstruct the two ledger states: A, known by the end of March 8; B, known by the end of April 5. All source excerpts are visible together in this prototype: you must respect the requested vintage for each output, but this is not a hidden sequential or locked-answer experiment. Ignore later releases and today's revised time series.\n\nReturn all 12 declared outputs as JSON in the standard case response format. Numeric values must be in THOUSANDS OF JOBS: a change of 123,000 jobs must be returned as 123. Keep signed revision values and exact integer thousands; no percent, annualization, or averaging. Quote the source evidence for every field. For calculations, quote passages containing each required input; a source headline alone cannot substantiate a sum that also uses a revision paragraph.\n\nCompute (1) January's first print, (2) January at the March 8 vintage, (3) February's first print, (4) the March 8 net revision to the prior two months, (5–7) January, February and March at the April 5 vintage, and (8) the April 5 net revision to the prior two months. Then calculate (9) the January–March sum using each month's own first print, (10) the January–March sum using only the April 5 vintage, and (11) the difference of (10) minus (9). Finally, (12) compute the increase in the desk's tracked Q1 cumulative change on April 5, relative to its previously tracked January+February cumulative change at the March 8 vintage. Do not assume any March change before the March observation was released; (12) is explicitly the change in tracked coverage plus revisions, not a fixed-period surprise against a forecast.\n\nThe two prior-month revision windows differ: identify their months from each release before calculating. No economist consensus estimate, market price or position is supplied; do not label any result an economic surprise, forecast skill, or investment profit. Report limitations separately.",
+  "source_ids": [
+    "bls-20240202",
+    "bls-20240308",
+    "bls-20240405"
+  ],
+  "output_fields": [
+    {
+      "id": "jan_first_print",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "January 2024 payroll change first published on February 2.",
+      "evidence_required": true
+    },
+    {
+      "id": "jan_asof_mar08",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "January payroll change in the March 8 release vintage.",
+      "evidence_required": true
+    },
+    {
+      "id": "feb_first_print",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "February 2024 payroll change first published on March 8.",
+      "evidence_required": true
+    },
+    {
+      "id": "mar08_prior_two_month_revision",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "Signed net revision to December and January changes announced March 8, relative to their immediately preceding published estimates.",
+      "evidence_required": true
+    },
+    {
+      "id": "jan_asof_apr05",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "January payroll change available by the April 5 end-of-day cutoff.",
+      "evidence_required": true
+    },
+    {
+      "id": "feb_asof_apr05",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "February payroll change available by the April 5 end-of-day cutoff.",
+      "evidence_required": true
+    },
+    {
+      "id": "mar_first_print",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "March 2024 payroll change first published April 5.",
+      "evidence_required": true
+    },
+    {
+      "id": "apr05_prior_two_month_revision",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "Signed net revision to January and February changes announced April 5, relative to the March 8 vintage.",
+      "evidence_required": true
+    },
+    {
+      "id": "q1_first_print_sum",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "Sum of each January–March month's own first-published change, deliberately mixing publication vintages; this is a comparison baseline, not a single-vintage quarter estimate.",
+      "evidence_required": true
+    },
+    {
+      "id": "q1_asof_apr05_sum",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "January plus February plus March changes using the single April 5 publication vintage.",
+      "evidence_required": true
+    },
+    {
+      "id": "q1_cumulative_revision_vs_first_prints",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "April 5 vintage January–March sum minus the sum of the three first prints. Exclude December because it lies outside Q1.",
+      "evidence_required": true
+    },
+    {
+      "id": "apr05_increment_to_tracked_q1_change",
+      "type": "number",
+      "unit": "thousands_of_jobs",
+      "description": "Change in the desk's tracked Q1 cumulative payroll change when the April 5 release arrives: (Jan+Feb+Mar at April 5 vintage) minus (Jan+Feb at March 8 vintage). Cite both the March 8 baseline inputs and April 5 current inputs. Not an economic surprise or market P&L.",
+      "evidence_required": true
+    }
+  ]
+}

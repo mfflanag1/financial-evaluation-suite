@@ -1,0 +1,36 @@
+[
+  {
+    "id": "energy-gas-20210617",
+    "url": "https://www.eia.gov/naturalgas/weekly/archivenew_ngwu/2021/06_17/",
+    "title": "Natural Gas Weekly Update \u2014 2021-06-17",
+    "publisher": "U.S. Energy Information Administration",
+    "published_at": "2021-06-17T23:59:59-04:00",
+    "publication_precision": "day",
+    "availability_basis": "The official archived page explicitly states the release date. Day-only availability uses 23:59:59 America/New_York (UTC-04:00 on this date), not an asserted exact first-public-access time.",
+    "text_sha256": "c17ac900c657c996d1fd2a29dbe3188f3480347f0e028fb80271692384d0e026",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_html_with_selected_text.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "energy-gas-20210624",
+    "url": "https://www.eia.gov/naturalgas/weekly/archivenew_ngwu/2021/06_24/",
+    "title": "Natural Gas Weekly Update \u2014 2021-06-24",
+    "publisher": "U.S. Energy Information Administration",
+    "published_at": "2021-06-24T23:59:59-04:00",
+    "publication_precision": "day",
+    "availability_basis": "The official archived page explicitly states the release date. Day-only availability uses 23:59:59 America/New_York (UTC-04:00 on this date), not an asserted exact first-public-access time.",
+    "text_sha256": "8bcf369967e8180eb272109982d496772f26f369ddbf892e1c2fdd0c5deb9824",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_html_with_selected_text.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "question_id": "q133",
+  "title": "Allocate with jointly censored event returns instead of a survivor-only record",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "A strategy appears attractive in a performance extract that omits two event months. Determine what the complete economic record can and cannot establish, then choose a robust allocation against the comparator. Respect the jointly constrained missing observations, fixed ten-month denominator and recurring fee.",
+  "inputs": {
+    "observed_monthly_returns": [
+      0.02,
+      0.01,
+      -0.01,
+      0.03,
+      0.02,
+      0.01,
+      0.02,
+      0.02
+    ],
+    "missing_month_ids": [
+      9,
+      10
+    ],
+    "permitted_joint_completions": [
+      [
+        -0.2,
+        0.04
+      ],
+      [
+        -0.08,
+        -0.04
+      ],
+      [
+        0.02,
+        -0.1
+      ]
+    ],
+    "candidate_monthly_fee": 0.0015,
+    "comparator_monthly_net_return": 0.0007,
+    "total_months": 10,
+    "candidate_weight_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  "sources": [
+    {
+      "id": "q133_data_audit",
+      "text": "Original synthetic evaluation packet. The two absent observations are known economically real months, not zero-return holidays. A failed terminal-price feed affects an event-linked pair. Only the three JOINT completions listed are admissible; independently mixing their entries is not permitted. No probabilities over completions are available."
+    },
+    {
+      "id": "q133_mandate",
+      "text": "Original synthetic evaluation packet. Compare ten-month arithmetic mean net returns, not compounded wealth or the surviving-month mean. Candidate fee accrues in all ten months. Comparator net return is fixed as listed and incurs no further fee. Robust allocation maximizes the minimum admissible mean over the stated weight grid; no estimation beyond the packet."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "complete_case_gross_mean",
+      "type": "number",
+      "unit": "decimal/month",
+      "description": "Arithmetic mean of the eight observed months only.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_mean_by_completion",
+      "type": "number_array",
+      "unit": "decimal/month",
+      "description": "All ten months with candidate fee deducted, in completion-table order.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "candidate_net_mean_bounds",
+      "type": "number_array",
+      "unit": "decimal/month",
+      "description": "[minimum,maximum] across admissible joint completions.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "dominance_status",
+      "type": "string",
+      "unit": "label",
+      "description": "Exactly identified_better, identified_worse, or not_identified."
+    },
+    {
+      "name": "robust_candidate_weight",
+      "type": "number",
+      "unit": "fraction",
+      "description": "Grid weight maximizing worst admissible portfolio arithmetic mean; ties choose lower candidate weight.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "robust_worst_net_mean",
+      "type": "number",
+      "unit": "decimal/month",
+      "description": "Worst mean of the selected candidate/comparator mix.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

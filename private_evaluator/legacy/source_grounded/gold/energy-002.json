@@ -1,0 +1,1353 @@
+{
+  "case_id": "energy-002",
+  "reference_solution": {
+    "crude_balance": "Net crude imports = 6618-4022=2596 thousand b/d. Adjustment = 15897+543-13100-2596-384=360 thousand b/d. Omitting transfers would falsely yield 744.",
+    "products": "Products supplied = 15897+9041-4272-(-770)+240-384=21292 thousand b/d. Crude/product transfers are +384 and -384, net zero across the combined boundary.",
+    "stocks": "Rounded daily changes imply (543-770)*7/1000=-1.589 million barrels. CSV total stocks imply 1578.731-1580.322=-1.591 million barrels. The signed flow-minus-stock gap is +0.002 million = +2 thousand barrels. Independent rounding makes this consistent with the release's stated precision; it does not demonstrate lost barrels.",
+    "scenario": "Synthetic crude build = 543-400=143 thousand b/d. Fixed SPR build=84, leaving commercial build=143-84=59 thousand b/d, or 59*7/1000=0.413 million barrels over seven days. At import reduction 543-84=459 thousand b/d, commercial stock change reaches zero.",
+    "residual_scope": "The crude adjustment is a balancing item, not identified extra production. The printed footnote's reference to transfers does not warrant omitting line 4: the displayed balance requires both the explicit transfer line and adjustment line. The case states the accounting identity explicitly."
+  },
+  "fields": [
+    {
+      "id": "net_crude_imports",
+      "expected": 2596.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (8) Imports | 6,618"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(8) Imports ............................................. 6,618"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (12) Exports | 4,022"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(12) Exports ........................................... 4,022"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "reconstructed_crude_adjustment",
+      "expected": 360.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (1) Domestic Production | 13,100"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(1) Domestic Production6 ...................... 13,100"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(4) Transfers to Crude Oil Supply ......... 384"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(17) Crude Oil Input to Refineries ........... 15,897"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (8) Imports | 6,618"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(8) Imports ............................................. 6,618"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (12) Exports | 4,022"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(12) Exports ........................................... 4,022"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "reconstructed_products_supplied",
+      "expected": 21292.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(17) Crude Oil Input to Refineries ........... 15,897"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (18) Production | 9,041"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(18) Production ......................................... 9,041"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (24) Net Imports | -4,272"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(24) Net Imports12 .................................... -4,272"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(27) Stock Change (+/build; -/draw)3,13 -770"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (28) Adjustment | 240"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(28) Adjustment14 .................................... 240"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(29) Transfers to Crude Oil Supply15 ..... -384"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "net_transfer_across_crude_and_products",
+      "expected": 0.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(4) Transfers to Crude Oil Supply ......... 384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (29) Transfers to Crude Oil Supply | -384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(29) Transfers to Crude Oil Supply15 ..... -384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4)."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "weekly_stock_change_from_daily_rates",
+      "expected": -1.589,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(27) Stock Change (+/build; -/draw)3,13 -770"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "weekly_stock_change_from_levels",
+      "expected": -1.591,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table4-20240403",
+            "anchors": [
+              "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "flow_minus_stock_rounding_gap",
+      "expected": 2.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Other Supply | (27) Stock Change (+/build; -/draw) | -770"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(27) Stock Change (+/build; -/draw)3,13 -770"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table4-20240403",
+            "anchors": [
+              "Total Stocks (Including SPR) | 1,578.731 | 1,580.322"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "adjustment_interpretation",
+      "expected": "balancing_item_not_identified_production",
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "Formerly known as Unaccounted-for Crude Oil, this is a balancing item."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "rounding_gap_interpretation",
+      "expected": "rounding_consistent_not_evidence_of_physical_loss",
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scenario_commercial_stock_change",
+      "expected": 59.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (15) SPR Stock Change | 84"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(15) SPR Stock Change ......................... 84"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (1) Domestic Production | 13,100"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(1) Domestic Production6 ...................... 13,100"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(4) Transfers to Crude Oil Supply ......... 384"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (16) Adjustment | 360"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(16) Adjustment9 ...................................... 360"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(17) Crude Oil Input to Refineries ........... 15,897"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (8) Imports | 6,618"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(8) Imports ............................................. 6,618"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (12) Exports | 4,022"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(12) Exports ........................................... 4,022"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scenario_weekly_commercial_build",
+      "expected": 0.413,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (15) SPR Stock Change | 84"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(15) SPR Stock Change ......................... 84"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (1) Domestic Production | 13,100"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(1) Domestic Production6 ...................... 13,100"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(4) Transfers to Crude Oil Supply ......... 384"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (16) Adjustment | 360"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(16) Adjustment9 ...................................... 360"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(17) Crude Oil Input to Refineries ........... 15,897"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (8) Imports | 6,618"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(8) Imports ............................................. 6,618"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (12) Exports | 4,022"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(12) Exports ........................................... 4,022"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "maximum_import_reduction_without_commercial_draw",
+      "expected": 459.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (15) SPR Stock Change | 84"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(15) SPR Stock Change ......................... 84"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (1) Domestic Production | 13,100"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(1) Domestic Production6 ...................... 13,100"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (4) Transfers to Crude Oil Supply | 384"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(4) Transfers to Crude Oil Supply ......... 384"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (16) Adjustment | 360"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(16) Adjustment9 ...................................... 360"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (17) Crude Oil Input to Refineries | 15,897"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(17) Crude Oil Input to Refineries ........... 15,897"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (8) Imports | 6,618"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(8) Imports ............................................. 6,618"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (14) Commercial Stock Change | 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(14) Commercial Stock Change ............. 459"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (13) Stock Change (+/build; -/draw) | 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(13) Stock Change (+/build; -/draw) ........ 543"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (7) Net Imports (Including SPR) | 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(7) Net Imports (Including SPR) ............ 2,596"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-table1-20240403",
+            "anchors": [
+              "Crude Oil Supply | (12) Exports | 4,022"
+            ]
+          },
+          {
+            "source_id": "energy-petroleum-notes-20240403",
+            "anchors": [
+              "(12) Exports ........................................... 4,022"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Retrospective dated archive captures do not eliminate model-weight hindsight or prove the exact first-published bytes. No predictive performance is claimed.",
+    "Daily rates are rounded independently; stocks and some changes have different precision. The small residual cannot identify an economic cause or a physical loss.",
+    "Products supplied is an accounting disposition measure and is not by itself an independently measured final end-user demand series.",
+    "The import-reduction scenario freezes behavior by assumption and omits price, operational and strategic-reserve policy responses. It is not a supply forecast.",
+    "Independent calculation review is recorded in docs/expansion-review-record.md; commodity-domain expert acceptance remains pending."
+  ]
+}

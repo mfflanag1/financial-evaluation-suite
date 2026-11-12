@@ -1,0 +1,120 @@
+{
+  "question_id": "q127",
+  "title": "Fund a delta-limited execution package without spending short proceeds",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Choose the integer long/short lot plan maximizing expected net P&L. Both lot grids include zero. Enforce the cash, locate and absolute-delta constraints. Ties use lower initial cash, then fewer long lots, then fewer short lots. All costs are paid initially and there are no other cash sources or positions. Report the plan and its reconciled economics.",
+  "inputs": {
+    "cash": 4500,
+    "long_lot_shares": 10,
+    "short_lot_shares": 5,
+    "mid_prices": [
+      100,
+      40
+    ],
+    "alpha_per_lot": [
+      70,
+      45
+    ],
+    "spread_per_lot": [
+      10,
+      5
+    ],
+    "impact_coefficients": [
+      2,
+      1
+    ],
+    "short_initial_margin_per_lot": 60,
+    "short_borrow_per_lot": 10,
+    "ticket_fee": 6,
+    "lot_grids": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "short_locate_shares": 20,
+    "delta_per_lot": [
+      10,
+      -10
+    ],
+    "absolute_delta_limit": 10
+  },
+  "sources": [
+    {
+      "id": "q127_execution",
+      "text": "Original synthetic evaluation packet. Each filled lot incurs its quoted spread and quadratic impact; each nonzero instrument order incurs one ticket fee. Expected alpha is measured from midprice, so subtract spread, impact, borrow and tickets once."
+    },
+    {
+      "id": "q127_funding",
+      "text": "Original synthetic evaluation packet. Long midprice principal, all frictions and short initial margin consume initial cash. Short sale proceeds are segregated and cannot finance purchases. Borrow fees are paid initially. Locate limits and the signed delta limit bind independently."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "lots",
+      "type": "number_array",
+      "unit": "lots",
+      "description": "[long lots, short lots].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "expected_net_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Expected alpha less all stated frictions.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "initial_cash_used",
+      "type": "number",
+      "unit": "USD",
+      "description": "Gross initial cash required; short sale proceeds are segregated.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "residual_delta",
+      "type": "number",
+      "unit": "share-equivalent",
+      "description": "Signed long-minus-short delta.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "feasible_plan_count",
+      "type": "number",
+      "unit": "plans",
+      "description": "Number of funded, located, delta-compliant integer plans, including zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "remaining_free_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Initial cash less required cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

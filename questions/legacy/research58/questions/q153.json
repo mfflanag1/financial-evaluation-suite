@@ -1,0 +1,86 @@
+{
+  "question_id": "q153",
+  "title": "Indexed-bond settlement and a funding boundary",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconcile the real quote to settlement cash and calculate a worst-scenario funded entry boundary. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "lag_indices": [
+      110,
+      112
+    ],
+    "weight": 0.5,
+    "base_index": 100,
+    "clean_real": 98,
+    "real_accrued": 0.5,
+    "terminal_ratios": [
+      0.95,
+      1.05
+    ],
+    "coupon": 0.02,
+    "funding_rate": 0.04,
+    "days": 180,
+    "facility": 120
+  },
+  "sources": [
+    {
+      "id": "q153_facts",
+      "text": "Synthetic packet: The original settlement record identifies the lagged pair110 and112, not the more recent current-month index114. Terminal index ratios are explicit stress assumptions."
+    },
+    {
+      "id": "q153_terms",
+      "text": "Synthetic governing terms: The two supplied index levels are the only permissible lagged settlement observations; weight applies to the second level. No current-month or future release may replace them. All price/cash outputs are per100 original principal. Annual coupon rate is not relevant here: coupon is the stated full payment fraction due at maturity. Principal has a par deflation floor; coupon does not. Finance the nominal dirty invoice at simple ACT/360 over days; there are no intervening cash flows."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "settlement_index_ratio",
+      "type": "number",
+      "unit": "ratio",
+      "description": "Interpolated lagged reference index divided by base index.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "nominal_dirty_invoice",
+      "type": "number",
+      "unit": "USD per100 original principal",
+      "description": "Real clean price plus real accrued, multiplied by settlement index ratio.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "scenario_maturity_cash",
+      "type": "number_array",
+      "unit": "USD per100 original principal",
+      "description": "Floored principal plus unfloored indexed coupon for each terminal scenario.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "worst_financed_profit",
+      "type": "number",
+      "unit": "USD per100 original principal",
+      "description": "Minimum maturity cash less financed invoice.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "maximum_clean_real_entry",
+      "type": "number",
+      "unit": "real price per100",
+      "description": "Largest clean real entry simultaneously meeting zero worst financed loss and the facility limit.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "entry_fundable_and_nonloss",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether current quote meets both constraints."
+    }
+  ]
+}

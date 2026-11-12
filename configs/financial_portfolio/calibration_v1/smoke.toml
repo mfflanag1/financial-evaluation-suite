@@ -1,0 +1,53 @@
+# Endpoint placeholders must be bound in an evaluator-local copy before live use.
+model = "INSTRUCT_MODEL_ID"
+num_rollouts = 1
+max_concurrent = 2
+output_dir = "outputs/financial_portfolio/calibration_v1"
+dry_run = true
+
+[run]
+name = "smoke"
+dir = "smoke"
+
+[client]
+type = "eval"
+base_url = "https://endpoint.invalid/v1"
+api_key_var = "PORTFOLIO_MODEL_API_KEY"
+
+[sampling]
+temperature = 0.2
+max_tokens = 8192
+
+[select]
+shuffle = false
+limit = 4
+
+[env.taskset]
+id = "financial-portfolio"
+split = "train"
+seed_start = 0
+num_tasks = 4
+
+[env.agent]
+max_turns = 32
+max_output_tokens = 65536
+max_total_tokens = 262144
+
+[env.agent.harness]
+id = "bash"
+dialect = "chat_completions"
+edit = true
+search = false
+compaction = "None"
+forward_env = []
+
+[env.agent.runtime]
+type = "docker"
+image = "python:3.12-slim"
+allow = []
+
+[env.agent.scoring]
+mode = "isolated"
+
+[env.agent.scoring.retries]
+max_retries = 0

@@ -1,0 +1,70 @@
+{
+  "question_id": "q141",
+  "title": "Customer continuity, recurring-value corrections and prospective churn",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Prepare subscription retention metrics from the initial account-ID ledger. Treat IDs as economic customers unless a later authoritative mapping corrects them. ARR means annualized contractual recurring value, not recognized quarterly revenue. NRR permits expansion; gross retention caps each opening customer at its opening ARR. New-customer ARR is excluded from both retention numerators. No negative ARR is allowed. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "opening_arr": {
+      "A": 100,
+      "B": 80,
+      "C": 60,
+      "D": 40
+    },
+    "closing_subscription_values": {
+      "A": 110,
+      "B": 90,
+      "C": 0,
+      "D": 50,
+      "E": 60
+    },
+    "unit": "USD thousand annual run rate"
+  },
+  "sources": [
+    {
+      "id": "q141_t1_1",
+      "text": "Synthetic packet. The opening and closing ledgers initially use account identifiers as customer identities. The closing values are provisionally classified as recurring contracts."
+    },
+    {
+      "id": "q141_t1_2",
+      "text": "Synthetic packet. The measurement policy computes NRR and capped gross retention on the same opening cohort. A closing account with no opening identity is provisionally new, not a retained customer."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ending_arr",
+      "type": "number",
+      "unit": "USD thousand",
+      "description": "Total eligible recurring ARR.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "existing_customer_nrr_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Closing recurring ARR of opening customers / opening ARR; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "gross_retention_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Sum min(opening, closing) by opening economic customer / opening ARR.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "new_customer_arr",
+      "type": "number",
+      "unit": "USD thousand",
+      "description": "ARR of genuinely new economic customers.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

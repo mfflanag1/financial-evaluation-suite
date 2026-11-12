@@ -1,0 +1,90 @@
+{
+  "question_id": "q125",
+  "title": "Currency and spread attribution around an issuer event",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Audit a claim that issuer news produced a profitable USD position. Build the specified six-way accounting bridge and distinguish the model approximation from causal evidence. Quote changes are decimals, not percentage points; clean values and coupon are EUR millions and funding/loss limit USD millions. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "security": "Senior-EUR-6Y",
+    "opening_value": 95,
+    "closing_value": 97,
+    "duration": 5.2,
+    "convexity": 38,
+    "rate_change": -0.002,
+    "spread_change": 0.001,
+    "opening_fx": 1.08,
+    "closing_fx": 1.04,
+    "coupon": 1,
+    "funding_usd": 0.25,
+    "loss_limit": 0.8
+  },
+  "sources": [
+    {
+      "id": "q125_facts",
+      "text": "Synthetic packet: The synthetic matched security record gives start/end values, modified duration and convexity. A benchmark move and spread move are measured over exactly the same interval; the accompanying news report supplies no counterfactual."
+    },
+    {
+      "id": "q125_terms",
+      "text": "Synthetic governing terms: The position and risk sheet both identify Senior-EUR-6Y. Its modified duration and convexity apply to the opening clean EUR value; decimal yield change equals benchmark-rate change plus spread change. Approximate clean change by first-order duration and second-order convexity, assigning the unexplained amount to residual. Translate all local changes and coupon at closing USD-per-EUR FX; opening-exposure FX is a separate bucket. No cash-flow or financing FX bucket is added."
+    },
+    {
+      "id": "q125_excluded",
+      "text": "Synthetic out-of-scope packet: A junior USD note of the same issuer has modified duration7.5. It is a different security and currency and cannot supply the risk coefficient for the stated EUR senior position."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "aligned_security",
+      "type": "string",
+      "unit": "identifier",
+      "description": "Exact eligible security identifier from the position and risk sheet."
+    },
+    {
+      "name": "model_local_price_change",
+      "type": "number",
+      "unit": "EUR millions",
+      "description": "Duration plus convexity approximation to clean local value change.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "base_currency_attribution",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "[rates, spread, convexity, residual clean-price change, opening-exposure FX, coupon less USD funding] in that order.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_base_pnl",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Total USD P&L including coupon and funding.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_base_return",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Net USD P&L divided by opening USD clean value; no external flows.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "news_causality_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether this accounting decomposition identifies a causal issuer-news effect."
+    },
+    {
+      "name": "loss_limit_breached",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether USD loss strictly exceeds loss_limit."
+    }
+  ]
+}

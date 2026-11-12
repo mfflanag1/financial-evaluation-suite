@@ -1,0 +1,92 @@
+{
+  "question_id": "q134",
+  "title": "Coordinate collateral substitution with a maturing liquidity bridge",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Find a collateral and repo plan that survives the announced haircut change and every cash deadline. Inventories are indivisible units; all values are millions. Account1 must receive its minimum required A units at each date; choose account2 collateral and repo pledges jointly. Report initial and stressed collateral, financing and the cash ladder.",
+  "inputs": {
+    "inventory_units": {
+      "A": 8,
+      "B": 6
+    },
+    "free_cash": 15,
+    "cash_payment_T1": 18,
+    "cash_receipt_T2": 5,
+    "account1_requirement": 54,
+    "account2_requirement": 32,
+    "A_value_T0": 9,
+    "A_value_T1": 7,
+    "B_value_both": 8,
+    "repo_cash_per_unit": {
+      "A": 9,
+      "B": 8
+    },
+    "repo_repayment_per_unit": {
+      "A": 9.18,
+      "B": 8.08
+    }
+  },
+  "sources": [
+    {
+      "id": "q134_collateral_terms",
+      "text": "Original synthetic evaluation packet. Account1 accepts only A and requires value54. At T0 A is credited9 per unit; at T1 a preannounced haircut change lowers it to7, requiring a top-up. Account2 accepts A or B and requires32 at both times. Credit values per unit are given. All posted units remain encumbered through T2; no reuse or cross-account netting."
+    },
+    {
+      "id": "q134_repo_and_timing",
+      "text": "Original synthetic evaluation packet. Repo pledges settle at T0, mature after the receipt at T2, and must use distinct inventory. Their cash and repayment per unit are fixed through maturity. Account2 allocation is unchanged from T0 to T1; account1 posts the minimum units each time. Fund the T1 cash payment without future receipts. Minimize repo interest, then repo-unit count, then account2 collateral units, then lexicographic[a2,b2,repoA,repoB]."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "t0_collateral_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "[account1 A,account2 A,account2 B].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "t1_collateral_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "Same order after A haircut worsens.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "repo_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "[A,B] units pledged to a separate repo lender.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cash_balances",
+      "type": "number_array",
+      "unit": "USD millions",
+      "description": "[after T0 repo,after T1 payment,after T2 receipt and repo repayment].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "financing_cost",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Repo repayment less repo principal.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "remaining_unencumbered_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "[A,B] after stressed collateral and repo pledges.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

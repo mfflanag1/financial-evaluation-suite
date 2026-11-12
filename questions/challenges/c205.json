@@ -1,0 +1,361 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "i_states",
+            "title": "Current joint state distribution"
+          },
+          {
+            "id": "i_payoffs",
+            "title": "Mutually exclusive investment choices"
+          },
+          {
+            "id": "i_tests",
+            "title": "Available correlated observations"
+          },
+          {
+            "id": "i_budget",
+            "title": "Sequential information mandate"
+          },
+          {
+            "id": "i_old",
+            "title": "Archived independence approximation"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "expected_query_cost": "<typed value>",
+            "first_query": "<typed value>",
+            "information_value": "<typed value>",
+            "no_information_value": "<typed value>",
+            "optimal_net_value": "<typed value>",
+            "query_again_after": "<typed value>",
+            "second_positive_probability": "<typed value>",
+            "terminal_actions": "<typed value>"
+          },
+          "evidence": {
+            "expected_query_cost": [
+              "<viewed supporting document ID>"
+            ],
+            "first_query": [
+              "<viewed supporting document ID>"
+            ],
+            "information_value": [
+              "<viewed supporting document ID>"
+            ],
+            "no_information_value": [
+              "<viewed supporting document ID>"
+            ],
+            "optimal_net_value": [
+              "<viewed supporting document ID>"
+            ],
+            "query_again_after": [
+              "<viewed supporting document ID>"
+            ],
+            "second_positive_probability": [
+              "<viewed supporting document ID>"
+            ],
+            "terminal_actions": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c205",
+          "turn": 1
+        },
+        "inputs": {
+          "joint_state_probabilities": [
+            0.4,
+            0.1,
+            0.1,
+            0.4
+          ],
+          "project_payoffs": {
+            "X": [
+              30,
+              30,
+              -20,
+              -20
+            ],
+            "Y": [
+              30,
+              -20,
+              30,
+              -20
+            ],
+            "abstain": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "query_cost": 3,
+          "source_relationship": "These raw numeric inputs are identical in both evidence conditions and are repeated in source documents. Current contracts, timing/access rules, statistical protocols and event semantics are document-owned.",
+          "state_order": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "outputs": {
+          "expected_query_cost": {
+            "description": "Number, ex ante expected total query costs, cash units.",
+            "type": "number"
+          },
+          "first_query": {
+            "description": "String Q, R or none for the optimal first query or immediate action.",
+            "type": "string"
+          },
+          "information_value": {
+            "description": "Number, incremental value over the best no-query choice, cash units.",
+            "type": "number"
+          },
+          "no_information_value": {
+            "description": "Number, best expected payoff without querying, cash units.",
+            "type": "number"
+          },
+          "optimal_net_value": {
+            "description": "Number, optimal expected investment payoff minus query costs, cash units.",
+            "type": "number"
+          },
+          "query_again_after": {
+            "description": "Array of first-result strings positive or negative where the other query is made.",
+            "type": "array"
+          },
+          "second_positive_probability": {
+            "description": "Number, conditional probability of a positive second result on the queried branch.",
+            "type": "number"
+          },
+          "terminal_actions": {
+            "description": "Array of four action strings in the branch order defined by the mandate.",
+            "type": "array"
+          }
+        },
+        "prompt": "Choose an optimal observation and investment policy within the finite query budget. Determine where the second query is worth buying, account for correlation and all query costs, and report the policy and its expected value against the best no-information choice. Any globally optimal policy is acceptable.",
+        "question_id": "c205",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c205",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "i_states",
+            "release_stage": 1,
+            "text": "Exactly one state A, B, C or D occurs with probabilities [0.4,0.1,0.1,0.4]. These are joint probabilities, not products of marginals. They are the full prior information available for the decision. No other observations exist.",
+            "title": "Current joint state distribution"
+          },
+          {
+            "id": "i_payoffs",
+            "release_stage": 1,
+            "text": "Choose exactly one terminal action: X, Y, or abstain. State-order [A,B,C,D] cash payoffs of X are [30,30,-20,-20]; payoffs of Y are [30,-20,30,-20]; abstain pays 0 in every state. Projects cannot be combined, scaled, shorted, insured or switched after choosing. Maximize expected terminal payoff minus query costs with risk-neutral preferences.",
+            "title": "Mutually exclusive investment choices"
+          },
+          {
+            "id": "i_tests",
+            "release_stage": 1,
+            "text": "Query Q returns positive in A or B and negative in C or D. Query R returns positive in A or C and negative in B or D. Tests are error-free conditional on the state. Repeating a test repeats its original observation and provides no fresh random draw. Each query costs 3 cash units, paid regardless of its result. There are no other tests.",
+            "title": "Available correlated observations"
+          },
+          {
+            "id": "i_budget",
+            "release_stage": 1,
+            "text": "At most two total queries are allowed, but stopping early or making no query is allowed. The second query may depend on the first result; the terminal investment may depend on all observed results. Return one optimal deterministic policy. For terminal_actions use four slots in order [first positive/second positive, first positive/second negative, first negative/second positive, first negative/second negative]. If you stop after a first result, repeat that chosen final action in both second-result slots for that first result; do not infer that either first-result branch must stop or query. If no query is chosen, repeat the immediate action in all four slots. query_again_after lists the first-result labels where the other test is requested. second_positive_probability means conditional on entering a second-query branch; use zero if no second query is purchased. No query is already sunk. information_value is optimal net value minus the best no-query expected payoff.",
+            "title": "Sequential information mandate"
+          }
+        ],
+        "title": "Pay for correlated information only when useful",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "i_states",
+        "title": "Current joint state distribution"
+      },
+      {
+        "id": "i_payoffs",
+        "title": "Mutually exclusive investment choices"
+      },
+      {
+        "id": "i_tests",
+        "title": "Available correlated observations"
+      },
+      {
+        "id": "i_budget",
+        "title": "Sequential information mandate"
+      },
+      {
+        "id": "i_old",
+        "title": "Archived independence approximation"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "expected_query_cost": "<typed value>",
+        "first_query": "<typed value>",
+        "information_value": "<typed value>",
+        "no_information_value": "<typed value>",
+        "optimal_net_value": "<typed value>",
+        "query_again_after": "<typed value>",
+        "second_positive_probability": "<typed value>",
+        "terminal_actions": "<typed value>"
+      },
+      "evidence": {
+        "expected_query_cost": [
+          "<viewed supporting document ID>"
+        ],
+        "first_query": [
+          "<viewed supporting document ID>"
+        ],
+        "information_value": [
+          "<viewed supporting document ID>"
+        ],
+        "no_information_value": [
+          "<viewed supporting document ID>"
+        ],
+        "optimal_net_value": [
+          "<viewed supporting document ID>"
+        ],
+        "query_again_after": [
+          "<viewed supporting document ID>"
+        ],
+        "second_positive_probability": [
+          "<viewed supporting document ID>"
+        ],
+        "terminal_actions": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c205",
+      "turn": 1
+    },
+    "inputs": {
+      "joint_state_probabilities": [
+        0.4,
+        0.1,
+        0.1,
+        0.4
+      ],
+      "project_payoffs": {
+        "X": [
+          30,
+          30,
+          -20,
+          -20
+        ],
+        "Y": [
+          30,
+          -20,
+          30,
+          -20
+        ],
+        "abstain": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "query_cost": 3,
+      "source_relationship": "These raw numeric inputs are identical in both evidence conditions and are repeated in source documents. Current contracts, timing/access rules, statistical protocols and event semantics are document-owned.",
+      "state_order": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "outputs": {
+      "expected_query_cost": {
+        "description": "Number, ex ante expected total query costs, cash units.",
+        "type": "number"
+      },
+      "first_query": {
+        "description": "String Q, R or none for the optimal first query or immediate action.",
+        "type": "string"
+      },
+      "information_value": {
+        "description": "Number, incremental value over the best no-query choice, cash units.",
+        "type": "number"
+      },
+      "no_information_value": {
+        "description": "Number, best expected payoff without querying, cash units.",
+        "type": "number"
+      },
+      "optimal_net_value": {
+        "description": "Number, optimal expected investment payoff minus query costs, cash units.",
+        "type": "number"
+      },
+      "query_again_after": {
+        "description": "Array of first-result strings positive or negative where the other query is made.",
+        "type": "array"
+      },
+      "second_positive_probability": {
+        "description": "Number, conditional probability of a positive second result on the queried branch.",
+        "type": "number"
+      },
+      "terminal_actions": {
+        "description": "Array of four action strings in the branch order defined by the mandate.",
+        "type": "array"
+      }
+    },
+    "prompt": "Choose an optimal observation and investment policy within the finite query budget. Determine where the second query is worth buying, account for correlation and all query costs, and report the policy and its expected value against the best no-information choice. Any globally optimal policy is acceptable.",
+    "question_id": "c205",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c205",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "i_states",
+        "release_stage": 1,
+        "text": "Exactly one state A, B, C or D occurs with probabilities [0.4,0.1,0.1,0.4]. These are joint probabilities, not products of marginals. They are the full prior information available for the decision. No other observations exist.",
+        "title": "Current joint state distribution"
+      },
+      {
+        "id": "i_payoffs",
+        "release_stage": 1,
+        "text": "Choose exactly one terminal action: X, Y, or abstain. State-order [A,B,C,D] cash payoffs of X are [30,30,-20,-20]; payoffs of Y are [30,-20,30,-20]; abstain pays 0 in every state. Projects cannot be combined, scaled, shorted, insured or switched after choosing. Maximize expected terminal payoff minus query costs with risk-neutral preferences.",
+        "title": "Mutually exclusive investment choices"
+      },
+      {
+        "id": "i_tests",
+        "release_stage": 1,
+        "text": "Query Q returns positive in A or B and negative in C or D. Query R returns positive in A or C and negative in B or D. Tests are error-free conditional on the state. Repeating a test repeats its original observation and provides no fresh random draw. Each query costs 3 cash units, paid regardless of its result. There are no other tests.",
+        "title": "Available correlated observations"
+      },
+      {
+        "id": "i_budget",
+        "release_stage": 1,
+        "text": "At most two total queries are allowed, but stopping early or making no query is allowed. The second query may depend on the first result; the terminal investment may depend on all observed results. Return one optimal deterministic policy. For terminal_actions use four slots in order [first positive/second positive, first positive/second negative, first negative/second positive, first negative/second negative]. If you stop after a first result, repeat that chosen final action in both second-result slots for that first result; do not infer that either first-result branch must stop or query. If no query is chosen, repeat the immediate action in all four slots. query_again_after lists the first-result labels where the other test is requested. second_positive_probability means conditional on entering a second-query branch; use zero if no second query is purchased. No query is already sunk. information_value is optimal net value minus the best no-query expected payoff.",
+        "title": "Sequential information mandate"
+      }
+    ],
+    "title": "Pay for correlated information only when useful",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

@@ -1,0 +1,195 @@
+                                                                                                            FINANCIAL STATEMENTS
+                                                                                                                       FOOTNOTES
+required to repay approximately $1.4 billion in federal taxes, $28 million in state taxes and accrued interest of $574 million. A
+liability for the taxes and interest is included in deferred credits and other liabilities - other.
+
+INDEMNITIES TO THIRD PARTIES
+    Occidental, its subsidiaries, or both, have indemnified various parties against specified liabilities those parties might
+incur in the future in connection with purchases and other transactions that they have entered into with Occidental or its
+subsidiaries. These indemnities usually are contingent upon the other party incurring liabilities that reach specified
+thresholds. As of December 31, 2023, Occidental is not aware of circumstances that it believes would reasonably be
+expected to lead to indemnity claims that would result in payments materially in excess of reserves.
+
+PURCHASE OBLIGATIONS AND COMMITMENTS
+      Occidental, its subsidiaries, or both, have entered into agreements providing for future payments, primarily to secure
+terminal and pipeline capacity, and also for drilling rigs and services, electrical power, non-lease components, steam and
+certain chemical raw materials. Occidental has certain other commitments under contracts, guarantees and joint ventures,
+including purchase commitments for goods and services at market-related prices and certain other contingent liabilities. The
+amounts that will be paid for such outstanding off-balance sheet purchase obligations as of December 31, 2023 are $3.2
+billion in 2024, $4.1 billion in 2025 and 2026, $2.5 billion in 2027 and 2028 and $2.6 billion in 2029 and thereafter.
+
+
+ NOTE 14 - STOCKHOLDERS’ EQUITY
+
+   The following table presents Occidental's common share activity, including exercises of options and warrants, other
+transactions in Occidental's common stock in 2023 and treasury stock purchased both under its $3.0 billion share
+repurchase program announced in February 2023 and from the trustee of Occidental's defined contribution savings plan:
+
+
+                                                 Exercise of                                  Treasury            Common
+                                                Warrants and                                     Stock                Stock
+                                                                                      (b)
+ Period                                              Options (a)              Other          Purchases (c)      Outstanding (d)
+ December 31, 2022                                                                                              899,858,944
+   First Quarter 2023                                 268,371            3,935,166          (12,511,237)        891,551,244
+      Second Quarter 2023                             205,631              158,473            (7,233,460)        884,681,888
+      Third Quarter 2023                            2,468,799                19,248           (9,468,451)        877,701,484
+      Fourth Quarter 2023                           1,901,994               46,192             (186,567)         879,463,103
+      Total 2023                                    4,844,795            4,159,079          (29,399,715)         879,463,103
+(a)
+      Approximately $112 million of cash was received as a result of the exercise of common stock warrants and options.
+(b)
+      Consisted of issuances for the 2015 long-term incentive plan, the OPC savings plan and the dividend reinvestment plan.
+(c)
+      Included purchases of shares from the trustee of Occidental's defined contribution savings plan that are not part of publicly
+      announced plans or programs.
+(d)
+      As of December 31, 2023, Occidental had 99.5 million outstanding warrants with a strike price of $22 per share and
+      83.9 million of warrants with a strike price of $59.62 per share.
+
+TREASURY STOCK
+    Under the share repurchase program announced in February 2023, Occidental purchased 29.1 million shares for
+$1.8 billion during 2023. Additionally, Occidental purchased shares from the trustee of its defined contribution savings plan in
+2023, 2022 and 2021. As of December 31, 2023, 2022 and 2021, treasury stock shares numbered 228.1 million,
+198.7 million and 149.3 million, respectively.
+
+PREFERRED STOCK
+    In connection with the Anadarko Acquisition, Occidental issued 100,000 shares of series A preferred stock, with a face
+value of $100,000 per share and a liquidation preference of $105,000 per share plus unpaid accrued dividends. Prior to
+August 2029, a mandatory redemption provision obligates Occidental to redeem preferred stock at a 10% premium to face
+value on a dollar-for-dollar basis for every dollar distributed to common shareholders (either via common stock dividends or
+share repurchases) above $4.00 per share, on a trailing 12-month basis. Preferred redemptions can settle between 30 and
+60 days from the date Berkshire Hathaway is notified of the redemption obligation and accrued unpaid dividends are paid up
+to but not including the redemption date. Occidental cannot voluntarily redeem preferred stock before August 2029. After
+August 2029, Occidental can voluntarily redeem preferred stock at a 5% premium to face value.
+
+
+
+
+                                                                                                       OXY 2023 FORM 10-K 107
+
+
+                                                                                                        FINANCIAL STATEMENTS
+                                                                                                                   FOOTNOTES
+       Dividends on the preferred stock accrue on the face value at a rate per annum of 8%, but will be paid only when, as
+and if declared by Occidental’s Board of Directors. At any time, when such dividends have not been paid in full, the unpaid
+amounts will accrue dividends, compounded quarterly, at a rate per annum of 9%. Following the payment in full of any
+accrued but unpaid dividends, the dividend rate will remain at 9% per annum. If preferred dividends are not paid in full,
+Occidental is prohibited from paying dividends on common stock. Occidental paid $762 million in preferred stock dividends
+in 2023.
+     In 2023, Occidental redeemed preferred stock with a face value of $1.5 billion, and incurred $151 million in redemption
+premiums. To the extent Occidental's trailing 12-month distributions to common shareholders is above $4.00 per share,
+Occidental is required to match any common shareholder distributions with preferred stock redemptions. As of the date of
+this filing approximately $8.5 billion face value of the preferred stock remains outstanding.
+     The following table presents preferred stock redemption activity for 2023:
+
+shares of Preferred stock
+  Preferred stock, as of December 31, 2022                                                                            100,000
+  Less: Preferred redemptions                                                                                         (15,103)
+  Preferred stock, as of December 31, 2023                                                                             84,897
+
+   The carrying value of preferred stock is less than the face value. The difference between carrying value and face value,
+along with the redemption premium, reduces net income available to common stockholders. The following presents the
+components of preferred stock dividends and redemptions:
+
+                                                                                                               Year ended
+millions                                                                                                  December 31, 2023
+  Preferred dividends                                                                                    $              736
+  Redemption premium                                                                                                    151
+  Redemption value in excess of carrying value                                                                           36
+  Preferred dividend and redemption premiums                                                             $              923
+
+BERKSHIRE WARRANT
+    In connection with the preferred stock issuance, Occidental also issued the Berkshire Warrant. The Berkshire Warrant is
+exercisable at the holder’s option, in whole or in part, until the first anniversary of the date on which no shares of preferred
+stock remain outstanding, at which time the Berkshire Warrant expires. The holder of the Berkshire Warrant and the
+preferred stock may redeem the preferred stock as payment for the exercise price of the Warrant in lieu of cash payment
+upon exercise. As of December 31, 2023, the Berkshire warrant would result in the issuance of 83.9 million shares of
+Occidental common stock, if exercised in full for its current strike price of $59.62 per share of Occidental common stock.
+
+COMMON STOCK WARRANTS
+    On June 26, 2020, the Board of Directors declared Common Stock Warrants, at a rate of 0.125 warrants per share of
+Occidental common stock. Occidental issued approximately 116 million Common Stock Warrants on August 3, 2020 to
+holders of record of outstanding shares of Occidental’s common stock as of the close of business on July 6, 2020, and
+pursuant to Occidental’s outstanding equity-based incentive awards in connection with anti-dilution adjustments resulting
+from such distribution. The Common Stock Warrants have an exercise price of $22.00 per share and will expire on August 3,
+2027. The Common Stock Warrants are listed on the NYSE and trade under the symbol "OXY WS". As of December 31,
+2023, Occidental had 99.5 million outstanding warrants.
+    The Common Stock Warrants were measured at fair value on the declaration date using the Black-Scholes option
+model and were classified as equity in "Additional paid-in capital". The following level 2 inputs were used in the Black-
+Scholes option model: the expected life of the Common Stock Warrants, a volatility factor and the exercise price. The
+expected life is based on the estimated term of the Common Stock Warrants, the volatility factor is based on historical
+volatilities of Occidental common stock and the exercise of $22.00 per share of Occidental common stock.
+
+EARNINGS PER SHARE
+     Occidental’s instruments containing rights to nonforfeitable dividends granted in stock-based awards are considered
+participating securities prior to vesting and, therefore, have been deducted from earnings in computing basic and diluted
+EPS under the two-class method.
+     Basic EPS was computed by dividing net income attributable to common stock, net of income allocated to participating
+securities, by the weighted-average number of common shares outstanding during each period, including vested but
+
+
+
+ 108 OXY 2023 FORM 10-K
+
+
+                                                                                                         FINANCIAL STATEMENTS
+                                                                                                                    FOOTNOTES
+unissued shares and share units. The computation of diluted EPS reflects the additional dilutive effect of stock options,
+warrants and unvested stock awards.
+    The following table presents the calculation of basic and diluted EPS for the years ended December 31:
+
+ millions except per share amounts                                                              2023         2022       2021
+    Income from continuing operations                                                      $   4,696 $    13,304 $     2,790
+    Loss from discontinued operations                                                             —            —        (468)
+    Net income                                                                             $   4,696 $    13,304 $     2,322
+        Less: Preferred stock dividends                                                         (923)        (800)      (800)
+    Net income attributable to common stock                                                $   3,773 $    12,504 $     1,522
+        Less: Net income allocated to participating securities                                   (23)         (83)       (10)
+    Net income, net of participating securities                                            $   3,750 $    12,421 $     1,512
+    Weighted-average number of basic shares                                                    889.2        926.2      935.0
+ Basic earnings per common share                                                           $    4.22 $      13.41 $     1.62
+    Net income attributable to common stock                                                $   3,773 $    12,504 $     1,522
+        Less: Net income allocated to participating securities                                   (21)         (77)       (10)
+    Net income, net of participating securities                                            $   3,752 $    12,427 $     1,512
+    Weighted-average number of basic shares                                                    889.2        926.2      935.0
+    Dilutive securities                                                                         71.7         75.8       23.8
+    Total diluted weighted-average common shares                                               960.9      1,002.0      958.8
+ Diluted earnings per common share                                                         $    3.90 $      12.40 $     1.58
+
+    As of December 31, 2023 and 2022, there were no Occidental common stock warrants nor options that were excluded
+from diluted shares. As of December 31, 2021, warrants and options covering 87 million shares of Occidental common stock
+were excluded from the diluted shares as their effect would have been anti-dilutive.
+
+ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS)
+      Accumulated OCI (loss) consisted of the following after-tax amounts as of December 31:
+
+ millions                                                                                                    2023       2022
+ Foreign currency translation adjustments                                                            $         (4) $      (5)
+ Derivatives                                                                                                   20        (25)
+ Pension and postretirement adjustments (a)                                                                  259         225
+ Total                                                                                               $       275 $       195
+(a)
+      See Note 11 - Retirement and Postretirement Benefit Plans for further information.
+
+
+
+ NOTE 15 - STOCK-BASED INCENTIVE PLANS
+     Occidental issues stock-based awards to employees in accordance with the terms of the Plans. An aggregate of 133
+million shares of Occidental common stock were authorized for issuance and approximately 14.1 million shares had been
+reserved for issuance for employee awards through December 31, 2023. As of December 31, 2023, approximately 45.0
+million shares were available for grants of future awards. The 2015 Long-Term Incentive plan requires each share covered
+by an award (other than options) to be counted as if three shares were issued in determining the number of shares that are
+available for future awards. Accordingly, the number of shares available for future awards may be less than 45.0 million
+depending on the type of award granted, and shares available for future awards may increase by the number of shares that
+are forfeited, canceled, or correspond to the portion of any stock-based awards settled in cash, including awards that were
+issued under a previous plan that remain outstanding. Current outstanding awards include RSUs, stock options, CROCEI
+awards and TSRI awards.
+     During 2023, non-employee directors were granted awards for 36,106 shares of common stock. Compensation expense
+for these awards was measured using the closing quoted market price of Occidental’s common stock on the grant date and
+was fully recognized at that time.
+
+
+
+
+                                                                                                   OXY 2023 FORM 10-K 109

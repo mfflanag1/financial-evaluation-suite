@@ -1,0 +1,285 @@
+{
+  "case_id": "h2-006",
+  "reference_solution": {
+    "rollforward": "15103*100000/1e6=1510.3redeemed;84897*100000/1e6=8489.7remaining. Ordinaryannualrunrate=.08*8489.7=679.176.",
+    "cash_vs_income": "Cashdividenddecline762-679=83. Common-incomechargedecline923-679=244. 2023carryingvaluecharge923-736-151=36;the187redemptioncharges are not additional current preferred cash dividends.",
+    "hypothetical": "1000*100000/1e6=100face;mandatoryredemptioncash110beforeaccrueddividends;annualdividendsavings8. Premium-only recovery10/8=1.25years. No valuation/IRR/payback of principal is inferred."
+  },
+  "fields": [
+    {
+      "id": "preferred_face_redeemed_2023",
+      "expected": 1510.3,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "face value of $100,000 per share",
+              "Less: Preferred redemptions",
+              "(15,103)"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "preferred_face_remaining_end2023",
+      "expected": 8489.7,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "face value of $100,000 per share",
+              "Preferred stock, as of December 31, 2023",
+              "84,897"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "ordinary_annual_dividend_run_rate",
+      "expected": 679.176,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "face value of $100,000 per share",
+              "Preferred stock, as of December 31, 2023",
+              "84,897"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "cash_dividend_reduction_2024_vs2023",
+      "expected": 83,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "Occidental paid $762 million in preferred stock dividends in 2023"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "Occidental paid $679 million in preferred stock dividends in 2024"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "common_income_charge_reduction_2024_vs2023",
+      "expected": 244,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "Preferred stock dividends",
+              "(679)",
+              "(923)"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "redemption_related_charge_beyond_premium_2023",
+      "expected": 36,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "Preferred dividends",
+              "736",
+              "Redemption premium",
+              "151",
+              "Preferred dividend and redemption premiums",
+              "923"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "Redemption value in excess of carrying value",
+              "36"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "synthetic_redemption_cash_outlay",
+      "expected": 110.0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "face value of $100,000 per share"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "face value of $100,000 per share"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "redeem preferred stock at a 10% premium to face value"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "redeem preferred stock at a 10% premium to face value"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "premium_only_recovery_years",
+      "expected": 1.25,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "redeem preferred stock at a 10% premium to face value"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "redeem preferred stock at a 10% premium to face value"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "voluntary_2025_redemption_permitted",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "year_end_common_share_count_identifies_trigger",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-oxy-2023",
+            "anchors": [
+              "above $4.00 per share, on a trailing 12-month basis"
+            ]
+          },
+          {
+            "source_id": "h2a-oxy-2024",
+            "anchors": [
+              "above $4.00 per share, on a trailing 12-month basis"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+    "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+    "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+  ]
+}

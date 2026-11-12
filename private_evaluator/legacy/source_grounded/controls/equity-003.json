@@ -1,0 +1,1813 @@
+[
+  {
+    "name": "reference",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "double_count_acquisition",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 38936,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "reported_revenue_increase": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "double count acquisition"
+  },
+  {
+    "name": "mixed_proforma_denominator",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 16.764740579949507,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "pro_forma_combined_growth_pct": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "mixed proforma denominator"
+  },
+  {
+    "name": "omit_target_margin",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 1762,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "hypothetical_cost_synergy_required": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "omit target margin"
+  },
+  {
+    "name": "residual_equals_organic",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "residual_growth_is_identified_organic_growth": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "residual equals organic"
+  },
+  {
+    "name": "proforma_equals_actual",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "pro_forma_results_are_actual_combined_results": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "proforma equals actual"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": []
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "reported_revenue_increase": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing evidence"
+  },
+  {
+    "name": "fabricated_quote",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "This is a fabricated supporting passage."
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "reported_revenue_increase": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated quote"
+  },
+  {
+    "name": "concise_net_impact_synergy_operands",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "contextual_net_impact_synergy_rows",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Following is the net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition:"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "missing_net_impact_loss_operand",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "missing net impact loss operand",
+    "expected_failures": {
+      "hypothetical_cost_synergy_required": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "concise_reported_revenue_without_irrelevant_header",
+    "response": {
+      "case_id": "equity-003",
+      "answers": {
+        "reported_revenue_increase": {
+          "value": 33207,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "reported_growth_pct": {
+          "value": 15.66996201307128,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            }
+          ]
+        },
+        "growth_after_removing_disclosed_net_acquisition_impact_pct": {
+          "value": 12.966519595120685,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            }
+          ]
+        },
+        "pro_forma_combined_growth_pct": {
+          "value": 12.581100141043724,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2024": {
+          "value": 2320,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442"
+            }
+          ]
+        },
+        "pro_forma_minus_reported_revenue_2023": {
+          "value": 7875,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | $ 245,122 | $ 211,915"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "on an unaudited pro forma basis, as if the acquisition had been consummated on July 1, 2022"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 247,442 | | $ 219,790"
+            }
+          ]
+        },
+        "disclosed_net_impact_operating_margin_pct": {
+          "value": -23.773782510036657,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "hypothetical_cost_synergy_required": {
+          "value": 2048.45,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "net impact of the Activision Blizzard acquisition on our consolidated income statements since the date of acquisition"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Revenue | | $ 5,729"
+            },
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "Operating loss | | (1,362)"
+            }
+          ]
+        },
+        "residual_growth_is_identified_organic_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "The change of Activision Blizzard content from third-party to first-party is reflected in the net impact."
+            }
+          ]
+        },
+        "pro_forma_results_are_actual_combined_results": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-microsoft-2024",
+              "quote": "They are not the results that would have been realized had we been a combined company during the periods presented"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  }
+]

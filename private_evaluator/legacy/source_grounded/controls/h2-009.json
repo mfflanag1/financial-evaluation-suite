@@ -1,0 +1,691 @@
+[
+  {
+    "name": "separate_minimal_source_clauses",
+    "response": {
+      "case_id": "h2-009",
+      "answers": {
+        "hedge_contracts": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            }
+          ]
+        },
+        "final_basis_settlement": {
+          "value": -2.5,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "basis_hedge_gain": {
+          "value": 118750.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "net_physical_and_hedge_cash": {
+          "value": 112400.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "residual_henry_hub_sensitivity": {
+          "value": 62500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "residual_monthly_basis_sensitivity": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "combined_cash_known_without_physical_price": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "negative_day_share_determines_annual_revenue": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-waha",
+              "quote": "traded below zero for 42% of trading days in 2024"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+        "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All required values and financial premises supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "reuse_verified_upstream_support",
+    "response": {
+      "case_id": "h2-009",
+      "answers": {
+        "hedge_contracts": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            }
+          ]
+        },
+        "final_basis_settlement": {
+          "value": -2.5,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "basis_hedge_gain": {
+          "value": 118750.0,
+          "evidence": [],
+          "support_refs": [
+            "hedge_contracts",
+            "final_basis_settlement"
+          ]
+        },
+        "net_physical_and_hedge_cash": {
+          "value": 112400.0,
+          "evidence": [],
+          "support_refs": [
+            "basis_hedge_gain"
+          ]
+        },
+        "residual_henry_hub_sensitivity": {
+          "value": 62500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ],
+          "support_refs": [
+            "final_basis_settlement"
+          ]
+        },
+        "residual_monthly_basis_sensitivity": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ],
+          "support_refs": [
+            "hedge_contracts",
+            "final_basis_settlement"
+          ]
+        },
+        "combined_cash_known_without_physical_price": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "negative_day_share_determines_annual_revenue": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-waha",
+              "quote": "traded below zero for 42% of trading days in 2024"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+        "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Explicit declared DAG reuses source-supported upstream proof; remaining independent premises still quoted.",
+    "expected_failures": {}
+  },
+  {
+    "name": "reverse_short_payoff",
+    "response": {
+      "case_id": "h2-009",
+      "answers": {
+        "hedge_contracts": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            }
+          ]
+        },
+        "final_basis_settlement": {
+          "value": -2.5,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "basis_hedge_gain": {
+          "value": -118750,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "net_physical_and_hedge_cash": {
+          "value": 112400.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "residual_henry_hub_sensitivity": {
+          "value": 62500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "residual_monthly_basis_sensitivity": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "combined_cash_known_without_physical_price": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "negative_day_share_determines_annual_revenue": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-waha",
+              "quote": "traded below zero for 42% of trading days in 2024"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+        "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses a long payoff for a short basis position.",
+    "expected_failures": {
+      "basis_hedge_gain": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "basis_hedge_removes_outright_risk",
+    "response": {
+      "case_id": "h2-009",
+      "answers": {
+        "hedge_contracts": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            }
+          ]
+        },
+        "final_basis_settlement": {
+          "value": -2.5,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "basis_hedge_gain": {
+          "value": 118750.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "net_physical_and_hedge_cash": {
+          "value": 112400.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "residual_henry_hub_sensitivity": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "residual_monthly_basis_sensitivity": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "combined_cash_known_without_physical_price": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "negative_day_share_determines_annual_revenue": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-waha",
+              "quote": "traded below zero for 42% of trading days in 2024"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+        "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Confuses locational basis protection with a fixed outright sales price.",
+    "expected_failures": {
+      "residual_henry_hub_sensitivity": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "monthly_index_equals_physical_receipt",
+    "response": {
+      "case_id": "h2-009",
+      "answers": {
+        "hedge_contracts": {
+          "value": 25.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            }
+          ]
+        },
+        "final_basis_settlement": {
+          "value": -2.5,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "basis_hedge_gain": {
+          "value": 118750.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "net_physical_and_hedge_cash": {
+          "value": 112400.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "residual_henry_hub_sensitivity": {
+          "value": 62500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "residual_monthly_basis_sensitivity": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "combined_cash_known_without_physical_price": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "negative_day_share_determines_annual_revenue": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-waha",
+              "quote": "traded below zero for 42% of trading days in 2024"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+        "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Treats the monthly benchmark as a producer volume-weighted physical receipt.",
+    "expected_failures": {
+      "combined_cash_known_without_physical_price": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_value_missing_required_operand",
+    "response": {
+      "case_id": "h2-009",
+      "answers": {
+        "hedge_contracts": {
+          "value": 25.0,
+          "evidence": []
+        },
+        "final_basis_settlement": {
+          "value": -2.5,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "basis_hedge_gain": {
+          "value": 118750.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "net_physical_and_hedge_cash": {
+          "value": 112400.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            }
+          ]
+        },
+        "residual_henry_hub_sensitivity": {
+          "value": 62500.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "residual_monthly_basis_sensitivity": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Contract Size 2500 MMBtus"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Final Settlement Reference Price A minus Reference Price B"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "combined_cash_known_without_physical_price": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+            },
+            {
+              "source_id": "h2b-ice-waha",
+              "quote": "price of the NYMEX Henry Hub"
+            }
+          ]
+        },
+        "negative_day_share_determines_annual_revenue": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-waha",
+              "quote": "traded below zero for 42% of trading days in 2024"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+        "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "A required source premise is omitted despite correct arithmetic.",
+    "expected_failures": {
+      "hedge_contracts": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

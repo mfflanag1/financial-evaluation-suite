@@ -1,0 +1,1535 @@
+[
+  {
+    "name": "reference_vintage_and_cost_ledger",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "rename_forces_sale_and_repurchase",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 12000,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Invents turnover solely from the symbol change",
+    "expected_failures": {
+      "rename_required_turnover": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "price_only_return",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.02,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits the explicitly supplied cash dividend",
+    "expected_failures": {
+      "meta_total_return": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "drop_exiting_security",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": 0,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Treats a missing terminal quote as zero profit or deletes the exit",
+    "expected_failures": {
+      "exiting_security_gross_profit": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "fee_on_initial_notional",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses original 6000 notional rather than 6120 actual liquidation proceeds",
+    "expected_failures": {
+      "terminal_liquidation_cost": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "forget_dividend_cash",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2286.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits retained dividends from terminal cash",
+    "expected_failures": {
+      "valid_net_profit": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "current_ticker_is_unique_security",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": true,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Merges fictitious X and M despite different venue/effective identity",
+    "expected_failures": {
+      "ticker_alone_unique_identity": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "percentage_instead_of_fraction",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 930,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Reports 930 percent as 930 rather than 9.3 fraction",
+    "expected_failures": {
+      "naive_ticker_join_meta_return": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "gross_break_even_ignores_cost",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.75,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits the M liquidation cost from the zero-net-profit boundary",
+    "expected_failures": {
+      "exit_proceeds_break_even": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "zero_fill_missing_empirical_exits",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Claims actual total-return performance from an incomplete empirical panel",
+    "expected_failures": {
+      "empirical_total_return_status": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_join_value_without_identity_evidence",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": []
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct toy return lacks evidence that pre/post-renameM is one security",
+    "expected_failures": {
+      "meta_total_return": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "no_shareholder_action_alone_supports_zero_turnover",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "rename_and_unchanged_cusip_support_zero_turnover",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "missing_identity_continuity_in_total_return",
+    "response": {
+      "case_id": "systematic-003",
+      "answers": {
+        "rename_required_turnover": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "No action by the company's shareholders is required with respect to the ticker symbol change."
+            }
+          ]
+        },
+        "meta_total_return": {
+          "value": 0.03,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            }
+          ]
+        },
+        "exiting_security_gross_profit": {
+          "value": -2400,
+          "evidence": []
+        },
+        "terminal_liquidation_cost": {
+          "value": 6.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_terminal_equity": {
+          "value": 7773.88,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "valid_net_profit": {
+          "value": -2226.12,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "naive_ticker_join_meta_return": {
+          "value": 9.3,
+          "evidence": []
+        },
+        "exit_proceeds_break_even": {
+          "value": 47.8265,
+          "evidence": [
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will begin trading on NASDAQ under the ticker symbol 'META' prior to market open on June 9,"
+            },
+            {
+              "source_id": "systematic-meta-ticker",
+              "quote": "A common stock will continue to be listed on NASDAQ and its CUSIP number will remain unchanged."
+            }
+          ]
+        },
+        "ticker_alone_unique_identity": {
+          "value": false,
+          "evidence": []
+        },
+        "empirical_total_return_status": {
+          "value": "not_established",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "X and E are fictional and all panel economics are synthetic; no empirical Meta dividend or return claim is made.",
+        "The frozen issuer notice verifies an identifier event, not a complete security master, universe or corporate-action-adjusted return database.",
+        "This controlled identity/exit counterexample is not representative cross-sectional strategy evidence.",
+        "Missing empirical outcomes remain unknown; the complete toy branch is not used to fill them."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "missing identity continuity in total return",
+    "expected_failures": {
+      "meta_total_return": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

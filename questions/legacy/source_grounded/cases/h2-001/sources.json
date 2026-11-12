@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h2a-paypal-2023",
+    "url": "https://investor.pypl.com/files/doc_financials/2023/q4/Q4-23-PayPal-Earnings-Release.pdf",
+    "title": "PayPal Q4 and FY2023 earnings release",
+    "publisher": "PayPal Holdings, Inc.",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+    "text_sha256": "86cc0cb3c52aaa8bede90e9c19b9b7366c41c22e4859f2f75856724c02022826",
+    "available_by": "2026-10-04T20:02:32Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_pdf.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "h2a-paypal-2024",
+    "url": "https://investor.pypl.com/files/doc_financials/2024/q4/PYPL-4Q-24-Earnings-Release.pdf",
+    "title": "PayPal Q4 and FY2024 earnings release",
+    "publisher": "PayPal Holdings, Inc.",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+    "text_sha256": "1ab24f6c3aa2cf1f7c70b9e82fb23b46c5d00974b9076e1d6592d5e0fdfedf6a",
+    "available_by": "2026-10-04T20:02:32Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_pdf.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

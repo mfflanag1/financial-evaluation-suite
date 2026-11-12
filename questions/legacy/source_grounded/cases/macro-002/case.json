@@ -1,0 +1,92 @@
+{
+  "id": "macro-002",
+  "case_group": "bls-cpi-q4-2023-seasonal-revision-feb2024",
+  "lane": "macro_rates",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2024-02-14T04:59:59Z",
+  "prompt": "Reconstruct CPI-U all-items inflation using only the January11 and February13,2024 archived releases, as known by the end of February13 in New York. The later release incorporates revised seasonal factors. Separate monthly seasonally adjusted (SA) changes from unadjusted (NSA) 12-month changes, and compare the same observation month when calling something a revision.\n\nUse Table A's one-decimal monthly rates as exact inputs ONLY for the defined rounded-rate proxy. For October\u2013December, multiply (1+m/100) for the three monthly rates and calculate 100*(product^4-1). Do this separately for each permitted vintage; do not mix vintages, add monthly rates, or label the proxy as exact growth of unrounded index levels. Report numeric answers to six decimals without intermediate rounding.\n\nThe expectation for January monthly SA inflation in scenario S is explicitly SYNTHETIC: 0.2%. Define surprise as January's reported monthly SA rate minus this expectation; prior-month revisions are separate. In branch U the expectation is withheld and no market-consensus source is supplied. Determine whether a unique numerical surprise can still be identified. Also assess whether these rounded rates identify exact unrounded index-based Q4 growth. The task is historical reconstruction, not forecasting or a historical trading-performance claim. Pure missing-input/precision judgments need no source quote; numerical facts require the specified vintage evidence.",
+  "source_ids": [
+    "exp-cpi-20240111",
+    "exp-cpi-20240213"
+  ],
+  "output_fields": [
+    {
+      "id": "december_sa_revision",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "December SA monthly change in February13 vintage minus its January11 first release.",
+      "evidence_required": true
+    },
+    {
+      "id": "q4_annualized_proxy_jan11",
+      "type": "number",
+      "unit": "percent_annualized",
+      "description": "Compound October\u2013December rounded SA monthly rates in January11 vintage, then annualize the three-month factor by raising it to the fourth power.",
+      "evidence_required": true
+    },
+    {
+      "id": "q4_annualized_proxy_feb13",
+      "type": "number",
+      "unit": "percent_annualized",
+      "description": "Same Q4 three-month annualized proxy using the February13 seasonal vintage.",
+      "evidence_required": true
+    },
+    {
+      "id": "q4_annualized_proxy_revision",
+      "type": "number",
+      "unit": "percentage_points_annualized",
+      "description": "February13 proxy minus January11 proxy, computed without intermediate rounding.",
+      "evidence_required": true
+    },
+    {
+      "id": "january_sa_acceleration",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "January SA monthly change minus revised December SA monthly change within the February13 vintage.",
+      "evidence_required": true
+    },
+    {
+      "id": "december_nsa_yoy_revision",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "December unadjusted 12-month rate as restated February13 minus December unadjusted 12-month rate reported January11; do not substitute January's 12-month rate.",
+      "evidence_required": true
+    },
+    {
+      "id": "january_surprise_given_expectation",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "January SA monthly release minus the explicitly synthetic expectation 0.2%; do not mix prior-month revisions into this surprise.",
+      "evidence_required": true
+    },
+    {
+      "id": "surprise_identifiable_without_expectation",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "In branch U, the expectation is withheld. Can a unique numerical release-minus-expectation surprise still be identified?",
+      "evidence_required": false
+    },
+    {
+      "id": "proxy_equals_exact_index_growth",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Do compounded one-decimal monthly rates identify the exact underlying unrounded index-based Q4 annualized rate? The task supplies no unrounded SA index levels.",
+      "evidence_required": false
+    }
+  ],
+  "response_format": {
+    "case_id": "macro-002",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "case_id": "portfolio-003",
+  "reference_solution": {
+    "public_input": "EIA February17 peak23.86 USD/MMBtu; supplied reference3.86 implies shock20.",
+    "local_gas_prices": [
+      "33.86",
+      "1.86",
+      "33.86"
+    ],
+    "generator_baseline_margin": "7298",
+    "pod_scenario_pnl": {
+      "producer": [
+        "13070",
+        "-2000",
+        "21535"
+      ],
+      "generator": [
+        "-21778.8",
+        "1400",
+        "-18719.2"
+      ],
+      "commodity": [
+        "-6000",
+        "600",
+        "-1500"
+      ],
+      "aggregate": [
+        "-14708.8",
+        "0",
+        "1315.8"
+      ]
+    },
+    "enumeration": {
+      "NONE": {
+        "fees": "0",
+        "initial_locked": "0",
+        "scenario_pnl": [
+          "-14708.8",
+          "0",
+          "1315.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "0",
+          "8700"
+        ],
+        "cash_path": [
+          "23200",
+          "2200",
+          "23200",
+          "14500"
+        ],
+        "cash_required": "21000",
+        "worst_pnl": "-14708.8",
+        "feasible": true
+      },
+      "A": {
+        "fees": "100",
+        "initial_locked": "1100",
+        "scenario_pnl": [
+          "-8808.8",
+          "-700",
+          "2715.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "600",
+          "8700"
+        ],
+        "cash_path": [
+          "22100",
+          "1100",
+          "21500",
+          "13400"
+        ],
+        "cash_required": "22100",
+        "worst_pnl": "-8808.8",
+        "feasible": true
+      },
+      "B": {
+        "fees": "500",
+        "initial_locked": "500",
+        "scenario_pnl": [
+          "-9208.8",
+          "-500",
+          "4015.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "0",
+          "8700"
+        ],
+        "cash_path": [
+          "22700",
+          "1700",
+          "22700",
+          "14000"
+        ],
+        "cash_required": "21500",
+        "worst_pnl": "-9208.8",
+        "feasible": true
+      },
+      "C": {
+        "fees": "200",
+        "initial_locked": "1700",
+        "scenario_pnl": [
+          "-12908.8",
+          "-200",
+          "6115.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "0",
+          "8700"
+        ],
+        "cash_path": [
+          "21500",
+          "500",
+          "21500",
+          "12800"
+        ],
+        "cash_required": "22700",
+        "worst_pnl": "-12908.8",
+        "feasible": true
+      },
+      "AB": {
+        "fees": "600",
+        "initial_locked": "1600",
+        "scenario_pnl": [
+          "-3308.8",
+          "-1200",
+          "5415.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "600",
+          "8700"
+        ],
+        "cash_path": [
+          "21600",
+          "600",
+          "21000",
+          "12900"
+        ],
+        "cash_required": "22600",
+        "worst_pnl": "-3308.8",
+        "feasible": true
+      },
+      "AC": {
+        "fees": "300",
+        "initial_locked": "2800",
+        "scenario_pnl": [
+          "-7008.8",
+          "-900",
+          "7515.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "600",
+          "8700"
+        ],
+        "cash_path": [
+          "20400",
+          "-600",
+          "19800",
+          "11700"
+        ],
+        "cash_required": "23800",
+        "worst_pnl": "-7008.8",
+        "feasible": false
+      },
+      "BC": {
+        "fees": "700",
+        "initial_locked": "2200",
+        "scenario_pnl": [
+          "-7408.8",
+          "-700",
+          "8815.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "0",
+          "8700"
+        ],
+        "cash_path": [
+          "21000",
+          "0",
+          "21000",
+          "12300"
+        ],
+        "cash_required": "23200",
+        "worst_pnl": "-7408.8",
+        "feasible": true
+      },
+      "ABC": {
+        "fees": "800",
+        "initial_locked": "3300",
+        "scenario_pnl": [
+          "-1508.8",
+          "-1400",
+          "10215.8"
+        ],
+        "t1_outflows": [
+          "21000",
+          "600",
+          "8700"
+        ],
+        "cash_path": [
+          "19900",
+          "-1100",
+          "19300",
+          "11200"
+        ],
+        "cash_required": "24300",
+        "worst_pnl": "-1508.8",
+        "feasible": false
+      }
+    },
+    "missing_input": "Given F dispatch40, AB is optimal. At F dispatch100, replacement cash falls to0 and ABC is feasible and optimal. Thus omitted dispatch affects both losses and financeability.",
+    "decision_boundary": "The first strictly better optimizer becomes ABC at starting cash 24300. Equality is feasible."
+  },
+  "fields": [
+    {
+      "id": "henry_hub_shock",
+      "expected": 20.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "freeze_generator_fuel",
+      "expected": 280.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    },
+    {
+      "id": "base_scenario_pnl",
+      "expected": "F=-14708.8;R=0;B=1315.8",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "feasible_plans",
+      "expected": "NONE|A|B|C|AB|BC",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "optimal_plan",
+      "expected": "AB",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "optimal_worst_pnl",
+      "expected": -3308.8,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "optimal_minimum_cash",
+      "expected": 600.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "first_optimizer_change_budget",
+      "expected": 24300.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "freeze_base_early_outflow",
+      "expected": 21000.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-eia-freeze-2021"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-eia-freeze-2021": [
+          [
+            "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "missing_dispatch_optimizer_status",
+      "expected": "insufficient_data",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    }
+  ],
+  "limitations": [
+    "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+    "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+    "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+    "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+  ]
+}

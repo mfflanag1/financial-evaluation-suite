@@ -1,0 +1,287 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "i_terms",
+            "title": "Decision and budget contract"
+          },
+          {
+            "id": "i_menu",
+            "title": "Initial research menu"
+          },
+          {
+            "id": "i_old",
+            "title": "Different population marketing sheet"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "baseline_value": "<typed value>",
+            "expected_net": "<typed value>",
+            "negative_action": "<typed value>",
+            "positive_action": "<typed value>",
+            "query": "<typed value>",
+            "remaining_budget": "<typed value>"
+          },
+          "evidence": {
+            "baseline_value": [
+              "<viewed supporting document ID>"
+            ],
+            "expected_net": [
+              "<viewed supporting document ID>"
+            ],
+            "negative_action": [
+              "<viewed supporting document ID>"
+            ],
+            "positive_action": [
+              "<viewed supporting document ID>"
+            ],
+            "query": [
+              "<viewed supporting document ID>"
+            ],
+            "remaining_budget": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c211",
+          "turn": 1
+        },
+        "inputs": {
+          "observations": [
+            {
+              "data": {
+                "abstention_payoff": 0,
+                "investment_payoffs": {
+                  "G": 80,
+                  "not_G": -40
+                },
+                "prior_probability_G": 0.3,
+                "research_budget": 6
+              },
+              "source_id": "i_terms"
+            },
+            {
+              "data": {
+                "reports": [
+                  {
+                    "fee": 4,
+                    "positive_probability_G": 0.8,
+                    "positive_probability_not_G": 0.2,
+                    "report": "R"
+                  },
+                  {
+                    "fee": 2,
+                    "positive_probability_G": 0.6,
+                    "positive_probability_not_G": 0.4,
+                    "report": "Q"
+                  }
+                ]
+              },
+              "source_id": "i_menu"
+            }
+          ]
+        },
+        "outputs": {
+          "baseline_value": {
+            "description": "Optimal expected payoff without new research",
+            "type": "number"
+          },
+          "expected_net": {
+            "description": "Optimal expected payoff net of new research fee, before the report outcome",
+            "type": "number"
+          },
+          "negative_action": {
+            "description": "Action after a negative purchased report",
+            "type": "string"
+          },
+          "positive_action": {
+            "description": "Action after a positive purchased report",
+            "type": "string"
+          },
+          "query": {
+            "description": "Next report identifier or none",
+            "type": "string"
+          },
+          "remaining_budget": {
+            "description": "Research budget after the recommended purchase",
+            "type": "number"
+          }
+        },
+        "prompt": "Select the next research purchase or immediate decision under the current budget. Provide a contingent action policy and its expected economics using only the currently available information.",
+        "question_id": "c211",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c211",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "i_terms",
+            "release_stage": 1,
+            "text": "A desk may invest once or abstain. Investment pays net 80 if state G and net -40 otherwise; abstention pays zero. Prior P(G)=0.30. All amounts are cash units, interest is zero, and the objective is to maximize conditional expected net payoff, including any additional research fee. Past paid fees are sunk. Initial research budget is 6. Each stage asks for only the next query or final action; within the current stage, at most one offered report can be purchased before investing or abstaining. No other report sequence is available. A conditional positive/negative action describes the policy if that report is purchased; if no report is purchased use the same final action in both branches. A zero-value tie favors abstention. Never infer the unrevealed true state.",
+            "title": "Decision and budget contract"
+          },
+          {
+            "id": "i_menu",
+            "release_stage": 1,
+            "text": "Report R costs 4 and has P(positive|G)=0.80, P(positive|not G)=0.20. Report Q costs 2 and has P(positive|G)=0.60, P(positive|not G)=0.40. These are alternative purchases; choose at most one now. All other report outcomes are unobserved. Fees are certain and neither report changes the investment payoff.",
+            "title": "Initial research menu"
+          }
+        ],
+        "title": "Research spending with duplicate and independent evidence",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 4,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "i_terms",
+        "title": "Decision and budget contract"
+      },
+      {
+        "id": "i_menu",
+        "title": "Initial research menu"
+      },
+      {
+        "id": "i_old",
+        "title": "Different population marketing sheet"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "baseline_value": "<typed value>",
+        "expected_net": "<typed value>",
+        "negative_action": "<typed value>",
+        "positive_action": "<typed value>",
+        "query": "<typed value>",
+        "remaining_budget": "<typed value>"
+      },
+      "evidence": {
+        "baseline_value": [
+          "<viewed supporting document ID>"
+        ],
+        "expected_net": [
+          "<viewed supporting document ID>"
+        ],
+        "negative_action": [
+          "<viewed supporting document ID>"
+        ],
+        "positive_action": [
+          "<viewed supporting document ID>"
+        ],
+        "query": [
+          "<viewed supporting document ID>"
+        ],
+        "remaining_budget": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c211",
+      "turn": 1
+    },
+    "inputs": {
+      "observations": [
+        {
+          "data": {
+            "abstention_payoff": 0,
+            "investment_payoffs": {
+              "G": 80,
+              "not_G": -40
+            },
+            "prior_probability_G": 0.3,
+            "research_budget": 6
+          },
+          "source_id": "i_terms"
+        },
+        {
+          "data": {
+            "reports": [
+              {
+                "fee": 4,
+                "positive_probability_G": 0.8,
+                "positive_probability_not_G": 0.2,
+                "report": "R"
+              },
+              {
+                "fee": 2,
+                "positive_probability_G": 0.6,
+                "positive_probability_not_G": 0.4,
+                "report": "Q"
+              }
+            ]
+          },
+          "source_id": "i_menu"
+        }
+      ]
+    },
+    "outputs": {
+      "baseline_value": {
+        "description": "Optimal expected payoff without new research",
+        "type": "number"
+      },
+      "expected_net": {
+        "description": "Optimal expected payoff net of new research fee, before the report outcome",
+        "type": "number"
+      },
+      "negative_action": {
+        "description": "Action after a negative purchased report",
+        "type": "string"
+      },
+      "positive_action": {
+        "description": "Action after a positive purchased report",
+        "type": "string"
+      },
+      "query": {
+        "description": "Next report identifier or none",
+        "type": "string"
+      },
+      "remaining_budget": {
+        "description": "Research budget after the recommended purchase",
+        "type": "number"
+      }
+    },
+    "prompt": "Select the next research purchase or immediate decision under the current budget. Provide a contingent action policy and its expected economics using only the currently available information.",
+    "question_id": "c211",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c211",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "i_terms",
+        "release_stage": 1,
+        "text": "A desk may invest once or abstain. Investment pays net 80 if state G and net -40 otherwise; abstention pays zero. Prior P(G)=0.30. All amounts are cash units, interest is zero, and the objective is to maximize conditional expected net payoff, including any additional research fee. Past paid fees are sunk. Initial research budget is 6. Each stage asks for only the next query or final action; within the current stage, at most one offered report can be purchased before investing or abstaining. No other report sequence is available. A conditional positive/negative action describes the policy if that report is purchased; if no report is purchased use the same final action in both branches. A zero-value tie favors abstention. Never infer the unrevealed true state.",
+        "title": "Decision and budget contract"
+      },
+      {
+        "id": "i_menu",
+        "release_stage": 1,
+        "text": "Report R costs 4 and has P(positive|G)=0.80, P(positive|not G)=0.20. Report Q costs 2 and has P(positive|G)=0.60, P(positive|not G)=0.40. These are alternative purchases; choose at most one now. All other report outcomes are unobserved. Fees are certain and neither report changes the investment payoff.",
+        "title": "Initial research menu"
+      }
+    ],
+    "title": "Research spending with duplicate and independent evidence",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 4,
+    "turn": 1
+  }
+}

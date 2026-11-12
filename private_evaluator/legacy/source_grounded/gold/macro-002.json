@@ -1,0 +1,223 @@
+{
+  "case_id": "macro-002",
+  "reference_solution": {
+    "monthly_vintages": "Q4 monthly SA rates: January11 vintage 0.0,0.1,0.3%; February13 vintage 0.1,0.2,0.2%. December revised -0.1pp; January acceleration relative to revised December +0.1pp.",
+    "annualized_proxies": "Old=1.610840088720097243208100000%; new=2.018299965844160789540813500%; revision=0.407459877124063546332713500pp. These are rounded-rate proxies, not official exact annualized CPI series.",
+    "nsa_and_surprise": "December NSA12-month inflation is 3.4% in both releases: revision zero. January NSA3.1% is a new month, not a December revision. January SA0.3 minus synthetic expectation0.2 gives +0.1pp; without expectation, surprise is unidentified."
+  },
+  "fields": [
+    {
+      "id": "december_sa_revision",
+      "expected": -0.1,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "increased 0.3 percent in December on a seasonally adjusted basis"
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "seasonally adjusted basis, after rising 0.2 percent in December"
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "q4_annualized_proxy_jan11",
+      "expected": 1.6108400887200973,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "q4_annualized_proxy_feb13",
+      "expected": 2.018299965844161,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "q4_annualized_proxy_revision",
+      "expected": 0.40745987712406356,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "january_sa_acceleration",
+      "expected": 0.1,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent in January on a seasonally adjusted basis, after rising 0.2 percent in December"
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "increased 0.3 percent in January on a seasonally adjusted basis",
+              "seasonally adjusted basis, after rising 0.2 percent in December"
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "december_nsa_yoy_revision",
+      "expected": 0.0,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment."
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "The all items index rose 3.4 percent for the 12 months ending December"
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240111",
+            "anchors": [
+              "All items | 0.2 | 0.2 | 0.6 | 0.4 | 0.0 | 0.1 | 0.3 | 3.4"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "3.4-percent increase for the 12 months ending December"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "january_surprise_given_expectation",
+      "expected": 0.1,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "increased 0.3 percent in January on a seasonally adjusted basis"
+            ]
+          },
+          {
+            "source_id": "exp-cpi-20240213",
+            "anchors": [
+              "All items | 0.2 | 0.5 | 0.4 | 0.1 | 0.2 | 0.2 | 0.3 | 3.1"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "surprise_identifiable_without_expectation",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    },
+    {
+      "id": "proxy_equals_exact_index_growth",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    }
+  ],
+  "limitations": [
+    "BLS originals returned HTTP403; exact retained tool excerpts support the selected facts, but complete original-source recapture remains pending.",
+    "Retrospective archives and publicly known history do not eliminate model-weight hindsight. No predictive score is claimed.",
+    "Rounded monthly-rate compounding is a defined proxy; unrounded index-level growth is not identified by this capture.",
+    "Synthetic expectation is not historical market consensus. Independent calculation review is recorded in docs/expansion-review-record.md; domain review remains pending."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "protocol_id": "portfolio-operational-v2",
+  "baseline_protocol_id": "portfolio-clarified-calibration-v1",
+  "taskset": "financial-portfolio-clarified",
+  "harness": "financial-portfolio-operations",
+  "schedule": {
+    "split": "dev",
+    "seed_start": 128,
+    "num_tasks": 32,
+    "attempts_per_task": 2,
+    "expected_attempts": 64,
+    "reserved_test_selected": false
+  },
+  "retries": {
+    "episode": 0,
+    "agent": 0,
+    "scoring": 0,
+    "sdk": 0,
+    "stream": 0,
+    "replacement_attempts": false
+  },
+  "effective_timeouts_seconds": {
+    "setup": 120,
+    "agent": 600,
+    "finalize": 30,
+    "scoring": 180,
+    "public_reproduction": 30
+  },
+  "financial_accounting": {
+    "implementation": "financial_research.accounting.report_path",
+    "candidate_failure_reward": 0,
+    "provider_failure_reward": null,
+    "native_deadline_reward": null,
+    "unresolved_attempts_block_aggregate": true,
+    "cancellation_proves_provider_fault": false,
+    "reference_normalization": false
+  },
+  "telemetry": {
+    "location": "trusted_host_only",
+    "start_persisted_before_provider_await": true,
+    "terminal_states": ["success", "error", "cancelled"],
+    "unmatched_start": "interrupted_or_unfinished_usage_unknown",
+    "missing_usage": null,
+    "total_cost_requires_all_requests_resolved_with_cost": true,
+    "store_prompts_headers_credentials_error_bodies": false
+  },
+  "reference_controls": {
+    "scope": "all_32_development_episodes",
+    "public_reproduction_required": true,
+    "persist_reward_and_components": true,
+    "require_public_components_equal_one": true,
+    "require_gold_agreement": true,
+    "may_have_reward_below_one": true,
+    "outputs_trusted_host_only": true
+  }
+}

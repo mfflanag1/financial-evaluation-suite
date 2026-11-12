@@ -1,0 +1,2366 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "cash_remarked_to_current_spot",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 60,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "fixed_cash_per_contract": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Values the formerly fractional 0.5 share at current spot after cash has fixed"
+  },
+  {
+    "name": "indicative_formula_as_final",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 15,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "final_equivalent_quote": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Uses the provisional formula after final cash fixing"
+  },
+  {
+    "name": "split_divides_contract_count",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 8750,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_strike_payment": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Divides contracts by eight although contract multiplier is one"
+  },
+  {
+    "name": "fraction_retained_in_hedge",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 625,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_local_expiry_sensitivity": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Treats fixed cash as 0.5 variable shares per contract"
+  },
+  {
+    "name": "initial_cash_mistaken_for_final",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "initial_final_cash_known": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Mistakes an indicative formula for a known final cash entitlement"
+  },
+  {
+    "name": "breakeven_ignores_premium",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 112.315,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "spot_breakeven": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Finds zero intrinsic rather than zero net P&L"
+  },
+  {
+    "name": "minimal_final_share_quote",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Final whole-share clause suffices; initial notice is not also required"
+  },
+  {
+    "name": "alternative_initial_estimate_quote",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "includes an estimate for the value of the cash in lieu amount and not the actual amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Equivalent direct initial-sufficiency disclosure"
+  },
+  {
+    "name": "alternative_cash_calculation_quote",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 per GE1/1GE1/2GE1 Contract"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Equivalent direct disclosure of final contract cash"
+  },
+  {
+    "name": "valid_initial_plus_forbidden_later_quote",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "initial_final_cash_known": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Later settlement evidence is forbidden even with valid initial evidence and correct value"
+  },
+  {
+    "name": "missing_revision_provisional_formula",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "quote_revision_at_same_spot": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Final terms alone do not establish the difference from provisional pricing"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": []
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "fixed_cash_per_contract": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Correct value without source evidence"
+  },
+  {
+    "name": "fabricated_evidence",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "OCC explicitly guarantees this hypothetical book profit."
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "fixed_cash_per_contract": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Invented disclosure does not occur in its cited memo"
+  },
+  {
+    "name": "wrong_source_evidence",
+    "response": {
+      "case_id": "vol-002",
+      "answers": {
+        "initial_final_cash_known": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "has not determined the price to be used to determine the cash\nin lieu amount"
+            }
+          ]
+        },
+        "provisional_equivalent_quote": {
+          "value": 15.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            }
+          ]
+        },
+        "fixed_cash_per_contract": {
+          "value": 52.22,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "Cash in lieu of 0.5 fractional GE Shares"
+            }
+          ]
+        },
+        "book_share_delivery": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "book_fixed_cash_delivery": {
+          "value": 2611.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            }
+          ]
+        },
+        "final_equivalent_quote": {
+          "value": 14.9222,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "quote_revision_at_same_spot": {
+          "value": -0.0778,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49105",
+              "quote": "GE1 = 0.125 (GE)"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 70000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3361.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "spot_breakeven": {
+          "value": 114.39833333333333,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "$52.22 Cash"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_local_expiry_sensitivity": {
+          "value": 600,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "cash in lieu of fractional share portion of the option deliverable remains fixed"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "fixed_cash_per_contract": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Quote is real but the cited memo does not establish this field's contract terms"
+  }
+]

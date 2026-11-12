@@ -1,0 +1,42 @@
+Form 8-K - Current report:
+
+SEC Accession No. 0001759509-24-000011
+
+Filing Date
+
+2024-02-13
+
+Accepted
+
+2024-02-13 16:06:27
+
+Documents
+
+16
+
+Period of Report
+
+2024-02-13
+
+[Intervening source text omitted]
+
+Document Format Files
+Seq  | Description  | Document  | Type  | Size
+--- | --- | --- | --- | ---
+1  | 8-K  | lyft-20240213.htm iXBRL  | 8-K  | 26121
+2  | EX-99.1  | lyft-2023x12x31pressreleas.htm | EX-99.1  | 337817
+6  | GRAPHIC  | image_0a.jpg | GRAPHIC  | 79549
+   | Complete submission text file  | 0001759509-24-000011.txt |    | 631763
+
+[Intervening source text omitted]
+
+Mailing Address 185 BERRY STREET, SUITE 400 SAN FRANCISCO CA 94107
+
+Business Address 185 BERRY STREET, SUITE 400 SAN FRANCISCO CA 94107 844-250-2773
+
+Lyft, Inc. (Filer) CIK: 0001759509 (see all company filings)
+
+EIN.: 208809830 | State of Incorp.: DE | Fiscal Year End: 1231
+Type: 8-K | Act: 34 | File No.: 001-38846 | Film No.: 24625795
+SIC: 7389 Services-Business Services, NEC
+(CF Office: 07 Trade & Services)

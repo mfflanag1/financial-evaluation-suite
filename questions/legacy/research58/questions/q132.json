@@ -1,0 +1,149 @@
+{
+  "question_id": "q132",
+  "title": "Separate family-level research confirmation from capacity allocation",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Audit the research-to-launch gate. Selection among siblings must be frozen using validation information, not confirmatory p-values. Apply the specified family-level confirmatory rule and then solve the separate scarce-capacity launch decision. Include the exclusion list and statistical cutoff.",
+  "inputs": {
+    "columns": [
+      "id",
+      "family",
+      "registered_before_holdout",
+      "validation_loss",
+      "confirmatory_p",
+      "forecast_net_alpha",
+      "launch_capacity"
+    ],
+    "trials": [
+      [
+        "A1",
+        "A",
+        true,
+        0.8,
+        0.018,
+        30,
+        2
+      ],
+      [
+        "A2",
+        "A",
+        true,
+        0.9,
+        0.001,
+        42,
+        2
+      ],
+      [
+        "B1",
+        "B",
+        true,
+        0.7,
+        0.004,
+        25,
+        1
+      ],
+      [
+        "B2",
+        "B",
+        true,
+        1.1,
+        0.2,
+        5,
+        1
+      ],
+      [
+        "C1",
+        "C",
+        true,
+        0.6,
+        0.029,
+        10,
+        1
+      ],
+      [
+        "D1",
+        "D",
+        true,
+        0.5,
+        0.045,
+        60,
+        1
+      ],
+      [
+        "E1",
+        "E",
+        true,
+        0.4,
+        0.08,
+        80,
+        1
+      ],
+      [
+        "F1",
+        "F",
+        false,
+        0.1,
+        0.0001,
+        100,
+        1
+      ]
+    ],
+    "FDR_level": 0.05,
+    "launch_capacity_limit": 2
+  },
+  "sources": [
+    {
+      "id": "q132_research_protocol",
+      "text": "Original synthetic evaluation packet. Before opening confirmatory returns, retain only registered trials and choose one representative per family by lowest validation loss, then lexicographic ID. Confirmatory p-values are valid for this frozen representative selection. Apply Benjamini-Hochberg at5% across those representatives only; reject every ordered p through the largest satisfying p(i)<=.05*i/m."
+    },
+    {
+      "id": "q132_implementation_gate",
+      "text": "Original synthetic evaluation packet. Only confirmed representatives may receive launch capacity. Choose an indivisible subset maximizing the supplied net-alpha forecast under capacity2. Forecasts already deduct trading/funding costs; do not deduct p-values or validation losses from alpha. Ties: less capacity, then lexicographic sorted-ID tuple. No guarantee of realized alpha is made."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "family_representatives",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Representative IDs in alphabetic family order."
+    },
+    {
+      "name": "confirmed_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "BH discoveries sorted lexicographically."
+    },
+    {
+      "name": "funded_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Funded IDs sorted lexicographically."
+    },
+    {
+      "name": "bh_cutoff",
+      "type": "number",
+      "unit": "p-value",
+      "description": "Largest rejected ordered p-value, or0 if none.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funded_forecast_net_alpha",
+      "type": "number",
+      "unit": "USD thousands",
+      "description": "Sum of stipulated net alpha forecasts of funded strategies.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "excluded_ids",
+      "type": "string_array",
+      "unit": "identifiers",
+      "description": "Unregistered trial IDs sorted lexicographically."
+    }
+  ]
+}

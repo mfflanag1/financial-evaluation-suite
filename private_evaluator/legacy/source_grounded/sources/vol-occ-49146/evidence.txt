@@ -1,0 +1,50 @@
+#49146
+Date: August 18, 2021
+Subject: Adjusted General Electric Company - Cash In Lieu Settlement
+Adjusted Option Symbols: GE1/1GE1/2GE1
+
+Adjusted General Electric Company options were adjusted on August 2, 2021 (See OCC Information
+Memo #48921). The new deliverable became 1) 12 General Electric Company (GE) Common Shares, and
+2) Cash in lieu of 0.5 fractional GE shares. Only settlement of the cash portion of GE1/1GE1/2GE1
+options exercise/assignment activity was subject to delayed settlement.
+OCC has been informed that a price of $104.4399 per whole GE share will be used to determine the cash
+in lieu amount. Accordingly, the cash in lieu amount is:
+0.5 x $104.4399 = $52.22 per GE1/1GE1/2GE1 Contract
+Now that the exact cash in lieu amount has been determined, OCC will require Put exercisers and Call
+assignees, during the period of August 2, 2021 through August 18, 2021, to deliver the appropriate cash
+amount.
+The cash in lieu of fractional share portion of the option deliverable remains fixed and does not vary with
+price changes of any security.
+Terms of the GE1/1GE1/2GE1 options are as follows:
+New Deliverable
+Per Contract: 1) 12 General Electric Company (GE) Common Shares
+2) $52.22 Cash
+Strike Prices: Unchanged
+CUSIP: GE: 369604301
+Multiplier: 100 (i.e., a premium of 1.50 yields $150)
+Settlement
+The GE component of GE1/1GE1/2GE1 exercise/assignment activity from August 2, 2021 through August
+17, 2021, has settled through National Security Clearing Corporation (NSCC). The $52.22 cash amount
+will be settled by OCC.
+Pricing
+The underlying price for GE1/1GE1/2GE1 will be determined as follows:GE1 = 0.12 (GE) + 0.5222
+For example, if GE closes at 103.00, the GE1/1GE1/2GE1 price would be calculated as follows:
+GE1 = 0.12 (103.00) + 0.5222 = 12.88
+Disclaimer
+This Information Memo provides an unofficial summary of the terms of corporate events affecting listed
+options or futures prepared for the convenience of market participants. OCC accepts no responsibility for
+the accuracy or completeness of the summary, particularly for information which may be relevant to
+investment decisions. Option or futures investors should independently ascertain and evaluate all
+information concerning this corporate event(s).
+The determination to adjust options and the nature of any adjustment is made by OCC pursuant to OCC
+By-Laws, Article VI, Sections 11 and 11A. The determination to adjust futures and the nature of any
+adjustment is made by OCC pursuant to OCC By-Laws, Article XII, Sections 3, 4, or 4A, as applicable. For
+both options and futures, each adjustment decision is made on a case by case basis. Adjustment
+decisions are based on information available at the time and are subject to change as additional
+information becomes available or if there are material changes to the terms of the corporate event(s)
+occasioning the adjustment.
+ALL CLEARING MEMBERS ARE REQUESTED TO IMMEDIATELY ADVISE ALL BRANCH OFFICES AND
+CORRESPONDENTS ON THE ABOVE.
+For questions regarding this memo, call Investor Services at 1-888-678-4667 or email
+investorservices@theocc.com. Clearing Members may contact Member Services at 1-800-544-6091 or,
+within Canada, at 1-800-424-7320, or email memberservices@theocc.com.

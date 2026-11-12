@@ -1,0 +1,627 @@
+{
+  "case_id": "portfolio-001",
+  "reference_solution": {
+    "public_ledger": "Borrowings 664m, distribution 663m, arithmetic difference 1m; not reported cash balance. Term loan 500000000 USD; hypothetical 0.02% participation 100000 USD.",
+    "pod_scenario_pnl": {
+      "equity": [
+        "-22000",
+        "16000",
+        "-2000"
+      ],
+      "options": [
+        "16500",
+        "-12000",
+        "1500"
+      ],
+      "credit": [
+        "-4000",
+        "1000",
+        "-1000"
+      ],
+      "aggregate": [
+        "-9500",
+        "5000",
+        "-1500"
+      ]
+    },
+    "net_share_exposure": "4000-30*100=1000 K; 4000*0.25-30*25=250 KLG. All stressed calls remain in the money.",
+    "enumeration": {
+      "NONE": {
+        "fees": "0",
+        "initial_locked": "0",
+        "scenario_pnl": [
+          "-9500",
+          "5000",
+          "-1500"
+        ],
+        "t1_outflows": [
+          "0",
+          "12000",
+          "0"
+        ],
+        "cash_path": [
+          "18000",
+          "18000",
+          "6000",
+          "18000"
+        ],
+        "cash_required": "12000",
+        "worst_pnl": "-9500",
+        "feasible": true
+      },
+      "A": {
+        "fees": "100",
+        "initial_locked": "2600",
+        "scenario_pnl": [
+          "-7600",
+          "3400",
+          "-1100"
+        ],
+        "t1_outflows": [
+          "0",
+          "13500",
+          "0"
+        ],
+        "cash_path": [
+          "15400",
+          "15400",
+          "1900",
+          "15400"
+        ],
+        "cash_required": "16100",
+        "worst_pnl": "-7600",
+        "feasible": true
+      },
+      "B": {
+        "fees": "100",
+        "initial_locked": "2100",
+        "scenario_pnl": [
+          "-8100",
+          "3900",
+          "-2100"
+        ],
+        "t1_outflows": [
+          "0",
+          "13000",
+          "500"
+        ],
+        "cash_path": [
+          "15900",
+          "15900",
+          "2900",
+          "15400"
+        ],
+        "cash_required": "15100",
+        "worst_pnl": "-8100",
+        "feasible": true
+      },
+      "C": {
+        "fees": "150",
+        "initial_locked": "1150",
+        "scenario_pnl": [
+          "-7650",
+          "4350",
+          "-1150"
+        ],
+        "t1_outflows": [
+          "0",
+          "12500",
+          "0"
+        ],
+        "cash_path": [
+          "16850",
+          "16850",
+          "4350",
+          "16850"
+        ],
+        "cash_required": "13650",
+        "worst_pnl": "-7650",
+        "feasible": true
+      },
+      "AB": {
+        "fees": "200",
+        "initial_locked": "4700",
+        "scenario_pnl": [
+          "-6200",
+          "2300",
+          "-1700"
+        ],
+        "t1_outflows": [
+          "0",
+          "14500",
+          "500"
+        ],
+        "cash_path": [
+          "13300",
+          "13300",
+          "-1200",
+          "12800"
+        ],
+        "cash_required": "19200",
+        "worst_pnl": "-6200",
+        "feasible": false
+      },
+      "AC": {
+        "fees": "250",
+        "initial_locked": "3750",
+        "scenario_pnl": [
+          "-5750",
+          "2750",
+          "-750"
+        ],
+        "t1_outflows": [
+          "0",
+          "14000",
+          "0"
+        ],
+        "cash_path": [
+          "14250",
+          "14250",
+          "250",
+          "14250"
+        ],
+        "cash_required": "17750",
+        "worst_pnl": "-5750",
+        "feasible": true
+      },
+      "BC": {
+        "fees": "250",
+        "initial_locked": "3250",
+        "scenario_pnl": [
+          "-6250",
+          "3250",
+          "-1750"
+        ],
+        "t1_outflows": [
+          "0",
+          "13500",
+          "500"
+        ],
+        "cash_path": [
+          "14750",
+          "14750",
+          "1250",
+          "14250"
+        ],
+        "cash_required": "16750",
+        "worst_pnl": "-6250",
+        "feasible": true
+      },
+      "ABC": {
+        "fees": "350",
+        "initial_locked": "5850",
+        "scenario_pnl": [
+          "-4350",
+          "1650",
+          "-1350"
+        ],
+        "t1_outflows": [
+          "0",
+          "15000",
+          "500"
+        ],
+        "cash_path": [
+          "12150",
+          "12150",
+          "-2850",
+          "11650"
+        ],
+        "cash_required": "20850",
+        "worst_pnl": "-4350",
+        "feasible": false
+      }
+    },
+    "missing_input": "C margin1000 gives AC; C margin10000 makes every C-containing plan infeasible, leaving A as the best feasible plan. Therefore the optimum is not identified.",
+    "decision_boundary": "The first strictly better optimizer becomes ABC at starting cash 20850. Equality is feasible."
+  },
+  "fields": [
+    {
+      "id": "financing_ledger_difference",
+      "expected": 1.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-wk-2023-q3"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-wk-2023-q3": [
+          [
+            "Credit Facility were $ 664 million"
+          ],
+          [
+            "distributed $ 663 million"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "credit_participation_principal",
+      "expected": 100000.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "portfolio-wk-2023-q3"
+      ],
+      "evidence_anchor_groups": {
+        "portfolio-wk-2023-q3": [
+          [
+            "$ 500 million term loan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "net_share_equivalents",
+      "expected": "K=1000;KLG=250",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "distribution ratio is 0.25"
+            ]
+          },
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "base_scenario_pnl",
+      "expected": "S1=-9500;S2=5000;S3=-1500",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "$ 500 million term loan"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "distribution ratio is 0.25"
+            ]
+          },
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "feasible_plans",
+      "expected": "NONE|A|B|C|AC|BC",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "$ 500 million term loan"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "optimal_plan",
+      "expected": "AC",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "$ 500 million term loan"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "distribution ratio is 0.25"
+            ]
+          },
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "optimal_worst_pnl",
+      "expected": -5750.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "$ 500 million term loan"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "distribution ratio is 0.25"
+            ]
+          },
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "optimal_minimum_cash",
+      "expected": 250.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "$ 500 million term loan"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "first_optimizer_change_budget",
+      "expected": 20850.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {},
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "$ 500 million term loan"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "distribution ratio is 0.25"
+            ]
+          },
+          {
+            "source_id": "portfolio-wk-2023-q3",
+            "anchors": [
+              "one share of WK Kellogg Co’s common stock for every four shares of Kellanova common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "100 Kellanova (K) Common Shares",
+              "25 (New) WK Kellogg Company (KLG) Common Shares"
+            ]
+          },
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "K1 = K + 0.25 (KLG)"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "portfolio-occ-53276",
+            "anchors": [
+              "Multiplier: 100"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "missing_margin_optimizer_status",
+      "expected": "insufficient_data",
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_anchor_groups": {}
+    }
+  ],
+  "limitations": [
+    "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+    "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+    "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+    "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+  ]
+}

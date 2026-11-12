@@ -1,0 +1,33 @@
+We also use Operating Free Cash Flow (defined as Adjusted EBITDA less cash capital expenditures), and Free Cash Flow (defined as net cash flows from operating activities less cash capital expenditures) as indicators of the Company’s financial performance. We believe these measures are two of several benchmarks used by investors, analysts and peers for comparison of performance in the Company’s industry, although they may not be directly comparable to similar measures reported by other companies.
+
+[Intervening source text omitted]
+
+Reconciliation of Net Income to Adjusted EBITDA and Operating Free Cash Flow(in thousands)(unaudited)  |  |  |  |
+ | Three Months Ended December 31,  |  | Twelve Months Ended December 31,
+   | 2023  |  | 2022  |  | 2023  |  | 2022
+ |  |  |  |  |  |  |
+Net income (loss)  | $  | (113,792)  |  |  | $  | (192,413)  |  |  | $  | 79,037   |  |  | $  | 220,889   |
+Income tax expense (benefit)  | (66,905)  |  |  | 143,277   |  |  | 39,528   |  |  | 295,840   |
+Other loss (income), net  | 2,225   |  |  | (339)  |  |  | (4,940)  |  |  | (8,535)  |
+Loss (gain) on interest rate swap contracts, net  | 46,044   |  |  | (2,828)  |  |  | (32,664)  |  |  | (271,788)  |
+Loss (gain) on derivative contracts, net  | —   |  |  | 218,041   |  |  | 166,489   |  |  | (425,815)  |
+Loss (gain) on investments and sale of affiliate interests, net  | 11,773   |  |  | (242,268)  |  |  | (180,237)  |  |  | 659,792   |
+Loss (gain) on extinguishment of debt and write-off of deferred financing costs  | —   |  |  | 575   |  |  | (4,393)  |  |  | 575   |
+Interest expense, net  | 422,917   |  |  | 377,072   |  |  | 1,639,120   |  |  | 1,331,636   |
+Depreciation and amortization  | 407,014   |  |  | 446,430   |  |  | 1,644,297   |  |  | 1,773,673   |
+Restructuring, impairments and other operating items  | 175,424   |  |  | 120,227   |  |  | 214,727   |  |  | 130,285   |
+Share-based compensation  | 18,558   |  |  | 45,575   |  |  | 47,926   |  |  | 159,985   |
+Adjusted EBITDA  | 903,258   |  |  | 913,349   |  |  | 3,608,890   |  |  | 3,866,537   |
+Capital expenditures (cash)  | 295,250   |  |  | 543,226   |  |  | 1,704,811   |  |  | 1,914,282   |
+Operating Free Cash Flow  | $  | 608,008   |  |  | $  | 370,123   |  |  | $  | 1,904,079   |  |  | $  | 1,952,255   |
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |
+ |  |  |  |  |  |  |
+ |  |  |  |  |  |  |
+Reconciliation of net cash flow from operating activities to Free Cash Flow (Deficit)(unaudited):  |  |
+ | Three Months Ended December 31,  |  | Twelve Months Ended December 31,
+   | 2023  |  | 2022  |  | 2023  |  | 2022
+ |  |  |  |  |  |  |
+Net cash flows from operating activities  | $  | 496,213   |  |  | $  | 461,185   |  |  | $  | 1,826,398   |  |  | $  | 2,366,901   |
+Capital Expenditures (cash)  | 295,250   |  |  | 543,226   |  |  | 1,704,811   |  |  | 1,914,282   |
+Free Cash Flow (Deficit)  | $  | 200,963   |  |  | $  | (82,041)  |  |  | $  | 121,587   |  |  | $  | 452,619   |

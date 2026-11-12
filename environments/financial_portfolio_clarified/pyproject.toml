@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-portfolio-clarified"
+version = "0.5.0"
+description = "Separately versioned split-adjustment clarification for portfolio research"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["financial-portfolio-staged==0.4.0", "verifiers==0.4.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_portfolio_clarified"]

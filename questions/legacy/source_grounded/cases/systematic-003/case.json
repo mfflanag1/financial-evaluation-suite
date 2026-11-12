@@ -1,0 +1,98 @@
+{
+  "id": "systematic-003",
+  "case_group": "meta-june2022-ticker-continuity-and-exit-panel",
+  "lane": "systematic",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2026-10-04T18:15:18Z",
+  "prompt": "Use Meta's dated issuer ticker-change notice to repair a data join across the June 9, 2022 FB\u2192META change. The same Class A security continues; a ticker rename is not a sale, new listing investment, stock split or cash distribution. All prices, dividends, holdings, universe membership and the other securities below are EXPLICITLY SYNTHETIC. Only the Meta ticker-change mechanics come from the primary notice. Toy permanent security M maps to the issuer's Class A common stock: venue NASDAQ / ticker FB on June 8, venue NASDAQ / ticker META from June 9. Security X is a fictitious different issuer on venue SIMEX, ticker META on June 8, price $10, no portfolio holding and never a member of this toy universe. Do not infer a relationship from identical ticker strings. Security E is a fictitious exiting universe member on SIMEX / ticker EXIT. The June 8 pre-existing book is 60 shares of M at $100 and 80 shares of E at $50; no other holdings or cash, so initial equity $10,000. All entry costs precede the evaluation and are excluded. The COMPLETE SYNTHETIC trading/return calendar is June 8 initial close, June 9 close, June 10 terminal close, with no rebalancing or share-count changes. June 9: M price $101 and pays a $1 cash dividend per held share, retained as cash without reinvestment; E price $40 and pays no distribution. June 10: M price $102 and no additional dividend; E disappears from the quote panel but settles for exactly $20 cash per held share on that date in the COMPLETE TOY branch. No other splits, corporate actions, interest, borrow, financing, taxes or cash flows occur. At June 10 liquidate all M at $102, charging 10 bps of dollar sale proceeds. E's mandatory cash settlement has zero cost. A correct repair carries permanent identities and effective-date mappings, retains E rather than deleting it when its quote disappears, and carries M's dividend cash. Compute M's holding-period total return before liquidation costs, E's gross dollar profit/loss, total terminal equity, liquidation cost and net portfolio profit. For a deliberately defective calculation, use X's June 8 ticker META price $10 as M's start price, keeping M's $102 end price and $1 dividend; report this naive M total return separately. Also compute the continuous terminal cash proceeds PER E SHARE required for zero net portfolio profit if all M prices/dividends and the liquidation rule stay fixed. The INCOMPLETE EMPIRICAL branch deletes the assumed E terminal cash settlement and M dividend/adjustment records, and provides no complete historical universe or receipt/execution log. It retains only the issuer notice and unadjusted price rows; do not infer missing returns as zero or treat toy inputs as observations. Classify real portfolio total-return performance as established or not_established. Return fractions on a 0-to-1 scale for returns (negative or greater than 1 allowed); monetary outputs are USD. Cite the issuer identity-continuity clauses where the calculation depends on joining M across the rename. Purely synthetic-input fields need no source citation. The packet's 2026 observed-source cutoff supports retrospective analysis; original intraday notice dissemination is not established.",
+  "source_ids": [
+    "systematic-meta-ticker"
+  ],
+  "output_fields": [
+    {
+      "id": "rename_required_turnover",
+      "type": "number",
+      "unit": "USD",
+      "description": "Dollar trading turnover economically required solely by the ticker rename for this pre-existing book. Cite either the no-shareholder-action clause or the rename plus unchanged-CUSIP clauses.",
+      "evidence_required": true
+    },
+    {
+      "id": "meta_total_return",
+      "type": "number",
+      "unit": "fraction",
+      "description": "M June 8\u2192June 10 total return including its cash dividend, before liquidation costs.",
+      "evidence_required": true
+    },
+    {
+      "id": "exiting_security_gross_profit",
+      "type": "number",
+      "unit": "USD",
+      "description": "E terminal cash settlement minus its original book value, before costs; prompt-only inputs.",
+      "evidence_required": false
+    },
+    {
+      "id": "terminal_liquidation_cost",
+      "type": "number",
+      "unit": "USD",
+      "description": "Fee on the actual dollar proceeds from liquidating all M shares at June 10.",
+      "evidence_required": true
+    },
+    {
+      "id": "valid_terminal_equity",
+      "type": "number",
+      "unit": "USD",
+      "description": "Fully liquidated terminal cash equity including M dividends and E exit proceeds, after fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "valid_net_profit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Valid terminal equity minus initial $10,000.",
+      "evidence_required": true
+    },
+    {
+      "id": "naive_ticker_join_meta_return",
+      "type": "number",
+      "unit": "fraction",
+      "description": "The deliberately defective M return using X's $10 start price, M's $102 end price and $1 dividend. Pure synthetic counterexample.",
+      "evidence_required": false
+    },
+    {
+      "id": "exit_proceeds_break_even",
+      "type": "number",
+      "unit": "USD_per_E_share",
+      "description": "Continuous terminal E cash proceeds per share that make net portfolio profit zero, holding M inputs and sale fee fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "ticker_alone_unique_identity",
+      "type": "boolean",
+      "unit": "categorical",
+      "description": "Can ticker alone uniquely identify M in the supplied effective-date/security master? Boolean; evaluate the supplied synthetic collision.",
+      "evidence_required": false
+    },
+    {
+      "id": "empirical_total_return_status",
+      "type": "string",
+      "unit": "categorical",
+      "description": "Exactly established or not_established for portfolio total-return performance in the incomplete empirical branch.",
+      "evidence_required": false
+    }
+  ],
+  "response_format": {
+    "case_id": "systematic-003",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

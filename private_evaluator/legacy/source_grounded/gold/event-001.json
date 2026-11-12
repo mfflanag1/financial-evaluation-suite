@@ -1,0 +1,311 @@
+{
+  "case_id": "event-001",
+  "reference_solution": {
+    "a_exchange_ratio": 1.437,
+    "b_exchange_ratio": 1.344,
+    "c_exchange_ratio": 1.3,
+    "a_value_per_target": 102.608,
+    "b_value_per_target": 110.198,
+    "c_value_per_target": 105.75,
+    "b_net_profit_per_target": 1.998,
+    "b_break_even_settlement_price": 40.513392857142854,
+    "b_positive_net_profit": true,
+    "b_short_hedge_shares": 1344,
+    "u_unique_value": false,
+    "u_value_lower_bound": 105.75,
+    "u_value_upper_bound": 111.23
+  },
+  "worked_derivation": [
+    "r(A)=round_3(1.437 if A<37.411; 53.75/A if 37.411<=A<=41.349; 1.300 if A>41.349).",
+    "At A=40, 53.75/40=1.34375 rounds to 1.344. V(A,P)=53.75+r(A)*P.",
+    "B net profit=53.75+1.344*42-108-0.20=1.998. Break-even P=(108.20-53.75)/1.344.",
+    "After A is fixed, dV/dP=r(A), so short 1,344 ATT shares for 1,000 TWX shares. This is not the pre-fixing joint A/P sensitivity.",
+    "For U, 1.300<=r<=1.437, and both endpoints are attainable. P=40 gives 105.75<=V<=111.23."
+  ],
+  "limitations": [
+    "Synthetic price scenarios are contract-mechanics tests, not historical investment outcomes.",
+    "The entire merger agreement and any subsequent amendments are not captured. Eligibility and unchanged terms are explicit assumptions.",
+    "No rounding tie occurs in these inputs. Per-share marks are based on a 1,000-share holding, avoiding fractional settlement differences.",
+    "Hedge result covers only settlement-price sensitivity after the averaging price is fixed, conditional on closing."
+  ],
+  "fields": [
+    {
+      "id": "a_exchange_ratio",
+      "expected": 1.437,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "if the Average Parent Stock Price is an amount less than $37.411, then the Exchange Ratio shall be 1.437"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_exchange_ratio",
+      "expected": 1.344,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "in each case rounded to three decimal places"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "c_exchange_ratio",
+      "expected": 1.3,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "if the Average Parent Stock Price is an amount greater than $41.349, then the Exchange Ratio shall be 1.300"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "a_value_per_target",
+      "expected": 102.608,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount less than $37.411, then the Exchange Ratio shall be 1.437"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_value_per_target",
+      "expected": 110.198,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "in each case rounded to three decimal places"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "c_value_per_target",
+      "expected": 105.75,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than $41.349, then the Exchange Ratio shall be 1.300"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_net_profit_per_target",
+      "expected": 1.998,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "in each case rounded to three decimal places"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_break_even_settlement_price",
+      "expected": 40.513392857142854,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "in each case rounded to three decimal places"
+          ],
+          [
+            "on each of the 15 consecutive Trading Days ending on (and including) the Trading Day that is three Trading Days prior to the date of the First Effective Time"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_positive_net_profit",
+      "expected": true,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "in each case rounded to three decimal places"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_short_hedge_shares",
+      "expected": 1344,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "in each case rounded to three decimal places"
+          ],
+          [
+            "on each of the 15 consecutive Trading Days ending on (and including) the Trading Day that is three Trading Days prior to the date of the First Effective Time"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u_unique_value",
+      "expected": false,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "on each of the 15 consecutive Trading Days ending on (and including) the Trading Day that is three Trading Days prior to the date of the First Effective Time"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than or equal to $37.411 but less than or equal to $41.349 then the Exchange Ratio shall be an amount equal to the quotient obtained by dividing (x) $53.75 by (y) the Average Parent Stock Price"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount less than $37.411, then the Exchange Ratio shall be 1.437"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than $41.349, then the Exchange Ratio shall be 1.300"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u_value_lower_bound",
+      "expected": 105.75,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount greater than $41.349, then the Exchange Ratio shall be 1.300"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u_value_upper_bound",
+      "expected": 111.23,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "event-att-timewarner-contract"
+      ],
+      "evidence_anchor_groups": {
+        "event-att-timewarner-contract": [
+          [
+            "plus $53.75 in cash"
+          ],
+          [
+            "if the Average Parent Stock Price is an amount less than $37.411, then the Exchange Ratio shall be 1.437"
+          ]
+        ]
+      }
+    }
+  ]
+}

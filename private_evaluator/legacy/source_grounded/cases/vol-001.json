@@ -1,0 +1,95 @@
+{
+  "id": "vol-001",
+  "case_group": "natwest-2022-special-distribution-consolidation",
+  "lane": "volatility_derivatives",
+  "status": "prototype",
+  "epistemic_type": "conditional_analysis",
+  "information_cutoff": "2026-10-04T17:52:56Z",
+  "prompt": "You hold 20 long adjusted NWG1 calls with strike 5.00 and original premium quote 0.17. Hypothetical expiry NWG ADS price is 5.20. Reconcile the preliminary and final cash terms of the 2022 share consolidation/special distribution. Use the authoritative final per-contract cash settlement, rather than recomputing an unrounded cash settlement. Determine the book's expiry P&L and the exact post-consolidation ADS price giving zero P&L. For the initial-sufficiency question use only memo 50944; later memo 51041 must not fill that information gap.\nAll prices, premiums, positions and stress moves in this prompt are supplied hypothetical inputs, not observed historical market data. Evaluate expiry payoff only; ignore fees, taxes, financing, early exercise and other corporate actions. A local expiry-payoff sensitivity is not a pre-expiry model Greek. Amounts are USD unless stated. Return numeric amounts without intermediate rounding except where a field specifies rounding. Quote each contract term used; scenario constants need no source citation. The 2026 cutoff is an observed evidence bound, not a historical trading claim. Source memos describe different information states; respect the memo subset named by each question.",
+  "source_ids": [
+    "vol-occ-50944",
+    "vol-occ-51041"
+  ],
+  "output_fields": [
+    {
+      "id": "initial_total_cash_determined",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "From memo 50944 alone, is the final total cash deliverable determined?",
+      "evidence_required": true,
+      "allowed_source_ids": [
+        "vol-occ-50944"
+      ]
+    },
+    {
+      "id": "net_special_dividend_unrounded",
+      "type": "number",
+      "unit": "USD_per_contract",
+      "description": "Unrounded net special-dividend amount for 100 original ADS, excluding cash in lieu; do not round to cents.",
+      "evidence_required": true
+    },
+    {
+      "id": "final_cash_per_contract",
+      "type": "number",
+      "unit": "USD_per_contract",
+      "description": "Authoritative final total cash deliverable including cash in lieu.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_share_delivery",
+      "type": "number",
+      "unit": "NWG_ADS",
+      "description": "Number of post-consolidation ADS received if all long calls are exercised.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_strike_payment",
+      "type": "number",
+      "unit": "USD",
+      "description": "Aggregate cash strike payment for exercise of all 20 contracts.",
+      "evidence_required": true
+    },
+    {
+      "id": "basket_value_per_contract",
+      "type": "number",
+      "unit": "USD_per_contract",
+      "description": "Market value of the final deliverable at supplied expiry price.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_expiry_intrinsic",
+      "type": "number",
+      "unit": "USD",
+      "description": "Nonnegative aggregate long-call intrinsic value before original premium.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_premium",
+      "type": "number",
+      "unit": "USD",
+      "description": "Original total premium paid using the documented quotation multiplier.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_expiry_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Intrinsic value less original premium; a positive value is a gain.",
+      "evidence_required": true
+    },
+    {
+      "id": "spot_breakeven",
+      "type": "number",
+      "unit": "USD_per_NWG_ADS",
+      "description": "Exact underlying ADS price for zero expiry P&L, to at least six decimals.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_local_expiry_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_NWG_move",
+      "description": "Local slope of book expiry P&L at S=5.20, holding fixed cash constant and remaining in the money.",
+      "evidence_required": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "credit-001",
+  "case_group": "arcosa-2024-acquisition-amendment-conditional-schedule",
+  "lane": "credit_capital_structure",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T17:52:45Z",
+  "prompt": "Analyze Arcosa's August 15, 2024 amendment as a fixed document version, using only the supplied excerpts. This is a conditional contract calculation, not a statement of Arcosa's actual results, actual closing date, current loan terms, or legal default. The evidence cutoff is the observed October 4, 2026 public capture, not an invented 2024 publication timestamp. The tool-rendered marked document sometimes merges old/new wording; for post-closing leverage use the explicit enumerated clauses (ii)-(iv) of Section 6.12(a) and the Consolidated Total Net Leverage Ratio definition. No optional Qualified Acquisition step-up is elected. Because the retained plain-text redline does not resolve its styling, this exercise STIPULATES that clauses (ii)-(iv) test the supplied Consolidated Total Net Leverage Ratio definition; it does not establish that interpretation of the original styled agreement.\n\nSUPPLIED SYNTHETIC ASSUMPTIONS (all money in USD millions): the hypothetical Acquisition Closing Date is October 15, 2024, all closing conditions are satisfied then, fiscal quarters end March/June/September/December, the first FULL post-close fiscal quarter is January-March 2025, and no subsequent amendments apply. For every tested date use this fixed four-quarter ledger, already on the required pro-forma acquired/disposed perimeter: Consolidated Net Income 180; Consolidated Interest Expense 60; income/franchise tax expense 45; depreciation 95; amortization 25; qualifying extraordinary noncash loss 20; noncash stock-compensation expense 15; qualifying nonrecurring Permitted Acquisition fees 25; income-tax credit not netted from tax expense 5; cash settlement 10 for a qualifying earlier-quarter noncash item; qualifying extraordinary gain 30. All listed additions were deducted and all listed deductions satisfy the definition's inclusion conditions; categories do not overlap, other adjustments are zero, and no extra acquisition pro-forma adjustment is needed. Contract-defined Consolidated Funded Indebtedness is 2,200 and qualifying Unrestricted Cash is 200. Additional debt capacity is spent immediately; it creates no nettable cash. Any corrective debt paydown is funded by a separate external contribution, leaving the 200 cash unchanged.\n\nCompute the 13 declared fields. Keep calculations unrounded; numerical outputs may be rounded to 8 decimal places. Ratios are x, money is millions, and equality with a maximum is permitted; calculate mathematical ratio thresholds without an additional rounding cushion. Test only the specified leverage condition, not overall borrowing permission or all covenants. A SEPARATE insufficient-input branch replaces the cash assumption with total cash 200 whose contractual eligibility is unknown (eligible amount may be anywhere from 0 to 200); all other inputs remain fixed. Determine whether that branch identifies a unique June leverage pass/fail. Also distinguish an amendment's date/signature from satisfaction of its closing conditions. Cite the contract rules for every output; the synthetic numeric inputs above need no fabricated source citation. Return the standard structured response.",
+  "source_ids": [
+    "credit-arcosa-amendment"
+  ],
+  "output_fields": [
+    {
+      "id": "covenant_ebitda",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Compute Consolidated EBITDA from the supplied eligible ledger; cite the additions and deductions in its definition.",
+      "evidence_required": true
+    },
+    {
+      "id": "permitted_cash_netting",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Amount of supplied qualifying cash that the net-leverage definition permits to be netted.",
+      "evidence_required": true
+    },
+    {
+      "id": "net_debt_numerator",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Covenant funded indebtedness less permitted cash netting; use the supplied funded debt, not a GAAP carrying value.",
+      "evidence_required": true
+    },
+    {
+      "id": "maximum_ratio_june_2025",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Maximum post-closing ratio at June 30, 2025 under the hypothetical October 15, 2024 close and no optional step-up.",
+      "evidence_required": true
+    },
+    {
+      "id": "maximum_ratio_september_2025",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Maximum ratio at September 30, 2025 with the same hypothetical close.",
+      "evidence_required": true
+    },
+    {
+      "id": "maximum_ratio_march_2026",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Maximum ratio at March 31, 2026 with the same hypothetical close.",
+      "evidence_required": true
+    },
+    {
+      "id": "june_2025_leverage",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Net leverage in June 2025, using unrounded intermediate calculations.",
+      "evidence_required": true
+    },
+    {
+      "id": "june_2025_extra_debt_capacity",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Additional debt spent immediately that would bring the June ratio to its ceiling; cash and EBITDA unchanged. Only this ratio is tested.",
+      "evidence_required": true
+    },
+    {
+      "id": "september_2025_external_paydown_needed",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Minimum debt paydown funded by a separate external contribution needed to meet September's lower ceiling; the contribution never becomes counted cash.",
+      "evidence_required": true
+    },
+    {
+      "id": "june_2025_maximum_ebitda_decline",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Largest EBITDA decline consistent with June's ceiling; numerator unchanged. Boundary is inclusive.",
+      "evidence_required": true
+    },
+    {
+      "id": "june_2025_minimum_qualifying_cash",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Minimum qualifying cash needed to meet June's ceiling, holding debt and EBITDA fixed and applying the contractual cap.",
+      "evidence_required": true
+    },
+    {
+      "id": "cash_unknown_branch_compliance_identifiable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "In the separate branch with only total cash 200 and no eligibility breakdown, can a unique pass/fail conclusion for June be established? Cite cash-netting and covenant rules.",
+      "evidence_required": true
+    },
+    {
+      "id": "closing_amendments_effective_on_signing_alone",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does merely dating/signing this amendment establish that all Acquisition Closing Date Amendments have become effective? Cite the additional condition.",
+      "evidence_required": true
+    }
+  ]
+}

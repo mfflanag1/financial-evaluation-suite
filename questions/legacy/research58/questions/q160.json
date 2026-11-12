@@ -1,0 +1,91 @@
+{
+  "question_id": "q160",
+  "title": "Evaluate a routing experiment through cost and population revisions",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Evaluate route promotion for the specified deployment population. Report the target-standardized effect and uncertainty, plus the misleading unstratified mean difference as a diagnostic.",
+  "inputs": {
+    "cell_order": [
+      "new_quiet",
+      "old_quiet",
+      "new_fast",
+      "old_fast"
+    ],
+    "counts": [
+      90,
+      10,
+      10,
+      90
+    ],
+    "mean_cost_bps": [
+      1,
+      2,
+      8,
+      10
+    ],
+    "known_individual_variances_bps_squared": [
+      1,
+      1,
+      4,
+      9
+    ],
+    "deployment_stratum_weights": [
+      0.5,
+      0.5
+    ],
+    "implementation_charge_bps": 0
+  },
+  "sources": [
+    {
+      "id": "q160_experiment",
+      "text": "Original synthetic evaluation packet. Orders are randomized independently within quiet and fast strata. Provided individual cost variances are known population values, constant in subsequent replications. Lower cost is better. There is no clustering or cross-cell covariance. Unequal cell counts do not change deployment weights."
+    },
+    {
+      "id": "q160_decision",
+      "text": "Original synthetic evaluation packet. Target improvement is deployment-weighted old-route minus new-route mean cost, less implementation charge. Use known-variance normal standard error, no fitted variance correction, and one-sided lower bound net improvement minus1.96 times standard error. Promote only if this bound is strictly positive. All quoted costs are basis points; do not annualize."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "net_cost_improvement",
+      "type": "number",
+      "unit": "basis points",
+      "description": "Net cost improvement.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "standard_error",
+      "type": "number",
+      "unit": "basis points",
+      "description": "Standard error.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "lower_confidence_bound",
+      "type": "number",
+      "unit": "basis points",
+      "description": "Lower confidence bound.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "promote_route",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the current promotion criterion is met."
+    },
+    {
+      "name": "unstratified_improvement",
+      "type": "number",
+      "unit": "basis points",
+      "description": "Unstratified improvement.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

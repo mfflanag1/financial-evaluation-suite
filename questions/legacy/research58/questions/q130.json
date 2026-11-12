@@ -1,0 +1,116 @@
+{
+  "question_id": "q130",
+  "title": "Link active-return attribution through a changing sector book",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Build a two-period active-return attribution from the supplied sector tables. Keep fund fees separate. Use allocation=sum((portfolio weight-benchmark weight)*(benchmark sector return-benchmark total return)), selection=sum(benchmark weight*(portfolio sector return-benchmark sector return)), and interaction=sum(weight difference*sector-return difference). Apply the packet linking convention and reconcile to cumulative active return.",
+  "inputs": {
+    "periods": [
+      {
+        "portfolio_weights": [
+          0.7,
+          0.3
+        ],
+        "benchmark_weights": [
+          0.5,
+          0.5
+        ],
+        "portfolio_sector_returns": [
+          0.1,
+          -0.02
+        ],
+        "benchmark_sector_returns": [
+          0.08,
+          0
+        ],
+        "fund_fee": 0.001
+      },
+      {
+        "portfolio_weights": [
+          0.4,
+          0.6
+        ],
+        "benchmark_weights": [
+          0.6,
+          0.4
+        ],
+        "portfolio_sector_returns": [
+          -0.05,
+          0.06
+        ],
+        "benchmark_sector_returns": [
+          -0.03,
+          0.04
+        ],
+        "fund_fee": 0.002
+      }
+    ],
+    "sector_order": [
+      "industry_A",
+      "industry_B"
+    ]
+  },
+  "sources": [
+    {
+      "id": "q130_attribution_policy",
+      "text": "Original synthetic evaluation packet. Weights are beginning-of-period and sum to one. Sector returns are before fund fees. For each period use benchmark-total-return-centered allocation, benchmark-weighted selection, and allocation-selection interaction. Fund fee is a separate negative contribution subtracted once from portfolio return."
+    },
+    {
+      "id": "q130_linking_policy",
+      "text": "Original synthetic evaluation packet. For this two-period report, multiply every first-period contribution by1+second-period NET portfolio return; multiply every second-period contribution by1+first-period benchmark return. Add these linked contributions. The target is difference of cumulative wealth returns, not relative wealth ratio or arithmetic sum."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "period_net_and_benchmark_returns",
+      "type": "number_array",
+      "unit": "decimal return",
+      "description": "Flattened [P1net,B1,P2net,B2].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "linked_contributions",
+      "type": "number_array",
+      "unit": "decimal return",
+      "description": "[allocation,selection,interaction,fees], linked under the specified telescoping rule.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "portfolio_cumulative_return",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Compounded net portfolio return.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "benchmark_cumulative_return",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Compounded benchmark return.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "cumulative_active_return",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Cumulative portfolio return minus cumulative benchmark return.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "unlinked_active_sum",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Arithmetic sum of the two period active returns, for comparison.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

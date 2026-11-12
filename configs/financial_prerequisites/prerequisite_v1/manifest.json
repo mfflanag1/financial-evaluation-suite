@@ -1,0 +1,48 @@
+{
+  "protocol_id": "financial-prerequisites-v1",
+  "packages": {
+    "financial-prerequisites": "0.1.0",
+    "financial-portfolio-staged": "0.4.0",
+    "financial-portfolio": "0.3.0",
+    "financial-research": "0.2.0",
+    "verifiers": "0.4.1"
+  },
+  "predecessor_manifest_sha256": "c1ad4f490f21eb922acfd9b1b383bc5ca36646434eeb48389cde4b32f8485d69",
+  "comparison": {
+    "case_ids": [
+      "prerequisite-schema-v1",
+      "prerequisite-calculation-v1",
+      "prerequisite-repair-v1",
+      "prerequisite-coverage-v1"
+    ],
+    "model_count": 2,
+    "attempts_per_task_per_model": 1,
+    "expected_attempts_per_model": 4,
+    "expected_attempts": 8
+  },
+  "advancement": {
+    "required_passes": 4,
+    "required_attempts": 4,
+    "saved_policy_correct": true,
+    "source_replays": [
+      "original",
+      "alternate"
+    ],
+    "allowed_missing_unknown_or_infrastructure": 0,
+    "portfolio_split": "train",
+    "portfolio_seed_start": 4,
+    "portfolio_num_tasks": 4
+  },
+  "sha256": {
+    "configs/financial_prerequisites/prerequisite_v1/README.md": "7c8742f94af83f540ff909bdd9348498d2d1a5273faff3741585476e18ac44a6",
+    "configs/financial_prerequisites/prerequisite_v1/comparison.toml": "a73cc87d611d90dcbe792b1abdd89b9ed90f27c8467d27723b197b5446c4db1d",
+    "configs/financial_prerequisites/prerequisite_v1/freeze_manifest.py": "00543f0b367dc1162883feaa940758728d454d69d283a97b8f140dd830a906a9",
+    "environments/financial_prerequisites/README.md": "01b6a6751feef7a184551cc5a916472c60b1fccef1b8366aad92d1cb2ba089a0",
+    "environments/financial_prerequisites/pyproject.toml": "d4fd1fec063a75542026ad80fe90a1a5c48c5720dbfff9fb3911faf07229f5a9",
+    "environments/financial_prerequisites/src/financial_prerequisites/__init__.py": "a86530258b23e93e06fe402bb2d9c994ece07430fc5e4dfecccf4c0ccf9c9a57",
+    "environments/financial_prerequisites/src/financial_prerequisites/cases.py": "cd437339b3a3c4d4b3f8ac23a81f9f1c635be1d70fbad89a10bc2cb4f0ca19e2",
+    "environments/financial_prerequisites/src/financial_prerequisites/prime_adapter.py": "3c41f1374c96dff501817e261231bf18bd468d0e95c20d4bdd7db9ae7e733ba2",
+    "environments/financial_prerequisites/src/financial_prerequisites/reproduction.py": "ef810e31c4ea5f530bc3d0047cdb46b4038de36a293f00fe2528ad6067371a48",
+    "tests/test_prerequisite_protocol.py": "01ab1247f6ae5d1882225a81058b0d810093f68df718516ffdf6229ab6a4de9e"
+  }
+}

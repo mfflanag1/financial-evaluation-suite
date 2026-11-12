@@ -1,0 +1,38 @@
+[
+  {
+    "id": "expansion-tegna-2022-merger",
+    "url": "https://www.sec.gov/Archives/edgar/data/39899/000003989923000008/tgna-20221231.htm",
+    "title": "TEGNA FY2022 annual report: merger consideration and conditions",
+    "publisher": "TEGNA Inc.; SEC EDGAR",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+    "text_sha256": "f82e2e90e49dda8bf418a1918e23d4bab3550dd1a497de97c9019d7849501e6c",
+    "available_by": "2026-10-04T18:12:47Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "expansion-tegna-extension",
+    "url": "https://www.sec.gov/Archives/edgar/data/39899/000119312523043664/d438472d8k.htm",
+    "title": "TEGNA February 21, 2023 outside-date extension",
+    "publisher": "TEGNA Inc.; SEC EDGAR",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+    "text_sha256": "6c7ced1db862ad2c1a1509defd8a94c3ae09149522461ba504f12348ee069fb9",
+    "available_by": "2026-10-04T18:12:47Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

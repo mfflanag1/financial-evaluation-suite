@@ -1,0 +1,85 @@
+{
+  "id": "portfolio-001",
+  "case_group": "kellogg-2023-separation-cross-pod-funding",
+  "lane": "portfolio",
+  "status": "prototype",
+  "epistemic_type": "conditional_analysis",
+  "information_cutoff": "2026-10-04T18:14:08Z",
+  "source_ids": [
+    "portfolio-wk-2023-q3",
+    "portfolio-occ-53276"
+  ],
+  "prompt": "Analyze the 2023 Kellanova/WK Kellogg separation using the September 30 WK filing and OCC update 53276. The public debt ledger is dated September 30, while the distribution and option adjustment are effective October 2. Use those separate dates; do not infer that the revolver remained outstanding thereafter. Compute borrowing proceeds less the payment to Kellanova as a transaction-ledger difference, not as an actual company cash balance.\nSupplied synthetic book: equity pod has cash-settled total-return exposure equivalent to 4,000 pre-distribution K shares, passing through the WK share distribution. Option pod is short 30 adjusted K1 calls, strike quote 40.00. Credit pod holds a hypothetical 0.02% participation in the disclosed term-loan principal; this is not a claim of actual ownership. Baseline post-distribution prices: K=50, KLG=15; term-loan price is par. Value option P&L as minus 30 times the change in positive expiry intrinsic versus the baseline basket, using the OCC multiplier and deliverable. This is an expiry-payoff stress, not a pre-expiry Greek. Existing option premium is sunk and excluded from incremental P&L.\nScenarios in order S1,S2,S3: K price changes (-4,+3,-1) USD/share; KLG changes (-6,+4,+2); term-loan price changes (-4%,+1%,-1%) of participation principal. Equity P&L is post-distribution share equivalents times price changes. Credit P&L is participation principal times the price change. All three pod changes enter the common objective.\nHedge menu, each at most once: A shorts 500 K share equivalents, P&L=-500*dK, fee 100, initial margin 2500. B shorts 250 KLG equivalents, P&L=-250*dKLG, fee 100, margin 2000. C protects exactly half the synthetic credit participation, P&L=-0.5*participation*loan-price-change, fee 150, margin 1000. Hedge cashflows are synthetic linear contracts and do not imply available real instruments.\nStarting free cash is 18000. The only base-book T1 outflow in each scenario is max(-option-pod incremental P&L,0). Favorable equity and credit changes and positive option/hedge changes are T2 receipts only. Apply the common gross hedge-call schedule. T0 cash is locked until after T1.\nMissing-input branch: remove C's initial-margin amount entirely; allow any nonnegative amount and retain all other assumptions. Can a unique feasible optimizer still be determined? Return insufficient_data or determined. Keep the main calculation fully specified.\n\nEverything in the scenario book, sensitivities, prices, hedge menu and collateral schedule below is an explicit synthetic assumption unless identified as a public source fact. This is a conditional stress calculation, not a recommendation, actual margin rule, actual historical trade or realized-return calculation. No probabilities apply: maximize the minimum terminal economic P&L over all three scenarios, including nonrefundable hedge fees/premiums. Initial margin and collateral are refundable/settlement resources, never additional economic losses. Choose any subset of A,B,C, at most one of each; no other trades, position resizing, borrowing or collateral rehypothecation. Plan codes have alphabetically ordered letters; empty subset is NONE. For feasible-set output, retain the fixed order NONE|A|B|C|AB|AC|BC|ABC and omit infeasible plans. Equality at a cash limit is feasible.\nCash sequencing is compulsory: T0 pays every selected hedge fee and posts its initial margin. Those amounts remain unavailable through T1. T1 then pays the expressly specified base-book outflows plus every negative selected-hedge scenario P&L as separate gross collateral outflows. No favorable base-book or hedge P&L, no cross-pod offsets, no returned initial margin and no T2 receipts can finance T0/T1. T2 returns collateral/releases margin and settles economic P&L; T2 has no further hard cash constraint. Only the specified T0/T1 flows determine feasibility. For each scenario, cash must remain nonnegative after T0 and after all T1 outflows. All other borrowing, mark-to-market collateral changes and cashflows are outside this supplied model. Source excerpts support public contract/event facts; they do not establish the synthetic settlement schedule.\nUse USD, ordinary shares, basis points and MMBtu/MWh exactly as stated. One percentage point is 100 bp; one bp is 0.0001 in a rate. Do not round intermediate calculations. Return P&L strings in stated scenario order with no spaces or trailing decimal zeros. All sources are retrospectively observed by the 2026 cutoff, not certified historical information sets. The missing-input question is a separate branch; do not contaminate the fully specified main answer with that omission.\n",
+  "output_fields": [
+    {
+      "id": "financing_ledger_difference",
+      "type": "number",
+      "unit": "USD_million",
+      "description": "Disclosed September borrowing principal minus proceeds distributed to Kellanova; exclude fees and every other cashflow from this narrowly defined difference.",
+      "evidence_required": true
+    },
+    {
+      "id": "credit_participation_principal",
+      "type": "number",
+      "unit": "USD",
+      "description": "Hypothetical credit pod participation principal at 0.02% of the disclosed term loan.",
+      "evidence_required": true
+    },
+    {
+      "id": "net_share_equivalents",
+      "type": "string",
+      "unit": "shares_by_issuer",
+      "description": "Net equity-plus-option expiry slopes at the baseline, format K=x;KLG=y, before new hedges.",
+      "evidence_required": true
+    },
+    {
+      "id": "base_scenario_pnl",
+      "type": "string",
+      "unit": "USD_by_scenario",
+      "description": "Unhedged aggregate pod P&L, formatted S1=x;S2=y;S3=z.",
+      "evidence_required": true
+    },
+    {
+      "id": "feasible_plans",
+      "type": "string",
+      "unit": "plan_set",
+      "description": "All plans satisfying both cash stages, in the prescribed fixed order.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_plan",
+      "type": "string",
+      "unit": "plan_code",
+      "description": "Unique feasible plan maximizing worst-scenario terminal P&L after all hedge fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_worst_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum terminal economic P&L of the chosen plan over the three scenarios, net of fees.",
+      "evidence_required": true
+    },
+    {
+      "id": "optimal_minimum_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum available cash across T0 and all scenario T1 paths for the optimal plan.",
+      "evidence_required": true
+    },
+    {
+      "id": "first_optimizer_change_budget",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum starting cash strictly above the stated budget where the optimal plan changes; all other assumptions fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "missing_margin_optimizer_status",
+      "type": "string",
+      "unit": "status",
+      "description": "In the branch omitting C initial margin, is a unique feasible optimizer identified? Return insufficient_data or determined.",
+      "evidence_required": false
+    }
+  ]
+}

@@ -1,0 +1,752 @@
+{
+  "id": "q103",
+  "title": "Historical industry-basket research with explicit trading costs",
+  "prompt": "Implement the following research protocol using the supplied unsorted monthly industry-return rows. Returns are decimal total returns, and each row follows the industries array. These are current-vintage public historical portfolio returns; the trading protocol and costs are stipulated. Do not interpret them as executable quotes or point-in-time alpha evidence. Sort rows chronologically. For each lookback L in lookbacks, a holding-month t signal is the compounded return of exactly L months ending at t-2: multiply 1+r for indices t-1-skip_recent_months-L+1 through t-1-skip_recent_months inclusive, then subtract one. Equivalently, with zero-based sorted row index t, use the Python slice [t-skip_recent_months-L:t-skip_recent_months]. Here skip_recent_months=1, so the immediately preceding month is omitted. Rank high to low for longs and low to high for shorts, breaking all signal ties by smaller industry ID first. Select longs first, then choose shorts from the remaining industries so the sides are disjoint. Hold names_per_side=3 on each side, long weights +0.5/3 and short weights -0.5/3; all others zero. Targets are fractions of NAV AFTER paying the beginning-of-month rebalance fee. Cash and short financing earn zero, and there are no borrow fees, constraints, missing values or terminal-liquidation fees. If pretrade asset weights relative to current pre-fee NAV are p_i and target post-fee weights are w_i, traded notional is D=sum_i abs((1-f)w_i-p_i), with NO division by two, and fee fraction f=one_way_cost_rate*D. Use the unique solution 0<=f<0.5; cash finances trades and fees. Then month-end wealth relative to pretrade NAV is (1-f)(1+sum_i w_i*r_i). Carry the resulting drifted asset values into the next rebalance, including short positions. For each L independently, start all-cash with NAV=1 at validation_start, run through validation_end, and compute annualized net Sharpe=sqrt(12)*sample mean/sample standard deviation (ddof=1, zero risk-free return). Choose the largest validation Sharpe; an exact tie chooses the shorter L. Freeze that choice and START FLAT AGAIN with NAV=1 at test_start; test observations may influence later test signals but never the choice of L. Run through test_end. Return validation Sharpes in lookbacks order, the selected L, test target weights flattened month-major then industries-array order, monthly test net returns and traded-notional fractions, and test metrics [12*mean monthly net return, sqrt(12)*sample standard deviation, compounded cumulative net return, maximum drawdown]. Maximum drawdown is the largest 1-wealth/running_peak over month ends, with initial wealth and initial peak both one. Return decimal returns and weights, not percentages. The input windows contain all required lookback history.",
+  "inputs": {
+    "industries": [
+      {
+        "id": 1,
+        "name": "Agric"
+      },
+      {
+        "id": 2,
+        "name": "Food"
+      },
+      {
+        "id": 3,
+        "name": "Soda"
+      },
+      {
+        "id": 4,
+        "name": "Beer"
+      },
+      {
+        "id": 5,
+        "name": "Smoke"
+      },
+      {
+        "id": 6,
+        "name": "Toys"
+      },
+      {
+        "id": 7,
+        "name": "Fun"
+      },
+      {
+        "id": 8,
+        "name": "Books"
+      },
+      {
+        "id": 9,
+        "name": "Hshld"
+      },
+      {
+        "id": 10,
+        "name": "Clths"
+      },
+      {
+        "id": 11,
+        "name": "Hlth"
+      },
+      {
+        "id": 12,
+        "name": "MedEq"
+      }
+    ],
+    "rows": [
+      {
+        "month": "202112",
+        "returns": [
+          0.048600000000000004,
+          0.096,
+          0.1267,
+          0.0925,
+          0.1245,
+          -0.022099999999999998,
+          -0.0184,
+          0.0362,
+          0.1124,
+          -0.0366,
+          0.1017,
+          0.09210000000000002
+        ]
+      },
+      {
+        "month": "202110",
+        "returns": [
+          0.0279,
+          0.022799999999999997,
+          0.0545,
+          0.0536,
+          -0.0137,
+          0.0366,
+          0.0799,
+          0.0207,
+          0.0382,
+          0.12269999999999999,
+          0.008100000000000001,
+          0.0365
+        ]
+      },
+      {
+        "month": "202108",
+        "returns": [
+          0.026000000000000002,
+          -0.005699999999999999,
+          -0.0009,
+          -0.0158,
+          0.0347,
+          -0.10279999999999999,
+          0.10830000000000001,
+          0.004699999999999999,
+          0.0002,
+          -0.0059,
+          -0.026099999999999998,
+          0.0248
+        ]
+      },
+      {
+        "month": "202106",
+        "returns": [
+          -0.023799999999999998,
+          -0.031,
+          -0.0146,
+          -0.0097,
+          0.0199,
+          0.12689999999999999,
+          0.011000000000000001,
+          -0.004,
+          -0.0051,
+          0.08560000000000001,
+          0.0088,
+          0.0383
+        ]
+      },
+      {
+        "month": "202104",
+        "returns": [
+          0.0421,
+          0.027000000000000003,
+          0.0322,
+          0.0358,
+          0.0143,
+          0.0151,
+          0.0029,
+          0.0033,
+          0.0161,
+          0.049400000000000006,
+          0.04769999999999999,
+          0.0599
+        ]
+      },
+      {
+        "month": "202102",
+        "returns": [
+          0.12390000000000001,
+          -0.0005,
+          0.0067,
+          -0.0333,
+          0.057300000000000004,
+          -0.024700000000000003,
+          0.1073,
+          0.1366,
+          -0.0005,
+          0.0406,
+          -0.0187,
+          0.011399999999999999
+        ]
+      },
+      {
+        "month": "202012",
+        "returns": [
+          0.013300000000000001,
+          0.0194,
+          0.0683,
+          0.0331,
+          0.0866,
+          0.159,
+          0.09849999999999999,
+          0.1093,
+          0.0078000000000000005,
+          0.044000000000000004,
+          0.0726,
+          0.0633
+        ]
+      },
+      {
+        "month": "202010",
+        "returns": [
+          0.1255,
+          -0.0316,
+          -0.0278,
+          -0.046,
+          -0.056900000000000006,
+          0.0666,
+          -0.044199999999999996,
+          -0.061200000000000004,
+          -0.0054,
+          -0.0176,
+          0.0013,
+          -0.030600000000000002
+        ]
+      },
+      {
+        "month": "202008",
+        "returns": [
+          -0.0034999999999999996,
+          0.0346,
+          0.056100000000000004,
+          0.026000000000000002,
+          0.04769999999999999,
+          0.0751,
+          0.125,
+          0.0364,
+          0.0483,
+          0.12210000000000001,
+          0.0092,
+          0.0347
+        ]
+      },
+      {
+        "month": "202006",
+        "returns": [
+          -0.0256,
+          -0.0029,
+          -0.032799999999999996,
+          0.0034999999999999996,
+          -0.0075,
+          0.09140000000000001,
+          0.0259,
+          0.0131,
+          0.0197,
+          0.025,
+          -0.028300000000000002,
+          -0.015700000000000002
+        ]
+      },
+      {
+        "month": "202004",
+        "returns": [
+          0.0959,
+          0.0861,
+          0.047599999999999996,
+          0.1094,
+          0.019799999999999998,
+          0.18030000000000002,
+          0.1467,
+          0.084,
+          0.1025,
+          0.09570000000000001,
+          0.1567,
+          0.1388
+        ]
+      },
+      {
+        "month": "202002",
+        "returns": [
+          -0.0611,
+          -0.0931,
+          -0.0819,
+          -0.0748,
+          -0.06709999999999999,
+          -0.1711,
+          -0.0368,
+          -0.0667,
+          -0.08460000000000001,
+          -0.1011,
+          -0.0501,
+          -0.0762
+        ]
+      },
+      {
+        "month": "201912",
+        "returns": [
+          0.1114,
+          0.030600000000000002,
+          0.0397,
+          0.0139,
+          0.0321,
+          -0.0102,
+          0.0492,
+          0.0326,
+          0.025699999999999997,
+          0.0789,
+          0.031,
+          0.0124
+        ]
+      },
+      {
+        "month": "201910",
+        "returns": [
+          -0.0458,
+          -0.0206,
+          -0.005,
+          -0.0106,
+          0.081,
+          0.0552,
+          0.0575,
+          0.0297,
+          -0.0068000000000000005,
+          -0.0222,
+          0.0258,
+          0.03
+        ]
+      },
+      {
+        "month": "201908",
+        "returns": [
+          -0.013000000000000001,
+          -0.0007000000000000001,
+          0.026600000000000002,
+          0.0617,
+          -0.1105,
+          0.018799999999999997,
+          -0.0731,
+          -0.0449,
+          0.0158,
+          -0.059000000000000004,
+          -0.0518,
+          -0.0043
+        ]
+      },
+      {
+        "month": "201906",
+        "returns": [
+          0.107,
+          0.0484,
+          0.04190000000000001,
+          0.0525,
+          0.01,
+          0.0929,
+          0.07200000000000001,
+          0.0872,
+          0.06849999999999999,
+          0.0904,
+          0.10369999999999999,
+          0.0978
+        ]
+      },
+      {
+        "month": "201904",
+        "returns": [
+          0.0026,
+          0.0256,
+          0.0525,
+          0.06570000000000001,
+          -0.0355,
+          0.0857,
+          0.0608,
+          0.0152,
+          0.0323,
+          0.05,
+          0.004,
+          -0.037599999999999995
+        ]
+      },
+      {
+        "month": "201902",
+        "returns": [
+          -0.0023,
+          -0.0355,
+          -0.0359,
+          0.0239,
+          0.10210000000000001,
+          0.0823,
+          0.036000000000000004,
+          0.039900000000000005,
+          0.0475,
+          0.0555,
+          0.014499999999999999,
+          0.038
+        ]
+      },
+      {
+        "month": "201901",
+        "returns": [
+          0.1461,
+          0.0852,
+          0.037000000000000005,
+          0.0353,
+          0.0787,
+          0.1534,
+          0.1935,
+          0.1338,
+          0.0658,
+          0.1249,
+          0.113,
+          0.0943
+        ]
+      },
+      {
+        "month": "201903",
+        "returns": [
+          0.0137,
+          0.0555,
+          0.0125,
+          0.049100000000000005,
+          0.0646,
+          -0.0327,
+          0.0007000000000000001,
+          -0.053099999999999994,
+          0.0436,
+          -0.0029,
+          -0.0345,
+          0.0208
+        ]
+      },
+      {
+        "month": "201905",
+        "returns": [
+          -0.0493,
+          -0.0546,
+          0.0028000000000000004,
+          -0.039900000000000005,
+          -0.10289999999999999,
+          -0.013300000000000001,
+          -0.094,
+          -0.0908,
+          -0.0385,
+          -0.10890000000000001,
+          -0.047599999999999996,
+          -0.0297
+        ]
+      },
+      {
+        "month": "201907",
+        "returns": [
+          0.0053,
+          0.024900000000000002,
+          0.0294,
+          -0.0215,
+          0.0338,
+          0.1382,
+          -0.0387,
+          0.0335,
+          0.0489,
+          0.009300000000000001,
+          0.0248,
+          0.0121
+        ]
+      },
+      {
+        "month": "201909",
+        "returns": [
+          -0.0414,
+          0.016200000000000003,
+          -0.005,
+          0.017,
+          0.0199,
+          -0.0632,
+          -0.0414,
+          0.006500000000000001,
+          0.0173,
+          0.0986,
+          0.009399999999999999,
+          -0.0154
+        ]
+      },
+      {
+        "month": "201911",
+        "returns": [
+          -0.0068000000000000005,
+          0.0341,
+          -0.0018,
+          -0.006,
+          0.0552,
+          0.0412,
+          0.064,
+          -0.0118,
+          -0.0134,
+          0.0546,
+          0.0827,
+          0.04650000000000001
+        ]
+      },
+      {
+        "month": "202001",
+        "returns": [
+          -0.0331,
+          -0.0138,
+          0.0521,
+          0.027000000000000003,
+          -0.0366,
+          -0.0337,
+          0.0101,
+          -0.0432,
+          0.004,
+          -0.0632,
+          0.0062,
+          -0.0096
+        ]
+      },
+      {
+        "month": "202003",
+        "returns": [
+          -0.1119,
+          -0.042199999999999994,
+          -0.15460000000000002,
+          -0.1,
+          -0.0643,
+          -0.1885,
+          -0.163,
+          -0.22699999999999998,
+          -0.0675,
+          -0.1766,
+          -0.1858,
+          -0.1144
+        ]
+      },
+      {
+        "month": "202005",
+        "returns": [
+          0.051699999999999996,
+          0.0368,
+          0.0406,
+          0.0092,
+          -0.0121,
+          0.0158,
+          0.0336,
+          0.11789999999999999,
+          0.0213,
+          0.1143,
+          0.0451,
+          0.052300000000000006
+        ]
+      },
+      {
+        "month": "202007",
+        "returns": [
+          0.056900000000000006,
+          0.059800000000000006,
+          0.0697,
+          0.054299999999999994,
+          0.07780000000000001,
+          0.1505,
+          0.0424,
+          0.0501,
+          0.07780000000000001,
+          0.0066,
+          0.1653,
+          0.1101
+        ]
+      },
+      {
+        "month": "202009",
+        "returns": [
+          0.0025,
+          -0.039599999999999996,
+          -0.006,
+          0.0025,
+          -0.0664,
+          0.10980000000000001,
+          -0.04650000000000001,
+          -0.0461,
+          -0.0066,
+          0.0584,
+          -0.0073,
+          -0.0125
+        ]
+      },
+      {
+        "month": "202011",
+        "returns": [
+          0.1521,
+          0.0725,
+          0.09210000000000002,
+          0.111,
+          0.0805,
+          0.21059999999999998,
+          0.1148,
+          0.23800000000000002,
+          0.0576,
+          0.1445,
+          0.139,
+          0.0761
+        ]
+      },
+      {
+        "month": "202101",
+        "returns": [
+          0.0248,
+          -0.0131,
+          -0.09630000000000001,
+          -0.0688,
+          -0.022799999999999997,
+          0.0575,
+          -0.0388,
+          0.0414,
+          -0.059500000000000004,
+          -0.048499999999999995,
+          0.0599,
+          0.014499999999999999
+        ]
+      },
+      {
+        "month": "202103",
+        "returns": [
+          0.0335,
+          0.0802,
+          0.0718,
+          0.08410000000000001,
+          0.1173,
+          -0.078,
+          -0.032799999999999996,
+          0.052000000000000005,
+          0.0739,
+          0.0037,
+          0.0279,
+          -0.006
+        ]
+      },
+      {
+        "month": "202105",
+        "returns": [
+          -0.061200000000000004,
+          0.039,
+          0.019299999999999998,
+          0.0213,
+          0.0204,
+          0.0381,
+          -0.0092,
+          0.0279,
+          0.0042,
+          -0.0074,
+          0.015300000000000001,
+          -0.031
+        ]
+      },
+      {
+        "month": "202107",
+        "returns": [
+          -0.0305,
+          -0.024300000000000002,
+          0.045599999999999995,
+          0.0129,
+          0.0096,
+          -0.038,
+          -0.0833,
+          -0.0254,
+          0.0392,
+          0.0478,
+          0.0279,
+          0.0501
+        ]
+      },
+      {
+        "month": "202109",
+        "returns": [
+          -0.0414,
+          -0.022000000000000002,
+          -0.059800000000000006,
+          -0.0296,
+          -0.0712,
+          -0.1002,
+          0.0155,
+          0.0128,
+          -0.0415,
+          -0.0915,
+          -0.0814,
+          -0.0444
+        ]
+      },
+      {
+        "month": "202111",
+        "returns": [
+          0.0315,
+          -0.0345,
+          -0.056299999999999996,
+          0.0007000000000000001,
+          -0.0702,
+          -0.18059999999999998,
+          -0.0789,
+          -0.0426,
+          0.009000000000000001,
+          0.0011,
+          -0.11779999999999999,
+          -0.07629999999999999
+        ]
+      }
+    ],
+    "lookbacks": [
+      3,
+      6,
+      11
+    ],
+    "skip_recent_months": 1,
+    "names_per_side": 3,
+    "one_way_cost_rate": 0.001,
+    "validation_start": "202001",
+    "validation_end": "202012",
+    "test_start": "202101",
+    "test_end": "202112",
+    "data_notes": "Observed current-vintage value-weighted industry-portfolio total returns, decimals. The basket strategy, fees and train/validation/test protocol are stipulated. Historical revisions and reconstructed constituent portfolios prevent a point-in-time alpha claim."
+  },
+  "outputs": [
+    {
+      "name": "validation_sharpes",
+      "type": "number_array",
+      "unit": "annualized ratio",
+      "description": "One net Sharpe for each lookback in the supplied lookbacks order.",
+      "atol": 1e-05,
+      "rtol": 0.0
+    },
+    {
+      "name": "chosen_lookback_months",
+      "type": "number",
+      "unit": "months",
+      "description": "Selected integer lookback length.",
+      "atol": 0.0,
+      "rtol": 0.0
+    },
+    {
+      "name": "test_weights",
+      "type": "number_array",
+      "unit": "fraction of post-fee NAV",
+      "description": "144 values: test months ascending, then the 12 supplied industries in array order.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "test_net_returns",
+      "type": "number_array",
+      "unit": "decimal monthly return",
+      "description": "12 test months in chronological order.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "test_turnover",
+      "type": "number_array",
+      "unit": "traded notional / pre-fee NAV",
+      "description": "12 test months in chronological order; no one-half factor.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "test_metrics",
+      "type": "number_array",
+      "unit": "decimal return or volatility; final entry drawdown fraction",
+      "description": "[annualized arithmetic mean, annualized sample volatility, cumulative net return, maximum drawdown].",
+      "atol": 1e-06,
+      "rtol": 0.0
+    }
+  ],
+  "instructions": "Submit strict JSON with exactly one key, code, whose value is Python source defining solve(data). The controller supplies the inputs object as data. Return a JSON-native dictionary mapping every declared output name to its answer. Use Python stdlib and NumPy only; do not read files, access the network, spawn processes, or use native tools. Write a general calculation from data, not constants for this instance. Your program will also be evaluated on undisclosed changed inputs under the same conventions. The controller will execute the first submission and give you its public outputs or error once, then ask for a final code submission. It never reveals reference answers or hidden test results. Supporting numerical ledgers and diagnostics are the declared array outputs; follow their ordering exactly. No markdown fences around your JSON.",
+  "workflow_area": "research",
+  "data_origin": "public_observations_with_stipulated_protocol",
+  "provenance": {
+    "observations": "First 12 source-order value-weighted industry portfolios, monthly total returns, January 2019 through December 2021.",
+    "source": {
+      "source_url": "https://mba.tuck.dartmouth.edu/pages/Faculty/ken.french/ftp/49_Industry_Portfolios_TXT.zip",
+      "details_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_49_ind_port.html",
+      "retrieved_at": "2026-10-07T01:11:01.893904+00:00",
+      "archive_sha256": "b1d531dcce9c22fa1788ed044eb87a60dd684f04424695e077f081223c3d13d5",
+      "text_sha256": "949fb0f57fe1b3f6610328e18cd5ac87507c1c4545f8c905d430240012ad7e1b",
+      "block": "Average Value Weighted Returns -- Monthly",
+      "unit": "decimal monthly total return; source percent divided by100",
+      "vintage_limit": "Downloaded current-vintage historical series; provider reconstructs history and past values can be revised. Not point-in-time data or executable security prices.",
+      "rights": "Publicly downloadable research data; source copyright retained. No external publication or broad redistribution authorized by this local study."
+    },
+    "stipulated": "Candidate windows, validation/test split, equal long/short weights, costs, cash financing and scenario overrides are evaluation assumptions."
+  }
+}

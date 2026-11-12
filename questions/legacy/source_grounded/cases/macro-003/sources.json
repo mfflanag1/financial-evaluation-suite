@@ -1,0 +1,36 @@
+[
+  {
+    "id": "exp-bea-20230830-pdf",
+    "url": "https://www.bea.gov/sites/default/files/2023-08/gdp2q23_2nd.pdf",
+    "title": "GDP Q2 2023 \u2014 second estimate, August 30, 2023",
+    "publisher": "U.S. Bureau of Economic Analysis",
+    "published_at": "2023-08-30T12:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official release header announces 8:30 a.m. Eastern; conversion uses the stated date's standard/daylight offset. This is an announced release time, not an independently observed first fetch. Case cutoff is end of release day.",
+    "text_sha256": "4429248188643ae8a6b9eab1ffdb2f11f76761a5cee283355aae42149ad4ceb4",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_pdf_selected_text.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "exp-bea-20230928-pdf",
+    "url": "https://www.bea.gov/sites/default/files/2023-09/gdp2q23_3rd.pdf",
+    "title": "GDP Q2 2023 \u2014 third estimate, September 28, 2023",
+    "publisher": "U.S. Bureau of Economic Analysis",
+    "published_at": "2023-09-28T12:30:00Z",
+    "publication_precision": "second",
+    "availability_basis": "Official release header announces 8:30 a.m. Eastern; conversion uses the stated date's standard/daylight offset. This is an announced release time, not an independently observed first fetch. Case cutoff is end of release day.",
+    "text_sha256": "7448487f8128752574f0f11b2ae6548e91d0552a6ecbb045a2e47ae9716b83af",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_pdf_selected_text.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

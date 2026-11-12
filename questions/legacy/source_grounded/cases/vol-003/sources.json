@@ -1,0 +1,20 @@
+[
+  {
+    "id": "vol-occ-54392",
+    "url": "https://infomemo.theocc.com/infomemos?number=54392",
+    "title": "3M Company - Distribution Option Symbols: MMM/2MMM New Symbols: MMM1/2MMM1 * * * Update * * *",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The six dated OCC archive records were retained before the recorded observation bound. The printed memo date is not independently verified as first public dissemination time; no historical trading-availability claim is made.",
+    "text_sha256": "a0027f94c30e346f62b8df4472d471e14f9e307e38581ac6972133e8778e50c6",
+    "available_by": "2026-10-04T17:52:56Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

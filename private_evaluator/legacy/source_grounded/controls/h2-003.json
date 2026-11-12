@@ -1,0 +1,2493 @@
+[
+  {
+    "name": "concise_reference",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "contextual_primary_pages",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "                                     DANAHER CORPORATION AND SUBSIDIARIES\n                                     CONSOLIDATED STATEMENTS OF EARNINGS\n                                     ($ and shares in millions, except per share amounts)\n                                                                                             Year Ended December 31\n                                                                               2022                  2021              2020\nSales                                                                     $       31,471 $             29,453      $     22,284\nCost of sales                                                                    (12,522)             (11,501)           (9,809)\nGross profit                                                                      18,949               17,952            12,475\nOperating costs:\n  Selling, general and administrative expenses                                    (8,516)              (8,198)           (6,896)\n  Research and development expenses                                               (1,745)              (1,742)           (1,348)\n  Other operating expenses                                                            —                  (547)               —\nOperating profit                                                                   8,688                7,465             4,231\nNonoperating income (expense):\n  Other income (expense), net                                                         (226)                 456               494\n  Loss on early extinguishment of borrowings                                            —                   (96)              (26)\n   Interest expense                                                                 (211)                (238)             (275)\n   Interest income                                                                    41                   11                71\nEarnings from continuing operations before income taxes                            8,292                7,598             4,495\nIncome taxes                                                                      (1,083)              (1,251)             (849)\nNet earnings from continuing operations                                            7,209                6,347             3,646\nEarnings from discontinued operations, net of income taxes                            —                    86                —\nNet earnings                                                                       7,209                6,433             3,646\nMandatory convertible preferred stock dividends                                     (106)                (164)             (136)\nNet earnings attributable to common stockholders                          $        7,103 $              6,269      $      3,510\n\n\nNet earnings per common share from continuing operations:\n  Basic                                                                   $           9.80     $            8.65   $          4.97\n  Diluted                                                                 $           9.66     $            8.50   $          4.89\nNet earnings per common share from discontinued operations:\n  Basic                                                                   $            —       $            0.12   $           —\n  Diluted                                                                 $            —       $            0.12   $           —\nNet earnings per common share:\n  Basic                                                                   $           9.80     $            8.77   $          4.97\n   Diluted                                                                $           9.66     $            8.61 * $          4.89\nAverage common stock and common equivalent shares outstanding:\n  Basic                                                                            725.1                714.6             706.2\n  Diluted                                                                          737.1                736.8             718.7\n* Net earnings per common share amount does not add due to rounding.\n\n                             See the accompanying Notes to the Consolidated Financial Statements.\n\n\n\n\n                                                                 67\n"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "                                 DANAHER CORPORATION AND SUBSIDIARIES\n                                CONSOLIDATED STATEMENTS OF CASH FLOWS\n                                              ($ in millions)\n                                                                                        Year Ended December 31\n                                                                              2022               2021            2020\nCash flows from operating activities:\n   Net earnings                                                           $      7,209       $      6,433 $         3,646\n     Less: earnings from discontinued operations, net of income taxes               —                 (86)             —\n   Net earnings from continuing operations                                       7,209              6,347           3,646\n   Noncash items:\n       Depreciation                                                                738                718             637\n       Amortization of intangible assets                                         1,484              1,450           1,138\n       Amortization of acquisition-related inventory fair value step-up             —                  59             457\n       Stock-based compensation expense                                            336                218             187\n       Contract settlement expense                                                  —                 542              —\n       Pretax loss on early extinguishment of borrowings                            —                  96              26\n       Pretax gain on sale of product lines and investment (gains) losses          271               (414)           (455)\n   Change in deferred income taxes                                                (559)              (229)            518\n   Change in trade accounts receivable, net                                       (477)              (611)           (264)\n   Change in inventories                                                          (486)              (502)           (123)\n   Change in trade accounts payable                                                  5                549             227\n   Change in prepaid expenses and other assets                                     (78)                (4)            102\n   Change in accrued expenses and other liabilities                                 76                139             119\nTotal operating cash provided by continuing operations                           8,519              8,358           6,215\n   Total operating cash used in discontinued operations                             —                  —               (7)\nNet cash provided by operating activities                                        8,519              8,358           6,208\nCash flows from investing activities:\n   Cash paid for acquisitions                                                      (637)          (10,961)        (20,971)\n   Payments for additions to property, plant and equipment                       (1,152)           (1,294)           (791)\n   Proceeds from sales of property, plant and equipment                               9                13               2\n   Payments for purchases of investments                                           (523)             (934)           (342)\n   Proceeds from sales of investments                                                18               126              13\n   Proceeds from sale of product lines                                               —                 26             826\n   All other investing activities                                                    51                37              24\nNet cash used in investing activities for continuing operations                  (2,234)          (12,987)        (21,239)\nCash flows from financing activities:\n   Proceeds from the issuance of common stock in connection with stock-\n   based compensation                                                                 31                 86             153\n   Proceeds from the public offering of common stock, net of issuance\n   costs                                                                              —                  —          1,729\n   Proceeds from the public offering of preferred stock, net of issuance\n   costs                                                                               —                  —         1,668\n   Payment of dividends                                                              (818)              (742)        (615)\n   Net (repayments of) proceeds from borrowings (maturities of 90 days or\n   less)                                                                             (723)          2,265          (4,637)\n   Proceeds from borrowings (maturities longer than 90 days)                           —              984           8,670\n   Repayments of borrowings (maturities longer than 90 days)                         (965)         (1,186)         (5,933)\n   Make-whole premiums to redeem borrowings prior to maturity                          —              (96)            (26)\n   All other financing activities                                                     (95)            (16)             (3)\nNet cash (used in) provided by financing activities for continuing\noperations                                                                       (2,570)            1,295           1,006\nEffect of exchange rate changes on cash and equivalents                            (306)             (115)            148\nNet change in cash and equivalents                                                3,409            (3,449)        (13,877)\nBeginning balance of cash and equivalents                                         2,586             6,035          19,912\nEnding balance of cash and equivalents                                    $       5,995 $           2,586 $         6,035\n                          See the accompanying Notes to the Consolidated Financial Statements.\n\n\n                                                           70\n"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Financial Operating Highlights\n(dollars in millions except per share data and number of associates)\n\n\n\n                                                                              2023                       2022\n\nSales                                                                   $ 23,890                    $   26,643\n\nOperating Profit                                                        $     5,202                 $    7,536\n\nNet Earnings                                                            $     4,221                 $    6,328\n\nNet Earnings Per Common Share\n                                                                        $       5.65                $     8.47\n(diluted) from Continuing Operations\n\nOperating Cash Flow from Continuing Operations                          $      6,490                $    7,613\n\nInvesting Cash Flow from Continuing Operations                          $    (7,048)                $   (2,145)\n\nFinancing Cash Flow from Continuing Operations                          $        154                $   (2,570)\n\nCapital Expenditures                                                    $     (1,383)               $   (1,118)\n\nCapital Disposals                                                       $          12               $        9\n\nFree Cash Flow\n(Operating Cash Flow less Capital Expenditures                          $     5,119                 $    6,504\nplus Capital Disposals)\n\n\nNumber of Associates **                                                      63,000                     81,000\n\nTotal Assets**                                                          $    84,488                 $   84,350\n\nTotal Debt*                                                             $ 18,402                    $   19,677\n\nStockholders’ Equity                                                    $ 53,490                    $   50,090\n\nTotal Capitalization                                                    $ 71,892                    $   69,767\n(Total Debt plus Stockholders’ Equity)\n\n\n* Long-Term Debt ($16,707 for 2023 and $19,086 for 2022) plus Notes Payable and Current Portion\n  of Long-Term Debt ($1,695 for 2023 and $591 for 2022)\n\n** 2022 data includes both continuing and discontinued operations\n\nAll financial data set forth in this annual report relates solely to continuing operations unless\notherwise indicated.\n"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "                                          DANAHER CORPORATION AND SUBSIDIARIES\n                                         CONSOLIDATED STATEMENTS OF CASH FLOWS\n                                                       ($ in millions)\n                                                                                                Year Ended December 31\n                                                                                      2023              2022                2021\nCash flows from operating activities:\n   Net earnings                                                                   $          4,764 $           7,209 $             6,433\n      Less: earnings from discontinued operations, net of income taxes                        (543)             (881)               (986)\n   Net earnings from continuing operations                                                   4,221             6,328               5,447\n   Noncash items:\n        Depreciation                                                                        675                  698                 674\n        Amortization of intangible assets                                                 1,491                1,434               1,388\n        Amortization of acquisition-related inventory fair value step-up                      8                   —                   59\n        Stock-based compensation expense                                                    306                  295                 184\n        Contract settlement expense                                                          —                    —                  542\n        Pretax loss on early extinguishment of borrowings                                    —                    —                   96\n        Pretax gain on sale of product lines and investment (gains) losses                  182                  271                (406)\n   Change in deferred income taxes                                                       (1,204)                (582)               (102)\n   Change in trade accounts receivable, net                                                 322                 (389)               (597)\n   Change in inventories                                                                    185                 (448)               (427)\n   Change in trade accounts payable                                                        (149)                 (18)                484\n   Change in prepaid expenses and other assets                                              419                  (73)                 17\n   Change in accrued expenses and other liabilities                                          34                   97                  64\nTotal operating cash provided by continuing operations                                    6,490                7,613               7,423\n   Total operating cash provided by discontinued operations                                 674                  906                 935\nNet cash provided by operating activities                                                 7,164                8,519               8,358\nCash flows from investing activities:\n   Cash paid for acquisitions                                                            (5,610)              (582)           (10,901)\n   Payments for additions to property, plant and equipment                               (1,383)            (1,118)            (1,240)\n   Proceeds from sales of property, plant and equipment                                      12                  9                 13\n   Payments for purchases of investments                                                   (172)              (523)              (925)\n   Proceeds from sales of investments                                                        61                 18                126\n   All other investing activities                                                            44                 51                 37\nTotal cash used in investing activities from continuing operations                       (7,048)            (2,145)           (12,890)\n   Total investing cash used in discontinued operations                                     (33)               (89)               (97)\nNet cash used in investing activities                                                    (7,081)            (2,234)           (12,987)\nCash flows from financing activities:\n   Proceeds from the issuance of common stock in connection with stock-based\n   compensation                                                                                68                31                  86\n   Payment of dividends                                                                    (821)                (818)               (742)\n   Net (repayments of) proceeds from borrowings (maturities of 90 days or less)          (1,006)                (723)              2,265\n   Proceeds from borrowings (maturities longer than 90 days)                                    —               —                 984\n   Repayments of borrowings (maturities longer than 90 days)                                  (620)           (965)            (1,186)\n   Distribution from discontinued operations                                                 2,600              —                  —\n   Make-whole premiums to redeem borrowings prior to maturity                                   —               —                 (96)\n   All other financing activities                                                              (67)            (95)               (16)\nNet cash provided by (used in) financing activities for continuing operations                  154          (2,570)             1,295\n    Cash distributions to Veralto Corporation, net                                            (427)             —                  —\nNet cash (used in) provided by financing activities                                           (273)         (2,570)             1,295\nEffect of exchange rate changes on cash and equivalents                                         59            (306)              (115)\nNet change in cash and equivalents                                                            (131)          3,409             (3,449)\nBeginning balance of cash and equivalents                                                    5,995           2,586              6,035\nEnding balance of cash and equivalents                                            $          5,864 $         5,995 $            2,586\n\n\nSupplemental disclosure:\n  Distribution of noncash net assets to Veralto Corporation                       $      (1,674) $                —     $             —\n\n\n                             See the accompanying Notes to the Consolidated Financial Statements.\n\n\n\n                                                                        63\n"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "applicable indenture or comparable governing document, the “make-whole” premium specified therein (and in the case of\nthe Yen Notes, net of certain swap-related gains or losses as applicable). With respect to each of the 2023 (prior to their\nrepayment in the fourth quarter of 2023) and 2028 CHF Bonds, at any time after 85% or more of the applicable bonds\nhave been redeemed or purchased and canceled, the Company may redeem some or all of the remaining bonds for their\nprincipal amount plus accrued and unpaid interest. With respect to the 2027 and 2032 Yen Notes; 2024, 2026, 2027 and\n2030 Euronotes; the 2023 and 2028 CHF Bonds; and the 2026, 2028, 2031, 2039 and 2049 Biopharma Euronotes, the\nCompany may redeem such notes and bonds upon the occurrence of specified, adverse changes in tax laws, or\ninterpretations under such laws, at a redemption price equal to the principal amount of the bonds to be redeemed.\n\nIf a change of control triggering event occurs with respect to any of the 2027 and 2032 Yen Notes; the 2024, 2026, 2027\nand 2030 Euronotes; the 2025, 2045, 2050 and 2051 U.S. Notes; the 2023 (prior to their repayment in the fourth quarter\nof 2023) and 2028 CHF Bonds; the 2024, 2029, 2039 and 2049 Biopharma Notes; or the 2026, 2028, 2031, 2039 and\n2049 Biopharma Euronotes, each holder of such notes may require the Company to repurchase some or all of such notes\nand bonds at a purchase price equal to 101% (100% in the case of the 2027 and 2032 Yen Notes) of the principal amount\nof the notes and bonds, plus accrued and unpaid interest (and in the case of the Yen Notes, certain swap-related losses\nas applicable). A change of control triggering event means the occurrence of both a change of control and a rating event,\neach as defined in the applicable indenture or comparable governing document. Except in connection with a change of\ncontrol triggering event, the Company does not have any credit rating downgrade triggers that would accelerate the\nmaturity of a material amount of outstanding debt. Each holder of the 2027 and 2032 Yen Notes may also require the\nCompany to repurchase some or all of its notes at a purchase price equal to 100% of the principal amount of the notes,\nplus accrued and unpaid interest and certain swap-related losses as applicable, in certain circumstances whereby such\nholder comes into violation of economic sanctions laws as a result of holding such notes.\n\nThe respective indentures or comparable governing documents under which the above-described notes and bonds were\nissued contain customary covenants including, for example, limits on the incurrence of secured debt and sale-leaseback\ntransactions. None of these covenants are considered restrictive to the Company’s operations and as of December 31,\n2023, the Company was in compliance with all of its debt covenants.\n\nLYONs\nIn 2001, the Company issued $830 million (value at maturity) in Liquid Yield Option Notes (“LYONs”). Pursuant to the\nterms of the indenture that governed the Company’s LYONs, each $1,000 of principal amount at maturity could be\nconverted into 38.1998 shares of Danaher common stock at any time on or before the maturity date of January 22, 2021.\n\nDuring the year ended December 31, 2021, holders of certain of the Company’s LYONs converted such LYONs into an\naggregate of approximately 912 thousand shares of the Company’s common stock, par value $0.01 per share. The\nCompany’s deferred tax liability of $10 million associated with the book and tax basis difference in the converted LYONs\nwas transferred to additional paid-in capital. The residual LYONS not converted into shares of the Company’s stock were\nredeemed at face value on January 22, 2021.\n\nLong-Term Indebtedness Related to the Veralto Separation\nIn September 2023, the Company received net cash distributions of approximately $2.6 billion from the Veralto\nDistribution. Veralto financed these cash payments through the issuance of approximately $2.6 billion of debt, consisting\nof $700 million aggregate principal amount of 5.50% senior unsecured bonds due 2026, $700 million aggregate principal\namount of 5.35% senior unsecured bonds due 2028, $700 million aggregate principal amount of 5.45% senior unsecured\nbonds due 2033 and €500 million aggregate principal amount of 4.15% senior unsecured bonds due 2031 (collectively,\nthe “Veralto Debt”). Danaher initially guaranteed the Veralto Debt, and the guarantee automatically terminated effective as\nof the Distribution Date. As of September 30, 2023 in connection with the Separation, the Veralto Debt was solely an\nobligation of Veralto and is no longer reflected in the Company’s Consolidated Financial Statements.\nLong-Term Debt Repayments\nThe CHF 540 million aggregate principal amount of the 2023 CHF Bonds were repaid upon their maturity on December 8,\n2023. On June 30, 2022, the Company repaid the €250 million aggregate principal amount of the floating rate senior\nunsecured notes and on November 15, 2022 the Company repaid the €700 million aggregate principal amount of the\n2.05% senior unsecured notes upon their maturity using available cash and the proceeds from the issuance of commercial\npaper. The ¥30.0 billion aggregate principal amount of the 0.352% senior unsecured notes due March 16, 2021 were\nrepaid during the first quarter of 2021 using proceeds from the issuance of commercial paper. During 2021, the Company\nrepaid certain outstanding borrowings in advance of their scheduled maturities. Refer to Note 9 for details of the early\nrepayment and the related loss on early extinguishment of borrowings incurred on such repayment.\n\n\n\n\n                                                            90\n"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "stale_business_perimeter",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -24.088843697372184,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "comparable_sales_growth_2023_pct": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "stale business perimeter"
+  },
+  {
+    "name": "include_discontinued_operating_cash",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5793,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "continuing_free_cash_flow_2023": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "include discontinued operating cash"
+  },
+  {
+    "name": "omit_cash_transferred_to_spinco",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2600,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "net_cash_received_in_separation": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "omit cash transferred to spinco"
+  },
+  {
+    "name": "remove_only_one_separation_leg",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2873,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "financing_cash_flow_without_separation_transfers": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "remove only one separation leg"
+  },
+  {
+    "name": "ignore_guarantee_termination",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "veralto_debt_remains_danaher_obligation_after_separation": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ignore guarantee termination"
+  },
+  {
+    "name": "missing_support",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": []
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "comparable_sales_growth_2023_pct": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing support"
+  },
+  {
+    "name": "fabricated_support",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "This source states the invented answer exactly."
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "comparable_sales_growth_2023_pct": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated support"
+  },
+  {
+    "name": "alternative_primary_evidence_route",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "single_year_printed_fcf_without_prior_year",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "the guarantee automatically terminated effective as of the Distribution Date"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "dated_sole_obligation_clause_without_guarantee_clause",
+    "response": {
+      "case_id": "h2-003",
+      "answers": {
+        "comparable_sales_growth_2023_pct": {
+          "value": -10.332920466914386,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "stale_sales_denominator_growth_error_pp": {
+          "value": -13.755923230457798,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "31,471"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Sales"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "23,890"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "26,643"
+            }
+          ]
+        },
+        "fy2022_operating_cash_removed_from_continuing": {
+          "value": 906,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2022",
+              "quote": "8,519"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "7,613"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_2023": {
+          "value": 5119,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by continuing operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,490"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Payments for additions to property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(1,383)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Proceeds from sales of property, plant and equipment"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "12"
+            }
+          ]
+        },
+        "continuing_free_cash_flow_growth_pct": {
+          "value": -21.29458794587946,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Free Cash Flow"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "5,119"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "6,504"
+            }
+          ]
+        },
+        "net_cash_received_in_separation": {
+          "value": 2173,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            }
+          ]
+        },
+        "financing_cash_flow_without_separation_transfers": {
+          "value": -2446,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash flows from financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Distribution from discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "2,600"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Cash distributions to Veralto Corporation, net"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(427)"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Net cash (used in) provided by financing activities"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "(273)"
+            }
+          ]
+        },
+        "veralto_debt_remains_danaher_obligation_after_separation": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation, the Veralto Debt was solely an obligation of Veralto"
+            }
+          ]
+        },
+        "no_separation_full_year_cash_flow_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "Total operating cash provided by discontinued operations"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "674"
+            },
+            {
+              "source_id": "h2a-danaher-2023",
+              "quote": "As of September 30, 2023 in connection with the Separation"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  }
+]

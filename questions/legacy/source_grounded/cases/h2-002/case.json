@@ -1,0 +1,116 @@
+{
+  "id": "h2-002",
+  "case_group": "cisco-fy2025-splunk-perimeter-and-tax-bridge",
+  "lane": "fundamental_equity",
+  "epistemic_type": "retrospective_reconciliation_and_conditional_decision",
+  "information_cutoff": "2026-10-04T20:02:32Z",
+  "prompt": "An analyst treats Cisco's FY2025 reported revenue growth as wholly organic and argues that nearly flat net income proves flat underlying profitability. Audit those conclusions across the FY2024 acquisition note and FY2025 income statement. Construct both the reported and specified Splunk-pro-forma-base revenue comparisons, reconcile the earnings effect of the tax provision, and separate accounting acquisition consideration from common-share cash outlay. Keep the pro-forma reporting qualifications intact; no standalone Splunk growth, FX bridge, normalized tax rate or total acquisition cash-cost estimate is supplied.\n\nUse only the frozen document versions and the explicitly labeled hypothetical assumptions. These are retrospective research questions, not claims of historical tradability or forecasting skill. Discover and reconcile the relevant definitions and periods in the documents. Return every declared field with verbatim supporting evidence, preserving unrounded intermediate calculations. Money is USD millions unless the field specifies another unit. Percentages use the 0\u2013100 scale. For every noninteger output, use at least eight decimal places unless the field explicitly allows a different precision. Source values displayed in millions are treated as exact only for these table-based arithmetic comparisons; do not infer greater economic precision.",
+  "source_ids": [
+    "h2a-cisco-2024",
+    "h2a-cisco-2025"
+  ],
+  "output_fields": [
+    {
+      "id": "reported_revenue_growth_2025_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2025 reported revenue growth versus reported FY2024.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "revenue_change_vs_2024_splunk_proforma_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2025 reported revenue relative to FY2024's disclosed Cisco-plus-Splunk pro-forma revenue. Label this defined comparator, not verified organic growth.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "reported_minus_proforma_comparator_growth_pp",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "Difference between the two specified revenue-growth indicators.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "reported_revenue_growth_2025_pct",
+        "revenue_change_vs_2024_splunk_proforma_pct"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fy2024_proforma_minus_reported_net_income",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "FY2024 pro-forma net income minus reported FY2024 net income; do not label it standalone pre-close target earnings.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "reported_net_income_growth_2025_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2025 reported net income growth versus FY2024.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "pretax_decline_offset_by_tax_reduction_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Percentage of the FY2025 pretax-income decline offset by the fall in the reported income-tax provision. Arithmetic bridge only, not sustainable tax guidance.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "shareholder_cash_consideration_net_of_acquired_cash",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Cash paid for Splunk common shares less acquired cash and equivalents, excluding converted equity awards, debt settlement, costs and all other transactions.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "purchase_consideration_exceeds_common_share_cash",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Accounting purchase consideration minus common-share cash consideration; identify the bridge using the acquisition note.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "comparator_identifies_organic_growth",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does substituting the Splunk pro-forma denominator alone establish constant-currency, constant-perimeter organic FY2025 growth? No FX or full-other-acquisition bridge is supplied.",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "proforma_net_income_is_realized_combined_income",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Is the disclosed FY2024 pro-forma net income an actual combined-company income result?\u00a0",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    }
+  ],
+  "response_format": {
+    "case_id": "h2-002",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ],
+        "support_refs": [
+          "<optional field ID from this output's support_dependencies>"
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

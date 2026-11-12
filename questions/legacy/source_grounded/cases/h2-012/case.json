@@ -1,0 +1,117 @@
+{
+  "id": "h2-012",
+  "case_group": "credit-suisse-2023-at1-lookthrough-equity-and-margin-cash",
+  "lane": "cross_strategy_portfolio",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T20:05:48Z",
+  "prompt": "Reconcile a synthetic multi-desk portfolio immediately after the March2023 Credit Suisse AT1 write-down under the FINMA instruction and the issuer's announced UBS share exchange. This is a historical conditional mark and treasury exercise, not a current2026 legal valuation or prediction of litigation. DeskA directly holds CHF1,000,000 AT1 face carried at80% of par. DeskB holds a separate wrapper whose only economic asset is CHF1,500,000 of the SAME Credit Suisse AT1 exposure carried at70%; wrapper pass-through is exact and has no fees, cash or other assets. Apply a zero immediate AT1 mark under the stipulated write-down event. The equity book owns22,480 Credit Suisse shares acquired at CHF2 each, and separately is short1,000 UBS shares entered at CHF20. Mark eventual UBS delivery and that short at a synthetic CHF18 per UBS share; assume the contractual announced exchange occurs on its stated terms. Another book owns CHF1,000,000 Tier2 face, carried at95% and independently supplied with a92% post-event market mark. Treat all marks as CHF, with no FX, taxes or other positions. Treasury has CHF120,000 cash. A synthetic collateral agreement demands an immediate cash margin payment equal to50% of the aggregate AT1 mark loss. The UBS short gain is cash-settled and available immediately; the equity exchange consideration is delivered later in shares, with no early cash conversion, asset sales, close-out netting or additional inflows. Determine shared-issuer loss, eventual share exposure, aggregate mark P&L and immediate cash financing. Then withhold only the Tier2 post-event market mark and assess whether aggregate P&L remains identified; distinguish regulatory write-down scope from market valuation and later legal recovery.\n\nUse the supplied historical documents as specified; this packet is a retrospective conditional analysis with observed 2026 source availability, not a claim of contemporaneous historical execution. Return typed outputs with supporting verbatim clauses; declared support_dependencies permit explicit support_refs to reuse previously justified answers. Synthetic inputs need no invented citation.",
+  "source_ids": [
+    "h2b-finma-at1",
+    "h2b-ubs-announce-warrants"
+  ],
+  "output_fields": [
+    {
+      "id": "shared_at1_mark_loss",
+      "type": "number",
+      "unit": "CHF",
+      "description": "Positive aggregate mark loss on both direct and look-through AT1 holdings.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "contractual_ubs_share_delivery",
+      "type": "number",
+      "unit": "UBS_shares",
+      "description": "Eventual contractual UBS shares for the stated Credit Suisse equity position.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "credit_suisse_equity_mark_pnl",
+      "type": "number",
+      "unit": "CHF",
+      "description": "Equity merger-entitlement mark minus Credit Suisse share acquisition cost.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "contractual_ubs_share_delivery"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "eventual_net_ubs_share_exposure",
+      "type": "number",
+      "unit": "UBS_shares",
+      "description": "UBS delivery plus the pre-existing signed UBS hedge position.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "contractual_ubs_share_delivery"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "aggregate_portfolio_mark_pnl",
+      "type": "number",
+      "unit": "CHF",
+      "description": "Total P&L against the explicitly stated baselines: AT1/Tier2 carrying marks and equity/short acquisition or entry cost. This is not a pure event-day return.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "shared_at1_mark_loss",
+        "credit_suisse_equity_mark_pnl"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "immediate_cash_financing_need",
+      "type": "number",
+      "unit": "CHF",
+      "description": "Additional cash needed now to meet the stated margin call after available treasury cash and cash-settled hedge gain.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "shared_at1_mark_loss"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "tier2_zero_required_by_write_down",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the FINMA write-down instruction require marking this Tier2 bond to zero?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "aggregate_pnl_known_without_tier2_mark",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "If the supplied Tier2 post-event market mark is withheld, do the regulatory and merger documents determine the aggregate portfolio mark P&L?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "ultimate_at1_recovery_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Do these event documents settle the ultimate amount or timing of any later litigation or recovery proceeds?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ],
+  "response_format": {
+    "case_id": "h2-012",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ],
+        "support_refs": [
+          "<optional field ID from this output's support_dependencies>"
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "portfolio-wk-2023-q3",
+    "url": "https://www.sec.gov/Archives/edgar/data/1959348/000162828023037822/k-20230930.htm",
+    "title": "WK Kellogg Co quarterly report for September 30, 2023",
+    "publisher": "WK Kellogg Co via SEC EDGAR",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Primary-source bytes or rendered captures were retained by the recorded retrieval time and the observation bound 2026-10-04T18:14:08Z. Document date is not used as proof of historical first availability; this is a retrospective conditional-analysis pack.",
+    "text_sha256": "b46d8a623e3e8b9d7d036a62bd5487a54d081f1c2cf81f798971c631a75c21f8",
+    "available_by": "2026-10-04T18:14:08Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_html_with_selected_reproducible_excerpts.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "portfolio-occ-53276",
+    "url": "https://infomemo.theocc.com/infomemos?number=53276",
+    "title": "Kellogg Company distribution and name change, OCC update 53276",
+    "publisher": "The Options Clearing Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Primary-source bytes or rendered captures were retained by the recorded retrieval time and the observation bound 2026-10-04T18:14:08Z. Document date is not used as proof of historical first availability; this is a retrospective conditional-analysis pack.",
+    "text_sha256": "63f3c979762962800e5defdad06bfa0d843252610ac8cdf48f0022c855e6bf70",
+    "available_by": "2026-10-04T18:14:08Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: all_reported_tool_text_lines_layout_unverified.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

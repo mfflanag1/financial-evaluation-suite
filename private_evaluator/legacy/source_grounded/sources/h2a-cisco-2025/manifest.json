@@ -1,0 +1,25 @@
+{
+  "id": "h2a-cisco-2025",
+  "url": "https://investor.cisco.com/files/doc_financials/2025/ar/2025-Cisco-Full-Annual-Report.pdf",
+  "title": "Cisco FY2025 annual report",
+  "publisher": "Cisco Systems, Inc.",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T20:02:32Z",
+  "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+  "retrieved_at": "2026-10-04T20:00:09.530572Z",
+  "redistribution_status": "Public primary corporate disclosure retained for local research. Redistribution rights not adjudicated; no public release authorized.",
+  "raw_path": "sources/h2a-cisco-2025/evidence.txt",
+  "text_path": "sources/h2a-cisco-2025/evidence.txt",
+  "raw_sha256": "42bb513e531a49aa5761b109fda464d05586b6b2536e8d867f62e878a9d70b3b",
+  "text_sha256": "42bb513e531a49aa5761b109fda464d05586b6b2536e8d867f62e878a9d70b3b",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "complete_original_pdf",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: complete_original_pdf.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

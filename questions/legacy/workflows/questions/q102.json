@@ -1,0 +1,236 @@
+{
+  "id": "q102",
+  "title": "Trade-date profit and settled cash after a corporate action",
+  "prompt": "Close this synthetic USD-only long portfolio over the three days listed. The raw tables are intentionally unsorted. Use trade-date accounting for holdings and P&L, FIFO cost lots, and the explicit settlement dates for cash. Order opening lots by acquired date then lot_id; order same-day trades by sequence then trade_id. Positive quantities buy, negative quantities sell. There are no short positions, taxes, FX, financing or external investor flows. Commission fees are positive, expensed on trade date, excluded from cost basis and realized trading P&L, and included in the trade's eventual cash settlement. A buy creates a payable of quantity times price plus fee; a sale creates a receivable of proceeds minus fee. Do not offset different outstanding trades when reporting gross receivables and payables.\n\nOpening lots and opening cash already reflect all trades before opening_date on a trade-date basis. The opening_unsettled amounts are additional signed cash claims from those prior trades: positive receivables and negative payables. Their P&L has already been recognized before this exercise; their settlement changes cash and the claim, not NAV or this period's P&L.\n\nAt each day's opening apply stock splits first: ratio means new shares per old share, quantities multiply and each unit cost divides, preserving total basis. Prices are actual unadjusted per-share marks and trade prices. Next accrue each ex-date dividend on that day's post-split opening quantity, before trades. Recognize that dividend as income and a receivable on ex-date, then move the claim to cash on payment_date without recognizing income again. Trade settlements also move claims to cash without new P&L. All trades settle on the dates supplied; dates beyond the final close remain outstanding. No receivables or payables are omitted from the tables.\n\nReconcile daily NAV change into realized FIFO trading P&L, change in unrealized P&L relative to the prior close, ex-date dividend income and negative commissions. Unrealized P&L is marked position value minus remaining FIFO basis. Finally compute available distribution headroom as max(0, settled closing cash minus ALL outstanding trade payables minus minimum_cash_reserve). Receivables and marked securities cannot fund this immediate distribution; no netting or sale is permitted. Determine whether the requested distribution fits within that headroom. Return the requested ledgers and decision.",
+  "inputs": {
+    "opening_date": "2025-01-08",
+    "days": [
+      "2025-01-09",
+      "2025-01-10",
+      "2025-01-13"
+    ],
+    "security_order": [
+      "A",
+      "B"
+    ],
+    "opening_cash": 10000,
+    "minimum_cash_reserve": 10000,
+    "requested_distribution": 200,
+    "opening_lots": [
+      {
+        "lot_id": "b1",
+        "security": "B",
+        "acquired": "2024-11-01",
+        "quantity": 50,
+        "unit_cost": 50
+      },
+      {
+        "lot_id": "a2",
+        "security": "A",
+        "acquired": "2024-12-01",
+        "quantity": 40,
+        "unit_cost": 24
+      },
+      {
+        "lot_id": "a1",
+        "security": "A",
+        "acquired": "2024-10-01",
+        "quantity": 60,
+        "unit_cost": 20
+      }
+    ],
+    "opening_unsettled": [
+      {
+        "item_id": "prior_buy",
+        "settlement_date": "2025-01-09",
+        "amount": -650
+      },
+      {
+        "item_id": "prior_sale",
+        "settlement_date": "2025-01-10",
+        "amount": 400
+      }
+    ],
+    "marks": [
+      {
+        "date": "2025-01-10",
+        "security": "B",
+        "price": 47.5
+      },
+      {
+        "date": "2025-01-08",
+        "security": "A",
+        "price": 30
+      },
+      {
+        "date": "2025-01-13",
+        "security": "A",
+        "price": 16.5
+      },
+      {
+        "date": "2025-01-09",
+        "security": "B",
+        "price": 46.5
+      },
+      {
+        "date": "2025-01-10",
+        "security": "A",
+        "price": 16
+      },
+      {
+        "date": "2025-01-08",
+        "security": "B",
+        "price": 45
+      },
+      {
+        "date": "2025-01-13",
+        "security": "B",
+        "price": 47
+      },
+      {
+        "date": "2025-01-09",
+        "security": "A",
+        "price": 31
+      }
+    ],
+    "splits": [
+      {
+        "date": "2025-01-10",
+        "security": "A",
+        "ratio": 2
+      }
+    ],
+    "dividends": [
+      {
+        "security": "B",
+        "ex_date": "2025-01-10",
+        "payment_date": "2025-01-15",
+        "per_share": 0.5
+      },
+      {
+        "security": "A",
+        "ex_date": "2025-01-09",
+        "payment_date": "2025-01-13",
+        "per_share": 1.2
+      }
+    ],
+    "trades": [
+      {
+        "trade_id": "t5",
+        "trade_date": "2025-01-13",
+        "sequence": 1,
+        "settlement_date": "2025-01-15",
+        "security": "A",
+        "quantity": -50,
+        "price": 16.2,
+        "fee": 2
+      },
+      {
+        "trade_id": "t2",
+        "trade_date": "2025-01-09",
+        "sequence": 2,
+        "settlement_date": "2025-01-13",
+        "security": "B",
+        "quantity": 20,
+        "price": 46,
+        "fee": 3
+      },
+      {
+        "trade_id": "t4",
+        "trade_date": "2025-01-10",
+        "sequence": 2,
+        "settlement_date": "2025-01-14",
+        "security": "B",
+        "quantity": -30,
+        "price": 47,
+        "fee": 2
+      },
+      {
+        "trade_id": "t1",
+        "trade_date": "2025-01-09",
+        "sequence": 1,
+        "settlement_date": "2025-01-10",
+        "security": "A",
+        "quantity": -70,
+        "price": 32,
+        "fee": 2
+      },
+      {
+        "trade_id": "t6",
+        "trade_date": "2025-01-13",
+        "sequence": 2,
+        "settlement_date": "2025-01-15",
+        "security": "B",
+        "quantity": 10,
+        "price": 48,
+        "fee": 1
+      },
+      {
+        "trade_id": "t3",
+        "trade_date": "2025-01-10",
+        "sequence": 1,
+        "settlement_date": "2025-01-13",
+        "security": "A",
+        "quantity": 40,
+        "price": 15.5,
+        "fee": 2
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "name": "daily_nav_usd",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "Closing NAV for each entry in days.",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "daily_pnl_bridge_usd",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "Flatten date in days order, then [realized FIFO trading P&L, change in unrealized P&L, ex-date dividend income, negative commissions].",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "daily_balance_sheet_usd",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "Flatten date in days order, then [settled cash, gross trade receivables, gross trade payables as positive amounts, dividend receivables, marked securities value].",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "ending_security_ledger",
+      "type": "number_array",
+      "unit": "shares for quantity; USD for basis and P&L",
+      "description": "Flatten security_order, then [ending quantity, remaining cost basis, unrealized P&L].",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "cash_distribution_headroom_usd",
+      "type": "number",
+      "unit": "USD",
+      "description": "Immediate distribution headroom at the last close under the stated reserve policy.",
+      "atol": 0.01,
+      "rtol": 0.0
+    },
+    {
+      "name": "can_pay_requested_distribution",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "True exactly when requested_distribution is no larger than the available headroom."
+    }
+  ],
+  "instructions": "Submit strict JSON with exactly one key, code, whose value is Python source defining solve(data). The controller supplies the inputs object as data. Return a JSON-native dictionary mapping every declared output name to its answer. Use Python stdlib and NumPy only; do not read files, access the network, spawn processes, or use native tools. Write a general calculation from data, not constants for this instance. Your program will also be evaluated on undisclosed changed inputs under the same conventions. The controller will execute the first submission and give you its public outputs or error once, then ask for a final code submission. It never reveals reference answers or hidden test results. Supporting numerical ledgers and diagnostics are the declared array outputs; follow their ordering exactly. No markdown fences around your JSON.",
+  "workflow_area": "pnl",
+  "data_origin": "synthetic",
+  "provenance": {
+    "kind": "synthetic",
+    "sources": [],
+    "vintage_limits": "All instruments, quantities, dates, prices and events are stipulated; no observed market data."
+  }
+}

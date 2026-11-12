@@ -1,0 +1,225 @@
+{
+  "question_id": "q108",
+  "title": "Estimate revisions separated from coverage turnover and currency",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Rebuild the two information vintages, then distinguish forecast revision from sample turnover and currency. Normalize eligible EPS before averaging. Produce the declared sequential additive bridge, not a symmetric attribution. Report whether every surviving broker raised EPS; do not infer this from the headline mean. Percent outputs use the0–100 scale. All observations and rules are synthetic. Return the declared typed fields with supporting source IDs.",
+  "inputs": {
+    "columns": [
+      "record",
+      "broker_group",
+      "published",
+      "available",
+      "fiscal_year",
+      "eps",
+      "currency",
+      "share_basis",
+      "status"
+    ],
+    "rows": [
+      [
+        "a1",
+        "North",
+        "2025-06-01",
+        "2025-06-01",
+        2025,
+        2.6,
+        "USD",
+        "old",
+        "active"
+      ],
+      [
+        "b1",
+        "East",
+        "2025-06-01",
+        "2025-06-01",
+        2025,
+        1.4,
+        "USD",
+        "new",
+        "active"
+      ],
+      [
+        "c1",
+        "South",
+        "2025-06-01",
+        "2025-06-01",
+        2025,
+        1.2,
+        "EUR",
+        "new",
+        "active"
+      ],
+      [
+        "a2",
+        "North",
+        "2025-06-15",
+        "2025-06-15",
+        2025,
+        1.6,
+        "USD",
+        "new",
+        "active"
+      ],
+      [
+        "a3",
+        "North",
+        "2025-06-20",
+        "2025-06-20",
+        2025,
+        1.6,
+        "USD",
+        "new",
+        "active"
+      ],
+      [
+        "a4",
+        "North",
+        "2025-06-29",
+        "2025-07-01",
+        2025,
+        1.9,
+        "USD",
+        "new",
+        "active"
+      ],
+      [
+        "b2",
+        "East",
+        "2025-06-18",
+        "2025-06-18",
+        2025,
+        2.0,
+        "EUR",
+        "old",
+        "active"
+      ],
+      [
+        "c2",
+        "South",
+        "2025-06-25",
+        "2025-06-25",
+        2025,
+        0,
+        "EUR",
+        "new",
+        "withdrawn"
+      ],
+      [
+        "d1",
+        "West",
+        "2025-06-10",
+        "2025-06-10",
+        2025,
+        2.5,
+        "USD",
+        "new",
+        "active"
+      ],
+      [
+        "d2",
+        "West",
+        "2025-06-20",
+        "2025-06-20",
+        2026,
+        2.2,
+        "USD",
+        "new",
+        "active"
+      ],
+      [
+        "a5",
+        "North",
+        "2025-07-02",
+        "2025-07-02",
+        2025,
+        2.0,
+        "USD",
+        "new",
+        "active"
+      ]
+    ],
+    "vintages": [
+      "2025-06-01",
+      "2025-06-30"
+    ],
+    "target_year": 2025,
+    "new_shares_per_old": 2,
+    "fixed_usd_per_eur": 1.2,
+    "latest_spot_usd_per_eur": 1.3,
+    "actual_eps_usd_new": 1.56
+  },
+  "sources": [
+    {
+      "id": "q108_ledger",
+      "text": "Original synthetic packet. All input rows and both cutoff dates belong to this estimate ledger. Eligibility requires published AND available on or before the cutoff and target fiscal year. Latest publication, then greatest record ID, wins within broker group. A latest withdrawn row removes its group; its zero is a status placeholder, not an estimate. Do not fall back to its prior active estimate."
+    },
+    {
+      "id": "q108_comparison",
+      "text": "Original synthetic packet. The split is two new shares per old. Fixed FX is1.2 USD/EUR at both vintages; the headline alone retranslates the later mean at1.3. Equal weight each active group once. Define exit effect as earlier matched mean minus earlier all-active mean; within effect as later minus earlier matched means; entry effect as later all-active minus later matched mean; FX effect as later spot minus later fixed mean. Actual EPS1.56 is already USD per new share."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "latest_record_ids",
+      "type": "string_array",
+      "unit": "record IDs",
+      "description": "Latest eligible active records ordered by broker name."
+    },
+    {
+      "name": "matched_broker_groups",
+      "type": "string_array",
+      "unit": "broker groups",
+      "description": "Alphabetical intersection of active groups at both vintages."
+    },
+    {
+      "name": "constant_currency_vintage_means",
+      "type": "number_array",
+      "unit": "USD per new share",
+      "description": "Earlier, later equal-weighted all-active means at fixed FX.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "matched_cohort_revision_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Change in mean for the same surviving broker cohort, at fixed FX.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "headline_revision_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Later all-active mean at latest spot FX versus earlier all-active mean at fixed FX.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "mean_change_bridge",
+      "type": "number_array",
+      "unit": "USD per new share",
+      "description": "[exit composition, within matched cohort, entry composition, FX], sequential additive mean bridge.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "constant_currency_surprise_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Actual versus later all-active fixed-FX consensus.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "every_matched_broker_raised_eps",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Strict increase required for each matched group after fixed-FX normalization."
+    }
+  ]
+}

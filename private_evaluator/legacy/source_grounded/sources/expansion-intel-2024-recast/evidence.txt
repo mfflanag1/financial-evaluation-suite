@@ -1,0 +1,55 @@
+Note 3 : | Operating Segments
+We previously announced the implementation of our internal foundry operating model, which took effect in the first quarter of 2024, and creates a foundry relationship between our Intel Products business (collectively CCG, DCAI, and NEX) and our Intel Foundry business. Intel Products consists substantially of design and development of CPUs and related solutions for external customers.
+Intel Foundry consists substantially of process engineering, manufacturing, and foundry services groups that provide manufacturing, test, and assembly services to our Intel Products business and to external customers. Both businesses utilize marketing, sales, and other support functions.
+Our internal foundry model is a key component of our strategy and is designed to reshape our operational dynamics and drive greater transparency, accountability, and focus on costs and efficiency. We also previously announced our intent to operate Altera as a standalone business.
+Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in "all other." As a result of these changes, we modified our segment reporting in the first quarter of 2024 to align to this new operating model. All prior period segment data has been retrospectively adjusted to reflect the way our CODMs internally receive information and manage and monitor our operating segment performance.
+There are no changes to our Consolidated Financial Statements for any prior periods.
+
+[Intervening source text omitted]
+
+Intel Foundry
+▪Segment revenue: Consists substantially of intersegment product and services revenue for wafer fabrication, substrates and other related products, and services sold to Intel Products, Altera, and certain other Intel internal businesses. We recognize intersegment revenue based on the completion of performance obligations. Product revenue is recognized upon transfer of ownership, which is generally at the completion of wafer sorting.
+Backend service revenue is recognized upon the completion of assembly and test milestones, which approximates the recognition of revenue over the service period. Intersegment sales are recorded at prices that are intended to approximate market pricing. Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024, $953 million in 2023, and $474 million in 2022.
+▪Segment expenses: Consists of direct expenses for technology development, product manufacturing and services provided by Intel Foundry to internal and external customers, allocated expenses as described below, and direct operating expenses. Direct expenses for product manufacturing include excess capacity charges.
+
+All Other
+Our "all other" category includes the results of operations from other non-reportable segments not otherwise presented, including our Altera and Mobileye businesses, start-up businesses that support our initiatives, and historical results of operations from divested businesses. The financial results of our all other category include intersegment product and services revenue and intersegment expenses.
+We allocate operating expenses from our sales and marketing group to the Intel Products operating segments and allocate operating expenses from our finance and administration groups to all of our operating segments, except Mobileye.
+We estimate that the substantial majority of our consolidated depreciation expense was incurred by Intel Foundry in 2024, 2023, and 2022. Intel Foundry depreciation expense is substantially included in overhead cost pools and then combined with other costs, and subsequently absorbed into inventory as each product passes through the manufacturing process and is sold to Intel Products or other customers.
+As a result, it is impracticable to determine the total depreciation expense included as a component of each Intel Products operating segment's operating income (loss).
+
+[Intervening source text omitted]
+
+Intersegment eliminations: Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes. The Intel Products operating segments and Intel Foundry are meant to reflect separate fabless semiconductor and foundry companies, respectively. Thus, certain intersegment activity is captured within the intersegment eliminations upon consolidation and presented at the Intel consolidated level.
+This activity primarily relates to inventory reserves, which are determined and recorded based on our accounting policies for Intel as a whole, but are only recorded by the Intel Products operating segments upon transfer of inventory from Intel Foundry. If a reserve is identified that relates to neither Intel Products operating segments nor Intel Foundry, the reserve is recognized as activity within the intersegment eliminations for Intel on a consolidated basis.
+
+[Intervening source text omitted]
+
+Net revenue, cost of sales, gross margin, operating expenses, and operating income (loss) for each period were as follows:
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+(In Millions) | | Dec 28, 2024
+| | Intel Products | | | | | | | | | |
+| | CCG | | DCAI | | NEX | | Total Intel Products | | Intel Foundry | | All Other | | Corporate Unallocated | | Intersegment Eliminations | | Total Consolidated
+Revenue | | $ | 30,290 | | | $ | 12,817 | | | $ | 5,842 | | | $ | 48,949 | | | $ | 17,543 | | | $ | 3,824 | | | $ | — | | | $ | (17,215) | | | $ | 53,101 |
+Cost of sales | | 14,569 | | | 6,792 | | | 2,457 | | | 23,818 | | | 25,596 | | | 1,831 | | | 1,919 | | | (17,408) | | | 35,756 |
+Gross margin (loss) | | 15,721 | | | 6,025 | | | 3,385 | | | 25,131 | | | (8,053) | | | 1,993 | | | (1,919) | | | 193 | | | 17,345 |
+Operating expenses | | 4,801 | | | 4,687 | | | 2,454 | | | 11,942 | | | 5,355 | | | 2,077 | | | 9,299 | | | 350 | | | 29,023 |
+Operating income (loss) | | $ | 10,920 | | | $ | 1,338 | | | $ | 931 | | | $ | 13,189 | | | $ | (13,408) | | | $ | (84) | | | $ | (11,218) | | | $ | (157) | | | $ | (11,678) |
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+(In Millions) | | Dec 30, 2023
+| | Intel Products | | | | | | | | | |
+| | CCG | | DCAI | | NEX | | Total Intel Products | | Intel Foundry | | All Other | | Corporate Unallocated | | Intersegment Eliminations | | Total Consolidated
+Revenue | | $ | 29,258 | | | $ | 12,635 | | | $ | 5,774 | | | $ | 47,667 | | | $ | 18,910 | | | $ | 5,608 | | | $ | — | | | $ | (17,957) | | | $ | 54,228 |
+Cost of sales | | 14,606 | | | 6,420 | | | 3,095 | | | 24,121 | | | 21,471 | | | 2,475 | | | 2,136 | | | (17,686) | | | 32,517 |
+Gross margin (loss) | | 14,652 | | | 6,215 | | | 2,679 | | | 23,546 | | | (2,561) | | | 3,133 | | | (2,136) | | | (271) | | | 21,711 |
+Operating expenses | | 5,139 | | | 4,595 | | | 2,475 | | | 12,209 | | | 4,394 | | | 2,054 | | | 3,029 | | | (68) | | | 21,618 |
+Operating income (loss) | | $ | 9,513 | | | $ | 1,620 | | | $ | 204 | | | $ | 11,337 | | | $ | (6,955) | | | $ | 1,079 | | | $ | (5,165) | | | $ | (203) | | | $ | 93 |
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+(In Millions) | | Dec 31, 2022
+| | Intel Products | | | | | | | | | |
+| | CCG | | DCAI | | NEX | | Total Intel Products | | Intel Foundry | | All Other | | Corporate Unallocated | | Intersegment Eliminations | | Total Consolidated
+Revenue | | $ | 31,773 | | | $ | 16,856 | | | $ | 8,409 | | | $ | 57,038 | | | $ | 27,491 | | | $ | 5,530 | | | $ | — | | | $ | (27,005) | | | $ | 63,054 |
+Cost of sales | | 16,826 | | | 7,081 | | | 3,856 | | | 27,763 | | | 28,052 | | | 2,425 | | | 2,875 | | | (24,927) | | | 36,188 |
+Gross margin (loss) | | 14,947 | | | 9,775 | | | 4,553 | | | 29,275 | | | (561) | | | 3,105 | | | (2,875) | | | (2,078) | | | 26,866 |
+Operating expenses | | 6,740 | | | 5,577 | | | 3,021 | | | 15,338 | | | 4,608 | | | 1,931 | | | 2,758 | | | (103) | | | 24,532 |
+Operating income (loss) | | $ | 8,207 | | | $ | 4,198 | | | $ | 1,532 | | | $ | 13,937 | | | $ | (5,169) | | | $ | 1,174 | | | $ | (5,633) | | | $ | (1,975) | | | $ | 2,334 |

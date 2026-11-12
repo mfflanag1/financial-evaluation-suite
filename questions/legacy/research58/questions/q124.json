@@ -1,0 +1,99 @@
+{
+  "question_id": "q124",
+  "title": "Dispatch economics with ramp and fuel limits",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconstruct marginal costs from fuel and emissions terms, then solve the constrained dispatch and assess the approval hurdle. A positive hourly spark margin alone does not authorize the unit; preserve ramp, start and fuel restrictions from the day0 packet. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "power_prices": [
+      45,
+      80,
+      70,
+      40
+    ],
+    "grid": [
+      0,
+      10,
+      20
+    ],
+    "heat_rate": 7,
+    "gas_price": 4,
+    "emission_rate": 0.4,
+    "carbon_price": 25,
+    "variable_om": 5,
+    "ramp": 10,
+    "minimum_run": 2,
+    "fuel_cap": 420,
+    "startup_cost": 100,
+    "minimum_margin": 1000
+  },
+  "sources": [
+    {
+      "id": "q124_facts",
+      "text": "Synthetic packet: The synthetic unit sheet establishes heat rate and emissions rate for every permitted positive output; the fuel register caps total available fuel at420. Prices and variable costs are constant within each hour."
+    },
+    {
+      "id": "q124_terms",
+      "text": "Synthetic governing terms: Four one-hour intervals use the listed day-ahead price vector. Output before hour1 and after hour4 is zero, so ramp limits apply at both boundaries. Each positive-output run lasts at least minimum_run hours. A start is an off-to-on transition. Fuel and carbon costs are paid per actual generation; no fixed availability payment exists. Maximize margin over the supplied dispatch grid; ties choose lower total MWh then lexicographically lower dispatch."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "dispatch",
+      "type": "number_array",
+      "unit": "MWh",
+      "description": "MWh generation in hours1–4.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "variable_cost_per_mwh",
+      "type": "number",
+      "unit": "USD/MWh",
+      "description": "Fuel, carbon and variable operating cash costs.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "fuel_used",
+      "type": "number",
+      "unit": "fuel units",
+      "description": "Fuel consumption over all hours.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "emissions",
+      "type": "number",
+      "unit": "tonnes",
+      "description": "Emissions over all hours.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "start_count",
+      "type": "number",
+      "unit": "starts",
+      "description": "Number of transitions from off to on.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_cash_margin",
+      "type": "number",
+      "unit": "USD",
+      "description": "Power cash revenue less variable costs and start costs.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "dispatch_authorized",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether optimal feasible dispatch reaches the stipulated minimum margin."
+    }
+  ]
+}

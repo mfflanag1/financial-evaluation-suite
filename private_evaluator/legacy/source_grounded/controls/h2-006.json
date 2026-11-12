@@ -1,0 +1,2583 @@
+[
+  {
+    "name": "concise_reference",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "contextual_primary_pages",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "                                                                                                            FINANCIAL STATEMENTS\n                                                                                                                       FOOTNOTES\nrequired to repay approximately $1.4 billion in federal taxes, $28 million in state taxes and accrued interest of $574 million. A\nliability for the taxes and interest is included in deferred credits and other liabilities - other.\n\nINDEMNITIES TO THIRD PARTIES\n    Occidental, its subsidiaries, or both, have indemnified various parties against specified liabilities those parties might\nincur in the future in connection with purchases and other transactions that they have entered into with Occidental or its\nsubsidiaries. These indemnities usually are contingent upon the other party incurring liabilities that reach specified\nthresholds. As of December 31, 2023, Occidental is not aware of circumstances that it believes would reasonably be\nexpected to lead to indemnity claims that would result in payments materially in excess of reserves.\n\nPURCHASE OBLIGATIONS AND COMMITMENTS\n      Occidental, its subsidiaries, or both, have entered into agreements providing for future payments, primarily to secure\nterminal and pipeline capacity, and also for drilling rigs and services, electrical power, non-lease components, steam and\ncertain chemical raw materials. Occidental has certain other commitments under contracts, guarantees and joint ventures,\nincluding purchase commitments for goods and services at market-related prices and certain other contingent liabilities. The\namounts that will be paid for such outstanding off-balance sheet purchase obligations as of December 31, 2023 are $3.2\nbillion in 2024, $4.1 billion in 2025 and 2026, $2.5 billion in 2027 and 2028 and $2.6 billion in 2029 and thereafter.\n\n\n NOTE 14 - STOCKHOLDERS’ EQUITY\n\n   The following table presents Occidental's common share activity, including exercises of options and warrants, other\ntransactions in Occidental's common stock in 2023 and treasury stock purchased both under its $3.0 billion share\nrepurchase program announced in February 2023 and from the trustee of Occidental's defined contribution savings plan:\n\n\n                                                 Exercise of                                  Treasury            Common\n                                                Warrants and                                     Stock                Stock\n                                                                                      (b)\n Period                                              Options (a)              Other          Purchases (c)      Outstanding (d)\n December 31, 2022                                                                                              899,858,944\n   First Quarter 2023                                 268,371            3,935,166          (12,511,237)        891,551,244\n      Second Quarter 2023                             205,631              158,473            (7,233,460)        884,681,888\n      Third Quarter 2023                            2,468,799                19,248           (9,468,451)        877,701,484\n      Fourth Quarter 2023                           1,901,994               46,192             (186,567)         879,463,103\n      Total 2023                                    4,844,795            4,159,079          (29,399,715)         879,463,103\n(a)\n      Approximately $112 million of cash was received as a result of the exercise of common stock warrants and options.\n(b)\n      Consisted of issuances for the 2015 long-term incentive plan, the OPC savings plan and the dividend reinvestment plan.\n(c)\n      Included purchases of shares from the trustee of Occidental's defined contribution savings plan that are not part of publicly\n      announced plans or programs.\n(d)\n      As of December 31, 2023, Occidental had 99.5 million outstanding warrants with a strike price of $22 per share and\n      83.9 million of warrants with a strike price of $59.62 per share.\n\nTREASURY STOCK\n    Under the share repurchase program announced in February 2023, Occidental purchased 29.1 million shares for\n$1.8 billion during 2023. Additionally, Occidental purchased shares from the trustee of its defined contribution savings plan in\n2023, 2022 and 2021. As of December 31, 2023, 2022 and 2021, treasury stock shares numbered 228.1 million,\n198.7 million and 149.3 million, respectively.\n\nPREFERRED STOCK\n    In connection with the Anadarko Acquisition, Occidental issued 100,000 shares of series A preferred stock, with a face\nvalue of $100,000 per share and a liquidation preference of $105,000 per share plus unpaid accrued dividends. Prior to\nAugust 2029, a mandatory redemption provision obligates Occidental to redeem preferred stock at a 10% premium to face\nvalue on a dollar-for-dollar basis for every dollar distributed to common shareholders (either via common stock dividends or\nshare repurchases) above $4.00 per share, on a trailing 12-month basis. Preferred redemptions can settle between 30 and\n60 days from the date Berkshire Hathaway is notified of the redemption obligation and accrued unpaid dividends are paid up\nto but not including the redemption date. Occidental cannot voluntarily redeem preferred stock before August 2029. After\nAugust 2029, Occidental can voluntarily redeem preferred stock at a 5% premium to face value.\n\n\n\n\n                                                                                                       OXY 2023 FORM 10-K 107\n"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "                                                                                                        FINANCIAL STATEMENTS\n                                                                                                                   FOOTNOTES\n       Dividends on the preferred stock accrue on the face value at a rate per annum of 8%, but will be paid only when, as\nand if declared by Occidental’s Board of Directors. At any time, when such dividends have not been paid in full, the unpaid\namounts will accrue dividends, compounded quarterly, at a rate per annum of 9%. Following the payment in full of any\naccrued but unpaid dividends, the dividend rate will remain at 9% per annum. If preferred dividends are not paid in full,\nOccidental is prohibited from paying dividends on common stock. Occidental paid $762 million in preferred stock dividends\nin 2023.\n     In 2023, Occidental redeemed preferred stock with a face value of $1.5 billion, and incurred $151 million in redemption\npremiums. To the extent Occidental's trailing 12-month distributions to common shareholders is above $4.00 per share,\nOccidental is required to match any common shareholder distributions with preferred stock redemptions. As of the date of\nthis filing approximately $8.5 billion face value of the preferred stock remains outstanding.\n     The following table presents preferred stock redemption activity for 2023:\n\nshares of Preferred stock\n  Preferred stock, as of December 31, 2022                                                                            100,000\n  Less: Preferred redemptions                                                                                         (15,103)\n  Preferred stock, as of December 31, 2023                                                                             84,897\n\n   The carrying value of preferred stock is less than the face value. The difference between carrying value and face value,\nalong with the redemption premium, reduces net income available to common stockholders. The following presents the\ncomponents of preferred stock dividends and redemptions:\n\n                                                                                                               Year ended\nmillions                                                                                                  December 31, 2023\n  Preferred dividends                                                                                    $              736\n  Redemption premium                                                                                                    151\n  Redemption value in excess of carrying value                                                                           36\n  Preferred dividend and redemption premiums                                                             $              923\n\nBERKSHIRE WARRANT\n    In connection with the preferred stock issuance, Occidental also issued the Berkshire Warrant. The Berkshire Warrant is\nexercisable at the holder’s option, in whole or in part, until the first anniversary of the date on which no shares of preferred\nstock remain outstanding, at which time the Berkshire Warrant expires. The holder of the Berkshire Warrant and the\npreferred stock may redeem the preferred stock as payment for the exercise price of the Warrant in lieu of cash payment\nupon exercise. As of December 31, 2023, the Berkshire warrant would result in the issuance of 83.9 million shares of\nOccidental common stock, if exercised in full for its current strike price of $59.62 per share of Occidental common stock.\n\nCOMMON STOCK WARRANTS\n    On June 26, 2020, the Board of Directors declared Common Stock Warrants, at a rate of 0.125 warrants per share of\nOccidental common stock. Occidental issued approximately 116 million Common Stock Warrants on August 3, 2020 to\nholders of record of outstanding shares of Occidental’s common stock as of the close of business on July 6, 2020, and\npursuant to Occidental’s outstanding equity-based incentive awards in connection with anti-dilution adjustments resulting\nfrom such distribution. The Common Stock Warrants have an exercise price of $22.00 per share and will expire on August 3,\n2027. The Common Stock Warrants are listed on the NYSE and trade under the symbol \"OXY WS\". As of December 31,\n2023, Occidental had 99.5 million outstanding warrants.\n    The Common Stock Warrants were measured at fair value on the declaration date using the Black-Scholes option\nmodel and were classified as equity in \"Additional paid-in capital\". The following level 2 inputs were used in the Black-\nScholes option model: the expected life of the Common Stock Warrants, a volatility factor and the exercise price. The\nexpected life is based on the estimated term of the Common Stock Warrants, the volatility factor is based on historical\nvolatilities of Occidental common stock and the exercise of $22.00 per share of Occidental common stock.\n\nEARNINGS PER SHARE\n     Occidental’s instruments containing rights to nonforfeitable dividends granted in stock-based awards are considered\nparticipating securities prior to vesting and, therefore, have been deducted from earnings in computing basic and diluted\nEPS under the two-class method.\n     Basic EPS was computed by dividing net income attributable to common stock, net of income allocated to participating\nsecurities, by the weighted-average number of common shares outstanding during each period, including vested but\n\n\n\n 108 OXY 2023 FORM 10-K\n"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "                                                                                                         FINANCIAL STATEMENTS\n                                                                                                                    FOOTNOTES\nunissued shares and share units. The computation of diluted EPS reflects the additional dilutive effect of stock options,\nwarrants and unvested stock awards.\n    The following table presents the calculation of basic and diluted EPS for the years ended December 31:\n\n millions except per share amounts                                                              2023         2022       2021\n    Income from continuing operations                                                      $   4,696 $    13,304 $     2,790\n    Loss from discontinued operations                                                             —            —        (468)\n    Net income                                                                             $   4,696 $    13,304 $     2,322\n        Less: Preferred stock dividends                                                         (923)        (800)      (800)\n    Net income attributable to common stock                                                $   3,773 $    12,504 $     1,522\n        Less: Net income allocated to participating securities                                   (23)         (83)       (10)\n    Net income, net of participating securities                                            $   3,750 $    12,421 $     1,512\n    Weighted-average number of basic shares                                                    889.2        926.2      935.0\n Basic earnings per common share                                                           $    4.22 $      13.41 $     1.62\n    Net income attributable to common stock                                                $   3,773 $    12,504 $     1,522\n        Less: Net income allocated to participating securities                                   (21)         (77)       (10)\n    Net income, net of participating securities                                            $   3,752 $    12,427 $     1,512\n    Weighted-average number of basic shares                                                    889.2        926.2      935.0\n    Dilutive securities                                                                         71.7         75.8       23.8\n    Total diluted weighted-average common shares                                               960.9      1,002.0      958.8\n Diluted earnings per common share                                                         $    3.90 $      12.40 $     1.58\n\n    As of December 31, 2023 and 2022, there were no Occidental common stock warrants nor options that were excluded\nfrom diluted shares. As of December 31, 2021, warrants and options covering 87 million shares of Occidental common stock\nwere excluded from the diluted shares as their effect would have been anti-dilutive.\n\nACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS)\n      Accumulated OCI (loss) consisted of the following after-tax amounts as of December 31:\n\n millions                                                                                                    2023       2022\n Foreign currency translation adjustments                                                            $         (4) $      (5)\n Derivatives                                                                                                   20        (25)\n Pension and postretirement adjustments (a)                                                                  259         225\n Total                                                                                               $       275 $       195\n(a)\n      See Note 11 - Retirement and Postretirement Benefit Plans for further information.\n\n\n\n NOTE 15 - STOCK-BASED INCENTIVE PLANS\n     Occidental issues stock-based awards to employees in accordance with the terms of the Plans. An aggregate of 133\nmillion shares of Occidental common stock were authorized for issuance and approximately 14.1 million shares had been\nreserved for issuance for employee awards through December 31, 2023. As of December 31, 2023, approximately 45.0\nmillion shares were available for grants of future awards. The 2015 Long-Term Incentive plan requires each share covered\nby an award (other than options) to be counted as if three shares were issued in determining the number of shares that are\navailable for future awards. Accordingly, the number of shares available for future awards may be less than 45.0 million\ndepending on the type of award granted, and shares available for future awards may increase by the number of shares that\nare forfeited, canceled, or correspond to the portion of any stock-based awards settled in cash, including awards that were\nissued under a previous plan that remain outstanding. Current outstanding awards include RSUs, stock options, CROCEI\nawards and TSRI awards.\n     During 2023, non-employee directors were granted awards for 36,106 shares of common stock. Compensation expense\nfor these awards was measured using the closing quoted market price of Occidental’s common stock on the grant date and\nwas fully recognized at that time.\n\n\n\n\n                                                                                                   OXY 2023 FORM 10-K 109\n"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "                                                                                                              FINANCIAL STATEMENTS\n                                                                                                                         FOOTNOTES\nDecember 31, 2024, Occidental would be required to repay approximately $1.4 billion in federal and state taxes and accrued\ninterest of $760 million. A liability for the taxes and interest is included in deferred credits and other liabilities - other.\n\nINDEMNITIES TO THIRD PARTIES\n    Occidental, its subsidiaries, or both, have indemnified various parties against specified liabilities those parties might\nincur in the future in connection with purchases and other transactions that they have entered into with Occidental or its\nsubsidiaries. These indemnities usually are contingent upon the other party incurring liabilities that reach specified\nthresholds. As of December 31, 2024, Occidental is not aware of circumstances that it believes would reasonably be\nexpected to lead to indemnity claims that would result in payments materially in excess of reserves.\n\nPURCHASE OBLIGATIONS AND COMMITMENTS\n      Occidental, its subsidiaries, or both, have entered into agreements providing for future payments, primarily to secure\nterminal, pipeline and processing capacity, CO2, drilling rigs and services, electrical power, non-lease components, steam and\ncertain chemical raw materials. Occidental has certain other commitments under contracts, guarantees and joint ventures,\nincluding purchase commitments for goods and services at market-related prices and certain other contingent liabilities. The\namounts that will be paid for such outstanding off-balance sheet purchase obligations as of December 31, 2024 are $3.4\nbillion in 2025, $4.4 billion in 2026 and 2027, $2.6 billion in 2028 and 2029 and $2.4 billion in 2030 and thereafter.\n\n\n NOTE 14 - STOCKHOLDERS’ EQUITY\n\n   The following table presents Occidental's common share activity, including exercises of warrants, and other transactions\nin Occidental's common stock in 2024:\n\n\n                                 Exercise of                                                     Treasury             Common\n                                Warrants and           CrownRock                                    Stock                 Stock\n                                                                                        (b)\n Period                              Options (a)       Acquisition              Other           Purchases (c)       Outstanding (d)\n December 31, 2023                                                                                                  879,463,103\n      First Quarter 2024            3,277,628                     —         3,978,999                     —         886,719,730\n      Second Quarter 2024          18,875,864                     —            94,789              (130,424)        905,559,959\n      Third Quarter 2024            3,032,136           29,560,619             21,504                     —         938,174,218\n      Fourth Quarter 2024             246,049                     —           165,079              (127,363)        938,457,983\n      Total 2024                   25,431,677           29,560,619          4,260,371              (257,787)        938,457,983\n(a)\n      Approximately $559 million of cash was received as a result of the exercise of common stock warrants and options.\n(b)\n      Consisted of issuances for the 2015 long-term incentive plan, the OPC savings plan and the dividend reinvestment plan.\n(c)\n      Consisted of purchases of shares from the trustee of Occidental's defined contribution savings plan that are not part of publicly\n      announced plans or programs.\n(d)\n      As of December 31, 2024, Occidental had 74.0 million of outstanding warrants with a strike price of $22 per share and\n      83.9 million of warrants with a strike price of $59.62 per share.\n\nTREASURY STOCK\n    As of December 31, 2024, 2023 and 2022, treasury stock shares numbered 228.3 million, 228.1 million and\n198.7 million, respectively.\n\nPREFERRED STOCK\n    In connection with the Anadarko Acquisition, Occidental issued 100,000 shares of series A preferred stock, with a face\nvalue of $100,000 per share and a liquidation preference of $105,000 per share plus unpaid accrued dividends. Prior to\nAugust 2029, a mandatory redemption provision obligates Occidental to redeem preferred stock at a 10% premium to face\nvalue on a dollar-for-dollar basis for every dollar distributed to common shareholders (either via common stock dividends or\nshare repurchases) above $4.00 per share, on a trailing 12-month basis. Preferred redemptions can settle between 30 and\n60 days from the date Berkshire Hathaway is notified of the redemption obligation and accrued unpaid dividends are paid up\nto but not including the redemption date. Occidental cannot voluntarily redeem preferred stock before August 2029. After\nAugust 2029, Occidental can voluntarily redeem preferred stock at a 5% premium to face value.\n\n\n\n\n104 OXY 2024 FORM 10-K\n"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "                                                                                                      FINANCIAL STATEMENTS\n                                                                                                                 FOOTNOTES\n     Dividends on the preferred stock accrue on the face value at a rate per annum of 8%, but will be paid only when, as\nand if declared by Occidental’s Board of Directors. At any time, when such dividends have not been paid in full, the unpaid\namounts will accrue dividends, compounded quarterly, at a rate per annum of 9%. Following the payment in full of any\naccrued but unpaid dividends, the dividend rate will remain at 9% per annum. If preferred dividends are not paid in full,\nOccidental is prohibited from paying dividends on common stock. Occidental paid $679 million in preferred stock dividends\nin 2024.\n     Occidental did not redeem preferred stock in 2024. To the extent Occidental's trailing 12-month distributions to common\nshareholders is above $4.00 per share, Occidental is required to match any common shareholder distributions with preferred\nstock redemptions. As of the date of this filing approximately $8.5 billion face value of the preferred stock remains\noutstanding.\n\nBERKSHIRE WARRANT\n    In connection with the preferred stock issuance, Occidental also issued the Berkshire Warrant. The Berkshire Warrant is\nexercisable at the holder’s option, in whole or in part, until the first anniversary of the date on which no shares of preferred\nstock remain outstanding, at which time the Berkshire Warrant expires. The holder of the Berkshire Warrant and the\npreferred stock may redeem the preferred stock as payment for the exercise price of the Warrant in lieu of cash payment\nupon exercise. As of December 31, 2024, the Berkshire Warrant would result in the issuance of 83.9 million shares of\nOccidental common stock, if exercised in full for its current strike price of $59.62 per share of Occidental common stock.\n\nCOMMON STOCK WARRANTS\n    Occidental issued approximately 116 million Common Stock Warrants on August 3, 2020 to holders of record of\noutstanding shares of Occidental’s common stock as of the close of business on July 6, 2020. The Common Stock Warrants\nhave an exercise price of $22.00 per share and will expire on August 3, 2027. As of December 31, 2024, Occidental had\n74.0 million outstanding warrants. The Common Stock Warrants are listed on the NYSE and trade under the symbol \"OXY\nWS\".\n\nEARNINGS PER SHARE\n     Occidental’s instruments containing rights to nonforfeitable dividends granted in stock-based awards are considered\nparticipating securities prior to vesting and, therefore, have been deducted from earnings in computing basic and diluted\nEPS under the two-class method.\n     Basic EPS was computed by dividing net income attributable to common stock, net of income allocated to participating\nsecurities, by the weighted-average number of common shares outstanding during each period, including vested but\nunissued shares and share units. The computation of diluted EPS reflects the additional dilutive effect of stock options,\nwarrants and unvested stock awards.\n     The following table presents the calculation of basic and diluted EPS for the years ended December 31:\n\nmillions except per share amounts                                                               2024         2023         2022\n   Income from continuing operations                                                     $     2,896 $      4,696 $     13,304\n   Income from discontinued operations, net of tax                                               182           —            —\n   Net income                                                                            $     3,078 $      4,696 $     13,304\n       Less: Net income attributable to noncontrolling interest                                  (22)          —            —\n       Less: Preferred stock dividends                                                          (679)        (923)        (800)\n   Net income attributable to common stock                                               $     2,377 $      3,773 $     12,504\n       Less: Net income allocated to participating securities                                    (13)         (23)         (83)\n   Net income, net of participating securities                                           $     2,364 $      3,750 $     12,421\n   Weighted-average number of basic shares                                                     911.8        889.2        926.2\nBasic earnings per common share                                                          $      2.59 $       4.22 $      13.41\n   Net income attributable to common stock                                               $     2,377 $      3,773 $     12,504\n       Less: Net income allocated to participating securities                                    (13)         (21)         (77)\n   Net income, net of participating securities                                           $     2,364 $      3,752 $     12,427\n   Weighted-average number of basic shares                                                     911.8        889.2        926.2\n   Dilutive securities                                                                          55.3         71.7         75.8\n   Total diluted weighted-average common shares                                                967.1        960.9      1,002.0\nDiluted earnings per common share                                                        $      2.44 $       3.90 $      12.40\n\n     For the years ended December 31, 2024, 2023 and 2022, there were no Occidental common stock warrants nor options\nthat were excluded from diluted shares.\n\n\n\n                                                                                                     OXY 2024 FORM 10-K 105\n"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "share_face_unit_error",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 151.03,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "preferred_face_redeemed_2023": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "share face unit error"
+  },
+  {
+    "name": "earnings_charge_equals_cash_dividend",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "cash_dividend_reduction_2024_vs2023": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "earnings charge equals cash dividend"
+  },
+  {
+    "name": "include_premium_twice",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 187,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "redemption_related_charge_beyond_premium_2023": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "include premium twice"
+  },
+  {
+    "name": "recover_principal_in_premium_only_metric",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 13.75,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "premium_only_recovery_years": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "recover principal in premium only metric"
+  },
+  {
+    "name": "mandatory_redemption_implies_voluntary_permission",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "voluntary_2025_redemption_permitted": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "mandatory redemption implies voluntary permission"
+  },
+  {
+    "name": "missing_support",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": []
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "preferred_face_redeemed_2023": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing support"
+  },
+  {
+    "name": "fabricated_support",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "This source states the invented answer exactly."
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "preferred_face_redeemed_2023": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated support"
+  },
+  {
+    "name": "alternative_primary_evidence_route",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "direct_carrying_value_excess_row",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption value in excess of carrying value 36"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "computed_carrying_value_excess_without_printed_result",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends $ 736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium 151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums $ 923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "new_report_repeated_face_and_mandatory_premium",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "new_report_repeated_rolling_trigger",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "151"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividend and redemption premiums"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "923"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "computed_carrying_value_excess_missing_total_charge",
+    "response": {
+      "case_id": "h2-006",
+      "answers": {
+        "preferred_face_redeemed_2023": {
+          "value": 1510.3,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Less: Preferred redemptions"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "(15,103)"
+            }
+          ]
+        },
+        "preferred_face_remaining_end2023": {
+          "value": 8489.7,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            }
+          ]
+        },
+        "ordinary_annual_dividend_run_rate": {
+          "value": 679.176,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred stock, as of December 31, 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "84,897"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "cash_dividend_reduction_2024_vs2023": {
+          "value": 83,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental paid $762 million in preferred stock dividends in 2023"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Occidental paid $679 million in preferred stock dividends in 2024"
+            }
+          ]
+        },
+        "common_income_charge_reduction_2024_vs2023": {
+          "value": 244,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "Preferred stock dividends"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(679)"
+            },
+            {
+              "source_id": "h2a-oxy-2024",
+              "quote": "(923)"
+            }
+          ]
+        },
+        "redemption_related_charge_beyond_premium_2023": {
+          "value": 36,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Preferred dividends $ 736"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Redemption premium 151"
+            }
+          ]
+        },
+        "synthetic_redemption_cash_outlay": {
+          "value": 110.0,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "face value of $100,000 per share"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            }
+          ]
+        },
+        "premium_only_recovery_years": {
+          "value": 1.25,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "redeem preferred stock at a 10% premium to face value"
+            },
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Dividends on the preferred stock accrue on the face value at a rate per annum of 8%"
+            }
+          ]
+        },
+        "voluntary_2025_redemption_permitted": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "Occidental cannot voluntarily redeem preferred stock before August 2029"
+            }
+          ]
+        },
+        "year_end_common_share_count_identifies_trigger": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-oxy-2023",
+              "quote": "above $4.00 per share, on a trailing 12-month basis"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "redemption_related_charge_beyond_premium_2023": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "computed carrying value excess missing total charge"
+  }
+]

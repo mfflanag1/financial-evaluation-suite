@@ -1,0 +1,64 @@
+{
+  "question_id": "q143",
+  "title": "Economic-profit comparison across research assets, leases and cash",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Calculate normalized economic profit, capitalizing R&D. USD million throughout. Reported EBIT expenses all current R&D; replace that expense with the supplied amortization. Reported average invested capital excludes the research asset. Roll the research asset from opening balance plus current expenditure less amortization, then add its average opening/closing balance. Apply the stated tax rate to normalized EBIT and use average capital for ROIC and the WACC charge. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "reported_ebit": 100,
+    "tax_rate": 0.25,
+    "reported_average_invested_capital": 500,
+    "current_rd_expense": 40,
+    "opening_rd_asset": 100,
+    "rd_amortization": 20,
+    "wacc": 0.1,
+    "economic_profit_hurdle": 15
+  },
+  "sources": [
+    {
+      "id": "q143_t1_1",
+      "text": "Synthetic packet. The income statement expenses current R&D immediately. For this comparison the committee capitalizes R&D and amortizes the research asset using the supplied life schedule."
+    },
+    {
+      "id": "q143_t1_2",
+      "text": "Synthetic packet. The reported invested-capital denominator excludes the research asset and initially requires no other adjustment. Economic profit uses average invested capital, not the closing research balance."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "normalized_nopat",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Normalized operating profit after tax.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "average_invested_capital",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Average capital on the stipulated normalized basis.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "roic_spread_pp",
+      "type": "number",
+      "unit": "percentage points",
+      "description": "Normalized ROIC minus WACC, on 0–100 percentage-point scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "economic_profit",
+      "type": "number",
+      "unit": "USD million",
+      "description": "NOPAT less WACC times average invested capital.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "protocol_id": "portfolio-clarified-v1",
+  "packages": {
+    "financial-portfolio-clarified": "0.5.0",
+    "financial-portfolio-staged": "0.4.0",
+    "financial-portfolio": "0.3.0",
+    "financial-research": "0.2.0",
+    "verifiers": "0.4.1"
+  },
+  "predecessor_manifest_sha256": "c1ad4f490f21eb922acfd9b1b383bc5ca36646434eeb48389cde4b32f8485d69",
+  "prerequisite_manifest_sha256": "783f9e48e30b459927ed1676d43e41bf490390a131e74554c9caa10119c5d743",
+  "comparison": {
+    "design": "descriptive_historical_pair",
+    "baseline_protocol_id": "portfolio-staged-v1",
+    "baseline_source_commit": "339eb6677a40fb989fe1aea80e8b0678bdf02f21",
+    "model": "moonshotai/kimi-k2-0905",
+    "split": "train",
+    "seed_start": 4,
+    "num_tasks": 4,
+    "attempts_per_task": 1,
+    "expected_attempts": 4,
+    "eligible_attempts": "all_scheduled_attempts",
+    "changed_solver_input": "appended_split_convention_system_paragraph",
+    "metric_order": [
+      "attempt_accounting",
+      "checkpoint_completion",
+      "source_reproduction",
+      "full_credit",
+      "financial_reward",
+      "audit_accuracy",
+      "trial_accuracy",
+      "decision_quality",
+      "split_sensitive_return_diagnostic",
+      "split_direction_evidence"
+    ],
+    "split_diagnostic": {
+      "role": "primary_objective_diagnostic_of_targeted_clarification",
+      "requests_per_episode": [
+        {
+          "entity_id": "E02",
+          "day": 36,
+          "field": "forward_return"
+        },
+        {
+          "entity_id": "E05",
+          "day": 74,
+          "field": "forward_return"
+        }
+      ],
+      "expected_observations_per_condition": 8,
+      "expected_source": "saved_public_prices_and_securities_csv",
+      "ticker_mapping": "inclusive_validity_intervals_at_each_day",
+      "adjusted_close": "close * shares_per_original",
+      "forward_return": "adjusted_close(d+1) / adjusted_close(d) - 1",
+      "absolute_tolerance": 1e-08,
+      "historical_correct_counts_by_seed": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "historical_total_correct": 2,
+      "candidate_source_execution": false,
+      "source_reading": "secondary_evidence_only"
+    },
+    "repair_or_rerun": false,
+    "large_calibration_included": false
+  },
+  "sha256": {
+    "configs/financial_portfolio/clarified_v1/README.md": "49a6929805fb9b950a18c0884b9a15b1ffc6b33804c0663bbb1ac3a9a86acbb9",
+    "configs/financial_portfolio/clarified_v1/freeze_manifest.py": "ba131511a9d2092db3b98e450dcd67d642c8ee0862d01217b65880ddaf68329f",
+    "configs/financial_portfolio/clarified_v1/smoke.toml": "90663d1aa20754eeb43fddd17e83fdc688297bc82222e534ea96de4d0e141817",
+    "environments/financial_portfolio_clarified/README.md": "b5e5f335f8728c6f86f28c7113cc3459d4bd47263601ad8b1574c07b7204798f",
+    "environments/financial_portfolio_clarified/pyproject.toml": "bf1b74abb4a5d9d435486fe000f823399fd45f97a87a2cd1bbf7700064e4896f",
+    "environments/financial_portfolio_clarified/src/financial_portfolio_clarified/__init__.py": "a19d720d429d8c85142b4f550106ac4863b1a6baeea62d1de9a4b41b31539325",
+    "environments/financial_portfolio_clarified/src/financial_portfolio_clarified/prime_adapter.py": "01157bc746f5e73b7c8e7adf4b22c190e8fe6156d466dbcec04446308a06ce63",
+    "tests/test_clarified_adapter.py": "33592053da8c3066403911ca9a843067d18ebfa5a27466be39b07ba6ba90d886",
+    "tests/test_clarified_protocol.py": "952cbd67e89209c644c79bca5433ecf6b434ac1978f2660d5b4ceceb473d9268"
+  }
+}

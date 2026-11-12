@@ -1,0 +1,102 @@
+{
+  "id": "h2-011",
+  "case_group": "svb-2023-initial-versus-bridge-corporate-cash-timing",
+  "lane": "cross_strategy_portfolio",
+  "status": "candidate",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T20:05:48Z",
+  "source_ids": [
+    "h2b-fdic-ownership",
+    "h2b-fdic-initial",
+    "h2b-fdic-joint",
+    "h2b-fdic-bridge"
+  ],
+  "prompt": "Build two treasury views of the Silicon Valley Bank resolution: one using the March10 initial announcement's guaranteed minimum access, and one after the March12 protection decision confirmed operationally by the March13 bridge-bank release. A synthetic corporation, validly incorporated and operated for a legitimate independent business purpose, holds $600,000 under DeskA and $400,000 under DeskB at SVB. The desks are unincorporated divisions of the SAME corporation, all deposits are in the supplied corporate ownership category, and there are no other relevant accounts. Apply the retained FDIC aggregation rule as a stipulated coverage rule; its current web publication is not evidence of an exact2023 dissemination time. The corporation also holds $200,000 immediately available elsewhere. It must pay $250,000 on SundayMarch12, before any SVB withdrawal; for this scenario assume no SVB funds become spendable before Monday. A bridge line supplies only the minimum Sunday shortfall, with principal plus a1% one-time fee due Monday. Monday requires a separate $750,000 external payment and a $100,000 ordinary SVB loan payment, all after that day's available deposit funds arrive. There are no other inflows, sales or credit lines. Reconcile aggregation, initial guaranteed Monday funding and the later Monday ending cash. Do not turn an unquantified future uninsured-dividend promise into guaranteed Monday cash. Assess separately whether the initial statement identifies exact uninsured recovery and whether the later protection also covers shareholders.\n\nUse the supplied historical documents as specified; this packet is a retrospective conditional analysis with observed 2026 source availability, not a claim of contemporaneous historical execution. Return typed outputs with supporting verbatim clauses; declared support_dependencies permit explicit support_refs to reuse previously justified answers. Synthetic inputs need no invented citation.",
+  "output_fields": [
+    {
+      "id": "insured_corporate_deposits",
+      "type": "number",
+      "unit": "USD",
+      "description": "Insurance coverage for the combined same-corporation SVB accounts under the supplied aggregation rule.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "initial_uninsured_balance",
+      "type": "number",
+      "unit": "USD",
+      "description": "Balance above that ordinary insurance coverage.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "insured_corporate_deposits"
+      ]
+    },
+    {
+      "id": "initial_guaranteed_monday_access",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum Monday SVB funds supported by the initialMarch10 announcement, without inventing an advance amount or earlier payment.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "insured_corporate_deposits"
+      ],
+      "allowed_source_ids": [
+        "h2b-fdic-initial",
+        "h2b-fdic-ownership"
+      ]
+    },
+    {
+      "id": "minimum_sunday_bridge",
+      "type": "number",
+      "unit": "USD",
+      "description": "Minimum borrowing to make the Sunday payment under the stated no-early-access assumption.",
+      "evidence_required": false,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "initial_monday_guaranteed_funding_shortfall",
+      "type": "number",
+      "unit": "USD",
+      "description": "Monday deficit using the initial guaranteed-access bound, after the Sunday bridge and its fee are repaid.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "initial_guaranteed_monday_access",
+        "minimum_sunday_bridge"
+      ]
+    },
+    {
+      "id": "later_monday_cash_surplus",
+      "type": "number",
+      "unit": "USD",
+      "description": "Ending Monday cash after full deposit access, the external and loan payments, and bridge repayment.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "minimum_sunday_bridge"
+      ]
+    },
+    {
+      "id": "initial_uninsured_recovery_amount_known",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Did the initialMarch10 announcement identify an exact total recovery amount for uninsured deposits?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty",
+      "allowed_source_ids": [
+        "h2b-fdic-initial",
+        "h2b-fdic-ownership"
+      ]
+    },
+    {
+      "id": "shareholders_protected_with_depositors",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the subsequent joint statement extend its depositor protection to shareholders?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ]
+}

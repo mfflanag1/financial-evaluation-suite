@@ -1,0 +1,1306 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "minimal_quotes_whitespace_normalized",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry\nHub\nnatural\ngas\nspot\nprice\nreached\n$23.86\ndollars\nper\nmillion\nBritish\nthermal\nunit\n(MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Same minimal clauses with whitespace variation remain valid source evidence"
+  },
+  {
+    "name": "best_terminal_plan_ignores_cash",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "ABC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_plan": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ABC needs24300 atT1, above23200"
+  },
+  {
+    "name": "future_hedge_receipt_netted",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 12600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_minimum_cash": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Adds12000 of F hedge receipts before their T2 availability"
+  },
+  {
+    "name": "mw_as_mwh_or_missing_heat_rate",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 40.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "freeze_generator_fuel": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Treats dispatch MWh as fuel MMBtu without heat rate"
+  },
+  {
+    "name": "replacement_cash_only_net_loss",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 6000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "freeze_base_early_outflow": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Drops full15000 replacement-power payment"
+  },
+  {
+    "name": "fees_omitted",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -2708.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "optimal_worst_pnl": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Omits600 hedge fees"
+  },
+  {
+    "name": "missing_dispatch_assumed_full",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "determined",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "missing_dispatch_optimizer_status": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Unknown dispatch changes feasible optimizer"
+  },
+  {
+    "name": "cash_boundary_one_cent_early",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24299.99,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_optimizer_change_budget": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ABC is still infeasible one cent below the exact threshold"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": []
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "henry_hub_shock": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Required public input has no source evidence"
+  },
+  {
+    "name": "fabricated_evidence",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "The agency guarantees this synthetic portfolio is optimal."
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "henry_hub_shock": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Invented quote absent from frozen source"
+  },
+  {
+    "name": "unknown_source_id",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            },
+            {
+              "source_id": "portfolio-fed-20230322",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "henry_hub_shock": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Required valid evidence is retained; extra citation uses a source ID outside the case"
+  },
+  {
+    "name": "valid_source_irrelevant_quote",
+    "response": {
+      "case_id": "portfolio-003",
+      "answers": {
+        "henry_hub_shock": {
+          "value": 20.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "electricity outages across Texas limited consumption."
+            }
+          ]
+        },
+        "freeze_generator_fuel": {
+          "value": 280.0,
+          "evidence": []
+        },
+        "base_scenario_pnl": {
+          "value": "F=-14708.8;R=0;B=1315.8",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "feasible_plans": {
+          "value": "NONE|A|B|C|AB|BC",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_plan": {
+          "value": "AB",
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_worst_pnl": {
+          "value": -3308.8,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "optimal_minimum_cash": {
+          "value": 600.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "first_optimizer_change_budget": {
+          "value": 24300.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "freeze_base_early_outflow": {
+          "value": 21000.0,
+          "evidence": [
+            {
+              "source_id": "portfolio-eia-freeze-2021",
+              "quote": "Henry Hub natural gas spot price reached $23.86 dollars per million British thermal unit (MMBtu)"
+            }
+          ]
+        },
+        "missing_dispatch_optimizer_status": {
+          "value": "insufficient_data",
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Synthetic stress optimization over the stated finite menu only; no trading or realized-return claim.",
+        "No actual clearing, execution, liquidity, funding or cross-pod netting rules are inferred.",
+        "Retrospective evidence; source timing and source subset do not create a historical backtest.",
+        "Independent calculation review is recorded in docs/expansion-review-record.md; domain validation and public redistribution review remain pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "henry_hub_shock": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Real quote in the permitted source does not substantiate the required numerical input"
+  }
+]

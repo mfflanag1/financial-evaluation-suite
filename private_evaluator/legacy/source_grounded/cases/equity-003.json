@@ -1,0 +1,84 @@
+{
+  "id": "equity-003",
+  "case_group": "microsoft-2024-activision-acquisition-accounting",
+  "lane": "fundamental_equity",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T18:12:47Z",
+  "prompt": "Analyze Microsoft's FY2024 acquisition-year results using the consolidated table and Note 8. Distinguish reported, acquisition-net-impact-subtracted, and pro-forma bases. The net impact includes the change from third-party to first-party content; do not treat it as a standalone Activision revenue or profitability report. The pro-forma acquisition date is July 1, 2022. No exact organic-growth definition/FX or other perimeter bridge is supplied. SYNTHETIC synergy exercise: repeat exactly the disclosed partial-period revenue/net operating impact as a hypothetical future period without annualizing; add 400 million of nonoverlapping incremental integration operating expense, and allow cost savings to increase operating income dollar-for-dollar with no revenue/tax/financing changes. Find savings needed for at least 5% operating margin. These are assumptions, not management forecasts or acquisition economics.\n\nUse only the frozen document versions. The cutoff is an observed 2026 availability bound, not an invented historical publication time. Do not use subsequent real-world outcomes. Return all declared fields in standard structured form with verbatim rule/data evidence; scenario inputs need no fabricated source. Preserve unrounded intermediates; report money in the stated units and percentages as percentage points on the 0–100 scale, to at least 8 decimal places when needed.",
+  "source_ids": [
+    "expansion-microsoft-2024"
+  ],
+  "output_fields": [
+    {
+      "id": "reported_revenue_increase",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "FY2024 less FY2023 reported consolidated revenue.",
+      "evidence_required": true
+    },
+    {
+      "id": "reported_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Exact reported revenue growth from unrounded-million table values, not the rounded headline 16%.",
+      "evidence_required": true
+    },
+    {
+      "id": "growth_after_removing_disclosed_net_acquisition_impact_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Subtract the disclosed net acquisition revenue impact from FY2024 and compare with reported FY2023; label this residual, not verified organic growth.",
+      "evidence_required": true
+    },
+    {
+      "id": "pro_forma_combined_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Compare FY2024 and FY2023 pro-forma revenue on their common assumed acquisition date.",
+      "evidence_required": true
+    },
+    {
+      "id": "pro_forma_minus_reported_revenue_2024",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Difference of FY2024 pro-forma and reported revenue; do not label it pure pre-close target revenue.",
+      "evidence_required": true
+    },
+    {
+      "id": "pro_forma_minus_reported_revenue_2023",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Difference of FY2023 pro-forma and reported revenue.",
+      "evidence_required": true
+    },
+    {
+      "id": "disclosed_net_impact_operating_margin_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Operating loss divided by revenue in the disclosed NET acquisition impact, not standalone target margin.",
+      "evidence_required": true
+    },
+    {
+      "id": "hypothetical_cost_synergy_required",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "For the synthetic repeat-of-impact-period scenario, minimum cost savings to reach 5% operating margin after an additional 400 expense; revenue unchanged.",
+      "evidence_required": true
+    },
+    {
+      "id": "residual_growth_is_identified_organic_growth",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Can the subtraction alone establish constant-currency, constant-perimeter organic growth? Other acquisitions, disposals and FX bridges are not supplied. Cite the disclosed net-impact qualification.",
+      "evidence_required": true
+    },
+    {
+      "id": "pro_forma_results_are_actual_combined_results",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Are the disclosed pro-forma figures actual results realized by the combined company during those periods?",
+      "evidence_required": true
+    }
+  ]
+}

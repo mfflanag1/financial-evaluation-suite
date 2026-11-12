@@ -1,0 +1,31 @@
+We also use Operating Free Cash Flow (defined as Adjusted EBITDA less cash capital expenditures) and Free Cash Flow (defined as net cash flows from operating activities less cash capital expenditures) as indicators of our financial performance. We believe these measures are two of several benchmarks used by investors, analysts and peers for comparison of performance in our industry, although they may not be directly comparable to similar measures reported by other companies.
+
+[Intervening source text omitted]
+
+The following is a reconciliation of net income to Adjusted EBITDA and Operating Free Cash Flow:
+ |  |  |  |  |  |  |  |  |  |  |  |  |
+ |  |  |
+ | Years Ended December 31,  |  |
+ | 2023  |  | 2022  |
+Net income  | $  | 79,037   |  |  | $  | 220,889   |  |  |
+Income tax expense  | 39,528   |  |  | 295,840   |  |  |
+Other income, net  | (4,940)  |  |  | (8,535)  |  |  |
+Gain on interest rate swap contracts, net  | (32,664)  |  |  | (271,788)  |  |  |
+Loss (gain) on derivative contracts, net  | 166,489   |  |  | (425,815)  |  |  |
+Loss (gain) on investments and sale of affiliate interests, net  | (180,237)  |  |  | 659,792   |  |  |
+Loss (gain) on extinguishment of debt and write-off of deferred financing costs  | (4,393)  |  |  | 575   |  |  |
+Interest expense, net  | 1,639,120   |  |  | 1,331,636   |  |  |
+Depreciation and amortization  | 1,644,297   |  |  | 1,773,673   |  |  |
+Restructuring, impairments and other operating items  | 214,727   |  |  | 130,285   |  |  |
+Share-based compensation  | 47,926   |  |  | 159,985   |  |  |
+Adjusted EBITDA  | 3,608,890   |  |  | 3,866,537   |  |  |
+Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |
+Operating Free Cash Flow  | $  | 1,904,079   |  |  | $  | 1,952,255   |  |  |
+The following is a reconciliation of net cash flow from operating activities to Free Cash Flow:
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |
+ | Years Ended December 31,  |  |  |  |  |
+ | 2023  |  | 2022  |  |  |  |
+Net cash flows from operating activities  | $  | 1,826,398   |  |  | $  | 2,366,901   |  |  |  |  |  |
+Less: Capital expenditures (cash)  | 1,704,811   |  |  | 1,914,282   |  |  |  |  |  |
+Free Cash Flow  | $  | 121,587   |  |  | $  | 452,619   |  |  |  |  |  |

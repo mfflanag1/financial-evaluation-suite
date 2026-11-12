@@ -1,0 +1,151 @@
+{
+  "question_id": "q117",
+  "title": "Borrower perimeter and incremental debt capacity",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Assess the requested draw and subsequent dividend using the latest eligible Y1 borrower report. Separate parent, restricted and post-cutoff data. Amounts are USD millions; publication numbers are ordered packet days. Evaluate the largest draw, then the cash distribution capacity after the requested draw. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "cutoff": 12,
+    "reports": [
+      {
+        "entity": "Borrower",
+        "period": "Y1",
+        "published": 8,
+        "ebitda": 86,
+        "integration": 25
+      },
+      {
+        "entity": "Borrower",
+        "period": "Y1",
+        "published": 10,
+        "ebitda": 90,
+        "integration": 25
+      },
+      {
+        "entity": "Borrower",
+        "period": "Y1",
+        "published": 14,
+        "ebitda": 120,
+        "integration": 25
+      },
+      {
+        "entity": "Parent",
+        "period": "Y1",
+        "published": 11,
+        "ebitda": 150,
+        "integration": 10
+      }
+    ],
+    "cash": [
+      {
+        "entity": "Borrower",
+        "restricted": false,
+        "cash": 25
+      },
+      {
+        "entity": "Borrower",
+        "restricted": true,
+        "cash": 12
+      },
+      {
+        "entity": "Foreign Subsidiary",
+        "restricted": false,
+        "cash": 15
+      }
+    ],
+    "debts": [
+      {
+        "amount": 210,
+        "included": true
+      },
+      {
+        "amount": 30,
+        "included": true
+      },
+      {
+        "amount": 40,
+        "included": true
+      },
+      {
+        "amount": 20,
+        "included": false
+      }
+    ],
+    "addback_cap": 0.2,
+    "cash_cap": 20,
+    "leverage_limit": 3,
+    "facility_undrawn": 80,
+    "requested_draw": 50,
+    "draw_fee": 2,
+    "minimum_cash": 40
+  },
+  "sources": [
+    {
+      "id": "q117_facts",
+      "text": "Synthetic packet: The reports and cash/debt registers are the complete synthetic borrower packet as of day12. Later or different-entity reports are not substitutes."
+    },
+    {
+      "id": "q117_terms",
+      "text": "Synthetic governing terms: The debt table flags included funded obligations; excluded leases never enter this covenant. Only unrestricted Borrower cash is eligible, capped at cash_cap. For the incurrence test, nettable cash is frozen at its opening eligible capped amount even though draw proceeds arrive. Integration costs are capped at addback_cap times unadjusted EBITDA. Minimum cash exceeds the netting cap, so a permitted dividend up to the reserve boundary does not change nettable cash."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "covenant_ebitda",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Latest eligible Borrower Y1 EBITDA plus capped integration addback.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "nettable_cash",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Eligible opening cash after the contractual cap.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "opening_net_leverage",
+      "type": "number",
+      "unit": "multiple",
+      "description": "Included debt less nettable opening cash, divided by covenant EBITDA.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "maximum_draw",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Largest additional draw allowed by both facility and leverage; nettable cash stays capped at the opening permitted amount for this incurrence test.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_draw_cash",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Unrestricted Borrower cash immediately after requested draw and fee.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "maximum_dividend",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Maximum immediate dividend after requested draw while retaining minimum cash; zero if that draw is impermissible.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "draw_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether requested draw satisfies both incurrence and post-draw cash tests."
+    }
+  ]
+}

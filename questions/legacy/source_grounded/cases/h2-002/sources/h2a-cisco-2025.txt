@@ -1,0 +1,150 @@
+                                                                       CISCO SYSTEMS, INC.
+                                                               Consolidated Statements of Operations
+                                                                (in millions, except per-share amounts)
+Years Ended                                                                                                         July 26, 2025       July 27, 2024       July 29, 2023
+REVENUE:
+    Product ..................................................................................................... $       41,608    $         39,253    $         43,142
+    Services ....................................................................................................         15,046              14,550              13,856
+         Total revenue.....................................................................................               56,654              53,803              56,998
+COST OF SALES:
+    Product .....................................................................................................         15,121              14,339              16,590
+    Services ....................................................................................................          4,743               4,636               4,655
+         Total cost of sales..............................................................................                19,864              18,975              21,245
+GROSS MARGIN .........................................................................................                    36,790              34,828              35,753
+OPERATING EXPENSES:
+    Research and development.......................................................................                        9,300               7,983               7,551
+    Sales and marketing .................................................................................                 10,966              10,364               9,880
+    General and administrative.......................................................................                      2,992               2,813               2,478
+    Amortization of purchased intangible assets............................................                                1,028                 698                 282
+    Restructuring and other charges...............................................................                           744                 789                 531
+         Total operating expenses...................................................................                      25,030              22,647              20,722
+OPERATING INCOME...............................................................................                           11,760              12,181              15,031
+    Interest income .........................................................................................              1,001               1,365                 962
+    Interest expense ........................................................................................             (1,593)             (1,006)               (427)
+    Other income (loss), net ...........................................................................                     (68)               (306)               (248)
+         Interest and other income (loss), net .................................................                            (660)                 53                 287
+INCOME BEFORE PROVISION FOR INCOME TAXES .....................                                                            11,100              12,234              15,318
+Provision for income taxes ..............................................................................                    920               1,914               2,705
+    NET INCOME........................................................................................ $                  10,180 $            10,320 $            12,613
+
+Net income per share:
+   Basic........................................................................................................... $        2.56   $            2.55   $            3.08
+   Diluted ....................................................................................................... $         2.55   $            2.54   $            3.07
+Shares used in per-share calculation:
+   Basic...........................................................................................................         3,976               4,043               4,093
+   Diluted .......................................................................................................          3,998               4,062               4,105
+
+See Notes to Consolidated Financial Statements.
+
+
+
+
+                                                                                            57
+
+
+                                                                CISCO SYSTEMS, INC.
+                                                 Notes to Consolidated Financial Statements (Continued)
+
+
+4.   Acquisitions
+(a) Fiscal 2025 Acquisitions Summary
+Allocation of the total purchase consideration for acquisitions we completed during fiscal 2025 is summarized as follows (in
+millions):
+
+                                                                                                       Net Tangible
+                                                                                                      Assets Acquired
+                                                                                     Purchase           (Liabilities               Purchased
+Fiscal 2025                                                                        Consideration         Assumed)               Intangible Assets           Goodwill
+Total acquisitions ...................................................... $                   293     $                 (21) $                    121   $            193
+
+The total purchase consideration of $293 million related to our acquisitions completed during fiscal 2025 consisted primarily of
+cash consideration. The total cash and cash equivalents acquired from these acquisitions was approximately $15 million.
+The purchase price allocation for acquisitions completed during fiscal 2025 is preliminary and subject to revision as additional
+information about fair value of assets and liabilities become available. Additional information that existed as of the acquisition
+date but is currently unknown to us may become known during the remainder of the measurement period, a period not to exceed
+12 months from the acquisition date.
+(b) Fiscal 2024 Acquisitions Summary
+Allocation of the total purchase consideration for acquisitions we completed during fiscal 2024 is summarized as follows (in
+millions):
+                                                                                                        Net Tangible
+                                                                                                       Assets Acquired
+                                                                                     Purchase            (Liabilities                Purchased
+Fiscal 2024                                                                        Consideration         Assumed)                Intangible Assets          Goodwill
+Splunk........................................................................ $          27,090      $            (2,761) $                  10,550    $        19,301
+Other acquisitions......................................................                   1,370                      (47)                       500                917
+    Total acquisitions ............................................... $                  28,460      $            (2,808) $                  11,050    $        20,218
+
+Acquisition of Splunk Inc.
+On March 18, 2024, we completed the acquisition of Splunk Inc. (“Splunk”), a public cybersecurity and observability company.
+Under the terms of the agreement, we agreed to pay $157 per share in cash, representing approximately $27 billion in merger
+consideration.
+Purchase Consideration
+The following table summarizes the purchase consideration for the Splunk acquisition (in millions):
+
+                                                                                                                                                            Amount
+Cash paid for outstanding Splunk common stock...........................................................................................                $        26,950
+Fair value of converted Splunk equity awards attributable to pre-acquisition services..................................                                             137
+Settlement of pre-existing relationships ..........................................................................................................                   3
+     Total purchase consideration ...................................................................................................................   $        27,090
+
+
+
+
+                                                                                         69
+
+
+                                                                CISCO SYSTEMS, INC.
+                                                 Notes to Consolidated Financial Statements (Continued)
+
+
+Allocation of the total purchase consideration for Splunk is presented as follows (in millions):
+
+                                                                                                                                                                    Amount
+Cash and cash equivalents ........................................................................................................................            $            2,422
+Investments..............................................................................................................................................                    285
+Accounts receivable, net ..........................................................................................................................                          623
+Goodwill..................................................................................................................................................                19,301
+Purchased intangible assets.......................................................................................................................                        10,550
+Deferred tax assets ...................................................................................................................................                    1,308
+Other current and noncurrent assets ..........................................................................................................                             1,176
+Accounts payable .....................................................................................................................................                       (39)
+Accrued compensation .............................................................................................................................                          (337)
+Current portion of deferred revenue ..........................................................................................................                            (1,768)
+Splunk convertible notes ..........................................................................................................................                       (3,344)
+Deferred tax liabilities ..............................................................................................................................                   (2,523)
+Noncurrent portion of deferred revenue ....................................................................................................                                  (86)
+Other current and other noncurrent liabilities ............................................................................................                                 (478)
+    Total .................................................................................................................................................   $           27,090
+
+Our Consolidated Statements of Operations for fiscal 2024 includes revenue of approximately $1.4 billion and a net loss of
+$557 million attributable to Splunk since the date of acquisition.
+We incurred $82 million of transaction costs related to the Splunk acquisition and these costs were expensed as incurred in
+G&A in the Consolidated Statements of Operations. We incurred $79 million of these transaction costs in fiscal 2024.
+The goodwill generated from Splunk is primarily related to expected synergies. Goodwill is not deductible for income tax
+purposes. Refer to Note 5. Goodwill and Purchased Intangible Assets for details about our intangible assets acquired through
+the Splunk acquisition.
+Pro forma Financial Information
+The unaudited pro forma financial information in the table below summarizes the combined results of our operations and
+Splunk’s operations, as though the acquisition of Splunk had been completed as of the beginning of fiscal 2023. The pro forma
+financial information for fiscal 2024 combines our results for this period with the results of Splunk for the period beginning
+August 1, 2023, through July 27, 2024. The pro forma financial information for fiscal 2023 combines our historical results for
+that period with the historical results of Splunk for the year ended July 31, 2023.
+The following table summarizes the pro forma financial information (in millions):
+
+Years Ended                                                                                                                               July 27, 2024           July 29, 2023
+Total revenue ....................................................................................................................... $           56,761      $           60,841
+Net income........................................................................................................................... $            9,280      $           10,078
+
+The pro forma financial information is presented for informational purposes only and is not indicative of the results of
+operations that would have been achieved if the acquisition and the cost of financing the acquisition had taken place at the
+beginning of fiscal 2023. The financial information for the periods presented above includes pro forma adjustments for
+amortization of purchased intangible assets, costs related to financing the acquisition and transaction costs.
+Other 2024 Acquisitions
+The total purchase consideration of $1.4 billion related to the other acquisitions we completed during fiscal 2024 consisted
+primarily of cash consideration. The total cash and cash equivalents acquired from these other acquisitions was approximately
+$24 million.
+
+
+
+
+                                                                                            70

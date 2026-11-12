@@ -1,0 +1,118 @@
+{
+  "id": "h2-007",
+  "case_group": "ibm-kyndryl-2021-two-block-basis-cash-ledger",
+  "lane": "event_driven",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T20:05:48Z",
+  "prompt": "Reconcile the IBM/Kyndryl distribution for a synthetic two-block IBM account using IBM's FAQ and Form8937. The account held 115 IBM shares acquired at $80 each and 52 acquired at $140 each throughout the relevant record/distribution dates. Use the Form8937's PRINTED illustrative allocation percentages as the agreed accounting convention for this exercise; do not replace them with unrounded ratios of the illustrated closing prices. Keep each acquisition block's basis separate. The first block produces no fractional Kyndryl interest, so the account's residual fraction belongs to the second block. The broker retains all whole Kyndryl shares and sells only the residual fraction for a synthetic $25 per Kyndryl share, charging $0.50 on that fractional sale. No other trades, fees or basis adjustments occur. Determine the quantities, retained and disposed basis, net cash and realized disposal result. Distinguish the issuer's example from a universally compulsory valuation method. Separately remove the broker sale price and fee and assess whether actual cash is still identified. This is an illustrative basis-ledger exercise under the stated convention, not individualized tax advice or a reconstruction of this holder's actual tax return.\n\nUse the supplied historical documents as specified; this packet is a retrospective conditional analysis with observed 2026 source availability, not a claim of contemporaneous historical execution. Return typed outputs with supporting verbatim clauses; declared support_dependencies permit explicit support_refs to reuse previously justified answers. Synthetic inputs need no invented citation.",
+  "source_ids": [
+    "h2b-ibm-faq",
+    "h2b-ibm-tax"
+  ],
+  "output_fields": [
+    {
+      "id": "kyndryl_economic_entitlement",
+      "type": "number",
+      "unit": "KD_shares",
+      "description": "Total Kyndryl share entitlement before cash-in-lieu conversion.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "retained_ibm_shares",
+      "type": "number",
+      "unit": "IBM_shares",
+      "description": "IBM shares remaining after the distribution.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "retained_ibm_basis",
+      "type": "number",
+      "unit": "USD",
+      "description": "Aggregate tax basis assigned to retained IBM using the stipulated printed allocation.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fractional_kd_basis",
+      "type": "number",
+      "unit": "USD",
+      "description": "Basis assigned to the Kyndryl fractional interest disposed for cash.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "kyndryl_economic_entitlement",
+        "retained_ibm_basis"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "retained_kd_basis",
+      "type": "number",
+      "unit": "USD",
+      "description": "Basis of the retained whole Kyndryl shares, excluding the cashed-out interest.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "fractional_kd_basis"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "cash_in_lieu_net",
+      "type": "number",
+      "unit": "USD",
+      "description": "Net cash from the stated fractional sale after its stated fee.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "kyndryl_economic_entitlement"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fractional_disposal_gain",
+      "type": "number",
+      "unit": "USD",
+      "description": "Gain or loss on the fractional disposal under this stipulated illustration.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "fractional_kd_basis",
+        "cash_in_lieu_net"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "issuer_method_is_mandatory",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the source make its illustrated valuation approach mandatory for every holder?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "actual_cash_known_without_sale_price",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "If the broker sale price and fee are withheld, do the retained documents determine actual cash-in-lieu proceeds?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ],
+  "response_format": {
+    "case_id": "h2-007",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ],
+        "support_refs": [
+          "<optional field ID from this output's support_dependencies>"
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

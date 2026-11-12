@@ -1,0 +1,456 @@
+{
+  "id": "q104",
+  "title": "As-of company research across revisions and security changes",
+  "prompt": "Build and evaluate three monthly portfolios from these synthetic, deliberately unsorted tables. All timestamps are UTC and ISO-formatted. Treat formation dates in supplied order. A company is eligible if active_from <= holding_start < active_until. For each eligible firm, use only filings with accepted_at <= the formation cutoff timestamp and period_end <= the cutoff date. First choose the greatest period_end; within that period choose the latest accepted_at, breaking an exact timestamp tie by greatest record_id. An amendment to an older reporting period never displaces a known newer period. Identical-value duplicate records do not count as additional companies. Exclude any firm lacking a known filing. Signal ROE=ttm_earnings/book_equity; these two fields have identical currency units, and book_equity is positive. In each sector in sector_order, select the highest-ROE firm long, breaking ties by smaller firm_id, then the lowest-ROE different firm short with the same tie rule. There are always at least two eligible firms with filings per sector. Map each selected permanent firm_id to its security_id with valid_from <= holding_start < valid_until; exactly one mapping applies. Return data and charges are keyed by security_id, not firm_id. Weights are +weight_per_leg for each long and -weight_per_leg for each short, relative to opening NAV. The two sectors therefore each have zero net exposure and total portfolio gross exposure is one. For every selected security combine the regular monthly return r and any delisting return d as (1+r)(1+d)-1; use d=0 if there is no delisting record. A short receives minus the corresponding long total return; there are no stock-loan fees or other financing returns. Liquidate all positions at each month end and start the next month from cash. Fees are contractually specified ROUND-TRIP basis points of opening absolute notional, including terminal settlement on delisting. The total monthly fee fraction is sum_i abs(w_i)*roundtrip_bps_i/10000; do not multiply it by two or rescale the opening weights. Debit these fees at month end, so net return equals the signed weighted total return minus fees. Compound the three net returns from wealth one. Report selected security IDs and ROEs flattened formation-major, sector_order-major, then long followed by short; also report monthly gross returns, monthly fee fractions, monthly net returns, and terminal wealth. The full input includes future records; their mere presence never makes them available before their timestamp. Use permanent firm IDs for signal eligibility and ranking, but the effective security ID for monthly returns and fees.",
+  "inputs": {
+    "formations": [
+      {
+        "cutoff": "2025-01-31T21:00:00Z",
+        "holding_start": "2025-02-01",
+        "holding_month": "202502"
+      },
+      {
+        "cutoff": "2025-02-28T21:00:00Z",
+        "holding_start": "2025-03-01",
+        "holding_month": "202503"
+      },
+      {
+        "cutoff": "2025-03-31T21:00:00Z",
+        "holding_start": "2025-04-01",
+        "holding_month": "202504"
+      }
+    ],
+    "firms": [
+      {
+        "firm_id": 106,
+        "sector": "B",
+        "active_from": "2020-01-01",
+        "active_until": "2025-03-31"
+      },
+      {
+        "firm_id": 105,
+        "sector": "B",
+        "active_from": "2020-01-01",
+        "active_until": "2099-01-01"
+      },
+      {
+        "firm_id": 104,
+        "sector": "B",
+        "active_from": "2020-01-01",
+        "active_until": "2099-01-01"
+      },
+      {
+        "firm_id": 103,
+        "sector": "A",
+        "active_from": "2020-01-01",
+        "active_until": "2099-01-01"
+      },
+      {
+        "firm_id": 102,
+        "sector": "A",
+        "active_from": "2020-01-01",
+        "active_until": "2099-01-01"
+      },
+      {
+        "firm_id": 101,
+        "sector": "A",
+        "active_from": "2020-01-01",
+        "active_until": "2099-01-01"
+      }
+    ],
+    "security_map": [
+      {
+        "firm_id": 101,
+        "security_id": 1001,
+        "valid_from": "2020-01-01",
+        "valid_until": "2099-01-01"
+      },
+      {
+        "firm_id": 103,
+        "security_id": 1003,
+        "valid_from": "2020-01-01",
+        "valid_until": "2025-03-01"
+      },
+      {
+        "firm_id": 105,
+        "security_id": 1005,
+        "valid_from": "2020-01-01",
+        "valid_until": "2099-01-01"
+      },
+      {
+        "firm_id": 103,
+        "security_id": 2003,
+        "valid_from": "2025-03-01",
+        "valid_until": "2099-01-01"
+      },
+      {
+        "firm_id": 102,
+        "security_id": 1002,
+        "valid_from": "2020-01-01",
+        "valid_until": "2099-01-01"
+      },
+      {
+        "firm_id": 104,
+        "security_id": 1004,
+        "valid_from": "2020-01-01",
+        "valid_until": "2099-01-01"
+      },
+      {
+        "firm_id": 106,
+        "security_id": 1006,
+        "valid_from": "2020-01-01",
+        "valid_until": "2099-01-01"
+      }
+    ],
+    "filings": [
+      {
+        "record_id": 20,
+        "firm_id": 101,
+        "period_end": "2025-03-31",
+        "accepted_at": "2025-04-20T16:00:00Z",
+        "ttm_earnings": 90.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 18,
+        "firm_id": 104,
+        "period_end": "2024-09-30",
+        "accepted_at": "2025-03-20T16:00:00Z",
+        "ttm_earnings": 60.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 16,
+        "firm_id": 102,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-05-05T16:00:00Z",
+        "ttm_earnings": 30.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 14,
+        "firm_id": 101,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-03-15T16:00:00Z",
+        "ttm_earnings": 7.000000000000001,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 12,
+        "firm_id": 106,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-01-18T16:00:00Z",
+        "ttm_earnings": 7.25,
+        "book_equity": 145.0
+      },
+      {
+        "record_id": 10,
+        "firm_id": 104,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-01-25T16:00:00Z",
+        "ttm_earnings": 24.3,
+        "book_equity": 135.0
+      },
+      {
+        "record_id": 8,
+        "firm_id": 102,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-01-20T16:00:00Z",
+        "ttm_earnings": 11.25,
+        "book_equity": 125.0
+      },
+      {
+        "record_id": 6,
+        "firm_id": 106,
+        "period_end": "2024-09-30",
+        "accepted_at": "2024-11-12T16:00:00Z",
+        "ttm_earnings": 6.0,
+        "book_equity": 150.0
+      },
+      {
+        "record_id": 4,
+        "firm_id": 104,
+        "period_end": "2024-09-30",
+        "accepted_at": "2024-11-12T16:00:00Z",
+        "ttm_earnings": 13.0,
+        "book_equity": 130.0
+      },
+      {
+        "record_id": 2,
+        "firm_id": 102,
+        "period_end": "2024-09-30",
+        "accepted_at": "2024-11-12T16:00:00Z",
+        "ttm_earnings": 13.2,
+        "book_equity": 110.0
+      },
+      {
+        "record_id": 1,
+        "firm_id": 101,
+        "period_end": "2024-09-30",
+        "accepted_at": "2024-11-12T16:00:00Z",
+        "ttm_earnings": 8.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 3,
+        "firm_id": 103,
+        "period_end": "2024-09-30",
+        "accepted_at": "2024-11-12T16:00:00Z",
+        "ttm_earnings": 7.199999999999999,
+        "book_equity": 120.0
+      },
+      {
+        "record_id": 5,
+        "firm_id": 105,
+        "period_end": "2024-09-30",
+        "accepted_at": "2024-11-12T16:00:00Z",
+        "ttm_earnings": 19.6,
+        "book_equity": 140.0
+      },
+      {
+        "record_id": 7,
+        "firm_id": 101,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-02-15T16:00:00Z",
+        "ttm_earnings": 18.0,
+        "book_equity": 120.0
+      },
+      {
+        "record_id": 9,
+        "firm_id": 103,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-02-10T16:00:00Z",
+        "ttm_earnings": 14.3,
+        "book_equity": 130.0
+      },
+      {
+        "record_id": 11,
+        "firm_id": 105,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-02-20T16:00:00Z",
+        "ttm_earnings": 18.2,
+        "book_equity": 140.0
+      },
+      {
+        "record_id": 13,
+        "firm_id": 103,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-01-31T21:01:00Z",
+        "ttm_earnings": 25.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 15,
+        "firm_id": 105,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-03-10T16:00:00Z",
+        "ttm_earnings": 19.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 17,
+        "firm_id": 103,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-04-15T16:00:00Z",
+        "ttm_earnings": 40.0,
+        "book_equity": 100.0
+      },
+      {
+        "record_id": 19,
+        "firm_id": 105,
+        "period_end": "2024-12-31",
+        "accepted_at": "2025-02-20T16:00:00Z",
+        "ttm_earnings": 18.2,
+        "book_equity": 140.0
+      }
+    ],
+    "returns": [
+      {
+        "security_id": 1005,
+        "month": "202504",
+        "return": -0.02
+      },
+      {
+        "security_id": 1004,
+        "month": "202504",
+        "return": 0.01
+      },
+      {
+        "security_id": 2003,
+        "month": "202504",
+        "return": 0.04
+      },
+      {
+        "security_id": 1002,
+        "month": "202504",
+        "return": 0.02
+      },
+      {
+        "security_id": 1001,
+        "month": "202504",
+        "return": -0.03
+      },
+      {
+        "security_id": 1006,
+        "month": "202503",
+        "return": -0.1
+      },
+      {
+        "security_id": 1005,
+        "month": "202503",
+        "return": 0.07
+      },
+      {
+        "security_id": 1004,
+        "month": "202503",
+        "return": -0.04
+      },
+      {
+        "security_id": 2003,
+        "month": "202503",
+        "return": 0.05
+      },
+      {
+        "security_id": 1002,
+        "month": "202503",
+        "return": 0.01
+      },
+      {
+        "security_id": 1001,
+        "month": "202503",
+        "return": -0.02
+      },
+      {
+        "security_id": 1006,
+        "month": "202502",
+        "return": -0.08
+      },
+      {
+        "security_id": 1005,
+        "month": "202502",
+        "return": 0.01
+      },
+      {
+        "security_id": 1004,
+        "month": "202502",
+        "return": 0.06
+      },
+      {
+        "security_id": 1003,
+        "month": "202502",
+        "return": -0.03
+      },
+      {
+        "security_id": 1002,
+        "month": "202502",
+        "return": 0.02
+      },
+      {
+        "security_id": 1001,
+        "month": "202502",
+        "return": 0.04
+      }
+    ],
+    "delistings": [
+      {
+        "security_id": 1006,
+        "month": "202503",
+        "delisting_return": -0.65
+      }
+    ],
+    "fees": [
+      {
+        "security_id": 1001,
+        "roundtrip_bps": 8.0
+      },
+      {
+        "security_id": 1002,
+        "roundtrip_bps": 12.0
+      },
+      {
+        "security_id": 1003,
+        "roundtrip_bps": 16.0
+      },
+      {
+        "security_id": 1004,
+        "roundtrip_bps": 10.0
+      },
+      {
+        "security_id": 1005,
+        "roundtrip_bps": 20.0
+      },
+      {
+        "security_id": 1006,
+        "roundtrip_bps": 24.0
+      },
+      {
+        "security_id": 2003,
+        "roundtrip_bps": 18.0
+      }
+    ],
+    "sector_order": [
+      "A",
+      "B"
+    ],
+    "weight_per_leg": 0.25,
+    "data_notes": "Entirely synthetic companies, filings, timestamps, identifiers, returns and fees; no real issuer or market observation is represented."
+  },
+  "outputs": [
+    {
+      "name": "selected_security_ids",
+      "type": "number_array",
+      "unit": "numeric security identifier",
+      "description": "12 IDs: formation order, sector_order order, then long and short.",
+      "atol": 0.0,
+      "rtol": 0.0
+    },
+    {
+      "name": "selected_roe",
+      "type": "number_array",
+      "unit": "decimal earnings / book equity",
+      "description": "12 ratios in exactly the selected_security_ids order.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "monthly_gross_returns",
+      "type": "number_array",
+      "unit": "decimal monthly return",
+      "description": "Three formations in supplied order.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "monthly_costs",
+      "type": "number_array",
+      "unit": "fee / opening NAV",
+      "description": "Three formations in supplied order.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "monthly_net_returns",
+      "type": "number_array",
+      "unit": "decimal monthly return",
+      "description": "Three formations in supplied order.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    },
+    {
+      "name": "terminal_wealth",
+      "type": "number",
+      "unit": "multiple of initial wealth",
+      "description": "Compounded ending wealth from initial wealth one.",
+      "atol": 1e-06,
+      "rtol": 0.0
+    }
+  ],
+  "instructions": "Submit strict JSON with exactly one key, code, whose value is Python source defining solve(data). The controller supplies the inputs object as data. Return a JSON-native dictionary mapping every declared output name to its answer. Use Python stdlib and NumPy only; do not read files, access the network, spawn processes, or use native tools. Write a general calculation from data, not constants for this instance. Your program will also be evaluated on undisclosed changed inputs under the same conventions. The controller will execute the first submission and give you its public outputs or error once, then ask for a final code submission. It never reveals reference answers or hidden test results. Supporting numerical ledgers and diagnostics are the declared array outputs; follow their ordering exactly. No markdown fences around your JSON.",
+  "workflow_area": "research",
+  "data_origin": "synthetic",
+  "provenance": {
+    "observations": "None. All supplied company, mapping and timestamp tables are synthetic evaluation inputs.",
+    "synthetic": true,
+    "timestamp_convention": "UTC ISO timestamps; inclusive accepted_at cutoff; exclusive active and mapping end dates."
+  }
+}

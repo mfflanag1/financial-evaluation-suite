@@ -1,0 +1,85 @@
+{
+  "id": "energy-003",
+  "case_group": "vistra-2023-odessa-generator-conditional-hedge",
+  "lane": "commodities_energy",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T23:59:59Z",
+  "prompt": "Study the 2023 Vistra disclosure as a public-source generator exposure case. The source states Odessa's December31,2023 net capacity and gives fleet-level hedging disclosures and an assumed7.2 MMBtu/MWh spark-spread sensitivity convention. The issuer PDF's historical publication time has not been established; its observed public availability is in2026 and this case uses an October4,2026 23:59:59 UTC observation cutoff. It does not claim a contemporaneous2024 trading replay. The SEC index separately establishes the 2023 Form10-K filing date; fiscal year-end is not publication date.\n\nALL dispatch, prices, cost and hedge terms below are SYNTHETIC, not reported Odessa operations or actual Vistra trades. Use the disclosed Odessa net MW. In a120-hour block, assume80% availability, full net output while available, and no output otherwise. Apply7.2 MMBtu/MWh as a scenario convention, not measured plant efficiency. Power sold at the node earns$65/MWh. Gas hub price is$3/MMBtu and delivered-gas basis is+$0.50/MMBtu. Variable O&M is$3/MWh. Ignore start-up, no-load, fixed, transport-other-than-basis, emissions, taxes, collateral, credit and transaction costs.\n\nSeparately, a purely financial hub-power swap covers600 MW in every one of the120 hours, receiving fixed$60/MWh and paying floating hub settlement$68/MWh. It neither changes plant generation nor disappears during outages. Cash settlement is hedge MWh times(fixed minus floating). Calculate contribution margins and the two specified unit price sensitivities. For hub-power sensitivity, node power moves one-for-one with hub and gas is fixed. For gas-basis sensitivity, the power swap provides no gas hedge. Solve break-even delivered-gas basis with all other assumptions fixed.\n\nBranch U withholds local gas basis; no alternative delivered-gas price is supplied. Determine whether a unique margin remains identifiable. Also judge whether the source's Texas natural-gas fleet hedge percentage identifies actual Odessa-specific hedge terms. Cite source-dependent capacity, heat-rate convention and portfolio scope; the purely synthetic hedge settlement and missing-basis judgment require no fabricated citation. Numeric non-integers should retain at least six decimals.",
+  "source_ids": [
+    "exp-vistra-2023-issuer",
+    "exp-vistra-2023-index"
+  ],
+  "output_fields": [
+    {
+      "id": "scenario_generation",
+      "type": "number",
+      "unit": "MWh",
+      "description": "Use Odessa's disclosed net MW, the synthetic120-hour block and80% availability with full output while available.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_fuel_burn",
+      "type": "number",
+      "unit": "MMBtu",
+      "description": "Apply the report's disclosed7.2 MMBtu/MWh sensitivity convention as the scenario heat rate; it is not asserted to be Odessa's measured actual heat rate.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_physical_margin",
+      "type": "number",
+      "unit": "USD",
+      "description": "Node power sales minus delivered gas cost and variable O&M, before the financial hedge; ignore costs explicitly excluded in the prompt.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_hedge_cash_settlement",
+      "type": "number",
+      "unit": "USD",
+      "description": "Cash settlement of the separate600 MW receive-fixed/pay-floating hub swap over all120 hours, regardless of plant availability.",
+      "evidence_required": false
+    },
+    {
+      "id": "scenario_total_margin",
+      "type": "number",
+      "unit": "USD",
+      "description": "Physical contribution margin plus financial hedge cash settlement; hedge is not additional generation or a second power sale.",
+      "evidence_required": true
+    },
+    {
+      "id": "hub_price_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_per_MWh",
+      "description": "Change in combined margin for a$1/MWh rise in hub power price when node power rises by the same amount, holding gas, volume and basis fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "gas_basis_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_per_MMBtu",
+      "description": "Change in combined margin for a$1/MMBtu rise in delivered-gas basis with gas hub price, power prices, dispatch and power hedge fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "break_even_delivered_gas_basis",
+      "type": "number",
+      "unit": "USD_per_MMBtu",
+      "description": "Gas basis over the$3/MMBtu hub price that makes total margin exactly zero, keeping every other scenario input fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "total_margin_identifiable_without_gas_basis",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Branch U withholds gas basis and all local delivered-gas price information. Does the package still identify a unique total margin?",
+      "evidence_required": false
+    },
+    {
+      "id": "actual_odessa_hedge_terms_identifiable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Can the disclosed Texas natural-gas fleet hedge percentage establish Odessa's actual hedge notional, strike, settlement index and hourly profile?",
+      "evidence_required": true
+    }
+  ]
+}

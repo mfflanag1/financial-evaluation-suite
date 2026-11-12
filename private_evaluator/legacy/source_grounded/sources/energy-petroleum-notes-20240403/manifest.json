@@ -1,0 +1,24 @@
+{
+  "id": "energy-petroleum-notes-20240403",
+  "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/pdf/table1.pdf",
+  "title": "Weekly Petroleum Status Report — Table 1 PDF with units and footnotes — week ending March 29, 2024",
+  "publisher": "U.S. Energy Information Administration",
+  "published_at": "2024-04-03T23:59:59-04:00",
+  "publication_precision": "day",
+  "availability_basis": "Dated official archive page energy-petroleum-index-20240403 states release April 3, 2024 and links this Table 1 PDF. Day-only availability uses 23:59:59 America/New_York (UTC-04:00). No exact publication time is claimed.",
+  "retrieved_at": "2026-10-04T17:55:03Z",
+  "redistribution_status": "EIA U.S. federal statistical material with official attribution and URLs retained; no linked third-party assets included. Extracted gas evidence excludes third-party market-price and analyst-survey sections. Raw HTML is retained locally for audit; broader redistribution of embedded third-party material requires review.",
+  "raw_path": "sources/energy-petroleum-notes-20240403/evidence.txt",
+  "text_path": "sources/energy-petroleum-notes-20240403/evidence.txt",
+  "raw_sha256": "ccc4202e2078ac42d693a18010fbcef1551aa5b9b89115362df76659616891b5",
+  "text_sha256": "ccc4202e2078ac42d693a18010fbcef1551aa5b9b89115362df76659616891b5",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_pdf_with_complete_text",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_pdf_with_complete_text.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

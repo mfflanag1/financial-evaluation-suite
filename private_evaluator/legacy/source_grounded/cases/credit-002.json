@@ -1,0 +1,98 @@
+{
+  "id": "credit-002",
+  "case_group": "vestis-2024-agreement-cash-and-restricted-perimeter",
+  "lane": "credit_capital_structure",
+  "status": "prototype",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T17:52:45Z",
+  "prompt": "Apply the selected Vestis credit-agreement provisions as amended in February 2024 to a hypothetical quarter ending September 26, 2025. Use this fixed document version only: assume the amendment is effective, a Revolving Commitment remains outstanding, no Material Acquisition step-up is elected, no later amendments apply, and all pro-forma perimeter adjustments are already reflected in the supplied ledger. This is conditional rule application from a public 2026 observed-evidence pack, not a historical claim about Vestis's actual 2025 position, current covenants, or legal default. The marked source preserves struck text; use the operative net-leverage definition and the post-March-2025 ceiling.\n\nSUPPLIED SYNTHETIC INPUTS, USD millions. The U.S. Borrower and Restricted Subsidiaries have borrowed-money principal 1,800; Capitalized Lease Obligations 100; unreimbursed drawn letters of credit 20 that remain unreimbursed beyond one Business Day; unpaid Hedge Agreement termination payments 10; ordinary ongoing derivative mark-to-market liability 40 with no unpaid termination payment included in it; undrawn revolver commitments 300; and undrawn letters of credit 50. A designated Unrestricted Subsidiary separately owes debt 400, which is nonrecourse and not guaranteed by the restricted group. There is no Disqualified Stock, Preferred Stock or other included indebtedness. All figures are mutually exclusive, contractual measurement amounts, with no discount or netting adjustments needed.\n\nCash: U.S. Borrower's unrestricted cash 130; Restricted Subsidiaries' unrestricted cash 40; Restricted Subsidiaries' cash restricted solely in favor of the Facilities 30; Restricted Subsidiaries' customer-escrow cash restricted in favor of customers and NOT in favor of the Facilities 25; and designated Unrestricted Subsidiary cash 90. No amount overlaps another. Contract-defined EBITDA is 400 in the base case and 380 under the isolated stress. Additional debt is spent immediately, so neither qualifying cash nor EBITDA increases. Do not infer interest expense from principal: no interest-expense, rate or duration input is supplied.\n\nCompute all 12 declared outputs. Use millions and ratios x; retain exact intermediates and round final nonintegers to 8 decimal places. Compare mathematical ratios before rounding and permit equality with the ceiling, with no extra rounding cushion. The capacity calculation concerns only the stated leverage condition and does not establish permission under every basket or covenant. Distinguish whether the separately disclosed interest-coverage condition is numerically determinable. Cite source rules for each output; synthetic ledger numbers need no fabricated external citations. Return the standard structured response.",
+  "source_ids": [
+    "credit-vestis-agreement"
+  ],
+  "output_fields": [
+    {
+      "id": "included_indebtedness",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Contract-defined Consolidated Total Indebtedness from the supplied debt and contingent-obligation ledger; exclude out-of-perimeter amounts.",
+      "evidence_required": true
+    },
+    {
+      "id": "eligible_cash",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Contract-defined Unrestricted Cash; distinguish restricted collateral cash from excluded cash and group scope.",
+      "evidence_required": true
+    },
+    {
+      "id": "excluded_cash",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Total supplied cash excluded from the contractual netting pool.",
+      "evidence_required": true
+    },
+    {
+      "id": "net_debt",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Included indebtedness less eligible cash.",
+      "evidence_required": true
+    },
+    {
+      "id": "applicable_maximum_ratio",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Maximum ratio at the hypothetical quarter ending September 26, 2025; apply supplied facility and acquisition assumptions.",
+      "evidence_required": true
+    },
+    {
+      "id": "base_leverage",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Base scenario net leverage using the given contract-defined EBITDA.",
+      "evidence_required": true
+    },
+    {
+      "id": "extra_spent_debt_capacity",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Largest further debt amount spent immediately consistent with this leverage ceiling; no cash or EBITDA changes, and other financing permissions are not tested.",
+      "evidence_required": true
+    },
+    {
+      "id": "minimum_ebitda_at_boundary",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Minimum contract-defined EBITDA that meets the ceiling with the base net numerator fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "maximum_ebitda_decline",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Largest decline from base EBITDA before exceeding the ceiling; compare to the exact unrounded boundary.",
+      "evidence_required": true
+    },
+    {
+      "id": "stressed_leverage",
+      "type": "number",
+      "unit": "ratio_x",
+      "description": "Leverage with EBITDA reduced to the supplied stress level and numerator fixed.",
+      "evidence_required": true
+    },
+    {
+      "id": "stress_meets_leverage_condition",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the supplied EBITDA stress meet the maximum-leverage condition? This is not a statement of actual default.",
+      "evidence_required": true
+    },
+    {
+      "id": "interest_coverage_compliance_identifiable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Can the separate interest-coverage condition be certified using only the supplied ledger, with no Consolidated Interest Expense or loan pricing supplied? Cite that additional condition.",
+      "evidence_required": true
+    }
+  ]
+}

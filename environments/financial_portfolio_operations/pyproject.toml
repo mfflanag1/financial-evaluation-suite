@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-portfolio-operations"
+version = "0.1.0"
+description = "Trusted-host request accounting and numerical portfolio reference controls"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["financial-portfolio-clarified==0.5.0", "verifiers==0.4.1"]
+
+[project.scripts]
+financial-portfolio-operations = "financial_portfolio_operations.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_portfolio_operations"]

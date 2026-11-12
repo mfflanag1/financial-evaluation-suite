@@ -1,0 +1,20 @@
+[
+  {
+    "id": "expansion-dnb-2024-debt",
+    "url": "https://www.sec.gov/Archives/edgar/data/1799208/000179920824000024/R13.htm",
+    "title": "Dun & Bradstreet Q1 2024 debt note and springing covenant",
+    "publisher": "Dun & Bradstreet Holdings, Inc.; SEC EDGAR",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative observation bound recorded after all public-source captures were retained. Filing/document period is not an asserted original publication timestamp. This is retrospective version comparison, not contemporaneous trading replay.",
+    "text_sha256": "cb2aac4ff9448f7576e85df9a884c7ac5da331eabdeeec13e69f9ae4f5d06dcd",
+    "available_by": "2026-10-04T18:12:47Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

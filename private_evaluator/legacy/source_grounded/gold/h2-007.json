@@ -1,0 +1,293 @@
+{
+  "case_id": "h2-007",
+  "reference_solution": {
+    "kyndryl_economic_entitlement": 33.4,
+    "retained_ibm_shares": 167,
+    "retained_ibm_basis": 15787.84,
+    "fractional_kd_basis": 11.76,
+    "retained_kd_basis": 680.4,
+    "cash_in_lieu_net": 9.5,
+    "fractional_disposal_gain": -2.26,
+    "issuer_method_is_mandatory": false,
+    "actual_cash_known_without_sale_price": false
+  },
+  "worked_derivation": [
+    "Pre-distribution basis=115*80+52*140=16480. KD entitlement=167/5=33.4. Printed4.2% KD allocation=692.16; retained IBM=15787.84.",
+    "Second block basis per KD=52*140*.042/(52/5)=29.4. Fractional basis=.4*29.4=11.76; retained KD basis=680.4. Net sale=.4*25-.50=9.50; loss=9.50-11.76=-2.26.",
+    "Basis conservation:15787.84+680.40+11.76=16480. Missing sale price admits25 or30 per share, changing net cash9.50 vs11.50; actual cash is unidentified."
+  ],
+  "fields": [
+    {
+      "id": "kyndryl_economic_entitlement",
+      "expected": 33.4,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-faq",
+            "anchors": [
+              "one share of Kyndryl common stock for every five shares of IBM common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "one share of Kyndryl Holdings common stock for every five shares of IBM common stock"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "retained_ibm_shares",
+      "expected": 167,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 1e-06,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-faq",
+            "anchors": [
+              "The transaction had no impact on the number of shares of IBM common stock that you own."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "retained_ibm_basis",
+      "expected": 15787.84,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 0.01,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "4.2% would be allocated to such shareholder’s shares of Kyndryl Holdings common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "95.8% of an IBM stockholder’s aggregate tax basis in shares of IBM common stock immediately prior to the Distribution would be allocated to such shareholder’s shares of IBM common stock"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "fractional_kd_basis",
+      "expected": 11.76,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 0.01,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-faq",
+            "anchors": [
+              "one share of Kyndryl common stock for every five shares of IBM common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "one share of Kyndryl Holdings common stock for every five shares of IBM common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "4.2% would be allocated to such shareholder’s shares of Kyndryl Holdings common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "95.8% of an IBM stockholder’s aggregate tax basis in shares of IBM common stock immediately prior to the Distribution would be allocated to such shareholder’s shares of IBM common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "must calculate their basis in each block of stock"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "retained_kd_basis",
+      "expected": 680.4,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 0.01,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-faq",
+            "anchors": [
+              "one share of Kyndryl common stock for every five shares of IBM common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "one share of Kyndryl Holdings common stock for every five shares of IBM common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "4.2% would be allocated to such shareholder’s shares of Kyndryl Holdings common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "95.8% of an IBM stockholder’s aggregate tax basis in shares of IBM common stock immediately prior to the Distribution would be allocated to such shareholder’s shares of IBM common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "must calculate their basis in each block of stock"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "cash_in_lieu_net",
+      "expected": 9.5,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 0.01,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-faq",
+            "anchors": [
+              "one share of Kyndryl common stock for every five shares of IBM common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "one share of Kyndryl Holdings common stock for every five shares of IBM common stock"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "fractional_disposal_gain",
+      "expected": -2.26,
+      "critical": true,
+      "required_source_ids": [],
+      "atol": 0.01,
+      "rtol": 0,
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-faq",
+            "anchors": [
+              "one share of Kyndryl common stock for every five shares of IBM common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "one share of Kyndryl Holdings common stock for every five shares of IBM common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "4.2% would be allocated to such shareholder’s shares of Kyndryl Holdings common stock"
+            ]
+          },
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "95.8% of an IBM stockholder’s aggregate tax basis in shares of IBM common stock immediately prior to the Distribution would be allocated to such shareholder’s shares of IBM common stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "must calculate their basis in each block of stock"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "will recognize gain or loss equal to the difference between the amount of cash received and the tax basis in such stockholder’s fractional share."
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "issuer_method_is_mandatory",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "IBM stockholders are not bound by the approach illustrated above"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "actual_cash_known_without_sale_price",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2b-ibm-tax",
+            "anchors": [
+              "will recognize gain or loss equal to the difference between the amount of cash received and the tax basis in such stockholder’s fractional share."
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "The stated95.8/4.2 allocation is an exercise convention, not the only permitted tax valuation method.",
+    "All positions, costs and broker sale values are synthetic. Original scan OCR is imperfect; used clauses and numbers were visually verified."
+  ]
+}

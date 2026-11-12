@@ -1,0 +1,124 @@
+{
+  "question_id": "q111",
+  "title": "An event-study residual with simultaneous issuer catalysts",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Fit separate OLS return models with an intercept and the two listed factors using all four pre-event observations. Returns are decimal simple returns and equity value USD million. Compute each event abnormal return and issuer minus control abnormal return. Convert the issuer abnormal return to abnormal equity value using pre-event equity value. For identification, assume issuer abnormal return is exhausted by earnings and buyback contributions, both nonnegative, with no further restriction; the control is not exposed to either issuer announcement. Report the sharp earnings contribution interval and whether the data identify a STRICTLY positive earnings contribution. The matched difference is descriptive and does not impose equality of unobserved issuer and control shocks. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "factor_order": [
+      "market",
+      "sector"
+    ],
+    "pre_event_factor_rows": [
+      [
+        -0.01,
+        -0.02
+      ],
+      [
+        -0.01,
+        0.02
+      ],
+      [
+        0.01,
+        -0.02
+      ],
+      [
+        0.01,
+        0.02
+      ]
+    ],
+    "issuer_pre_returns": [
+      -0.020999999999999998,
+      -0.0009999999999999992,
+      0.003000000000000001,
+      0.023
+    ],
+    "control_pre_returns": [
+      -0.014,
+      0.002,
+      0.002,
+      0.018000000000000002
+    ],
+    "event_factors": [
+      0.02,
+      0.03
+    ],
+    "issuer_event_return": 0.08,
+    "control_event_return": 0.05,
+    "issuer_pre_event_equity_value": 1000,
+    "concurrent_issuer_announcements": [
+      "earnings",
+      "buyback"
+    ],
+    "nonnegative_earnings_and_buyback_contributions": true
+  },
+  "sources": [
+    {
+      "id": "q111_t1_1",
+      "text": "Synthetic packet. The pre-event factor design and returns are a synthetic complete calibration panel with full-rank regressors. The event return is measured across the common announcement window."
+    },
+    {
+      "id": "q111_t1_2",
+      "text": "Synthetic packet. The issuer announced earnings and a buyback in the same window. No separated announcement price or instrument is observed. Nonnegative contribution bounds are stipulated solely for the partial-identification question."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "issuer_coefficients",
+      "type": "number_array",
+      "unit": "return units",
+      "description": "Intercept, market beta, sector beta.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "control_coefficients",
+      "type": "number_array",
+      "unit": "return units",
+      "description": "Intercept, market beta, sector beta.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "event_abnormal_returns",
+      "type": "number_array",
+      "unit": "decimal return",
+      "description": "Issuer, control.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "matched_difference",
+      "type": "number",
+      "unit": "decimal return",
+      "description": "Issuer abnormal minus control abnormal.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "issuer_abnormal_value",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Issuer abnormal equity value.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "earnings_contribution_bounds",
+      "type": "number_array",
+      "unit": "decimal return",
+      "description": "Sharp lower and upper bounds.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "positive_earnings_effect_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether every admissible attribution has earnings contribution strictly positive."
+    }
+  ]
+}

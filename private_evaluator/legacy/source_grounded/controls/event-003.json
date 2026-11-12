@@ -1,0 +1,2252 @@
+[
+  {
+    "name": "reference",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "three_months_equals_ninety",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 90,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "outside_date_extension_calendar_days": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "three months equals ninety"
+  },
+  {
+    "name": "ignore_daylight_saving",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T22:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "new_outside_date_utc": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ignore daylight saving"
+  },
+  {
+    "name": "omit_accrual_base",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.0675,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "march21_ticking_fee": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "omit accrual base"
+  },
+  {
+    "name": "ignore_delay_funding",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": 0.1241669,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "april21_to_may21_incremental_net_profit": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "ignore delay funding"
+  },
+  {
+    "name": "extrapolate_missing_endpoint",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "may22_fee_identifiable_from_supplied_schedule": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "extrapolate missing endpoint"
+  },
+  {
+    "name": "company_fee_to_holder",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "termination_fee_is_direct_per_share_consideration": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "company fee to holder"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": []
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "outside_date_extension_calendar_days": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing evidence"
+  },
+  {
+    "name": "fabricated_quote",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "This is a fabricated supporting passage."
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "outside_date_extension_calendar_days": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated quote"
+  },
+  {
+    "name": "concise_applicable_tier_only",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "contextual_applicable_tier_only",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "(b) if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023, an amount in cash equal to (i) $0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "missing_tier_base_operand",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "missing tier base operand",
+    "expected_failures": {
+      "march21_ticking_fee": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "deadline_from_10k_concise",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "deadline_from_8k_concise",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "from 5:00 p.m. Eastern time on February 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-extension",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "extension_interval_from_8k_context",
+    "response": {
+      "case_id": "event-003",
+      "answers": {
+        "outside_date_extension_calendar_days": {
+          "value": 89,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-extension",
+              "quote": "On February 21, 2023, the Company elected, pursuant to the terms of the Merger Agreement, to extend the Outside Date (as defined in the Merger Agreement) from 5:00 p.m. Eastern time on February 22, 2023 to 5:00 p.m. Eastern time on May 22, 2023."
+            }
+          ]
+        },
+        "new_outside_date_utc": {
+          "value": "2023-05-22T21:00:00Z",
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "to 5:00 p.m. Eastern time on May 22, 2023"
+            }
+          ]
+        },
+        "march21_ticking_fee": {
+          "value": 0.22083333,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_ticking_fee": {
+          "value": 0.32333323,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_ticking_fee": {
+          "value": 0.44750013,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "march21_net_profit": {
+          "value": 1.034723740958904,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after February 22, 2023 and before March 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.15333333 plus (ii)(A) $0.0025 multiplied by (B) the number of calendar days elapsed after February 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "april21_to_may21_incremental_net_profit": {
+          "value": -0.027065976712328767,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after March 22, 2023 and before April 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.22333333 plus (ii)(A) $0.00333333 multiplied by (B) the number of calendar days elapsed after March 22, 2023 to and including the Closing Date"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may21_break_even_success_probability": {
+          "value": 0.8719189425990872,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$24.00 per share of Common Stock in cash"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            },
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "$0.3266667 plus (ii)(A) $0.00416667 multiplied by (B) the number of calendar days elapsed after April 22, 2023 to and including the Closing Date"
+            }
+          ]
+        },
+        "may22_fee_identifiable_from_supplied_schedule": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "if the Closing Date occurs on or after April 22, 2023 and before May 22, 2023"
+            }
+          ]
+        },
+        "termination_fee_is_direct_per_share_consideration": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-tegna-2022-merger",
+              "quote": "Parent will be required to pay TEGNA a termination fee"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  }
+]

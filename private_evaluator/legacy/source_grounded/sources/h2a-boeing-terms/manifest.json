@@ -1,0 +1,25 @@
+{
+  "id": "h2a-boeing-terms",
+  "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000012927/a16e26ef-377e-41f0-9a13-1da040444f82.pdf",
+  "title": "Boeing October 28, 2024 filed pricing term sheet",
+  "publisher": "The Boeing Company; issuer filing CDN",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T20:02:32Z",
+  "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+  "retrieved_at": "2026-10-04T19:59:28.053449Z",
+  "redistribution_status": "Public primary corporate disclosure retained for local research. Redistribution rights not adjudicated; no public release authorized.",
+  "raw_path": "sources/h2a-boeing-terms/evidence.txt",
+  "text_path": "sources/h2a-boeing-terms/evidence.txt",
+  "raw_sha256": "cb0d1fa3aab3cb515e95915b159bb4705662066c3c9bce20f4eadb356101b6bf",
+  "text_sha256": "cb0d1fa3aab3cb515e95915b159bb4705662066c3c9bce20f4eadb356101b6bf",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "complete_original_pdf",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: complete_original_pdf.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

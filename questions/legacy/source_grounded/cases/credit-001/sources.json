@@ -1,0 +1,20 @@
+[
+  {
+    "id": "credit-arcosa-amendment",
+    "url": "https://www.sec.gov/Archives/edgar/data/1739445/000173944524000126/exh101amendmentno1torcfvf.htm",
+    "title": "Arcosa Amendment No. 1, dated August 15, 2024: selected effectiveness, EBITDA and covenant provisions",
+    "publisher": "Arcosa, Inc.; SEC EDGAR archive",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The document has a stated agreement date, but the original public dissemination timestamp was not established. available_by is the UTC observation bound recorded after the public SEC source captures were retained. This is retrospective document-version analysis, not an assertion of availability on the agreement date.",
+    "text_sha256": "92706fb44e7217267d1ede221753feaa2b808cf0e82292b1c81652bdb11d19ba",
+    "available_by": "2026-10-04T17:52:45Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

@@ -1,0 +1,2026 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All requested values and source operands supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "annual_rate_is_quarter_growth",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 2.1,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 27063,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Fails both annualization conversions.",
+    "expected_failures": {
+      "third_implied_quarterly_growth": [
+        "incorrect_value_or_type"
+      ],
+      "third_nominal_quarter_output": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "divide_growth_by_four",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.525,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses linear division in place of the specified compound inverse.",
+    "expected_failures": {
+      "third_implied_quarterly_growth": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "headline_unchanged_means_components_unchanged",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Erases offsetting component revisions and the displayed rounding discrepancy.",
+    "expected_failures": {
+      "pce_contribution_revision": [
+        "incorrect_value_or_type"
+      ],
+      "other_components_contribution_revision": [
+        "incorrect_value_or_type"
+      ],
+      "headline_minus_component_revision_gap": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "pce_growth_instead_of_contribution",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.9,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses PCE own growth0.8%-1.7% rather than contribution0.55-1.14pp.",
+    "expected_failures": {
+      "pce_contribution_revision": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "precision_units_invented_expectation",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": true,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Treats prior estimate as consensus and incompatible chain-dollar levels as economic growth.",
+    "expected_failures": {
+      "surprise_identifiable_without_consensus": [
+        "incorrect_value_or_type"
+      ],
+      "cross_base_level_ratio_is_real_growth": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "wrong_release_component_evidence",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Correct PCE revision lacks the second-vintage operand.",
+    "expected_failures": {
+      "pce_contribution_revision": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "concise_q2_component_tails",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "-2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "50 Government consumption expenditures and gross investment"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "-1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "50 Government consumption expenditures and gross investment"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "-1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "50 Government consumption expenditures and gross investment"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "-2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "50 Government consumption expenditures and gross investment"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "-1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "50 Government consumption expenditures and gross investment"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP)"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26,813.6 27,063.0"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Separate component labels and terminal Q1/Q2 values with row number preserve column context without unrelated historical spans.",
+    "expected_failures": {}
+  },
+  {
+    "name": "mixed_complete_and_concise_vintages",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Full and concise supported row routes can be mixed; redundant unit/header quotations are unnecessary.",
+    "expected_failures": {}
+  },
+  {
+    "name": "component_label_without_q2_operand",
+    "response": {
+      "case_id": "macro-003",
+      "answers": {
+        "advance_to_second_revision": {
+          "value": -0.3,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "In the advance estimate, the increase in real GDP was 2.4 percent"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "second_to_third_revision": {
+          "value": 0.0,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "In the second estimate, the increase in GDP was also 2.1 percent."
+            }
+          ]
+        },
+        "third_implied_quarterly_growth": {
+          "value": 0.5209155512190027,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the second quarter of 2023"
+            }
+          ]
+        },
+        "pce_contribution_revision": {
+          "value": -0.59,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2.54 0.55 2"
+            }
+          ]
+        },
+        "other_components_contribution_revision": {
+          "value": 0.58,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_component_sum": {
+          "value": 2.06,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "headline_minus_component_revision_gap": {
+          "value": 0.01,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "2 Personal consumption expenditures -2.01 5.54 1.85 2.27 1.55 -4.25 -23.07 26.34 2.53 6.98 7.84 1.98 2.14 0.91 1.38 1.54 0.70 2.79 1.14 2"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "26 Gross private domestic investment -0.95 1.55 0.72 0.48 -1.48 -0.88 -9.65 12.69 3.07 -0.82 0.30 1.78 5.14 0.98 -2.83 -1.80 0.79 -2.22 0.57 26"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "43 Net exports of goods and services -0.26 -1.25 -0.40 0.28 1.30 -0.05 1.30 -2.74 -1.68 -1.02 -0.60 -1.08 -0.16 -3.13 1.16 2.86 0.42 0.58 -0.22 43"
+            },
+            {
+              "source_id": "exp-bea-20230830-pdf",
+              "quote": "expenditures and gross investment 0.45 0.11 -0.10 0.58 0.41 0.57 1.57 -0.97 -0.01 1.18 -0.54 -0.02 -0.16 -0.40 -0.29 0.65 0.65 0.85 0.58 50"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Table 2. Contributions to Percent Change in Real Gross Domestic Product"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "2 Personal consumption expenditures -1.69 5.59 1.72 2.74 1.72 -4.34 -21.51 24.93 3.63 5.70 8.73 1.89 2.71 -0.03 1.32 1.05 0.79 2.54 0.55 2"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "26 Gross private domestic investment -0.85 1.52 0.86 0.78 -0.89 -1.87 -9.29 13.52 2.36 -0.46 -0.84 2.71 4.63 1.16 -2.10 -1.45 0.62 -1.69 0.90 26"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "43 Net exports of goods and services -0.24 -1.25 -0.48 0.29 1.31 0.09 1.00 -2.58 -1.44 -1.04 -0.87 -1.03 -0.34 -2.59 0.56 2.58 0.26 0.58 0.04 43"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "expenditures and gross investment 0.56 -0.05 -0.16 0.80 0.46 0.78 1.78 -1.03 -0.35 1.04 -0.80 -0.26 -0.04 -0.52 -0.34 0.49 0.90 0.82 0.57 50"
+            }
+          ]
+        },
+        "third_nominal_quarter_output": {
+          "value": 6765.75,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Billions of dollars"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "Seasonally adjusted at annual rates"
+            },
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "1 Gross domestic product (GDP) 25,744.1 25,544.3 25,994.6 26,408.4 26,813.6 27,063.0 21,822.0 21,708.2 21,851.1 21,990.0 22,112.3 22,225.4 414.3 122.3 113.0 1"
+            }
+          ]
+        },
+        "surprise_identifiable_without_consensus": {
+          "value": false,
+          "evidence": []
+        },
+        "cross_base_level_ratio_is_real_growth": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-bea-20230928-pdf",
+              "quote": "The reference year for chain-type quantity and price indexes and for the chain-dollar estimates is updated to 2017 from 2012."
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Original BEA PDFs retained; selected tables were visually checked. Captures are retrospective, not contemporaneous byte snapshots.",
+        "All calculations use displayed rounded growth rates, levels and contributions; tiny residuals are not identified economic components."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Naming PCE without the second-vintage Q2 contribution does not support a revision.",
+    "expected_failures": {
+      "pce_contribution_revision": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

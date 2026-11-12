@@ -1,0 +1,67 @@
+{
+  "question_id": "q146",
+  "title": "Reverse valuation with cash restrictions, divestiture and growth bounds",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Reconstruct the operating DCF and reverse the terminal-growth assumption implied by market enterprise value. USD million for cash flows, EV, debt/cash, and million shares. The three FCFF amounts arrive at year ends. Terminal value at year 3 is a growing perpetuity whose first cash flow is year-3 FCFF grown once; WACC exceeds growth. Initially all reported cash is eligible nonoperating cash. The reverse calculation holds explicit flows and WACC fixed. Growth answers use percent, not decimals. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "fcff_years_1_3": [
+      30,
+      35,
+      40
+    ],
+    "wacc": 0.1,
+    "terminal_growth": 0.02,
+    "market_enterprise_value": 600,
+    "debt": 100,
+    "reported_cash": 40,
+    "shares": 50
+  },
+  "sources": [
+    {
+      "id": "q146_t1_1",
+      "text": "Synthetic packet. The synthetic operating forecast excludes financing flows and gives three year-end free cash flows to the firm. Its last year is the initial base for the stipulated perpetuity."
+    },
+    {
+      "id": "q146_t1_2",
+      "text": "Synthetic packet. The capitalization memo supplies market enterprise value, debt, reported cash and shares. EV and equity must not be mixed when reversing the operating terminal assumption."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "operating_enterprise_value",
+      "type": "number",
+      "unit": "USD million",
+      "description": "PV of operating free cash flows and terminal value.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "equity_value_per_share",
+      "type": "number",
+      "unit": "USD per share",
+      "description": "Operating EV minus debt plus eligible cash, divided by shares.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "terminal_share_of_ev_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Terminal-value PV / operating EV; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "market_implied_terminal_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Terminal growth required to match the supplied market EV; 0–100 scale.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

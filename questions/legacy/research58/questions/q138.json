@@ -1,0 +1,83 @@
+{
+  "question_id": "q138",
+  "title": "Backlog acceptance, cancellation and changing product economics",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Choose the profit-maximizing quarterly delivery plan. Unit quantities are whole contracts and unit revenue/cost are USD million. Only eligible units may be recognized this quarter; ordered C units are for next quarter. Meet minimum A deliveries, respect joint capacity, and do not exceed eligible order quantities. Maximize net gross profit; ties choose higher revenue, then lexicographically smaller [A,B,C]. Report whether the chosen plan meets the separate revenue floor; it is not an optimization constraint. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "products": [
+      "A",
+      "B",
+      "C"
+    ],
+    "ordered_units": [
+      50,
+      40,
+      30
+    ],
+    "unit_revenue": [
+      2,
+      2.5,
+      3
+    ],
+    "unit_cost": [
+      1.2,
+      1.5,
+      2
+    ],
+    "eligible_units": [
+      50,
+      40,
+      0
+    ],
+    "capacity": 70,
+    "minimum_a": 40,
+    "quarter_revenue_floor": 150,
+    "expedite_fee": 0
+  },
+  "sources": [
+    {
+      "id": "q138_t1_1",
+      "text": "Synthetic packet. The backlog register distinguishes signed orders from quarter-eligible deliveries. C’s acceptance window is next quarter despite its signed status."
+    },
+    {
+      "id": "q138_t1_2",
+      "text": "Synthetic packet. The plant shares one finished-contract capacity across products. A’s service minimum is legally binding, while the revenue floor is a reporting test of the optimized plan."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "delivery_units",
+      "type": "number_array",
+      "unit": "units",
+      "description": "A, B, C.",
+      "atol": 0,
+      "rtol": 1e-08
+    },
+    {
+      "name": "recognized_revenue",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Recognized revenue at chosen deliveries.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "net_gross_profit",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Product contribution less any activated fixed expedite fee.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "revenue_floor_met",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the plan meets the stated revenue floor."
+    }
+  ]
+}

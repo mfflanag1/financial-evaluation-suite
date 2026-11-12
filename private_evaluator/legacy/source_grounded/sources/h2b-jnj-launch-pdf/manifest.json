@@ -1,0 +1,26 @@
+{
+  "id": "h2b-jnj-launch-pdf",
+  "url": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-Launches-Exchange-Offer-for-Separation-of-Kenvue-Inc-2023.pdf",
+  "title": "J&J launches Kenvue exchange offer",
+  "publisher": "Johnson & Johnson",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T19:59:18.911381Z",
+  "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+  "document_date": "2023-07-24",
+  "retrieved_at": "2026-10-04T19:59:18.911381Z",
+  "redistribution_status": "Local research only; public access does not grant broad redistribution rights.",
+  "raw_path": "sources/h2b-jnj-launch-pdf/evidence.txt",
+  "text_path": "sources/h2b-jnj-launch-pdf/evidence.txt",
+  "raw_sha256": "4529376b0cd0de4b93ee0d1c5772101fe243156b489b19668abd8d933b3b09b4",
+  "text_sha256": "4529376b0cd0de4b93ee0d1c5772101fe243156b489b19668abd8d933b3b09b4",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "complete_original_document",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: complete_original_document.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

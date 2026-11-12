@@ -1,0 +1,158 @@
+{
+  "question_id": "q129",
+  "title": "Investor-series redemptions with endogenous liquidation loss and fees",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Determine the maximum fair common redemption gate and the least-loss sale plan that funds it. Sale losses feed back into both fees and investor payout, so do not calculate fees or redemptions once at the initial gross NAV. Reconcile cash separately from remaining investors net NAV. Use only the supplied finite gate and sale grids. All observations and rules are synthetic. Return the declared typed fields with supporting source IDs.",
+  "inputs": {
+    "series_units": [
+      100,
+      80
+    ],
+    "entry_nav": [
+      100,
+      100
+    ],
+    "old_high_water_marks": [
+      110,
+      100
+    ],
+    "year_fractions": [
+      1,
+      0.5
+    ],
+    "gross_nav_before_sales": 120,
+    "management_rate": 0.02,
+    "incentive_rate": 0.2,
+    "requested_redemption_units": [
+      40,
+      30
+    ],
+    "opening_cash": 2000,
+    "minimum_cash": 1000,
+    "sale_caps": [
+      20,
+      40
+    ],
+    "asset_marks": [
+      100,
+      100
+    ],
+    "asset_sale_prices": [
+      98,
+      90
+    ],
+    "gate_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  "sources": [
+    {
+      "id": "q129_register",
+      "text": "Original synthetic packet. Input old/new series units100/80, entry NAV100/100, high-water marks110/100 and year fractions1/0.5 define separate investor entitlements. Gross NAV120 per unit includes opening cash2000 and all marked assets. Requested redemptions are40/30 units. Remaining holdings are sufficient for every allowed sale. A common fraction g of each request is filled; fractional investor units are allowed. Gross loss is allocated equally per each of180 pre-redemption fund units."
+    },
+    {
+      "id": "q129_fees",
+      "text": "Original synthetic packet. Management is entry NAV times rate2% times stated year fraction, unaffected by sale loss. After subtracting management, incentive fee is20% of the positive excess over that series old high-water mark. No equalization, hurdle or other fee applies. Crystallize and PAY all fees on all180 units after liquidation loss but BEFORE redemptions. Redeem at each series resulting net NAV. Remaining-unit HWM=max(old HWM,final net NAV); never reset it down. Fees are already in post-fee NAV; paying them does not deduct them a second time."
+    },
+    {
+      "id": "q129_liquidation",
+      "text": "Original synthetic packet. Sell integer asset units A0..20 and B0..40 only. Each has book value100; executable proceeds are98 for A and90 for B. Loss reduces gross fund NAV before fees and investor payout are determined. Starting cash2000 plus sale proceeds funds the crystallized fees and redemptions, while leaving at least1000. No borrowing or other costs. Choose largest gate among0,0.25,0.5,0.75,1. At that gate minimize realized loss, then total asset units sold, then A units, then B units. Liquidation, fees and redemptions all settle in that order, with proceeds available for payments."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "maximum_common_gate",
+      "type": "number",
+      "unit": "fraction",
+      "description": "Largest common fulfilled fraction from the declared gate grid.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "asset_sale_units",
+      "type": "number_array",
+      "unit": "asset units",
+      "description": "[A,B] integer sales at maximum gate, minimizing realized loss, then units, then A, then B.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "realized_sale_loss",
+      "type": "number",
+      "unit": "USD",
+      "description": "Book value minus sale cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_sale_gross_nav_per_unit",
+      "type": "number",
+      "unit": "USD per fund unit",
+      "description": "Common before-fee NAV after liquidation loss allocation.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "post_fee_series_nav",
+      "type": "number_array",
+      "unit": "USD per fund unit",
+      "description": "Old series, new series; fees crystallize before redemption.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "fees_paid_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "All management and incentive fees for all pre-redemption units.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "redemption_cash_paid",
+      "type": "number",
+      "unit": "USD",
+      "description": "Investor redemption cash at selected gate and post-sale post-fee NAV.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "ending_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "After sales, fee payment and redemption; at least reserve.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "remaining_investor_nav",
+      "type": "number",
+      "unit": "USD",
+      "description": "Aggregate net NAV belonging to units remaining after redemption.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "new_high_water_marks",
+      "type": "number_array",
+      "unit": "USD per fund unit",
+      "description": "Old series, new series; for remaining units.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "full_requested_redemptions_fundable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "True only if gate1 has a funded admissible sale plan."
+    }
+  ]
+}

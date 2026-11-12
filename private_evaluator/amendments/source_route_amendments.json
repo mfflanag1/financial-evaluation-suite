@@ -1,0 +1,48 @@
+{
+  "status": "offline adjudicated amendment; frozen v6 results preserved",
+  "routes": {
+    "c217": {
+      "expected_query_cost": [
+        [
+          "in_joint",
+          "in_query"
+        ]
+      ],
+      "expected_gross_payoff": [
+        [
+          "in_joint",
+          "in_actions",
+          "in_format"
+        ],
+        [
+          "in_joint",
+          "in_actions",
+          "in_query"
+        ]
+      ],
+      "optimal_net_value": [
+        [
+          "in_joint",
+          "in_actions",
+          "in_query"
+        ]
+      ],
+      "incremental_information_value": [
+        [
+          "in_joint",
+          "in_actions",
+          "in_query"
+        ]
+      ]
+    },
+    "c224": {
+      "transaction_cost": [
+        [
+          "c224_mechanics",
+          "c224_round{turn}"
+        ]
+      ]
+    }
+  },
+  "authored_field_routes": 8
+}

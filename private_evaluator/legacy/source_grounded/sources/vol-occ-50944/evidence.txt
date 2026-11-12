@@ -1,0 +1,58 @@
+#50944
+Date: August 29, 2022
+Subject: NatWest Group plc - Share Consolidation/Special Cash Distribution
+Option Symbol: NWG
+New Symbol: NWG1
+Date: 08/30/2022
+NatWest Group plc (NWG) has announced a 13-for-14 Share Consolidation and Special Cash Dividend
+whereby each NWG American Depositary Shares will be converted to the right to receive approximately
+0.9285714 (New) NatWest Group plc American Depositary Shares plus approximately $0.395846
+(approximately $0.405455 - $0.009609 dividend fee) Cash, per NWG ADS. Cash will be paid in lieu of
+fractional NWG shares. The Share Consolidation and Special Cash Dividend were approved by
+shareholders on August 25, 2022.
+On August 30, 2022 (New) NatWest Group plc American Depositary Shares will begin trading on the
+NYSE on a when issued basis, without the value of the Special Cash Dividend, under the trading symbol
+"NWG WI". NWG is anticipated to begin regular way trading on September 1, 2022.
+The Share Consolidation and Special Cash Dividend will become effective before the market open on
+August 30, 2022.
+Contract Adjustment
+Effective Date: August 30, 2022
+Option Symbol: NWG changes to NWG1
+Contract
+Multiplier: 1
+Strike Divisor: 1
+New Multiplier: 100 (e.g., for premium or strike dollar extensions 1.00 will equal $100)
+New Deliverable
+Per Contract: 1) 92 (New) NatWest Group plc (NWG) American Depositary Shares
+(subject to delayed settlement until regular way trading commences)
+2) Approximately $39.58 Cash (approximately $0.395846 x 100)
+3) Cash in lieu of approximately 0.857142 fractional NWG SharesNote: Once determined the cash in lieu of fractional share portion of the
+option deliverable remains fixed and does not vary with price changes of any
+security.
+CUSIP: NWG (New): 639057207
+Pricing
+Until the cash amounts are determined, the underlying price for NWG1 will be determined as follows:
+NWG1 = 0.92857142 (NWG) + 0.3958
+Delayed Settlement
+OCC will delay settlement of the NWG component and the cash portion of the NWG1 deliverable until regular
+way trading in NWG shares commences and until the cash amount is determined. Upon commencement of
+regular way trading and the determination of the cash amount, OCC will require Put exercisers and Call
+assignees to deliver the appropriate number of NWG shares and the appropriate cash amount, if any.
+Disclaimer
+This Information Memo provides an unofficial summary of the terms of corporate events affecting listed
+options or futures prepared for the convenience of market participants. OCC accepts no responsibility for
+the accuracy or completeness of the summary, particularly for information which may be relevant to
+investment decisions. Option or futures investors should independently ascertain and evaluate all
+information concerning this corporate event(s).
+The determination to adjust options and the nature of any adjustment is made by OCC pursuant to OCC
+By-Laws, Article VI, Sections 11 and 11A. The determination to adjust futures and the nature of any
+adjustment is made by OCC pursuant to OCC By-Laws, Article XII, Sections 3, 4, or 4A, as applicable. For
+both options and futures, each adjustment decision is made on a case by case basis. Adjustment
+decisions are based on information available at the time and are subject to change as additional
+information becomes available or if there are material changes to the terms of the corporate event(s)
+occasioning the adjustment.
+ALL CLEARING MEMBERS ARE REQUESTED TO IMMEDIATELY ADVISE ALL BRANCH OFFICES
+AND CORRESPONDENTS ON THE ABOVE.
+For questions regarding this memo, please email the Investor Education team at options@theocc.com.
+Clearing Member Firms of OCC may contact Member Services at 1-800-544-6091 or, within Canada, at 1-
+800-424-7320, or email memberservices@theocc.com.

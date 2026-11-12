@@ -1,0 +1,92 @@
+{
+  "id": "energy-001",
+  "case_group": "eia-pge-june2021-storage-reclassification",
+  "lane": "commodities_energy",
+  "status": "prototype",
+  "epistemic_type": "historical_reconstruction",
+  "information_cutoff": "2021-06-25T03:59:59Z",
+  "prompt": "Reconstruct the Lower 48 gas-storage episode known by the end of June 24, 2021 (New York time), using the two archived EIA Natural Gas Weekly Updates. This is historical accounting reconstruction, not a price forecast. Distinguish each article's Wednesday market-commentary week from the Friday storage survey endpoints. Treat reported working-stock changes as stock changes even where the prose calls them net injections; the explicit reclassification note determines implied physical flow. Use positive signs for increases/injections and negative signs for decreases/withdrawals. The stock interval is June 4 to June 18: two successive seven-day intervals. Apply the 51 Bcf working-to-base event once, in its stated storage week; the June 24 page repeats the earlier note.\n\nCalculate the requested Lower 48 and Pacific flows, two-week reconciliation and classification counterfactual. Working plus base gas is distinct from working gas alone. All stated integer Bcf source values are the precision available here.\n\nFor the explicitly SYNTHETIC conditional scenario, start with actual June 18 working stocks. Over the next 14 days, assume the baseline physical net injection equals the correctly reconstructed June 4–18 total. Incremental demand reduces injections one-for-one; no other supply, demand, capacity, measurement or classification changes occur. First calculate terminal working inventory with 7 Bcf/day incremental demand. Then solve the maximum constant incremental demand compatible with a terminal working-stock floor of 2,500 Bcf. These demand and floor inputs are hypothetical task assumptions, not EIA forecasts. Cite source operands; hypothetical assumptions need no source citation. Report numeric outputs to at least six decimals where non-integer, and use the specified category token for interpretation.",
+  "source_ids": [
+    "energy-gas-20210617",
+    "energy-gas-20210624"
+  ],
+  "output_fields": [
+    {
+      "id": "june11_working_stock_change",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Signed Lower 48 working-stock change during June 4–11, including accounting reclassification.",
+      "evidence_required": true
+    },
+    {
+      "id": "june11_implied_flow",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Lower 48 implied net physical injection during June 4–11, removing the non-flow reclassification.",
+      "evidence_required": true
+    },
+    {
+      "id": "june11_pacific_implied_flow",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Pacific implied net physical injection during June 4–11, removing the Pacific reclassification.",
+      "evidence_required": true
+    },
+    {
+      "id": "two_week_working_stock_change",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Lower 48 June 18 working stocks minus June 4 working stocks.",
+      "evidence_required": true
+    },
+    {
+      "id": "two_week_implied_flow",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Sum of implied physical injections over June 4–18, applying the June 11 reclassification exactly once.",
+      "evidence_required": true
+    },
+    {
+      "id": "two_week_average_implied_flow",
+      "type": "number",
+      "unit": "Bcf_per_day",
+      "description": "Daily average physical injection over the 14-day stock interval June 4–18.",
+      "evidence_required": true
+    },
+    {
+      "id": "no_reclassification_june18_working_stock",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Counterfactual June 18 working inventory if the 51 Bcf were still classified as working, with physical flows unchanged.",
+      "evidence_required": true
+    },
+    {
+      "id": "reclassification_effect_on_total_gas",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Effect of the accounting reclassification itself on total stored gas, working plus base; exclude concurrent physical flows.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_terminal_working_stock",
+      "type": "number",
+      "unit": "Bcf",
+      "description": "Synthetic 14-day scenario: start at actual June 18 working stocks, repeat the reconstructed two-week physical injection total, then subtract incremental demand of 7 Bcf/day; no new reclassification or other changes.",
+      "evidence_required": true
+    },
+    {
+      "id": "scenario_max_extra_demand",
+      "type": "number",
+      "unit": "Bcf_per_day",
+      "description": "Maximum constant incremental demand in that same synthetic 14-day scenario that leaves at least 2,500 Bcf working gas; use the unrounded daily threshold.",
+      "evidence_required": true
+    },
+    {
+      "id": "stock_flow_interpretation",
+      "type": "string",
+      "unit": "category",
+      "description": "Return working_stock_change_includes_nonflow_reclassification or working_stock_change_equals_physical_flow for the June 11 headline inventory movement.",
+      "evidence_required": true
+    }
+  ]
+}

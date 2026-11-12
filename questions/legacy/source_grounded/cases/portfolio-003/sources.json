@@ -1,0 +1,20 @@
+[
+  {
+    "id": "portfolio-eia-freeze-2021",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=47896",
+    "title": "February 2021 weather triggers largest monthly decline in U.S. natural gas production",
+    "publisher": "U.S. Energy Information Administration",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Primary-source bytes or rendered captures were retained by the recorded retrieval time and the observation bound 2026-10-04T18:14:08Z. Document date is not used as proof of historical first availability; this is a retrospective conditional-analysis pack.",
+    "text_sha256": "07bd84ba06a7084330de8a951f485aeac7801a6d9f808e12d4669b89070ccee9",
+    "available_by": "2026-10-04T18:14:08Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_html_with_selected_reproducible_excerpts.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

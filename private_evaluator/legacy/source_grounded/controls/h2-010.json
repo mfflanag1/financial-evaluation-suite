@@ -1,0 +1,891 @@
+[
+  {
+    "name": "separate_minimal_source_clauses",
+    "response": {
+      "case_id": "h2-010",
+      "answers": {
+        "delivery_days": {
+          "value": 365.0,
+          "evidence": []
+        },
+        "portfolio_proxy_ucap": {
+          "value": 152.0,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "annual_gross_capacity_revenue": {
+          "value": 21006012.8,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "locational_revenue_uplift": {
+          "value": 6030851.2,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "future_rating_vintage_revenue_change": {
+          "value": -529414.25,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "storage_break_even_capacity_price": {
+          "value": 278.61620617599255,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "actual_resource_revenue_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        },
+        "next_year_auction_prices_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Class-rating proxy is expressly synthetic and does not claim to reproduce resource-specific accreditation or awards.",
+        "No actual2026/27 auction price is inferred from the rating presentation. Price sensitivities and fixed costs are scenario assumptions."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All required values and financial premises supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "reuse_verified_upstream_support",
+    "response": {
+      "case_id": "h2-010",
+      "answers": {
+        "delivery_days": {
+          "value": 365.0,
+          "evidence": []
+        },
+        "portfolio_proxy_ucap": {
+          "value": 152.0,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "annual_gross_capacity_revenue": {
+          "value": 21006012.8,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ],
+          "support_refs": [
+            "delivery_days",
+            "portfolio_proxy_ucap"
+          ]
+        },
+        "locational_revenue_uplift": {
+          "value": 6030851.2,
+          "evidence": [],
+          "support_refs": [
+            "annual_gross_capacity_revenue",
+            "portfolio_proxy_ucap",
+            "delivery_days"
+          ]
+        },
+        "future_rating_vintage_revenue_change": {
+          "value": -529414.25,
+          "evidence": [],
+          "support_refs": [
+            "annual_gross_capacity_revenue"
+          ]
+        },
+        "storage_break_even_capacity_price": {
+          "value": 278.61620617599255,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ],
+          "support_refs": [
+            "delivery_days"
+          ]
+        },
+        "actual_resource_revenue_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        },
+        "next_year_auction_prices_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Class-rating proxy is expressly synthetic and does not claim to reproduce resource-specific accreditation or awards.",
+        "No actual2026/27 auction price is inferred from the rating presentation. Price sensitivities and fixed costs are scenario assumptions."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Explicit declared DAG reuses source-supported upstream proof; remaining independent premises still quoted.",
+    "expected_failures": {}
+  },
+  {
+    "name": "use_nameplate_as_ucap",
+    "response": {
+      "case_id": "h2-010",
+      "answers": {
+        "delivery_days": {
+          "value": 365.0,
+          "evidence": []
+        },
+        "portfolio_proxy_ucap": {
+          "value": 300,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "annual_gross_capacity_revenue": {
+          "value": 21006012.8,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "locational_revenue_uplift": {
+          "value": 6030851.2,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "future_rating_vintage_revenue_change": {
+          "value": -529414.25,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "storage_break_even_capacity_price": {
+          "value": 278.61620617599255,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "actual_resource_revenue_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        },
+        "next_year_auction_prices_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Class-rating proxy is expressly synthetic and does not claim to reproduce resource-specific accreditation or awards.",
+        "No actual2026/27 auction price is inferred from the rating presentation. Price sensitivities and fixed costs are scenario assumptions."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Ignores class-specific accredited-capacity reductions.",
+    "expected_failures": {
+      "portfolio_proxy_ucap": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "swap_regional_prices",
+    "response": {
+      "case_id": "h2-010",
+      "answers": {
+        "delivery_days": {
+          "value": 365.0,
+          "evidence": []
+        },
+        "portfolio_proxy_ucap": {
+          "value": 152.0,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "annual_gross_capacity_revenue": {
+          "value": 21530098.05,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "locational_revenue_uplift": {
+          "value": 6030851.2,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "future_rating_vintage_revenue_change": {
+          "value": -529414.25,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "storage_break_even_capacity_price": {
+          "value": 278.61620617599255,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "actual_resource_revenue_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        },
+        "next_year_auction_prices_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Class-rating proxy is expressly synthetic and does not claim to reproduce resource-specific accreditation or awards.",
+        "No actual2026/27 auction price is inferred from the rating presentation. Price sensitivities and fixed costs are scenario assumptions."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Applies BGE price to DOM gas and DOM price to BGE solar.",
+    "expected_failures": {
+      "annual_gross_capacity_revenue": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "future_column_is_current",
+    "response": {
+      "case_id": "h2-010",
+      "answers": {
+        "delivery_days": {
+          "value": 365.0,
+          "evidence": []
+        },
+        "portfolio_proxy_ucap": {
+          "value": 152.0,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "annual_gross_capacity_revenue": {
+          "value": 21006012.8,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "locational_revenue_uplift": {
+          "value": 6030851.2,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "future_rating_vintage_revenue_change": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "storage_break_even_capacity_price": {
+          "value": 278.61620617599255,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "actual_resource_revenue_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        },
+        "next_year_auction_prices_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Class-rating proxy is expressly synthetic and does not claim to reproduce resource-specific accreditation or awards.",
+        "No actual2026/27 auction price is inferred from the rating presentation. Price sensitivities and fixed costs are scenario assumptions."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Overwrites delivery-year ratings with the later column and loses the vintage comparison.",
+    "expected_failures": {
+      "future_rating_vintage_revenue_change": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "correct_value_missing_required_operand",
+    "response": {
+      "case_id": "h2-010",
+      "answers": {
+        "delivery_days": {
+          "value": 365.0,
+          "evidence": []
+        },
+        "portfolio_proxy_ucap": {
+          "value": 152.0,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            }
+          ]
+        },
+        "annual_gross_capacity_revenue": {
+          "value": 21006012.8,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "locational_revenue_uplift": {
+          "value": 6030851.2,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "future_rating_vintage_revenue_change": {
+          "value": -529414.25,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Gas CC 78% 79% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "Solar Tracking Panel 13% 14% -1"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "BRA Resource Clearing Prices ($/MW-day) Capacity Type BRA Rest of RTO BGE DOM"
+            },
+            {
+              "source_id": "h2b-pjm-auction",
+              "quote": "2025/26 $269.92 $466.35 $444.26"
+            }
+          ]
+        },
+        "storage_break_even_capacity_price": {
+          "value": 278.61620617599255,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            },
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "4-hr Storage 57% 59% -2"
+            }
+          ]
+        },
+        "actual_resource_revenue_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        },
+        "next_year_auction_prices_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2b-pjm-elcc",
+              "quote": "ELCC Class 2026/27 Rating 2025/26 Rating Change (%)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Class-rating proxy is expressly synthetic and does not claim to reproduce resource-specific accreditation or awards.",
+        "No actual2026/27 auction price is inferred from the rating presentation. Price sensitivities and fixed costs are scenario assumptions."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "A required source premise is omitted despite correct arithmetic.",
+    "expected_failures": {
+      "portfolio_proxy_ucap": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

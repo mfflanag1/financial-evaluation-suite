@@ -1,0 +1,297 @@
+{
+  "case_id": "h2-002",
+  "reference_solution": {
+    "growth": "Reported (56654/53803-1)*100; comparator (56654/56761-1)*100; difference is not an acquisition growth attribution.",
+    "income": "Pro-forma minus reported FY2024 income=9280-10320=-1040. FY2025 NI changes -140. Pretax declines 1134, tax declines994, offset=994/1134. Cash measure=26950-2422=24528. Consideration bridge=137+3=140."
+  },
+  "fields": [
+    {
+      "id": "reported_revenue_growth_2025_pct",
+      "expected": 5.298961024478189,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "Total revenue",
+              "56,654",
+              "53,803"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "revenue_change_vs_2024_splunk_proforma_pct",
+      "expected": -0.1885097161783619,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "Total revenue",
+              "56,654"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "as though the acquisition of Splunk had been completed as of the beginning of fiscal 2023",
+              "Total revenue",
+              "56,761"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "as though the acquisition of Splunk had been completed as of the beginning of fiscal 2023",
+              "Total revenue",
+              "56,761"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "reported_minus_proforma_comparator_growth_pp",
+      "expected": 5.487470740656551,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "Total revenue",
+              "56,654",
+              "53,803"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "as though the acquisition of Splunk had been completed as of the beginning of fiscal 2023",
+              "Total revenue",
+              "56,761"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "as though the acquisition of Splunk had been completed as of the beginning of fiscal 2023",
+              "Total revenue",
+              "56,761"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "fy2024_proforma_minus_reported_net_income",
+      "expected": -1040,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "Net income",
+              "9,280"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "Net income",
+              "9,280"
+            ]
+          }
+        ],
+        [
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "NET INCOME",
+              "10,320"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "reported_net_income_growth_2025_pct",
+      "expected": -1.3565891472868217,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "NET INCOME",
+              "10,180",
+              "10,320"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "pretax_decline_offset_by_tax_reduction_pct",
+      "expected": 87.65432098765432,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "INCOME BEFORE PROVISION FOR INCOME TAXES",
+              "11,100",
+              "12,234",
+              "Provision for income taxes",
+              "920",
+              "1,914"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "shareholder_cash_consideration_net_of_acquired_cash",
+      "expected": 24528,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "Cash paid for outstanding Splunk common stock",
+              "26,950",
+              "Cash and cash equivalents",
+              "2,422"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "Cash paid for outstanding Splunk common stock",
+              "26,950",
+              "Cash and cash equivalents",
+              "2,422"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "purchase_consideration_exceeds_common_share_cash",
+      "expected": 140,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "Cash paid for outstanding Splunk common stock",
+              "26,950",
+              "Fair value of converted Splunk equity awards attributable to pre-acquisition services",
+              "137",
+              "Settlement of pre-existing relationships",
+              "3",
+              "27,090"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "Cash paid for outstanding Splunk common stock",
+              "26,950",
+              "Fair value of converted Splunk equity awards attributable to pre-acquisition services",
+              "137",
+              "Settlement of pre-existing relationships",
+              "3",
+              "27,090"
+            ]
+          }
+        ]
+      ],
+      "atol": 1e-07,
+      "rtol": 0
+    },
+    {
+      "id": "comparator_identifies_organic_growth",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "includes only the impacts of the Splunk acquisition"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "summarizes the combined results of our operations and Splunk’s operations"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "proforma_net_income_is_realized_combined_income",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [],
+      "evidence_requirements": [
+        [
+          {
+            "source_id": "h2a-cisco-2024",
+            "anchors": [
+              "not indicative of the results of operations that would have been achieved"
+            ]
+          },
+          {
+            "source_id": "h2a-cisco-2025",
+            "anchors": [
+              "not indicative of the results of operations that would have been achieved"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+    "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+    "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+  ]
+}

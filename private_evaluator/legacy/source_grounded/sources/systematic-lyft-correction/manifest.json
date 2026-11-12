@@ -1,0 +1,26 @@
+{
+  "id": "systematic-lyft-correction",
+  "url": "https://d1io3yog0oux5.cloudfront.net/_fbad3f77b5f0797de92b54707c2a28f9/lyft/news/2024-02-13_CORRECTING_and_REPLACING_Lyft_Announces_Fourth_119.pdf",
+  "title": "Lyft CORRECTING and REPLACING FY2023 results release",
+  "publisher": "Lyft Inc. / Business Wire, issuer-hosted news PDF",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T18:15:18Z",
+  "availability_basis": "The primary-source capture was retained before the recorded UTC observation bound. Original first-public dissemination time is not established. Document dates and EDGAR acceptance timestamps are separate descriptive fields, not substitutes for public availability. The cases use a 2026 observed-source cutoff and explicitly synthetic replay arrival times where exact gating is required.",
+  "document_date": "2024-02-13",
+  "retrieved_at": "2026-10-04T18:15:18Z",
+  "redistribution_status": "Public primary source retained for local research. Issuer-document redistribution rights have not been assessed; not approved for public dataset redistribution.",
+  "raw_path": "sources/systematic-lyft-correction/evidence.txt",
+  "text_path": "sources/systematic-lyft-correction/evidence.txt",
+  "raw_sha256": "4392ea1a392aeac2c1eb02a75393f34028c8d9fafb983708d7066eef2e4d54e3",
+  "text_sha256": "4392ea1a392aeac2c1eb02a75393f34028c8d9fafb983708d7066eef2e4d54e3",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

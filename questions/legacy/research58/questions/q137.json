@@ -1,0 +1,61 @@
+{
+  "question_id": "q137",
+  "title": "Receivable financing, revised cash restrictions and a disposal",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Prepare a cash-quality and liquidity note. USD million throughout. Normalize operating FCF by removing factoring cash that is included in reported CFO, then deduct capex. The reserve is a required residual after paying debt. Do not add period FCF to the closing cash balance, and do not treat restricted cash as available. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "reported_cfo": 120,
+    "capex": 45,
+    "memo_factoring_in_cfo": 40,
+    "closing_cash": 90,
+    "restricted_cash": 20,
+    "debt_due": 50,
+    "minimum_cash": 25
+  },
+  "sources": [
+    {
+      "id": "q137_t1_1",
+      "text": "Synthetic packet. The management cash memorandum provisionally states that all listed factoring receipts are inside reported CFO. Closing cash is the balance after all historical cash-flow movements."
+    },
+    {
+      "id": "q137_t1_2",
+      "text": "Synthetic packet. The treasury policy ring-fences restricted balances and requires the minimum remaining cash after the supplied debt maturity. Operating normalization and balance-sheet funding are separate analyses."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "normalized_operating_fcf",
+      "type": "number",
+      "unit": "USD million",
+      "description": "CFO less capex and only factoring receipts included in CFO.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "usable_cash",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Closing unrestricted cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funding_gap",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Additional cash needed to meet debt due and reserve.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "obligation_and_reserve_funded",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether usable cash meets both uses."
+    }
+  ]
+}

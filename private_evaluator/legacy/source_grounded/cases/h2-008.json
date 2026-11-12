@@ -1,0 +1,93 @@
+{
+  "id": "h2-008",
+  "case_group": "jnj-kenvue-2023-final-book-and-odd-lot-entitlement",
+  "lane": "event_driven",
+  "status": "candidate",
+  "epistemic_type": "conditional_decision",
+  "information_cutoff": "2026-10-04T20:05:48Z",
+  "source_ids": [
+    "h2b-jnj-final-pdf",
+    "h2b-jnj-launch-pdf",
+    "h2b-jnj-ratio-pdf"
+  ],
+  "prompt": "Audit Johnson & Johnson's Kenvue split-off using its launch, final-ratio and final-results releases. Reconcile the non-odd-lot allocation using the FINAL SHARE COUNTS; keep that fraction distinct from acceptance over all tendered shares. Then value an eligible synthetic holder who owned exactly99 JNJ shares in total, validly tendered all of them and never withdrew. Its acquisition cost was $166 per JNJ share plus a fee of $1 per share ($99 total). Use a synthetic $23 Kenvue mark for the entire economic entitlement, including the fractional interest before the agent's cash conversion; do not assume that mark is the agent's actual sale price. Report whole delivered shares separately from the fractional interest and distinguish the marked economic profit from actual cash-in-lieu. A final counterfactual permits only the July24 launch release when deciding whether the final exchange ratio was already known. Keep current final-ratio information out of that counterfactual.\n\nUse the supplied historical documents as specified; this packet is a retrospective conditional analysis with observed 2026 source availability, not a claim of contemporaneous historical execution. Return typed outputs with supporting verbatim clauses; declared support_dependencies permit explicit support_refs to reuse previously justified answers. Synthetic inputs need no invented citation.",
+  "output_fields": [
+    {
+      "id": "nonodd_shares_accepted",
+      "type": "number",
+      "unit": "JNJ_shares",
+      "description": "Number of accepted shares attributable to holders subject to proration.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "nonodd_acceptance_fraction",
+      "type": "number",
+      "unit": "fraction",
+      "description": "Acceptance fraction inferred from the final share counts, rather than total-book acceptance.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "nonodd_shares_accepted"
+      ]
+    },
+    {
+      "id": "cap_minus_final_ratio",
+      "type": "number",
+      "unit": "KVUE_per_JNJ",
+      "description": "Launch upper limit minus final exchange ratio.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "oddlot_whole_kvue_shares",
+      "type": "number",
+      "unit": "KVUE_shares",
+      "description": "Whole Kenvue shares for the eligible synthetic99-share holder.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "oddlot_fractional_interest",
+      "type": "number",
+      "unit": "KVUE_shares",
+      "description": "Fractional Kenvue interest for that holder before the agent sells fractions.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "oddlot_whole_kvue_shares"
+      ]
+    },
+    {
+      "id": "oddlot_marked_economic_profit",
+      "type": "number",
+      "unit": "USD",
+      "description": "Economic entitlement marked at the supplied Kenvue price, less acquisition price and fee; not realized cash-in-lieu P&L.",
+      "evidence_required": true,
+      "score_dimension": "financial",
+      "support_dependencies": [
+        "oddlot_whole_kvue_shares",
+        "oddlot_fractional_interest"
+      ]
+    },
+    {
+      "id": "actual_fractional_cash_known",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Do these sources determine actual cash-in-lieu amount for this holder?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    },
+    {
+      "id": "launch_only_exact_ratio_known",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Using only the July24 launch terms, was the exact final ratio already determined?",
+      "evidence_required": true,
+      "score_dimension": "uncertainty",
+      "allowed_source_ids": [
+        "h2b-jnj-launch-pdf"
+      ]
+    }
+  ]
+}

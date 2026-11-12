@@ -1,0 +1,271 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "rp_book",
+            "title": "Opening holdings and executable depth"
+          },
+          {
+            "id": "rp_hedge",
+            "title": "Funding and hedge menu"
+          },
+          {
+            "id": "rp_limits",
+            "title": "Common policy under joint stress"
+          },
+          {
+            "id": "rp_cash",
+            "title": "Timeline and robust economic mandate"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "action": "<typed value>",
+            "early_cash": "<typed value>",
+            "implementation_cost": "<typed value>",
+            "next_best_objective": "<typed value>",
+            "objective": "<typed value>",
+            "scenario_cash": "<typed value>",
+            "scenario_losses": "<typed value>"
+          },
+          "evidence": {
+            "action": [
+              "<viewed supporting document ID>"
+            ],
+            "early_cash": [
+              "<viewed supporting document ID>"
+            ],
+            "implementation_cost": [
+              "<viewed supporting document ID>"
+            ],
+            "next_best_objective": [
+              "<viewed supporting document ID>"
+            ],
+            "objective": [
+              "<viewed supporting document ID>"
+            ],
+            "scenario_cash": [
+              "<viewed supporting document ID>"
+            ],
+            "scenario_losses": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c213",
+          "turn": 1
+        },
+        "inputs": {
+          "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+        },
+        "outputs": {
+          "action": {
+            "description": "Five integer quantities [final A,final B,final C,H,D].",
+            "type": "array"
+          },
+          "early_cash": {
+            "description": "Number, cash after the early checkpoint.",
+            "type": "number"
+          },
+          "implementation_cost": {
+            "description": "Number K, cash units.",
+            "type": "number"
+          },
+          "next_best_objective": {
+            "description": "Number, J of the next feasible action in the defined ordering.",
+            "type": "number"
+          },
+          "objective": {
+            "description": "Number, minimum J.",
+            "type": "number"
+          },
+          "scenario_cash": {
+            "description": "Two numbers, final unrestricted cash in scenario order1,2.",
+            "type": "array"
+          },
+          "scenario_losses": {
+            "description": "Two signed numbers [L1,L2].",
+            "type": "array"
+          }
+        },
+        "prompt": "Choose the globally optimal common repair and funding action under both joint stress scenarios. Respect executable depth, timing, all portfolio restrictions and scenario borrowing bases. Report its cash path, economic objective, and the next-best feasible objective under the documented ordering. Whole-unit action quantities encoded as JSON3 or3.0 are equivalent; fractional, Boolean and nonfinite action quantities are invalid.",
+        "question_id": "c213",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c213",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "rp_book",
+            "release_stage": 1,
+            "text": "Issuer order is [A,B,C]. Opening units are [7,6,4], each marked at10; cash20. Final positions must be integers0..8. One net trade per issuer; no shorting or round trips. A sale of s units realizes 10s minus 2*max(s-2,0). A buy of b units costs 10b plus b^2/2. Every nonzero issuer trade pays one ticket of1. All execution impact and all tickets are paid at the early checkpoint, so sale receipts at each settlement are booked at gross10 per unit; do not subtract impact twice.",
+            "title": "Opening holdings and executable depth"
+          },
+          {
+            "id": "rp_hedge",
+            "release_stage": 1,
+            "text": "Choose integer hedge units H in0..5 and integer funding units D in0..4. H costs premium H/2 and one ticket if H>0, posts refundable collateral2H at the early checkpoint, and releases that2H before final stress payments. D credits5D cash early, repays5D at final, and costs fee D/2 plus one ticket if D>0, paid early. Funding is secured by final A,C holdings: its principal must be no more than 2A+C in scenario1 and A+2C in scenario2. These are simultaneous borrowing-base requirements, not alternative facilities.",
+            "title": "Funding and hedge menu"
+          },
+          {
+            "id": "rp_limits",
+            "release_stage": 1,
+            "text": "Use one common [A,B,C,H,D] in both scenarios. Final A+B+C must be at least10; A+B at most11; |A-C| at most3. Sum of absolute issuer net trades plus H must be at most13. Scenario cash losses, possibly negative, are L1=5A+2B-C-6H and L2=-A+5B+3C-2H. Final stress cash payment is max(0,Ls); a negative loss is not a cash receipt. Do not probability-weight scenarios or choose different trades after learning the scenario.",
+            "title": "Common policy under joint stress"
+          },
+          {
+            "id": "rp_cash",
+            "release_stage": 1,
+            "text": "At the early checkpoint A-sale gross receipts arrive; all issuer purchases, all implementation cost, and hedge collateral are paid; funding credits arrive; redemption40 is paid. B,C-sale gross receipts arrive only afterward. Final hedge collateral is released, funding principal repaid, stress payment made, and operating charge3 paid. Cash must be nonnegative at both checkpoints in both scenarios. Within a checkpoint receipts can precede payments. Implementation cost K includes depth impact, buy impact, tickets, hedge premium and funding fee, excluding principal, collateral, redemption and operating charge. Minimize J=K+0.3*max(L1,L2)+0.2*(17-A-B-C). Break exact ties by lexicographically smallest [A,B,C,H,D]. Next-best objective means the second distinct feasible action in ascending (J,lexicographic action) order, even if tied.",
+            "title": "Timeline and robust economic mandate"
+          }
+        ],
+        "title": "Common repair under joint market and funding stress",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "rp_book",
+        "title": "Opening holdings and executable depth"
+      },
+      {
+        "id": "rp_hedge",
+        "title": "Funding and hedge menu"
+      },
+      {
+        "id": "rp_limits",
+        "title": "Common policy under joint stress"
+      },
+      {
+        "id": "rp_cash",
+        "title": "Timeline and robust economic mandate"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "action": "<typed value>",
+        "early_cash": "<typed value>",
+        "implementation_cost": "<typed value>",
+        "next_best_objective": "<typed value>",
+        "objective": "<typed value>",
+        "scenario_cash": "<typed value>",
+        "scenario_losses": "<typed value>"
+      },
+      "evidence": {
+        "action": [
+          "<viewed supporting document ID>"
+        ],
+        "early_cash": [
+          "<viewed supporting document ID>"
+        ],
+        "implementation_cost": [
+          "<viewed supporting document ID>"
+        ],
+        "next_best_objective": [
+          "<viewed supporting document ID>"
+        ],
+        "objective": [
+          "<viewed supporting document ID>"
+        ],
+        "scenario_cash": [
+          "<viewed supporting document ID>"
+        ],
+        "scenario_losses": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c213",
+      "turn": 1
+    },
+    "inputs": {
+      "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+    },
+    "outputs": {
+      "action": {
+        "description": "Five integer quantities [final A,final B,final C,H,D].",
+        "type": "array"
+      },
+      "early_cash": {
+        "description": "Number, cash after the early checkpoint.",
+        "type": "number"
+      },
+      "implementation_cost": {
+        "description": "Number K, cash units.",
+        "type": "number"
+      },
+      "next_best_objective": {
+        "description": "Number, J of the next feasible action in the defined ordering.",
+        "type": "number"
+      },
+      "objective": {
+        "description": "Number, minimum J.",
+        "type": "number"
+      },
+      "scenario_cash": {
+        "description": "Two numbers, final unrestricted cash in scenario order1,2.",
+        "type": "array"
+      },
+      "scenario_losses": {
+        "description": "Two signed numbers [L1,L2].",
+        "type": "array"
+      }
+    },
+    "prompt": "Choose the globally optimal common repair and funding action under both joint stress scenarios. Respect executable depth, timing, all portfolio restrictions and scenario borrowing bases. Report its cash path, economic objective, and the next-best feasible objective under the documented ordering. Whole-unit action quantities encoded as JSON3 or3.0 are equivalent; fractional, Boolean and nonfinite action quantities are invalid.",
+    "question_id": "c213",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c213",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "rp_book",
+        "release_stage": 1,
+        "text": "Issuer order is [A,B,C]. Opening units are [7,6,4], each marked at10; cash20. Final positions must be integers0..8. One net trade per issuer; no shorting or round trips. A sale of s units realizes 10s minus 2*max(s-2,0). A buy of b units costs 10b plus b^2/2. Every nonzero issuer trade pays one ticket of1. All execution impact and all tickets are paid at the early checkpoint, so sale receipts at each settlement are booked at gross10 per unit; do not subtract impact twice.",
+        "title": "Opening holdings and executable depth"
+      },
+      {
+        "id": "rp_hedge",
+        "release_stage": 1,
+        "text": "Choose integer hedge units H in0..5 and integer funding units D in0..4. H costs premium H/2 and one ticket if H>0, posts refundable collateral2H at the early checkpoint, and releases that2H before final stress payments. D credits5D cash early, repays5D at final, and costs fee D/2 plus one ticket if D>0, paid early. Funding is secured by final A,C holdings: its principal must be no more than 2A+C in scenario1 and A+2C in scenario2. These are simultaneous borrowing-base requirements, not alternative facilities.",
+        "title": "Funding and hedge menu"
+      },
+      {
+        "id": "rp_limits",
+        "release_stage": 1,
+        "text": "Use one common [A,B,C,H,D] in both scenarios. Final A+B+C must be at least10; A+B at most11; |A-C| at most3. Sum of absolute issuer net trades plus H must be at most13. Scenario cash losses, possibly negative, are L1=5A+2B-C-6H and L2=-A+5B+3C-2H. Final stress cash payment is max(0,Ls); a negative loss is not a cash receipt. Do not probability-weight scenarios or choose different trades after learning the scenario.",
+        "title": "Common policy under joint stress"
+      },
+      {
+        "id": "rp_cash",
+        "release_stage": 1,
+        "text": "At the early checkpoint A-sale gross receipts arrive; all issuer purchases, all implementation cost, and hedge collateral are paid; funding credits arrive; redemption40 is paid. B,C-sale gross receipts arrive only afterward. Final hedge collateral is released, funding principal repaid, stress payment made, and operating charge3 paid. Cash must be nonnegative at both checkpoints in both scenarios. Within a checkpoint receipts can precede payments. Implementation cost K includes depth impact, buy impact, tickets, hedge premium and funding fee, excluding principal, collateral, redemption and operating charge. Minimize J=K+0.3*max(L1,L2)+0.2*(17-A-B-C). Break exact ties by lexicographically smallest [A,B,C,H,D]. Next-best objective means the second distinct feasible action in ascending (J,lexicographic action) order, even if tied.",
+        "title": "Timeline and robust economic mandate"
+      }
+    ],
+    "title": "Common repair under joint market and funding stress",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

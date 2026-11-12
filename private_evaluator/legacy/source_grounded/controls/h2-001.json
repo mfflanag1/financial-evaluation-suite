@@ -1,0 +1,4517 @@
+[
+  {
+    "name": "concise_reference",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "contextual_primary_pages",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Cash Flow\n• Q4'23 cash flow from operations of $2.6 billion and free cash flow of $2.5 billion; FY'23 cash flow from\n  operations of $4.8 billion and free cash flow of $4.2 billion.\n                                    1\n• Adjusted free cash flow of $0.8 billion in Q4'23 and $4.6 billion in FY'23, which excludes the net impact of\n  originating European buy now, pay later (BNPL) receivables as held for sale (HFS) and the subsequent sale of\n  these receivables.\n\n\nBalance Sheet and Liquidity\n• Cash, cash equivalents, and investments totaled $17.3 billion as of December 31, 2023.\n• Debt totaled $11.3 billion as of December 31, 2023.\n• Returned $5.0 billion to stockholders in FY'23 by repurchasing approximately 74 million shares of common\n  stock, including 10 million shares for $0.6 billion in Q4'23.\n\n\n\n\nFinancial Guidance\nQ1'24 Guidance\n• Net revenues expected to increase approximately 6.5% and 7% FXN.\n• GAAP earnings per diluted share expected to increase mid-single digits compared to $0.70 in the prior year\n  period.\n     ◦ In the first quarter of 2023, GAAP EPS included a positive impact of approximately $0.03 from PayPal’s\n       strategic investment portfolio.\n• Non-GAAP earnings per diluted share expected to increase mid-single digits compared to $1.17 in the prior\n  year period.\n     ◦ Estimated non-GAAP amounts for the three months ending March 31, 2024 reflect adjustments of\n       approximately $600 million, including estimated stock-based compensation expense and related payroll\n       taxes of approximately $400 million and an estimated restructuring charge of approximately $120 million.\nFY'24 Guidance\n• GAAP earnings per diluted share expected to be approximately $3.60, compared to $3.84 in the prior year.\n     ◦ In 2023, GAAP EPS included positive impacts of approximately $0.24 from the gain on sale of Happy\n       Returns and approximately $0.14 from PayPal’s strategic investment portfolio.\n• Non-GAAP earnings per diluted share expected to be in line with $5.10 in the prior year.\n     ◦ Estimated non-GAAP amounts for the twelve months ending December 31, 2024 reflect adjustments of\n       approximately $1.8 billion, including estimated stock-based compensation expense and related payroll\n       taxes of approximately $1.4 billion and an estimated restructuring charge of approximately $120 million.\nPlease see \"Non-GAAP Financial Measures\" and \"Non-GAAP Measures of Financial Performance\" for important\nadditional information.\n\n\n\n\n      For a reconciliation of non-GAAP financial measures to the most directly comparable GAAP financial measures, please see the section\n      titled “Non-GAAP Measures of Financial Performance” and the subsequent tables at the end of this press release.                       Q4 & FY 2023 Results   2\n      1. See page 14 of this press release for reconciliations of operating cash flow to free cash flow and adjusted free cash flow.\n"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Q4'23 Financial Results\n                                                                                                                                               YoY              FXN\nPresented in millions, except per share data and percentages                             Q4 2023                   Q4 2022\n                                                                                                                                              Growth         YoY Growth\n Total payment volume                                                                    $409,832                  $357,378                    15%              13%\nGAAP\n  Net revenues                                                                             $8,026                    $7,383                     9%\n  Transaction margin dollars                                                               $3,672                    $3,671                     —%\n  Operating income                                                                         $1,728                    $1,244                     39%\n  Operating margin                                                                         21.5%                     16.8%                    468bps\n  Effective tax rate                                                                       21.8%                     17.0%                     4.8pts\n  Net income (loss)                                                                        $1,402                     $921                      52%\n  Earnings per diluted share                                                                $1.29                     $0.81                     61%\n  Net cash provided by operating activities                                                $2,614                    $1,591                     64%\nNon-GAAP\n  Net revenues                                                                             $8,026                    $7,383                     9%                9%\n  Transaction margin dollars                                                               $3,672                    $3,671                    —%\n  Operating income                                                                         $1,872                    $1,693                    11%\n  Operating margin                                                                         23.3%                     22.9%                    39bps\n  Effective tax rate                                                                        17.4%                    16.6%                    0.8pts\n  Net income                                                                               $1,604                    $1,417                    13%\n  Earnings per diluted share                                                                $1.48                     $1.24                    19%\n  Free cash flow                                                                           $2,469                    $1,433                    72%\n                          1\n  Adjusted free cash flow                                                                    $774                    $1,433                   (46%)\n\n\nFY'23 Financial Results\n                                                                                                                                               YoY              FXN\nPresented in millions, except per share data and percentages                              FY 2023                  FY 2022\n                                                                                                                                              Growth         YoY Growth\n Total payment volume                                                                   $1,528,579                $1,357,122                   13%               12%\nGAAP\n  Net revenues                                                                             $29,771                  $27,518                      8%\n  Transaction margin dollars                                                               $13,704                  $13,773                     (1%)\n  Operating income                                                                         $5,028                   $3,837                      31%\n  Operating margin                                                                          16.9%                    13.9%                    295bps\n  Effective tax rate                                                                        21.5%                    28.1%                    (6.6pts)\n  Net income (loss)                                                                        $4,246                   $2,419                      76%\n  Earnings per diluted share                                                                $3.84                    $2.09                      84%\n  Net cash provided by operating activities                                                $4,843                   $5,813                     (17%)\nNon-GAAP\n  Net revenues                                                                             $29,771                  $27,518                      8%               9%\n  Transaction margin dollars                                                               $13,704                  $13,773                     (1%)\n  Operating income                                                                         $6,679                   $5,870                      14%\n  Operating margin                                                                          22.4%                    21.3%                    110bps\n  Effective tax rate                                                                        17.7%                    16.1%                     1.6pts\n  Net income                                                                               $5,646                   $4,782                      18%\n  Earnings per diluted share                                                                $5.10                    $4.13                      24%\n  Free cash flow                                                                           $4,220                   $5,107                     (17%)\n                          1\n  Adjusted free cash flow                                                                  $4,554                   $5,107                     (11%)\n\n        For a reconciliation of non-GAAP financial measures to the most directly comparable GAAP financial measures, please see the section\n        titled “Non-GAAP Measures of Financial Performance” and the subsequent tables at the end of this press release.                          Q4 & FY 2023 Results   3\n        1. See page 14 of this press release for reconciliations of operating cash flow to free cash flow and adjusted free cash flow.\n"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "                                                 PayPal Holdings, Inc.\n                           Unaudited Condensed Consolidated Statements of Cash Flows\n                                                                               Three Months Ended                       Year Ended\n                                                                                  December 31,                         December 31,\n                                                                               2023             2022              2023               2022\n                                                                                                    (In millions)\nCash flows from operating activities:\n     Net income (loss)                                                     $     1,402      $       921       $      4,246       $     2,419\n     Adjustments to reconcile net income (loss) to net cash provided\n     by operating activities:\n           Transaction and credit losses                                           396              388               1,682            1,572\n           Depreciation and amortization                                           263              326               1,072            1,317\n           Stock-based compensation                                                388              294               1,475            1,261\n           Deferred income taxes                                                  (229)            (273)               (668)             (811)\n           Net (gains) losses on strategic investments                               4               141                (201)           304\n           Gain on divestiture of business, excluding transaction costs           (356)               —                (356)               —\n           Accretion of discounts on investments, net of amortization of\n                                                                                  (102)                (42)            (367)                (70)\n           premiums\n           Adjustments to loans and interest receivable, held for sale               4               —                   53               —\n           Other                                                                  (102)            (267)               (104)             275\n       Originations of loans receivable, held for sale                          (5,765)                 —           (11,470)                —\n       Proceeds from repayments and sales of loans receivable,\n                                                                                  7,119                 —            10,795                 —\n       originally classified as held for sale\n       Changes in assets and liabilities:\n            Accounts receivable                                                     (79)            (74)                (114)            (163)\n            Accounts payable                                                         13              20                    7              (35)\n            Other assets and liabilities                                          (342)             157              (1,207)            (256)\nNet cash provided by operating activities                                        2,614            1,591              4,843             5,813\nCash flows from investing activities:\n      Purchases of property and equipment                                         (145)            (158)               (623)            (706)\n      Proceeds from sales of property and equipment                                  1               —                   45                5\n     Purchases and originations of loans receivable                             (5,396)          (9,003)            (25,198)         (28,170)\n      Proceeds from repayments and sales of loans receivable,\n                                                                                 5,341            7,739             26,660           24,903\n      originally classified as held for investment\n      Purchases of investments                                                  (7,005)          (3,764)            (21,980)         (20,219)\n      Maturities and sales of investments                                         8,185           6,641              24,295           23,411\n      Proceeds from divestiture of business, net of cash divested                   466               —                 466                —\n      Funds receivable                                                           (1,927)         (1,635)             (2,943)          (2,720)\n      Collateral posted related to derivative instruments, net                       (64)            (16)                (56)             (19)\n      Other investing activities                                                      10             157                  86             187\nNet cash (used in) provided by investing activities                                (534)            (39)                752           (3,328)\nCash flows from financing activities:\n      Proceeds from issuance of common stock                                        45                57                  127            143\n      Purchases of treasury stock                                                (607)           (1,010)             (5,002)          (4,199)\n      Tax withholdings related to net share settlements of equity awards           (32)              (15)               (257)           (336)\n      Borrowings under financing arrangements                                     699               129                1,528           3,475\n      Repayments under financing arrangements                                      (111)              —               (1,053)         (1,686)\n      Funds payable and amounts due to customers                                3,138            2,064                 1,861           1,405\n      Collateral received related to derivative instruments, net                  (132)           (443)                  (197)            (6)\n      Other financing activities                                                    —                 —                    —               1\nNet cash provided by (used in) financing activities                             3,000               782              (2,993)          (1,203)\n\n\n\n\n                                                                                                              Q4 & FY 2023 Results           8\n"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "                                                            PayPal Holdings, Inc.\n                                             Non-GAAP Measures of Financial Performance\n\n\n\nTo supplement the company’s condensed consolidated financial statements presented in accordance with generally accepted accounting\nprinciples, or GAAP, the company uses non-GAAP measures of certain components of financial performance. These non-GAAP measures include\nnon-GAAP net income, non-GAAP earnings per diluted share, non-GAAP operating income, non-GAAP operating margin, non-GAAP effective tax\nrate, free cash flow, and adjusted free cash flow.\nThese non-GAAP measures are not in accordance with, or an alternative to, measures prepared in accordance with GAAP and may be different\nfrom non-GAAP measures used by other companies. In addition, these non-GAAP measures are not based on any comprehensive set of\naccounting rules or principles. Non-GAAP measures have limitations in that they do not reflect all of the amounts associated with the company’s\nresults of operations as determined in accordance with GAAP. These measures should only be used to evaluate the company’s results of\noperations in conjunction with the corresponding GAAP measures.\nReconciliation of all non-GAAP measures to the most directly comparable GAAP measures can be found in the subsequent tables included in this\npress release.\nThese non-GAAP measures are provided to enhance investors’ overall understanding of the company’s current financial performance and its\nprospects for the future. Specifically, the company believes the non-GAAP measures provide useful information to both management and\ninvestors by excluding certain expenses, gains and losses, as the case may be, that may not be indicative of its core operating results and\nbusiness outlook. In addition, because the company has historically reported certain non-GAAP results to investors, the company believes that\nthe inclusion of non-GAAP measures provides consistency in the company’s financial reporting.\nFor its internal budgeting process, and as discussed further below, the company’s management uses financial measures that do not include\nstock-based compensation expense, employer payroll taxes on stock-based compensation, amortization or impairment of acquired intangible\nassets, impairment of goodwill, restructuring-related charges, certain other gains, losses, benefits, or charges that are not indicative of the\ncompany’s core operating results, and the income taxes associated with the foregoing. In addition to the corresponding GAAP measures, the\ncompany’s management also uses the foregoing non-GAAP measures in reviewing the financial results of the company.\nThe company excludes the following items from non-GAAP net income, non-GAAP earnings per diluted share, non-GAAP operating income,\nnon-GAAP operating margin, and non-GAAP effective tax rate:\n      Stock-based compensation expense and related employer payroll taxes. This consists of expenses for equity awards under our equity\n      incentive plans. We exclude stock-based compensation expense from our non-GAAP measures primarily because they are non-cash\n      expenses. The related employer payroll taxes are dependent on our stock price and the timing and size of exercises and vesting of equity\n      awards, over which management has limited to no control, and as such management does not believe it correlates to the operation of our\n      business.\n      Amortization or impairment of acquired intangible assets, impairment of goodwill, and transaction expenses from the acquisition or\n      disposal of a business. We incur amortization or impairment of acquired intangible assets and goodwill in connection with acquisitions and\n      may incur significant gains or losses or transactional expenses from the acquisition or disposal of a business and therefore exclude these\n      amounts from our non-GAAP measures. We exclude these items because management does not believe they are reflective of our ongoing\n      operating results.\n      Restructuring. These consist of expenses for employee severance and other exit and disposal costs. The company excludes significant\n      restructuring charges primarily because management does not believe they are reflective of ongoing operating results.\n      Gains and losses on strategic investments. The gains and losses we record on our strategic investments are tied to the performance of the\n      companies that we invest in. We exclude such gains and losses in full because the operations of the investee and the related gains and\n      losses are not indicative of our ongoing operating results.\n      Certain other significant gains, losses, benefits, or charges that are not indicative of the company’s core operating results. These are\n      significant gains, losses, benefits, or charges during a period that are the result of isolated events or transactions which have not occurred\n      frequently in the past and are not expected to occur regularly in the future. The company excludes these amounts from its non-GAAP\n      results because management does not believe they are indicative of our current or ongoing operating results.\n      Tax effect of non-GAAP adjustments. This adjustment is made to present stock-based compensation and the other amounts described\n      above on an after-tax basis consistent with the presentation of non-GAAP net income.\nFree cash flow represents operating cash flows less purchases of property and equipment. The company uses free cash flow as a liquidity\nmeasure that provides useful information to management and investors about the amount of cash generated by the business after the purchases\nof property, buildings, and equipment, which can then be used to, among other things, invest in the company’s business, make strategic\nacquisitions and investments, and repurchase stock. A limitation of the utility of free cash flow as a measure of financial performance is that it\ndoes not represent the total increase or decrease in the company’s cash balance for the period.\nIn addition to the non-GAAP measures discussed above, the company also analyzes certain measures, including net revenues and operating\nexpenses, on an FX-neutral basis to better measure the comparability of operating results between periods. The company believes that changes\nin foreign currency exchange rates are not indicative of the company’s operations and evaluating growth in net revenues and operating expenses\non an FX-neutral basis provides an additional meaningful and comparable assessment of these measures to both management and investors. FX-\nneutral results are calculated by translating the current period’s local currency results with the prior period’s exchange rate. FX-neutral growth\nrates are calculated by comparing the current period’s FX-neutral results by the prior period’s results, excluding the impact from hedging\nactivities.\n\n\n\n\n                                                                                                                       Q4 & FY 2023 Results        12\n"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "                                                        PayPal Holdings, Inc.\n                       Reconciliation of GAAP Operating Income to Non-GAAP Operating Income and\n                                  GAAP Operating Margin to Non-GAAP Operating Margin\n                                                                       Three Months Ended December 31,                Year Ended December 31,\n                                                                           2023                  2022                 2023               2022\n                                                                                             (In millions, except percentages)\n                                                                                                        (unaudited)\n GAAP net revenues                                                    $      8,026       $         7,383       $       29,771       $    27,518\n\n GAAP operating income                                                       1,728                 1,244               5,028              3,837\n      Stock-based compensation expense and related\n                                                                               404                  308                 1,558             1,355\n      employer payroll taxes\n      Amortization of acquired intangible assets                                  54                 116                  227               471\n      Restructuring                                                                2                    8                 122               122\n             (1),(2)\n      Other                                                                   (316)                     17               (256)                  85\n         Total non-GAAP operating income adjustments                           144                  449                 1,651             2,033\n Non-GAAP operating income                                            $      1,872       $         1,693       $        6,679       $     5,870\n\n GAAP operating margin                                                            22 %                  17 %                 17 %               14 %\n Non-GAAP operating margin                                                        23 %                  23 %                 22 %               21 %\n(1)\n    The three months ended December 31, 2023 primarily include $339 million in pre-tax gain, net of transaction costs, related to the sale\nof Happy Returns and $21 million in fees related to credit externalization. Additionally, the year ended December 31, 2023 primarily\nincludes $61 million in asset impairment charges for right-of-use lease assets and related leasehold improvements in conjunction with\nexiting certain leased properties.\n(2)\n    The three months and year ended December 31, 2022 primarily include $17 million and $81 million, respectively in asset impairment\ncharges for right-of-use lease assets and related leasehold improvements in conjunction with exiting certain leased properties.\n\nReconciliation of GAAP Net Income (Loss) to Non-GAAP Net Income, GAAP Diluted EPS to Non-GAAP Diluted EPS, and\n                              GAAP Effective Tax Rate to Non-GAAP Effective Tax Rate\n                                                                       Three Months Ended December 31,                Year Ended December 31,\n                                                                           2023                  2022                 2023               2022\n                                                                                  (In millions, except per share data and percentages)\n                                                                                                        (unaudited)\n GAAP income before income taxes                                      $      1,793       $          1,110      $        5,411       $     3,366\n GAAP income tax expense                                                       391                   189                1,165               947\n GAAP net income (loss)                                                      1,402                   921               4,246              2,419\n Non-GAAP adjustments to net income (loss):\n   Non-GAAP operating income adjustments (see table\n   above)                                                                      144                  449                 1,651             2,033\n      Net (gains) losses on strategic investments                                  4                  141                (201)             304\n             (1)\n      Other                                                                       21                  (21)                   39             410\n      Tax effect of non-GAAP adjustments                                          33                 (73)                 (89)             (384)\n Non-GAAP net income                                                  $      1,604       $          1,417      $       5,646        $     4,782\n\n Diluted net income (loss) per share:\n      GAAP                                                            $        1.29      $          0.81       $         3.84       $      2.09\n      Non-GAAP                                                        $        1.48      $          1.24       $         5.10       $      4.13\n Shares used in GAAP diluted share calculation                               1,084                 1,144                1,107              1,158\n Shares used in non-GAAP diluted share calculation                           1,084                 1,144                1,107              1,158\n\n GAAP effective tax rate                                                          22 %                  17 %                 22 %               28 %\n Tax effect of non-GAAP adjustments to net income (loss)                          (5)%                  —%                   (4)%            (12)%\n Non-GAAP effective tax rate                                                      17 %                  17 %                 18 %               16 %\n(1)\n  The three months and years ended December 31, 2023 and 2022 consist primarily of tax expense (benefit) related to intra-group transfer\nof assets.\n\n\n\n                                                                                                                         Q4 & FY 2023 Results          13\n"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "                                               PayPal Holdings, Inc.\n                 Reconciliation of Operating Cash Flow to Free Cash Flow and Adjusted Free Cash Flow\n\n\n                                                            Three Months Ended December 31,           Year Ended December 31,\n\n                                                                2023               2022               2023               2022\n                                                                                   (In millions/unaudited)\nNet cash provided by operating activities                   $       2,614      $       1,591      $      4,843       $      5,813\n  Less: Purchases of property and equipment                            (145)              (158)              (623)              (706)\nFree cash flow                                                     2,469               1,433             4,220              5,107\nNet impact of European BNPL receivables originated as HFS\nand the subsequent sale of receivables                             (1,695)                  —                334                  —\nAdjusted free cash flow                                     $          774     $       1,433      $      4,554       $      5,107\n\n\n\n\n                                                                                                         Q4 & FY 2023 Results           14\n"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Cash Flow\n• 4Q'24 cash flow from operations of $2.4 billion and free cash flow of $2.2 billion; FY'24 cash flow from operations of $7.5 billion\n  and free cash flow of $6.8 billion.\n\n• Adjusted free cash flow of $2.1 billion in 4Q'24 and $6.6 billion in FY'24, which excludes the net timing impact between originating\n  European buy now, pay later (\"BNPL\") receivables as held for sale and the subsequent sale of these receivables.\n\nBalance Sheet and Liquidity\n• Cash, cash equivalents, and investments totaled $15.4 billion as of December 31, 2024.\n\n• Debt totaled $11.1 billion as of December 31, 2024.\n\n• Returned $1.2 billion to stockholders by repurchasing approximately 15 million shares of common stock in 4Q'24.\n    ◦ For full year 2024, returned $6.0 billion to stockholders by repurchasing approximately 92 million shares of common stock.\n\n• Announced today that PayPal’s Board of Directors has authorized a new $15 billion stock repurchase program. This new repurchase\n  authorization is in addition to the Company’s June 2022 stock repurchase program, which had $4.86 billion remaining authorization\n  as of December 31, 2024.\n—————————————————————————————————————————————\nFinancial Guidance\n    Presented in millions, except per share data and\n    percentages                                                         February 2025 Guidance                                             Prior year period\n    1Q'25\n        GAAP EPS                                                                 $1.11 - $1.13                                                  $0.83\n        Non-GAAP EPS1                                                            $1.15 - $1.17                                                  $1.08\n    FY'25\n        GAAP EPS2                                                                $4.80 - $4.95                                                  $3.99\n                                3\n        Non-GAAP EPS                                                             $4.95 - $5.10                                                  $4.65\n\nPlease see \"Non-GAAP Financial Measures\" and \"Non-GAAP Measures of Financial Performance\" for reconciliations of non-GAAP\nfinancial measures to the most directly comparable GAAP financial measures and important additional information.\n\n\n\n\n             1. Estimated non-GAAP amounts for the three months ending March 31, 2025 reflect adjustments of approximately $50 million.\n             2. FY'24 GAAP EPS included a negative impact of ~$0.23 from PayPal’s strategic investment portfolio.\n             3. Estimated non-GAAP amounts for the full year ending December 31, 2025 reflect adjustments of approximately $200 million.         4Q & FY 2024 Results   2\n"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4Q'24 Financial Results\n                                                                                          YoY                 FXN\n  Presented in millions, except per share data and percentages    4Q'24       4Q'23\n                                                                                         Growth            YoY Growth\n  Total payment volume                                           $437,836    $409,832      7%                  7%\n  GAAP\n    Net revenues                                                  $8,366      $8,026         4%\n    Transaction margin dollars                                    $3,935      $3,672         7%\n    Operating income                                              $1,441      $1,728       (17%)\n    Operating margin                                              17.2%       21.5%      (431bps)\n    Effective tax rate                                            20.5%       21.8%       (1.3pts)\n    Net income (loss)                                             $1,121      $1,402       (20%)\n    Earnings per diluted share                                     $1.11       $1.29       (15%)\n    Net cash provided by operating activities                     $2,394      $2,614        (8%)\n  Non-GAAP\n    Net revenues                                                  $8,366      $8,026        4%                  4%\n    Transaction margin dollars                                    $3,935      $3,672        7%\n    Operating income                                              $1,502      $1,468        2%\n    Operating margin                                              18.0%       18.3%      (34bps)\n    Effective tax rate                                            21.0%       19.8%       1.2pts\n    Net income                                                    $1,209      $1,233       (2%)\n    Earnings per diluted share                                     $1.19       $1.14        5%\n    Free cash flow                                                $2,191      $2,469      (11%)\n    Adjusted free cash flow                                       $2,098       $774       171%\n\nFY'24 Financial Results\n                                                                                          YoY                 FXN\n  Presented in millions, except per share data and percentages    FY'24       FY'23\n                                                                                         Growth            YoY Growth\n  Total payment volume                                           1,681,150   1,528,579    10%                 10%\n  GAAP\n    Net revenues                                                 $31,797     $29,771        7%\n    Transaction margin dollars                                   $14,658     $13,704        7%\n    Operating income                                              $5,325      $5,028        6%\n    Operating margin                                              16.7%       16.9%      (14bps)\n    Effective tax rate                                            22.2%       21.5%       0.7pts\n    Net income (loss)                                             $4,147      $4,246       (2%)\n    Earnings per diluted share                                     $3.99       $3.84        4%\n    Net cash provided by operating activities                     $7,450      $4,843       54%\n  Non-GAAP\n    Net revenues                                                 $31,797     $29,771       7%                    7%\n    Transaction margin dollars                                   $14,658     $13,704       7%\n    Operating income                                              $5,838      $5,121      14%\n    Operating margin                                              18.4%       17.2%      116bps\n    Effective tax rate                                            21.1%       20.0%      1.0pts\n    Net income                                                    $4,835      $4,240      14%\n    Earnings per diluted share                                     $4.65       $3.83      21%\n    Free cash flow                                                $6,767      $4,220      60%\n    Adjusted free cash flow                                       $6,634      $4,554      46%\n\n\n\n\n                                                                                                     4Q & FY 2024 Results   3\n"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "                                                        PayPal Holdings, Inc.\n                          Reconciliation of GAAP Operating Income to Non-GAAP Operating Income and\n                                    GAAP Operating Margin to Non-GAAP Operating Margin\n\n                                                                       Three Months Ended December 31,               Year Ended December 31,\n                                                                          2024               2023(1)                 2024              2023(1)\n                                                                                            (In millions, except percentages)\n                                                                                                       (unaudited)\n  GAAP net revenues                                                $        8,366       $        8,026        $       31,797       $    29,771\n\n  GAAP operating income                                                     1,441                1,728                 5,325              5,028\n    Amortization of acquired intangible assets                                 48                   54                   207                227\n    Restructuring(2)                                                           13                    4                   306                180\n    Other(3)                                                                   —                  (318)                   —                (314)\n       Total non-GAAP operating income adjustments                             61                 (260)                  513                 93\n  Non-GAAP operating income                                        $        1,502       $        1,468        $        5,838       $      5,121\n\n  GAAP operating margin                                                          17 %                  22 %                 17 %                 17 %\n  Non-GAAP operating margin                                                      18 %                  18 %                 18 %                 17 %\n(1)\n    As announced on February 7, 2024, the Company’s non-GAAP results now include the impact of stock-based compensation expense and\nrelated employer payroll taxes. Prior period non-GAAP results have been recast to reflect this change.\n(2)\n    Beginning in 2024, restructuring includes any stock-based compensation associated with the restructuring activities. The three months\nand year ended December 31, 2024 include $12 million and $100 million of stock-based compensation expense. The year ended\nDecember 31, 2023 primarily includes $61 million in asset impairment charges for right-of-use lease assets and related leasehold\nimprovements in conjunction with exiting certain leased properties.\n(3)\n    The three months and year ended December 31, 2023 primarily includes $339 million in pre-tax gain, net of transaction costs, related to\nthe sale of Happy Returns and $21 million in fees related to credit externalization.\n\n\n\n\n                                                                                                                                   4Q & FY 2024 Results   13\n"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "                                                        PayPal Holdings, Inc.\n      Reconciliation of GAAP Net Income (Loss) to Non-GAAP Net Income, GAAP Diluted EPS to Non-GAAP Diluted EPS, and\n                                    GAAP Effective Tax Rate to Non-GAAP Effective Tax Rate\n\n                                                                    Three Months Ended December 31,                   Year Ended December 31,\n                                                                       2024                 2023(1)                   2024              2023(1)\n\n                                                                                 (In millions, except per share data and percentages)\n                                                                                                       (unaudited)\n  GAAP income before income taxes                               $        1,410        $        1,793          $         5,329       $      5,411\n  GAAP income tax expense                                                  289                   391                    1,182              1,165\n  GAAP net income (loss)                                                 1,121                 1,402                    4,147              4,246\n  Non-GAAP adjustments to net income (loss):\n    Non-GAAP operating income adjustments (see table above)                 61                  (260)                     513                 93\n    Net (gains) losses on strategic investments                             59                     4                      285               (201)\n    Other(2)                                                                —                     21                       31                 39\n    Tax effect of non-GAAP adjustments                                     (32)                   66                     (141)                63\n  Non-GAAP net income                                           $        1,209        $        1,233          $         4,835       $      4,240\n\n  Diluted net income (loss) per share:\n   GAAP                                                         $         1.11        $         1.29          $          3.99       $       3.84\n   Non-GAAP                                                     $         1.19        $         1.14          $          4.65       $       3.83\n  Shares used in GAAP diluted share calculation                          1,014                 1,084                    1,039              1,107\n  Shares used in non-GAAP diluted share calculation                      1,014                 1,084                    1,039              1,107\n\n  GAAP effective tax rate                                                     20 %                    22 %                   22 %                 22 %\n  Tax effect of non-GAAP adjustments to net income (loss)                      1%                     (2)%                   (1)%                 (2)%\n  Non-GAAP effective tax rate                                                 21 %                    20 %                   21 %                 20 %\n(1)\n    As announced on February 7, 2024, the Company’s non-GAAP results now include the impact of stock-based compensation expense and\nrelated employer payroll taxes. Prior period non-GAAP results have been recast to reflect this change.\n(2)\n    The year ended December 31, 2024 and the three months and year ended December 31, 2023 consist primarily of tax expense related to\nintra-group transfer of assets.\n\n\n                      Reconciliation of Operating Cash Flow to Free Cash Flow and Adjusted Free Cash Flow\n                                                                    Three Months Ended December 31,                   Year Ended December 31,\n                                                                       2024                  2023                     2024               2023\n                                                                                                      (In millions)\n                                                                                                      (unaudited)\n  Net cash provided by operating activities                     $             2,394 $               2,614 $                  7,450 $            4,843\n     Less: Purchases of property and equipment                                 (203)                 (145)                    (683)              (623)\n  Free cash flow                                                              2,191                 2,469                    6,767              4,220\n  Net timing impact between originating European BNPL\n  receivables as held for sale and the subsequent sale of\n  receivables                                                                   (93)             (1,695)                      (133)               334\n  Adjusted free cash flow                                       $             2,098 $               774 $                    6,634 $            4,554\n\n\n\n\n                                                                                                                                    4Q & FY 2024 Results   14\n"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "stale_non_gaap_denominator",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": -8.823529411764707,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "non_gaap_eps_growth_comparable_pct": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "stale non gaap denominator"
+  },
+  {
+    "name": "reverse_timing_sign",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": 2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_nine_months_2023_bnpl_timing_contribution": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "reverse timing sign"
+  },
+  {
+    "name": "mix_cash_and_earnings_adjustments",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1740,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "prior_year_non_gaap_income_recast_reduction": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "mix cash and earnings adjustments"
+  },
+  {
+    "name": "cash_timing_equals_credit_loss",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "sold_bnpl_credit_loss_rate_identified": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "cash timing equals credit loss"
+  },
+  {
+    "name": "missing_support",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": []
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "non_gaap_eps_growth_comparable_pct": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing support"
+  },
+  {
+    "name": "fabricated_support",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "This source states the invented answer exactly."
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "non_gaap_eps_growth_comparable_pct": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated support"
+  },
+  {
+    "name": "alternative_primary_evidence_route",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "authorized_upstream_support_reused",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [],
+          "support_refs": [
+            "q42023_positive_bnpl_timing_contribution"
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "quarter_only_no_annual_cash_figures",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow 2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow $ 774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "direct_quarter_timing_row_without_fcf_difference",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "(1,695)"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "direct_annual_and_quarter_timing_rows",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "(1,695)"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "334"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "direct_timing_row_and_fcf_denominator",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "(1,695)"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow 2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "headline_eps_without_currency_spacing",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Earnings per diluted share $4.65 $3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "reconciliation_eps_with_currency_spacing",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Diluted net income (loss) per share:"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$ 5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "new_release_bnpl_timing_definition",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Net timing impact between originating European BNPL receivables as held for sale and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "direct_timing_share_missing_fcf_denominator",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,220"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "(1,695)"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "q42023_timing_share_of_free_cash_flow_pct": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "direct timing share missing fcf denominator"
+  },
+  {
+    "name": "direct_first_nine_months_missing_annual_timing",
+    "response": {
+      "case_id": "h2-001",
+      "answers": {
+        "non_gaap_eps_growth_comparable_pct": {
+          "value": 21.409921671018278,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "old_basis_eps_growth_error_pp": {
+          "value": -30.23345108278298,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Earnings per diluted share"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "$5.10"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 4.65"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "$ 3.83"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "prior_year_non_gaap_income_recast_reduction": {
+          "value": 1406,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "5,646"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Non-GAAP net income"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,240"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "fy2024_free_cash_flow_growth_pct": {
+          "value": 60.355450236966824,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,767"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,220"
+            }
+          ]
+        },
+        "fy2024_adjusted_free_cash_flow_growth_pct": {
+          "value": 45.67413263065437,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "6,634"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "4,554"
+            }
+          ]
+        },
+        "q42023_positive_bnpl_timing_contribution": {
+          "value": 1695,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            }
+          ]
+        },
+        "first_nine_months_2023_bnpl_timing_contribution": {
+          "value": -2029,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "(1,695)"
+            }
+          ]
+        },
+        "q42023_timing_share_of_free_cash_flow_pct": {
+          "value": 68.65127582017011,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Adjusted free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "774"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Free cash flow"
+            },
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "2,469"
+            }
+          ]
+        },
+        "old_and_new_non_gaap_eps_directly_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "the Company’s non-GAAP results now include the impact of stock-based compensation expense and related employer payroll taxes"
+            },
+            {
+              "source_id": "h2a-paypal-2024",
+              "quote": "Prior period non-GAAP results have been recast to reflect this change"
+            }
+          ]
+        },
+        "sold_bnpl_credit_loss_rate_identified": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "h2a-paypal-2023",
+              "quote": "Net impact of European BNPL receivables originated as HFS and the subsequent sale of receivables"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Public historical disclosures plus explicitly synthetic conditional scenarios; not realized alpha or a recommendation.",
+        "Full source documents are preserved, but supplied-excerpt performance is not corpus-retrieval performance.",
+        "Legal/accounting practitioner review pending; summarized contract terms do not establish all borrowing permissions or legal remedies."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "first_nine_months_2023_bnpl_timing_contribution": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "direct first nine months missing annual timing"
+  }
+]

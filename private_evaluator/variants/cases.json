@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "c225",
+    "title": "Adaptive research decision 225",
+    "family": "information_value",
+    "split": "development",
+    "mode": "single",
+    "variant_of": "c217",
+    "diagnostic_role": "larger continuation benefit",
+    "information_parameters": {
+      "weights": [
+        [
+          2,
+          3,
+          4,
+          5,
+          3,
+          8,
+          9,
+          16
+        ],
+        [
+          20,
+          8,
+          7,
+          3,
+          5,
+          3,
+          3,
+          1
+        ]
+      ],
+      "denominator": 100,
+      "costs": {
+        "A": "1/2",
+        "B": "1/2",
+        "C": "3/2"
+      },
+      "budget": "4",
+      "payoffs": {
+        "invest": [
+          120,
+          -160
+        ],
+        "hedge": [
+          40,
+          -32
+        ],
+        "pass": [
+          0,
+          0
+        ]
+      }
+    },
+    "documents": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law",
+        "text": "State is good or bad. Binary signal triple [A,B,C] is fixed once for the decision. In lexicographic triple order [000,001,010,011,100,101,110,111], JOINT probabilities for good are [2, 3, 4, 5, 3, 8, 9, 16]/100 and for bad are [20, 8, 7, 3, 5, 3, 3, 1]/100. These 16 joint cells sum to 1. Queries reveal the selected bit, not a fresh signal. Bits are not assumed independent, even conditional on state. All 16 joint cells are possible.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities",
+        "text": "Exactly one terminal action is allowed: invest pays 120 in good and -160 in bad; hedge pays 40 in good and -32 in bad; pass pays 0 in good and 0 in bad. These terminal payoffs exclude query fees. No combinations, shorting, scaling, or later switching are allowed. Maximize prior expected payoff minus purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the research-cost budget.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget",
+        "text": "A query costs 1/2 for A, 1/2 for B, and 3/2 for C, regardless of its bit. At most two DISTINCT queries may be purchased. Total fees on EACH possible path must be at most 4, including the first query. Stopping before any query or after the first is permitted. The second query identity or stopping may depend on the first observed bit. Terminal action may depend on purchased bits. There is no fee for information not purchased.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties",
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order [0,1], each A,B,C or stop. terminal_actions has four entries [first0/second0,first0/second1,first1/second0,first1/second1]. On a stopped branch repeat its action in both slots. With first_query none use second_queries [stop,stop] and repeat one action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple (first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry.",
+        "release_stage": 1
+      }
+    ],
+    "oracle_document_ids": [
+      "in_joint",
+      "in_actions",
+      "in_query",
+      "in_format"
+    ],
+    "stages": [
+      {
+        "prompt": "Choose the globally optimal adaptive research and investment policy under the specified joint signal law, available actions, query fees and path budgets. Determine which query to buy first, whether and what to buy next on each result, and the terminal action at each reachable history. Report prior expected economics and apply the documented deterministic tie rule.",
+        "inputs": {
+          "scope": "All financial amounts, probabilities, and rules are synthetic and fully specified in the supplied documents."
+        },
+        "answers": {
+          "first_query": "A",
+          "second_queries": [
+            "B",
+            "B"
+          ],
+          "terminal_actions": [
+            "pass",
+            "hedge",
+            "hedge",
+            "invest"
+          ],
+          "expected_query_cost": 1.0,
+          "expected_gross_payoff": 25.84,
+          "optimal_net_value": 24.84,
+          "no_information_value": 4.0,
+          "incremental_information_value": 20.84
+        },
+        "descriptions": {
+          "first_query": "String A,B,C or none.",
+          "second_queries": "Two strings, continuation decisions after first bit 0,1.",
+          "terminal_actions": "Four strings invest,hedge or pass under the documented branch order.",
+          "expected_query_cost": "Number, ex ante total query fees.",
+          "expected_gross_payoff": "Number, prior expected terminal payoff before fees.",
+          "optimal_net_value": "Number, prior payoff net of query fees.",
+          "no_information_value": "Number, best prior payoff with no query.",
+          "incremental_information_value": "Number, optimal net value minus no-query value."
+        },
+        "evidence_routes": {
+          "first_query": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "second_queries": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "terminal_actions": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "expected_query_cost": [
+            [
+              "in_joint",
+              "in_query"
+            ]
+          ],
+          "expected_gross_payoff": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_format"
+            ],
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "optimal_net_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "no_information_value": [
+            [
+              "in_joint",
+              "in_actions"
+            ]
+          ],
+          "incremental_information_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ]
+        },
+        "allowed_evidence": {
+          "first_query": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "second_queries": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "terminal_actions": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_query_cost": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_gross_payoff": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "optimal_net_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "no_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "incremental_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ]
+        },
+        "solution": "Enumerate all represented policies using exact rational joint-probability weights and reject repeat queries, impossible first purchases and path budget breaches. Independently optimize each conditional branch by backward induction, preserving the joint dependence structure. Rank by negative expected net value then the complete stated lexical policy key.",
+        "checks": [
+          {
+            "name": "joint mass conservation",
+            "passed": true
+          },
+          {
+            "name": "independent exact optimizer agreement",
+            "passed": true
+          }
+        ],
+        "wrong_answers": [
+          {
+            "label": "repeat an observation",
+            "answers": {
+              "first_query": "A",
+              "second_queries": [
+                "A",
+                "A"
+              ]
+            },
+            "reason": "Repeated queries are forbidden and do not draw new evidence."
+          },
+          {
+            "label": "self-report unattainable value",
+            "answers": {
+              "optimal_net_value": 124.84
+            },
+            "reason": "Economic value must be computed from a feasible policy and fees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c226",
+    "title": "Adaptive research decision 226",
+    "family": "information_value",
+    "split": "development",
+    "mode": "single",
+    "variant_of": "c217",
+    "diagnostic_role": "cost-driven early stop",
+    "information_parameters": {
+      "weights": [
+        [
+          2,
+          3,
+          4,
+          5,
+          3,
+          8,
+          9,
+          16
+        ],
+        [
+          20,
+          8,
+          7,
+          3,
+          5,
+          3,
+          3,
+          1
+        ]
+      ],
+      "denominator": 100,
+      "costs": {
+        "A": "2",
+        "B": "2",
+        "C": "6"
+      },
+      "budget": "4",
+      "payoffs": {
+        "invest": [
+          30,
+          -40
+        ],
+        "hedge": [
+          10,
+          -8
+        ],
+        "pass": [
+          0,
+          0
+        ]
+      }
+    },
+    "documents": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law",
+        "text": "State is good or bad. Binary signal triple [A,B,C] is fixed once for the decision. In lexicographic triple order [000,001,010,011,100,101,110,111], JOINT probabilities for good are [2, 3, 4, 5, 3, 8, 9, 16]/100 and for bad are [20, 8, 7, 3, 5, 3, 3, 1]/100. These 16 joint cells sum to 1. Queries reveal the selected bit, not a fresh signal. Bits are not assumed independent, even conditional on state. All 16 joint cells are possible.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities",
+        "text": "Exactly one terminal action is allowed: invest pays 30 in good and -40 in bad; hedge pays 10 in good and -8 in bad; pass pays 0 in good and 0 in bad. These terminal payoffs exclude query fees. No combinations, shorting, scaling, or later switching are allowed. Maximize prior expected payoff minus purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the research-cost budget.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget",
+        "text": "A query costs 2 for A, 2 for B, and 6 for C, regardless of its bit. At most two DISTINCT queries may be purchased. Total fees on EACH possible path must be at most 4, including the first query. Stopping before any query or after the first is permitted. The second query identity or stopping may depend on the first observed bit. Terminal action may depend on purchased bits. There is no fee for information not purchased.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties",
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order [0,1], each A,B,C or stop. terminal_actions has four entries [first0/second0,first0/second1,first1/second0,first1/second1]. On a stopped branch repeat its action in both slots. With first_query none use second_queries [stop,stop] and repeat one action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple (first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry.",
+        "release_stage": 1
+      }
+    ],
+    "oracle_document_ids": [
+      "in_joint",
+      "in_actions",
+      "in_query",
+      "in_format"
+    ],
+    "stages": [
+      {
+        "prompt": "Choose the globally optimal adaptive research and investment policy under the specified joint signal law, available actions, query fees and path budgets. Determine which query to buy first, whether and what to buy next on each result, and the terminal action at each reachable history. Report prior expected economics and apply the documented deterministic tie rule.",
+        "inputs": {
+          "scope": "All financial amounts, probabilities, and rules are synthetic and fully specified in the supplied documents."
+        },
+        "answers": {
+          "first_query": "A",
+          "second_queries": [
+            "stop",
+            "stop"
+          ],
+          "terminal_actions": [
+            "pass",
+            "pass",
+            "invest",
+            "invest"
+          ],
+          "expected_query_cost": 2.0,
+          "expected_gross_payoff": 6.0,
+          "optimal_net_value": 4.0,
+          "no_information_value": 1.0,
+          "incremental_information_value": 3.0
+        },
+        "descriptions": {
+          "first_query": "String A,B,C or none.",
+          "second_queries": "Two strings, continuation decisions after first bit 0,1.",
+          "terminal_actions": "Four strings invest,hedge or pass under the documented branch order.",
+          "expected_query_cost": "Number, ex ante total query fees.",
+          "expected_gross_payoff": "Number, prior expected terminal payoff before fees.",
+          "optimal_net_value": "Number, prior payoff net of query fees.",
+          "no_information_value": "Number, best prior payoff with no query.",
+          "incremental_information_value": "Number, optimal net value minus no-query value."
+        },
+        "evidence_routes": {
+          "first_query": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "second_queries": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "terminal_actions": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "expected_query_cost": [
+            [
+              "in_joint",
+              "in_query"
+            ]
+          ],
+          "expected_gross_payoff": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_format"
+            ],
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "optimal_net_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "no_information_value": [
+            [
+              "in_joint",
+              "in_actions"
+            ]
+          ],
+          "incremental_information_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ]
+        },
+        "allowed_evidence": {
+          "first_query": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "second_queries": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "terminal_actions": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_query_cost": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_gross_payoff": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "optimal_net_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "no_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "incremental_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ]
+        },
+        "solution": "Enumerate all represented policies using exact rational joint-probability weights and reject repeat queries, impossible first purchases and path budget breaches. Independently optimize each conditional branch by backward induction, preserving the joint dependence structure. Rank by negative expected net value then the complete stated lexical policy key.",
+        "checks": [
+          {
+            "name": "joint mass conservation",
+            "passed": true
+          },
+          {
+            "name": "independent exact optimizer agreement",
+            "passed": true
+          }
+        ],
+        "wrong_answers": [
+          {
+            "label": "repeat an observation",
+            "answers": {
+              "first_query": "A",
+              "second_queries": [
+                "A",
+                "A"
+              ]
+            },
+            "reason": "Repeated queries are forbidden and do not draw new evidence."
+          },
+          {
+            "label": "self-report unattainable value",
+            "answers": {
+              "optimal_net_value": 104.0
+            },
+            "reason": "Economic value must be computed from a feasible policy and fees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c227",
+    "title": "Adaptive research decision 227",
+    "family": "information_value",
+    "split": "development",
+    "mode": "single",
+    "variant_of": "c217",
+    "diagnostic_role": "optimal no query",
+    "information_parameters": {
+      "weights": [
+        [
+          2,
+          3,
+          4,
+          5,
+          3,
+          8,
+          9,
+          16
+        ],
+        [
+          20,
+          8,
+          7,
+          3,
+          5,
+          3,
+          3,
+          1
+        ]
+      ],
+      "denominator": 100,
+      "costs": {
+        "A": "20",
+        "B": "20",
+        "C": "20"
+      },
+      "budget": "40",
+      "payoffs": {
+        "invest": [
+          30,
+          -40
+        ],
+        "hedge": [
+          10,
+          -8
+        ],
+        "pass": [
+          0,
+          0
+        ]
+      }
+    },
+    "documents": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law",
+        "text": "State is good or bad. Binary signal triple [A,B,C] is fixed once for the decision. In lexicographic triple order [000,001,010,011,100,101,110,111], JOINT probabilities for good are [2, 3, 4, 5, 3, 8, 9, 16]/100 and for bad are [20, 8, 7, 3, 5, 3, 3, 1]/100. These 16 joint cells sum to 1. Queries reveal the selected bit, not a fresh signal. Bits are not assumed independent, even conditional on state. All 16 joint cells are possible.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities",
+        "text": "Exactly one terminal action is allowed: invest pays 30 in good and -40 in bad; hedge pays 10 in good and -8 in bad; pass pays 0 in good and 0 in bad. These terminal payoffs exclude query fees. No combinations, shorting, scaling, or later switching are allowed. Maximize prior expected payoff minus purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the research-cost budget.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget",
+        "text": "A query costs 20 for A, 20 for B, and 20 for C, regardless of its bit. At most two DISTINCT queries may be purchased. Total fees on EACH possible path must be at most 40, including the first query. Stopping before any query or after the first is permitted. The second query identity or stopping may depend on the first observed bit. Terminal action may depend on purchased bits. There is no fee for information not purchased.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties",
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order [0,1], each A,B,C or stop. terminal_actions has four entries [first0/second0,first0/second1,first1/second0,first1/second1]. On a stopped branch repeat its action in both slots. With first_query none use second_queries [stop,stop] and repeat one action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple (first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry.",
+        "release_stage": 1
+      }
+    ],
+    "oracle_document_ids": [
+      "in_joint",
+      "in_actions",
+      "in_query",
+      "in_format"
+    ],
+    "stages": [
+      {
+        "prompt": "Choose the globally optimal adaptive research and investment policy under the specified joint signal law, available actions, query fees and path budgets. Determine which query to buy first, whether and what to buy next on each result, and the terminal action at each reachable history. Report prior expected economics and apply the documented deterministic tie rule.",
+        "inputs": {
+          "scope": "All financial amounts, probabilities, and rules are synthetic and fully specified in the supplied documents."
+        },
+        "answers": {
+          "first_query": "none",
+          "second_queries": [
+            "stop",
+            "stop"
+          ],
+          "terminal_actions": [
+            "hedge",
+            "hedge",
+            "hedge",
+            "hedge"
+          ],
+          "expected_query_cost": 0.0,
+          "expected_gross_payoff": 1.0,
+          "optimal_net_value": 1.0,
+          "no_information_value": 1.0,
+          "incremental_information_value": 0.0
+        },
+        "descriptions": {
+          "first_query": "String A,B,C or none.",
+          "second_queries": "Two strings, continuation decisions after first bit 0,1.",
+          "terminal_actions": "Four strings invest,hedge or pass under the documented branch order.",
+          "expected_query_cost": "Number, ex ante total query fees.",
+          "expected_gross_payoff": "Number, prior expected terminal payoff before fees.",
+          "optimal_net_value": "Number, prior payoff net of query fees.",
+          "no_information_value": "Number, best prior payoff with no query.",
+          "incremental_information_value": "Number, optimal net value minus no-query value."
+        },
+        "evidence_routes": {
+          "first_query": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "second_queries": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "terminal_actions": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "expected_query_cost": [
+            [
+              "in_joint",
+              "in_query"
+            ]
+          ],
+          "expected_gross_payoff": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_format"
+            ],
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "optimal_net_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "no_information_value": [
+            [
+              "in_joint",
+              "in_actions"
+            ]
+          ],
+          "incremental_information_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ]
+        },
+        "allowed_evidence": {
+          "first_query": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "second_queries": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "terminal_actions": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_query_cost": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_gross_payoff": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "optimal_net_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "no_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "incremental_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ]
+        },
+        "solution": "Enumerate all represented policies using exact rational joint-probability weights and reject repeat queries, impossible first purchases and path budget breaches. Independently optimize each conditional branch by backward induction, preserving the joint dependence structure. Rank by negative expected net value then the complete stated lexical policy key.",
+        "checks": [
+          {
+            "name": "joint mass conservation",
+            "passed": true
+          },
+          {
+            "name": "independent exact optimizer agreement",
+            "passed": true
+          }
+        ],
+        "wrong_answers": [
+          {
+            "label": "repeat an observation",
+            "answers": {
+              "first_query": "A",
+              "second_queries": [
+                "A",
+                "A"
+              ]
+            },
+            "reason": "Repeated queries are forbidden and do not draw new evidence."
+          },
+          {
+            "label": "self-report unattainable value",
+            "answers": {
+              "optimal_net_value": 101.0
+            },
+            "reason": "Economic value must be computed from a feasible policy and fees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c228",
+    "title": "Adaptive research decision 228",
+    "family": "information_value",
+    "split": "development",
+    "mode": "single",
+    "variant_of": "c217",
+    "diagnostic_role": "changed first-query identity",
+    "information_parameters": {
+      "weights": [
+        [
+          2,
+          3,
+          4,
+          5,
+          3,
+          8,
+          9,
+          16
+        ],
+        [
+          20,
+          8,
+          7,
+          3,
+          5,
+          3,
+          3,
+          1
+        ]
+      ],
+      "denominator": 100,
+      "costs": {
+        "A": "2",
+        "B": "1/10",
+        "C": "3/2"
+      },
+      "budget": "4",
+      "payoffs": {
+        "invest": [
+          30,
+          -40
+        ],
+        "hedge": [
+          10,
+          -8
+        ],
+        "pass": [
+          0,
+          0
+        ]
+      }
+    },
+    "documents": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law",
+        "text": "State is good or bad. Binary signal triple [A,B,C] is fixed once for the decision. In lexicographic triple order [000,001,010,011,100,101,110,111], JOINT probabilities for good are [2, 3, 4, 5, 3, 8, 9, 16]/100 and for bad are [20, 8, 7, 3, 5, 3, 3, 1]/100. These 16 joint cells sum to 1. Queries reveal the selected bit, not a fresh signal. Bits are not assumed independent, even conditional on state. All 16 joint cells are possible.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities",
+        "text": "Exactly one terminal action is allowed: invest pays 30 in good and -40 in bad; hedge pays 10 in good and -8 in bad; pass pays 0 in good and 0 in bad. These terminal payoffs exclude query fees. No combinations, shorting, scaling, or later switching are allowed. Maximize prior expected payoff minus purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the research-cost budget.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget",
+        "text": "A query costs 2 for A, 1/10 for B, and 3/2 for C, regardless of its bit. At most two DISTINCT queries may be purchased. Total fees on EACH possible path must be at most 4, including the first query. Stopping before any query or after the first is permitted. The second query identity or stopping may depend on the first observed bit. Terminal action may depend on purchased bits. There is no fee for information not purchased.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties",
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order [0,1], each A,B,C or stop. terminal_actions has four entries [first0/second0,first0/second1,first1/second0,first1/second1]. On a stopped branch repeat its action in both slots. With first_query none use second_queries [stop,stop] and repeat one action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple (first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry.",
+        "release_stage": 1
+      }
+    ],
+    "oracle_document_ids": [
+      "in_joint",
+      "in_actions",
+      "in_query",
+      "in_format"
+    ],
+    "stages": [
+      {
+        "prompt": "Choose the globally optimal adaptive research and investment policy under the specified joint signal law, available actions, query fees and path budgets. Determine which query to buy first, whether and what to buy next on each result, and the terminal action at each reachable history. Report prior expected economics and apply the documented deterministic tie rule.",
+        "inputs": {
+          "scope": "All financial amounts, probabilities, and rules are synthetic and fully specified in the supplied documents."
+        },
+        "answers": {
+          "first_query": "B",
+          "second_queries": [
+            "stop",
+            "A"
+          ],
+          "terminal_actions": [
+            "pass",
+            "pass",
+            "hedge",
+            "invest"
+          ],
+          "expected_query_cost": 1.06,
+          "expected_gross_payoff": 6.0,
+          "optimal_net_value": 4.94,
+          "no_information_value": 1.0,
+          "incremental_information_value": 3.94
+        },
+        "descriptions": {
+          "first_query": "String A,B,C or none.",
+          "second_queries": "Two strings, continuation decisions after first bit 0,1.",
+          "terminal_actions": "Four strings invest,hedge or pass under the documented branch order.",
+          "expected_query_cost": "Number, ex ante total query fees.",
+          "expected_gross_payoff": "Number, prior expected terminal payoff before fees.",
+          "optimal_net_value": "Number, prior payoff net of query fees.",
+          "no_information_value": "Number, best prior payoff with no query.",
+          "incremental_information_value": "Number, optimal net value minus no-query value."
+        },
+        "evidence_routes": {
+          "first_query": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "second_queries": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "terminal_actions": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "expected_query_cost": [
+            [
+              "in_joint",
+              "in_query"
+            ]
+          ],
+          "expected_gross_payoff": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_format"
+            ],
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "optimal_net_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "no_information_value": [
+            [
+              "in_joint",
+              "in_actions"
+            ]
+          ],
+          "incremental_information_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ]
+        },
+        "allowed_evidence": {
+          "first_query": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "second_queries": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "terminal_actions": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_query_cost": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_gross_payoff": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "optimal_net_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "no_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "incremental_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ]
+        },
+        "solution": "Enumerate all represented policies using exact rational joint-probability weights and reject repeat queries, impossible first purchases and path budget breaches. Independently optimize each conditional branch by backward induction, preserving the joint dependence structure. Rank by negative expected net value then the complete stated lexical policy key.",
+        "checks": [
+          {
+            "name": "joint mass conservation",
+            "passed": true
+          },
+          {
+            "name": "independent exact optimizer agreement",
+            "passed": true
+          }
+        ],
+        "wrong_answers": [
+          {
+            "label": "repeat an observation",
+            "answers": {
+              "first_query": "A",
+              "second_queries": [
+                "A",
+                "A"
+              ]
+            },
+            "reason": "Repeated queries are forbidden and do not draw new evidence."
+          },
+          {
+            "label": "self-report unattainable value",
+            "answers": {
+              "optimal_net_value": 104.94
+            },
+            "reason": "Economic value must be computed from a feasible policy and fees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c229",
+    "title": "Adaptive research decision 229",
+    "family": "information_value",
+    "split": "development",
+    "mode": "single",
+    "variant_of": "c217",
+    "diagnostic_role": "binding path budget",
+    "information_parameters": {
+      "weights": [
+        [
+          2,
+          3,
+          4,
+          5,
+          3,
+          8,
+          9,
+          16
+        ],
+        [
+          20,
+          8,
+          7,
+          3,
+          5,
+          3,
+          3,
+          1
+        ]
+      ],
+      "denominator": 100,
+      "costs": {
+        "A": "1/2",
+        "B": "1/2",
+        "C": "3/2"
+      },
+      "budget": "1/2",
+      "payoffs": {
+        "invest": [
+          30,
+          -40
+        ],
+        "hedge": [
+          10,
+          -8
+        ],
+        "pass": [
+          0,
+          0
+        ]
+      }
+    },
+    "documents": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law",
+        "text": "State is good or bad. Binary signal triple [A,B,C] is fixed once for the decision. In lexicographic triple order [000,001,010,011,100,101,110,111], JOINT probabilities for good are [2, 3, 4, 5, 3, 8, 9, 16]/100 and for bad are [20, 8, 7, 3, 5, 3, 3, 1]/100. These 16 joint cells sum to 1. Queries reveal the selected bit, not a fresh signal. Bits are not assumed independent, even conditional on state. All 16 joint cells are possible.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities",
+        "text": "Exactly one terminal action is allowed: invest pays 30 in good and -40 in bad; hedge pays 10 in good and -8 in bad; pass pays 0 in good and 0 in bad. These terminal payoffs exclude query fees. No combinations, shorting, scaling, or later switching are allowed. Maximize prior expected payoff minus purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the research-cost budget.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget",
+        "text": "A query costs 1/2 for A, 1/2 for B, and 3/2 for C, regardless of its bit. At most two DISTINCT queries may be purchased. Total fees on EACH possible path must be at most 1/2, including the first query. Stopping before any query or after the first is permitted. The second query identity or stopping may depend on the first observed bit. Terminal action may depend on purchased bits. There is no fee for information not purchased.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties",
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order [0,1], each A,B,C or stop. terminal_actions has four entries [first0/second0,first0/second1,first1/second0,first1/second1]. On a stopped branch repeat its action in both slots. With first_query none use second_queries [stop,stop] and repeat one action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple (first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry.",
+        "release_stage": 1
+      }
+    ],
+    "oracle_document_ids": [
+      "in_joint",
+      "in_actions",
+      "in_query",
+      "in_format"
+    ],
+    "stages": [
+      {
+        "prompt": "Choose the globally optimal adaptive research and investment policy under the specified joint signal law, available actions, query fees and path budgets. Determine which query to buy first, whether and what to buy next on each result, and the terminal action at each reachable history. Report prior expected economics and apply the documented deterministic tie rule.",
+        "inputs": {
+          "scope": "All financial amounts, probabilities, and rules are synthetic and fully specified in the supplied documents."
+        },
+        "answers": {
+          "first_query": "A",
+          "second_queries": [
+            "stop",
+            "stop"
+          ],
+          "terminal_actions": [
+            "pass",
+            "pass",
+            "invest",
+            "invest"
+          ],
+          "expected_query_cost": 0.5,
+          "expected_gross_payoff": 6.0,
+          "optimal_net_value": 5.5,
+          "no_information_value": 1.0,
+          "incremental_information_value": 4.5
+        },
+        "descriptions": {
+          "first_query": "String A,B,C or none.",
+          "second_queries": "Two strings, continuation decisions after first bit 0,1.",
+          "terminal_actions": "Four strings invest,hedge or pass under the documented branch order.",
+          "expected_query_cost": "Number, ex ante total query fees.",
+          "expected_gross_payoff": "Number, prior expected terminal payoff before fees.",
+          "optimal_net_value": "Number, prior payoff net of query fees.",
+          "no_information_value": "Number, best prior payoff with no query.",
+          "incremental_information_value": "Number, optimal net value minus no-query value."
+        },
+        "evidence_routes": {
+          "first_query": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "second_queries": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "terminal_actions": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "expected_query_cost": [
+            [
+              "in_joint",
+              "in_query"
+            ]
+          ],
+          "expected_gross_payoff": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_format"
+            ],
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "optimal_net_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "no_information_value": [
+            [
+              "in_joint",
+              "in_actions"
+            ]
+          ],
+          "incremental_information_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ]
+        },
+        "allowed_evidence": {
+          "first_query": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "second_queries": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "terminal_actions": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_query_cost": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_gross_payoff": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "optimal_net_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "no_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "incremental_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ]
+        },
+        "solution": "Enumerate all represented policies using exact rational joint-probability weights and reject repeat queries, impossible first purchases and path budget breaches. Independently optimize each conditional branch by backward induction, preserving the joint dependence structure. Rank by negative expected net value then the complete stated lexical policy key.",
+        "checks": [
+          {
+            "name": "joint mass conservation",
+            "passed": true
+          },
+          {
+            "name": "independent exact optimizer agreement",
+            "passed": true
+          }
+        ],
+        "wrong_answers": [
+          {
+            "label": "repeat an observation",
+            "answers": {
+              "first_query": "A",
+              "second_queries": [
+                "A",
+                "A"
+              ]
+            },
+            "reason": "Repeated queries are forbidden and do not draw new evidence."
+          },
+          {
+            "label": "self-report unattainable value",
+            "answers": {
+              "optimal_net_value": 105.5
+            },
+            "reason": "Economic value must be computed from a feasible policy and fees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c230",
+    "title": "Adaptive research decision 230",
+    "family": "information_value",
+    "split": "development",
+    "mode": "single",
+    "variant_of": "c217",
+    "diagnostic_role": "semantic isomorphism",
+    "information_parameters": {
+      "weights": [
+        [
+          2,
+          3,
+          3,
+          8,
+          4,
+          9,
+          5,
+          16
+        ],
+        [
+          20,
+          5,
+          8,
+          3,
+          7,
+          3,
+          3,
+          1
+        ]
+      ],
+      "denominator": 100,
+      "costs": {
+        "A": "1/2",
+        "B": "3/2",
+        "C": "1/2"
+      },
+      "budget": "4",
+      "payoffs": {
+        "invest": [
+          30,
+          -40
+        ],
+        "hedge": [
+          10,
+          -8
+        ],
+        "pass": [
+          0,
+          0
+        ]
+      }
+    },
+    "documents": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law",
+        "text": "State is good or bad. Binary signal triple [A,B,C] is fixed once for the decision. In lexicographic triple order [000,001,010,011,100,101,110,111], JOINT probabilities for good are [2, 3, 3, 8, 4, 9, 5, 16]/100 and for bad are [20, 5, 8, 3, 7, 3, 3, 1]/100. These 16 joint cells sum to 1. Queries reveal the selected bit, not a fresh signal. Bits are not assumed independent, even conditional on state. All 16 joint cells are possible.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities",
+        "text": "Exactly one terminal action is allowed: invest pays 30 in good and -40 in bad; hedge pays 10 in good and -8 in bad; pass pays 0 in good and 0 in bad. These terminal payoffs exclude query fees. No combinations, shorting, scaling, or later switching are allowed. Maximize prior expected payoff minus purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the research-cost budget.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget",
+        "text": "A query costs 1/2 for A, 3/2 for B, and 1/2 for C, regardless of its bit. At most two DISTINCT queries may be purchased. Total fees on EACH possible path must be at most 4, including the first query. Stopping before any query or after the first is permitted. The second query identity or stopping may depend on the first observed bit. Terminal action may depend on purchased bits. There is no fee for information not purchased.",
+        "release_stage": 1
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties",
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order [0,1], each A,B,C or stop. terminal_actions has four entries [first0/second0,first0/second1,first1/second0,first1/second1]. On a stopped branch repeat its action in both slots. With first_query none use second_queries [stop,stop] and repeat one action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple (first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry.",
+        "release_stage": 1
+      }
+    ],
+    "oracle_document_ids": [
+      "in_joint",
+      "in_actions",
+      "in_query",
+      "in_format"
+    ],
+    "stages": [
+      {
+        "prompt": "Choose the globally optimal adaptive research and investment policy under the specified joint signal law, available actions, query fees and path budgets. Determine which query to buy first, whether and what to buy next on each result, and the terminal action at each reachable history. Report prior expected economics and apply the documented deterministic tie rule.",
+        "inputs": {
+          "scope": "All financial amounts, probabilities, and rules are synthetic and fully specified in the supplied documents."
+        },
+        "answers": {
+          "first_query": "C",
+          "second_queries": [
+            "stop",
+            "A"
+          ],
+          "terminal_actions": [
+            "pass",
+            "pass",
+            "hedge",
+            "invest"
+          ],
+          "expected_query_cost": 0.74,
+          "expected_gross_payoff": 6.36,
+          "optimal_net_value": 5.62,
+          "no_information_value": 1.0,
+          "incremental_information_value": 4.62
+        },
+        "descriptions": {
+          "first_query": "String A,B,C or none.",
+          "second_queries": "Two strings, continuation decisions after first bit 0,1.",
+          "terminal_actions": "Four strings invest,hedge or pass under the documented branch order.",
+          "expected_query_cost": "Number, ex ante total query fees.",
+          "expected_gross_payoff": "Number, prior expected terminal payoff before fees.",
+          "optimal_net_value": "Number, prior payoff net of query fees.",
+          "no_information_value": "Number, best prior payoff with no query.",
+          "incremental_information_value": "Number, optimal net value minus no-query value."
+        },
+        "evidence_routes": {
+          "first_query": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "second_queries": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "terminal_actions": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query",
+              "in_format"
+            ]
+          ],
+          "expected_query_cost": [
+            [
+              "in_joint",
+              "in_query"
+            ]
+          ],
+          "expected_gross_payoff": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_format"
+            ],
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "optimal_net_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ],
+          "no_information_value": [
+            [
+              "in_joint",
+              "in_actions"
+            ]
+          ],
+          "incremental_information_value": [
+            [
+              "in_joint",
+              "in_actions",
+              "in_query"
+            ]
+          ]
+        },
+        "allowed_evidence": {
+          "first_query": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "second_queries": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "terminal_actions": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_query_cost": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "expected_gross_payoff": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "optimal_net_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "no_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ],
+          "incremental_information_value": [
+            "in_joint",
+            "in_actions",
+            "in_query",
+            "in_format"
+          ]
+        },
+        "solution": "Enumerate all represented policies using exact rational joint-probability weights and reject repeat queries, impossible first purchases and path budget breaches. Independently optimize each conditional branch by backward induction, preserving the joint dependence structure. Rank by negative expected net value then the complete stated lexical policy key.",
+        "checks": [
+          {
+            "name": "joint mass conservation",
+            "passed": true
+          },
+          {
+            "name": "independent exact optimizer agreement",
+            "passed": true
+          }
+        ],
+        "wrong_answers": [
+          {
+            "label": "repeat an observation",
+            "answers": {
+              "first_query": "A",
+              "second_queries": [
+                "A",
+                "A"
+              ]
+            },
+            "reason": "Repeated queries are forbidden and do not draw new evidence."
+          },
+          {
+            "label": "self-report unattainable value",
+            "answers": {
+              "optimal_net_value": 105.62
+            },
+            "reason": "Economic value must be computed from a feasible policy and fees."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1266 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "All requested values and source operands supported.",
+    "expected_failures": {}
+  },
+  {
+    "name": "mw_confused_with_mwh",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 843.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 6071.04,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Omits block hours from power and fuel quantities.",
+    "expected_failures": {
+      "scenario_generation": [
+        "incorrect_value_or_type"
+      ],
+      "scenario_fuel_burn": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "hedge_reduced_for_outage",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -460800.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3262771.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Scales a fixed financial notional by physical plant availability.",
+    "expected_failures": {
+      "scenario_hedge_cash_settlement": [
+        "incorrect_value_or_type"
+      ],
+      "scenario_total_margin": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "swap_direction_reversed",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": 576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 4299571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Treats receive-fixed/pay-floating as receive-floating.",
+    "expected_failures": {
+      "scenario_hedge_cash_settlement": [
+        "incorrect_value_or_type"
+      ],
+      "scenario_total_margin": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "gas_basis_ignored",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 4087833.6,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3511833.6,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Uses hub gas as delivered price and assumes a power swap hedges fuel basis.",
+    "expected_failures": {
+      "scenario_physical_margin": [
+        "incorrect_value_or_type"
+      ],
+      "scenario_total_margin": [
+        "incorrect_value_or_type"
+      ],
+      "gas_basis_sensitivity": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "fleet_hedge_overclaims_plant_inputs",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": true,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Invents plant contracts and local gas prices from aggregate portfolio disclosures.",
+    "expected_failures": {
+      "actual_odessa_hedge_terms_identifiable": [
+        "incorrect_value_or_type"
+      ],
+      "total_margin_identifiable_without_gas_basis": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "hedge_volume_counted_as_generation",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 173184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Counts a cash-settled swap as additional physical electricity.",
+    "expected_failures": {
+      "scenario_generation": [
+        "incorrect_value_or_type"
+      ]
+    }
+  },
+  {
+    "name": "filing_index_used_for_capacity",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-index",
+              "quote": "Filing Date 2024-02-29"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "Filing date is a valid source quote but cannot support plant capacity or dispatched volume.",
+    "expected_failures": {
+      "scenario_generation": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "split_facility_row_without_date_or_punctuation",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "Separate Odessa label and capacity tail support the row; heat-rate citation need not include terminal punctuation or repeat the as-of-date sentence.",
+    "expected_failures": {}
+  },
+  {
+    "name": "fuel_burn_without_capacity_operand",
+    "response": {
+      "case_id": "energy-003",
+      "answers": {
+        "scenario_generation": {
+          "value": 101184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "scenario_fuel_burn": {
+          "value": 728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_physical_margin": {
+          "value": 3723571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "scenario_hedge_cash_settlement": {
+          "value": -576000.0,
+          "evidence": []
+        },
+        "scenario_total_margin": {
+          "value": 3147571.2,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "hub_price_sensitivity": {
+          "value": 29184.0,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            }
+          ]
+        },
+        "gas_basis_sensitivity": {
+          "value": -728524.8,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "break_even_delivered_gas_basis": {
+          "value": 4.820472274931478,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Odessa Odessa, TX ERCOT CCGT Natural Gas 1,054"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "assumed Heat Rate of 7.2 MMBtu/MWh"
+            }
+          ]
+        },
+        "total_margin_identifiable_without_gas_basis": {
+          "value": false,
+          "evidence": []
+        },
+        "actual_odessa_hedge_terms_identifiable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Estimated hedging levels for generation volumes in our Texas, East, West and Sunset segments as of December 31, 2023 were as follows:"
+            },
+            {
+              "source_id": "exp-vistra-2023-issuer",
+              "quote": "Natural Gas Generation: Texas 89 % 80 %"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Issuer-hosted PDF has unknown historical publication timing; available_by is the actual observed2026 download, and the case uses that later cutoff.",
+        "All prices, dispatch availability, hours, costs and hedge contract terms are synthetic.7.2 is an assumed disclosed sensitivity convention, not verified Odessa efficiency."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "A heat-rate convention alone cannot identify dispatch volume or fuel burn.",
+    "expected_failures": {
+      "scenario_fuel_burn": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  }
+]

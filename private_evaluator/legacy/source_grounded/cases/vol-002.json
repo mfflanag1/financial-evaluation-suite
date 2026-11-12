@@ -1,0 +1,97 @@
+{
+  "id": "vol-002",
+  "case_group": "ge-2021-reverse-split-cash-fixing",
+  "lane": "volatility_derivatives",
+  "status": "prototype",
+  "epistemic_type": "conditional_analysis",
+  "information_cutoff": "2026-10-04T17:52:56Z",
+  "prompt": "You hold 50 long adjusted GE1 calls with strike 14.00 and premium quote 0.25. Hypothetical expiry GE share price after cash-in-lieu fixing is 120.00. Reconcile the initial reverse-split notice, August 6 expiration-pricing notice and August 18 fixed-cash notice. Compare the provisional pricing formula at the same hypothetical 120.00 price with the final deliverable value divided by 100. Then compute expiry cashflows and the break-even share price. The initial-sufficiency answer must use only memos 48921 and 49105; no later information is allowed for that answer.\nAll prices, premiums, positions and stress moves in this prompt are supplied hypothetical inputs, not observed historical market data. Evaluate expiry payoff only; ignore fees, taxes, financing, early exercise and other corporate actions. A local expiry-payoff sensitivity is not a pre-expiry model Greek. Amounts are USD unless stated. Return numeric amounts without intermediate rounding except where a field specifies rounding. Quote each contract term used; scenario constants need no source citation. The 2026 cutoff is an observed evidence bound, not a historical trading claim. Source memos describe different information states; respect the memo subset named by each question.",
+  "source_ids": [
+    "vol-occ-48921",
+    "vol-occ-49105",
+    "vol-occ-49146"
+  ],
+  "output_fields": [
+    {
+      "id": "initial_final_cash_known",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Was actual final cash-in-lieu known from the initial and August 6 notices alone? Quote the August 6 disclosure; the initial notice may be additional evidence.",
+      "evidence_required": true,
+      "allowed_source_ids": [
+        "vol-occ-48921",
+        "vol-occ-49105"
+      ]
+    },
+    {
+      "id": "provisional_equivalent_quote",
+      "type": "number",
+      "unit": "USD_quote_units",
+      "description": "August 6 provisional formula evaluated at supplied S=120; do not claim an exact settlement entitlement.",
+      "evidence_required": true
+    },
+    {
+      "id": "fixed_cash_per_contract",
+      "type": "number",
+      "unit": "USD_per_contract",
+      "description": "Final cash component from the August 18 notice.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_share_delivery",
+      "type": "number",
+      "unit": "GE_shares",
+      "description": "Total whole-share deliverable for all 50 adjusted contracts; do not divide contract count by eight.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_fixed_cash_delivery",
+      "type": "number",
+      "unit": "USD",
+      "description": "Total fixed cash deliverable for the book.",
+      "evidence_required": true
+    },
+    {
+      "id": "final_equivalent_quote",
+      "type": "number",
+      "unit": "USD_quote_units",
+      "description": "Final deliverable market value divided by quotation multiplier; no rounding to cents.",
+      "evidence_required": true
+    },
+    {
+      "id": "quote_revision_at_same_spot",
+      "type": "number",
+      "unit": "USD_quote_units",
+      "description": "Final minus provisional equivalent quote at the same supplied S=120, without intermediate rounding.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_strike_payment",
+      "type": "number",
+      "unit": "USD",
+      "description": "Aggregate strike payment if all calls exercised; strike quote remains unchanged.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_expiry_pnl",
+      "type": "number",
+      "unit": "USD",
+      "description": "Aggregate nonnegative intrinsic less original premium paid.",
+      "evidence_required": true
+    },
+    {
+      "id": "spot_breakeven",
+      "type": "number",
+      "unit": "USD_per_GE_share",
+      "description": "Exact GE price giving zero expiry P&L, to at least six decimals.",
+      "evidence_required": true
+    },
+    {
+      "id": "book_local_expiry_sensitivity",
+      "type": "number",
+      "unit": "USD_per_USD_GE_move",
+      "description": "Local book expiry-P&L slope at supplied S=120 while remaining in the money, fixed cash held constant.",
+      "evidence_required": true
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "ex_open",
+            "title": "Opening balances and accepted orders"
+          },
+          {
+            "id": "ex_tape",
+            "title": "Exchange events and correction chain"
+          },
+          {
+            "id": "ex_rules",
+            "title": "Settlement and commitment conventions"
+          },
+          {
+            "id": "ex_action",
+            "title": "Repair action and economic objective"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "action": "<typed value>",
+            "bridge_fee": "<typed value>",
+            "cash_path": "<typed value>",
+            "final_owned_inventory": "<typed value>",
+            "inventory_after_T1": "<typed value>",
+            "live_sell_reservation": "<typed value>",
+            "old_trade_cash_by_day": "<typed value>",
+            "owned_inventory_at_cutoff": "<typed value>",
+            "settled_inventory_at_cutoff": "<typed value>"
+          },
+          "evidence": {
+            "action": [
+              "<viewed supporting document ID>"
+            ],
+            "bridge_fee": [
+              "<viewed supporting document ID>"
+            ],
+            "cash_path": [
+              "<viewed supporting document ID>"
+            ],
+            "final_owned_inventory": [
+              "<viewed supporting document ID>"
+            ],
+            "inventory_after_T1": [
+              "<viewed supporting document ID>"
+            ],
+            "live_sell_reservation": [
+              "<viewed supporting document ID>"
+            ],
+            "old_trade_cash_by_day": [
+              "<viewed supporting document ID>"
+            ],
+            "owned_inventory_at_cutoff": [
+              "<viewed supporting document ID>"
+            ],
+            "settled_inventory_at_cutoff": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c218",
+          "turn": 1
+        },
+        "inputs": {
+          "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+        },
+        "outputs": {
+          "action": {
+            "description": "Three integers [immediate sell shares,new buy shares,bridge cash].",
+            "type": "array"
+          },
+          "bridge_fee": {
+            "description": "Number, bridge financing fee.",
+            "type": "number"
+          },
+          "cash_path": {
+            "description": "Three numbers, cash after all obligations at[T0,T1,T2].",
+            "type": "array"
+          },
+          "final_owned_inventory": {
+            "description": "Integer total owned shares at T2 after action and delivery.",
+            "type": "number"
+          },
+          "inventory_after_T1": {
+            "description": "Integer settled shares after T1 settlements and delivery.",
+            "type": "number"
+          },
+          "live_sell_reservation": {
+            "description": "Integer shares reserved by remaining accepted S.",
+            "type": "number"
+          },
+          "old_trade_cash_by_day": {
+            "description": "Two numbers, net old-trade cash at[T1,T2].",
+            "type": "array"
+          },
+          "owned_inventory_at_cutoff": {
+            "description": "Integer shares owned economically after all events, before settlement or action.",
+            "type": "number"
+          },
+          "settled_inventory_at_cutoff": {
+            "description": "Integer currently settled shares before action.",
+            "type": "number"
+          }
+        },
+        "prompt": "Reconstruct economic ownership, settled resources and surviving commitments from the corrected execution tape. Choose the best repair under each dated cash and share constraint. Earlier accepted replacement, later correction and unacknowledged cancellation must all be reflected in the executable state; gross purchase size is not the economic objective. Whole-unit action quantities encoded as JSON3 or3.0 are equivalent; fractional, Boolean and nonfinite action quantities are invalid.",
+        "question_id": "c218",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c218",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "ex_open",
+            "release_stage": 1,
+            "text": "At T0 before any tape events: settled inventory70 shares, cash600. Accepted B buys80 at limit10; accepted S sells30 at12. No fills yet. Mandatory delivery of25 owned shares occurs T1 with no proceeds; operating cash payment400 occurs T1. Cash reserve requirements are specified solely in the action mandate. There are no other cash flows or positions. Holdings owned but not yet settled cannot fund a T0 sale.",
+            "title": "Opening balances and accepted orders"
+          },
+          {
+            "id": "ex_tape",
+            "release_stage": 1,
+            "text": "Events in exchange order:1 B fill F1 quantity20 at9, settles T1;2 accepted B replacement sets TOTAL quantity60 at11, including prior filled quantity;3 B fill F2 quantity15 at11, settles T2;4 local cancel request for B;5 B fill F3 quantity5 at11, settles T2;6 B cancel acknowledgement closes its remaining20;7 correction of F1 replaces that entire execution with quantity12 at10, still settles T1;8 S fill F4 quantity10 at12 settles T1;9 duplicate delivery of event8 with the same event and execution ids;10 local cancel request for S with no acknowledgement. Every event is received by cutoff; no settlement has occurred yet. Corrections are replacements, not extra executions; duplicates are idempotent. A post-cancellation fill correction does not reopen B.",
+            "title": "Exchange events and correction chain"
+          },
+          {
+            "id": "ex_rules",
+            "release_stage": 1,
+            "text": "Economic ownership changes when a trade fills or is corrected. Cash and settled shares change only on their dated settlement. S remains live for20 shares after its unacknowledged cancellation and reserves20 settled shares at every checkpoint. B is terminally canceled and reserves no future buy cash. At a checkpoint incoming settlements occur before mandatory delivery and no new S fill arrives during the planned horizon. Existing trade cash by day means net contractual cash [T1,T2] from old fills only, excluding action, delivery, operating payment and facility.",
+            "title": "Settlement and commitment conventions"
+          },
+          {
+            "id": "ex_action",
+            "release_stage": 1,
+            "text": "Choose at most one immediate sale at9 from0,5,...,50 shares, and at most one new purchase at10 from0,5,...,80 shares. Zero sale or zero purchase is permitted. New purchase cash is prepaid T0 and shares delivered T2. Sale proceeds and optional integer cash bridge in0..100 arrive T0 before purchase payment. Bridge principal plus5% fee is repaid T2. T0 sales use only currently settled unreserved inventory; no re-selling new receipts. At T1 maintain live S share reservation20 and cash at least50; at T2 maintain reservation20 and cash at least100. Cash cannot be negative at T0. Maximize final owned shares AFTER mandatory delivery, then minimize bridge fee, then lexicographically minimize[sell,buy,bridge]. No external execution is requested. Report cash inclusive of required reserves.",
+            "title": "Repair action and economic objective"
+          }
+        ],
+        "title": "Reconcile corrected fills before a settlement-constrained repair",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "ex_open",
+        "title": "Opening balances and accepted orders"
+      },
+      {
+        "id": "ex_tape",
+        "title": "Exchange events and correction chain"
+      },
+      {
+        "id": "ex_rules",
+        "title": "Settlement and commitment conventions"
+      },
+      {
+        "id": "ex_action",
+        "title": "Repair action and economic objective"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "action": "<typed value>",
+        "bridge_fee": "<typed value>",
+        "cash_path": "<typed value>",
+        "final_owned_inventory": "<typed value>",
+        "inventory_after_T1": "<typed value>",
+        "live_sell_reservation": "<typed value>",
+        "old_trade_cash_by_day": "<typed value>",
+        "owned_inventory_at_cutoff": "<typed value>",
+        "settled_inventory_at_cutoff": "<typed value>"
+      },
+      "evidence": {
+        "action": [
+          "<viewed supporting document ID>"
+        ],
+        "bridge_fee": [
+          "<viewed supporting document ID>"
+        ],
+        "cash_path": [
+          "<viewed supporting document ID>"
+        ],
+        "final_owned_inventory": [
+          "<viewed supporting document ID>"
+        ],
+        "inventory_after_T1": [
+          "<viewed supporting document ID>"
+        ],
+        "live_sell_reservation": [
+          "<viewed supporting document ID>"
+        ],
+        "old_trade_cash_by_day": [
+          "<viewed supporting document ID>"
+        ],
+        "owned_inventory_at_cutoff": [
+          "<viewed supporting document ID>"
+        ],
+        "settled_inventory_at_cutoff": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c218",
+      "turn": 1
+    },
+    "inputs": {
+      "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+    },
+    "outputs": {
+      "action": {
+        "description": "Three integers [immediate sell shares,new buy shares,bridge cash].",
+        "type": "array"
+      },
+      "bridge_fee": {
+        "description": "Number, bridge financing fee.",
+        "type": "number"
+      },
+      "cash_path": {
+        "description": "Three numbers, cash after all obligations at[T0,T1,T2].",
+        "type": "array"
+      },
+      "final_owned_inventory": {
+        "description": "Integer total owned shares at T2 after action and delivery.",
+        "type": "number"
+      },
+      "inventory_after_T1": {
+        "description": "Integer settled shares after T1 settlements and delivery.",
+        "type": "number"
+      },
+      "live_sell_reservation": {
+        "description": "Integer shares reserved by remaining accepted S.",
+        "type": "number"
+      },
+      "old_trade_cash_by_day": {
+        "description": "Two numbers, net old-trade cash at[T1,T2].",
+        "type": "array"
+      },
+      "owned_inventory_at_cutoff": {
+        "description": "Integer shares owned economically after all events, before settlement or action.",
+        "type": "number"
+      },
+      "settled_inventory_at_cutoff": {
+        "description": "Integer currently settled shares before action.",
+        "type": "number"
+      }
+    },
+    "prompt": "Reconstruct economic ownership, settled resources and surviving commitments from the corrected execution tape. Choose the best repair under each dated cash and share constraint. Earlier accepted replacement, later correction and unacknowledged cancellation must all be reflected in the executable state; gross purchase size is not the economic objective. Whole-unit action quantities encoded as JSON3 or3.0 are equivalent; fractional, Boolean and nonfinite action quantities are invalid.",
+    "question_id": "c218",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c218",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "ex_open",
+        "release_stage": 1,
+        "text": "At T0 before any tape events: settled inventory70 shares, cash600. Accepted B buys80 at limit10; accepted S sells30 at12. No fills yet. Mandatory delivery of25 owned shares occurs T1 with no proceeds; operating cash payment400 occurs T1. Cash reserve requirements are specified solely in the action mandate. There are no other cash flows or positions. Holdings owned but not yet settled cannot fund a T0 sale.",
+        "title": "Opening balances and accepted orders"
+      },
+      {
+        "id": "ex_tape",
+        "release_stage": 1,
+        "text": "Events in exchange order:1 B fill F1 quantity20 at9, settles T1;2 accepted B replacement sets TOTAL quantity60 at11, including prior filled quantity;3 B fill F2 quantity15 at11, settles T2;4 local cancel request for B;5 B fill F3 quantity5 at11, settles T2;6 B cancel acknowledgement closes its remaining20;7 correction of F1 replaces that entire execution with quantity12 at10, still settles T1;8 S fill F4 quantity10 at12 settles T1;9 duplicate delivery of event8 with the same event and execution ids;10 local cancel request for S with no acknowledgement. Every event is received by cutoff; no settlement has occurred yet. Corrections are replacements, not extra executions; duplicates are idempotent. A post-cancellation fill correction does not reopen B.",
+        "title": "Exchange events and correction chain"
+      },
+      {
+        "id": "ex_rules",
+        "release_stage": 1,
+        "text": "Economic ownership changes when a trade fills or is corrected. Cash and settled shares change only on their dated settlement. S remains live for20 shares after its unacknowledged cancellation and reserves20 settled shares at every checkpoint. B is terminally canceled and reserves no future buy cash. At a checkpoint incoming settlements occur before mandatory delivery and no new S fill arrives during the planned horizon. Existing trade cash by day means net contractual cash [T1,T2] from old fills only, excluding action, delivery, operating payment and facility.",
+        "title": "Settlement and commitment conventions"
+      },
+      {
+        "id": "ex_action",
+        "release_stage": 1,
+        "text": "Choose at most one immediate sale at9 from0,5,...,50 shares, and at most one new purchase at10 from0,5,...,80 shares. Zero sale or zero purchase is permitted. New purchase cash is prepaid T0 and shares delivered T2. Sale proceeds and optional integer cash bridge in0..100 arrive T0 before purchase payment. Bridge principal plus5% fee is repaid T2. T0 sales use only currently settled unreserved inventory; no re-selling new receipts. At T1 maintain live S share reservation20 and cash at least50; at T2 maintain reservation20 and cash at least100. Cash cannot be negative at T0. Maximize final owned shares AFTER mandatory delivery, then minimize bridge fee, then lexicographically minimize[sell,buy,bridge]. No external execution is requested. Report cash inclusive of required reserves.",
+        "title": "Repair action and economic objective"
+      }
+    ],
+    "title": "Reconcile corrected fills before a settlement-constrained repair",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

@@ -1,0 +1,234 @@
+Pricing Term Sheet                                                                                                      Free Writing Prospectus
+dated as of October 28, 2024                                                                                          Filed pursuant to Rule 433
+                                                                                                                                  Relating to the
+                                                                            Preliminary Prospectus Supplements each dated October 28, 2024 to the
+                                                                                                               Prospectus dated October 22, 2024
+                                                                                                                     Registration No. 333-282628
+
+
+                                                                 The Boeing Company
+
+                                                                Concurrent Offerings of
+
+                               112,500,000 Shares of Common Stock, par value $5.00 per Share (the “Common Stock”)
+                                                        (the “Common Stock Offering”)
+
+                                                                           and
+
+                                              100,000,000 Depositary Shares (the “Depositary Shares”)
+                                                  Each Representing a 1/20th Interest in a Share of
+                                               6.00% Series A Mandatory Convertible Preferred Stock
+                                                        (the “Depositary Shares Offering”)
+
+The information in this pricing term sheet relates only to the Common Stock Offering and the Depositary Shares Offering and should be read together
+with (i) the preliminary prospectus supplement dated October 28, 2024 relating to the Common Stock Offering (the “Common Stock Preliminary
+Prospectus Supplement”), including the documents incorporated by reference therein, (ii) the preliminary prospectus supplement dated October 28,
+2024 relating to the Depositary Shares Offering (the “Depositary Shares Preliminary Prospectus Supplement”), including the documents incorporated
+by reference therein and (iii) the related base prospectus dated October 22, 2024, each filed pursuant to Rule 424(b) under the Securities Act of 1933, as
+amended, Registration No. 333-282628. Neither the Common Stock Offering nor the Depositary Shares Offering is contingent on the successful
+completion of the other offering. Terms not defined in this pricing term sheet have the meanings given to such terms in the Common Stock Preliminary
+Prospectus Supplement or the Depositary Shares Preliminary Prospectus Supplement, as applicable. All references to dollar amounts are references to
+U.S. dollars. The Boeing Company has increased the size of the Common Stock Offering to 112,500,000 shares of Common Stock (or 129,375,000
+shares of Common Stock if the underwriters in the Common Stock Offering exercise in full their option to purchase additional Common Stock). The final
+prospectus supplement relating to the Common Stock Offering will reflect conforming changes relating to such increase in the size of the Common Stock
+Offering.
+
+Issuer:                                        The Boeing Company
+
+Ticker / Exchange for the Common Stock:        BA / New York Stock Exchange (“NYSE”)
+
+Pricing Date:                                  October 28, 2024.
+
+Trade Date:                                    October 29, 2024 (“T”).
+
+Settlement Date for the Common Stock
+Offering:                                      October 30, 2024 (T+1).
+
+Settlement Date for the Depositary Shares      October 31, 2024 (T+2), which is the second business day following the trade date for the Depositary
+Offering:                                      Shares (such settlement cycle being referred to as “T+2”). Under Rule 15c6-1 under the Securities
+                                               Exchange Act of 1934, as amended, trades in the secondary market
+
+
+                                      Wells Fargo Securities, LLC
+                                      BNP Paribas Securities Corp.
+                                      Deutsche Bank Securities Inc.
+                                      Mizuho Securities USA LLC
+                                      Morgan Stanley & Co. LLC
+                                      RBC Capital Markets, LLC
+                                      SMBC Nikko Securities America, Inc.
+
+Co-Managers:                          Credit Agricole Securities (USA) Inc.
+                                      MUFG Securities Americas Inc.
+                                      Commerz Markets LLC
+                                      Santander US Capital Markets LLC
+                                      Academy Securities, Inc.
+                                      BTIG, LLC
+                                      Loop Capital Markets LLC
+                                      Raymond James & Associates, Inc.
+                                      Siebert Williams Shank & Co., LLC
+
+                                                          Depositary Shares Offering
+
+Depositary Shares Offered:      100,000,000 Depositary Shares, each of which represents a 1/20th interest in a share of the Issuer’s 6.00% Series A
+                                Mandatory Convertible Preferred Stock (the “Mandatory Convertible Preferred Stock”). At settlement of the
+                                Depositary Shares Offering, the Issuer will issue 5,000,000 shares of Mandatory Convertible Preferred Stock, subject
+                                to the underwriters’ over-allotment option.
+
+Over-allotment Option for
+Underwriters to Purchase        15,000,000 additional Depositary Shares (corresponding to 750,000 additional shares of the Mandatory Convertible
+Additional Depositary Shares:   Preferred Stock), solely to cover over-allotments.
+
+Public Offering Price of the
+Depositary Shares:              $50.00 per Depositary Share.
+
+Dividends:                      6.00% of the liquidation preference of $1,000 per share of the Mandatory Convertible Preferred Stock per year.
+                                Dividends will accumulate from the Settlement Date for the Depositary Shares and, to the extent that the Issuer is
+                                legally permitted to pay dividends and its board of directors, or an authorized committee thereof, declares a dividend
+                                payable with respect to the Mandatory Convertible Preferred Stock, the Issuer will pay such dividends in cash or,
+                                subject to certain limitations, by delivery of shares of Common Stock or through any combination of cash and shares
+                                of Common Stock, as determined by the Issuer’s board of directors in its sole discretion; provided that any unpaid
+                                dividends will continue to accumulate.
+
+                                The expected dividend payable on the first Dividend Payment Date is $12.50 per share of Mandatory Convertible
+                                Preferred Stock (equivalent to $0.625 per Depositary Share). Each subsequent dividend is expected to be $15.00 per
+                                share of Mandatory Convertible Preferred Stock (equivalent to $0.75 per Depositary Share).
+
+Dividend Record Dates:          The January 1, April 1, July 1 and October 1 immediately preceding the relevant Dividend Payment Date.
+
+                                                                         3
+
+
+Dividend Payment Dates:          January 15, April 15, July 15 and October 15 of each year, commencing on, and including, January 15, 2025 and
+                                 ending on, and including, October 15, 2027.
+
+Mandatory Conversion Date:       The second business day immediately following the last trading day of the 20 consecutive trading day period
+                                 beginning on, and including, the 21st scheduled trading day immediately preceding October 15, 2027.
+
+Initial Price:                   Equal to $1,000, divided by the Maximum Conversion Rate, rounded to the nearest $0.0001, which initially is
+                                 $142.9797.
+
+Threshold Appreciation Price:    Equal to $1,000, divided by the Minimum Conversion Rate, rounded to the nearest $0.0001, which initially is
+                                 $171.5854 and represents a premium of approximately 20% over the Initial Price.
+
+Floor Price:                     $50.04 (approximately 35% of the Initial Price), subject to adjustment as described in the Depositary Shares
+                                 Preliminary Prospectus Supplement.
+
+Conversion Rate per Share of
+Mandatory Convertible Preferred
+Stock:                          The conversion rate for each share of Mandatory Convertible Preferred Stock will not be more than 6.9940 shares of
+                                Common Stock and not less than 5.8280 shares of Common Stock (respectively, the “Maximum Conversion Rate”
+                                and “Minimum Conversion Rate”), depending on the applicable market value (as defined in the Depositary Shares
+                                Preliminary Prospectus Supplement) of the Common Stock, as described below and subject to certain anti-dilution
+                                adjustments. Correspondingly, the conversion rate per Depositary Share will be not more than 0.3497 shares of
+                                Common Stock and not less than 0.2914 shares of Common Stock.
+
+                                 The following table illustrates the conversion rate per share of the Mandatory Convertible Preferred Stock, subject to
+                                 certain anti-dilution adjustments described in the Depositary Shares Preliminary Prospectus Supplement, based on
+                                 the applicable market value of the Common Stock:
+
+                                                Applicable Market Value of                               Conversion Rate per Share of
+                                                   the Common Stock                                     Mandatory Convertible Preferred
+                                                                                                                    Stock
+
+                                 Greater than the Threshold Appreciation Price               5.8280 shares of Common Stock
+
+                                 Equal to or less than the Threshold Appreciation Price but Between 5.8280 and 6.9940 shares of Common Stock,
+                                 greater than or equal to the Initial Price                 determined by dividing $1,000 by the applicable market
+                                                                                            value
+                                 Less than the Initial Price
+                                                                                             6.9940 shares of Common Stock
+
+                                                                          4
+
+
+                       The following table illustrates the conversion rate per Depositary Share, subject to certain anti-dilution adjustments
+                       described in the Depositary Shares Preliminary Prospectus Supplement, based on the applicable market value of the
+                       Common Stock:
+
+                                      Applicable Market Value of                                      Conversion Rate per Depositary
+                                         the Common Stock                                                         Share
+
+                       Greater than the Threshold Appreciation Price                       0.2914 shares of Common Stock
+
+                       Equal to or less than the Threshold Appreciation Price but Between 0.2914 and 0.3497 shares of Common Stock,
+                       greater than or equal to the Initial Price                 determined by dividing $50 by the applicable market
+                                                                                  value
+
+                       Less than the Initial Price                                         0.3497 shares of Common Stock
+
+Optional Conversion:   Other than during a fundamental change conversion period (as defined in the Depositary Shares Preliminary
+                       Prospectus Supplement), at any time prior to October 15, 2027, a holder of Mandatory Convertible Preferred Stock
+                       may elect to convert such holder’s shares of Mandatory Convertible Preferred Stock, in whole or in part, at the
+                       Minimum Conversion Rate of 5.8280 shares of Common Stock per share of Mandatory Convertible Preferred Stock
+                       (equivalent to 0.2914 shares of Common Stock per Depositary Share), subject to adjustment as described in the
+                       Depositary Shares Preliminary Prospectus Supplement. Because each Depositary Share represents a 1/20th fractional
+                       interest in a share of Mandatory Convertible Preferred Stock, a holder of Depositary Shares may convert its
+                       Depositary Shares only in lots of 20 Depositary Shares.
+
+Fundamental Change:    If a fundamental change (as defined in the Depositary Shares Preliminary Prospectus Supplement) occurs on or prior
+                       to October 15, 2027, holders of the Mandatory Convertible Preferred Stock will have the right to convert their shares
+                       of Mandatory Convertible Preferred Stock, in whole or in part, into shares of Common Stock at the fundamental
+                       change conversion rate (as defined in the Depositary Shares Preliminary Prospectus Supplement) during the period
+                       beginning on, and including, the effective date (as defined in the Depositary Shares Preliminary Prospectus
+                       Supplement) of such fundamental change and ending on, and including, the earlier of (a) the date that is 20 calendar
+                       days after such effective date (or, if later, the date that is 20 calendar days after holders receive notice of such
+                       fundamental change) and (b) October 15, 2027. For the avoidance of doubt, the period described in the immediately
+                       preceding sentence may not end on a date that is later than October 15, 2027.
+
+                       The following table sets forth the fundamental change conversion rate per share of Mandatory Convertible Preferred
+                       Stock based on the effective date of the fundamental change and the stock price (as defined in the Depositary Shares
+                       Preliminary Prospectus Supplement) in the fundamental change:
+
+                                                                                     Stock Price
+Effective Date             $100.00   $110.00    $120.00   $130.00       $142.98   $150.00   $160.00   $171.59   $180.00   $190.00   $200.00   $210.00
+October 31, 2024           6.3600    6.2860     6.2200    6.1600        6.0940    6.0620     6.0200   5.9800    5.9540    5.9280    5.9040    5.8840
+October 15, 2025           6.5120    6.4260     6.3460    6.2720        6.1860    6.1440     6.0920   6.0380    6.0060    5.9720    5.9420    5.9160
+October 15, 2026           6.7420    6.6480     6.5480    6.4460        6.3220    6.2600     6.1800   6.1000    6.0520    6.0020    5.9620    5.9280
+October 15, 2027           6.9940    6.9940     6.9940    6.9940        6.9940    6.6660     6.2500   5.8280    5.8280    5.8280    5.8280    5.8280
+
+
+
+                                                                    5
+
+
+                   The exact stock price and effective date may not be set forth on the table, in which case:
+                         •   if the stock price is between two stock prices on the table or the effective date is between two effective
+                             dates on the table, the fundamental change conversion rate per share of Mandatory Convertible Preferred
+                             Stock will be determined by straight-line interpolation between the fundamental change conversion rates
+                             per share of Mandatory Convertible Preferred Stock set forth for the higher and lower stock prices and the
+                             earlier and later effective dates, as applicable, based on a 365-day or 366-day year, as applicable;
+                         •   if the stock price is in excess of $210.00 per share (subject to adjustment in the same manner as the stock
+                             prices in the column headings of the table above as described in the Depositary Shares Preliminary
+                             Prospectus Supplement), then the fundamental change conversion rate per share of Mandatory Convertible
+                             Preferred Stock will be the Minimum Conversion Rate; and
+                         •   if the stock price is less than $100.00 per share (subject to adjustment in the same manner as the stock
+                             prices in the column headings of the table above as described in the Depositary Shares Preliminary
+                             Prospectus Supplement), then the fundamental change conversion rate per share of Mandatory Convertible
+                             Preferred Stock will be the Maximum Conversion Rate.
+
+                        The following table sets forth the fundamental change conversion rate per Depositary Share based on the
+                        effective date of the fundamental change and the stock price in the fundamental change:
+
+                                                                                Stock Price
+Effective Date         $100.00   $110.00   $120.00   $130.00       $142.98   $150.00   $160.00   $171.59   $180.00   $190.00   $200.00   $210.00
+October 31, 2024       0.3180    0.3143    0.3110    0.3080        0.3047    0.3031    0.3010    0.2990    0.2977    0.2964    0.2952    0.2942
+October 15, 2025       0.3256    0.3213    0.3173    0.3136        0.3093    0.3072    0.3046    0.3019    0.3003    0.2986    0.2971    0.2958
+October 15, 2026       0.3371    0.3324    0.3274    0.3223        0.3161    0.3130    0.3090    0.3050    0.3026    0.3001    0.2981    0.2964
+October 15, 2027       0.3497    0.3497    0.3497    0.3497        0.3497    0.3333    0.3125    0.2914    0.2914    0.2914    0.2914    0.2914
+
+                   The exact stock price and effective date may not be set forth on the table, in which case:
+                         •   if the stock price is between two stock prices on the table or the effective date is between two effective
+                             dates on the table, the fundamental change conversion rate per Depositary Share will be determined by
+                             straight-line interpolation between the fundamental change conversion rates per Depositary Share set forth
+                             for the higher and lower stock prices and the earlier and later effective dates, as applicable, based on a
+                             365-day or 366-day year, as applicable;
+                         •   if the stock price is in excess of $210.00 per share (subject to adjustment in the same manner as the stock
+                             prices in the column headings of the table above as described in the Depositary Shares Preliminary
+                             Prospectus Supplement), then the fundamental change conversion rate per Depositary Share will be the
+                             Minimum Conversion Rate, divided by 20; and
+                         •   if the stock price is less than $100.00 per share (subject to adjustment in the same manner as the stock
+                             prices in the column headings of the table above as described in the Depositary Shares Preliminary
+                             Prospectus Supplement), then the fundamental change conversion rate per Depositary Share will be the
+                             Maximum Conversion Rate, divided by 20.
+
+                                                               6

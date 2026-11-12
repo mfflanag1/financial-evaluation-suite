@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h2a-danaher-2022",
+    "url": "https://investors.danaher.com/download/Danaher+2022+Annual+Report.pdf",
+    "title": "Danaher FY2022 annual report",
+    "publisher": "Danaher Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+    "text_sha256": "88a59cf2ee775481ed2e1e145835eed44dbd411e8a675dd318142772f42ad696",
+    "available_by": "2026-10-04T20:02:32Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_pdf.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "h2a-danaher-2023",
+    "url": "https://investors.danaher.com/download/Danaher+2023+Annual+Report.pdf",
+    "title": "Danaher FY2023 annual report",
+    "publisher": "Danaher Corporation",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Conservative 2026 observation bound recorded after the complete original PDF was retained. Document dates identify versions; they are not asserted first-public timestamps. Retrospective research only.",
+    "text_sha256": "61fd699102ffb88021865814fb2f4107f28970a63e8be96186924613c2b6ed3e",
+    "available_by": "2026-10-04T20:02:32Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_pdf.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

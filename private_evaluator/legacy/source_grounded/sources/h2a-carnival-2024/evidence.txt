@@ -1,0 +1,110 @@
+events as described within the indenture governing the 2027 Convertible Notes. Effective December 1, 2024,
+the 2027 Convertible Notes became convertible for the period beginning December 1, 2024 and ending
+February 28, 2025. Refer to Note 15 — “Supplemental Cash Flow Information” for additional detail on
+transactions related to the 2027 Convertible Notes.
+
+We may redeem the 2027 Convertible Notes, in whole but not in part, at any time on or prior to the 40th
+scheduled trading day immediately before the maturity date at a redemption price equal to 100% of the
+principal amount thereof, plus accrued and unpaid interest to the redemption date, if we or any guarantor
+would have to pay any additional amounts on the 2027 Convertible Notes due to a change in tax laws,
+regulations or rulings or a change in the official application, administration or interpretation thereof.
+
+On or after December 5, 2025 and on or before the 40th scheduled trading day immediately before the
+maturity date, we may redeem for cash all or part of the 2027 Convertible Notes, at our option, if the last
+reported sale price of Carnival Corporation’s common stock exceeds 130% of the conversion price then in
+effect for at least 20 trading days (whether or not consecutive), including the trading day immediately preceding
+the date on which we provide notice of redemption, during the 30 consecutive trading day period ending
+on, and including, the trading day immediately preceding the date on which we provide notice of redemption.
+The redemption price will equal 100% of the principal amount of the 2027 Convertible Notes being
+redeemed, plus accrued and unpaid interest to, but excluding, the redemption date.
+
+The net carrying value of the Convertible Notes was as follows:
+                                                                                                                          November 30,
+(in millions)                                                                                                           2024             2023
+Principal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    $      1,131 $            1,557
+Less: Unamortized debt discount and debt issue costs . . . . . . . . . . . . . . . . . . . .                                (19)               (27)
+                                                                                                                   $      1,112      $       1,530
+
+The interest expense recognized related to the Convertible Notes was as follows:
+
+                                                                                                                       November 30,
+(in millions)                                                                                               2024             2023            2022
+Contractual interest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .            $         86     $      91       $      32
+Amortization of debt discount and debt issue costs . . . . . . . . . . . . . . . .                                 8             9              29
+                                                                                                        $         94     $     100       $      61
+
+As of November 30, 2024, the if-converted value above par was $1.0 billion on 84.5 million available shares
+for the 2027 Convertible Notes.
+
+Collateral and Priority Pool
+
+As of November 30, 2024, the net book value of our ships and ship improvements, excluding ships under
+construction, is $39.3 billion. Our secured debt is secured on a first-priority basis by certain collateral, which
+includes vessels and certain assets related to those vessels and material intellectual property (combined net
+book value of approximately $22.4 billion, including $20.8 billion related to vessels and certain assets related
+to those vessels) as of November 30, 2024 and certain other assets.
+
+As of November 30, 2024, $8.0 billion in net book value of our ships and ship improvements relate to the
+priority pool vessels included in the priority pool of 12 unencumbered vessels (the “Senior Priority Notes
+Subject Vessels”) for our 2028 Senior Priority Notes and $2.8 billion in net book value of our ship and ship
+improvements relate to the priority pool vessels included in the priority pool of the three Revolving
+Facility Subject Vessels for our Revolving Facility. As of November 30, 2024, there was no change in the
+identity of the Senior Priority Notes Subject Vessels or the Revolving Facility Subject Vessels.
+
+
+                                                                       20
+
+
+Covenant Compliance
+As of November 30, 2024, our Revolving Facility, unsecured loans and export credit facilities contain
+certain covenants listed below:
+    • Maintain minimum interest coverage (adjusted EBITDA to consolidated net interest charges, as
+      defined in the agreements) at a ratio of not less than 2.0 to 1.0 for each testing date occurring from
+      November 30, 2024 until May 31, 2025, at a ratio of not less than 2.5 to 1.0 for the August 31, 2025 and
+      November 30, 2025 testing dates, and at a ratio of not less than 3.0 to 1.0 for the February 28, 2026
+      testing date onwards and as applicable through their respective maturity dates
+    • For certain of our unsecured loans and export credit facilities, maintain minimum issued capital and
+      consolidated reserves (as defined in the agreements) of $5.0 billion
+    • Limit our debt to capital (as defined in the agreements) percentage to a percentage not to exceed
+      65%
+    • Maintain minimum liquidity of $1.5 billion
+    • Adhere to certain restrictive covenants through August 2027 (subject to such covenants terminating
+      if we reach an investment grade credit rating in accordance with the agreement governing the Revolving
+      Facility)
+    • Limit the amounts of our secured assets as well as secured and other indebtedness
+At November 30, 2024, we were in compliance with the applicable covenants under our debt agreements.
+Generally, if an event of default under any debt agreement occurs, then, pursuant to cross-default and/or cross-
+acceleration clauses therein, substantially all of our outstanding debt and derivative contract payables
+could become due, and our debt and derivative contracts could be terminated. Any financial covenant
+amendment may lead to increased costs, increased interest rates, additional restrictive covenants and other
+available lender protections that would be applicable.
+
+NOTE 6 — Contingencies
+
+Litigation
+We are routinely involved in legal proceedings, claims, disputes, regulatory matters and governmental
+inspections or investigations arising in the ordinary course of or incidental to our business. We have insurance
+coverage for certain of these claims and actions, or any settlement of these claims and actions, and
+historically the maximum amount of our liability, net of any insurance recoverables, has been limited to our
+self-insurance retention levels.
+We record provisions in the consolidated financial statements for pending litigation when we determine that
+an unfavorable outcome is probable and the amount of the loss can be reasonably estimated.
+Legal proceedings and government investigations are subject to inherent uncertainties, and unfavorable
+rulings or other events could occur. Unfavorable resolutions could involve substantial monetary damages.
+In addition, in matters for which conduct remedies are sought, unfavorable resolutions could include an
+injunction or other order prohibiting us from selling one or more products at all or in particular ways,
+precluding particular business practices or requiring other remedies. An unfavorable outcome might result
+in a material adverse impact on our business, results of operations, financial position or liquidity.
+As previously disclosed, on May 2, 2019, the Havana Docks Corporation filed a lawsuit against Carnival
+Corporation in the U.S. District Court for the Southern District of Florida under Title III of the Cuban
+Liberty and Democratic Solidarity Act, also known as the Helms-Burton Act, alleging that Carnival
+Corporation “trafficked” in confiscated Cuban property when certain ships docked at certain ports in
+Cuba, and that this alleged “trafficking” entitles the plaintiffs to treble damages. On March 21, 2022, the
+court granted summary judgment in favor of Havana Docks Corporation as to liability. On December 30,
+2022, the court entered judgment against Carnival Corporation in the amount of $110 million plus $4 million
+in fees and costs. We appealed. On October 22, 2024, the Court of Appeals for the 11th Circuit reversed the
+District Court’s judgment against us. The case will be remanded to the District Court for further proceedings
+in accordance with the decision. We believe the ultimate outcome of this matter will not have a material
+impact on our consolidated financial statements.
+
+                                                      21

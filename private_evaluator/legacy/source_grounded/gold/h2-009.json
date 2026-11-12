@@ -1,0 +1,178 @@
+{
+  "case_id": "h2-009",
+  "reference_solution": {
+    "hedge_contracts": 25.0,
+    "final_basis_settlement": -2.5,
+    "basis_hedge_gain": 118750.0,
+    "net_physical_and_hedge_cash": 112400.0,
+    "residual_henry_hub_sensitivity": 62500.0,
+    "residual_monthly_basis_sensitivity": 0.0,
+    "combined_cash_known_without_physical_price": false,
+    "negative_day_share_determines_annual_revenue": false
+  },
+  "worked_derivation": [
+    "Contract quantity=62500/2500=25. Settlement=A-B=-.30-2.20=-2.50. Short gain=62500*(-.60-(-2.50))=118750.",
+    "Physical receipts=62500*(-.10)=-6250. Fees=25*4=100. Combined=-6250+118750-100=112400.",
+    "At fixed basis, a $1 Henry Hub increase leaves A-B unchanged but adds62500 to physical receipts. A $1 basis increase adds62500 physical and subtracts62500 hedge: net0.",
+    "Removing physical price leaves shape unidentified: prices-.10 or+.10 produce combined112400 or124900 with identical futures settlements. Negative-day frequency alone omits price magnitudes, volumes and marketing terms; it cannot identify revenue sign."
+  ],
+  "fields": [
+    {
+      "id": "hedge_contracts",
+      "expected": 25.0,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Contract Size 2500 MMBtus"
+          ]
+        ]
+      },
+      "atol": 1e-06,
+      "rtol": 0
+    },
+    {
+      "id": "final_basis_settlement",
+      "expected": -2.5,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Final Settlement Reference Price A minus Reference Price B"
+          ]
+        ]
+      },
+      "atol": 1e-06,
+      "rtol": 0
+    },
+    {
+      "id": "basis_hedge_gain",
+      "expected": 118750.0,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Final Settlement Reference Price A minus Reference Price B"
+          ]
+        ]
+      },
+      "atol": 0.01,
+      "rtol": 0
+    },
+    {
+      "id": "net_physical_and_hedge_cash",
+      "expected": 112400.0,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Contract Size 2500 MMBtus"
+          ],
+          [
+            "Final Settlement Reference Price A minus Reference Price B"
+          ]
+        ]
+      },
+      "atol": 0.01,
+      "rtol": 0
+    },
+    {
+      "id": "residual_henry_hub_sensitivity",
+      "expected": 62500.0,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Final Settlement Reference Price A minus Reference Price B"
+          ],
+          [
+            "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+          ],
+          [
+            "price of the NYMEX Henry Hub"
+          ]
+        ]
+      },
+      "atol": 1e-06,
+      "rtol": 0
+    },
+    {
+      "id": "residual_monthly_basis_sensitivity",
+      "expected": 0.0,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Contract Size 2500 MMBtus"
+          ],
+          [
+            "Final Settlement Reference Price A minus Reference Price B"
+          ],
+          [
+            "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+          ],
+          [
+            "price of the NYMEX Henry Hub"
+          ]
+        ]
+      },
+      "atol": 1e-06,
+      "rtol": 0
+    },
+    {
+      "id": "combined_cash_known_without_physical_price",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-ice-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-ice-waha": [
+          [
+            "Monthly Bidweek Spot Gas Prices ($/MMBtu): Southwest: Waha : Index"
+          ],
+          [
+            "price of the NYMEX Henry Hub"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "negative_day_share_determines_annual_revenue",
+      "expected": false,
+      "critical": true,
+      "required_source_ids": [
+        "h2b-waha"
+      ],
+      "evidence_anchor_groups": {
+        "h2b-waha": [
+          [
+            "traded below zero for 42% of trading days in 2024"
+          ]
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "No actual2024 trading P&L is claimed. ICE retained specification is dated2026, so historical applicability is not assumed.",
+    "Producer quantities, prices, fees and sensitivity assumptions are synthetic. Basis, outright price and daily-to-monthly shape exposures are deliberately separated."
+  ]
+}

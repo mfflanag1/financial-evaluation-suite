@@ -1,0 +1,163 @@
+{
+  "question_id": "q135",
+  "title": "Promote a forecast model after population drift without consuming its holdout",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "A risk forecast model is being considered for deployment after a shift in regime frequency. Separate sample composition from model error, apply the bias gate and implementation penalty, and decide whether to replace the incumbent. An analyst proposes subtracting the observed validation bias and continuing to report the same holdout score; determine whether that is permitted.",
+  "inputs": {
+    "regime_order": [
+      "quiet",
+      "volatile"
+    ],
+    "target_regime_weights": [
+      0.2,
+      0.8
+    ],
+    "validation_rows": [
+      {
+        "regime": "quiet",
+        "realized": -0.02,
+        "forecasts": [
+          -0.02,
+          -0.06,
+          -0.04
+        ]
+      },
+      {
+        "regime": "quiet",
+        "realized": 0,
+        "forecasts": [
+          0,
+          -0.04,
+          -0.02
+        ]
+      },
+      {
+        "regime": "quiet",
+        "realized": 0.02,
+        "forecasts": [
+          0.02,
+          -0.02,
+          0.0
+        ]
+      },
+      {
+        "regime": "quiet",
+        "realized": 0.04,
+        "forecasts": [
+          0.04,
+          0.0,
+          0.02
+        ]
+      },
+      {
+        "regime": "volatile",
+        "realized": -0.1,
+        "forecasts": [
+          -0.16,
+          -0.09000000000000001,
+          -0.12000000000000001
+        ]
+      },
+      {
+        "regime": "volatile",
+        "realized": -0.04,
+        "forecasts": [
+          -0.1,
+          -0.03,
+          -0.06
+        ]
+      },
+      {
+        "regime": "volatile",
+        "realized": 0.04,
+        "forecasts": [
+          -0.019999999999999997,
+          0.05,
+          0.02
+        ]
+      },
+      {
+        "regime": "volatile",
+        "realized": 0.1,
+        "forecasts": [
+          0.04000000000000001,
+          0.11,
+          0.08
+        ]
+      }
+    ],
+    "model_order": [
+      "A",
+      "B",
+      "C"
+    ],
+    "deployment_penalty": [
+      0,
+      2e-05,
+      0.0002
+    ],
+    "absolute_bias_limit": 0.025,
+    "minimum_objective_improvement": 0.0001,
+    "incumbent": "C"
+  },
+  "sources": [
+    {
+      "id": "q135_transport_protocol",
+      "text": "Original synthetic evaluation packet. Validation sampling intentionally balanced quiet and volatile regimes. Deployment regime proportions are independently stipulated as20% quiet and80% volatile. Estimate each model loss and realized-minus-forecast bias by within-regime averaging followed by target weighting. Forecasts were frozen before these labels."
+    },
+    {
+      "id": "q135_promotion_policy",
+      "text": "Original synthetic evaluation packet. Models with absolute target bias above.025 are ineligible. Among eligible models minimize target MSE plus the listed deployment penalty; ties use alphabetic model. Replace incumbent C only if improvement is at least.0001, otherwise retain C. Correcting forecasts using these same validation residuals creates a new unvalidated model; no such adjustment is authorized."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "target_weighted_mse",
+      "type": "number_array",
+      "unit": "decimal return squared",
+      "description": "[A,B,C], weighting regime means by target rather than sample frequency.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "pooled_sample_mse",
+      "type": "number_array",
+      "unit": "decimal return squared",
+      "description": "[A,B,C], equal weight per validation row.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "target_weighted_bias",
+      "type": "number_array",
+      "unit": "decimal return",
+      "description": "[A,B,C]; realized minus forecast.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "deployment_objectives",
+      "type": "number_array",
+      "unit": "loss units",
+      "description": "Target MSE plus stipulated deployment penalty, [A,B,C].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "selected_model",
+      "type": "string",
+      "unit": "label",
+      "description": "Exactly A, B, or C."
+    },
+    {
+      "name": "test_recalibration_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether fitting a correction on these validation labels preserves an independent validation score."
+    }
+  ]
+}

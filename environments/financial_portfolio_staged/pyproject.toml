@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-portfolio-staged"
+version = "0.4.0"
+description = "Staged portfolio research protocol with explicit tool and retry controls"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["financial-portfolio==0.3.0", "verifiers==0.4.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_portfolio_staged"]

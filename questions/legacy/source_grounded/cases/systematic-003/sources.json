@@ -1,0 +1,20 @@
+[
+  {
+    "id": "systematic-meta-ticker",
+    "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Platforms-Inc.-to-Change-Ticker-Symbol-to-META-on-June-9-2022.pdf",
+    "title": "Meta issuer notice of FB to META ticker change",
+    "publisher": "Meta Platforms Inc., issuer-hosted news PDF",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The primary-source capture was retained before the recorded UTC observation bound. Original first-public dissemination time is not established. Document dates and EDGAR acceptance timestamps are separate descriptive fields, not substitutes for public availability. The cases use a 2026 observed-source cutoff and explicitly synthetic replay arrival times where exact gating is required.",
+    "text_sha256": "9d70663a49c575016a8c005a269dc190ef1d62dda83c09542948c1b8780edf55",
+    "available_by": "2026-10-04T18:15:18Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

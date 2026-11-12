@@ -1,0 +1,123 @@
+{
+  "question_id": "q119",
+  "title": "Funding a liability strip from dated curve quotes",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "At cutoff day4, choose the currency- and maturity-aligned quotes, bootstrap the curve, and assess whether the liability can be prefunded within the cash facility. Revalue under the specified quote shock. Cash amounts are USD millions, and rates are decimal annual effective rates. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "cutoff": 4,
+    "quotes": [
+      {
+        "currency": "USD",
+        "year": 3,
+        "published": 3,
+        "par_rate": 0.0475
+      },
+      {
+        "currency": "USD",
+        "year": 1,
+        "published": 2,
+        "par_rate": 0.04
+      },
+      {
+        "currency": "USD",
+        "year": 2,
+        "published": 3,
+        "par_rate": 0.045
+      },
+      {
+        "currency": "USD",
+        "year": 3,
+        "published": 5,
+        "par_rate": 0.02
+      },
+      {
+        "currency": "EUR",
+        "year": 2,
+        "published": 4,
+        "par_rate": 0.03
+      }
+    ],
+    "liability": [
+      0,
+      40,
+      70
+    ],
+    "cash": 90,
+    "funding_limit": 6,
+    "shock": 0.01
+  },
+  "sources": [
+    {
+      "id": "q119_facts",
+      "text": "Synthetic packet: The quote blotter contains publication days, currency and instrument tenor. The liability schedule lists payments at years1–3. Only USD instruments fund the stated liability."
+    },
+    {
+      "id": "q119_terms",
+      "text": "Synthetic governing terms: Quotes are annual-pay par coupon yields on unit principal, with coupons at every integer year through maturity. No default, taxes, bid-ask or accrued interest. The same curve discounts all USD cash flows. Shock is an additive decimal change to par quotes, not to already bootstrapped zero rates."
+    },
+    {
+      "id": "q119_excluded",
+      "text": "Synthetic out-of-scope packet: A day4 note describes a foreign-currency two-year par quote. It concerns a different currency and provides no cross-currency conversion permission."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "eligible_par_rates",
+      "type": "number_array",
+      "unit": "decimal annual rates",
+      "description": "Selected annual par coupon rates for years1,2,3.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "discount_factors",
+      "type": "number_array",
+      "unit": "discount factors",
+      "description": "Bootstrapped discount factors for annual years1,2,3.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "liability_pv",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Present funding cost of the liability strip.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "year_two_to_three_forward",
+      "type": "number",
+      "unit": "decimal annual rate",
+      "description": "One-year effective forward rate from year2 to year3.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "parallel_quote_shock_pv_change",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Liability PV after adding shock to each par quote minus base PV; rebootstrap.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funding_gap",
+      "type": "number",
+      "unit": "USD millions",
+      "description": "Additional cash needed beyond existing cash.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "prefunding_permitted",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the funding gap fits the stipulated facility."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "credit-vestis-agreement",
+  "url": "https://www.sec.gov/Archives/edgar/data/1967649/000114036124009073/ef20022209_ex10-1.htm",
+  "title": "Vestis February 22, 2024 Amendment No. 1, Exhibit A: selected indebtedness, cash and covenant definitions",
+  "publisher": "Vestis Corporation; SEC EDGAR archive",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T17:52:45Z",
+  "availability_basis": "The document has a stated agreement date, but the original public dissemination timestamp was not established. available_by is the UTC observation bound recorded after the public SEC source captures were retained. This is retrospective document-version analysis, not an assertion of availability on the agreement date.",
+  "document_date": "2024-02-22",
+  "retrieved_at": "2026-10-04T17:52:45Z",
+  "redistribution_status": "Publicly accessible SEC-hosted issuer agreement. Underlying redistribution rights have not been cleared; local research only, no public dataset release.",
+  "raw_path": "sources/credit-vestis-agreement/evidence.txt",
+  "text_path": "sources/credit-vestis-agreement/evidence.txt",
+  "raw_sha256": "26b873092ea681f79c749da6eb701312bd91ec477def91a716ea55c7a6119aa1",
+  "text_sha256": "26b873092ea681f79c749da6eb701312bd91ec477def91a716ea55c7a6119aa1",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

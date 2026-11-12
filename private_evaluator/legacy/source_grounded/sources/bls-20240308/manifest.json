@@ -1,0 +1,24 @@
+{
+  "id": "bls-20240308",
+  "url": "https://www.bls.gov/news.release/archives/empsit_03082024.htm",
+  "title": "The Employment Situation — February 2024",
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "published_at": "2024-03-08T13:30:00Z",
+  "publication_precision": "second",
+  "availability_basis": "Official dated archive header states an 8:30 a.m. ET embargo expiration. UTC conversion uses America/New_York including daylight saving time. This is the official announced release time, not an independently observed first-public-access timestamp. The task uses an end-of-release-day cutoff rather than an exact-release-instant cutoff.",
+  "retrieved_at": "2026-10-04T17:09:04Z",
+  "redistribution_status": "U.S. federal government statistical release; official attribution and URL retained. Linked third-party assets are not bundled. Only supported narrative and summary-table excerpts are used as solver evidence.",
+  "raw_path": "sources/bls-20240308/evidence.txt",
+  "text_path": "sources/bls-20240308/evidence.txt",
+  "raw_sha256": "4225e3fcbbdc0011ced8fbd8c0bb82ed7acb74b7cf747fcf91e383c5596b9264",
+  "text_sha256": "4225e3fcbbdc0011ced8fbd8c0bb82ed7acb74b7cf747fcf91e383c5596b9264",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "unspecified",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: unspecified.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

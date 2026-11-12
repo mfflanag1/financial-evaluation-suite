@@ -1,0 +1,95 @@
+{
+  "question_id": "q122",
+  "title": "Conditional merger economics and expiring financing",
+  "mode": "single",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 1,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Audit an unconditional completion-return claim using the day0 cutoff packet. Quantify the two-outcome economics over the proposed 90-day horizon, but distinguish stipulated probability bounds from observed completion evidence. Dollar outputs are per target share. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "headline_cash": 24,
+    "special_dividend": 2,
+    "ratio": 0.4,
+    "acquirer_price": 40,
+    "target_price": 34,
+    "break_price": 26,
+    "annual_funding": 0.036,
+    "days": 90,
+    "fee": 0.1,
+    "probability_bounds": [
+      0.55,
+      0.75
+    ],
+    "other_conditions": [
+      true,
+      true
+    ],
+    "financing_expiry": 75,
+    "extension_written": false
+  },
+  "sources": [
+    {
+      "id": "q122_facts",
+      "text": "Synthetic packet: The agreement extract supplies consideration mechanics; the financing status record supplies expiry and confirms no written extension by the cutoff. Both other listed conditions are satisfied."
+    },
+    {
+      "id": "q122_terms",
+      "text": "Synthetic governing terms: The special dividend is paid only immediately before successful completion and reduces merger cash dollar-for-dollar. Failure value includes no such dividend. The stock ratio is fixed; supplied acquirer and failure prices are conditional assumptions, not forecasts. Finance the target purchase at simple ACT/360 for the full horizon in either outcome. Written financing extension is required if closing follows expiry."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "closing_cash_component",
+      "type": "number",
+      "unit": "USD per target share",
+      "description": "Merger cash excluding the separately paid special dividend.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "total_success_proceeds",
+      "type": "number",
+      "unit": "USD per target share",
+      "description": "Cash, stock at stipulated price, and the special dividend combined exactly once.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "carry_and_fee",
+      "type": "number",
+      "unit": "USD per target share",
+      "description": "Simple ACT/360 financing over stated days plus fixed fee.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "break_even_success_probability",
+      "type": "number",
+      "unit": "decimal probability",
+      "description": "Success probability giving zero expected P&L under the two supplied outcomes.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "conditional_expected_pnl_range",
+      "type": "number_array",
+      "unit": "USD per target share",
+      "description": "Expected P&L at lower and upper probability bounds respectively.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "all_closing_conditions_met",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether all expressly necessary conditions are satisfied."
+    },
+    {
+      "name": "research_conclusion",
+      "type": "string",
+      "unit": "category",
+      "description": "Exact label: conditional_only or conditions_satisfied."
+    }
+  ]
+}

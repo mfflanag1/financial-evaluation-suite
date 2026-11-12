@@ -1,0 +1,287 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "in_joint",
+            "title": "Full correlated noisy-signal law"
+          },
+          {
+            "id": "in_actions",
+            "title": "Terminal financial opportunities"
+          },
+          {
+            "id": "in_query",
+            "title": "Adaptive query costs and budget"
+          },
+          {
+            "id": "in_format",
+            "title": "Policy representation and deterministic ties"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "expected_gross_payoff": "<typed value>",
+            "expected_query_cost": "<typed value>",
+            "first_query": "<typed value>",
+            "incremental_information_value": "<typed value>",
+            "no_information_value": "<typed value>",
+            "optimal_net_value": "<typed value>",
+            "second_queries": "<typed value>",
+            "terminal_actions": "<typed value>"
+          },
+          "evidence": {
+            "expected_gross_payoff": [
+              "<viewed supporting document ID>"
+            ],
+            "expected_query_cost": [
+              "<viewed supporting document ID>"
+            ],
+            "first_query": [
+              "<viewed supporting document ID>"
+            ],
+            "incremental_information_value": [
+              "<viewed supporting document ID>"
+            ],
+            "no_information_value": [
+              "<viewed supporting document ID>"
+            ],
+            "optimal_net_value": [
+              "<viewed supporting document ID>"
+            ],
+            "second_queries": [
+              "<viewed supporting document ID>"
+            ],
+            "terminal_actions": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c217",
+          "turn": 1
+        },
+        "inputs": {
+          "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+        },
+        "outputs": {
+          "expected_gross_payoff": {
+            "description": "Number, prior expected terminal payoff before fees.",
+            "type": "number"
+          },
+          "expected_query_cost": {
+            "description": "Number, ex ante total query fees.",
+            "type": "number"
+          },
+          "first_query": {
+            "description": "String A,B,C or none.",
+            "type": "string"
+          },
+          "incremental_information_value": {
+            "description": "Number, optimal net value minus no-query value.",
+            "type": "number"
+          },
+          "no_information_value": {
+            "description": "Number, best prior payoff with no query.",
+            "type": "number"
+          },
+          "optimal_net_value": {
+            "description": "Number, prior payoff net of query fees.",
+            "type": "number"
+          },
+          "second_queries": {
+            "description": "Two strings, continuation decisions after first bit0,1.",
+            "type": "array"
+          },
+          "terminal_actions": {
+            "description": "Four strings invest,hedge or pass under the documented branch order.",
+            "type": "array"
+          }
+        },
+        "prompt": "Choose the optimal adaptive research and investment policy under the explicit noisy joint signal law. Determine which query to buy first, whether and what to buy next on each result, and the final investment at each reachable history. Apply branch budgets and charge only purchased information; report full prior economics.",
+        "question_id": "c217",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c217",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "in_joint",
+            "release_stage": 1,
+            "text": "State is good or bad. Binary signal triple[A,B,C] is fixed once for the decision. In lexicographic triple order[000,001,010,011,100,101,110,111], JOINT probabilities for good are[2,3,4,5,3,8,9,16]/100 and for bad are[20,8,7,3,5,3,3,1]/100. These16 joint cells sum to1. Queries reveal the selected bit; they do not draw a fresh signal. Every bit is imperfect evidence about state and bits need not be independent either unconditionally or conditional on state.",
+            "title": "Full correlated noisy-signal law"
+          },
+          {
+            "id": "in_actions",
+            "release_stage": 1,
+            "text": "Exactly one terminal action is allowed: invest pays30 in good and -40 in bad; hedge pays10 in good and -8 in bad; pass pays0 in either state. These are terminal payoffs before query costs. No combinations, shorting, scaling or later switching are allowed. Maximize prior expected payoff minus all purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the stated research-cost budget.",
+            "title": "Terminal financial opportunities"
+          },
+          {
+            "id": "in_query",
+            "release_stage": 1,
+            "text": "A query costs0.5 for A,0.5 for B,1.5 for C, regardless of bit. At most two DISTINCT queries may be purchased. Total fees on each possible path must be at most4. Stopping before any query or after the first is permitted. The second query identity, or stopping, may depend on the first observed bit; terminal action may depend on all purchased bits. There is no charge for observations not purchased.",
+            "title": "Adaptive query costs and budget"
+          },
+          {
+            "id": "in_format",
+            "release_stage": 1,
+            "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order[0,1], each A,B,C or stop. terminal_actions has four entries[first0/second0,first0/second1,first1/second0,first1/second1]; on a stopped branch repeat its terminal action in both corresponding slots. With first_query none, second_queries must be[stop,stop] and repeat one immediate action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple(first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry. All16 joint cells are possible; no absent branch can be ignored.",
+            "title": "Policy representation and deterministic ties"
+          }
+        ],
+        "title": "Adaptive paid research with noisy dependent observations",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "in_joint",
+        "title": "Full correlated noisy-signal law"
+      },
+      {
+        "id": "in_actions",
+        "title": "Terminal financial opportunities"
+      },
+      {
+        "id": "in_query",
+        "title": "Adaptive query costs and budget"
+      },
+      {
+        "id": "in_format",
+        "title": "Policy representation and deterministic ties"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "expected_gross_payoff": "<typed value>",
+        "expected_query_cost": "<typed value>",
+        "first_query": "<typed value>",
+        "incremental_information_value": "<typed value>",
+        "no_information_value": "<typed value>",
+        "optimal_net_value": "<typed value>",
+        "second_queries": "<typed value>",
+        "terminal_actions": "<typed value>"
+      },
+      "evidence": {
+        "expected_gross_payoff": [
+          "<viewed supporting document ID>"
+        ],
+        "expected_query_cost": [
+          "<viewed supporting document ID>"
+        ],
+        "first_query": [
+          "<viewed supporting document ID>"
+        ],
+        "incremental_information_value": [
+          "<viewed supporting document ID>"
+        ],
+        "no_information_value": [
+          "<viewed supporting document ID>"
+        ],
+        "optimal_net_value": [
+          "<viewed supporting document ID>"
+        ],
+        "second_queries": [
+          "<viewed supporting document ID>"
+        ],
+        "terminal_actions": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c217",
+      "turn": 1
+    },
+    "inputs": {
+      "scope": "All amounts and rules are synthetic and fully specified in the current documents."
+    },
+    "outputs": {
+      "expected_gross_payoff": {
+        "description": "Number, prior expected terminal payoff before fees.",
+        "type": "number"
+      },
+      "expected_query_cost": {
+        "description": "Number, ex ante total query fees.",
+        "type": "number"
+      },
+      "first_query": {
+        "description": "String A,B,C or none.",
+        "type": "string"
+      },
+      "incremental_information_value": {
+        "description": "Number, optimal net value minus no-query value.",
+        "type": "number"
+      },
+      "no_information_value": {
+        "description": "Number, best prior payoff with no query.",
+        "type": "number"
+      },
+      "optimal_net_value": {
+        "description": "Number, prior payoff net of query fees.",
+        "type": "number"
+      },
+      "second_queries": {
+        "description": "Two strings, continuation decisions after first bit0,1.",
+        "type": "array"
+      },
+      "terminal_actions": {
+        "description": "Four strings invest,hedge or pass under the documented branch order.",
+        "type": "array"
+      }
+    },
+    "prompt": "Choose the optimal adaptive research and investment policy under the explicit noisy joint signal law. Determine which query to buy first, whether and what to buy next on each result, and the final investment at each reachable history. Apply branch budgets and charge only purchased information; report full prior economics.",
+    "question_id": "c217",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c217",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "in_joint",
+        "release_stage": 1,
+        "text": "State is good or bad. Binary signal triple[A,B,C] is fixed once for the decision. In lexicographic triple order[000,001,010,011,100,101,110,111], JOINT probabilities for good are[2,3,4,5,3,8,9,16]/100 and for bad are[20,8,7,3,5,3,3,1]/100. These16 joint cells sum to1. Queries reveal the selected bit; they do not draw a fresh signal. Every bit is imperfect evidence about state and bits need not be independent either unconditionally or conditional on state.",
+        "title": "Full correlated noisy-signal law"
+      },
+      {
+        "id": "in_actions",
+        "release_stage": 1,
+        "text": "Exactly one terminal action is allowed: invest pays30 in good and -40 in bad; hedge pays10 in good and -8 in bad; pass pays0 in either state. These are terminal payoffs before query costs. No combinations, shorting, scaling or later switching are allowed. Maximize prior expected payoff minus all purchased query fees. Risk preferences are linear in cash and no wealth constraint applies apart from the stated research-cost budget.",
+        "title": "Terminal financial opportunities"
+      },
+      {
+        "id": "in_query",
+        "release_stage": 1,
+        "text": "A query costs0.5 for A,0.5 for B,1.5 for C, regardless of bit. At most two DISTINCT queries may be purchased. Total fees on each possible path must be at most4. Stopping before any query or after the first is permitted. The second query identity, or stopping, may depend on the first observed bit; terminal action may depend on all purchased bits. There is no charge for observations not purchased.",
+        "title": "Adaptive query costs and budget"
+      },
+      {
+        "id": "in_format",
+        "release_stage": 1,
+        "text": "first_query is A,B,C or none. second_queries is a two-element array in first-bit order[0,1], each A,B,C or stop. terminal_actions has four entries[first0/second0,first0/second1,first1/second0,first1/second1]; on a stopped branch repeat its terminal action in both corresponding slots. With first_query none, second_queries must be[stop,stop] and repeat one immediate action in all four slots. Among policies with equal expected net value, use lexicographically smallest tuple(first_query,second_queries,terminal_actions) under ordinary string order, comparing arrays entry by entry. All16 joint cells are possible; no absent branch can be ignored.",
+        "title": "Policy representation and deterministic ties"
+      }
+    ],
+    "title": "Adaptive paid research with noisy dependent observations",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

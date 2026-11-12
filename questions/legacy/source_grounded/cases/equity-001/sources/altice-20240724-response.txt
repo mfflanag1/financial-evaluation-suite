@@ -1,0 +1,13 @@
+July 24, 2024
+
+[Intervening source text omitted]
+
+This letter responds to the comment letter from the Staff of the Securities and Exchange Commission (the “Staff”), dated June 26, 2024, concerning the Annual Report on Form 10-K for Fiscal Year Ended December 31, 2023 of Altice USA, Inc. (the “Company”).
+
+Form 10-K for the Fiscal Year Ended December 31, 2023, page 50
+ | 1.  | We note that you propose changing Operating Free Cash Flow to Adjusted EBITDA less Capital Expenditures. Adjusted EBITDA less Capital Expenditures is a Non-GAAP measure that combines attributes of both performance and liquidity measures (i.e. both accrual and cash items). Therefore, this measure violates the guidance in C&DI Question 100.01 that precludes presentation of a performance measure that excludes cash operating expenses.
+Please confirm that you will not disclose this measure in future filings.
+Response:
+The Company respectfully acknowledges the Staff’s comment. The Company advises the Staff that it will cease using the term “Operating Free Cash Flow” in future filings, beginning with its quarterly report on Form 10-Q and earnings release for the quarterly period ended June 30, 2024.
+To the extent the Company decides to present such metric in future filings, the Company will instead present “Adjusted EBITDA less accrued capital expenditures,” which will exclude capital expenditures accrued for the period presented, and use it as a performance measure only.
+The Company acknowledges that the Staff may have additional comments after reviewing this response letter.

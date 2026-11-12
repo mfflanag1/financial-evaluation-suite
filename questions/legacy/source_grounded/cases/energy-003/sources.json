@@ -1,0 +1,37 @@
+[
+  {
+    "id": "exp-vistra-2023-issuer",
+    "url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/312/VST%20%28Vistra%20Corp.%29%20%20%28ARS%29%202024-04-03.pdf_.pdf",
+    "title": "Vistra 2023 annual report \u2014 selected Odessa capacity and portfolio hedge/sensitivity disclosures",
+    "publisher": "Vistra Corp.",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "The issuer-hosted annual-report PDF was retained at available_by. A historical publication timestamp for this specific PDF was not established; no date is inferred from its filename. The 2023 reporting period and SEC filing date are separate facts. The case uses a 2026 observation cutoff.",
+    "text_sha256": "19a4728184ef3f8729ef3ed888078545b154f84d57b203148b308b36f4d249b8",
+    "available_by": "2026-10-04T18:10:45.028480Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: original_pdf_selected_text.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "exp-vistra-2023-index",
+    "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281924000012/0001692819-24-000012-index.html",
+    "title": "Vistra 2023 Form 10-K filing index, accession 0001692819-24-000012",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "published_at": "2024-02-29T23:59:59-05:00",
+    "publication_precision": "day",
+    "availability_basis": "SEC index states filing date February29,2024 and acceptance February28 at21:35:37. Use the later filing date at23:59:59 New York standard time (UTC-05), not acceptance as proof of immediate dissemination.",
+    "text_sha256": "3c36ab85bb132bd4be1024dde19f0641d45385bcfd32311d4af6136e7134f969",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: partial_tool_capture.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

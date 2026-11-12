@@ -1,0 +1,57 @@
+#51041
+Date: September 16, 2022
+Subject: Adjusted NatWest Group plc - Cash Distribution Settlement/Cash in
+Lieu Settlement
+Adjusted Option Symbol: NWG1
+
+Adjusted NatWest Group plc options were adjusted on August 30, 2022 (See OCC Information Memo
+#50944). The new deliverable became 1) 92 NatWest Group plc (NWG) American Depositary Shares, 2)
+Approximately $39.58 Cash, and 3) Cash in lieu of approximately 0.857142 fractional NWG Shares.
+Settlement of the stock and cash portions of NWG1 options exercise/assignment activity were subject to
+delayed settlement.
+NWG American Depositary Shares began regular way trading on the New York Stock Exchange on
+September 1, 2022.
+OCC has been informed that the final net special dividend amount is $0.381441 ($0.3907 less $0.009259
+dividend fee) per NWG share held.
+OCC has been informed that a price of $4.85 per whole NWG share will be used to determine the cash in
+lieu amount at a rate of 0.857142. Accordingly, the cash in lieu amount is:
+0.857142 x $4.85 = $4.16 per NWG1 Contract
+The cash in lieu of fractional share portion of the option deliverable remains fixed and does not vary with
+price changes of any security.
+Now that the trading status, final net special dividend amount, and cash in lieu amount have been
+determined, OCC will require Put exercisers and Call assignees, during the period of August 30, 2022
+through September 16, 2022 to deliver the appropriate number of NWG shares and appropriate cash
+amount.
+Terms of the NWG1 options are as follows:
+New Deliverable
+Per Contract: 1) 92 NatWest Group plc (NWG) American Depositary Shares
+2) $42.30 Cash (($0.381441 x 100) + $4.16)
+Strike Prices: Unchanged
+CUSIP: 639057207 Multiplier: 100 (i.e., a premium of 1.50 yields $150)
+Settlement
+The NWG component of NWG1 exercise/assignment activity, which was subject to delayed settlement
+from August 30, 2022 through September 15, 2022, will settle through National Security Clearing
+Corporation (NSCC). The $42.30 cash amount will be settled by OCC.
+Pricing
+The underlying price for NWG1 will be determined as follows:
+NWG1 = 0.92 (NWG) + 0.423
+For example, if NWG closes at 6.38, the NWG1 price would be calculated as follows:
+NWG1 = 0.92 (6.38) + 0.423 = 6.29
+Disclaimer
+This Information Memo provides an unofficial summary of the terms of corporate events affecting listed
+options or futures prepared for the convenience of market participants. OCC accepts no responsibility for
+the accuracy or completeness of the summary, particularly for information which may be relevant to
+investment decisions. Option or futures investors should independently ascertain and evaluate all
+information concerning this corporate event(s).
+The determination to adjust options and the nature of any adjustment is made by OCC pursuant to OCC
+By-Laws, Article VI, Sections 11 and 11A. The determination to adjust futures and the nature of any
+adjustment is made by OCC pursuant to OCC By-Laws, Article XII, Sections 3, 4, or 4A, as applicable. For
+both options and futures, each adjustment decision is made on a case by case basis. Adjustment
+decisions are based on information available at the time and are subject to change as additional
+information becomes available or if there are material changes to the terms of the corporate event(s)
+occasioning the adjustment.
+ALL CLEARING MEMBERS ARE REQUESTED TO IMMEDIATELY ADVISE ALL BRANCH OFFICES
+AND CORRESPONDENTS ON THE ABOVE.
+For questions regarding this memo, please email the Investor Education team at options@theocc.com.
+Clearing Member Firms of OCC may contact Member Services at 1-800-544-6091 or, within Canada, at 1-
+800-424-7320, or email memberservices@theocc.com.

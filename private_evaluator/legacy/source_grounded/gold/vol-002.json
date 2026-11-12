@@ -1,0 +1,249 @@
+{
+  "case_id": "vol-002",
+  "reference_solution": {
+    "provisional": "0.125*120=15 is an indicative quote, not an exact final entitlement.",
+    "final": "12*120+52.22=1492.22 per contract; /100=14.9222. Difference from provisional quote=-0.0778.",
+    "payoff": "50*(1492.22-1400)=4611 intrinsic; subtract 50*100*0.25=1250 premium for 3361 P&L.",
+    "boundary": "(1400+25-52.22)/12=114.39833333333333; local book expiry slope=50*12=600."
+  },
+  "fields": [
+    {
+      "id": "initial_final_cash_known",
+      "expected": false,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49105"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49105": [
+          [
+            "has not determined the price to be used to determine the cash\nin lieu amount",
+            "includes an estimate for the value of the cash in lieu amount and not the actual amount"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "provisional_equivalent_quote",
+      "expected": 15.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49105"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49105": [
+          [
+            "GE1 = 0.125 (GE)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fixed_cash_per_contract",
+      "expected": 52.22,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "$52.22 Cash",
+            "$52.22 per GE1/1GE1/2GE1 Contract",
+            "$52.22 cash amount"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "book_share_delivery",
+      "expected": 600,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "12 General Electric Company (GE) Common Shares"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "book_fixed_cash_delivery",
+      "expected": 2611.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "$52.22 Cash",
+            "$52.22 per GE1/1GE1/2GE1 Contract",
+            "$52.22 cash amount"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "final_equivalent_quote",
+      "expected": 14.9222,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "12 General Electric Company (GE) Common Shares"
+          ],
+          [
+            "$52.22 Cash",
+            "$52.22 per GE1/1GE1/2GE1 Contract",
+            "$52.22 cash amount"
+          ],
+          [
+            "Multiplier: 100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "quote_revision_at_same_spot",
+      "expected": -0.0778,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49105",
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49105": [
+          [
+            "GE1 = 0.125 (GE)"
+          ]
+        ],
+        "vol-occ-49146": [
+          [
+            "12 General Electric Company (GE) Common Shares"
+          ],
+          [
+            "$52.22 Cash",
+            "$52.22 per GE1/1GE1/2GE1 Contract",
+            "$52.22 cash amount"
+          ],
+          [
+            "Multiplier: 100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "book_strike_payment",
+      "expected": 70000,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "Multiplier: 100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "book_expiry_pnl",
+      "expected": 3361.0,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "12 General Electric Company (GE) Common Shares"
+          ],
+          [
+            "$52.22 Cash",
+            "$52.22 per GE1/1GE1/2GE1 Contract",
+            "$52.22 cash amount"
+          ],
+          [
+            "Multiplier: 100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "spot_breakeven",
+      "expected": 114.39833333333333,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "12 General Electric Company (GE) Common Shares"
+          ],
+          [
+            "$52.22 Cash",
+            "$52.22 per GE1/1GE1/2GE1 Contract",
+            "$52.22 cash amount"
+          ],
+          [
+            "Multiplier: 100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "book_local_expiry_sensitivity",
+      "expected": 600,
+      "atol": 1e-06,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "vol-occ-49146"
+      ],
+      "evidence_anchor_groups": {
+        "vol-occ-49146": [
+          [
+            "12 General Electric Company (GE) Common Shares"
+          ],
+          [
+            "cash in lieu of fractional share portion of the option deliverable remains fixed"
+          ]
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+    "Historic memos are retrospectively retrieved; the model may know later events.",
+    "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+  ]
+}

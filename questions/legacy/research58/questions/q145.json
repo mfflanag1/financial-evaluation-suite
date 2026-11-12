@@ -1,0 +1,75 @@
+{
+  "question_id": "q145",
+  "title": "Catalyst evidence with duplication, a model correction and a new gate",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Update the three catalyst states after one positive test. Priors and test likelihoods are supplied; outcomes are mutually exclusive and exhaustive. Payoffs are USD million, not stock-return predictions. Compute posterior state probabilities and expected payoff, then apply the stated research hurdle. The observation is the event positive_test, not the most likely state. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "state_order": [
+      "on_time",
+      "late",
+      "cancel"
+    ],
+    "prior_probabilities": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "positive_test_likelihoods": [
+      0.8,
+      0.5,
+      0.1
+    ],
+    "payoffs": [
+      20,
+      5,
+      -15
+    ],
+    "initial_expected_payoff_hurdle": 12
+  },
+  "sources": [
+    {
+      "id": "q145_t1_1",
+      "text": "Synthetic packet. The hypothesis ledger supplies prior state probabilities and the probability of a positive laboratory test conditional on each state. A positive test has now been observed once."
+    },
+    {
+      "id": "q145_t1_2",
+      "text": "Synthetic packet. The committee uses a stipulated state payoff table and expected-value screening hurdle. There is no market price, execution strategy or real-world probability calibration in this packet."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "state_probabilities",
+      "type": "number_array",
+      "unit": "probability",
+      "description": "on_time, late, cancel.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "evidence_probability",
+      "type": "number",
+      "unit": "probability",
+      "description": "Probability of the genuinely new observation conditional on the previously applicable information.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "expected_payoff",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Posterior expected stipulated catalyst payoff.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "research_hurdle_met",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Expected payoff at least the original hurdle."
+    }
+  ]
+}

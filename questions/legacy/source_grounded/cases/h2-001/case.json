@@ -1,0 +1,115 @@
+{
+  "id": "h2-001",
+  "case_group": "paypal-2024-nongaap-policy-and-bnpl-timing",
+  "lane": "fundamental_equity",
+  "epistemic_type": "retrospective_reconciliation_and_conditional_decision",
+  "information_cutoff": "2026-10-04T20:02:32Z",
+  "prompt": "Audit this analyst memo: 'PayPal's 2024 adjusted EPS fell relative to last year's published adjusted EPS, while the strong fourth-quarter 2023 free cash flow demonstrates an equally strong recurring cash run rate.' Use the original 2023 earnings release and the 2024 release to decide what survives a like-for-like reconciliation. Compute the declared bridge measures, including the implied first-nine-month BNPL timing contribution. Do not equate the direction of an adjustment row with the direction of the underlying cash-flow contribution. No synthetic reported figures or hypothetical operational forecasts are supplied.\n\nUse only the frozen document versions and the explicitly labeled hypothetical assumptions. These are retrospective research questions, not claims of historical tradability or forecasting skill. Discover and reconcile the relevant definitions and periods in the documents. Return every declared field with verbatim supporting evidence, preserving unrounded intermediate calculations. Money is USD millions unless the field specifies another unit. Percentages use the 0\u2013100 scale. For every noninteger output, use at least eight decimal places unless the field explicitly allows a different precision. Source values displayed in millions are treated as exact only for these table-based arithmetic comparisons; do not infer greater economic precision.",
+  "source_ids": [
+    "h2a-paypal-2023",
+    "h2a-paypal-2024"
+  ],
+  "output_fields": [
+    {
+      "id": "non_gaap_eps_growth_comparable_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2024 versus FY2023 non-GAAP diluted EPS growth using the comparable policy in the newer release.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "old_basis_eps_growth_error_pp",
+      "type": "number",
+      "unit": "percentage_points",
+      "description": "Growth computed using the originally reported 2023 non-GAAP EPS denominator minus the comparable-policy growth. Signed difference.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "prior_year_non_gaap_income_recast_reduction",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Original minus recast FY2023 non-GAAP net income; this is a definition-basis change, not a 2024 operating loss.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fy2024_free_cash_flow_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "FY2024 versus FY2023 growth in the issuer's unadjusted free cash flow measure.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "fy2024_adjusted_free_cash_flow_growth_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Same annual comparison using the issuer's BNPL-timing-adjusted free cash flow measure.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "q42023_positive_bnpl_timing_contribution",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Positive cash-flow contribution in Q4 2023 removed by the issuer's BNPL timing adjustment, with inflow positive.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "first_nine_months_2023_bnpl_timing_contribution",
+      "type": "number",
+      "unit": "USD_millions",
+      "description": "Net cash-flow contribution before Q4 2023 that reconciles the annual and Q4 timing effects; inflow positive, outflow negative.",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "q42023_timing_share_of_free_cash_flow_pct",
+      "type": "number",
+      "unit": "percent",
+      "description": "Fraction of Q4 2023 free cash flow represented by the positive BNPL timing contribution.",
+      "evidence_required": true,
+      "support_dependencies": [
+        "q42023_positive_bnpl_timing_contribution"
+      ],
+      "score_dimension": "financial"
+    },
+    {
+      "id": "old_and_new_non_gaap_eps_directly_comparable",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Is a direct FY2024 EPS comparison with the original FY2023 non-GAAP EPS a consistent-definition comparison?",
+      "evidence_required": true,
+      "score_dimension": "financial"
+    },
+    {
+      "id": "sold_bnpl_credit_loss_rate_identified",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Does the BNPL cash-timing adjustment alone identify the realized credit-loss rate on the sold European BNPL loan cohorts? Cohort balances, defaults and recoveries are not supplied in this branch; do not substitute aggregate transaction/credit losses.",
+      "evidence_required": true,
+      "score_dimension": "uncertainty"
+    }
+  ],
+  "response_format": {
+    "case_id": "h2-001",
+    "answers": {
+      "<field_id>": {
+        "value": "<typed answer>",
+        "evidence": [
+          {
+            "source_id": "<permitted source ID>",
+            "quote": "<verbatim supporting passage>"
+          }
+        ],
+        "support_refs": [
+          "<optional field ID from this output's support_dependencies>"
+        ]
+      }
+    },
+    "limitations": []
+  }
+}

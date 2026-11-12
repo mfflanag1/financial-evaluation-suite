@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h2b-finma-at1",
+    "url": "https://www.finma.ch/en/news/2023/03/20230323-mm-at1-kapitalinstrumente",
+    "title": "Basis for Credit Suisse AT1 write-down",
+    "publisher": "FINMA",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+    "text_sha256": "c5fd6eb07cb84d84918c82a839572bed410ddfddf318821213528858b6202a8a",
+    "available_by": "2026-10-04T19:58:17.716840Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_document.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  },
+  {
+    "id": "h2b-ubs-announce-warrants",
+    "url": "https://warrants.ubs.com/home/hkexdoc/en/Warrant/ubs/pdf/20230321221357.pdf",
+    "title": "UBS issuer warrants document, Annex E reproduces March 19 acquisition release",
+    "publisher": "UBS",
+    "published_at": null,
+    "publication_precision": "unknown",
+    "availability_basis": "Original public document bytes were retained at the recorded UTC retrieval time. Document dates and embedded historical events are not asserted first-public timestamps.",
+    "text_sha256": "a4987e57cb0d2e07cd7918f40a8b02976ac3ac123b0939ce635946bbe2b06e37",
+    "available_by": "2026-10-04T19:59:21.559425Z",
+    "capture_quality": "exported_evidence_excerpt",
+    "notes": [
+      "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+      "Original capture-quality classification: complete_original_document.",
+      "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+    ],
+    "raw_capture_type": "derived_evidence_text_export"
+  }
+]

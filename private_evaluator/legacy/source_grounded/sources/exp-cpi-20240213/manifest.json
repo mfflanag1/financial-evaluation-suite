@@ -1,0 +1,24 @@
+{
+  "id": "exp-cpi-20240213",
+  "url": "https://www.bls.gov/news.release/archives/cpi_02132024.htm",
+  "title": "CPI January 2024 — February 13, 2024 release",
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "published_at": "2024-02-13T13:30:00Z",
+  "publication_precision": "second",
+  "availability_basis": "Official release header announces 8:30 a.m. Eastern; conversion uses the stated date's standard/daylight offset. This is an announced release time, not an independently observed first fetch. Case cutoff is end of release day.",
+  "retrieved_at": "2026-10-04T18:12:39.857452Z",
+  "redistribution_status": "Federal statistical publication with attribution retained.",
+  "raw_path": "sources/exp-cpi-20240213/evidence.txt",
+  "text_path": "sources/exp-cpi-20240213/evidence.txt",
+  "raw_sha256": "4133d468d8e94c9ee611b1d9e3fec9ea91c82dea1037a2ab674e45db666b2292",
+  "text_sha256": "4133d468d8e94c9ee611b1d9e3fec9ea91c82dea1037a2ab674e45db666b2292",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

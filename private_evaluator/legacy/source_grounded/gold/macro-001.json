@@ -1,0 +1,296 @@
+{
+  "case_id": "macro-001",
+  "reference_solution": "January first print was 353; March 8 revised January to 229 and first published February at 275. March 8 revised December 333→290 and January 353→229, giving (290−333)+(229−353)=−43−124=−167. April 5 revised January 229→256 and February 275→270, giving +27−5=+22; its March first print was 303. The mixed first-print sum is 353+275+303=931. The single April 5 vintage Q1 sum is 256+270+303=829. Their difference is 829−931=−102, also (256−353)+(270−275)=−97−5=−102. Adding the two release-wide revision totals would incorrectly give −145 because it includes a −43 December revision outside Q1. The desk's tracked cumulative amount increases from 229+275=504 to 829, a change of 325=303+22. This last quantity combines new March coverage and revisions; it is not a surprise against a forecast. April 5's official 08:30 ET release time corresponds to 12:30 UTC because daylight saving time was in effect; the task cutoff conservatively uses end of that UTC day.",
+  "fields": [
+    {
+      "id": "jan_first_print",
+      "expected": 353,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240202"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240202": [
+          [
+            "Total nonfarm payroll employment rose by 353,000 in January"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "jan_asof_mar08",
+      "expected": 229,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240308"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240308": [
+          [
+            "the change for January was revised down by 124,000, from +353,000 to +229,000",
+            "Total nonfarm | 287 | 290 | 229 | 275"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "feb_first_print",
+      "expected": 275,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240308"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240308": [
+          [
+            "Total nonfarm payroll employment rose by 275,000 in February",
+            "Total nonfarm | 287 | 290 | 229 | 275"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mar08_prior_two_month_revision",
+      "expected": -167,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240308"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240308": [
+          [
+            "The change in total nonfarm payroll employment for December was revised down by 43,000, from +333,000 to +290,000",
+            "With these revisions, employment in December and January combined is 167,000 lower than previously reported."
+          ],
+          [
+            "the change for January was revised down by 124,000, from +353,000 to +229,000",
+            "With these revisions, employment in December and January combined is 167,000 lower than previously reported."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "jan_asof_apr05",
+      "expected": 256,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240405": [
+          [
+            "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "feb_asof_apr05",
+      "expected": 270,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240405": [
+          [
+            "the change for February was revised down by 5,000, from +275,000 to +270,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mar_first_print",
+      "expected": 303,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240405": [
+          [
+            "Total nonfarm payroll employment rose by 303,000 in March",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "apr05_prior_two_month_revision",
+      "expected": 22,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240405": [
+          [
+            "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000",
+            "With these revisions, employment in January and February combined is 22,000 higher than previously reported."
+          ],
+          [
+            "the change for February was revised down by 5,000, from +275,000 to +270,000",
+            "With these revisions, employment in January and February combined is 22,000 higher than previously reported."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "q1_first_print_sum",
+      "expected": 931,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240202",
+        "bls-20240308",
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240202": [
+          [
+            "Total nonfarm payroll employment rose by 353,000 in January"
+          ]
+        ],
+        "bls-20240308": [
+          [
+            "Total nonfarm payroll employment rose by 275,000 in February",
+            "Total nonfarm | 287 | 290 | 229 | 275"
+          ]
+        ],
+        "bls-20240405": [
+          [
+            "Total nonfarm payroll employment rose by 303,000 in March",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "q1_asof_apr05_sum",
+      "expected": 829,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240405": [
+          [
+            "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ],
+          [
+            "the change for February was revised down by 5,000, from +275,000 to +270,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ],
+          [
+            "Total nonfarm payroll employment rose by 303,000 in March",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "q1_cumulative_revision_vs_first_prints",
+      "expected": -102,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240202",
+        "bls-20240308",
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240202": [
+          [
+            "Total nonfarm payroll employment rose by 353,000 in January"
+          ]
+        ],
+        "bls-20240308": [
+          [
+            "Total nonfarm payroll employment rose by 275,000 in February",
+            "Total nonfarm | 287 | 290 | 229 | 275"
+          ]
+        ],
+        "bls-20240405": [
+          [
+            "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ],
+          [
+            "the change for February was revised down by 5,000, from +275,000 to +270,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "apr05_increment_to_tracked_q1_change",
+      "expected": 325,
+      "atol": 0,
+      "rtol": 0,
+      "critical": true,
+      "required_source_ids": [
+        "bls-20240308",
+        "bls-20240405"
+      ],
+      "evidence_anchor_groups": {
+        "bls-20240308": [
+          [
+            "the change for January was revised down by 124,000, from +353,000 to +229,000",
+            "Total nonfarm | 287 | 290 | 229 | 275"
+          ],
+          [
+            "Total nonfarm payroll employment rose by 275,000 in February",
+            "Total nonfarm | 287 | 290 | 229 | 275"
+          ]
+        ],
+        "bls-20240405": [
+          [
+            "The change in total nonfarm payroll employment for January was revised up by 27,000, from +229,000 to +256,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ],
+          [
+            "the change for February was revised down by 5,000, from +275,000 to +270,000",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ],
+          [
+            "Total nonfarm payroll employment rose by 303,000 in March",
+            "Total nonfarm | 146 | 256 | 270 | 303"
+          ]
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "This prototype tests explicit historical vintage reconstruction and numerical/citation checks. It does not establish novelty relative to all existing benchmarks or measure investment performance.",
+    "All three source excerpts are shown together. Earlier-vintage outputs are reconstructed retrospectively; no actual committed answer or staged tool release is enforced.",
+    "Historical source cutoffs do not remove information encoded in model training; do not interpret results as leakage-free historical forecasting.",
+    "Raw HTML could not be captured because direct BLS access returned HTTP 403. Frozen evidence consists of the exact actual web-tool responses and supported narrative/table excerpts, not a byte-identical full original release. Independent recapture remains pending.",
+    "The official archive header supplies an announced release time rather than independently verified first access; the task uses an end-of-day cutoff.",
+    "Numeric sums are sums of reported monthly changes in the requested vintages. No unrevised true employment count, benchmark-final value, statistical significance, market consensus surprise, or P&L is inferred.",
+    "Citation fact groups accept separate verbatim input clauses and summary-table alternatives, not all possible derivations or causal claims. Legitimate evidence outside the declared source/group alternatives requires manual review and is not automatically accepted.",
+    "Independent model numerical review completed; human domain-expert review remains pending."
+  ]
+}

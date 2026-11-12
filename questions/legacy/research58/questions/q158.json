@@ -1,0 +1,77 @@
+{
+  "question_id": "q158",
+  "title": "Replan a clearing closeout as legal offsets and risk limits change",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Calculate the legally netted margin and signed portfolio delta. Distinguish refundable collateral from economic loss and report cash shortfall or remaining cash.",
+  "inputs": {
+    "positions": [
+      12,
+      7,
+      3
+    ],
+    "signed_delta_per_contract": [
+      1,
+      -1,
+      2
+    ],
+    "initial_margin_per_contract": [
+      1000,
+      1000,
+      1500
+    ],
+    "accounts": [
+      "C1",
+      "C1",
+      "C2"
+    ],
+    "cash": 12000
+  },
+  "sources": [
+    {
+      "id": "q158_books",
+      "text": "Original synthetic evaluation packet. Books A,B,C hold12 long,7 short,3 long contracts respectively. Their delta coefficients are+1,-1,+2. Margin rates are1000,1000,1500. Available cash12000; there are no other positions or calls. This sequence revises unexecuted closeout plans."
+    },
+    {
+      "id": "q158_rules",
+      "text": "Original synthetic evaluation packet. Only A and B are identical contracts eligible for netting within the same legal clearing account. C never offsets A or B. Margin principal is refundable collateral, not a P&L expense. No cross-account margin offsets without an effective approval."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "required_margin",
+      "type": "number",
+      "unit": "USD",
+      "description": "Total legally required collateral.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funding_shortfall",
+      "type": "number",
+      "unit": "USD",
+      "description": "Positive required margin minus available cash, floored at zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "free_cash",
+      "type": "number",
+      "unit": "USD",
+      "description": "Positive cash less required margin, floored at zero.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "portfolio_delta",
+      "type": "number",
+      "unit": "delta units",
+      "description": "Signed exposure before any closeout.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    }
+  ]
+}

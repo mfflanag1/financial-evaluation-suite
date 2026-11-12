@@ -1,0 +1,72 @@
+{
+  "question_id": "q144",
+  "title": "Cash-runway interventions under delayed receipts and intramonth tests",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Build the three-month cash runway from the opening balance. USD million throughout. Restricted cash never becomes available. Cash outflows occur before receipts in each month, but the INITIAL policy tests only month-end cash against the reserve. Any external funding arrives before M1 at zero fee/interest and stays available. Negative unfunded balances diagnose required financing; no borrowing is implicitly assumed. Find the smallest upfront funding and first month-end reserve breach. All company names, observations and packet sources are synthetic. Return the declared typed fields and cite the supporting packet source IDs for each field.",
+  "inputs": {
+    "month_order": [
+      "M1",
+      "M2",
+      "M3"
+    ],
+    "closing_cash_at_start": 70,
+    "restricted_cash": 20,
+    "cash_outflows": [
+      25,
+      25,
+      25
+    ],
+    "cash_receipts": [
+      10,
+      20,
+      0
+    ],
+    "minimum_cash": 10
+  },
+  "sources": [
+    {
+      "id": "q144_t1_1",
+      "text": "Synthetic packet. The treasury ledger provides one opening cash stock and monthly cash movements. Historical income and receivables are not extra cash unless a receipt appears in this schedule."
+    },
+    {
+      "id": "q144_t1_2",
+      "text": "Synthetic packet. The initial board policy tests a minimum month-end balance. A single beginning-of-horizon funding amount raises each subsequent balance equally."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "unfunded_month_end_cash",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "M1, M2, M3; signed balances before external funding.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "minimum_upfront_funding",
+      "type": "number",
+      "unit": "USD million",
+      "description": "Smallest nonnegative start-of-M1 funding satisfying the stated reserve tests.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "funded_month_end_cash",
+      "type": "number_array",
+      "unit": "USD million",
+      "description": "M1, M2, M3 after required upfront funding.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "first_reserve_breach",
+      "type": "string",
+      "unit": "label",
+      "description": "Exactly M1, M2, M3, or none in the unfunded path."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "event-att-timewarner-contract",
+  "url": "https://www.sec.gov/Archives/edgar/data/732717/000119312517003062/d255304ds4a.htm",
+  "title": "AT&T / Time Warner S-4 amendment: merger agreement section 4.1(a)",
+  "publisher": "AT&T Inc.; SEC EDGAR",
+  "published_at": null,
+  "publication_precision": "unknown",
+  "available_by": "2026-10-04T17:52:09Z",
+  "availability_basis": "This primary SEC URL was publicly accessible, and its capture was retained before the recorded UTC observation bound. Original public dissemination time has not been independently established; document_date is descriptive only. No historical trading eligibility is claimed.",
+  "document_date": "2017-01-05",
+  "retrieved_at": "2026-10-04T17:52:09Z",
+  "redistribution_status": "Publicly accessible SEC-hosted issuer contract; underlying redistribution rights not assessed. Local research only; not approved for public dataset redistribution.",
+  "raw_path": "sources/event-att-timewarner-contract/evidence.txt",
+  "text_path": "sources/event-att-timewarner-contract/evidence.txt",
+  "raw_sha256": "8003d378b4e207ee8500ca8deb3110781c05c1ab46efb04189244f19c8368d01",
+  "text_sha256": "8003d378b4e207ee8500ca8deb3110781c05c1ab46efb04189244f19c8368d01",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "partial_tool_capture",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. A data-provider attribution parenthesis is omitted with a marked ellipsis; calculation terms and averaging-window dates are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: partial_tool_capture.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot.",
+    "An ellipsis marks an omitted data-provider attribution parenthesis; calculation terms and averaging-window dates are unchanged."
+  ]
+}

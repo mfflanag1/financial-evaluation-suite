@@ -1,0 +1,14 @@
+This task uses a staged workflow. Use only Python's standard library. Do not install packages. Use quoted heredocs to save and edit /workspace/research.py early. It must generate all outputs from the four public inputs and run in a fresh container without extra files or packages.
+
+Complete these stages IN ORDER within the existing overall turn budget:
+1. Ingestion: save a syntactically valid research.py that reads the supplied files and writes ingestion.json with the schema below. Run it, then call bash with the exact command `financial-checkpoint ingestion`.
+2. Trials: extend the saved script to compute every declared candidate and write trials.json. Run it, then call `financial-checkpoint trials`.
+3. Submission: extend the same script to produce the complete policy.json (every audit, every trial and the decision). Run it, then call `financial-checkpoint submission`.
+
+Each checkpoint must be the sole tool call in its assistant response, after the file-writing/execution call has completed. These commands are handled by the trusted task coordinator and return validation feedback. They are not programs installed in the container. Passing the final checkpoint ends the attempt. Finishing in prose or exhausting the budget before all three pass earns zero.
+
+The coordinator checks actual saved files against the original public inputs. Ingestion checks exact inventory; trials and submission check structural completeness and consistency only. A checkpoint pass does not imply correct financial calculations. The unchanged final grader checks financial accuracy and executes research.py in a fresh public-only container to verify reproduction. Save the final files before the submission checkpoint and do not modify them afterward.
+
+Read contract.json selectively with Python: its rules, settings, candidates and requested audit keys are authoritative. Avoid printing full CSVs or the entire audit list; truncation may hide useful content. Keep calculations in research.py instead of long inline commands. Malformed JSON tool arguments terminate the attempt as a candidate protocol failure without repair or execution. Provider requests are never automatically retried.
+
+Public checkpoint schemas:

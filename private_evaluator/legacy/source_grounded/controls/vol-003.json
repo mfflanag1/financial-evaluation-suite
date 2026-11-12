@@ -1,0 +1,2665 @@
+[
+  {
+    "name": "correct_reference",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "allocation_percent_as_share_ratio",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 800,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_solv_delivery": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Confuses 20% settlement allocation with the contractual 25-share deliverable"
+  },
+  {
+    "name": "multiplier_equals_total_shares",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 550000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_strike_payment": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Uses 125 delivered shares as quotation multiplier"
+  },
+  {
+    "name": "spinoff_component_omitted",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_expiry_intrinsic": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Uses MMM share price alone and misses SOLV basket value"
+  },
+  {
+    "name": "wrong_stress_sign",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 7000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "stress_pnl_change": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Adds the negative SOLV shock instead of subtracting it"
+  },
+  {
+    "name": "operational_allocation_as_tax_basis",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "settlement_allocation_proves_tax_basis": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Extends an explicitly limited settlement convention to a different purpose"
+  },
+  {
+    "name": "breakeven_ignores_premium",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 72,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "solv_breakeven": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "Finds zero intrinsic rather than zero expiry P&L after premium"
+  },
+  {
+    "name": "minimal_solv_share_quote",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Share delivery needs only its own contract component"
+  },
+  {
+    "name": "minimal_split_basket_quotes",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Separate short clauses cover both basket components"
+  },
+  {
+    "name": "alternative_allocation_limit_quote",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "IS NOT INTENDED TO BE USED FOR ANY OTHER PURPOSE, TRANSACTION OR CUSTOMER ACCOUNT STATEMENTS"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Restricted purpose supports non-establishment; no claim that tax basis is explicitly mentioned"
+  },
+  {
+    "name": "split_operative_purpose_clause",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "CLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "Separate contiguous source clauses jointly establish the complete restricted purpose."
+  },
+  {
+    "name": "missing_purpose_clause_completion",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "IS NOT INTENDED TO BE USED FOR ANY OTHER"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "settlement_allocation_proves_tax_basis": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "A truncated sentence without its object does not establish the prohibited purpose."
+  },
+  {
+    "name": "missing_basket_solv_component",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "basket_value_per_contract": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "MMM alone does not establish the two-stock basket"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": []
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_solv_delivery": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Correct value without source evidence"
+  },
+  {
+    "name": "fabricated_evidence",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "OCC explicitly guarantees this hypothetical book profit."
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_solv_delivery": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Invented disclosure does not occur in its cited memo"
+  },
+  {
+    "name": "wrong_source_evidence",
+    "response": {
+      "case_id": "vol-003",
+      "answers": {
+        "book_mmm_delivery": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_delivery": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-49146",
+              "quote": "12 General Electric Company (GE) Common Shares"
+            }
+          ]
+        },
+        "basket_value_per_contract": {
+          "value": 11200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "equivalent_underlying_quote": {
+          "value": 112.0,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_strike_payment": {
+          "value": 440000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_intrinsic": {
+          "value": 8000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_expiry_pnl": {
+          "value": 3200,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "stress_pnl_change": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "solv_breakeven": {
+          "value": 76.8,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            },
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "Multiplier: 100"
+            }
+          ]
+        },
+        "book_mmm_local_sensitivity": {
+          "value": 4000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "100 3M Company (MMM) Common Shares"
+            }
+          ]
+        },
+        "book_solv_local_sensitivity": {
+          "value": 1000,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "25 (New) Solventum Corporation (SOLV) Common Shares"
+            }
+          ]
+        },
+        "settlement_allocation_proves_tax_basis": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "vol-occ-54392",
+              "quote": "SOLELY FOR THE PURPOSE OF THE INTERFACE BETWEEN OCC AND THE NATIONAL SECURITY\nCLEARING CORPORATION (NSCC)"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "Conditional expiry arithmetic, not option fair value or a trading recommendation.",
+        "Historic memos are retrospectively retrieved; the model may know later events.",
+        "Tool-extracted PDF text is preserved; original bytes/layout and human domain review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "book_solv_delivery": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "Quote is real but the cited memo does not establish this field's contract terms"
+  }
+]

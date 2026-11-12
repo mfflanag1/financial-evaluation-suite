@@ -1,0 +1,24 @@
+{
+  "id": "energy-gas-20210617",
+  "url": "https://www.eia.gov/naturalgas/weekly/archivenew_ngwu/2021/06_17/",
+  "title": "Natural Gas Weekly Update — 2021-06-17",
+  "publisher": "U.S. Energy Information Administration",
+  "published_at": "2021-06-17T23:59:59-04:00",
+  "publication_precision": "day",
+  "availability_basis": "The official archived page explicitly states the release date. Day-only availability uses 23:59:59 America/New_York (UTC-04:00 on this date), not an asserted exact first-public-access time.",
+  "retrieved_at": "2026-10-04T17:53:49Z",
+  "redistribution_status": "EIA U.S. federal statistical material with official attribution and URLs retained; no linked third-party assets included. Extracted gas evidence excludes third-party market-price and analyst-survey sections. Raw HTML is retained locally for audit; broader redistribution of embedded third-party material requires review.",
+  "raw_path": "sources/energy-gas-20210617/evidence.txt",
+  "text_path": "sources/energy-gas-20210617/evidence.txt",
+  "raw_sha256": "c17ac900c657c996d1fd2a29dbe3188f3480347f0e028fb80271692384d0e026",
+  "text_sha256": "c17ac900c657c996d1fd2a29dbe3188f3480347f0e028fb80271692384d0e026",
+  "raw_capture_type": "derived_evidence_text_export",
+  "capture_quality": "exported_evidence_excerpt",
+  "original_capture_quality": "original_html_with_selected_text",
+  "extraction_method": "Text-only derivative of the retained source evidence; original retrieval artifacts are not bundled. Evidence bytes are unchanged.",
+  "notes": [
+    "The raw and text paths both identify the included text derivative, not an original PDF or HTML capture.",
+    "Original capture-quality classification: original_html_with_selected_text.",
+    "Extracts may omit source material and original layout. Availability metadata does not establish a contemporaneous historical snapshot."
+  ]
+}

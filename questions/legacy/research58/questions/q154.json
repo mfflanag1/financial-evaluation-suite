@@ -1,0 +1,81 @@
+{
+  "question_id": "q154",
+  "title": "Option quote consistency under a margin mandate",
+  "mode": "multi",
+  "data_origin": "synthetic",
+  "turn": 1,
+  "total_turns": 4,
+  "instructions": "Use only the supplied synthetic information and the conversation history. Return strict JSON with question_id, turn, answers and evidence. answers maps every declared output to its typed value; evidence maps each output to a list of supporting source IDs available so far. Cite all and only the sources supporting that output; unsupported, unknown, repeated or future source IDs lose citation credit. Numbers use the declared units and tolerances; do not round intermediate calculations. Arrays require exact length and the requested order; strings use exact labels and booleans must be JSON true/false. Optional rationale is not automatically graded. Preserve prior constraints unless the user explicitly changes them. Distinguish stipulated scenarios from observed facts or forecasts. No trading, network access or proprietary query execution is required.",
+  "user_message": "Audit the executable option sheet and find the best globally nonnegative-payoff position in the finite menu. All packet facts are synthetic. Use only sources released so far; cutoffs are inclusive unless explicitly stated otherwise. Recompute from the authored inputs, retaining every unamended constraint. Return the declared outputs and the supporting packet IDs; do not infer market probabilities or unstated permissions.",
+  "inputs": {
+    "bids": [
+      14,
+      8,
+      3
+    ],
+    "asks": [
+      15,
+      9,
+      4
+    ],
+    "reserve_per_short": 0
+  },
+  "sources": [
+    {
+      "id": "q154_facts",
+      "text": "Synthetic packet: All initial quotes concern the same underlying, expiry and option multiplier1. They are simultaneous bid/ask observations in the synthetic packet."
+    },
+    {
+      "id": "q154_terms",
+      "text": "Synthetic governing terms: Three same-expiry European calls have strikes90,100,110 on one non-dividend asset. Rates and fees are zero, and one call pays max(S-K,0). Allowed net call units are integers -2..2 at each strike; cash units are integers0..5. Reserve_per_short cash must be held for each short call unit and is fully returned as cash at expiry. No offsetting long/short pair at one strike is a separate action. Minimize executable initial outlay over portfolios with nonnegative payoff at every S>=0; ties choose fewer absolute call units, less cash, then lexicographic call weights."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "selected_cash_and_calls",
+      "type": "number_array",
+      "unit": "USD cash and option units",
+      "description": "[cash units, K90 call units, K100 call units, K110 call units].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "minimum_initial_outlay",
+      "type": "number",
+      "unit": "USD",
+      "description": "Cost at executable bid/ask including posted cash; credit is negative.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "expiry_payoffs",
+      "type": "number_array",
+      "unit": "USD",
+      "description": "Payoffs at terminal spots[0,90,100,110,120].",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "far_right_payoff_slope",
+      "type": "number",
+      "unit": "USD payoff per USD spot",
+      "description": "Payoff slope above110.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "test_butterfly_outlay",
+      "type": "number",
+      "unit": "USD",
+      "description": "Executable outlay of[+1,-2,+1] calls plus exactly the required cash reserve.",
+      "atol": 1e-06,
+      "rtol": 1e-08
+    },
+    {
+      "name": "negative_cost_nonnegative_payoff_exists",
+      "type": "boolean",
+      "unit": "boolean",
+      "description": "Whether the finite permitted menu contains a negative-cost position with nonnegative payoff for every nonnegative terminal spot."
+    }
+  ]
+}

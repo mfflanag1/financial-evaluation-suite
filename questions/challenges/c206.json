@@ -1,0 +1,471 @@
+{
+  "history": [
+    {
+      "content": {
+        "document_catalog": [
+          {
+            "id": "e_open",
+            "title": "Opening execution and allocation ledger"
+          },
+          {
+            "id": "e_tape",
+            "title": "Received event tape at cutoff"
+          },
+          {
+            "id": "e_rules",
+            "title": "Current event and reservation semantics"
+          },
+          {
+            "id": "e_action",
+            "title": "Hypothetical funded action request"
+          },
+          {
+            "id": "e_preview",
+            "title": "Unacknowledged replace preview, limited scope"
+          }
+        ],
+        "final_response_template": {
+          "answers": {
+            "available_inventory": "<typed value>",
+            "current_cash": "<typed value>",
+            "current_inventory": "<typed value>",
+            "final_cash": "<typed value>",
+            "final_inventory": "<typed value>",
+            "new_buy_quantity": "<typed value>",
+            "new_sell_quantity": "<typed value>",
+            "reserved_buy_cash": "<typed value>"
+          },
+          "evidence": {
+            "available_inventory": [
+              "<viewed supporting document ID>"
+            ],
+            "current_cash": [
+              "<viewed supporting document ID>"
+            ],
+            "current_inventory": [
+              "<viewed supporting document ID>"
+            ],
+            "final_cash": [
+              "<viewed supporting document ID>"
+            ],
+            "final_inventory": [
+              "<viewed supporting document ID>"
+            ],
+            "new_buy_quantity": [
+              "<viewed supporting document ID>"
+            ],
+            "new_sell_quantity": [
+              "<viewed supporting document ID>"
+            ],
+            "reserved_buy_cash": [
+              "<viewed supporting document ID>"
+            ]
+          },
+          "question_id": "c206",
+          "turn": 1
+        },
+        "inputs": {
+          "delivery_allocation_shares": 25,
+          "hypothetical_new_prices": {
+            "buy": 9,
+            "sell": 11
+          },
+          "opening_accepted_orders": [
+            {
+              "id": "S",
+              "limit": 12,
+              "side": "sell",
+              "total": 80
+            },
+            {
+              "id": "B",
+              "limit": 10,
+              "side": "buy",
+              "total": 50
+            }
+          ],
+          "opening_cash": 1000,
+          "opening_inventory": 120,
+          "received_events_in_arrival_order": [
+            {
+              "exchange_sequence": 106,
+              "fill_id": "FB",
+              "order": "B",
+              "price": 10,
+              "quantity": 30,
+              "type": "fill"
+            },
+            {
+              "order": "S",
+              "sent_between_sequences": [
+                101,
+                103
+              ],
+              "type": "cancel_request"
+            },
+            {
+              "cancelled_remainder": 20,
+              "exchange_sequence": 104,
+              "order": "S",
+              "type": "cancel_ack"
+            },
+            {
+              "exchange_sequence": 101,
+              "fill_id": "FS1",
+              "order": "S",
+              "price": 12,
+              "quantity": 40,
+              "type": "fill"
+            },
+            {
+              "exchange_sequence": 105,
+              "fill_id": "FS1",
+              "order": "S",
+              "price": 12,
+              "quantity": 10,
+              "type": "bust"
+            },
+            {
+              "exchange_sequence": 103,
+              "fill_id": "FS2",
+              "order": "S",
+              "price": 12,
+              "quantity": 20,
+              "type": "fill"
+            },
+            {
+              "acknowledged": false,
+              "order": "B",
+              "proposed_limit": 11,
+              "proposed_total": 60,
+              "type": "replace_request"
+            },
+            {
+              "acknowledged": false,
+              "order": "B",
+              "type": "cancel_request"
+            },
+            {
+              "acknowledged": false,
+              "limit": 11,
+              "order": "N",
+              "quantity": 50,
+              "type": "new_sell_request"
+            }
+          ],
+          "source_relationship": "These raw numeric inputs are identical in both evidence conditions and are repeated in source documents. Current contracts, timing/access rules, statistical protocols and event semantics are document-owned."
+        },
+        "outputs": {
+          "available_inventory": {
+            "description": "Integer currently owned shares available for the hypothetical new sale.",
+            "type": "number"
+          },
+          "current_cash": {
+            "description": "Number, actual cash after all received economic events, including cash reservations.",
+            "type": "number"
+          },
+          "current_inventory": {
+            "description": "Integer actual owned shares after all received economic events, including reserved shares.",
+            "type": "number"
+          },
+          "final_cash": {
+            "description": "Number, cash after the hypothetical action, including reserved and required operating cash.",
+            "type": "number"
+          },
+          "final_inventory": {
+            "description": "Integer owned shares after the hypothetical action, including reserved shares.",
+            "type": "number"
+          },
+          "new_buy_quantity": {
+            "description": "Integer shares bought in the optimal hypothetical action, a multiple of 10.",
+            "type": "number"
+          },
+          "new_sell_quantity": {
+            "description": "Integer shares sold in the optimal hypothetical action.",
+            "type": "number"
+          },
+          "reserved_buy_cash": {
+            "description": "Number, cash reserved for the existing unfilled buy commitment.",
+            "type": "number"
+          }
+        },
+        "prompt": "Reconstruct the current executable inventory, cash and commitments from the asynchronous tape. Then choose the lexicographically optimal hypothetical funded action under the request: maximize the new buy quantity and, at that quantity, minimize the new sale. Report the current state and the resulting simulated balances; no real orders are authorized.",
+        "question_id": "c206",
+        "remaining_document_calls": 6,
+        "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+        "response_contract": {
+          "answers": "All declared typed fields",
+          "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+          "question_id": "c206",
+          "turn": 1
+        },
+        "sources": [
+          {
+            "id": "e_open",
+            "release_stage": 1,
+            "text": "Immediately before the event tape, settled inventory is 120 shares and cash is 1000 currency units. Accepted order S sells 80 shares at limit 12; accepted order B buys 50 shares at limit 10. No fills predate the tape. A separate noncancelable delivery allocation reserves 25 shares throughout the horizon; it is not a sale, has no immediate cash flow, and is included in current inventory.",
+            "title": "Opening execution and allocation ledger"
+          },
+          {
+            "id": "e_tape",
+            "release_stage": 1,
+            "text": "All rows below were received by the cutoff. Arrival order is deliberately different from exchange order. Fills settle immediately. Arrival1: exchange seq106, B fills 30 shares at 10, fill id FB. Arrival2: local cancel request for S sent after exchange seq101 but before seq103; no independent economic effect. Arrival3: exchange seq104, S cancel acknowledged, cancels its then-remaining 20 shares and closes S. Arrival4: exchange seq101, S fills 40 shares at 12, fill id FS1. Arrival5: exchange seq105, bust exactly 10 shares of FS1 at its original price. Arrival6: exchange seq103, S fills 20 shares at 12, fill id FS2. Arrival7: local replacement request for B to total quantity 60 at limit11, sent after seq106, with no acceptance or rejection yet. Arrival8: local cancel request for B, unacknowledged. Arrival9: new order N to sell 50 shares at limit11 transmitted, no exchange acknowledgement or fill yet. These are all events; there are no duplicates or hidden fills.",
+            "title": "Received event tape at cutoff"
+          },
+          {
+            "id": "e_rules",
+            "release_stage": 1,
+            "text": "Exchange sequence determines the ordering of exchange economic events, not message arrival. A bust reverses exactly the stated filled quantity and cash of the referenced fill. A bust after an acknowledged terminal cancellation does not reopen that order. An unacknowledged cancel or replacement leaves the last accepted remaining quantity and price effective. Reserve cash for accepted remaining buy quantity at its accepted limit. A transmitted but unacknowledged new sell reserves its entire requested share quantity, but no expected proceeds count as cash. Cancelled sell remainders reserve nothing. Reservations are additive and no borrowing or shorting is allowed.",
+            "title": "Current event and reservation semantics"
+          },
+          {
+            "id": "e_action",
+            "release_stage": 1,
+            "text": "Do not execute externally. Plan a new immediate sell of an integer number of currently unreserved shares at price11, followed by a new immediate buy in multiples of 10 shares at price9. Both legs fill entirely as simulated, without fees. Existing orders and allocations persist, with no further events during these hypothetical legs. Maintain at least400 cash in addition to reserved cash for the old buy order after the legs. Maximize new buy shares, then minimize new sell shares among plans with that maximum. The sell occurs first, so newly bought shares cannot be sold to fund the pair. Report cash balances inclusive of reservations; inventory includes allocated and reserved shares.",
+            "title": "Hypothetical funded action request"
+          }
+        ],
+        "title": "Reconstruct commitments before funding a trade",
+        "tools": {
+          "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+          "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+        },
+        "total_turns": 1,
+        "turn": 1
+      },
+      "role": "user"
+    }
+  ],
+  "question": {
+    "document_catalog": [
+      {
+        "id": "e_open",
+        "title": "Opening execution and allocation ledger"
+      },
+      {
+        "id": "e_tape",
+        "title": "Received event tape at cutoff"
+      },
+      {
+        "id": "e_rules",
+        "title": "Current event and reservation semantics"
+      },
+      {
+        "id": "e_action",
+        "title": "Hypothetical funded action request"
+      },
+      {
+        "id": "e_preview",
+        "title": "Unacknowledged replace preview, limited scope"
+      }
+    ],
+    "final_response_template": {
+      "answers": {
+        "available_inventory": "<typed value>",
+        "current_cash": "<typed value>",
+        "current_inventory": "<typed value>",
+        "final_cash": "<typed value>",
+        "final_inventory": "<typed value>",
+        "new_buy_quantity": "<typed value>",
+        "new_sell_quantity": "<typed value>",
+        "reserved_buy_cash": "<typed value>"
+      },
+      "evidence": {
+        "available_inventory": [
+          "<viewed supporting document ID>"
+        ],
+        "current_cash": [
+          "<viewed supporting document ID>"
+        ],
+        "current_inventory": [
+          "<viewed supporting document ID>"
+        ],
+        "final_cash": [
+          "<viewed supporting document ID>"
+        ],
+        "final_inventory": [
+          "<viewed supporting document ID>"
+        ],
+        "new_buy_quantity": [
+          "<viewed supporting document ID>"
+        ],
+        "new_sell_quantity": [
+          "<viewed supporting document ID>"
+        ],
+        "reserved_buy_cash": [
+          "<viewed supporting document ID>"
+        ]
+      },
+      "question_id": "c206",
+      "turn": 1
+    },
+    "inputs": {
+      "delivery_allocation_shares": 25,
+      "hypothetical_new_prices": {
+        "buy": 9,
+        "sell": 11
+      },
+      "opening_accepted_orders": [
+        {
+          "id": "S",
+          "limit": 12,
+          "side": "sell",
+          "total": 80
+        },
+        {
+          "id": "B",
+          "limit": 10,
+          "side": "buy",
+          "total": 50
+        }
+      ],
+      "opening_cash": 1000,
+      "opening_inventory": 120,
+      "received_events_in_arrival_order": [
+        {
+          "exchange_sequence": 106,
+          "fill_id": "FB",
+          "order": "B",
+          "price": 10,
+          "quantity": 30,
+          "type": "fill"
+        },
+        {
+          "order": "S",
+          "sent_between_sequences": [
+            101,
+            103
+          ],
+          "type": "cancel_request"
+        },
+        {
+          "cancelled_remainder": 20,
+          "exchange_sequence": 104,
+          "order": "S",
+          "type": "cancel_ack"
+        },
+        {
+          "exchange_sequence": 101,
+          "fill_id": "FS1",
+          "order": "S",
+          "price": 12,
+          "quantity": 40,
+          "type": "fill"
+        },
+        {
+          "exchange_sequence": 105,
+          "fill_id": "FS1",
+          "order": "S",
+          "price": 12,
+          "quantity": 10,
+          "type": "bust"
+        },
+        {
+          "exchange_sequence": 103,
+          "fill_id": "FS2",
+          "order": "S",
+          "price": 12,
+          "quantity": 20,
+          "type": "fill"
+        },
+        {
+          "acknowledged": false,
+          "order": "B",
+          "proposed_limit": 11,
+          "proposed_total": 60,
+          "type": "replace_request"
+        },
+        {
+          "acknowledged": false,
+          "order": "B",
+          "type": "cancel_request"
+        },
+        {
+          "acknowledged": false,
+          "limit": 11,
+          "order": "N",
+          "quantity": 50,
+          "type": "new_sell_request"
+        }
+      ],
+      "source_relationship": "These raw numeric inputs are identical in both evidence conditions and are repeated in source documents. Current contracts, timing/access rules, statistical protocols and event semantics are document-owned."
+    },
+    "outputs": {
+      "available_inventory": {
+        "description": "Integer currently owned shares available for the hypothetical new sale.",
+        "type": "number"
+      },
+      "current_cash": {
+        "description": "Number, actual cash after all received economic events, including cash reservations.",
+        "type": "number"
+      },
+      "current_inventory": {
+        "description": "Integer actual owned shares after all received economic events, including reserved shares.",
+        "type": "number"
+      },
+      "final_cash": {
+        "description": "Number, cash after the hypothetical action, including reserved and required operating cash.",
+        "type": "number"
+      },
+      "final_inventory": {
+        "description": "Integer owned shares after the hypothetical action, including reserved shares.",
+        "type": "number"
+      },
+      "new_buy_quantity": {
+        "description": "Integer shares bought in the optimal hypothetical action, a multiple of 10.",
+        "type": "number"
+      },
+      "new_sell_quantity": {
+        "description": "Integer shares sold in the optimal hypothetical action.",
+        "type": "number"
+      },
+      "reserved_buy_cash": {
+        "description": "Number, cash reserved for the existing unfilled buy commitment.",
+        "type": "number"
+      }
+    },
+    "prompt": "Reconstruct the current executable inventory, cash and commitments from the asynchronous tape. Then choose the lexicographically optimal hypothetical funded action under the request: maximize the new buy quantity and, at that quantity, minimize the new sale. Report the current state and the resulting simulated balances; no real orders are authorized.",
+    "question_id": "c206",
+    "remaining_document_calls": 6,
+    "required_final_keys_note": "Include all four top-level keys: question_id, integer turn, answers and evidence, even for single-turn cases. Replace every placeholder; this template contains no financial answer.",
+    "response_contract": {
+      "answers": "All declared typed fields",
+      "evidence": "For each field, a list of IDs of viewed supporting documents. Each field must have its own sufficient support; references elsewhere do not carry over. Valid alternative sufficient routes and relevant corroboration accepted. Numeric tolerance1e-6 absolute+1e-8 relative.",
+      "question_id": "c206",
+      "turn": 1
+    },
+    "sources": [
+      {
+        "id": "e_open",
+        "release_stage": 1,
+        "text": "Immediately before the event tape, settled inventory is 120 shares and cash is 1000 currency units. Accepted order S sells 80 shares at limit 12; accepted order B buys 50 shares at limit 10. No fills predate the tape. A separate noncancelable delivery allocation reserves 25 shares throughout the horizon; it is not a sale, has no immediate cash flow, and is included in current inventory.",
+        "title": "Opening execution and allocation ledger"
+      },
+      {
+        "id": "e_tape",
+        "release_stage": 1,
+        "text": "All rows below were received by the cutoff. Arrival order is deliberately different from exchange order. Fills settle immediately. Arrival1: exchange seq106, B fills 30 shares at 10, fill id FB. Arrival2: local cancel request for S sent after exchange seq101 but before seq103; no independent economic effect. Arrival3: exchange seq104, S cancel acknowledged, cancels its then-remaining 20 shares and closes S. Arrival4: exchange seq101, S fills 40 shares at 12, fill id FS1. Arrival5: exchange seq105, bust exactly 10 shares of FS1 at its original price. Arrival6: exchange seq103, S fills 20 shares at 12, fill id FS2. Arrival7: local replacement request for B to total quantity 60 at limit11, sent after seq106, with no acceptance or rejection yet. Arrival8: local cancel request for B, unacknowledged. Arrival9: new order N to sell 50 shares at limit11 transmitted, no exchange acknowledgement or fill yet. These are all events; there are no duplicates or hidden fills.",
+        "title": "Received event tape at cutoff"
+      },
+      {
+        "id": "e_rules",
+        "release_stage": 1,
+        "text": "Exchange sequence determines the ordering of exchange economic events, not message arrival. A bust reverses exactly the stated filled quantity and cash of the referenced fill. A bust after an acknowledged terminal cancellation does not reopen that order. An unacknowledged cancel or replacement leaves the last accepted remaining quantity and price effective. Reserve cash for accepted remaining buy quantity at its accepted limit. A transmitted but unacknowledged new sell reserves its entire requested share quantity, but no expected proceeds count as cash. Cancelled sell remainders reserve nothing. Reservations are additive and no borrowing or shorting is allowed.",
+        "title": "Current event and reservation semantics"
+      },
+      {
+        "id": "e_action",
+        "release_stage": 1,
+        "text": "Do not execute externally. Plan a new immediate sell of an integer number of currently unreserved shares at price11, followed by a new immediate buy in multiples of 10 shares at price9. Both legs fill entirely as simulated, without fees. Existing orders and allocations persist, with no further events during these hypothetical legs. Maintain at least400 cash in addition to reserved cash for the old buy order after the legs. Maximize new buy shares, then minimize new sell shares among plans with that maximum. The sell occurs first, so newly bought shares cannot be sold to fund the pair. Report cash balances inclusive of reservations; inventory includes allocated and reserved shares.",
+        "title": "Hypothetical funded action request"
+      }
+    ],
+    "title": "Reconstruct commitments before funding a trade",
+    "tools": {
+      "read": "{\"tool\":\"read\",\"ids\":[\"id\",...]}; at most3 IDs per call",
+      "search": "{\"tool\":\"search\",\"query\":\"text\"}; deterministic ranked matches among released documents"
+    },
+    "total_turns": 1,
+    "turn": 1
+  }
+}

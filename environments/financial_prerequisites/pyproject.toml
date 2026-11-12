@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-prerequisites"
+version = "0.1.0"
+description = "Four reproducible coding prerequisites for financial research evaluation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["financial-portfolio-staged==0.4.0", "verifiers==0.4.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_prerequisites"]

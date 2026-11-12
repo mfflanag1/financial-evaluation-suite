@@ -1,0 +1,2413 @@
+[
+  {
+    "name": "reference",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "expected_failures": {},
+    "failure_reason": "none"
+  },
+  {
+    "name": "mix_old_new_basis",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": -17.421557889311256,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "dcai_comparable_growth_2024_pct": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "mix old new basis"
+  },
+  {
+    "name": "omit_eliminations",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 72185,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "recast_2023_consolidated_revenue": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "omit eliminations"
+  },
+  {
+    "name": "rename_is_same_business",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": 1742.7521008403362,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "foundry_comparable_growth_2024_pct": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "rename is same business"
+  },
+  {
+    "name": "annual_divided_by_four",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": true,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "q1_2023_recast_dcai_revenue_identifiable": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "annual divided by four"
+  },
+  {
+    "name": "recast_means_consolidated_restatement",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": true,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "segment_change_revises_prior_consolidated_statements": [
+        "incorrect_value_or_type"
+      ]
+    },
+    "failure_reason": "recast means consolidated restatement"
+  },
+  {
+    "name": "missing_evidence",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": []
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "dcai_2023_basis_difference": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "missing evidence"
+  },
+  {
+    "name": "fabricated_quote",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "This is a fabricated supporting passage."
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "expected_failures": {
+      "dcai_2023_basis_difference": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    },
+    "failure_reason": "fabricated quote"
+  },
+  {
+    "name": "concise_original_and_recast_operands",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "contextual_original_and_recast_rows",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521 | | | $ | 19,445 | | | $ | 22,774 |"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(In Millions) | | Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "| | CCG | | DCAI | | NEX | | Total Intel Products | | Intel Foundry | | All Other | | Corporate Unallocated | | Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635 | | | $ | 5,774 | | | $ | 47,667 | | | $ | 18,910 | | | $ | 5,608 | | | $ | — | | | $ | (17,957) | | | $ | 54,228 |"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  },
+  {
+    "name": "missing_recast_operand",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957) | | | $ | 54,228"
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": false,
+    "failure_reason": "missing recast operand",
+    "expected_failures": {
+      "dcai_2023_basis_difference": [
+        "missing_invalid_or_unsupported_evidence"
+      ]
+    }
+  },
+  {
+    "name": "component_reconciliation_instead_of_printed_total",
+    "response": {
+      "case_id": "equity-002",
+      "answers": {
+        "dcai_2023_basis_difference": {
+          "value": 2886,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2023-original",
+              "quote": "Data Center and AI | | $ | 15,521"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            }
+          ]
+        },
+        "dcai_comparable_growth_2024_pct": {
+          "value": 1.440443213296399,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 30,290 | | | $ | 12,817"
+            }
+          ]
+        },
+        "dcai_old_new_growth_comparable": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\""
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "All prior period segment data has been retrospectively adjusted"
+            }
+          ]
+        },
+        "recast_2023_consolidated_revenue": {
+          "value": 54228,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,957)"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "revenue_overstatement_without_eliminations_2024": {
+          "value": 17215,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment Eliminations | | Total Consolidated"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "(17,215) | | | $ | 53,101"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes."
+            }
+          ]
+        },
+        "foundry_comparable_growth_2024_pct": {
+          "value": -7.228979375991539,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "47,667 | | | $ | 18,910 | | | $ | 5,608"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            }
+          ]
+        },
+        "disclosed_external_revenue_share": {
+          "value": 2.1946075357692525,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 28, 2024"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Total Intel Products | | Intel Foundry | | All Other"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "48,949 | | | $ | 17,543 | | | $ | 3,824"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024"
+            }
+          ]
+        },
+        "dcai_recast_operating_margin_2023_pct": {
+          "value": 12.821527502967946,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Dec 30, 2023"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "CCG | | DCAI | | NEX"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Revenue | | $ | 29,258 | | | $ | 12,635"
+            },
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "Operating income (loss) | | $ | 9,513 | | | $ | 1,620"
+            }
+          ]
+        },
+        "segment_change_revises_prior_consolidated_statements": {
+          "value": false,
+          "evidence": [
+            {
+              "source_id": "expansion-intel-2024-recast",
+              "quote": "There are no changes to our Consolidated Financial Statements for any prior periods."
+            }
+          ]
+        },
+        "q1_2023_recast_dcai_revenue_identifiable": {
+          "value": false,
+          "evidence": []
+        }
+      },
+      "limitations": [
+        "Conditional calculations only; not realized investment returns or a legal/accounting opinion.",
+        "Partial rendered primary disclosures and retrospective source timing; original layout and human expert review pending."
+      ]
+    },
+    "expected_automated_pass": true,
+    "failure_reason": "none",
+    "expected_failures": {}
+  }
+]
