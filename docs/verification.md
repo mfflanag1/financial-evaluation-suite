@@ -11,6 +11,8 @@ The following are completed local checks, not model-performance or optimizer-tra
 | Full serial Docker gate | 481 passed, zero skips | Same snapshot, real containers and local scripted providers |
 | Numerical expansion | 123 quality tests passed | Subsequent independent recomputation for all 100 quantitative cases; 110 cases and 461 outputs overall |
 | Further numerical coverage | 169 quality tests passed; nine more cases and 78 outputs recomputed | Five decision cases and four multi-document source cases; 119 cases and 539 outputs overall |
+| Complete authored-case calculations | 270 quality tests passed; all 230 entries and 1,972 outputs recomputed | Includes every authored research/core turn and six related variants; excludes arbitrary simulator trajectories and practitioner certification |
+| Complete-audit release gates | Core: 554 passed, 125 optional skips; native: 655 passed, 24 Docker skips | 679 discovered tests per run; frozen manifests and installed-package checks passed |
 | Alternate numerical methods | Five cases and 28 outputs agree; 16 regression tests passed | Separately implemented exhaustive searches, analytic pricing and exact score comparisons; a subset of the numerical audit |
 | Source packet | 31 boundary tests passed; 35-file packet verified | Seven complete cases; 20 eligible exact sources across the inventory, 17 included in complete-case packets |
 | Corrected source packet | 13 additional tests passed; 44 distribution tests overall | Same seven cases and 17 excerpts, matching v3 contracts, fresh-process version binding and a separate verified manifest |
