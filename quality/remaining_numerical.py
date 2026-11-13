@@ -152,7 +152,9 @@ def q063(inputs):
 
 
 def q064(inputs):
-    def price(yield_rate):return sum(cash/(1+yield_rate)**time for cash,time in zip(inputs['annual_cashflows'],inputs['times_years']))
+    # Central second differences amplify last-bit summation differences. Use
+    # the same compensated sum on every supported Python version.
+    def price(yield_rate):return math.fsum(cash/(1+yield_rate)**time for cash,time in zip(inputs['annual_cashflows'],inputs['times_years']))
     y=inputs['initial_yield'];dy=inputs['new_yield']-y;initial=price(y)
     first,first_error=derivative(price,y,1e-3)
     second=lambda step:(price(y+step)-2*initial+price(y-step))/step**2

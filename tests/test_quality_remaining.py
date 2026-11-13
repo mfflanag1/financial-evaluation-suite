@@ -3,6 +3,7 @@ import json
 import math
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 from quality import remaining_numerical as r
 from quality.numerical import fraction
@@ -10,6 +11,18 @@ ROOT=Path(__file__).resolve().parents[1]
 def inputs(cid):return json.loads((ROOT/f'questions/legacy/quant100/questions/{cid}.json').read_text())['inputs']
 
 class RemainingCertificates(unittest.TestCase):
+    def test_bond_derivative_certificate_is_stable_under_legacy_sum(self):
+        # Python 3.12 changed float summation. The old left-to-right algorithm
+        # used to perturb q064's second-difference certificate beyond its audit
+        # tolerance even though all declared answers still matched.
+        def legacy_sum(values, start=0):
+            for value in values:
+                start += value
+            return start
+        expected = r.q064(inputs('q064'))
+        with patch.object(r, 'sum', legacy_sum, create=True):
+            self.assertEqual(r.q064(inputs('q064')), expected)
+
     def test_desk_capital_tightening_is_a_nested_feasible_set(self):
         data=inputs('q013');answer,certificate=r.q013(data)
         self.assertLessEqual(certificate['base_capital'],data['capital_base_usd_m'])
