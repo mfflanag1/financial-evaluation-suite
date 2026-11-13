@@ -2,6 +2,8 @@
 
 This is a prepared review request, not evidence that practitioner review has occurred. Independent calculations and container tests establish specific implementation properties; a practitioner must assess whether the financial distinctions are sound, clear and useful. The published answer keys mean reviewers may already know a case. Record prior exposure rather than describing the review as blinded without evidence.
 
+For the generated selection mechanism, use the separate [selection review packet](selection-practitioner-review.md), which covers sampling assumptions, funded allocations and submitted-program reproduction.
+
 ## Forwarding note
 
 > Please review the supplied financial reasoning cases independently from their candidate inputs before opening the reference solutions. Record your solution, material assumptions, any alternative defensible answer, and a concrete correction for each defect. Distinguish an intentionally simplified financial model from an ambiguous or internally inconsistent one. For sequential cases, review the actual information and action sequence. Your review will be recorded only after your findings are received; it does not imply endorsement of the full suite.

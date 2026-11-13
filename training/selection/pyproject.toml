@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-selection-training"
+version = "0.1.0"
+description = "Separate native financial selection training contract and admission gates"
+readme = "README.md"
+requires-python = "~=3.12.0"
+dependencies = [
+    "financial-research==0.2.0",
+    "financial-selection==0.1.0",
+    "prime-rl==0.10.0",
+    "prime-rl-configs==0.4.0",
+    "verifiers==0.4.2.dev47",
+    "renderers==0.2.1.dev9",
+    "prime-pydantic-config==0.4.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_selection_training"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/README.md", "/pyproject.toml", "/.gitignore", "/src", "/configs", "/scripts", "/tests"]

@@ -1,0 +1,68 @@
+# Offline template. Preparation binds an evaluator-local copy; no model is called.
+model = "INSTRUCT_MODEL_ID"
+num_rollouts = 1
+max_concurrent = 1
+output_dir = "CALIBRATION_OUTPUT_DIRECTORY"
+dry_run = true
+
+[run]
+name = "selection-calibration-positive"
+dir = "positive"
+
+[client]
+type = "eval"
+base_url = "https://endpoint.invalid/v1"
+api_key_var = "SELECTION_MODEL_API_KEY"
+
+[sampling]
+temperature = 0.2
+max_tokens = 8192
+
+[select]
+shuffle = false
+limit = 1
+
+[env.retries]
+max_retries = 0
+
+[env.taskset]
+id = "financial-selection"
+split = "train"
+index_start = 0
+num_tasks = 1
+condition = "positive"
+
+[env.taskset.task]
+image = "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+scoring_seconds = 240
+
+[env.agent]
+max_turns = 32
+max_output_tokens = 65536
+max_total_tokens = 262144
+network_notice = false
+
+[env.agent.retries]
+max_retries = 0
+
+[env.agent.harness]
+id = "financial-portfolio-staged"
+dialect = "chat_completions"
+edit = true
+search = false
+sdk_max_retries = 0
+forward_env = []
+
+[env.agent.runtime]
+type = "docker"
+image = "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+workdir = "/workspace"
+allow = []
+cpu = 1
+memory = 1
+
+[env.agent.scoring]
+mode = "isolated"
+
+[env.agent.scoring.retries]
+max_retries = 0

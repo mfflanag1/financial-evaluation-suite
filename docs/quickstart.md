@@ -77,6 +77,8 @@ To reproduce the documented outcome-blind cash baseline after installation:
 
 This command uses an explicitly public fixture key, prints aggregate calculation scores, and makes no model requests. It does not use a private evaluation key or provide contamination-free test results. Its shaped reward and exact-success rate measure different things; report both.
 
+The [selection calibration protocol](../configs/financial_selection/calibration_v1/README.md) prepares five instruct-model attempts with exact task/configuration bindings. Its supplied configurations perform dry runs only; missing actual attempts leave performance means unset. Use the separate [selection training installation](../training/selection/README.md) for trainer compatibility checks, and the [practitioner review procedure](selection-practitioner-review.md) for financial assessment.
+
 ## Results and secrets
 
 Store responses, traces and evaluator keys outside the repository. Ignore rules are not a security boundary. Never mount the full clone, installed evaluator package or evaluator key inside the solver container. Preserve environment versions, exact prompts and private run artifacts for reproducibility.

@@ -38,7 +38,9 @@ Configuration files alone do not establish adapter compatibility. Optimizer and 
 
 The separate [portfolio training package](../training/README.md) passes 41 local tests with no skips, including actual spawned native workers, Docker and a scripted TrainClient. A same-task positive reward and genuine zero reward retain their native training records; an unresolved tool timeout receives `trace.drop()` and is excluded by the trainer's admission predicate. Prompt/completion token IDs, log probabilities, sampler support and policy versions survive native transport. Malformed graphs fail before worker serialization. Independent review found and verified fixes to trajectory identity, container isolation, dependency binding and lifecycle handling.
 
-Its clean installation verifies 591 resources and eight native source bindings, using exact trainer and Verifiers development revisions. Follow its [separate bootstrap](../training/dependencies/README.md); it is incompatible with the frozen evaluation environment. The root eight-package bootstrap and test tiers do not install or test this training successor. The new selection taskset has not been connected to this separate training adapter.
+Its clean installation verifies 591 resources and eight native source bindings, using exact trainer and Verifiers development revisions. Follow its [separate bootstrap](../training/dependencies/README.md); it is incompatible with the frozen evaluation environment. The root eight-package bootstrap and test tiers do not install or test this training successor.
+
+The [selection training adapter](../training/selection/README.md) uses its own package and installation with the same exact native revisions. It preserves the selection calculation and replay contract, adds selection-specific training admission, and leaves the portfolio adapter unchanged. Its tests use scripted token responses. These establish transport and admission properties, not rewards sampled from an actual policy or learning progress.
 
 This establishes scripted compatibility at the adapter gate. No real policy rollout, advantage calculation, gradient, optimizer update, checkpoint reload or weight synchronization has been observed. The included configuration is a contract with placeholders, not a ready training launch. Actual training remains a separately authorized validation step.
 
@@ -47,6 +49,8 @@ This establishes scripted compatibility at the adapter gate. No real policy roll
 Retain separate data-audit, calculation, decision, reproduction and economic metrics. A correct public decision need not maximize hidden-path reward. Do not retrospectively normalize scores to make reference solutions perfect.
 
 For selection, a reproducible outcome-blind cash control earns 0.67454 mean shaped reward but zero exact full-policy successes on 100 public-fixture packets. Report condition-level and component scores, exact current/fresh success and reproduction status. Its native admission helper checks local result consistency; callers still need a complete planned-attempt ledger and must retain unresolved failures.
+
+The [selection calibration protocol](../configs/financial_selection/calibration_v1/README.md) binds five train attempts before execution and leaves aggregate scores unset if any attempt is unresolved. Its native records contain aggregate reward and exact/reproduction metrics, but not the four financial components across all three packets; the report leaves those components unset. Model-free dry runs validate configuration only. Live instruct-model calibration and independent practitioner review remain unperformed.
 
 Start with program prerequisites, then research and staged portfolio tasks. Use development data for protocol selection; reserve fresh tests before tuning. Compute any difficulty filters from training data and record exclusions. Do not optimize and evaluate prompts on the same small episode set.
 
