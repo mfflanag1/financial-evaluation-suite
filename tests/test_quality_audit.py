@@ -66,8 +66,10 @@ class InventoryCoverage(unittest.TestCase):
         self.assertEqual(check["status"],"reference_discrepancy")
 
     def test_independent_cases_cover_every_declared_output(self):
-        self.assertEqual(self.evidence["case_count"],73)
-        self.assertEqual(self.evidence["matching_cases"],73)
+        self.assertEqual(self.evidence["case_count"],110)
+        self.assertEqual(self.evidence["matching_cases"],110)
+        self.assertEqual({check["case_id"] for check in self.evidence["checks"] if check["case_id"].startswith("q")},
+                         {f"q{i:03d}" for i in range(1,101)})
         for check in self.evidence["checks"]:
             packet=inventory.read(ROOT/check["input"]["path"])
             if "output_fields" in packet:

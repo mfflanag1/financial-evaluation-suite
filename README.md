@@ -13,6 +13,8 @@ Use the static bank for regression tests, teaching and transparent evaluation de
 - [RL readiness](docs/rl-readiness.md): generated environments and remaining training gates.
 - [Source policy](docs/source-policy.md): evidence redistribution and conservative packet export.
 - [Corrected scorer](scoring_v3/README.md): versioned changes over the frozen baseline.
+- [Practitioner review packet](docs/practitioner-review.md): forwarding note, case selection and blank review record.
+- [Verification evidence](docs/verification.md): completed checks and the claims they support.
 
 ## Coverage
 
@@ -26,6 +28,8 @@ Use the static bank for regression tests, teaching and transparent evaluation de
 | Related diagnostics | 6 | Adaptive variants, counted separately from the main bank. |
 
 The generated environments are separate from these counts. Repeated seeds, turns, output fields and attempts do not increase the number of independent financial mechanisms.
+
+The [case-level audit](quality/README.md) independently recomputes 110 cases and 461 declared outputs, including all 100 quantitative cases. It records the remaining 120 entries as lacking independent recomputation. This is scoped mathematical evidence under the supplied assumptions, not practitioner validation or empirical trading-performance evidence.
 
 ## Verify and use
 

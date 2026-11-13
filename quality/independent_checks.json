@@ -1,7 +1,7 @@
 {
   "audit_version": "1.0.0",
-  "case_count": 73,
-  "checked_fields": 330,
+  "case_count": 110,
+  "checked_fields": 461,
   "checks": [
     {
       "case_id": "q002",
@@ -3438,6 +3438,2128 @@
       "status": "matches_stored_reference"
     },
     {
+      "case_id": "q028",
+      "certificates": {
+        "combined_losses": [
+          1.0,
+          3.0,
+          12.0,
+          2.0
+        ],
+        "full_trade_applied_before_tail_selection": true,
+        "prior_es": 5.5
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 9.75,
+          "field": "new_es",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 9.75
+        },
+        {
+          "atol": 0.0001,
+          "derived": 4.25,
+          "field": "incremental_es",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 4.249999999999998
+        },
+        {
+          "atol": 0.0001,
+          "derived": 6.0,
+          "field": "standalone_trade_es",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 6.000000000000001
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q028",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q028.json",
+        "sha256": "60820dff39b87194861918011cd3da542f397f97242416b5b7c0960e7ac7885e"
+      },
+      "method": "Apply the full hedge scenario by scenario before threshold-tail optimization; compare with the old and standalone tails.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q030",
+      "certificates": {
+        "global_cauchy_schwarz_lower_bound": 2.431322695419323,
+        "stationarity_residuals": [
+          0.0,
+          0.0
+        ]
+      },
+      "fields": [
+        {
+          "atol": 1e-05,
+          "derived": [
+            1.9704433497536946,
+            2.8472906403940885
+          ],
+          "field": "shock",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            1.9704433497536946,
+            2.8472906403940885
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": 2.431322695419323,
+          "field": "severity",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2.431322695419323
+        },
+        {
+          "atol": 0.0001,
+          "derived": 30.0,
+          "field": "loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 30.0
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q030",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q030.json",
+        "sha256": "68cd05ea6d7d3f341da0e4774819b2393270ffe283ebd6ff7c0edcb852ab7491"
+      },
+      "method": "Covariance-metric Cauchy-Schwarz yields an attained global severity bound, verified by precision-space stationarity.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q031",
+      "certificates": {
+        "feasible_points": 5,
+        "finite_points_searched": 20,
+        "runner_up": [
+          18,
+          4,
+          1,
+          43.0
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            3,
+            2
+          ],
+          "field": "shock",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            3,
+            2
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": 17,
+          "field": "severity",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 17
+        },
+        {
+          "atol": 0.0001,
+          "derived": 37.5,
+          "field": "loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 37.5
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q031",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q031.json",
+        "sha256": "14aff3e2137e8c652861352b7a63eaa7fb7c6ff74c7f105ba87d0e8a9ddd5369"
+      },
+      "method": "Enumerate all permitted nonlinear grid shocks and apply the stated severity and lexicographic ordering.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q032",
+      "certificates": {
+        "balances_with_minimum_buffer": [
+          6.0,
+          0.0,
+          7.0
+        ],
+        "negative_pro_forma_means_payment_failure": true
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": [
+            4.0,
+            -2.0,
+            5.0
+          ],
+          "field": "balances",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            4,
+            -2,
+            5
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 2.0,
+          "field": "extra_buffer",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2
+        },
+        {
+          "atol": 0.0001,
+          "derived": 7.0,
+          "field": "required_line",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 7
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q032",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q032.json",
+        "sha256": "660eda5fc56491de1ca1733947f084fae35d031eb6e8e805c4bc3796cc4d407c"
+      },
+      "method": "Chronological cash-prefix ledger identifies the intraday deficit before later proceeds can settle.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q033",
+      "certificates": {
+        "bond_menu_points": 42,
+        "cash_reduction_proof": "Positive cash cost makes the smallest eligible cash-grid completion optimal for every bond pair.",
+        "feasible_minimum_cash_completions": 15
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            6,
+            4
+          ],
+          "field": "bond_blocks",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            6,
+            4
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 0.72,
+          "field": "cash",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.72
+        },
+        {
+          "atol": 0.0001,
+          "derived": 0.094,
+          "field": "annual_cost",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.094
+        },
+        {
+          "atol": 0.0001,
+          "derived": 10.0,
+          "field": "recognized_value",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 10.0
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q033",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q033.json",
+        "sha256": "3161ab08308f5cfc72b351f3879cd8fcb86597e97c6dfc79de4f9ccfe3ea0656"
+      },
+      "method": "Enumerate indivisible bond allocations and complete each with its exact least-cost cash-grid requirement; apply eligibility before cost ranking.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q034",
+      "certificates": {
+        "collateral_reallocated_across_sets": false,
+        "legal_set_exposures": {
+          "A1": 2.0,
+          "A2": 0.0,
+          "B1": 5.0
+        }
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 28.0,
+          "field": "gross_receivables",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 28
+        },
+        {
+          "atol": 0.0001,
+          "derived": 7.0,
+          "field": "total_ead",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 7
+        },
+        {
+          "atol": 0.0001,
+          "derived": [
+            2.0,
+            5.0
+          ],
+          "field": "counterparty_ead",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            2,
+            5
+          ]
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q034",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q034.json",
+        "sha256": "842466f10682d63b6eff2af6ab3f0f566a366f1280dbdb5db3449998a3a59751"
+      },
+      "method": "Net and collateralize each legal set independently before counterparty aggregation; preserve gross positive trade marks separately.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q035",
+      "certificates": {
+        "conditional_loss_states": [
+          0.6,
+          3.0,
+          18.0
+        ],
+        "conditional_probability_sum": 1.0,
+        "state_and_default_joint_probabilities": [
+          0.0095,
+          0.00147,
+          0.0002
+        ]
+      },
+      "fields": [
+        {
+          "atol": 1e-05,
+          "derived": 0.01117,
+          "field": "default_probability",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.01117
+        },
+        {
+          "atol": 1e-05,
+          "derived": [
+            0.8504923903312444,
+            0.13160250671441362,
+            0.017905102954341987
+          ],
+          "field": "state_probabilities_given_default",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0.8504923903312445,
+            0.13160250671441362,
+            0.01790510295434199
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 3.0,
+          "field": "conditional_var95",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 3.0
+        },
+        {
+          "atol": 0.0001,
+          "derived": 8.371530886302596,
+          "field": "conditional_es95",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 8.371530886302594
+        },
+        {
+          "atol": 0,
+          "derived": true,
+          "field": "buffer_inadequate",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": true
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q035",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q035.json",
+        "sha256": "932e630f77b38e12b56cd8b5476aac32844f4f5e92fba7e8cb9ef790b348b208"
+      },
+      "method": "Form exact joint state/default masses, condition by Bayes, then apply quantile and partial-atom ES to conditional losses.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q036",
+      "certificates": {
+        "collateral_realization": [
+          19.6,
+          18.62,
+          14.7
+        ],
+        "recognition_haircut_reapplied_at_closeout": false
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": [
+            0.0,
+            4.38,
+            17.3
+          ],
+          "field": "closeout_ead",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0,
+            4.379999999999999,
+            17.3
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 4.428,
+          "field": "conditional_expected_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 4.428
+        },
+        {
+          "atol": 0.0001,
+          "derived": 10.38,
+          "field": "conditional_es95",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 10.38
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q036",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q036.json",
+        "sha256": "c25750f904c8173aae7d1126a724ccbcd8bc6fd23d04e98a41d298b55a48635d"
+      },
+      "method": "Scenario closeout ledger liquidates actual collateral once, floors unsecured exposure, then computes conditional loss statistics.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q037",
+      "certificates": {
+        "aggregate_factor_loadings": [
+          12,
+          3
+        ],
+        "derivative_mesh_changes": [
+          1.3392842390658188e-08,
+          1.3226220119122445e-07,
+          3.3855585002129374e-08
+        ],
+        "euler_contribution_sum_residual": -7.338130103562435e-12
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 13.213629327327144,
+          "field": "volatility",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 13.213629327327146
+        },
+        {
+          "atol": 0.0001,
+          "derived": [
+            8.309601948109998,
+            5.834884428043807,
+            -0.9308570488339996
+          ],
+          "field": "desk_contributions",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            8.309601948112945,
+            5.8348844280465215,
+            -0.9308570488323248
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": 0.88659793814433,
+          "field": "factor1_variance_share",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.8865979381443297
+        },
+        {
+          "atol": 0.0001,
+          "derived": 1.5172905353290904,
+          "field": "remove_c_vol_change",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.5172905353290886
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q037",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q037.json",
+        "sha256": "dd8a31ea35aa1ca62b91e6477a330ea90828382c259bbfb90b0f42bcfd96f885"
+      },
+      "method": "Aggregate factor loadings and differentiate desk-weighted volatility with two meshes; separately reprice the finite desk removal.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q038",
+      "certificates": {
+        "absolute_currency_exposure": 24,
+        "covariance_determinant": 2.800000000000001e-05,
+        "signed_currency_exposures": [
+          -12,
+          12
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 0,
+          "field": "net_fx_notional",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0
+        },
+        {
+          "atol": 0.0001,
+          "derived": 0.7959899496852962,
+          "field": "residual_volatility",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.7959899496852961
+        },
+        {
+          "atol": 0.0001,
+          "derived": 1.2000000000000002,
+          "field": "stress_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.2000000000000002
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q038",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q038.json",
+        "sha256": "c2992e6d1381601823b97eeeceb9293a875192773c3b7b612ae65f58de02ab13"
+      },
+      "method": "Retain separate signed currency exposures, propagate the FX covariance, and compute the stated opposing-currency stress.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q039",
+      "certificates": {
+        "probability_at_var": 0.19,
+        "strict_exceedance_probability": 0.05,
+        "unconditional_probabilities": [
+          0.285,
+          0.475,
+          0.19,
+          0.03,
+          0.02
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 3.0,
+          "field": "unconditional_var95",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 3
+        },
+        {
+          "atol": 0.0001,
+          "derived": 12.8,
+          "field": "unconditional_es95",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 12.799999999999994
+        },
+        {
+          "atol": 0.0001,
+          "derived": 3.0,
+          "field": "calm_es95",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 3.0
+        },
+        {
+          "atol": 1e-05,
+          "derived": 1.0,
+          "field": "crisis_given_var_exceedance",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.0
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q039",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q039.json",
+        "sha256": "dc78cc38b883a80e9c5c69a1f8550746c51413ef82c45075ceafad82bc77f847"
+      },
+      "method": "Expand the regime tree into exact unconditional atoms, preserve the strict VaR-exceedance event, and separate conditional calm risk.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q041",
+      "certificates": {
+        "method": "Enumerate every ordered peak/later-observation pair, including the opening NAV.",
+        "terminal_losses": [
+          -5,
+          0,
+          1
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": [
+            20,
+            15,
+            3
+          ],
+          "field": "maximum_drawdowns",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            20,
+            15,
+            3
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 20.0,
+          "field": "drawdown_es75",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 20.0
+        },
+        {
+          "atol": 0.0001,
+          "derived": 1.0,
+          "field": "terminal_loss_es75",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.0
+        },
+        {
+          "atol": 1e-05,
+          "derived": 0.75,
+          "field": "trigger_probability",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.75
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q041",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q041.json",
+        "sha256": "5270641b16aa4c91181836f03f358194f8eeb3ae2f7c7a0553ad675faac28cb4"
+      },
+      "method": "Enumerate ordered peak/trough pairs along each complete path, then separately aggregate drawdown and terminal-loss tails.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q042",
+      "certificates": {
+        "eligibility_checked_before_reimbursement": true,
+        "gross_loan_losses": [
+          0,
+          30,
+          60,
+          90,
+          100
+        ],
+        "guarantee_reimbursements": [
+          0,
+          30,
+          60,
+          80,
+          0
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": [
+            0,
+            2,
+            4,
+            16,
+            108
+          ],
+          "field": "net_losses",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0,
+            2,
+            4,
+            16,
+            108
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 62.0,
+          "field": "es90",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 62.00000000000002
+        },
+        {
+          "atol": 0,
+          "derived": 4,
+          "field": "first_breach_level",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 4
+        },
+        {
+          "atol": 0.0001,
+          "derived": 8.0,
+          "field": "expected_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 8.0
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q042",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q042.json",
+        "sha256": "39ab86cf959db0fd01252accf1de69bddb3980997f8e3eaebc3b4718a2b86443"
+      },
+      "method": "Evaluate guarantee eligibility in each stress state before reimbursement and net loss; distinguish strict capital breach from equality.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q044",
+      "certificates": {
+        "all_smaller_menu_sales_infeasible": true,
+        "equity_uniform_mark_identity_error": 0.0,
+        "remaining_debt": 15378.0,
+        "remaining_marked_assets": 21978.0
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": 670,
+          "field": "shares_sold",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 670
+        },
+        {
+          "atol": 0.01,
+          "derived": 66.6,
+          "field": "clearing_price",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 66.6
+        },
+        {
+          "atol": 1e-05,
+          "derived": 0.6996996996996997,
+          "field": "final_ltv",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.6996996996997001
+        },
+        {
+          "atol": 0.01,
+          "derived": 6600.0,
+          "field": "final_equity",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 6599.999999999989
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q044",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q044.json",
+        "sha256": "b5ec714c272c616abc82759f8b39bc334251d94e5e6ba96db3defcacce3dbabc"
+      },
+      "method": "Exhaust the permitted uniform-price auction quantities using rational debt and asset ledgers; certify every smaller sale fails.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q046",
+      "certificates": {
+        "performing_cash_timeline": [
+          3.0,
+          -5.0,
+          7.0,
+          15.0
+        ],
+        "principal_exposure_timeline": [
+          12.0,
+          20.0,
+          8.0,
+          0.0
+        ],
+        "specified_default_exposure": 12.0
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 20.0,
+          "field": "peak_principal_exposure",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 20
+        },
+        {
+          "atol": 0.0001,
+          "derived": 5.0,
+          "field": "extra_line",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 5
+        },
+        {
+          "atol": 0.0001,
+          "derived": 7.2,
+          "field": "a_default_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 7.199999999999999
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q046",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q046.json",
+        "sha256": "0b4a3247fd3f70fc4ed4851166bcfc450ab0fa5348a197069c693ac8ae8f28b0"
+      },
+      "method": "Maintain separate intraday principal receivables and funded cash prefixes; apply recovery only to the exposure open at the specified default time.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q048",
+      "certificates": {
+        "annual_cap_applied_after_occurrence_terms": true,
+        "annual_reimbursements": [
+          0,
+          5,
+          12
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": [
+            0,
+            4,
+            17
+          ],
+          "field": "retained_losses",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0,
+            4,
+            17
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 4.6,
+          "field": "expected_retained_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 4.6000000000000005
+        },
+        {
+          "atol": 0.0001,
+          "derived": 17.0,
+          "field": "retained_es80",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 17.0
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q048",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q048.json",
+        "sha256": "61aebd7ae8f5514d8e7647fe5602d15ea7cc2c29d12ea7588ac95a92effda1cf"
+      },
+      "method": "Apply occurrence deductibles and limits separately before the annual cap, then compute retained-loss expectation and tail.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q049",
+      "certificates": {
+        "feasible_plans": 166,
+        "finite_plans_tested": 968,
+        "pending_ap_transfer_credited_only_at_1030": true,
+        "selected_cash_timeline": [
+          {
+            "A": 4,
+            "B": 8,
+            "P": 3
+          },
+          {
+            "A": 2,
+            "B": 0,
+            "P": 3
+          },
+          {
+            "A": 2,
+            "B": 0,
+            "P": 6
+          },
+          {
+            "A": 2,
+            "B": 0,
+            "P": 0
+          }
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0.0001,
+          "derived": 3,
+          "field": "external_funding",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 3
+        },
+        {
+          "atol": 0.0001,
+          "derived": [
+            3,
+            1,
+            5
+          ],
+          "field": "transfers",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            3,
+            1,
+            5
+          ]
+        },
+        {
+          "atol": 0.0001,
+          "derived": 2,
+          "field": "trapped_cash_a",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2
+        },
+        {
+          "atol": 0.0001,
+          "derived": 1,
+          "field": "naive_pooled_deficit",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1
+        }
+      ],
+      "implementation": "quality/risk_numerical.py::q049",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q049.json",
+        "sha256": "cc3d81e6d83c9c63fd0da3d0c7df3ac4f60433f86bf4283799a6d9595c490174"
+      },
+      "method": "Enumerate all integer funding/transfer plans with departure, payment and delayed-arrival cash states; apply the full lexicographic tie rule.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q013",
+      "certificates": {
+        "base_capital": 16.2,
+        "gross_feasible_candidates": 22,
+        "tight_capital": 15.8
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            3,
+            3
+          ],
+          "field": "base_units",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            3,
+            3
+          ]
+        },
+        {
+          "atol": 0,
+          "derived": [
+            3,
+            2
+          ],
+          "field": "tight_units",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            3,
+            2
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 18.57,
+          "field": "base_objective",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 18.57
+        },
+        {
+          "atol": 1e-06,
+          "derived": 1.94,
+          "field": "objective_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.9400000000000013
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q013",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q013.json",
+        "sha256": "4940e90eef384016464ffcae1cc0916c7d221a20275c9ff6ce813d6eacdd8d69"
+      },
+      "method": "Enumerate the complete integer desk menu with nonlinear shared capital charge, gross cap and lexicographic objective ordering.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q017",
+      "certificates": {
+        "execution": 40.0,
+        "feasible_plans": 15,
+        "single_order_ticket": true,
+        "tax": 50.0
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            0,
+            20
+          ],
+          "field": "sales",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0,
+            20
+          ]
+        },
+        {
+          "atol": 0.01,
+          "derived": 2110.0,
+          "field": "ending_cash",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2110.0
+        },
+        {
+          "atol": 0.01,
+          "derived": 90.0,
+          "field": "tax_and_cost",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 90.0
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q017",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q017.json",
+        "sha256": "a61236f5a35f3fcf6fd00713186ab04d4e7809c5d9d032d55b60c897dbb54ef2"
+      },
+      "method": "Enumerate tax-lot sales, charge positive gains and one combined execution ticket, then rank feasible cash plans by shares and economic cost.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q018",
+      "certificates": {
+        "branch_fees": [
+          0.0007500187504687618,
+          0.0049258657209004485
+        ],
+        "entry_fee": 0.004975124378109453,
+        "feasible_nonanticipating_policies": 24,
+        "target_weight_denominator": "post-fee NAV",
+        "terminal_probabilities": [
+          0.225,
+          0.275,
+          0.275,
+          0.225
+        ],
+        "terminal_wealth": [
+          1.2292932323308083,
+          1.0863521588039702,
+          1.1577754790404413,
+          0.7570070439879809
+        ]
+      },
+      "fields": [
+        {
+          "atol": 1e-05,
+          "derived": [
+            0.5,
+            0.5,
+            1.0
+          ],
+          "field": "policy",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.04687737840991832,
+          "field": "expected_log_wealth",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.046877378409918236
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.7570070439879809,
+          "field": "worst_terminal_wealth",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.7570070439879809
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q018",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q018.json",
+        "sha256": "bb3ddaa746653127b2a95ce06550717b93227d2a3ad363ad52767b08ab5ffb74"
+      },
+      "method": "Enumerate all nonanticipating contingent policies; solve each post-fee-NAV trade exactly and propagate all four terminal cash/risky-asset states.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q019",
+      "certificates": {
+        "feasible_counts": [
+          35,
+          47
+        ],
+        "sector_active_sums": [
+          0,
+          0
+        ],
+        "selected_tracking_variances": [
+          0.0015,
+          0.0016
+        ]
+      },
+      "fields": [
+        {
+          "atol": 1e-05,
+          "derived": [
+            0.1,
+            0.1
+          ],
+          "field": "base_pair_weights",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0.1,
+            0.1
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": [
+            0.2,
+            0.0
+          ],
+          "field": "stressed_pair_weights",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0.2,
+            0.0
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            0.0122,
+            0.0112
+          ],
+          "field": "net_objectives",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0.0122,
+            0.0112
+          ]
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q019",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q019.json",
+        "sha256": "13b38ee925ce8336c75dc5f3c60796dec89233b42c275594e01940b405f9a6a8"
+      },
+      "method": "Rational finite sector-neutral pair grid with nonnegative full holdings and exact tracking-variance inequalities under both covariance completions.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q020",
+      "certificates": {
+        "end_of_date_cash_balances": [
+          0.35,
+          0.5,
+          0.5
+        ],
+        "feasible_integer_ladders": 91,
+        "terminal_surplus_credited_against_purchase_cost": false
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            1,
+            1,
+            1
+          ],
+          "field": "bond_units",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 5.4,
+          "field": "purchase_cost",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 5.4
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.35,
+          "field": "minimum_cash_balance",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.34999999999999987
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q020",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q020.json",
+        "sha256": "d86677946ad79dcd6d5f4c7da5419220f56b16cf82ad8e2eb452ab18a93298cc"
+      },
+      "method": "Enumerate all integer bond ladders with receipt-before-liability cash prefixes and no terminal-surplus credit against purchase funding.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q023",
+      "certificates": {
+        "maximum_gross_certificate": "Triangle inequality bounds netted gross above by pre-net gross; four distinct securities attain it.",
+        "minimum_gross_certificate": "Absolute total signed exposure bounds gross below; the supplied crossed-security completion attains it.",
+        "unconstrained_objective_optimum": 1.5
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": [
+            40,
+            360
+          ],
+          "field": "gross_bounds",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            40,
+            360
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": [
+            1.5,
+            0.5555555555555556
+          ],
+          "field": "completion_scales",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            1.5,
+            0.5555555555555556
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": 0.5555555555555556,
+          "field": "robust_scale",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.5555555555555556
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "optimal_scale_identified",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q023",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q023.json",
+        "sha256": "2fc9e6e4e7699ebfc09376a982a137516a540aa756dfbc4be83efc8ce5b3f129"
+      },
+      "method": "Triangle-inequality gross bounds are attained by the two disclosed identity completions; constrain the same concave scaling objective separately.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q052",
+      "certificates": {
+        "spot_converted_discounted_eur_receivable": 2159134.3130451096,
+        "two_currency_replication_residual": 0.0
+      },
+      "fields": [
+        {
+          "atol": 1e-05,
+          "derived": 1.116624371077291,
+          "field": "forward",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.116624371077291
+        },
+        {
+          "atol": 0.01,
+          "derived": 2233248.742154582,
+          "field": "locked_usd",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2233248.742154582
+        },
+        {
+          "atol": 0.01,
+          "derived": 2159134.3130451096,
+          "field": "present_value",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2159134.3130451096
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q052",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q052.json",
+        "sha256": "0f2a9efa0400bfd05f2756e8ab4dada674ea08d1f025c123bb9d06337d3ec505"
+      },
+      "method": "Replicate the locked currency receipt by discounting the EUR receivable, converting at spot, and investing in USD.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q056",
+      "certificates": {
+        "integer_positions_searched": 101,
+        "negative_cash_is_funded_debt": true,
+        "terminal_superhedge_surplus": [
+          0.0,
+          0.0
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": 50,
+          "field": "shares",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 50
+        },
+        {
+          "atol": 0.01,
+          "derived": -3955.4455445544554,
+          "field": "cash_account",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -3955.4455445544554
+        },
+        {
+          "atol": 0.01,
+          "derived": 1049.5544554455446,
+          "field": "minimum_outlay",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1049.5544554455446
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q056",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q056.json",
+        "sha256": "226ec657013d87d92a24ceb15613d037dbfe5ddd09d64a05fa6eab8d9dc78d8a"
+      },
+      "method": "For every integer share hedge, solve the maximum terminal-state cash requirement, then minimize initial ask purchase plus signed cash account.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q061",
+      "certificates": {
+        "cashflow_repricing_residuals": [
+          0.0,
+          0.0
+        ],
+        "unknown_discount_dates": [
+          1,
+          1.5
+        ]
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": [
+            0.9650000000000001,
+            0.9397560975609757
+          ],
+          "field": "discounts",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            0.9650000000000001,
+            0.9397560975609757
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.053724370620296114,
+          "field": "forward_rate",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.053724370620296114
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q061",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q061.json",
+        "sha256": "e49d31a0c6f005f013aba73664ea7e1a9be8e61e6c043276c062e53d4c3d6e98"
+      },
+      "method": "Solve the triangular coupon-pricing linear system, reprice both bonds, and convert adjacent discounts to a simple forward.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q062",
+      "certificates": {
+        "discount_derivative_check": -4.564999999992628,
+        "discount_derivative_mesh_change": 0.00018997525330632925,
+        "net_coupon_payments": [
+          -50000.00000000001,
+          0.0,
+          50000.00000000001
+        ],
+        "par_coupon_repricing": 1.6370904631912708e-11
+      },
+      "fields": [
+        {
+          "atol": 0.01,
+          "derived": -2400.0,
+          "field": "pv",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -2399.9999999999977
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.03983362218370884,
+          "field": "par_rate",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.03983362218370884
+        },
+        {
+          "atol": 0.01,
+          "derived": 1442.4999999999998,
+          "field": "projection_pv01",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1442.4999999999998
+        },
+        {
+          "atol": 0.01,
+          "derived": -4.565000000000001,
+          "field": "discount_pv01",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -4.565000000000001
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q062",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q062.json",
+        "sha256": "a1a261ecbd9191a2d617361fd60b6ab3fec8df4500ce5a29319c0dfc31b40f45"
+      },
+      "method": "Separate projected coupon cash flows from discount factors; compute signed projection and discount sensitivities with a numerical derivative cross-check.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q063",
+      "certificates": {
+        "cash_feasible_grid_plans": 902,
+        "collateral_deducted_from_pnl": false,
+        "scenario_losses_including_zero": [
+          -19000,
+          -2500,
+          15500,
+          19000,
+          2500,
+          -15500,
+          0
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            55,
+            0,
+            15
+          ],
+          "field": "hedge_units",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            55,
+            0,
+            15
+          ]
+        },
+        {
+          "atol": 0.01,
+          "derived": 19000,
+          "field": "worst_loss",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 19000
+        },
+        {
+          "atol": 0.01,
+          "derived": 15500,
+          "field": "collateral",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 15500
+        },
+        {
+          "atol": 0.01,
+          "derived": [
+            -500,
+            -2400,
+            1600
+          ],
+          "field": "residual_sensitivity",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            -500,
+            -2400,
+            1600
+          ]
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q063",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q063.json",
+        "sha256": "b2fe30de19085612bfeef7d7ee2aa15e1a252850d02aaa6ecf4f994dafc9ffb8"
+      },
+      "method": "Enumerate every collateral-feasible key-rate hedge grid, price all joint stresses including zero, and apply the full tie rule.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q064",
+      "certificates": {
+        "estimated_price_convexity": 1070.1622437447138,
+        "first_derivative_mesh_change": 0.0006379086698871106,
+        "initial_price": 102.77509103322713,
+        "second_derivative_mesh_change": -0.0018312107386009302
+      },
+      "fields": [
+        {
+          "atol": 0.01,
+          "derived": -5.448102982688781,
+          "field": "exact_pnl",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -5.448102982688781
+        },
+        {
+          "atol": 0.01,
+          "derived": -5.6555212965145065,
+          "field": "duration_pnl",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -5.655521296523229
+        },
+        {
+          "atol": 0.01,
+          "derived": -5.441488847765564,
+          "field": "convexity_pnl",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -5.441488847756353
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q064",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q064.json",
+        "sha256": "2a4b646a05f48123a8b93949b75e3ef7c61928f0660ced16ff16d476f659994e"
+      },
+      "method": "Reprice the full annual-discount cash-flow sum and obtain first/second Taylor terms from Richardson central differences.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q068",
+      "certificates": {
+        "forward_is_executable_bid": true,
+        "funded_capacity": 8064,
+        "initial_borrowing": 499968.0
+      },
+      "fields": [
+        {
+          "atol": 0.01,
+          "derived": 63.76953747251459,
+          "field": "carry_bound",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 63.76953747251459
+        },
+        {
+          "atol": 0,
+          "derived": 8064,
+          "field": "quantity",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 8064
+        },
+        {
+          "atol": 0.01,
+          "derived": 9922.449821642327,
+          "field": "terminal_profit",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 9922.449821642327
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q068",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q068.json",
+        "sha256": "7d0d1f3e05ed105684d0276b2de061cb786ea3ddda51a7f2d8f3c1e9eb9edc0c"
+      },
+      "method": "Finance purchase and prepaid storage together; add the terminal delivery fee and enforce both whole-barrel funding and tank bounds.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q073",
+      "certificates": {
+        "collateral_by_state": [
+          3000000.0,
+          10000000.0
+        ],
+        "marginal_default_probability": 0.031,
+        "mean_residual_exposure": 4400000.0
+      },
+      "fields": [
+        {
+          "atol": 0.01,
+          "derived": [
+            2000000.0,
+            10000000.0
+          ],
+          "field": "residual_exposures",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            2000000,
+            10000000
+          ]
+        },
+        {
+          "atol": 0.01,
+          "derived": 147828.0,
+          "field": "joint_cva",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 147828.0
+        },
+        {
+          "atol": 0.01,
+          "derived": 79384.8,
+          "field": "independent_cva",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 79384.8
+        },
+        {
+          "atol": 0.01,
+          "derived": 68443.2,
+          "field": "understatement",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 68443.2
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q073",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q073.json",
+        "sha256": "8aa37e6028d77be1978e58078a5dfcdf95624c397a0ab7304945bb838a907a54"
+      },
+      "method": "Apply collateral thresholds and caps by state, then compare the exact joint default/exposure expectation with the matched-marginal product.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q077",
+      "certificates": {
+        "cost_and_fee_leave_volatility_unchanged": true,
+        "total_traded_notional_per_nav": 8.0
+      },
+      "fields": [
+        {
+          "atol": 0.005,
+          "derived": 0.96,
+          "field": "annual_cost_pct",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.96
+        },
+        {
+          "atol": 0.005,
+          "derived": 5.54,
+          "field": "net_return_pct",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 5.54
+        },
+        {
+          "atol": 0.05,
+          "derived": 81.25,
+          "field": "breakeven_cost_bps",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 81.25
+        },
+        {
+          "atol": 0.005,
+          "derived": 0.6155555555555555,
+          "field": "net_sharpe",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.6155555555555555
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q077",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q077.json",
+        "sha256": "995012cd0f2ae9a296b5b10f4ec46e81d211d97eedf48e4527021a800c1ba6e9"
+      },
+      "method": "Convert one-way turnover to both traded legs and reconcile percent, basis-point, fee and net-Sharpe units.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q082",
+      "certificates": {
+        "half_life_decay": 0.5,
+        "stationary_mean_residual": 0.0,
+        "stationary_variance_residual": 4.440892098500626e-16
+      },
+      "fields": [
+        {
+          "atol": 0.05,
+          "derived": 8.31295041412083,
+          "field": "half_life_days",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 8.31295041412083
+        },
+        {
+          "atol": 0.005,
+          "derived": 7.5,
+          "field": "long_run_mean",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 7.5
+        },
+        {
+          "atol": 0.005,
+          "derived": 2.2963966338592297,
+          "field": "stationary_sd",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2.2963966338592297
+        },
+        {
+          "atol": 0.01,
+          "derived": 1.175755076535925,
+          "field": "z_score",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.175755076535925
+        },
+        {
+          "atol": 0.005,
+          "derived": 9.27952011264,
+          "field": "expected_spread_5d",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 9.27952011264
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q082",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q082.json",
+        "sha256": "bb80c99bd18529d1f33911785b2b6a71306a1fac47ba0ab28e442ac16de00785"
+      },
+      "method": "Solve stationary AR moments and recursively propagate conditional expectations; verify mean, variance and half-life fixed-point identities.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q090",
+      "certificates": {
+        "grid_profit_rates": [
+          0.07443456719589936,
+          0.08905933202208349,
+          0.09424653878727307,
+          0.09506688012970158,
+          0.09324020729892481,
+          0.0895431101727364,
+          0.08441501913908574,
+          0.07105175110959769
+        ],
+        "identity": "The stipulated entry and return integrands add to exp(x^2) because erf(x)+erfc(x)=1.",
+        "last_series_term_at_best": 4.049004861830182e-17,
+        "positive_series_terms_at_best": 13
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": 2.5,
+          "field": "best_threshold",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 2.5
+        },
+        {
+          "atol": 0.0002,
+          "derived": 0.09506688012970158,
+          "field": "best_profit_rate_per_day",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 0.09506688012966576
+        },
+        {
+          "atol": 0.05,
+          "derived": 22.089711970508862,
+          "field": "cycle_days_at_best",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 22.089711970517186
+        },
+        {
+          "atol": 0.001,
+          "derived": 3.162277660168379,
+          "field": "stationary_sd",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 3.162277660168379
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q090",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q090.json",
+        "sha256": "ee968c7533a24bf80db21e957b6c1e3405b5acc3080b4abb224c230576e563bb"
+      },
+      "method": "Add the stipulated first-passage integrands analytically and integrate exp(x^2) with a convergent positive power series across the complete threshold menu.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q091",
+      "certificates": {
+        "complete_liquidation_schedules": 34,
+        "interval_variances": [
+          90000.0,
+          90000.0,
+          6400.0
+        ],
+        "post_slice_inventory_bearing_risk": [
+          3,
+          2,
+          1
+        ],
+        "price_intervals": 3
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "field": "schedule",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            3,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "atol": 0.01,
+          "derived": 1380.0,
+          "field": "expected_cost",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1380.0
+        },
+        {
+          "atol": 0.01,
+          "derived": 186400.0,
+          "field": "cost_variance",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 186400.0
+        },
+        {
+          "atol": 0.01,
+          "derived": 1752.8,
+          "field": "objective",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1752.8
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q091",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q091.json",
+        "sha256": "ebcaedb8fece5e3ab71b52c0a2cc246c9a91186232b1186be5f940adc916a25a"
+      },
+      "method": "Enumerate complete liquidation schedules with interval risk attached to post-slice inventory, separate permanent/temporary costs and exact objective ordering.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q092",
+      "certificates": {
+        "joint_law": "Independent bid and ask Bernoulli fills; terminal mark responds to their realized difference.",
+        "selected_quote_fill_states": [
+          {
+            "buy": 0,
+            "net_value": -16.0,
+            "probability": 0.495,
+            "sell": 0
+          },
+          {
+            "buy": 0,
+            "net_value": 18.0,
+            "probability": 0.405,
+            "sell": 1
+          },
+          {
+            "buy": 1,
+            "net_value": -42.0,
+            "probability": 0.055,
+            "sell": 0
+          },
+          {
+            "buy": 1,
+            "net_value": 24.0,
+            "probability": 0.045,
+            "sell": 1
+          }
+        ]
+      },
+      "fields": [
+        {
+          "atol": 0,
+          "derived": [
+            3,
+            1
+          ],
+          "field": "inventory_quote_offsets",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            3,
+            1
+          ]
+        },
+        {
+          "atol": 0,
+          "derived": [
+            2,
+            2
+          ],
+          "field": "flat_quote_offsets",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            2,
+            2
+          ]
+        },
+        {
+          "atol": 0.01,
+          "derived": -1.86,
+          "field": "inventory_objective",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": -1.8600000000000003
+        },
+        {
+          "atol": 1e-05,
+          "derived": 1.65,
+          "field": "expected_final_inventory",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 1.6500000000000001
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q092",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q092.json",
+        "sha256": "fd32f7b7c15ceb881eac179ee0738acfcdeb8bff95061e547ad4de86ba849ff9"
+      },
+      "method": "Enumerate all independent bid/ask fill states for each quote pair, keep cash and marked inventory separately, and average the nonlinear inventory penalty.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "q093",
+      "certificates": {
+        "break_even_profit_residuals": [
+          1.3877787807814457e-17,
+          -9.658940314238862e-15
+        ],
+        "dollar_profit_derivative": 0.0,
+        "return_objective_derivative": 5.421010862427522e-20,
+        "shutdown_avoids_fixed_cost": true
+      },
+      "fields": [
+        {
+          "atol": 1e-05,
+          "derived": 469.4444444444445,
+          "field": "profit_maximizing_aum",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 469.4444444444445
+        },
+        {
+          "atol": 1e-06,
+          "derived": 10.051296296296295,
+          "field": "maximum_annual_profit",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 10.051296296296295
+        },
+        {
+          "atol": 1e-05,
+          "derived": [
+            1.9285613637762564,
+            1052.547955158063
+          ],
+          "field": "positive_break_even_aum",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": [
+            1.9285613637762564,
+            1052.547955158063
+          ]
+        },
+        {
+          "atol": 1e-05,
+          "derived": 24.328807982293597,
+          "field": "return_maximizing_aum",
+          "matches": true,
+          "rtol": 0.0,
+          "stored_reference": 24.328807982293597
+        }
+      ],
+      "implementation": "quality/remaining_numerical.py::q093",
+      "input": {
+        "path": "questions/legacy/quant100/questions/q093.json",
+        "sha256": "3ffc64275f86c02d7cd8f38c851b55c3b9f47a0c65e90941bcd82fe3f610cf6b"
+      },
+      "method": "Differentiate separate dollar-profit and return-on-AUM objectives, bracket both positive operating break-even roots, and preserve the shutdown discontinuity.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
       "case_id": "c201",
       "certificates": {
         "all_optimal_holdings": [
@@ -4798,8 +6920,10 @@
     "allocation_numerical.py": "61506f8325e2b197155d6bb8eb328e69adcd5c55c78b3ba16a72a33ac07b5185",
     "core_numerical.py": "4c2eff32be7a6f7d1326404c09d1b3e7301adf4d06ae814a9c56c221bd6ecccb",
     "numerical.py": "3f016f5697174b7510c20626b9f4708432b23d38b699e3c6e67a67bd52d803e7",
+    "remaining_numerical.py": "f2f66c6595e095f2cf51a36d9fe227a7bf3795296a07afe5beed925640d33063",
+    "risk_numerical.py": "22caf264f1d2d6ebd0a5680dfc82a67bf31e6439293a39270dbc30227ed1111f",
     "source_numerical.py": "f15c4522bf42e87d022da78269d799e94735b675517d842672de20d757895d4e"
   },
   "kind": "independent_numerical_recomputation",
-  "matching_cases": 73
+  "matching_cases": 110
 }

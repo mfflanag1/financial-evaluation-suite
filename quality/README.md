@@ -2,9 +2,9 @@
 
 The inventory covers **224 main cases and six related variants**, with 1,924 main outputs and 48 variant outputs. Every entry has an explicit review status. Generated environment seeds, related variants and repeated attempts are not additional independent static cases.
 
-**73 cases have independent numerical recomputations**: 63 quantitative cases, three single-turn core cases, and seven retained-source arithmetic cases. Each calculation uses the supplied question inputs and governing synthetic contracts. It is implemented separately from the stored solution and production scorer. Only after calculation does the audit compare its output with the stored reference. All 330 declared outputs in these 73 cases match within their specified tolerances.
+**110 cases have independent numerical recomputations**: all 100 quantitative cases, three single-turn core cases, and seven retained-source arithmetic cases. Each calculation uses the supplied question inputs and governing synthetic contracts. It is implemented separately from the stored solution and production scorer. Only after calculation does the audit compare its output with the stored reference. All 461 declared outputs in these 110 cases match within their specified tolerances.
 
-This establishes the scoped calculations under stipulated assumptions. It does not establish market realism, empirical signal efficacy, source licensing, adversarial scorer robustness, practitioner validation or full coverage of sequential paths. The remaining 157 entries are explicitly marked as lacking independent recomputation. Passing stored-answer controls alone does not change that status.
+This establishes the scoped calculations under stipulated assumptions. It does not establish market realism, empirical signal efficacy, source licensing, adversarial scorer robustness, practitioner validation or full coverage of sequential paths. The remaining 120 entries are explicitly marked as lacking independent recomputation. Passing stored-answer controls alone does not change that status.
 
 ## Read the evidence
 
@@ -14,6 +14,8 @@ This establishes the scoped calculations under stipulated assumptions. It does n
 | [independent_checks.json](independent_checks.json) | Per-case methods, recomputed fields, reference comparisons and numerical certificates |
 | [numerical.py](numerical.py) | Independent quantitative calculations, with no scorer imports |
 | [allocation_numerical.py](allocation_numerical.py) | Financing ledgers, constrained allocations, active sets and convex optimality certificates |
+| [risk_numerical.py](risk_numerical.py) | Conditional tails, collateral, netting, settlement and stress identities |
+| [remaining_numerical.py](remaining_numerical.py) | Finite contingent policies, rates, execution and capacity calculations |
 | [core_numerical.py](core_numerical.py) | Independent portfolio repair, temporal-eligibility and joint-sign calculations |
 | [source_numerical.py](source_numerical.py) | Retained-excerpt arithmetic and declared conventions; no external source revalidation |
 | [discrete_fields.json](discrete_fields.json) | Semantic review of all 1,972 stage/output fields, including mixed-array selectors |

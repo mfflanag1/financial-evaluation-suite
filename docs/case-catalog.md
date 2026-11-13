@@ -69,76 +69,76 @@ Source redistribution is narrower than catalog coverage; see the [source policy]
 | [q010](../questions/legacy/quant100/questions/q010.json) | Active allocation under investment and tracking-error limits | portfolio | 1 | 4 | Matched |
 | [q011](../questions/legacy/quant100/questions/q011.json) | Three-asset allocation with position bounds | portfolio | 1 | 3 | Matched |
 | [q012](../questions/legacy/quant100/questions/q012.json) | Minimum-risk expression of a neutral stock signal | portfolio | 1 | 3 | Matched |
-| [q013](../questions/legacy/quant100/questions/q013.json) | Two desks sharing a hedged capital charge | portfolio | 1 | 4 | Pending |
+| [q013](../questions/legacy/quant100/questions/q013.json) | Two desks sharing a hedged capital charge | portfolio | 1 | 4 | Matched |
 | [q014](../questions/legacy/quant100/questions/q014.json) | Portfolio adjustment with fixed ticket costs | portfolio | 1 | 4 | Matched |
 | [q015](../questions/legacy/quant100/questions/q015.json) | Robust allocation under ellipsoidal mean uncertainty | portfolio | 1 | 4 | Matched |
 | [q016](../questions/legacy/quant100/questions/q016.json) | Mean-variance allocation with partial covariance information | portfolio | 1 | 3 | Matched |
-| [q017](../questions/legacy/quant100/questions/q017.json) | Fund a withdrawal without liquidating the wrong tax lot | portfolio | 1 | 3 | Pending |
-| [q018](../questions/legacy/quant100/questions/q018.json) | A two-period contingent rebalance after execution costs | portfolio | 1 | 3 | Pending |
-| [q019](../questions/legacy/quant100/questions/q019.json) | A sector-neutral discrete active-risk frontier | portfolio | 1 | 3 | Pending |
-| [q020](../questions/legacy/quant100/questions/q020.json) | Cheapest cash-flow ladder without borrowing from the future | portfolio | 1 | 3 | Pending |
+| [q017](../questions/legacy/quant100/questions/q017.json) | Fund a withdrawal without liquidating the wrong tax lot | portfolio | 1 | 3 | Matched |
+| [q018](../questions/legacy/quant100/questions/q018.json) | A two-period contingent rebalance after execution costs | portfolio | 1 | 3 | Matched |
+| [q019](../questions/legacy/quant100/questions/q019.json) | A sector-neutral discrete active-risk frontier | portfolio | 1 | 3 | Matched |
+| [q020](../questions/legacy/quant100/questions/q020.json) | Cheapest cash-flow ladder without borrowing from the future | portfolio | 1 | 3 | Matched |
 | [q021](../questions/legacy/quant100/questions/q021.json) | A return-constrained allocation using partial probability mass in the tail | portfolio | 1 | 3 | Matched |
 | [q022](../questions/legacy/quant100/questions/q022.json) | Leverage choice with tiered funding costs | portfolio | 1 | 4 | Matched |
-| [q023](../questions/legacy/quant100/questions/q023.json) | Desk aggregation with partially observed security overlap | portfolio | 1 | 4 | Pending |
+| [q023](../questions/legacy/quant100/questions/q023.json) | Desk aggregation with partially observed security overlap | portfolio | 1 | 4 | Matched |
 | [q024](../questions/legacy/quant100/questions/q024.json) | Unequal risk budgets before a financing scale decision | portfolio | 1 | 4 | Matched |
 | [q025](../questions/legacy/quant100/questions/q025.json) | Entropy-based allocation with return and concentration constraints | portfolio | 1 | 5 | Matched |
 | [q026](../questions/legacy/quant100/questions/q026.json) | VaR and expected shortfall for a discrete loss distribution | risk | 1 | 3 | Matched |
 | [q027](../questions/legacy/quant100/questions/q027.json) | Aggregating correlated desk losses | risk | 1 | 3 | Matched |
-| [q028](../questions/legacy/quant100/questions/q028.json) | Portfolio expected shortfall after a hedge trade | risk | 1 | 3 | Pending |
+| [q028](../questions/legacy/quant100/questions/q028.json) | Portfolio expected shortfall after a hedge trade | risk | 1 | 3 | Matched |
 | [q029](../questions/legacy/quant100/questions/q029.json) | Portfolio VaR and expected shortfall for rare defaults | risk | 1 | 4 | Matched |
-| [q030](../questions/legacy/quant100/questions/q030.json) | Least-severe correlated reverse stress | risk | 1 | 3 | Pending |
-| [q031](../questions/legacy/quant100/questions/q031.json) | Reverse stress with interacting risk factors | risk | 1 | 3 | Pending |
-| [q032](../questions/legacy/quant100/questions/q032.json) | Intraday margin and settlement funding | risk | 1 | 3 | Pending |
-| [q033](../questions/legacy/quant100/questions/q033.json) | Collateral is cheap only if it is eligible | risk | 1 | 4 | Pending |
-| [q034](../questions/legacy/quant100/questions/q034.json) | Same counterparty, different enforceable netting sets | risk | 1 | 3 | Pending |
-| [q035](../questions/legacy/quant100/questions/q035.json) | Conditional default states and tail capital | risk | 1 | 5 | Pending |
-| [q036](../questions/legacy/quant100/questions/q036.json) | Collateral gaps during the margin period of risk | risk | 1 | 3 | Pending |
-| [q037](../questions/legacy/quant100/questions/q037.json) | Factor risk and desk contributions | risk | 1 | 4 | Pending |
-| [q038](../questions/legacy/quant100/questions/q038.json) | Risk of a proxy currency hedge | risk | 1 | 3 | Pending |
-| [q039](../questions/legacy/quant100/questions/q039.json) | Tail risk across market regimes | risk | 1 | 4 | Pending |
+| [q030](../questions/legacy/quant100/questions/q030.json) | Least-severe correlated reverse stress | risk | 1 | 3 | Matched |
+| [q031](../questions/legacy/quant100/questions/q031.json) | Reverse stress with interacting risk factors | risk | 1 | 3 | Matched |
+| [q032](../questions/legacy/quant100/questions/q032.json) | Intraday margin and settlement funding | risk | 1 | 3 | Matched |
+| [q033](../questions/legacy/quant100/questions/q033.json) | Collateral is cheap only if it is eligible | risk | 1 | 4 | Matched |
+| [q034](../questions/legacy/quant100/questions/q034.json) | Same counterparty, different enforceable netting sets | risk | 1 | 3 | Matched |
+| [q035](../questions/legacy/quant100/questions/q035.json) | Conditional default states and tail capital | risk | 1 | 5 | Matched |
+| [q036](../questions/legacy/quant100/questions/q036.json) | Collateral gaps during the margin period of risk | risk | 1 | 3 | Matched |
+| [q037](../questions/legacy/quant100/questions/q037.json) | Factor risk and desk contributions | risk | 1 | 4 | Matched |
+| [q038](../questions/legacy/quant100/questions/q038.json) | Risk of a proxy currency hedge | risk | 1 | 3 | Matched |
+| [q039](../questions/legacy/quant100/questions/q039.json) | Tail risk across market regimes | risk | 1 | 4 | Matched |
 | [q040](../questions/legacy/quant100/questions/q040.json) | Who owns risk when tail scenarios tie? | risk | 1 | 3 | Matched |
-| [q041](../questions/legacy/quant100/questions/q041.json) | Drawdown and terminal-loss mandates | risk | 1 | 4 | Pending |
-| [q042](../questions/legacy/quant100/questions/q042.json) | Guarantee eligibility under portfolio stress | risk | 1 | 4 | Pending |
+| [q041](../questions/legacy/quant100/questions/q041.json) | Drawdown and terminal-loss mandates | risk | 1 | 4 | Matched |
+| [q042](../questions/legacy/quant100/questions/q042.json) | Guarantee eligibility under portfolio stress | risk | 1 | 4 | Matched |
 | [q043](../questions/legacy/quant100/questions/q043.json) | Tail capital with marginal default information | risk | 1 | 3 | Matched |
-| [q044](../questions/legacy/quant100/questions/q044.json) | Margin-cure liquidation with price impact | risk | 1 | 4 | Pending |
+| [q044](../questions/legacy/quant100/questions/q044.json) | Margin-cure liquidation with price impact | risk | 1 | 4 | Matched |
 | [q045](../questions/legacy/quant100/questions/q045.json) | Portfolio risk with partially observed correlations | risk | 1 | 3 | Matched |
-| [q046](../questions/legacy/quant100/questions/q046.json) | Principal settlement exposure and liquidity | risk | 1 | 3 | Pending |
+| [q046](../questions/legacy/quant100/questions/q046.json) | Principal settlement exposure and liquidity | risk | 1 | 3 | Matched |
 | [q047](../questions/legacy/quant100/questions/q047.json) | Tranche losses under dependent defaults | risk | 1 | 4 | Matched |
-| [q048](../questions/legacy/quant100/questions/q048.json) | Two insured events share one annual limit | risk | 1 | 3 | Pending |
-| [q049](../questions/legacy/quant100/questions/q049.json) | Funding across entities with transfer constraints | risk | 1 | 4 | Pending |
+| [q048](../questions/legacy/quant100/questions/q048.json) | Two insured events share one annual limit | risk | 1 | 3 | Matched |
+| [q049](../questions/legacy/quant100/questions/q049.json) | Funding across entities with transfer constraints | risk | 1 | 4 | Matched |
 | [q050](../questions/legacy/quant100/questions/q050.json) | Tail capital from partial distribution information | risk | 1 | 3 | Matched |
 | [q051](../questions/legacy/quant100/questions/q051.json) | A dividend liability inside put-call parity | derivatives | 1 | 3 | Matched |
-| [q052](../questions/legacy/quant100/questions/q052.json) | Currency quote direction and a funded receivable | derivatives | 1 | 3 | Pending |
+| [q052](../questions/legacy/quant100/questions/q052.json) | Currency quote direction and a funded receivable | derivatives | 1 | 3 | Matched |
 | [q053](../questions/legacy/quant100/questions/q053.json) | Implied volatility and option-parity consistency | derivatives | 1 | 3 | Matched |
 | [q054](../questions/legacy/quant100/questions/q054.json) | Integer gamma-vega hedge under a cash constraint | derivatives | 1 | 5 | Matched |
 | [q055](../questions/legacy/quant100/questions/q055.json) | Delta under a moving volatility smile | derivatives | 1 | 4 | Matched |
-| [q056](../questions/legacy/quant100/questions/q056.json) | A financed superhedge with stock liquidation costs | derivatives | 1 | 3 | Pending |
+| [q056](../questions/legacy/quant100/questions/q056.json) | A financed superhedge with stock liquidation costs | derivatives | 1 | 3 | Matched |
 | [q057](../questions/legacy/quant100/questions/q057.json) | American put exercise versus continuation | derivatives | 1 | 3 | Matched |
 | [q058](../questions/legacy/quant100/questions/q058.json) | Terminal option payoffs and sampled variance | derivatives | 1 | 3 | Matched |
 | [q059](../questions/legacy/quant100/questions/q059.json) | Discrete barrier exposure after recombination | derivatives | 1 | 3 | Matched |
 | [q060](../questions/legacy/quant100/questions/q060.json) | Option-quote fitting in a martingale model | derivatives | 1 | 4 | Matched |
-| [q061](../questions/legacy/quant100/questions/q061.json) | Coupon bootstrapping across an unequal maturity set | derivatives | 1 | 2 | Pending |
-| [q062](../questions/legacy/quant100/questions/q062.json) | Swap valuation and curve-specific sensitivities | derivatives | 1 | 4 | Pending |
-| [q063](../questions/legacy/quant100/questions/q063.json) | Collateral-constrained key-rate stress hedge | derivatives | 1 | 4 | Pending |
-| [q064](../questions/legacy/quant100/questions/q064.json) | Bond hedge performance under a large rate move | derivatives | 1 | 3 | Pending |
+| [q061](../questions/legacy/quant100/questions/q061.json) | Coupon bootstrapping across an unequal maturity set | derivatives | 1 | 2 | Matched |
+| [q062](../questions/legacy/quant100/questions/q062.json) | Swap valuation and curve-specific sensitivities | derivatives | 1 | 4 | Matched |
+| [q063](../questions/legacy/quant100/questions/q063.json) | Collateral-constrained key-rate stress hedge | derivatives | 1 | 4 | Matched |
+| [q064](../questions/legacy/quant100/questions/q064.json) | Bond hedge performance under a large rate move | derivatives | 1 | 3 | Matched |
 | [q065](../questions/legacy/quant100/questions/q065.json) | Negative-forward caplet model admissibility | derivatives | 1 | 4 | Matched |
 | [q066](../questions/legacy/quant100/questions/q066.json) | A forward-start swap with state-dependent annuity | derivatives | 1 | 3 | Matched |
 | [q067](../questions/legacy/quant100/questions/q067.json) | Futures cash settlement with correlated reinvestment | derivatives | 1 | 4 | Matched |
-| [q068](../questions/legacy/quant100/questions/q068.json) | Storage carry constrained by financing and tank capacity | derivatives | 1 | 3 | Pending |
+| [q068](../questions/legacy/quant100/questions/q068.json) | Storage carry constrained by financing and tank capacity | derivatives | 1 | 3 | Matched |
 | [q069](../questions/legacy/quant100/questions/q069.json) | A fixed-conversion quanto call | derivatives | 1 | 4 | Matched |
 | [q070](../questions/legacy/quant100/questions/q070.json) | Cross-currency coupons and collateral-consistent forwards | derivatives | 1 | 3 | Matched |
 | [q071](../questions/legacy/quant100/questions/q071.json) | CDS par spread with mid-period default accrual | derivatives | 1 | 4 | Matched |
 | [q072](../questions/legacy/quant100/questions/q072.json) | Recovery convention in a one-year credit inversion | derivatives | 1 | 3 | Matched |
-| [q073](../questions/legacy/quant100/questions/q073.json) | Capped collateral and wrong-way exposure | derivatives | 1 | 4 | Pending |
+| [q073](../questions/legacy/quant100/questions/q073.json) | Capped collateral and wrong-way exposure | derivatives | 1 | 4 | Matched |
 | [q074](../questions/legacy/quant100/questions/q074.json) | Basket protection with marginal default information | derivatives | 1 | 3 | Matched |
 | [q075](../questions/legacy/quant100/questions/q075.json) | Digital option extrapolation and terminal hedge payoffs | derivatives | 1 | 4 | Matched |
 | [q076](../questions/legacy/quant100/questions/q076.json) | Sharpe ratio standard error and minimum track record | systematic | 1 | 4 | Matched |
-| [q077](../questions/legacy/quant100/questions/q077.json) | Net-of-cost return and break-even trading cost | systematic | 1 | 4 | Pending |
+| [q077](../questions/legacy/quant100/questions/q077.json) | Net-of-cost return and break-even trading cost | systematic | 1 | 4 | Matched |
 | [q078](../questions/legacy/quant100/questions/q078.json) | Factor regression: alpha, residual risk and information ratio | systematic | 1 | 4 | Matched |
 | [q079](../questions/legacy/quant100/questions/q079.json) | HAC t-statistic and autocorrelation-adjusted annual volatility | systematic | 1 | 4 | Matched |
 | [q080](../questions/legacy/quant100/questions/q080.json) | Expected maximum Sharpe under the null and family-wise p-values | systematic | 1 | 4 | Matched |
 | [q081](../questions/legacy/quant100/questions/q081.json) | Bayesian shrinkage of a noisy return forecast | systematic | 1 | 4 | Matched |
-| [q082](../questions/legacy/quant100/questions/q082.json) | AR(1) spread: half-life, stationary dispersion and expected path | systematic | 1 | 5 | Pending |
+| [q082](../questions/legacy/quant100/questions/q082.json) | AR(1) spread: half-life, stationary dispersion and expected path | systematic | 1 | 5 | Matched |
 | [q083](../questions/legacy/quant100/questions/q083.json) | Purged and embargoed cross-validation fold sizes | systematic | 1 | 4 | Matched |
 | [q084](../questions/legacy/quant100/questions/q084.json) | Signal alignment: look-ahead versus correctly lagged backtest | systematic | 1 | 3 | Matched |
 | [q085](../questions/legacy/quant100/questions/q085.json) | Square-root market impact: cost, size elasticity and maximum order | systematic | 1 | 4 | Matched |
@@ -146,10 +146,10 @@ Source redistribution is narrower than catalog coverage; see the [source policy]
 | [q087](../questions/legacy/quant100/questions/q087.json) | Deflated Sharpe ratio for the best of 25 backtests | systematic | 1 | 4 | Matched |
 | [q088](../questions/legacy/quant100/questions/q088.json) | FDR versus FWER control over twelve signal tests | systematic | 1 | 4 | Matched |
 | [q089](../questions/legacy/quant100/questions/q089.json) | Kalman local-level filter for a drifting signal mean | systematic | 1 | 4 | Matched |
-| [q090](../questions/legacy/quant100/questions/q090.json) | Entry threshold for an Ornstein-Uhlenbeck spread trade | systematic | 1 | 4 | Pending |
-| [q091](../questions/legacy/quant100/questions/q091.json) | Execution urgency after time-varying liquidity and price risk | systematic | 1 | 4 | Pending |
-| [q092](../questions/legacy/quant100/questions/q092.json) | Quote selection with inventory and fill-conditioned marks | systematic | 1 | 4 | Pending |
-| [q093](../questions/legacy/quant100/questions/q093.json) | Capital deployment, operating profit and break-even capacity | systematic | 1 | 4 | Pending |
+| [q090](../questions/legacy/quant100/questions/q090.json) | Entry threshold for an Ornstein-Uhlenbeck spread trade | systematic | 1 | 4 | Matched |
+| [q091](../questions/legacy/quant100/questions/q091.json) | Execution urgency after time-varying liquidity and price risk | systematic | 1 | 4 | Matched |
+| [q092](../questions/legacy/quant100/questions/q092.json) | Quote selection with inventory and fill-conditioned marks | systematic | 1 | 4 | Matched |
+| [q093](../questions/legacy/quant100/questions/q093.json) | Capital deployment, operating profit and break-even capacity | systematic | 1 | 4 | Matched |
 | [q094](../questions/legacy/quant100/questions/q094.json) | Correlated forecast combination after covariance shrinkage | systematic | 1 | 5 | Matched |
 | [q095](../questions/legacy/quant100/questions/q095.json) | Factor measurement error and noisy-proxy prediction | systematic | 1 | 5 | Matched |
 | [q096](../questions/legacy/quant100/questions/q096.json) | Common trends, return correlation and a financed spread trade | systematic | 1 | 5 | Matched |

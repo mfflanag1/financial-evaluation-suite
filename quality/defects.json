@@ -110,7 +110,7 @@
   "review_backlog": [
     {
       "area": "case_mathematics",
-      "scope": "157 of 230 static entries lack independent numerical recomputation in this audit; 73 entries have scoped evidence."
+      "scope": "120 of 230 static entries lack independent numerical recomputation in this audit; 110 entries have scoped evidence."
     },
     {
       "area": "quantity_semantics",

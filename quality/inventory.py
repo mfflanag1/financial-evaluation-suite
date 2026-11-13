@@ -15,8 +15,12 @@ from .numerical import CHECKS
 from .core_numerical import CHECKS as CORE_CHECKS
 from .source_numerical import CHECKS as SOURCE_CHECKS
 from .allocation_numerical import CHECKS as ALLOCATION_CHECKS
+from .risk_numerical import CHECKS as RISK_CHECKS
+from .remaining_numerical import CHECKS as REMAINING_CHECKS
 
 ROOT = Path(__file__).resolve().parents[1]
+QUANT_MODULES = {"numerical":CHECKS,"allocation_numerical":ALLOCATION_CHECKS,
+                 "risk_numerical":RISK_CHECKS,"remaining_numerical":REMAINING_CHECKS}
 
 
 def read(path):
@@ -48,7 +52,11 @@ def independent_results():
     # Calculations consume only public input packets. Reference access happens
     # after each result exists, solely to compare final fields and tolerances.
     derived = {}
-    for cid,(calculate,method) in dict(CHECKS, **ALLOCATION_CHECKS, **CORE_CHECKS).items():
+    quantitative = {cid:check for checks in QUANT_MODULES.values() for cid,check in checks.items()}
+    if len(quantitative)!=sum(map(len,QUANT_MODULES.values())):
+        raise ValueError("Duplicate quantitative derivation")
+    implementations = {cid:module for module,checks in QUANT_MODULES.items() for cid in checks}
+    for cid,(calculate,method) in dict(quantitative, **CORE_CHECKS).items():
         path = ROOT/f"questions/legacy/quant100/questions/{cid}.json" if cid.startswith("q") else ROOT/f"questions/challenges/{cid}.json"
         packet = read(path)
         question = packet if cid.startswith("q") else packet["question"]
@@ -81,7 +89,7 @@ def independent_results():
             passed=numeric_equal(answers[name],expected[name],schema.get("atol",0),schema.get("rtol",0))
             fields.append({"field":name,"derived":answers[name],"stored_reference":expected[name],
                            "atol":schema.get("atol",0),"rtol":schema.get("rtol",0),"matches":passed})
-        module="allocation_numerical" if cid in ALLOCATION_CHECKS else "numerical" if cid.startswith("q") else "core_numerical"
+        module=implementations.get(cid,"core_numerical")
         implementation=f"quality/source_numerical.py::{SOURCE_CHECKS[cid].__name__}" if cid in SOURCE_CHECKS else f"quality/{module}.py::{cid}"
         scope=certificates["scope"] if cid in SOURCE_CHECKS else "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification."
         records.append({"case_id":cid,"status":"matches_stored_reference" if all(field["matches"] for field in fields) else "reference_discrepancy",
@@ -89,7 +97,7 @@ def independent_results():
                         **({"retained_source_inputs":source_inputs[cid]} if cid in SOURCE_CHECKS else {}),
                         "fields":fields,"certificates":certificates})
     return {"audit_version":AUDIT_VERSION,"kind":"independent_numerical_recomputation",
-            "implementation_sha256":{name:sha256(ROOT/"quality"/name) for name in ("numerical.py","allocation_numerical.py","core_numerical.py","source_numerical.py")},
+            "implementation_sha256":{name:sha256(ROOT/"quality"/name) for name in [*(module+".py" for module in QUANT_MODULES),"core_numerical.py","source_numerical.py"]},
             "case_count":len(records),"matching_cases":sum(row["status"]=="matches_stored_reference" for row in records),
             "checked_fields":sum(len(row["fields"]) for row in records),"checks":records}
 
