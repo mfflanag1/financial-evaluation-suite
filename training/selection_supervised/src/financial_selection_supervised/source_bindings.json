@@ -1,0 +1,39 @@
+{
+  "schema": "selection-supervisor-bindings-v1",
+  "distributions": {
+    "financial-selection-training": "0.1.0",
+    "financial-selection": "0.1.0",
+    "financial-research": "0.2.0",
+    "prime-rl": "0.10.0",
+    "prime-rl-configs": "0.4.0",
+    "verifiers": "0.4.2.dev47",
+    "renderers": "0.2.1.dev9",
+    "prime-pydantic-config": "0.4.3"
+  },
+  "native_surfaces": {
+    "prime_rl/entrypoints/rl.py": "831e7f9303cc74ceb2a31f446fc2f54511f4ef3592c92dacb96e54343522d634",
+    "prime_rl/entrypoints/env_worker_pool.py": "a1d1cad836b15571aabd1f155d75d19892cbf6d657861f4980df3d6b404e1629",
+    "prime_rl/entrypoints/orchestrator.py": "5b55918e76b6307783cae9806a7493283c1735c001d2dce5c5f206190919b4f9",
+    "prime_rl/orchestrator/envs.py": "391f6d2d7c03529e668459a6c2eb6f3094eb22c45a2abf4943f310720e2ad9aa",
+    "prime_rl/env/client.py": "a7247994914ee11e123dd69ca49c38f5fe94d0117efeace9d43cafafaa6ab0fb",
+    "prime_rl/env/pool.py": "6296ecf54319ef4af00dc1c2d1186c2a285d12924f87fdf0fc07cea05d82524e",
+    "prime_rl/env/worker.py": "6e44be5d015108e480861dcb50f7977c92acb3f1fca5a7b0d6704e0ffb4c6279",
+    "prime_rl/utils/process.py": "0bdc2ed819a9151f3e5c3c6372410215aa32b4ce0ee844ca9d23cd1ba3a5b857",
+    "verifiers/v1/utils/loaders.py": "9447914398faf9827d50ab21846281cfa839cb1e9d9fe3354fcbab5e934fe4a2",
+    "verifiers/v1/utils/scope.py": "cdbb38a63e80564e23cb0940277017d10d3f93307d741074da763ef47e042dd4",
+    "verifiers/v1/runtimes/backends/docker.py": "b8e8e610dc61750f463ebbed4025e2d7ee932f77d245c7e583ab0434139333ec"
+  },
+  "supervisor_sources": {
+    "__init__.py": "ac4bf6a987c8abcb32ef15c6a330d6e28a88dabf5589f108201cd4519ce84049",
+    "__main__.py": "0f43091441696453e4bd38c50f8a5955e59723543df4bc5f9b2f0c2d46e9c7d9",
+    "contract.json": "8caa58b57d04ff0182cd80cb64590c98005592be5ee0cd866f888236c0e39a9b",
+    "contract.py": "1fe5cb86f513fe5ee1b321491823086138085e36d4154d446219a1e5ca6fb252",
+    "environment.py": "9de6e9bac08915ae4739a6d2b7e251f7ca642b094fbc85bcc8392e79dec93775",
+    "gpu_observer.py": "7e26f9fdb474a8d1e78f8ed8a0ae1b9f995738e21f4458c08b6b2982b273f520",
+    "hooks.py": "3cc0e985fab25fcf0345a2228f5dfeb58d3616f7f8082b664b43de05967170a3",
+    "launcher.py": "53744ec152d4dfda374f75e130d702b456749d708a435c1cc9c7ceab00ac6e07",
+    "ledger.py": "0cf4d671e030b1096243c0e1fd9c990f08f8c989a69034dbb600e9ea0c73ca49",
+    "optimizer_evidence.py": "294b8b2c465d68d7896064762ae86140bb6327b12e6e736fe023974dae95ccb8",
+    "processes.py": "1cb42aff2c1640e9cbb0ad7b5af96d7713b2a5e5222b287497c4d3e07778854b"
+  }
+}

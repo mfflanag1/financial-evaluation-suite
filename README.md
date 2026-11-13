@@ -56,6 +56,8 @@ These evaluation integrations target native Verifiers 0.4.1 tasksets. The separa
 
 Selection has its own [training adapter](training/selection/README.md) with selection-specific reward admission and a separate installation. The [instruct-model smoke protocol](configs/financial_selection/calibration_v1/README.md) prepares five bound attempts and rejects incomplete result accounting. It defaults to model-free dry runs. The [practitioner review procedure](docs/selection-practitioner-review.md) covers the mechanism's financial assumptions independently of these software checks.
 
+The separate [bounded training supervisor](training/selection_supervised/README.md) caps total attempts and runtime, watches worker readiness, isolates the generation key, and cleans up child processes and run-labelled containers. Its [optimizer evidence checks](training/selection_supervised/OPTIMIZER_VALIDATION.md) reconcile policy samples, native optimizer state, checkpoint reload and post-update inference. Local fixture checks do not establish a successful GPU training run.
+
 ## Evidence and reuse
 
 Publication dates, availability times and financial conventions are part of the tasks. Source manifests bind retained excerpts to their provenance; they do not grant redistribution rights. The [source policy](docs/source-policy.md) distinguishes reviewed excerpts from link-only material. The conservative exporter is the supported way to prepare a source packet; a complete repository clone has a broader evidence footprint.
