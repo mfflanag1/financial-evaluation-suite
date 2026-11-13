@@ -2,9 +2,11 @@
 
 The inventory covers **224 main cases and six related variants**, with 1,924 main outputs and 48 variant outputs. Every entry has an explicit review status. Generated environment seeds, related variants and repeated attempts are not additional independent static cases.
 
-**119 cases have independent numerical recomputations**: all 100 quantitative cases, eight single-turn core cases, and 11 retained-source arithmetic cases. Each calculation uses the supplied question inputs and governing synthetic contracts. It is implemented separately from the stored solution and production scorer. Only after calculation does the audit compare its output with the stored reference. All 539 declared outputs in these 119 cases match within their specified tolerances.
+**All 230 entries have independent numerical recomputations**: 100 quantitative cases, 24 core cases, 36 retained-source cases, six executable workflows, 58 research scenarios and six related variants. All **1,972 declared outputs**, including every authored turn, match the stored references within their specified tolerances. Arithmetic implementations consume public question inputs and governing contracts, separately from stored solutions and production grading algorithms. Derived results were frozen before reference comparison. One source-audit field was subsequently converted from dollars to the public schema's required millions of dollars; its certificate records that correction. The frozen reference was unchanged.
 
-This establishes the scoped calculations under stipulated assumptions. It does not establish market realism, empirical signal efficacy, source licensing, adversarial scorer robustness, practitioner validation or full coverage of sequential paths. The remaining 111 entries are explicitly marked as lacking independent recomputation. Passing stored-answer controls alone does not change that status.
+This establishes the scoped calculations under stipulated assumptions. It does not establish market realism, empirical signal efficacy, source licensing, adversarial scorer robustness, practitioner validation or full coverage of sequential paths. Multi-turn checks cover authored public snapshots and cumulative disclosed amendments. They do not validate arbitrary candidate-action trajectories, simulator transitions or executable workflow hidden-input replay.
+
+Later turns share files with evaluator answers. An allowlisted [projection helper](public_contracts.py) copies only public context; core output templates contribute field names and top-level types, without answer values. Corruption controls verify that changing stored answer values or solution metadata cannot change those projections or numerical derivations. Retained-source transcriptions are bound to exact question/excerpt hashes; they are fixed-version reviews, not general document parsers. Audit revision `1.1.0` extends the evidence without changing frozen scoring rules.
 
 ## Read the evidence
 
@@ -20,6 +22,11 @@ This establishes the scoped calculations under stipulated assumptions. It does n
 | [decision_numerical.py](decision_numerical.py) | Adaptive paid research, accepted order state, settlement and constrained cash decisions |
 | [source_numerical.py](source_numerical.py) | Retained-excerpt arithmetic and declared conventions; no external source revalidation |
 | [advanced_source_numerical.py](advanced_source_numerical.py) | Multi-document EPS/cash reconciliation, acquisition perimeter, conversion entitlements and separate basis blocks |
+| [source_remaining.py](source_remaining.py) | Remaining 25 source cases: corporate actions, financing, energy, cash bridges and data-vintage portfolios |
+| [core_remaining.py](core_remaining.py) | Remaining 16 core cases, including conditional decisions and 52 authored state snapshots |
+| [variant_numerical.py](variant_numerical.py) | Exact backward induction for six related information-acquisition diagnostics |
+| [workflow_numerical.py](workflow_numerical.py) | Six public workflow calculations, including cash, covariance and ridge-estimation controls |
+| [research_numerical.py](research_numerical.py) | All 58 research scenarios and 142 authored turns, with cumulative public amendments |
 | [crosschecks/](crosschecks/README.md) | Second methods for five already audited cases and 28 outputs, with input hashes and finite-search certificates |
 | [discrete_fields.json](discrete_fields.json) | Semantic review of all 1,972 stage/output fields, including mixed-array selectors |
 | [defects.json](defects.json) | Confirmed scorer-v2 defect reproductions and remaining audit scope |

@@ -66,21 +66,38 @@ class InventoryCoverage(unittest.TestCase):
         self.assertEqual(check["status"],"reference_discrepancy")
 
     def test_independent_cases_cover_every_declared_output(self):
-        self.assertEqual(self.evidence["case_count"],119)
-        self.assertEqual(self.evidence["matching_cases"],119)
-        self.assertEqual(self.evidence["checked_fields"],539)
+        self.assertEqual(self.evidence["case_count"],230)
+        self.assertEqual(self.evidence["matching_cases"],230)
+        self.assertEqual(self.evidence["checked_fields"],1972)
         self.assertEqual({check["case_id"] for check in self.evidence["checks"] if check["case_id"].startswith("q")},
-                         {f"q{i:03d}" for i in range(1,101)})
+                         {f"q{i:03d}" for i in range(1,165)})
+        schemas={row["id"]:{(stage["turn"],field["name"])
+                            for stage in row["specification"]["stage_schemas"] for field in stage["outputs"]}
+                 for row in self.bank["cases"]}
         for check in self.evidence["checks"]:
-            packet=inventory.read(ROOT/check["input"]["path"])
-            if "output_fields" in packet:
-                declared={field["id"] for field in packet["output_fields"]}
+            self.assertEqual(schemas[check["case_id"]],{(field["turn"],field["field"]) for field in check["fields"]})
+            if "retained_source_inputs" in check:
+                packet=inventory.read(ROOT/check["input"]["path"])
                 self.assertEqual(set(check["retained_source_inputs"]),set(packet["source_ids"]))
-                self.assertIn("no external source revalidation",check["scope"])
-            else:
-                declared = {field["name"] for field in packet["outputs"]} if "outputs" in packet else set(packet["question"]["outputs"])
-            self.assertEqual(declared,{field["field"] for field in check["fields"]})
             self.assertTrue(all(field["matches"] for field in check["fields"]))
+
+    def test_staged_reference_corruption_cannot_change_public_derivations(self):
+        original=inventory.read
+        def corrupt(path):
+            document=original(path)
+            if str(path).endswith("challenges/cases.json"):
+                next(case for case in document if case["id"]=="c203")["stages"][0]["answers"]["action"]="POISONED"
+            if str(path).endswith("research58/evaluator.json"):
+                next(case for case in document if case["id"]=="q107")["turns"][0]["answer"]["reported_growth_pct"]=999
+            return document
+        with patch.object(inventory,"read",side_effect=corrupt):
+            result=inventory.independent_results()
+        for cid,field in (("c203","action"),("q107","reported_growth_pct")):
+            check=next(row for row in result["checks"] if row["case_id"]==cid)
+            row=next(row for row in check["fields"] if row["field"]==field)
+            baseline=next(row for row in self.evidence["checks"] if row["case_id"]==cid)
+            self.assertEqual(row["derived"],next(v["derived"] for v in baseline["fields"] if v["field"]==field))
+            self.assertFalse(row["matches"])
 
     def test_mixed_arrays_have_specific_integer_selectors(self):
         lookup={(row["case_id"],row["turn"],row["field"]):row for row in self.discrete["fields"]}

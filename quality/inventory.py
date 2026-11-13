@@ -19,12 +19,19 @@ from .risk_numerical import CHECKS as RISK_CHECKS
 from .remaining_numerical import CHECKS as REMAINING_CHECKS
 from .decision_numerical import CHECKS as DECISION_CHECKS
 from .advanced_source_numerical import CHECKS as ADVANCED_SOURCE_CHECKS
+from .source_remaining import CHECKS as SOURCE_REMAINING_CHECKS
+from .core_remaining import CHECKS as CORE_REMAINING_CHECKS
+from .variant_numerical import CHECKS as VARIANT_CHECKS
+from . import public_contracts, research_numerical, workflow_numerical
 
 ROOT = Path(__file__).resolve().parents[1]
+RECOMPUTATION_REVISION = "1.1.0"
 QUANT_MODULES = {"numerical":CHECKS,"allocation_numerical":ALLOCATION_CHECKS,
                  "risk_numerical":RISK_CHECKS,"remaining_numerical":REMAINING_CHECKS}
 CORE_MODULES = {"core_numerical":CORE_CHECKS,"decision_numerical":DECISION_CHECKS}
-SOURCE_MODULES = {"source_numerical":SOURCE_CHECKS,"advanced_source_numerical":ADVANCED_SOURCE_CHECKS}
+SOURCE_MODULES = {"source_numerical":SOURCE_CHECKS,"advanced_source_numerical":ADVANCED_SOURCE_CHECKS,
+                  "source_remaining":SOURCE_REMAINING_CHECKS}
+STAGED_MODULES = {"core_remaining":CORE_REMAINING_CHECKS,"variant_numerical":VARIANT_CHECKS}
 
 
 def read(path):
@@ -77,7 +84,39 @@ def independent_results():
         answers,certificates = calculate(question,{sid:source.read_text() for sid,source in paths.items()})
         derived[cid] = (path,question,answers,certificates,certificates["method"])
         source_inputs[cid] = {sid:member(source) for sid,source in paths.items()}
+    staged = {}
+    for module, checks in STAGED_MODULES.items():
+        for cid, (calculate, method) in checks.items():
+            if cid in derived or cid in staged:
+                raise ValueError("Duplicate independent derivation")
+            variant = module == "variant_numerical"
+            packet = (public_contracts.load_variant_packet if variant else public_contracts.load_core_packet)(cid)
+            values = [calculate(question) for question in packet["turns"]]
+            staged[cid] = {"packet":packet,"answers":[row[0] for row in values],
+                           "certificates":{"turns":[row[1] for row in values]},"method":method,
+                           "module":module,"function":calculate.__name__,"track":"variants" if variant else "challenges"}
+    for cid in workflow_numerical.SOLVERS:
+        packet=public_contracts.load_workflow_packet(cid)
+        result=workflow_numerical.audit_case(packet)
+        if result["unsupported"] or result["ambiguities"]:
+            continue
+        path=ROOT/f"questions/legacy/workflows/questions/{cid}.json"
+        derived[cid]=(path,packet,result["answers"],result["certificate"],
+                      "Independent public-input program calculation with financial and numerical invariants.")
+        implementations[cid]="workflow_numerical"
+    for cid in research_numerical.SOLVERS:
+        packet=public_contracts.load_research_packet(cid)
+        result=research_numerical.audit_case(packet)
+        if result["unsupported"] or result["ambiguities"]:
+            continue
+        if set(result["answers_by_turn"])!={str(turn["turn"]) for turn in packet["turns"]}:
+            raise ValueError(f"Independent research turn coverage differs: {cid}")
+        staged[cid]={"packet":packet,"answers":[result["answers_by_turn"][str(turn["turn"])] for turn in packet["turns"]],
+                     "certificates":result["certificate"],"method":"Independent cumulative public-turn calculation under authored financial contracts.",
+                     "module":"research_numerical","function":cid,"track":"research58"}
+    # All calculations above precede this comparison-only reference access.
     references = {case["id"]:case for case in read(ROOT/"private_evaluator/legacy/quant100/evaluator.json")}
+    references.update({case["id"]:case for case in read(ROOT/"private_evaluator/legacy/workflows/evaluator.json")})
     references.update({case["id"]:case["stages"][0] for case in read(ROOT/"private_evaluator/challenges/cases.json")})
     references.update({cid:read(ROOT/f"private_evaluator/legacy/source_grounded/gold/{cid}.json") for cid in sources})
     records=[]
@@ -97,7 +136,7 @@ def independent_results():
         fields=[]
         for name,schema in declared.items():
             passed=numeric_equal(answers[name],expected[name],schema.get("atol",0),schema.get("rtol",0))
-            fields.append({"field":name,"derived":answers[name],"stored_reference":expected[name],
+            fields.append({"field":name,"turn":1,"derived":answers[name],"stored_reference":expected[name],
                            "atol":schema.get("atol",0),"rtol":schema.get("rtol",0),"matches":passed})
         module=implementations[cid]
         implementation=f"quality/{module}.py::{sources[cid].__name__}" if cid in sources else f"quality/{module}.py::{cid}"
@@ -106,8 +145,39 @@ def independent_results():
                         "method":method,"input":member(path),"implementation":implementation,"scope":scope,
                         **({"retained_source_inputs":source_inputs[cid]} if cid in sources else {}),
                         "fields":fields,"certificates":certificates})
-    return {"audit_version":AUDIT_VERSION,"kind":"independent_numerical_recomputation",
-            "implementation_sha256":{module+".py":sha256(ROOT/"quality"/(module+".py")) for module in {**numerical_modules, **SOURCE_MODULES}},
+    stage_references={}
+    for track in {row["track"] for row in staged.values()}:
+        path=ROOT/(f"private_evaluator/legacy/{track}/evaluator.json" if track=="research58" else f"private_evaluator/{track}/cases.json")
+        for index,case in enumerate(read(path)):
+            stage_references[case["id"]]=(case,path,index)
+    for cid,row in staged.items():
+        case,path,index=stage_references[cid]
+        research=row["track"]=="research58"
+        stages=case["turns" if research else "stages"]
+        if len(stages)!=len(row["packet"]["turns"]) or len(stages)!=len(row["answers"]):
+            raise ValueError(f"Independent stage coverage differs: {cid}")
+        fields=[]
+        for number,(question,answers,stage) in enumerate(zip(row["packet"]["turns"],row["answers"],stages),1):
+            if question["turn"]!=number:
+                raise ValueError(f"Independent stage order differs: {cid}")
+            expected=stage["answer" if research else "answers"]
+            declared=({field["name"]:field for field in question["outputs"]} if research else
+                      {name:dict(spec,atol=1e-6,rtol=1e-8) for name,spec in question["outputs"].items()})
+            if set(answers)!=set(expected) or set(answers)!=set(declared):
+                raise ValueError(f"Independent staged output coverage differs: {cid}, turn {number}")
+            for name,schema in declared.items():
+                fields.append({"field":name,"turn":number,"derived":answers[name],"stored_reference":expected[name],
+                               "atol":schema.get("atol",0),"rtol":schema.get("rtol",0),
+                               "matches":numeric_equal(answers[name],expected[name],schema.get("atol",0),schema.get("rtol",0))})
+        records.append({"case_id":cid,"status":"matches_stored_reference" if all(field["matches"] for field in fields) else "reference_discrepancy",
+                        "method":row["method"],"input":member(path,f"/{index}"),
+                        "candidate_projection":"quality/public_contracts.py::project_research" if research else "quality/public_contracts.py::project_core",
+                        "implementation":f"quality/{row['module']}.py::{row['function']}",
+                        "scope":"All declared outputs for authored public stage snapshots; excludes arbitrary submitted-action trajectories, primary-source revalidation and practitioner certification.",
+                        "fields":fields,"certificates":json.loads(json.dumps(row["certificates"],allow_nan=False))})
+    modules={**numerical_modules,**SOURCE_MODULES,**STAGED_MODULES,"workflow_numerical":None,"research_numerical":None,"public_contracts":None}
+    return {"audit_version":AUDIT_VERSION,"recomputation_revision":RECOMPUTATION_REVISION,"kind":"independent_numerical_recomputation",
+            "implementation_sha256":{module+".py":sha256(ROOT/"quality"/(module+".py")) for module in modules},
             "case_count":len(records),"matching_cases":sum(row["status"]=="matches_stored_reference" for row in records),
             "checked_fields":sum(len(row["fields"]) for row in records),"checks":records}
 
@@ -187,7 +257,7 @@ def build_inventory(evidence):
                 +(["primary-source sufficiency and redistribution review"] if track=="source_grounded" else [])})
     if len({r["id"] for r in rows})!=len(rows):
         raise ValueError("Duplicate case IDs")
-    return {"audit_version":AUDIT_VERSION,"scope":"Tracked static collection only; generated environments and repeated attempts are not additional static cases.",
+    return {"audit_version":AUDIT_VERSION,"recomputation_revision":RECOMPUTATION_REVISION,"scope":"Tracked static collection only; generated environments and repeated attempts are not additional static cases.",
         "public_repository_warning":"Every answer key and reserved-labelled specification in this inventory is published. Directory and split labels do not provide secrecy or demonstrate contamination-free evaluation.",
         "catalog_inputs":[member(ROOT/"questions/catalog.json"),member(ROOT/"questions/variants/catalog.json")],
         "summary":{"main_cases":sum(r["bank"]=="main" for r in rows),"related_variants":sum(r["bank"]=="related_variant" for r in rows),
