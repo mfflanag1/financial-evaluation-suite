@@ -9,7 +9,9 @@ The following are completed local checks, not model-performance or optimizer-tra
 | Native release gate | 457 passed, 24 Docker skips | Same snapshot; no disallowed skips |
 | Full serial Docker gate | 481 passed, zero skips | Same snapshot, real containers and local scripted providers |
 | Numerical expansion | 123 quality tests passed | Subsequent independent recomputation for all 100 quantitative cases; 110 cases and 461 outputs overall |
+| Alternate numerical methods | Five cases and 28 outputs agree; 16 regression tests passed | Separately implemented exhaustive searches, analytic pricing and exact score comparisons; a subset of the numerical audit |
 | Source packet | 31 boundary tests passed; 35-file packet verified | Seven complete cases; 20 eligible exact sources across the inventory, 17 included in complete-case packets |
+| Corrected source packet | 13 additional tests passed; 44 distribution tests overall | Same seven cases and 17 excerpts, matching v3 contracts, fresh-process version binding and a separate verified manifest |
 | Runtime evidence replay | Five saved reports reconstructed identically | Completed reference, nonreproducing program, malformed tool, empty completion, interrupted tool |
 | Fresh runtime setup | Four reference controls and installed CLI dry-run passed | New evaluator key and frozen protocol; zero provider requests during the dry-run |
 

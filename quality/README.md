@@ -18,6 +18,7 @@ This establishes the scoped calculations under stipulated assumptions. It does n
 | [remaining_numerical.py](remaining_numerical.py) | Finite contingent policies, rates, execution and capacity calculations |
 | [core_numerical.py](core_numerical.py) | Independent portfolio repair, temporal-eligibility and joint-sign calculations |
 | [source_numerical.py](source_numerical.py) | Retained-excerpt arithmetic and declared conventions; no external source revalidation |
+| [crosschecks/](crosschecks/README.md) | Second methods for five already audited cases and 28 outputs, with input hashes and finite-search certificates |
 | [discrete_fields.json](discrete_fields.json) | Semantic review of all 1,972 stage/output fields, including mixed-array selectors |
 | [defects.json](defects.json) | Confirmed scorer-v2 defect reproductions and remaining audit scope |
 

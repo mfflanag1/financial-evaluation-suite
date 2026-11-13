@@ -41,12 +41,19 @@ The destination must be a **new directory outside the checkout**. Existing direc
 
 `links` mode contains no question prompts or source text. A URL is a locator, not a license or a promise that the original version remains available. Hashes identify the retained excerpts, not necessarily the complete original PDF/HTML or a document downloaded today. The tool neither fetches nor regenerates excluded content. An evaluator who obtains a source separately must assess their own permissions, preserve the expected version and explicitly label any changed evidence condition.
 
-`source-packet` mode contains 31 reviewed public question/metadata/evidence files plus four export metadata files. Its `case_availability.json` lists all 36 source cases and explains each omission. It is a solver-input subset, not the complete suite, a standalone grader or a package of the synthetic tracks. The packet retains frozen question bytes. Export the matching corrected question contract before a v3 run, provide it alongside the retained permitted evidence, and grade separately on the trusted evaluator host, for example:
+`source-packet` mode contains 31 reviewed public question/metadata/evidence files plus four export metadata files. Its `case_availability.json` lists all 36 source cases and explains each omission. It is a solver-input subset, not the complete suite, a standalone grader or a package of the synthetic tracks. That original format retains frozen question bytes.
+
+For a v3 run, use the separate corrected packet format. It pairs each of the same seven cases with its canonical v3 public contract and retains the exact permitted evidence and source metadata:
 
 ```sh
-python3 -B -m scoring_v3.grade export macro-001 > candidate-question.json
+python3 -B -m distribution.corrected create --out ../source-contracts-v3
+python3 -B -m distribution.corrected verify ../source-contracts-v3
 python3 -B -m scoring_v3.grade grade macro-001 response.json
 ```
+
+Give the solver the selected case's `case.json`, `sources.json` and `sources/` directory. The corrected contract includes integer selectors and citation instructions. Grade separately on the trusted evaluator host with the matching scorer binding. The `source-contract-v3` format has its own `corrected_packet_manifest.json`, binding the source policy, original packet manifest and corrected scorer. It still has 35 files and seven cases. Its verifier reconstructs all expected bytes and rejects the original packet format; the original verifier likewise rejects this corrected format. No frozen input or original exporter is changed.
+
+The corrected exporter uses a fresh isolated Python interpreter rooted at this checkout. This prevents a long-lived caller's previously imported scoring rules from being labelled with a newer on-disk scorer binding. There are no remote fetches or model calls. Both export formats require a new external destination and reject changed content, unexpected membership, symlinks and special files.
 
 The source packet never includes evaluator keys, gold answers, controls, later interaction states or reserved-case packets. The associated evaluator file paths and hashes in the inventory are provenance metadata only. Do not give a solver access to the full checkout when the intended condition is answer-free evaluation.
 

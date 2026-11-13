@@ -16,7 +16,14 @@ Give the candidate only `question.json` and authorized inputs. Follow the export
 python3 -B -m scoring_v3.grade grade q076 response.json
 ```
 
-Source-grounded packets additionally need permitted evidence files. Consult the [source policy](source-policy.md) before distributing them.
+For the seven source cases with reviewed evidence, build a packet containing matching v3 contracts and permitted source files:
+
+```sh
+python3 -B -m distribution.corrected create --out ../source-contracts-v3
+python3 -B -m distribution.corrected verify ../source-contracts-v3
+```
+
+Give the solver only the selected case directory. The packet includes no answers or grader. Consult the [source policy](source-policy.md) for included cases, omissions and distribution limits.
 
 ## Sequential cases
 

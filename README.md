@@ -29,7 +29,7 @@ Use the static bank for regression tests, teaching and transparent evaluation de
 
 The generated environments are separate from these counts. Repeated seeds, turns, output fields and attempts do not increase the number of independent financial mechanisms.
 
-The [case-level audit](quality/README.md) independently recomputes 110 cases and 461 declared outputs, including all 100 quantitative cases. It records the remaining 120 entries as lacking independent recomputation. This is scoped mathematical evidence under the supplied assumptions, not practitioner validation or empirical trading-performance evidence.
+The [case-level audit](quality/README.md) independently recomputes 110 cases and 461 declared outputs, including all 100 quantitative cases. It records the remaining 120 entries as lacking independent recomputation. [Alternate methods](quality/crosschecks/README.md) provide additional reproducible checks for five of those cases and 28 outputs. This is scoped mathematical evidence under the supplied assumptions, not practitioner validation or empirical trading-performance evidence.
 
 ## Verify and use
 
