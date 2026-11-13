@@ -20,6 +20,8 @@ Coverage includes filing reconciliation, corporate actions, contracts, liquidity
 
 The generated workflow tests shuffled records, dated security mappings, stock splits, missing releases, duplicates and revisions. It evaluates a declared family of candidate signals and portfolio policies. This is narrower than unrestricted signal discovery or a complete production research platform.
 
+The separate selection workflow tests selective outcome observation, dated population reconstruction, sampling-adjusted estimates, disclosed population-mixture changes, shared estimation covariance and funded integer allocations. Its program is checked on three distinct input packets. These are prescribed synthetic calculations, not evidence that missing returns can be recovered exactly or that the resulting allocation will profit in live markets.
+
 ## Scoring and verification
 
 Use a versioned public export, matching grader and matching session controller. Report the scorer version, content binding, case IDs, information condition and run settings. Preserve baseline results when regrading saved responses.
@@ -46,6 +48,7 @@ Case-level audit records identify completed levels. A catalog check alone is not
 - Sequential branches, variants and repeated seeds are statistically dependent.
 - Generated portfolio policies use bounded menus; prescribed selection is not a multiple-testing correction.
 - A correct public decision can receive less than maximum reward when the economic component uses withheld paths.
+- Partial-credit rewards can be substantial for cheap baselines; selection results must include exact correctness and the published cash baseline.
 - Local containers are not a certification for hostile multi-tenant hosting.
 - Practitioner review and broadly replicated model calibration remain separate tasks.
 

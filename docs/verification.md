@@ -4,7 +4,7 @@ The following are completed local checks, not model-performance or optimizer-tra
 
 | Check | Observed result | Scope |
 | --- | --- | --- |
-| Clean installed packages | Seven packages; dependency check passed; nine native plugins discovered | Python 3.12, Verifiers 0.4.1; isolated noneditable imports and installed resource hashes |
+| Initial clean installed packages | Seven packages; dependency check passed; nine native plugins discovered | Earlier Python 3.12, Verifiers 0.4.1 snapshot; isolated noneditable imports and installed resource hashes |
 | Core release gate | 356 passed, 125 optional native/container skips | Initial hardening snapshot; no failed tests |
 | Expanded core release gate | 453 passed, 125 optional native/container skips | Includes subsequent numerical audits, alternate methods and corrected source packets; no failures |
 | Native release gate | 457 passed, 24 Docker skips | Same snapshot; no disallowed skips |
@@ -19,8 +19,13 @@ The following are completed local checks, not model-performance or optimizer-tra
 | Runtime evidence replay | Five saved reports reconstructed identically | Completed reference, nonreproducing program, malformed tool, empty completion, interrupted tool |
 | Fresh runtime setup | Four reference controls and installed CLI dry-run passed | New evaluator key and frozen protocol; zero provider requests during the dry-run |
 | Separate training adapter | 41 tests passed, zero skips; clean installation checked 591 resources | Exact later native dependencies; actual spawned workers, Docker and scripted TrainClient transport/admission |
+| Selection release clean installation | Eight packages; dependency check passed; 52 resources matched; ten native plugins discovered | Fresh Python 3.12, Verifiers 0.4.1 installation; noneditable imports verified outside the checkout |
+| Selection release core gate | 601 passed, 129 explicit optional skips | 730 discovered tests without native dependencies; no failed tests or disallowed skips |
+| Selection release full serial Docker gate | 752 passed, zero skips | Python 3.12, fresh installed native dependencies, all container checks and local scripted providers |
+| Selection installed native CLI | Reference and empty-submission checks valid; empty-submission reward zero | One planned, recorded and terminal task; no missing, unchecked, invalid, timeout or error outcomes; fresh worker key absent from saved outputs |
+| Selection installed cash baseline | Mean shaped reward 0.67454; zero exact successes on 100 public fixtures | Outcome-blind cash policy; aggregate results reproduced outside the checkout; no model call |
 
-These rows overlap and must not be summed into a test count. The full Docker run preceded the numerical expansion; the expansion was checked separately and did not change runtime or scorer code. Additional independent review of that expansion used alternative numerical methods without importing the answer key or production scorer.
+These rows overlap and must not be summed into a test count. The initial 481-test Docker run preceded the numerical expansion; the expansion was checked separately and did not change runtime or scorer code. Additional independent review of that expansion used alternative numerical methods without importing the answer key or production scorer. The selection release adds a separately versioned environment and baseline controls; the existing numerical cases, scorers and protocols remain unchanged.
 
 The runtime protocol is `portfolio-runtime-v1`, with manifest SHA256 `56fcc2101f5dad44ecca0007f8e477820f3cf8907055b8bcd4a4b63d7a684b83`. The corrected static scorer is `financial-reasoning-v3.0.0`, binding `c7db1aa46acc7669b0b42dbda47a556269daec18121a4d108fe278d4fe46ec2b`. Frozen predecessor banks, scorers and protocol payloads were preserved.
 

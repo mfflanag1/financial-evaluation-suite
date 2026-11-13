@@ -91,13 +91,16 @@ class InstalledWheelBoundary(unittest.TestCase):
 
 
 class InstalledSourceInventory(unittest.TestCase):
-    def test_all_seven_packages_and_nonpython_resources_are_bound(self):
+    def test_all_eight_packages_and_nonpython_resources_are_bound(self):
         inventory = source_inventory(ROOT)
-        self.assertEqual(len(inventory["packages"]), 7)
+        self.assertEqual(len(inventory["packages"]), 8)
         staged = next(row for row in inventory["packages"] if row["name"] == "financial-portfolio-staged")
         self.assertIn("instructions.txt", staged["files"])
         self.assertIn("THIRD_PARTY_LICENSES.txt", staged["files"])
-        self.assertEqual(sum(len(row["plugins"]) for row in inventory["packages"]), 9)
+        selection = next(row for row in inventory["packages"] if row["name"] == "financial-selection")
+        self.assertEqual(selection["plugins"], ["taskset"])
+        self.assertTrue({"registry.py", "prime_adapter.py", "replay.py"} <= set(selection["files"]))
+        self.assertEqual(sum(len(row["plugins"]) for row in inventory["packages"]), 10)
 
 
 class BootstrapDestination(unittest.TestCase):

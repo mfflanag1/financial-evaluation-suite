@@ -22,6 +22,7 @@ PLUGINS = {
     "financial-portfolio-clarified": ["taskset"],
     "financial-portfolio-operations": ["harness"],
     "financial-portfolio-runtime": ["taskset", "harness"],
+    "financial-selection": ["taskset"],
 }
 
 

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-selection"
+version = "0.1.0"
+description = "Experimental selection-adjusted research and funded allocation controls"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+runtime = ["financial-research==0.2.0", "verifiers==0.4.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_selection"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/configs", "/README.md", "/CONTRACT.md", "/VALIDATION.md", "/pyproject.toml", "/.gitignore"]
+exclude = ["__pycache__", "*.pyc"]

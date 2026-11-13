@@ -10,6 +10,7 @@ import importlib.metadata
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 import unittest
@@ -18,7 +19,27 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCKER_FLAGS = (
     "RUN_WORKFLOW_DOCKER", "RUN_RESEARCH_DOCKER_TESTS", "RUN_STAGED_DOCKER_TESTS",
     "RUN_PREREQUISITE_DOCKER_TESTS", "RUN_RUNTIME_DOCKER_TESTS",
+    "FINANCIAL_SELECTION_DOCKER_TESTS", "FINANCIAL_SELECTION_NATIVE_DOCKER_TESTS",
 )
+SELECTION_IMAGE_ENV = "FINANCIAL_SELECTION_DOCKER_IMAGE"
+
+
+def bind_selection_image() -> str:
+    """Resolve an already available image once; never pull during verification."""
+    requested = os.environ.get(SELECTION_IMAGE_ENV)
+    if requested is not None and re.fullmatch(
+        r"(?:sha256:|[A-Za-z0-9._:/-]+@sha256:)[0-9a-f]{64}", requested
+    ) is None:
+        raise ValueError("Selection Docker image override must be immutable")
+    inspected = subprocess.run(
+        ["docker", "image", "inspect", requested or "python:3.12-slim", "--format", "{{.Id}}"],
+        capture_output=True, text=True, check=True,
+    )
+    identity = inspected.stdout.strip()
+    if re.fullmatch(r"sha256:[0-9a-f]{64}", identity) is None:
+        raise ValueError("Docker did not return an immutable local image identity")
+    os.environ[SELECTION_IMAGE_ENV] = identity
+    return identity
 
 
 class ReleaseResult(unittest.TextTestResult):
@@ -57,6 +78,10 @@ def main() -> int:
             parser.error("Native release validation requires verifiers==0.4.1")
     if args.tier == "docker":
         subprocess.run(["docker", "info", "--format", "{{.ServerVersion}}"], check=True)
+        try:
+            bind_selection_image()
+        except ValueError as error:
+            parser.error(str(error))
     for flag in DOCKER_FLAGS:
         if args.tier == "docker":
             os.environ[flag] = "1"
