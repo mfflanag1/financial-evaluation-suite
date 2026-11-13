@@ -6,14 +6,17 @@ The following are completed local checks, not model-performance or optimizer-tra
 | --- | --- | --- |
 | Clean installed packages | Seven packages; dependency check passed; nine native plugins discovered | Python 3.12, Verifiers 0.4.1; isolated noneditable imports and installed resource hashes |
 | Core release gate | 356 passed, 125 optional native/container skips | Initial hardening snapshot; no failed tests |
+| Expanded core release gate | 453 passed, 125 optional native/container skips | Includes subsequent numerical audits, alternate methods and corrected source packets; no failures |
 | Native release gate | 457 passed, 24 Docker skips | Same snapshot; no disallowed skips |
 | Full serial Docker gate | 481 passed, zero skips | Same snapshot, real containers and local scripted providers |
 | Numerical expansion | 123 quality tests passed | Subsequent independent recomputation for all 100 quantitative cases; 110 cases and 461 outputs overall |
+| Further numerical coverage | 169 quality tests passed; nine more cases and 78 outputs recomputed | Five decision cases and four multi-document source cases; 119 cases and 539 outputs overall |
 | Alternate numerical methods | Five cases and 28 outputs agree; 16 regression tests passed | Separately implemented exhaustive searches, analytic pricing and exact score comparisons; a subset of the numerical audit |
 | Source packet | 31 boundary tests passed; 35-file packet verified | Seven complete cases; 20 eligible exact sources across the inventory, 17 included in complete-case packets |
 | Corrected source packet | 13 additional tests passed; 44 distribution tests overall | Same seven cases and 17 excerpts, matching v3 contracts, fresh-process version binding and a separate verified manifest |
 | Runtime evidence replay | Five saved reports reconstructed identically | Completed reference, nonreproducing program, malformed tool, empty completion, interrupted tool |
 | Fresh runtime setup | Four reference controls and installed CLI dry-run passed | New evaluator key and frozen protocol; zero provider requests during the dry-run |
+| Separate training adapter | 41 tests passed, zero skips; clean installation checked 591 resources | Exact later native dependencies; actual spawned workers, Docker and scripted TrainClient transport/admission |
 
 These rows overlap and must not be summed into a test count. The full Docker run preceded the numerical expansion; the expansion was checked separately and did not change runtime or scorer code. Additional independent review of that expansion used alternative numerical methods without importing the answer key or production scorer.
 
@@ -35,4 +38,4 @@ Each command reports its own current counts and explicit skips. Use the [numeric
 
 ## Remaining evidence
 
-No independent practitioner validation, fresh live-model comparison, empirical trading-performance study or actual RL optimizer update is established by these checks. Public answers remain exposed. Numerical review covers specified models and retained excerpts; it does not certify arbitrary inputs or every sequential branch. A training successor must satisfy its own dependency, worker, token-trajectory and failure-admission gates before any separately authorized optimizer run.
+No independent practitioner validation, fresh live-model comparison, empirical trading-performance study or actual RL optimizer update is established by these checks. Public answers remain exposed. Numerical review covers specified models and retained excerpts; it does not certify arbitrary inputs or every sequential branch. The separate training successor has passed scripted dependency, worker, token-trajectory and failure-admission gates. Real policy trajectories, gradients, optimizer updates and checkpoint reload remain unverified.

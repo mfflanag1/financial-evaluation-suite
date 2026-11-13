@@ -26,13 +26,13 @@ Source redistribution is narrower than catalog coverage; see the [source policy]
 | [event-001](../questions/legacy/source_grounded/cases/event-001/case.json) | att-timewarner-2016-contract-collar | event_driven | 1 | 13 | Pending |
 | [event-002](../questions/legacy/source_grounded/cases/event-002/case.json) | broadcom-vmware-2022-election-proration | event_driven | 1 | 15 | Pending |
 | [event-003](../questions/legacy/source_grounded/cases/event-003/case.json) | tegna-2023-extension-and-ticking-fee | event_driven | 1 | 10 | Pending |
-| [h2-001](../questions/legacy/source_grounded/cases/h2-001/case.json) | paypal-2024-nongaap-policy-and-bnpl-timing | fundamental_equity | 1 | 10 | Pending |
-| [h2-002](../questions/legacy/source_grounded/cases/h2-002/case.json) | cisco-fy2025-splunk-perimeter-and-tax-bridge | fundamental_equity | 1 | 10 | Pending |
+| [h2-001](../questions/legacy/source_grounded/cases/h2-001/case.json) | paypal-2024-nongaap-policy-and-bnpl-timing | fundamental_equity | 1 | 10 | Matched |
+| [h2-002](../questions/legacy/source_grounded/cases/h2-002/case.json) | cisco-fy2025-splunk-perimeter-and-tax-bridge | fundamental_equity | 1 | 10 | Matched |
 | [h2-003](../questions/legacy/source_grounded/cases/h2-003/case.json) | danaher-2023-veralto-discontinued-cash-boundary | fundamental_equity | 1 | 9 | Pending |
 | [h2-004](../questions/legacy/source_grounded/cases/h2-004/case.json) | carnival-2024-coverage-stepups-versus-liquidity | credit_capital_structure | 1 | 9 | Pending |
-| [h2-005](../questions/legacy/source_grounded/cases/h2-005/case.json) | boeing-2024-depositary-preferred-conversion-regimes | credit_capital_structure | 1 | 9 | Pending |
+| [h2-005](../questions/legacy/source_grounded/cases/h2-005/case.json) | boeing-2024-depositary-preferred-conversion-regimes | credit_capital_structure | 1 | 9 | Matched |
 | [h2-006](../questions/legacy/source_grounded/cases/h2-006/case.json) | occidental-2023-2024-preferred-cash-versus-common-income | credit_capital_structure | 1 | 10 | Pending |
-| [h2-007](../questions/legacy/source_grounded/cases/h2-007/case.json) | ibm-kyndryl-2021-two-block-basis-cash-ledger | event_driven | 1 | 9 | Pending |
+| [h2-007](../questions/legacy/source_grounded/cases/h2-007/case.json) | ibm-kyndryl-2021-two-block-basis-cash-ledger | event_driven | 1 | 9 | Matched |
 | [h2-008](../questions/legacy/source_grounded/cases/h2-008/case.json) | jnj-kenvue-2023-final-book-and-odd-lot-entitlement | event_driven | 1 | 8 | Pending |
 | [h2-009](../questions/legacy/source_grounded/cases/h2-009/case.json) | waha-2024-dislocation-monthly-basis-versus-physical-shape | energy_commodities | 1 | 8 | Pending |
 | [h2-010](../questions/legacy/source_grounded/cases/h2-010/case.json) | pjm-2025-26-location-and-elcc-column-vintage | energy_commodities | 1 | 8 | Pending |
@@ -246,20 +246,20 @@ Source redistribution is narrower than catalog coverage; see the [source policy]
 | [c202](../questions/challenges/c202.json) | Audit a selected backtest | quant_validity | 1 | 8 | Matched |
 | c203 | Ambiguous models and asymmetric decision loss | valuation_choice | 1 | 6 | Pending |
 | c204 | A hedged book with segmented liquidity | cross_strategy_funding | 1 | 6 | Pending |
-| [c205](../questions/challenges/c205.json) | Pay for correlated information only when useful | information_value | 1 | 8 | Pending |
-| [c206](../questions/challenges/c206.json) | Reconstruct commitments before funding a trade | execution_state | 1 | 8 | Pending |
+| [c205](../questions/challenges/c205.json) | Pay for correlated information only when useful | information_value | 1 | 8 | Matched |
+| [c206](../questions/challenges/c206.json) | Reconstruct commitments before funding a trade | execution_state | 1 | 8 | Matched |
 | [c207](../questions/challenges/c207.json) | Repair a portfolio as executed trades change subsequent funding | portfolio_repair | 4 | 24 | Pending |
 | [c208](../questions/challenges/c208.json) | Timestamp, trial family and execution review | quant_validity | 4 | 25 | Pending |
 | c209 | Identified prices and physical loss tails | valuation_choice | 4 | 24 | Pending |
 | c210 | Intraday entity funding with amended settlement | cross_strategy_funding | 4 | 28 | Pending |
 | [c211](../questions/challenges/c211.json) | Research spending with duplicate and independent evidence | information_value | 4 | 27 | Pending |
 | [c212](../questions/challenges/c212.json) | Maintain an order book through action-dependent acknowledgements and busts | execution_state | 4 | 32 | Pending |
-| [c213](../questions/challenges/c213.json) | Common repair under joint market and funding stress | portfolio_repair | 1 | 7 | Pending |
+| [c213](../questions/challenges/c213.json) | Common repair under joint market and funding stress | portfolio_repair | 1 | 7 | Matched |
 | [c214](../questions/challenges/c214.json) | Audit a correlated research search with regime gates | quant_validity | 1 | 8 | Matched |
 | c215 | Portfolio choice under unidentified default dependence | valuation_choice | 1 | 7 | Pending |
 | c216 | Liquidation feedback into collateral and hedge funding | cross_strategy_funding | 1 | 7 | Pending |
-| [c217](../questions/challenges/c217.json) | Adaptive paid research with noisy dependent observations | information_value | 1 | 8 | Pending |
-| [c218](../questions/challenges/c218.json) | Reconcile corrected fills before a settlement-constrained repair | execution_state | 1 | 9 | Pending |
+| [c217](../questions/challenges/c217.json) | Adaptive paid research with noisy dependent observations | information_value | 1 | 8 | Matched |
+| [c218](../questions/challenges/c218.json) | Reconcile corrected fills before a settlement-constrained repair | execution_state | 1 | 9 | Matched |
 | [c219](../questions/challenges/c219.json) | Liquidity-aware robust liquidation | portfolio_repair | 4 | 24 | Pending |
 | [c220](../questions/challenges/c220.json) | Sequential strategy admission with contaminated research | quant_validity | 4 | 24 | Pending |
 | c221 | Partial identification and sequential robust hedging | valuation_choice | 4 | 24 | Pending |

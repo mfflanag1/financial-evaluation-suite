@@ -424,7 +424,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/106",
+        "evidence_record": "quality/independent_checks.json#/checks/111",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 11,
         "practitioner_review": "not_documented",
@@ -535,7 +535,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/107",
+        "evidence_record": "quality/independent_checks.json#/checks/112",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 12,
         "practitioner_review": "not_documented",
@@ -1327,7 +1327,6 @@
       "remaining_review": [
         "independent practitioner review",
         "scorer and response-contract audit",
-        "independent solution derivation",
         "primary-source sufficiency and redistribution review"
       ],
       "specification": {
@@ -1396,9 +1395,9 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/115",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 10,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -1429,7 +1428,6 @@
       "remaining_review": [
         "independent practitioner review",
         "scorer and response-contract audit",
-        "independent solution derivation",
         "primary-source sufficiency and redistribution review"
       ],
       "specification": {
@@ -1498,9 +1496,9 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/116",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 10,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -1725,7 +1723,6 @@
       "remaining_review": [
         "independent practitioner review",
         "scorer and response-contract audit",
-        "independent solution derivation",
         "primary-source sufficiency and redistribution review"
       ],
       "specification": {
@@ -1789,9 +1786,9 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/117",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 9,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -1924,7 +1921,6 @@
       "remaining_review": [
         "independent practitioner review",
         "scorer and response-contract audit",
-        "independent solution derivation",
         "primary-source sufficiency and redistribution review"
       ],
       "specification": {
@@ -1988,9 +1984,9 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/118",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 9,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -2564,7 +2560,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/103",
+        "evidence_record": "quality/independent_checks.json#/checks/108",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 12,
         "practitioner_review": "not_documented",
@@ -2660,7 +2656,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/104",
+        "evidence_record": "quality/independent_checks.json#/checks/109",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 9,
         "practitioner_review": "not_documented",
@@ -2761,7 +2757,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/105",
+        "evidence_record": "quality/independent_checks.json#/checks/110",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 10,
         "practitioner_review": "not_documented",
@@ -2964,7 +2960,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/108",
+        "evidence_record": "quality/independent_checks.json#/checks/113",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 10,
         "practitioner_review": "not_documented",
@@ -3167,7 +3163,7 @@
       "track": "source_grounded",
       "turn_count": 1,
       "verification": {
-        "evidence_record": "quality/independent_checks.json#/checks/109",
+        "evidence_record": "quality/independent_checks.json#/checks/114",
         "independent_numerical_recomputation": "matches_stored_reference",
         "independently_recomputed_fields": 10,
         "practitioner_review": "not_documented",
@@ -20794,8 +20790,7 @@
       "related_to": null,
       "remaining_review": [
         "independent practitioner review",
-        "scorer and response-contract audit",
-        "independent solution derivation"
+        "scorer and response-contract audit"
       ],
       "specification": {
         "public_packet": "complete_single_turn",
@@ -20853,9 +20848,9 @@
       "track": "challenges",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/103",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 8,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -20886,8 +20881,7 @@
       "related_to": null,
       "remaining_review": [
         "independent practitioner review",
-        "scorer and response-contract audit",
-        "independent solution derivation"
+        "scorer and response-contract audit"
       ],
       "specification": {
         "public_packet": "complete_single_turn",
@@ -20945,9 +20939,9 @@
       "track": "challenges",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/104",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 8,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -22192,8 +22186,7 @@
       "related_to": null,
       "remaining_review": [
         "independent practitioner review",
-        "scorer and response-contract audit",
-        "independent solution derivation"
+        "scorer and response-contract audit"
       ],
       "specification": {
         "public_packet": "complete_single_turn",
@@ -22246,9 +22239,9 @@
       "track": "challenges",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/105",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 7,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -22538,8 +22531,7 @@
       "related_to": null,
       "remaining_review": [
         "independent practitioner review",
-        "scorer and response-contract audit",
-        "independent solution derivation"
+        "scorer and response-contract audit"
       ],
       "specification": {
         "public_packet": "complete_single_turn",
@@ -22597,9 +22589,9 @@
       "track": "challenges",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/106",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 8,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -22630,8 +22622,7 @@
       "related_to": null,
       "remaining_review": [
         "independent practitioner review",
-        "scorer and response-contract audit",
-        "independent solution derivation"
+        "scorer and response-contract audit"
       ],
       "specification": {
         "public_packet": "complete_single_turn",
@@ -22694,9 +22685,9 @@
       "track": "challenges",
       "turn_count": 1,
       "verification": {
-        "evidence_record": null,
-        "independent_numerical_recomputation": "not_performed",
-        "independently_recomputed_fields": 0,
+        "evidence_record": "quality/independent_checks.json#/checks/107",
+        "independent_numerical_recomputation": "matches_stored_reference",
+        "independently_recomputed_fields": 9,
         "practitioner_review": "not_documented",
         "scorer_adversarial_review": "not_established_by_this_inventory",
         "source_reverification": "not_performed",
@@ -24411,11 +24402,11 @@
       "variants": 6,
       "workflows": 6
     },
-    "cases_pending_independent_recomputation": 120,
-    "independently_recomputed_cases": 110,
+    "cases_pending_independent_recomputation": 111,
+    "independently_recomputed_cases": 119,
     "main_cases": 224,
     "main_output_fields": 1924,
-    "matching_cases": 110,
+    "matching_cases": 119,
     "related_variants": 6,
     "variant_output_fields": 48
   }

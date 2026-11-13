@@ -28,7 +28,15 @@ Record exact messages sent to the provider, including framework additions. Guida
 | Optimizer smoke | An actual step records finite losses/gradients, usable rewards and checkpoint output. |
 | Generalization | Preregistered held-out realizations and mechanism tests follow the selection policy. |
 
-Configuration files and adapter tests do not replace the final three gates. Claim optimizer validation only after observing and reviewing the actual run.
+Configuration files alone do not establish adapter compatibility. Optimizer and generalization gates require their own observed runs. Claim optimizer validation only after observing and reviewing the actual run.
+
+## Verified training adapter
+
+The separate [portfolio training package](../training/README.md) passes 41 local tests with no skips, including actual spawned native workers, Docker and a scripted TrainClient. A same-task positive reward and genuine zero reward retain their native training records; an unresolved tool timeout receives `trace.drop()` and is excluded by the trainer's admission predicate. Prompt/completion token IDs, log probabilities, sampler support and policy versions survive native transport. Malformed graphs fail before worker serialization. Independent review found and verified fixes to trajectory identity, container isolation, dependency binding and lifecycle handling.
+
+Its clean installation verifies 591 resources and eight native source bindings, using exact trainer and Verifiers development revisions. Follow its [separate bootstrap](../training/dependencies/README.md); it is incompatible with the frozen evaluation environment. The root seven-package bootstrap and test tiers do not install or test this training successor.
+
+This establishes scripted compatibility at the adapter gate. No real policy rollout, advantage calculation, gradient, optimizer update, checkpoint reload or weight synchronization has been observed. The included configuration is a contract with placeholders, not a ready training launch. Actual training remains a separately authorized validation step.
 
 ## Reward and curriculum
 

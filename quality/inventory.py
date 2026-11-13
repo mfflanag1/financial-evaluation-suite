@@ -17,10 +17,14 @@ from .source_numerical import CHECKS as SOURCE_CHECKS
 from .allocation_numerical import CHECKS as ALLOCATION_CHECKS
 from .risk_numerical import CHECKS as RISK_CHECKS
 from .remaining_numerical import CHECKS as REMAINING_CHECKS
+from .decision_numerical import CHECKS as DECISION_CHECKS
+from .advanced_source_numerical import CHECKS as ADVANCED_SOURCE_CHECKS
 
 ROOT = Path(__file__).resolve().parents[1]
 QUANT_MODULES = {"numerical":CHECKS,"allocation_numerical":ALLOCATION_CHECKS,
                  "risk_numerical":RISK_CHECKS,"remaining_numerical":REMAINING_CHECKS}
+CORE_MODULES = {"core_numerical":CORE_CHECKS,"decision_numerical":DECISION_CHECKS}
+SOURCE_MODULES = {"source_numerical":SOURCE_CHECKS,"advanced_source_numerical":ADVANCED_SOURCE_CHECKS}
 
 
 def read(path):
@@ -52,18 +56,21 @@ def independent_results():
     # Calculations consume only public input packets. Reference access happens
     # after each result exists, solely to compare final fields and tolerances.
     derived = {}
-    quantitative = {cid:check for checks in QUANT_MODULES.values() for cid,check in checks.items()}
-    if len(quantitative)!=sum(map(len,QUANT_MODULES.values())):
-        raise ValueError("Duplicate quantitative derivation")
-    implementations = {cid:module for module,checks in QUANT_MODULES.items() for cid in checks}
-    for cid,(calculate,method) in dict(quantitative, **CORE_CHECKS).items():
+    numerical_modules = {**QUANT_MODULES, **CORE_MODULES}
+    calculations = {cid:check for checks in numerical_modules.values() for cid,check in checks.items()}
+    sources = {cid:check for checks in SOURCE_MODULES.values() for cid,check in checks.items()}
+    if (len(calculations)!=sum(map(len,numerical_modules.values()))
+            or len(sources)!=sum(map(len,SOURCE_MODULES.values())) or set(calculations)&set(sources)):
+        raise ValueError("Duplicate independent derivation")
+    implementations = {cid:module for module,checks in {**numerical_modules, **SOURCE_MODULES}.items() for cid in checks}
+    for cid,(calculate,method) in calculations.items():
         path = ROOT/f"questions/legacy/quant100/questions/{cid}.json" if cid.startswith("q") else ROOT/f"questions/challenges/{cid}.json"
         packet = read(path)
         question = packet if cid.startswith("q") else packet["question"]
         answers, certificates = calculate(question["inputs"] if cid.startswith("q") else question)
         derived[cid] = (path,question,answers,certificates,method)
     source_inputs = {}
-    for cid,calculate in SOURCE_CHECKS.items():
+    for cid,calculate in sources.items():
         path = ROOT/f"questions/legacy/source_grounded/cases/{cid}/case.json"
         question = read(path)
         paths = {sid:path.parent/"sources"/f"{sid}.txt" for sid in question["source_ids"]}
@@ -72,10 +79,13 @@ def independent_results():
         source_inputs[cid] = {sid:member(source) for sid,source in paths.items()}
     references = {case["id"]:case for case in read(ROOT/"private_evaluator/legacy/quant100/evaluator.json")}
     references.update({case["id"]:case["stages"][0] for case in read(ROOT/"private_evaluator/challenges/cases.json")})
-    references.update({cid:read(ROOT/f"private_evaluator/legacy/source_grounded/gold/{cid}.json") for cid in SOURCE_CHECKS})
+    references.update({cid:read(ROOT/f"private_evaluator/legacy/source_grounded/gold/{cid}.json") for cid in sources})
     records=[]
     for cid,(path,question,answers,certificates,method) in derived.items():
-        if cid in SOURCE_CHECKS:
+        # Search certificates may contain immutable tuples. Normalize them to
+        # JSON arrays before comparing an in-memory rebuild with saved evidence.
+        certificates=json.loads(json.dumps(certificates,allow_nan=False))
+        if cid in sources:
             expected={field["id"]:field["expected"] for field in references[cid]["fields"]}
             tolerances={field["id"]:{key:field[key] for key in ("atol","rtol") if key in field} for field in references[cid]["fields"]}
             declared={field["id"]:dict(field,**tolerances[field["id"]]) for field in question["output_fields"]}
@@ -89,15 +99,15 @@ def independent_results():
             passed=numeric_equal(answers[name],expected[name],schema.get("atol",0),schema.get("rtol",0))
             fields.append({"field":name,"derived":answers[name],"stored_reference":expected[name],
                            "atol":schema.get("atol",0),"rtol":schema.get("rtol",0),"matches":passed})
-        module=implementations.get(cid,"core_numerical")
-        implementation=f"quality/source_numerical.py::{SOURCE_CHECKS[cid].__name__}" if cid in SOURCE_CHECKS else f"quality/{module}.py::{cid}"
-        scope=certificates["scope"] if cid in SOURCE_CHECKS else "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification."
+        module=implementations[cid]
+        implementation=f"quality/{module}.py::{sources[cid].__name__}" if cid in sources else f"quality/{module}.py::{cid}"
+        scope=certificates["scope"] if cid in sources else "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification."
         records.append({"case_id":cid,"status":"matches_stored_reference" if all(field["matches"] for field in fields) else "reference_discrepancy",
                         "method":method,"input":member(path),"implementation":implementation,"scope":scope,
-                        **({"retained_source_inputs":source_inputs[cid]} if cid in SOURCE_CHECKS else {}),
+                        **({"retained_source_inputs":source_inputs[cid]} if cid in sources else {}),
                         "fields":fields,"certificates":certificates})
     return {"audit_version":AUDIT_VERSION,"kind":"independent_numerical_recomputation",
-            "implementation_sha256":{name:sha256(ROOT/"quality"/name) for name in [*(module+".py" for module in QUANT_MODULES),"core_numerical.py","source_numerical.py"]},
+            "implementation_sha256":{module+".py":sha256(ROOT/"quality"/(module+".py")) for module in {**numerical_modules, **SOURCE_MODULES}},
             "case_count":len(records),"matching_cases":sum(row["status"]=="matches_stored_reference" for row in records),
             "checked_fields":sum(len(row["fields"]) for row in records),"checks":records}
 

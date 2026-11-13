@@ -1,7 +1,7 @@
 {
   "audit_version": "1.0.0",
-  "case_count": 110,
-  "checked_fields": 461,
+  "case_count": 119,
+  "checked_fields": 539,
   "checks": [
     {
       "case_id": "q002",
@@ -5908,6 +5908,654 @@
       "status": "matches_stored_reference"
     },
     {
+      "case_id": "c205",
+      "certificates": {
+        "all_optimal_policies": [
+          [
+            "Q",
+            [
+              "R",
+              "stop"
+            ],
+            [
+              "abstain",
+              "Y",
+              "X",
+              "X"
+            ]
+          ],
+          [
+            "R",
+            [
+              "Q",
+              "stop"
+            ],
+            [
+              "abstain",
+              "X",
+              "Y",
+              "Y"
+            ]
+          ]
+        ],
+        "canonical_question_sha256": "fa832c97906e5e9145d17728789d3bdadf7168ab981e32eae590d2e8a153df5d",
+        "certificate_branch_order": "First bit 0,1; within each branch second bit 0,1.",
+        "contract_tie_scope": "Every global optimum is allowed; lexicographic order selects a reproducible audit representative.",
+        "enumerated_policies": 885,
+        "optimal_net_fraction": "27/2",
+        "public_contract_ids": [
+          "i_states",
+          "i_payoffs",
+          "i_tests",
+          "i_budget"
+        ],
+        "query_repeat_scope": "Repeated tests are enumerated and reveal the original fixed bit.",
+        "tie_policy": "Exact value, then ordinary lexicographic policy tuple."
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": 4.5,
+          "field": "expected_query_cost",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 4.5
+        },
+        {
+          "atol": 1e-06,
+          "derived": "Q",
+          "field": "first_query",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": "Q"
+        },
+        {
+          "atol": 1e-06,
+          "derived": 8.5,
+          "field": "information_value",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 8.5
+        },
+        {
+          "atol": 1e-06,
+          "derived": 5.0,
+          "field": "no_information_value",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 5
+        },
+        {
+          "atol": 1e-06,
+          "derived": 13.5,
+          "field": "optimal_net_value",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 13.5
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            "negative"
+          ],
+          "field": "query_again_after",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            "negative"
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.2,
+          "field": "second_positive_probability",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 0.2
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            "X",
+            "X",
+            "Y",
+            "abstain"
+          ],
+          "field": "terminal_actions",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            "X",
+            "X",
+            "Y",
+            "abstain"
+          ]
+        }
+      ],
+      "implementation": "quality/decision_numerical.py::c205",
+      "input": {
+        "path": "questions/challenges/c205.json",
+        "sha256": "d930881bbd0b4598f89ccadd9c29083c0fa49f24545573e2a6d6f8096c4650c3"
+      },
+      "method": "Enumerate all deterministic two-query policies, including repeated fixed observations, with exact joint probabilities and optional stopping.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "c206",
+      "certificates": {
+        "accepted_remaining": {
+          "B": 20,
+          "S": 0
+        },
+        "canonical_question_sha256": "ac84b76e879dc4d8794c77d7b7582a5b96c11e23e225c977c411a85be1df6653",
+        "cash_requirement": 600,
+        "feasible_actions": 255,
+        "next_lot_at_maximum_sale_cash": 585.0,
+        "one_less_sale_cash": 598.0,
+        "public_contract_ids": [
+          "e_open",
+          "e_tape",
+          "e_rules",
+          "e_action"
+        ],
+        "reserved_shares": 75,
+        "surviving_fill_quantities": {
+          "FB": 30,
+          "FS1": 30,
+          "FS2": 20
+        }
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": 25,
+          "field": "available_inventory",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 25
+        },
+        {
+          "atol": 1e-06,
+          "derived": 1300.0,
+          "field": "current_cash",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 1300
+        },
+        {
+          "atol": 1e-06,
+          "derived": 100,
+          "field": "current_inventory",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 100
+        },
+        {
+          "atol": 1e-06,
+          "derived": 609.0,
+          "field": "final_cash",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 609
+        },
+        {
+          "atol": 1e-06,
+          "derived": 181,
+          "field": "final_inventory",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 181
+        },
+        {
+          "atol": 1e-06,
+          "derived": 100,
+          "field": "new_buy_quantity",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 100
+        },
+        {
+          "atol": 1e-06,
+          "derived": 19,
+          "field": "new_sell_quantity",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 19
+        },
+        {
+          "atol": 1e-06,
+          "derived": 200,
+          "field": "reserved_buy_cash",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 200
+        }
+      ],
+      "implementation": "quality/decision_numerical.py::c206",
+      "input": {
+        "path": "questions/challenges/c206.json",
+        "sha256": "f8fa89e32a25cd273ac7ab05711fb860d3912117a58927362921389d9feddf38"
+      },
+      "method": "Replay exchange-order fills and partial bust, preserve terminal cancellation and unacknowledged commitments, then exhaust funded whole-unit actions.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "c213",
+      "certificates": {
+        "all_minimum_objective_actions": [
+          [
+            4,
+            4,
+            3,
+            0,
+            0
+          ]
+        ],
+        "canonical_question_sha256": "720059874cbc781b755f446feee2e289d946355498e7b0cb49b21453e3fa6ccb",
+        "enumerated_actions": 21870,
+        "feasible_actions": 218,
+        "next_best_action": [
+          4,
+          4,
+          2,
+          1,
+          0
+        ],
+        "next_best_objective_fraction": "139/10",
+        "objective_fraction": "137/10",
+        "public_contract_ids": [
+          "rp_book",
+          "rp_hedge",
+          "rp_limits",
+          "rp_cash"
+        ],
+        "selected_constraint_slacks": {
+          "ab_limit": 3.0,
+          "ac_distance": 2.0,
+          "borrowing_base_1": 11.0,
+          "borrowing_base_2": 10.0,
+          "early_cash": 5.0,
+          "scenario_1_cash": 7.0,
+          "scenario_2_cash": 7.0,
+          "total_position": 1.0,
+          "turnover": 7.0
+        }
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": [
+            4,
+            4,
+            3,
+            0,
+            0
+          ],
+          "field": "action",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            4,
+            4,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 5.0,
+          "field": "early_cash",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 5.0
+        },
+        {
+          "atol": 1e-06,
+          "derived": 5.0,
+          "field": "implementation_cost",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 5.0
+        },
+        {
+          "atol": 1e-06,
+          "derived": 13.9,
+          "field": "next_best_objective",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 13.9
+        },
+        {
+          "atol": 1e-06,
+          "derived": 13.7,
+          "field": "objective",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 13.7
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            7.0,
+            7.0
+          ],
+          "field": "scenario_cash",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            7.0,
+            7.0
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            25,
+            25
+          ],
+          "field": "scenario_losses",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            25,
+            25
+          ]
+        }
+      ],
+      "implementation": "quality/decision_numerical.py::c213",
+      "input": {
+        "path": "questions/challenges/c213.json",
+        "sha256": "667c67634a0345a483c81832e4580250f320e040831c1258445c8e06ecaa4805"
+      },
+      "method": "Enumerate all 21,870 common whole-unit actions with exact implementation costs, two cash checkpoints and both borrowing bases; order every feasible action.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "c217",
+      "certificates": {
+        "all_optimal_policies": [
+          [
+            "A",
+            [
+              "stop",
+              "B"
+            ],
+            [
+              "pass",
+              "pass",
+              "hedge",
+              "invest"
+            ]
+          ]
+        ],
+        "canonical_question_sha256": "91a26d3513e89f6ff158a8b849213d9176cd7529edc02e3d0db03c08b2ec40eb",
+        "certificate_branch_order": "First bit 0,1; within each branch second bit 0,1.",
+        "enumerated_policies": 1326,
+        "joint_probability_total": "1",
+        "optimal_net_fraction": "281/50",
+        "public_contract_ids": [
+          "in_joint",
+          "in_actions",
+          "in_query",
+          "in_format"
+        ],
+        "tie_policy": "Exact value, then ordinary lexicographic policy tuple."
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": 6.36,
+          "field": "expected_gross_payoff",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 6.36
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.74,
+          "field": "expected_query_cost",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 0.74
+        },
+        {
+          "atol": 1e-06,
+          "derived": "A",
+          "field": "first_query",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": "A"
+        },
+        {
+          "atol": 1e-06,
+          "derived": 4.62,
+          "field": "incremental_information_value",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 4.62
+        },
+        {
+          "atol": 1e-06,
+          "derived": 1.0,
+          "field": "no_information_value",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 1.0
+        },
+        {
+          "atol": 1e-06,
+          "derived": 5.62,
+          "field": "optimal_net_value",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 5.62
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            "stop",
+            "B"
+          ],
+          "field": "second_queries",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            "stop",
+            "B"
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            "pass",
+            "pass",
+            "hedge",
+            "invest"
+          ],
+          "field": "terminal_actions",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            "pass",
+            "pass",
+            "hedge",
+            "invest"
+          ]
+        }
+      ],
+      "implementation": "quality/decision_numerical.py::c217",
+      "input": {
+        "path": "questions/challenges/c217.json",
+        "sha256": "4715b2b3fd16796ec44b3b6755cd17684a52d52fef615c2a590a1cbb0b13b02b"
+      },
+      "method": "Parse all 16 noisy joint cells and enumerate every budget-feasible adaptive two-query policy and terminal action with exact lexicographic ties.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "c218",
+      "certificates": {
+        "accepted_remaining": {
+          "B": 0,
+          "S": 20
+        },
+        "canonical_question_sha256": "1003eb23f50e85f109230b587448f79d661ff1bd432c6315d811e01a7dc76abb",
+        "enumerated_actions": 18887,
+        "feasible_actions": 606,
+        "maximum_final_inventory_action_count": 303,
+        "maximum_inventory_minimum_fee_actions": [
+          [
+            15,
+            0,
+            0
+          ],
+          [
+            20,
+            5,
+            0
+          ],
+          [
+            25,
+            10,
+            0
+          ]
+        ],
+        "old_trade_shares_by_day": [
+          2,
+          20
+        ],
+        "public_contract_ids": [
+          "ex_open",
+          "ex_tape",
+          "ex_rules",
+          "ex_action"
+        ],
+        "selected_constraint_slacks": {
+          "cash_T0": 735.0,
+          "cash_T1": 285.0,
+          "cash_T2": 15.0,
+          "inventory_T1": 12.0,
+          "inventory_T2": 32.0,
+          "sale_resource": 35.0
+        },
+        "surviving_fill_quantities": {
+          "F1": 12,
+          "F2": 15,
+          "F3": 5,
+          "F4": 10
+        },
+        "tie_policy": "Maximum final owned shares, minimum exact fee, then action tuple."
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": [
+            15,
+            0,
+            0
+          ],
+          "field": "action",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            15,
+            0,
+            0
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 0.0,
+          "field": "bridge_fee",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 0.0
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            735.0,
+            335.0,
+            115.0
+          ],
+          "field": "cash_path",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            735.0,
+            335.0,
+            115.0
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 52,
+          "field": "final_owned_inventory",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 52
+        },
+        {
+          "atol": 1e-06,
+          "derived": 32,
+          "field": "inventory_after_T1",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 32
+        },
+        {
+          "atol": 1e-06,
+          "derived": 20,
+          "field": "live_sell_reservation",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 20
+        },
+        {
+          "atol": 1e-06,
+          "derived": [
+            0,
+            -220
+          ],
+          "field": "old_trade_cash_by_day",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": [
+            0,
+            -220
+          ]
+        },
+        {
+          "atol": 1e-06,
+          "derived": 92,
+          "field": "owned_inventory_at_cutoff",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 92
+        },
+        {
+          "atol": 1e-06,
+          "derived": 70,
+          "field": "settled_inventory_at_cutoff",
+          "matches": true,
+          "rtol": 1e-08,
+          "stored_reference": 70
+        }
+      ],
+      "implementation": "quality/decision_numerical.py::c218",
+      "input": {
+        "path": "questions/challenges/c218.json",
+        "sha256": "b2c734e19bacc021583cf325a81394f18add8e3fca5f68f1129a8c75540e62aa"
+      },
+      "method": "Parse corrected executions, reconcile ownership separately from dated settlements and commitments, then enumerate all 18,887 repair actions with exact financing fees.",
+      "scope": "All declared numerical and decision outputs, under supplied synthetic conventions; no scorer, source, market-validity, or independent-practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
       "case_id": "macro-001",
       "certificates": {
         "method": "Month-labelled release chain; distinct prior-month revision windows; Q1 sums and changing-coverage difference.",
@@ -6914,16 +7562,544 @@
       },
       "scope": "Retained-excerpt arithmetic and declared conventions; no external source revalidation, citation-grader or practitioner certification.",
       "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "h2-001",
+      "certificates": {
+        "annual_timing_contribution": "-334",
+        "credit_identification": "A timing cash bridge supplies no cohort balances, defaults or recoveries; it cannot identify a cohort loss rate.",
+        "method": "Exact policy-consistent EPS denominators; annual/Q4 cash bridges with opposite adjustment/contribution signs.",
+        "operands": {
+          "adjusted_free_cash_flow": [
+            "2098",
+            "774",
+            "6634",
+            "4554"
+          ],
+          "comparable_eps": "383/100",
+          "current_eps": "93/20",
+          "free_cash_flow": [
+            "2191",
+            "2469",
+            "6767",
+            "4220"
+          ],
+          "old_and_recast_income": [
+            "5646",
+            "4240"
+          ],
+          "original_eps": "51/10",
+          "timing_adjustment": [
+            "-93",
+            "-1695",
+            "-133",
+            "334"
+          ]
+        },
+        "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification."
+      },
+      "fields": [
+        {
+          "atol": 1e-07,
+          "derived": 21.409921671018278,
+          "field": "non_gaap_eps_growth_comparable_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 21.409921671018278
+        },
+        {
+          "atol": 1e-07,
+          "derived": -30.23345108278298,
+          "field": "old_basis_eps_growth_error_pp",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": -30.23345108278298
+        },
+        {
+          "atol": 1e-07,
+          "derived": 1406.0,
+          "field": "prior_year_non_gaap_income_recast_reduction",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 1406
+        },
+        {
+          "atol": 1e-07,
+          "derived": 60.355450236966824,
+          "field": "fy2024_free_cash_flow_growth_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 60.355450236966824
+        },
+        {
+          "atol": 1e-07,
+          "derived": 45.67413263065437,
+          "field": "fy2024_adjusted_free_cash_flow_growth_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 45.67413263065437
+        },
+        {
+          "atol": 1e-07,
+          "derived": 1695.0,
+          "field": "q42023_positive_bnpl_timing_contribution",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 1695
+        },
+        {
+          "atol": 1e-07,
+          "derived": -2029.0,
+          "field": "first_nine_months_2023_bnpl_timing_contribution",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": -2029
+        },
+        {
+          "atol": 1e-07,
+          "derived": 68.65127582017011,
+          "field": "q42023_timing_share_of_free_cash_flow_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 68.65127582017011
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "old_and_new_non_gaap_eps_directly_comparable",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "sold_bnpl_credit_loss_rate_identified",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        }
+      ],
+      "implementation": "quality/advanced_source_numerical.py::paypal",
+      "input": {
+        "path": "questions/legacy/source_grounded/cases/h2-001/case.json",
+        "sha256": "1da8d16e6fd9b8c3fb474e5978de7d5b5ffb1c28113a5eec9b22a9ad7984843c"
+      },
+      "method": "Exact policy-consistent EPS denominators; annual/Q4 cash bridges with opposite adjustment/contribution signs.",
+      "retained_source_inputs": {
+        "h2a-paypal-2023": {
+          "path": "questions/legacy/source_grounded/cases/h2-001/sources/h2a-paypal-2023.txt",
+          "sha256": "86cc0cb3c52aaa8bede90e9c19b9b7366c41c22e4859f2f75856724c02022826"
+        },
+        "h2a-paypal-2024": {
+          "path": "questions/legacy/source_grounded/cases/h2-001/sources/h2a-paypal-2024.txt",
+          "sha256": "1ab24f6c3aa2cf1f7c70b9e82fb23b46c5d00974b9076e1d6592d5e0fdfedf6a"
+        }
+      },
+      "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "h2-002",
+      "certificates": {
+        "interpretation": "The pro-forma comparator is hypothetical and does not supply a complete acquisition/FX organic-growth bridge.",
+        "method": "Exact acquisition-perimeter comparisons, a pretax/tax/net-income identity and common-share cash versus accounting consideration.",
+        "net_income_change": "-140",
+        "operands": {
+          "acquired_cash": "2422",
+          "common_share_cash": "26950",
+          "converted_awards": "137",
+          "preexisting_relationships": "3",
+          "pretax_income": [
+            "11100",
+            "12234",
+            "15318"
+          ],
+          "proforma_net_income": "9280",
+          "proforma_revenue": "56761",
+          "purchase_consideration": "27090",
+          "reported_net_income": [
+            "10180",
+            "10320",
+            "12613"
+          ],
+          "reported_revenue": [
+            "56654",
+            "53803",
+            "56998"
+          ],
+          "tax_provision": [
+            "920",
+            "1914",
+            "2705"
+          ]
+        },
+        "pretax_decline": "1134",
+        "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification.",
+        "tax_reduction": "994"
+      },
+      "fields": [
+        {
+          "atol": 1e-07,
+          "derived": 5.298961024478189,
+          "field": "reported_revenue_growth_2025_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 5.298961024478189
+        },
+        {
+          "atol": 1e-07,
+          "derived": -0.1885097161783619,
+          "field": "revenue_change_vs_2024_splunk_proforma_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": -0.1885097161783619
+        },
+        {
+          "atol": 1e-07,
+          "derived": 5.487470740656551,
+          "field": "reported_minus_proforma_comparator_growth_pp",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 5.487470740656551
+        },
+        {
+          "atol": 1e-07,
+          "derived": -1040.0,
+          "field": "fy2024_proforma_minus_reported_net_income",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": -1040
+        },
+        {
+          "atol": 1e-07,
+          "derived": -1.3565891472868217,
+          "field": "reported_net_income_growth_2025_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": -1.3565891472868217
+        },
+        {
+          "atol": 1e-07,
+          "derived": 87.65432098765432,
+          "field": "pretax_decline_offset_by_tax_reduction_pct",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 87.65432098765432
+        },
+        {
+          "atol": 1e-07,
+          "derived": 24528.0,
+          "field": "shareholder_cash_consideration_net_of_acquired_cash",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 24528
+        },
+        {
+          "atol": 1e-07,
+          "derived": 140.0,
+          "field": "purchase_consideration_exceeds_common_share_cash",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 140
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "comparator_identifies_organic_growth",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "proforma_net_income_is_realized_combined_income",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        }
+      ],
+      "implementation": "quality/advanced_source_numerical.py::cisco",
+      "input": {
+        "path": "questions/legacy/source_grounded/cases/h2-002/case.json",
+        "sha256": "71a617c231381fe2b319da4825710af45613ecd3557e59eae8900f73a6248c63"
+      },
+      "method": "Exact acquisition-perimeter comparisons, a pretax/tax/net-income identity and common-share cash versus accounting consideration.",
+      "retained_source_inputs": {
+        "h2a-cisco-2024": {
+          "path": "questions/legacy/source_grounded/cases/h2-002/sources/h2a-cisco-2024.txt",
+          "sha256": "8a02c8eb5157a3b9823ad36d95da74fb130e4afee5318ee127fd02f55f493534"
+        },
+        "h2a-cisco-2025": {
+          "path": "questions/legacy/source_grounded/cases/h2-002/sources/h2a-cisco-2025.txt",
+          "sha256": "42bb513e531a49aa5761b109fda464d05586b6b2536e8d867f62e878a9d70b3b"
+        }
+      },
+      "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "h2-005",
+      "certificates": {
+        "date_weight": "182/365",
+        "days_elapsed": 182,
+        "days_in_interval": 365,
+        "earlier_price_interpolated_rate": "3059/500",
+        "event_conversion_rate": "1125817/182500",
+        "interpretation": "Aggregate entitlements precede fractional settlement; no dividend or make-whole value is included in conversion fields. One closing price does not specify the contractual VWAP.",
+        "later_price_interpolated_rate": "311/50",
+        "method": "Receipt-to-preferred mapping; distinct normal/optional branches; price-and-actual-day interpolation of the preferred-share table.",
+        "operands": {
+          "applicable_market_value": "160",
+          "comparison_mark": "160",
+          "depositary_position": "20000",
+          "first_dividend": "25/2",
+          "fundamental_change_date": "2026-04-15",
+          "fundamental_change_stock_price": "155",
+          "maximum_rate": "3497/500",
+          "minimum_rate": "1457/250",
+          "par": "1000",
+          "receipts_per_preferred": 20,
+          "regular_dividend": "15"
+        },
+        "price_weight": "1/2",
+        "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification."
+      },
+      "fields": [
+        {
+          "atol": 1e-07,
+          "derived": 1000.0,
+          "field": "preferred_shares_represented",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 1000
+        },
+        {
+          "atol": 1e-07,
+          "derived": 57500.0,
+          "field": "first_plus_next_three_dividends",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 57500.0
+        },
+        {
+          "atol": 1e-07,
+          "derived": 6250.0,
+          "field": "normal_mandatory_common_share_entitlement",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 6250.0
+        },
+        {
+          "atol": 1e-07,
+          "derived": 5828.0,
+          "field": "ordinary_optional_common_share_entitlement",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 5828.0
+        },
+        {
+          "atol": 1e-07,
+          "derived": 67520.0,
+          "field": "normal_minus_optional_marked_value",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 67520.0
+        },
+        {
+          "atol": 0.0001,
+          "derived": 6168.860273972603,
+          "field": "fundamental_change_common_share_entitlement",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 6168.860273972603
+        },
+        {
+          "atol": 0.0001,
+          "derived": 340.8602739726027,
+          "field": "fundamental_minus_ordinary_optional_shares",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 340.8602739726027
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "single_close_identifies_mandatory_conversion",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "dividends_contractually_guaranteed_in_cash",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        }
+      ],
+      "implementation": "quality/advanced_source_numerical.py::boeing",
+      "input": {
+        "path": "questions/legacy/source_grounded/cases/h2-005/case.json",
+        "sha256": "d78d9939b459f112b1363a05a23b9a09e3d716390c1caa595fec699f2a339807"
+      },
+      "method": "Receipt-to-preferred mapping; distinct normal/optional branches; price-and-actual-day interpolation of the preferred-share table.",
+      "retained_source_inputs": {
+        "h2a-boeing-pricing": {
+          "path": "questions/legacy/source_grounded/cases/h2-005/sources/h2a-boeing-pricing.txt",
+          "sha256": "5caaa341f1abd242e096b21bd8905a6fc899dc2a1f385415924b1ea182f6b281"
+        },
+        "h2a-boeing-terms": {
+          "path": "questions/legacy/source_grounded/cases/h2-005/sources/h2a-boeing-terms.txt",
+          "sha256": "cb0d1fa3aab3cb515e95915b159bb4705662066c3c9bce20f4eadb356101b6bf"
+        }
+      },
+      "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification.",
+      "status": "matches_stored_reference"
+    },
+    {
+      "case_id": "h2-007",
+      "certificates": {
+        "basis_conserved": true,
+        "identification": "Different broker sale prices or fees preserve the distribution documents while changing net cash; actual cash is not identified without them.",
+        "method": "Separate acquisition-block basis allocation using printed percentages; residual-share basis, net cash and disposal gain reconcile independently.",
+        "operands": {
+          "block_entitlements": [
+            "23",
+            "52/5"
+          ],
+          "block_fractions": [
+            "0",
+            "2/5"
+          ],
+          "block_original_basis": [
+            "9200",
+            "7280"
+          ],
+          "blocks": [
+            [
+              115,
+              "80"
+            ],
+            [
+              52,
+              "140"
+            ]
+          ],
+          "printed_ibm_fraction": "479/500",
+          "printed_kd_fraction": "21/500",
+          "sale_fee": "1/2",
+          "sale_price": "25"
+        },
+        "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification.",
+        "total_original_basis": "16480"
+      },
+      "fields": [
+        {
+          "atol": 1e-06,
+          "derived": 33.4,
+          "field": "kyndryl_economic_entitlement",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 33.4
+        },
+        {
+          "atol": 1e-06,
+          "derived": 167,
+          "field": "retained_ibm_shares",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 167
+        },
+        {
+          "atol": 0.01,
+          "derived": 15787.84,
+          "field": "retained_ibm_basis",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 15787.84
+        },
+        {
+          "atol": 0.01,
+          "derived": 11.76,
+          "field": "fractional_kd_basis",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 11.76
+        },
+        {
+          "atol": 0.01,
+          "derived": 680.4,
+          "field": "retained_kd_basis",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 680.4
+        },
+        {
+          "atol": 0.01,
+          "derived": 9.5,
+          "field": "cash_in_lieu_net",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": 9.5
+        },
+        {
+          "atol": 0.01,
+          "derived": -2.26,
+          "field": "fractional_disposal_gain",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": -2.26
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "issuer_method_is_mandatory",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        },
+        {
+          "atol": 0,
+          "derived": false,
+          "field": "actual_cash_known_without_sale_price",
+          "matches": true,
+          "rtol": 0,
+          "stored_reference": false
+        }
+      ],
+      "implementation": "quality/advanced_source_numerical.py::ibm",
+      "input": {
+        "path": "questions/legacy/source_grounded/cases/h2-007/case.json",
+        "sha256": "6fabc8d2d2e8d7795eb5f2781af647b4df6f46b7866a17be5975c85589a357a6"
+      },
+      "method": "Separate acquisition-block basis allocation using printed percentages; residual-share basis, net cash and disposal gain reconcile independently.",
+      "retained_source_inputs": {
+        "h2b-ibm-faq": {
+          "path": "questions/legacy/source_grounded/cases/h2-007/sources/h2b-ibm-faq.txt",
+          "sha256": "4751fc6eee90252daeb1d5cb3d016cbc76b56959f31f10b4c197cc0cfe4d4213"
+        },
+        "h2b-ibm-tax": {
+          "path": "questions/legacy/source_grounded/cases/h2-007/sources/h2b-ibm-tax.txt",
+          "sha256": "2e912a375ee41cd13b343b747c062dbe842bc87c1e3f52fae9c231893997bf08"
+        }
+      },
+      "scope": "All declared fields under the retained excerpts and stipulated branches; no external source revalidation, citation-grader, tax-advice or practitioner certification.",
+      "status": "matches_stored_reference"
     }
   ],
   "implementation_sha256": {
+    "advanced_source_numerical.py": "36b02d62d58f70e2f4cf0efb8d1f563428a727d0205fd41026963e0e327f1405",
     "allocation_numerical.py": "61506f8325e2b197155d6bb8eb328e69adcd5c55c78b3ba16a72a33ac07b5185",
     "core_numerical.py": "4c2eff32be7a6f7d1326404c09d1b3e7301adf4d06ae814a9c56c221bd6ecccb",
+    "decision_numerical.py": "13b90d94021063425f828be87c018985103edf838e7bab98a32d780be06466fb",
     "numerical.py": "3f016f5697174b7510c20626b9f4708432b23d38b699e3c6e67a67bd52d803e7",
     "remaining_numerical.py": "f2f66c6595e095f2cf51a36d9fe227a7bf3795296a07afe5beed925640d33063",
     "risk_numerical.py": "22caf264f1d2d6ebd0a5680dfc82a67bf31e6439293a39270dbc30227ed1111f",
     "source_numerical.py": "f15c4522bf42e87d022da78269d799e94735b675517d842672de20d757895d4e"
   },
   "kind": "independent_numerical_recomputation",
-  "matching_cases": 110
+  "matching_cases": 119
 }
