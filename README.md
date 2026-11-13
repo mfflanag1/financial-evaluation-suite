@@ -54,6 +54,8 @@ The separate [selection environment](environments/financial_selection/README.md)
 
 These evaluation integrations target native Verifiers 0.4.1 tasksets. The separate [training adapter](training/README.md) targets exact later trainer revisions in its own dependency environment. Its 41 local tests include actual spawned workers, Docker, scripted training-token transport and failure admission. A controlled rollout, isolated financial grading and fresh-container reproduction are distinct gates. No actual model training, optimizer update or checkpoint reload has been demonstrated.
 
+Selection has its own [training adapter](training/selection/README.md) with selection-specific reward admission and a separate installation. The [instruct-model smoke protocol](configs/financial_selection/calibration_v1/README.md) prepares five bound attempts and rejects incomplete result accounting. It defaults to model-free dry runs. The [practitioner review procedure](docs/selection-practitioner-review.md) covers the mechanism's financial assumptions independently of these software checks.
+
 ## Evidence and reuse
 
 Publication dates, availability times and financial conventions are part of the tasks. Source manifests bind retained excerpts to their provenance; they do not grant redistribution rights. The [source policy](docs/source-policy.md) distinguishes reviewed excerpts from link-only material. The conservative exporter is the supported way to prepare a source packet; a complete repository clone has a broader evidence footprint.

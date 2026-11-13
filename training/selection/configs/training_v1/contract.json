@@ -1,0 +1,120 @@
+{
+  "ckpt": {},
+  "inference": {},
+  "max_steps": 1,
+  "mode": "rl",
+  "model": {
+    "name": "/path/to/approved/local-policy"
+  },
+  "monitors": {
+    "file": {
+      "float_decimals": null
+    },
+    "prime": null,
+    "wandb": null
+  },
+  "orchestrator": {
+    "batch_size": 2,
+    "concurrency": {
+      "initial_inflight": 2,
+      "max_inflight": 2,
+      "min_inflight": 2
+    },
+    "constant_trainer_batch_size": true,
+    "monitors": {
+      "prime": null
+    },
+    "renderer": {
+      "name": "qwen3"
+    },
+    "train": {
+      "algo": {
+        "type": "grpo"
+      },
+      "group_size": 2,
+      "sampling": {
+        "max_completion_tokens": 8192,
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "source": [
+        {
+          "env": {
+            "agent": {
+              "harness": {
+                "dialect": "chat_completions",
+                "edit": true,
+                "forward_env": [],
+                "id": "financial-selection-training",
+                "sdk_max_retries": 0,
+                "search": false
+              },
+              "max_output_tokens": 65536,
+              "max_total_tokens": 262144,
+              "max_turns": 32,
+              "network_notice": true,
+              "retries": {
+                "max_retries": 0
+              },
+              "runtime": {
+                "allow": [],
+                "image": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+                "type": "docker"
+              },
+              "scoring": {
+                "mode": "isolated",
+                "retries": {
+                  "max_retries": 0
+                },
+                "skip_on_timeout": false,
+                "skip_on_truncated": false
+              }
+            },
+            "id": "financial-selection-training",
+            "journal_root": "/tmp/selection-training-journals",
+            "retries": {
+              "max_retries": 0
+            },
+            "taskset": {
+              "id": "financial-selection-training",
+              "num_tasks": 1,
+              "split": "train",
+              "task": {
+                "image": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "index_start": 0,
+              "condition": "mixed"
+            },
+            "max_worker_episodes": 8,
+            "max_worker_seconds": 900
+          },
+          "name": "selection-training-contract",
+          "select": {
+            "limit": 4,
+            "shuffle": false
+          },
+          "serve": {
+            "max_concurrent": 1,
+            "pool": {
+              "num_workers": 1,
+              "type": "static"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "output_dir": "/tmp/selection-training-output",
+  "run": {
+    "name": "selection-training-contract"
+  },
+  "seq_len": 32768,
+  "trainer": {
+    "monitors": {
+      "prime": null
+    },
+    "optim": {
+      "lr": 1e-06
+    }
+  }
+}

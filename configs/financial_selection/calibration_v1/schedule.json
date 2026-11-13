@@ -1,0 +1,30 @@
+{
+  "protocol_id": "selection-calibration-v1",
+  "model_class": "instruct",
+  "split": "train",
+  "index_start": 0,
+  "conditions": [
+    "mixed",
+    "positive",
+    "negative",
+    "unsupported",
+    "sparse"
+  ],
+  "attempts_per_condition": 1,
+  "expected_attempts": 5,
+  "final_selected": false,
+  "retries": 0,
+  "automatic_expansion": false,
+  "aggregation": "all_five_planned_attempts_or_no_aggregate",
+  "metrics": [
+    "reward",
+    "exact_success_fraction",
+    "all_packets_correct",
+    "current_exact_success",
+    "fresh_exact_success_fraction",
+    "reproduction_verified",
+    "packets_scored",
+    "candidate_failure"
+  ],
+  "component_metrics": "not_exposed_by_native_trace"
+}
