@@ -1,0 +1,21 @@
+# Model-free Verifiers 0.4.1 validation. Supply the same immutable image to both
+# --taskset.task.image and --runtime.image; keep the worker key outside this file.
+max_concurrent = 1
+
+[taskset]
+id = "financial-selection"
+num_tasks = 1
+index_start = 0
+split = "dev"
+condition = "mixed"
+
+[runtime]
+type = "docker"
+workdir = "/workspace"
+allow = []
+cpu = 1
+memory = 1
+
+[timeout]
+setup = 120
+total = 300

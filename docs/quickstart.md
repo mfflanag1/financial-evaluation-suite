@@ -65,6 +65,18 @@ Use `--report ../verification.json` to write a new machine-readable report outsi
 
 Scripted local providers exercise native protocols without paid model calls. They test orchestration, not model performance. Run container tests serially so resource contention does not obscure outcomes.
 
+## Selection-adjusted research
+
+The bootstrap includes the separate [selection environment](../environments/financial_selection/README.md). It generates original synthetic observations, grades exact statistics and funded allocations, and reruns submitted source on the current packet plus two fresh packets. Follow its package instructions for a model-free native validation with an immutable local Docker image and a worker-only generation key.
+
+To reproduce the documented outcome-blind cash baseline after installation:
+
+```sh
+../financial-evals-venv/bin/python -B -m financial_selection.baseline
+```
+
+This command uses an explicitly public fixture key, prints aggregate calculation scores, and makes no model requests. It does not use a private evaluation key or provide contamination-free test results. Its shaped reward and exact-success rate measure different things; report both.
+
 ## Results and secrets
 
 Store responses, traces and evaluator keys outside the repository. Ignore rules are not a security boundary. Never mount the full clone, installed evaluator package or evaluator key inside the solver container. Preserve environment versions, exact prompts and private run artifacts for reproducibility.
