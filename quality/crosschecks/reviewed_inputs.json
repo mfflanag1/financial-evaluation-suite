@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "c201": {
+      "path": "questions/challenges/c201.json",
+      "sha256": "84d74a2150cb316f573d79f22bdd08375c8d369da4ba5f7002e1681d3d23ca60"
+    },
+    "c214": {
+      "path": "questions/challenges/c214.json",
+      "sha256": "5f9b832218f0527447aa46e9b54d8b778f5788058ea45c7191f00dc7dce01459"
+    },
+    "q033": {
+      "path": "questions/legacy/quant100/questions/q033.json",
+      "sha256": "3161ab08308f5cfc72b351f3879cd8fcb86597e97c6dfc79de4f9ccfe3ea0656"
+    },
+    "q065": {
+      "path": "questions/legacy/quant100/questions/q065.json",
+      "sha256": "1028126e874c2dc36f168c98c5f6ed00ea8e34a338c1fff9d4a3f90e943ba566"
+    },
+    "q098": {
+      "path": "questions/legacy/quant100/questions/q098.json",
+      "sha256": "fcb79f5f6de86228c6029e53cbf1a385d748af13c8e99b16a1df096466e427a8"
+    }
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,68 @@
+name: Verification
+
+on:
+  push:
+    branches: [main, 'release/**']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      docker:
+        description: Run the full serial Docker integration suite
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Core checks and explicit skipped-test report
+        run: python -B scripts/check.py --tier core --report "$RUNNER_TEMP/core-report.json"
+
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Build and install all local packages in a new environment
+        run: python scripts/bootstrap.py --venv "$RUNNER_TEMP/financial-native"
+      - name: Native contracts, local scripted provider and dependency check
+        run: '"$RUNNER_TEMP/financial-native/bin/python" -B scripts/check.py --tier native --report "$RUNNER_TEMP/native-report.json"'
+
+  docker:
+    if: github.event_name == 'workflow_dispatch' && inputs.docker
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Install native environment packages
+        run: python scripts/bootstrap.py --venv "$RUNNER_TEMP/financial-native"
+      - name: Prepare local test images
+        run: |
+          docker pull python:3.12-slim
+          docker build -f scoring_v2/Dockerfile.workflow -t financial-evals-workflow:v2 scoring_v2
+      - name: All container integration tests, with no skipped tests allowed
+        run: '"$RUNNER_TEMP/financial-native/bin/python" -B scripts/check.py --tier docker --report "$RUNNER_TEMP/docker-report.json"'

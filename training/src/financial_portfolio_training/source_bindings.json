@@ -1,0 +1,41 @@
+{
+  "financial_sources": {
+    "environments/financial_portfolio/src/financial_portfolio/__init__.py": "5cc22740919963364667ccfff99975d3a63ebcf65b2b7f22f55248c91334f969",
+    "environments/financial_portfolio/src/financial_portfolio/analytics.py": "d117d500aa45a46d3b9401e1d6ed618945943020b83502a456becdbb5c102148",
+    "environments/financial_portfolio/src/financial_portfolio/cli.py": "7444511febc8ead25d938e5033f00b6b39f560c8bb8a0426e9efd53bf36bd384",
+    "environments/financial_portfolio/src/financial_portfolio/generator.py": "c5fdd302a5da2f297129b56a8705334648abda28c5d598b80878170457f7a0d8",
+    "environments/financial_portfolio/src/financial_portfolio/prime_adapter.py": "5f37e93960d4624e2e899846a1283dd327b9e73c2b77aee92906223ea1f7a16d",
+    "environments/financial_portfolio/src/financial_portfolio/reference.py": "b7936feea0e3cc0ca405b80cf0bc0968db38d002cb4ba14d694ec68a9214acaf",
+    "environments/financial_portfolio_clarified/src/financial_portfolio_clarified/prime_adapter.py": "01157bc746f5e73b7c8e7adf4b22c190e8fe6156d466dbcec04446308a06ce63",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/instructions.txt": "3168d064bd75f2b431f56d3baf35e0c268f9a06ab8442297bde3ccd8dbff72be",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/prime_adapter.py": "e5ca32787927d60b8d2e1750fba3b1df3c9031f403c88c1b8a9e218ce49bb6a4",
+    "environments/financial_portfolio_staged/src/financial_portfolio_staged/validation.py": "fff62c50fad6222d375be3948d7e133459b6b93213932ed06c29d082689d29c5",
+    "environments/financial_research/src/financial_research/__init__.py": "bbc0001e7faebabb9bb33c73a4be530bdc2363a07c67d5dfaea2fa3fb3093523",
+    "environments/financial_research/src/financial_research/accounting.py": "e8e0c89d2ad28c023749962d2fef9a4b9e392980aea51ef0174116c5735e45b9",
+    "environments/financial_research/src/financial_research/analytics.py": "5ef8c5ac82aeb3a9b881326034311b415ce05fb38fac4c4f2fb5683d30763939",
+    "environments/financial_research/src/financial_research/cli.py": "b8c3646fe55e379c18816fc7aa19b494e00b7af42264231dbf9a7aec18bc3718",
+    "environments/financial_research/src/financial_research/generator.py": "9b5ec36b93bda344a575b94fd31b484b388447ac0b14ec1915a62926f18e7bef",
+    "environments/financial_research/src/financial_research/prime_adapter.py": "da93cb00b93e204d6ba57069a8b59da16d88150fda917168f02d35741cd7b2d1",
+    "environments/financial_research/src/financial_research/reference.py": "41521185677f5b1e56d017a5df1d143d5c08eecc77ae0669d505735f7710bb7a",
+    "environments/financial_research/src/financial_research/reproduction.py": "103dc2e6d94915472edc18b190504d41166be4408b25c858abf7e7768d45f565",
+    "environments/financial_research/src/financial_research/verifier.py": "b57357271873712ecb0b4cf73d8f1a52c4faaa831c085d932dd01ad9f2b6dee2"
+  },
+  "native_commit": "7407a3ea4f4f5e720bd5acfde007a41a33bb65a1",
+  "native_sources": {
+    "verifiers/v1/clients/train.py": "bf560254d0845f0d85350c389696cba2ad7cbbc4d07a8f539ec60ea0c5abe331",
+    "verifiers/v1/env.py": "500d4574d77ae17cb021ebc99623722f9e1a7dad92b4dd4d0faae8f47ae3955a",
+    "verifiers/v1/graph.py": "89f66838320b4f5124eef339e5566bc4788912bad3befcfe22183ba2894c4e28",
+    "verifiers/v1/harnesses/utils/core.py": "b262f45baa3ab79f57b5dc7a09468efee405c9c337b7b6b81e44ce93b4a8e6ca",
+    "verifiers/v1/harnesses/utils/launch.py": "6e42b95b1ab3aad1683b243e78a2ca3f8c1cb465fdb4e039e16a2191397b7de8",
+    "verifiers/v1/interception/server.py": "2141b9e7edbba9a873d66ad9885caf2599c108ae38e12b7b50b5113042210484",
+    "verifiers/v1/trace.py": "a3bbe722dde95d16e7e494ff8183b4e5868be0d94fd24f13fd496924ade8aa70",
+    "verifiers/v1/types.py": "d3285eb23b515a7860273d9c4c95969b811a89e13ba335f01f7f36a27087acc0"
+  },
+  "ported_sources": {
+    "_chat_core.py": "pinned native source plus max_retries=0",
+    "instructions.txt": "byte-identical",
+    "validation.py": "byte-identical",
+    "workflow.py": "namespace and workflow metadata renamed only"
+  },
+  "schema_version": 1
+}

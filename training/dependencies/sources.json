@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "python": "3.12",
+  "scope": "CPU native imports and protocol checks; no optimizer or GPU validation",
+  "sources": {
+    "prime_rl": {
+      "url": "https://github.com/PrimeIntellect-ai/prime-rl.git",
+      "commit": "c225aaa45d2160380b2c9c160d072b12af5c785f",
+      "distributions": {"prime-rl": "0.10.0", "prime-rl-configs": "0.4.0"}
+    },
+    "verifiers": {
+      "url": "https://github.com/PrimeIntellect-ai/verifiers.git",
+      "commit": "7407a3ea4f4f5e720bd5acfde007a41a33bb65a1",
+      "gitlink": "deps/verifiers",
+      "distributions": {"verifiers": "0.4.2.dev47"}
+    },
+    "renderers": {
+      "url": "https://github.com/PrimeIntellect-ai/renderers.git",
+      "commit": "c3133fcc5bd577e4d0061398dc67b0dc15ff5308",
+      "gitlink": "deps/renderers",
+      "distributions": {"renderers": "0.2.1.dev9"}
+    },
+    "pydantic_config": {
+      "url": "https://github.com/PrimeIntellect-ai/pydantic-config.git",
+      "commit": "65b15dffba82d4be19efdaf8b2b9705cc1756be8",
+      "gitlink": "deps/pydantic-config",
+      "distributions": {"prime-pydantic-config": "0.4.3"}
+    }
+  }
+}
