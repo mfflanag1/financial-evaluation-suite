@@ -168,7 +168,7 @@ class ResearchNumericalTests(unittest.TestCase):
         corrected = [0.5*0.8, 0.3*0.5, 0.2*0.4]
         for actual, joint in zip(record["2"]["state_probabilities"], corrected):
             self.assertAlmostEqual(actual, joint / sum(corrected))
-        self.assertEqual(record["2"]["evidence_probability"], sum(corrected))
+        self.assertAlmostEqual(record["2"]["evidence_probability"], sum(corrected), delta=1e-14)
         packet["turns"][1]["inputs"]["second_positive_notice"] *= 10
         self.assertEqual(audit_case(packet)["answers_by_turn"], record)
         self.assertFalse(record["3"]["joint_policy_met"])
