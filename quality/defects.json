@@ -1,0 +1,133 @@
+{
+  "audit_version": "1.0.0",
+  "defects": [
+    {
+      "financial_effect": "Incorrect response-schema credit; core result flags can mark the fractional response fully supported. The reproductions call scoring only and do not demonstrate any order executing.",
+      "id": "discrete-output-tolerance",
+      "observed": {
+        "affected_version": "scoring_v2",
+        "defect_id": "discrete-output-tolerance",
+        "expected_behavior": "Reject fractional values in fields explicitly requiring integer quantities or unscaled counts; preserve valid integral JSON floats.",
+        "implementation_artifacts": [
+          {
+            "path": "scoring_v2/engine.py",
+            "sha256": "7cc697a9b60b4e7e6f306e336cee8d6d91ac68c050382abd9d42a1d9862c1fa7"
+          },
+          {
+            "path": "scoring_v2/research.py",
+            "sha256": "2044a3ed46b6dbcd2207e56a999b15221646b66eecdc522ed06a621dc2f4f17d"
+          }
+        ],
+        "reproductions": [
+          {
+            "case_id": "c201",
+            "field": "trade_quantities",
+            "fractional_contract_accepted": true,
+            "fractional_value_accepted": true,
+            "mutated": [
+              -5.9999995,
+              0,
+              0,
+              2
+            ],
+            "original": [
+              -6,
+              0,
+              0,
+              2
+            ],
+            "turn": 1,
+            "valid_control_accepted": true
+          },
+          {
+            "case_id": "c201",
+            "field": "optimal_plan_count",
+            "fractional_contract_accepted": true,
+            "fractional_value_accepted": true,
+            "mutated": 2.0000005,
+            "original": 2,
+            "turn": 1,
+            "valid_control_accepted": true
+          },
+          {
+            "case_id": "c202",
+            "field": "independent_count",
+            "fractional_contract_accepted": true,
+            "fractional_value_accepted": true,
+            "mutated": 8.0000005,
+            "original": 8,
+            "turn": 1,
+            "valid_control_accepted": true
+          },
+          {
+            "case_id": "c202",
+            "field": "research_hypotheses",
+            "fractional_contract_accepted": true,
+            "fractional_value_accepted": true,
+            "mutated": 24.0000005,
+            "original": 24,
+            "turn": 1,
+            "valid_control_accepted": true
+          },
+          {
+            "case_id": "q138",
+            "field": "delivery_units",
+            "fractional_contract_accepted": null,
+            "fractional_value_accepted": true,
+            "mutated": [
+              50.0000005,
+              15,
+              0
+            ],
+            "original": [
+              50,
+              15,
+              0
+            ],
+            "turn": 2,
+            "valid_control_accepted": true
+          },
+          {
+            "case_id": "q149",
+            "field": "eligible_issue_count",
+            "fractional_contract_accepted": null,
+            "fractional_value_accepted": true,
+            "mutated": 2.0000005,
+            "original": 2,
+            "turn": 1,
+            "valid_control_accepted": true
+          }
+        ],
+        "scope": "Six controlled reproductions across challenge and sequential-research tracks. This is not an exhaustive defect count."
+      },
+      "priority": "medium",
+      "proposed_remediation": "Apply a separately versioned semantic integer schema to approved stage-aware selectors; retain frozen baselines and v2 results.",
+      "reproduce": "python3 -B -m quality.reproduce_defects",
+      "status": "confirmed_in_preserved_scoring_v2",
+      "summary": "Tolerance-based comparison accepts fractional values for some explicit integer outputs and unscaled counts."
+    }
+  ],
+  "review_backlog": [
+    {
+      "area": "case_mathematics",
+      "scope": "157 of 230 static entries lack independent numerical recomputation in this audit; 73 entries have scoped evidence."
+    },
+    {
+      "area": "quantity_semantics",
+      "scope": "26 reviewed stage/output fields need a clarified quantity contract or a separate integrality closure proof before stricter validation; 153 reviewed fields impose no additional integer restriction."
+    },
+    {
+      "area": "source_evidence",
+      "scope": "This audit does not reverify original external publications, licensing, or citation sufficiency."
+    },
+    {
+      "area": "stateful_paths",
+      "scope": "The three recomputed core cases are single-turn; sequential action branches require separate runtime validation."
+    },
+    {
+      "area": "human_validation",
+      "scope": "No independent practitioner review is documented by this audit."
+    }
+  ],
+  "scope": "Confirmed controlled defects and explicitly deferred review; no broad certification claim."
+}

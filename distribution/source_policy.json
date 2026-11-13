@@ -1,0 +1,725 @@
+{
+  "default": "link_only",
+  "packet_files": {
+    "questions/legacy/source_grounded/cases/energy-001/case.json": "1b43b951ae9fed523668f8f466670ee66eeaf6c77db3e01361cbf8b6dc2dd5ab",
+    "questions/legacy/source_grounded/cases/energy-001/sources.json": "d47ccf0cf458d1dbc249f3634087029bdd52931b2a5251db3fa2dbb5a85c737a",
+    "questions/legacy/source_grounded/cases/energy-001/sources/energy-gas-20210617.txt": "c17ac900c657c996d1fd2a29dbe3188f3480347f0e028fb80271692384d0e026",
+    "questions/legacy/source_grounded/cases/energy-001/sources/energy-gas-20210624.txt": "8bcf369967e8180eb272109982d496772f26f369ddbf892e1c2fdd0c5deb9824",
+    "questions/legacy/source_grounded/cases/energy-002/case.json": "f81742062fe6128045c1cb4f76e6c32fcd6a79a1a89ff8145ace49883a07e04b",
+    "questions/legacy/source_grounded/cases/energy-002/sources.json": "0528684002b6c98341c305a69eb7570ae04d5d7e2b1118f734f4a015245dd040",
+    "questions/legacy/source_grounded/cases/energy-002/sources/energy-petroleum-index-20240403.txt": "6a71996348213f6e5d085c4ea7040a2dec15b55c08a1b523b1acf1b97bfd1ac7",
+    "questions/legacy/source_grounded/cases/energy-002/sources/energy-petroleum-notes-20240403.txt": "ccc4202e2078ac42d693a18010fbcef1551aa5b9b89115362df76659616891b5",
+    "questions/legacy/source_grounded/cases/energy-002/sources/energy-petroleum-table1-20240403.txt": "5c97ad11cb4c666e7628917e66931b93a20225c7a22e15b8d0fbd0da3bc60ee7",
+    "questions/legacy/source_grounded/cases/energy-002/sources/energy-petroleum-table4-20240403.txt": "85d4d626aede4eb178b4642f37c63a09ae0e9864b56be8441c15127f7b8dbf51",
+    "questions/legacy/source_grounded/cases/macro-001/case.json": "2aa74cb2ec213949bb9805330f275c7cdc9d32670660e343bd212db9e3850e98",
+    "questions/legacy/source_grounded/cases/macro-001/sources.json": "dcb5ad1a84c3fe31bdaba45a998748e23398b2ad9e8c3ccb7573b2cc216f158d",
+    "questions/legacy/source_grounded/cases/macro-001/sources/bls-20240202.txt": "46f435c0df815c70a49dbcfd0d1df20f01ae42c7d7f6c6fdfd38d182d66f528c",
+    "questions/legacy/source_grounded/cases/macro-001/sources/bls-20240308.txt": "4225e3fcbbdc0011ced8fbd8c0bb82ed7acb74b7cf747fcf91e383c5596b9264",
+    "questions/legacy/source_grounded/cases/macro-001/sources/bls-20240405.txt": "667aad9f048d7c96c33b60ede86a854086b734b4f25fd9169612db3f149f4152",
+    "questions/legacy/source_grounded/cases/macro-002/case.json": "9dcc866563896de7bd584aa89814d23cce6665fd8a6e45e83ca3609717be0ef5",
+    "questions/legacy/source_grounded/cases/macro-002/sources.json": "5cd53748509efccd8a284ce18689ff1d1e37a010f3025d36e5cc34da583be9d3",
+    "questions/legacy/source_grounded/cases/macro-002/sources/exp-cpi-20240111.txt": "e14767e4b6f46f8de1ae228f78cfc6bfbb3dc37f10f7984d86065455bf35173c",
+    "questions/legacy/source_grounded/cases/macro-002/sources/exp-cpi-20240213.txt": "4133d468d8e94c9ee611b1d9e3fec9ea91c82dea1037a2ab674e45db666b2292",
+    "questions/legacy/source_grounded/cases/macro-003/case.json": "dd94a260c0e8467a92e6d89b47b9084090866d210377aa1854ee9cd44c549ef0",
+    "questions/legacy/source_grounded/cases/macro-003/sources.json": "535f803640550adf9951e8bfdd228629d1768e5b71d1e6f9ce3f0b3a8542cda6",
+    "questions/legacy/source_grounded/cases/macro-003/sources/exp-bea-20230830-pdf.txt": "4429248188643ae8a6b9eab1ffdb2f11f76761a5cee283355aae42149ad4ceb4",
+    "questions/legacy/source_grounded/cases/macro-003/sources/exp-bea-20230928-pdf.txt": "7448487f8128752574f0f11b2ae6548e91d0552a6ecbb045a2e47ae9716b83af",
+    "questions/legacy/source_grounded/cases/portfolio-002/case.json": "8a3d40ac6065b4b5f88bb134b71699e7961fdd46d06e52b162ad1af432685696",
+    "questions/legacy/source_grounded/cases/portfolio-002/sources.json": "6ad3c34f311c9406e5dbecb384e8da92aaa6be3ca648dbb0281eb86dee2e5917",
+    "questions/legacy/source_grounded/cases/portfolio-002/sources/portfolio-fed-20230322.txt": "7002a70f765aa928153bae92090d25a6607a837e9e6dce3c3293f755c3396a00",
+    "questions/legacy/source_grounded/cases/systematic-001/case.json": "424b2063ab72963bed48f7208185d5fe24f84f9800eb813e1f3ec976c381f4dd",
+    "questions/legacy/source_grounded/cases/systematic-001/sources.json": "0ab67e17c69b482ff033c16f4614874c30e2265c137a8649cc37b3f4ea3a1d58",
+    "questions/legacy/source_grounded/cases/systematic-001/sources/systematic-apple-index.txt": "b0eabf90c56c9156884f68523720e68023835e0e3a12d88fd65df9711006a3f7",
+    "questions/legacy/source_grounded/cases/systematic-001/sources/systematic-nvidia-index.txt": "4f44ca5f7c42c597c6785a157f4a846293d9ff3380266aa40a0a5e8f1ad0cff9",
+    "questions/legacy/source_grounded/cases/systematic-001/sources/systematic-sec-time-faq.txt": "205b8c9730d0ae6e692002825b730c0fd0829290c4021edf9a65f23d411d72e8"
+  },
+  "policy_id": "source-distribution-v2",
+  "publisher_policies": {
+    "bea": {
+      "basis_summary": "BEA permits reproduction of website information unless otherwise stated and requests source attribution. Separate restrictions apply to its logo.",
+      "observed_on": "2026-11-12",
+      "review_method": "Assistant source-content and publisher-policy review; not legal clearance or practitioner review.",
+      "reviewed_scope": "Two exact plain-text GDP news-release and statistical-table excerpts. No logo or third-party asset is included.",
+      "url": "https://www.bea.gov/help/faq/145"
+    },
+    "bls": {
+      "basis_summary": "BLS identifies its publications as public domain except previously copyrighted photographs and illustrations. Attribution is requested. Its emblem has separate restrictions.",
+      "observed_on": "2026-11-12",
+      "review_method": "Assistant source-content and publisher-policy review; not legal clearance or practitioner review.",
+      "reviewed_scope": "Five exact plain-text employment and CPI release excerpts. No photographs, illustrations or emblem are included.",
+      "url": "https://www.bls.gov/opub/copyright-information.htm"
+    },
+    "board": {
+      "basis_summary": "The Board permits copying and distribution of its website information unless otherwise indicated, with source citation requested. Separately attributed non-Board materials require their own permission; seals and logos have separate restrictions.",
+      "observed_on": "2026-11-12",
+      "review_method": "Assistant source-content and publisher-policy review; not legal clearance or practitioner review.",
+      "reviewed_scope": "Two exact plain-text government statement excerpts: portfolio-fed-20230322 and h2b-fdic-joint. The latter was checked against the identical substantive text on the Board co-publication at https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm because the FDIC URL returned HTTP403. No logo, image, model code or separately attributed third-party expression is included. This review does not extend to Reserve Bank sites or other FDIC excerpts.",
+      "url": "https://www.federalreserve.gov/disclaimer.htm"
+    },
+    "eia": {
+      "basis_summary": "EIA permits reuse of its information products with acknowledgment including publication date. Privately contributed or licensed materials and photographs may have separate rights; its logo is restricted.",
+      "observed_on": "2026-11-12",
+      "review_method": "Assistant source-content and publisher-policy review; not legal clearance or practitioner review.",
+      "reviewed_scope": "Six exact plain-text storage or petroleum statistical excerpts, notes and release index. The natural-gas excerpts omit market-price and analyst-survey sections. No photographs, logos or separately attributed data are included.",
+      "url": "https://www.eia.gov/about/copyrights_reuse.php"
+    },
+    "sec": {
+      "basis_summary": "The SEC Website Dissemination policy permits copying and further distribution without SEC permission and encourages citation. The SEC Webmaster FAQ separately addresses reuse. Seals, logos, artwork and trademarks have distinct restrictions.",
+      "observed_on": "2026-11-12",
+      "review_method": "Assistant source-content and publisher-policy review; not legal clearance or practitioner review.",
+      "reviewed_scope": "Five exact plain-text SEC-created excerpts: exp-vistra-2023-index, systematic-apple-index, systematic-lyft-original-index, systematic-nvidia-index and systematic-sec-time-faq. These contain filing-detail metadata, factual document-list rows or SEC staff FAQ prose, with no linked issuer narrative, contract or image bytes. The FAQ policy evidence is https://www.sec.gov/files/about/webmaster-faq.htm. This review does not approve issuer-authored filings or exhibits merely because SEC hosts them.",
+      "url": "https://www.sec.gov/about/privacy-information"
+    }
+  },
+  "schema_version": 1,
+  "sources": {
+    "altice-20240724-response": {
+      "disposition": "link_only",
+      "evidence_sha256": "d4e9256ea7691d768f0029573f94e6a99554ed94dc3eca3e5fd57c2fa06c498b",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "cc44b6b3511119de3631b4858de876b1c032a59603b2e15e77aaf23022a0119f",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1702780/000094787124000635/filename1.htm"
+    },
+    "altice-fy2023-10k": {
+      "disposition": "link_only",
+      "evidence_sha256": "01bd81ffc0ae48a2259aa9efef4a053793386cbffa6f40be5bc5efd9d6d28e05",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "43d6b4fc0882ec730834f96489e60c0b219f6a2d5f775d761a9476b4c1f55bc3",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1702780/000162828024004863/atus-20231231.htm"
+    },
+    "altice-fy2023-release": {
+      "disposition": "link_only",
+      "evidence_sha256": "58649c2f809e5f5dd4bd67f7ae05f2d9065fe1aa9267c486e5219f26397a0e2b",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "2eaa06d314f9e4f5f13962d48e2ec277a732e4a04220c81899ae65599aaa7c07",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1702780/000162828024004788/a2023q4exhibit991.htm"
+    },
+    "bls-20240202": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "46f435c0df815c70a49dbcfd0d1df20f01ae42c7d7f6c6fdfd38d182d66f528c",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "09a8897adac792411bd279cd96e3e0989bebf80f63fc67008194e6980fb78b44",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bls",
+      "url": "https://www.bls.gov/news.release/archives/empsit_02022024.htm"
+    },
+    "bls-20240308": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "4225e3fcbbdc0011ced8fbd8c0bb82ed7acb74b7cf747fcf91e383c5596b9264",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "0e1840b328e08f1f9e6af98bfd7ddbd1a22d2ba20ca8368662dd6f9ae132bd17",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bls",
+      "url": "https://www.bls.gov/news.release/archives/empsit_03082024.htm"
+    },
+    "bls-20240405": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "667aad9f048d7c96c33b60ede86a854086b734b4f25fd9169612db3f149f4152",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "e72a7323713f1dbb3e9f87e653cb2eb2904eb3b0c1e261a1d75e790437f5bdf7",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bls",
+      "url": "https://www.bls.gov/news.release/archives/empsit_04052024.htm"
+    },
+    "credit-arcosa-amendment": {
+      "disposition": "link_only",
+      "evidence_sha256": "92706fb44e7217267d1ede221753feaa2b808cf0e82292b1c81652bdb11d19ba",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "a1d091cc6f8689507bdaab6fa8b6b3434c6e414246ef36e11816b6c2d276006b",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1739445/000173944524000126/exh101amendmentno1torcfvf.htm"
+    },
+    "credit-vestis-agreement": {
+      "disposition": "link_only",
+      "evidence_sha256": "26b873092ea681f79c749da6eb701312bd91ec477def91a716ea55c7a6119aa1",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "b9b9eac98c47405b22fc41eabbaccf99a0080478f807b5242b70029c0ea379a5",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1967649/000114036124009073/ef20022209_ex10-1.htm"
+    },
+    "energy-gas-20210617": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "c17ac900c657c996d1fd2a29dbe3188f3480347f0e028fb80271692384d0e026",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "1263ef3f2a2a3f2d44c6a757e98dd5b0843d7503220fe3f6ec59d388f27d60ae",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "eia",
+      "url": "https://www.eia.gov/naturalgas/weekly/archivenew_ngwu/2021/06_17/"
+    },
+    "energy-gas-20210624": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "8bcf369967e8180eb272109982d496772f26f369ddbf892e1c2fdd0c5deb9824",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "c77fe58ff659c672c7db26190129286b9d21eae230f293fb4827e250c174bf4a",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "eia",
+      "url": "https://www.eia.gov/naturalgas/weekly/archivenew_ngwu/2021/06_24/"
+    },
+    "energy-petroleum-index-20240403": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "6a71996348213f6e5d085c4ea7040a2dec15b55c08a1b523b1acf1b97bfd1ac7",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "e570bbcf528eef60ec7b541261294c385555e83c0295cc9bd765c342658b7923",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "eia",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/wpsr_2024_04_03.php"
+    },
+    "energy-petroleum-notes-20240403": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "ccc4202e2078ac42d693a18010fbcef1551aa5b9b89115362df76659616891b5",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "42c60101e1bc07c1e7b89adf9800b6c8871fe82db16440e3b89204075599b023",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "eia",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/pdf/table1.pdf"
+    },
+    "energy-petroleum-table1-20240403": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "5c97ad11cb4c666e7628917e66931b93a20225c7a22e15b8d0fbd0da3bc60ee7",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "f8e2cba33d13d73cafe7d9edae72da0181700943ff81e6312e5b119f37ab60f6",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "eia",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/csv/table1.csv"
+    },
+    "energy-petroleum-table4-20240403": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "85d4d626aede4eb178b4642f37c63a09ae0e9864b56be8441c15127f7b8dbf51",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "79f5b066f5d8e28e80b23de08fcc7472fbc857edcc4c6ebd6bb792fddeab39bd",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "eia",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/csv/table4.csv"
+    },
+    "event-att-timewarner-contract": {
+      "disposition": "link_only",
+      "evidence_sha256": "8003d378b4e207ee8500ca8deb3110781c05c1ab46efb04189244f19c8368d01",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "f459246a321b42f17aa4a96724424f1a5f6da1af0089096a7f810714b7799b42",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/732717/000119312517003062/d255304ds4a.htm"
+    },
+    "event-broadcom-vmware-contract": {
+      "disposition": "link_only",
+      "evidence_sha256": "d88e074bf341f6453ca0a5254cc8e069ba94bb7492e9f7ae56e040024562e4c7",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "e01382acd2aad4887bdbb881ca5c6eb99b0557a8b8d8fb09ba0b0b30ac153e93",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312522161016/d525235dex21.htm"
+    },
+    "exp-bea-20230830-pdf": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "4429248188643ae8a6b9eab1ffdb2f11f76761a5cee283355aae42149ad4ceb4",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "c5cfd2e1802a7efd61ccf082091199bf3bba3d3f2b118ca9916ce0da3611f8e4",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bea",
+      "url": "https://www.bea.gov/sites/default/files/2023-08/gdp2q23_2nd.pdf"
+    },
+    "exp-bea-20230928-pdf": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "7448487f8128752574f0f11b2ae6548e91d0552a6ecbb045a2e47ae9716b83af",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "83c574df579b6514ab3d48d84d5011596deff39f805b8dacbe2701dac7f220cd",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bea",
+      "url": "https://www.bea.gov/sites/default/files/2023-09/gdp2q23_3rd.pdf"
+    },
+    "exp-cpi-20240111": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "e14767e4b6f46f8de1ae228f78cfc6bfbb3dc37f10f7984d86065455bf35173c",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "ed9567be2e0e62aec5d5d36919a227fde13976ac2c5d7e4ab124e65fc3efeb1d",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bls",
+      "url": "https://www.bls.gov/news.release/archives/cpi_01112024.htm"
+    },
+    "exp-cpi-20240213": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "4133d468d8e94c9ee611b1d9e3fec9ea91c82dea1037a2ab674e45db666b2292",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "fe63ce0bcd08f65b159ce981d6f76a72523bc440163cfd00af4e5b0d1e16d665",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "bls",
+      "url": "https://www.bls.gov/news.release/archives/cpi_02132024.htm"
+    },
+    "exp-vistra-2023-index": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "3c36ab85bb132bd4be1024dde19f0641d45385bcfd32311d4af6136e7134f969",
+      "legacy_restriction_flag": false,
+      "manifest_sha256": "b672db915256ddc54c562cc20f2b2f314010cd463171cf6c833e79c0ce7a75e1",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281924000012/0001692819-24-000012-index.html"
+    },
+    "exp-vistra-2023-issuer": {
+      "disposition": "link_only",
+      "evidence_sha256": "19a4728184ef3f8729ef3ed888078545b154f84d57b203148b308b36f4d249b8",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "02de2b780bd79a12dc9538f99643169562b1b7d2a8d815702dbe4c6f934e4d1d",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/312/VST%20%28Vistra%20Corp.%29%20%20%28ARS%29%202024-04-03.pdf_.pdf"
+    },
+    "expansion-dnb-2024-debt": {
+      "disposition": "link_only",
+      "evidence_sha256": "cb2aac4ff9448f7576e85df9a884c7ac5da331eabdeeec13e69f9ae4f5d06dcd",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "e743c48d7a14b03fbc1df2dea77856a3b23816cc3751b06d2c0c3e3b1c33b308",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1799208/000179920824000024/R13.htm"
+    },
+    "expansion-intel-2023-original": {
+      "disposition": "link_only",
+      "evidence_sha256": "5af8fe246a07ba17872fc102d5808673b0eb326f6d34c8c70ca56996cf43f512",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "4b9237ff04704e0603f760f802171f7b8b5093714f5635088b78b1fc23fc8c03",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-24-000010/intc-20231230.htm"
+    },
+    "expansion-intel-2024-recast": {
+      "disposition": "link_only",
+      "evidence_sha256": "f4cb5956ea25c0101db18da981b31d1a4eedbd0cd79d09d37b33b31947acb284",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "a1c740e658632aa7dbaa89a4d2cd851470414f8bfc1f978a942ea88493ccb9cc",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-25-000009/intc-20241228.htm"
+    },
+    "expansion-microsoft-2024": {
+      "disposition": "link_only",
+      "evidence_sha256": "13b8f4b13baab890c6a2d8a0e8cc5c5765a9b05dba6898a7064976662d2b44fa",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "9293febe882f7a9e91595e03d99d3a20732703332bba62c505885612134dcbd6",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.microsoft.com/investor/reports/ar24/"
+    },
+    "expansion-tegna-2022-merger": {
+      "disposition": "link_only",
+      "evidence_sha256": "f82e2e90e49dda8bf418a1918e23d4bab3550dd1a497de97c9019d7849501e6c",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "8758816696a5e5e86f9e132bcd61e3a763116737d949013b01bd99505a26ffff",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/39899/000003989923000008/tgna-20221231.htm"
+    },
+    "expansion-tegna-extension": {
+      "disposition": "link_only",
+      "evidence_sha256": "6c7ced1db862ad2c1a1509defd8a94c3ae09149522461ba504f12348ee069fb9",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "cdb2f2da781ed599c61f0209f6e2efb848163de667a0f7c9d74eafb7ad109d59",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/39899/000119312523043664/d438472d8k.htm"
+    },
+    "h2a-boeing-pricing": {
+      "disposition": "link_only",
+      "evidence_sha256": "5caaa341f1abd242e096b21bd8905a6fc899dc2a1f385415924b1ea182f6b281",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "9d5e4a3ffbacac2a33f4c7a9aa0f2798fc4fd6ae1f8301bcc6518d0290b300da",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://boeing.mediaroom.com/2024-10-29-Boeing-Announces-Pricing-of-Upsized-Concurrent-Offerings-of-Common-Stock-and-Depositary-Shares?asPDF=1"
+    },
+    "h2a-boeing-terms": {
+      "disposition": "link_only",
+      "evidence_sha256": "cb0d1fa3aab3cb515e95915b159bb4705662066c3c9bce20f4eadb356101b6bf",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "6b25918c9860be246dc643f107b38cbc35ef54740c679df502cb88f503a11489",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000012927/a16e26ef-377e-41f0-9a13-1da040444f82.pdf"
+    },
+    "h2a-carnival-2024": {
+      "disposition": "link_only",
+      "evidence_sha256": "a95c2d15ef9ce2c8a045b4769649911b1cb9aa3fdfb8821e1c697d0d83ccc80d",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "bfc940d9723cb741f57c10443a906175d9b30a5dbd7a0326599b005cfb7d4e65",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.carnivalcorp.com/wp-content/uploads/2024/08/Carnival-Corporation-plc-2024-Annual-Report.pdf"
+    },
+    "h2a-carnival-mid2024": {
+      "disposition": "link_only",
+      "evidence_sha256": "3003cd603cbfebfbff53c0e4523cd36a4334e2e19c8abfe729c906ee0f2e3c81",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "42f073cf4e131d0535e24618f338ffa755f77676007c764b0e0d493c4f484a9f",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.carnivalcorp.com/wp-content/uploads/2024/08/Carnival-PLC-2024-Half-Yearly-Financial-Report.pdf"
+    },
+    "h2a-cisco-2024": {
+      "disposition": "link_only",
+      "evidence_sha256": "8a02c8eb5157a3b9823ad36d95da74fb130e4afee5318ee127fd02f55f493534",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "7e93346e51dc5e1cb3057a29c49868e07cf38716f4aa8e6b2531ae9a9cae7bb8",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://investor.cisco.com/files/doc_financials/2024/ar/2024-Cisco-Full-Annual-Report.pdf"
+    },
+    "h2a-cisco-2025": {
+      "disposition": "link_only",
+      "evidence_sha256": "42bb513e531a49aa5761b109fda464d05586b6b2536e8d867f62e878a9d70b3b",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "1daffc48622ac534d549145123e670742e94f6b5360c8cbf1b595917939e39f2",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://investor.cisco.com/files/doc_financials/2025/ar/2025-Cisco-Full-Annual-Report.pdf"
+    },
+    "h2a-danaher-2022": {
+      "disposition": "link_only",
+      "evidence_sha256": "88a59cf2ee775481ed2e1e145835eed44dbd411e8a675dd318142772f42ad696",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "eef19c245583c1f1165b0b1df55108847759d9dc9846ff9032ee961627918022",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://investors.danaher.com/download/Danaher+2022+Annual+Report.pdf"
+    },
+    "h2a-danaher-2023": {
+      "disposition": "link_only",
+      "evidence_sha256": "61fd699102ffb88021865814fb2f4107f28970a63e8be96186924613c2b6ed3e",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "1772d736eb52ba24409f300c0eef09b9141ce3709a740c677dd9616d2b5275ea",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://investors.danaher.com/download/Danaher+2023+Annual+Report.pdf"
+    },
+    "h2a-oxy-2023": {
+      "disposition": "link_only",
+      "evidence_sha256": "7e6fd47b3c4c1a5af0c22ef91c350b67a21f8de3ff1ae56a4c0472d2416f9d28",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "d8c18cf61f313ee318c777df5fc4a44b61977eb1d30dbec590daee9037504408",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.oxy.com/siteassets/documents/investors/2023-annual-report.pdf"
+    },
+    "h2a-oxy-2024": {
+      "disposition": "link_only",
+      "evidence_sha256": "a7df6d3193df959a47a12125f9341d4409c7fa129f5d0f1c3439e52e37b2f6c1",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "417d745d1bf5da0217482ed2d0e289f2fa130741b092a9effea6a5c7270c6297",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.oxy.com/siteassets/documents/investors/2024-annual-report.pdf"
+    },
+    "h2a-paypal-2023": {
+      "disposition": "link_only",
+      "evidence_sha256": "86cc0cb3c52aaa8bede90e9c19b9b7366c41c22e4859f2f75856724c02022826",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "c39b99e37c1074b869786081db7d050a6cad323521c9213ea0630c889a445cc0",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://investor.pypl.com/files/doc_financials/2023/q4/Q4-23-PayPal-Earnings-Release.pdf"
+    },
+    "h2a-paypal-2024": {
+      "disposition": "link_only",
+      "evidence_sha256": "1ab24f6c3aa2cf1f7c70b9e82fb23b46c5d00974b9076e1d6592d5e0fdfedf6a",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "323c08a6224b9a1ba1efa1a4d427963bb3dcdf77f20153d3afb01efe63ee0b9c",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://investor.pypl.com/files/doc_financials/2024/q4/PYPL-4Q-24-Earnings-Release.pdf"
+    },
+    "h2b-fdic-bridge": {
+      "disposition": "link_only",
+      "evidence_sha256": "1f31015b5880908d6562caa445327bd71a1baa37ac90073783fb1513c807b6b9",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "159807b0e6c82231c6701d5a314602cb966d3fbf72f301cabcbd80776953bf3c",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.fdic.gov/news/press-releases/2023/pr23019.html"
+    },
+    "h2b-fdic-initial": {
+      "disposition": "link_only",
+      "evidence_sha256": "9ba499e1459b01267e15b86baea04897d4a9f225b1c597c2c0fcab11e3ce597e",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "8acab595dec451ceb96bfa1e683017001d8b1079f4cf94d575a2e7747ed6d8ff",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.fdic.gov/news/press-releases/2023/pr23016.html"
+    },
+    "h2b-fdic-joint": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "33a69e380fa9f306b8d6bb5a70fc989c276e1541189b2dbc302ef5dbc0c96f6c",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "0b8f34f1e3d2e2a205fe163672c6a16fc3316dfca2db16eff4f1cc34ddbb9e3f",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "board",
+      "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html"
+    },
+    "h2b-fdic-ownership": {
+      "disposition": "link_only",
+      "evidence_sha256": "dd5bf53d9d6e8df7aaef79a83df232f07b82da4b39c7ccd7d79fed7cd654b409",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "435568bb134044fe5637ab9782ae37c8a2f2a183a7d9f072e0bb721f5af7d807",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.fdic.gov/financial-institution-employees-guide-deposit-insurance/corporation-partnership-and-unincorporated"
+    },
+    "h2b-finma-at1": {
+      "disposition": "link_only",
+      "evidence_sha256": "c5fd6eb07cb84d84918c82a839572bed410ddfddf318821213528858b6202a8a",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "1c9fdfaae27b4c45f098d5eec43077c6aba98398627aa8e3211be796578172fb",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.finma.ch/en/news/2023/03/20230323-mm-at1-kapitalinstrumente"
+    },
+    "h2b-ibm-faq": {
+      "disposition": "link_only",
+      "evidence_sha256": "4751fc6eee90252daeb1d5cb3d016cbc76b56959f31f10b4c197cc0cfe4d4213",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "bee8cc568f55fdc4e83c7c89230566f8090c5456008363654132e7135bbd5020",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.ibm.com/investor/services/faqs-about-the-kyndryl-holdings-inc-distribution"
+    },
+    "h2b-ibm-tax": {
+      "disposition": "link_only",
+      "evidence_sha256": "2e912a375ee41cd13b343b747c062dbe842bc87c1e3f52fae9c231893997bf08",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "41eea51d0a10f6360cc61da37f489d68366396c72415b93b393a6d71aeb5fa34",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.ibm.com/investor/att/pdf/Form-8937-Report-of-Organizational-Actions-Affecting-Basis-of-Securities.pdf"
+    },
+    "h2b-ice-waha": {
+      "disposition": "link_only",
+      "evidence_sha256": "e2a1b799d19627c8c4933274d0196a9feec24d1043ac8a9ce0ddd506643760c3",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "2ae3c8d1a05799815ed26840a9c0675213142181be951f2a78c33671ce1b9f5a",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.ice.com/api/productguide/spec/6590171/pdf"
+    },
+    "h2b-jnj-final-pdf": {
+      "disposition": "link_only",
+      "evidence_sha256": "aa41b163b898dff576cdfbefbc38da7a71ec354239d5a4ef654515813cfc4a4c",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "d99434ccb1e19773990a1e5246c0043279e5c8df8753418751bf564d8e5d0462",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-Announces-Final-Results-of-Exchange-Offer-and-Finalizes-Separation-of-Kenvue-Inc-2023.pdf"
+    },
+    "h2b-jnj-launch-pdf": {
+      "disposition": "link_only",
+      "evidence_sha256": "4529376b0cd0de4b93ee0d1c5772101fe243156b489b19668abd8d933b3b09b4",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "668f7ca59ff1986012d8b4e5a4f376a9d231ddcc1357c6f5430ad05e5ed06401",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-Launches-Exchange-Offer-for-Separation-of-Kenvue-Inc-2023.pdf"
+    },
+    "h2b-jnj-ratio-pdf": {
+      "disposition": "link_only",
+      "evidence_sha256": "1da100ad722da03b69e61c4a0776c2e86f5c5f26335217cbb5bd9bb9fc976bb6",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "3a8553010a32d092927b7a3ac72af90b928052d811e929e59c70e696b64650cf",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-Announces-Final-Exchange-Ratio-of-8.0324-in-Split-Off-of-Kenvue-Inc-2023.pdf"
+    },
+    "h2b-pjm-auction": {
+      "disposition": "link_only",
+      "evidence_sha256": "8a17ec746a04a6465269503f3f6d563bc6e2b79eadc1bbe2611820b75978a521",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "349f4a9e8bd2e256e82f495ce5d269cd9b6c3a0a11fa03a517eb763e00c76caf",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2025-2026/2025-2026-base-residual-auction-report.pdf"
+    },
+    "h2b-pjm-elcc": {
+      "disposition": "link_only",
+      "evidence_sha256": "fbaaff5928dffb2ce1101bbe68aa4894118efcc0be2812b1e2a0388bb755537a",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "9b31f0764b8b299a54280f329156cd9d99086d1bbe98fc65c000a8c30590af79",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2024/20240724/20240724-item-01---irm-fpr-and-elcc-for-26-27-bra---presentation.pdf"
+    },
+    "h2b-ubs-announce-warrants": {
+      "disposition": "link_only",
+      "evidence_sha256": "a4987e57cb0d2e07cd7918f40a8b02976ac3ac123b0939ce635946bbe2b06e37",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "96a6e2fb2ed019a6ed4ba658031651ef0fd6bde2e81c103d325b575d42f2362b",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://warrants.ubs.com/home/hkexdoc/en/Warrant/ubs/pdf/20230321221357.pdf"
+    },
+    "h2b-waha": {
+      "disposition": "link_only",
+      "evidence_sha256": "442d1c185b13588e62fe35a20daec2fdf133b3eb2e10a670c9c1351bf8f35398",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "7cc3e2e83fd634d8e989edbec1b173d15b85cfa98865fc1a03533e268397abae",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=64445"
+    },
+    "portfolio-eia-freeze-2021": {
+      "disposition": "link_only",
+      "evidence_sha256": "07bd84ba06a7084330de8a951f485aeac7801a6d9f808e12d4669b89070ccee9",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "0c4cf55a3fef9db086e5b516835b5fddb137b705c25ddb85ac4956383a34ecfd",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=47896"
+    },
+    "portfolio-fed-20230322": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "7002a70f765aa928153bae92090d25a6607a837e9e6dce3c3293f755c3396a00",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "c605981bb50623e31c8fd1dc72755cd3897dadcddd274eb246d3c795387e7ae4",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "board",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm"
+    },
+    "portfolio-occ-53276": {
+      "disposition": "link_only",
+      "evidence_sha256": "63f3c979762962800e5defdad06bfa0d843252610ac8cdf48f0022c855e6bf70",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "073ca91b9de774b311755e532ac4b76326540c13e960201446f2c04fea7c4b41",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=53276"
+    },
+    "portfolio-wk-2023-q3": {
+      "disposition": "link_only",
+      "evidence_sha256": "b46d8a623e3e8b9d7d036a62bd5487a54d081f1c2cf81f798971c631a75c21f8",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "569749f130f09f7be4d3fd84b3dd568afc73c07f73217603a6e53cde1befd2ce",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1959348/000162828023037822/k-20230930.htm"
+    },
+    "systematic-apple-index": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "b0eabf90c56c9156884f68523720e68023835e0e3a12d88fd65df9711006a3f7",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "bee89efb9f0d0dd56a8582c173e99268546fd338d4a2a8f148669d3544eabb4a",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000006/0000320193-24-000006-index.htm"
+    },
+    "systematic-lyft-correction": {
+      "disposition": "link_only",
+      "evidence_sha256": "4392ea1a392aeac2c1eb02a75393f34028c8d9fafb983708d7066eef2e4d54e3",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "31837868af8e5bc7c3ae07a96d6bd37308fb01f85601786e94e3e05fe8372db5",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://d1io3yog0oux5.cloudfront.net/_fbad3f77b5f0797de92b54707c2a28f9/lyft/news/2024-02-13_CORRECTING_and_REPLACING_Lyft_Announces_Fourth_119.pdf"
+    },
+    "systematic-lyft-original": {
+      "disposition": "link_only",
+      "evidence_sha256": "3e21cc45d673c0232c97b13dcf43a29d7a325685e357a197c2ba5d035cb047fd",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "316f41a14298c33850dfe5514aa7e9adaa6f4f7e93398ebf760120f8680c22a2",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950924000011/lyft-2023x12x31pressreleas.htm"
+    },
+    "systematic-lyft-original-index": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "d45b3047a45ffaed477826fd6e8967353cb36076921a30627a34f0ed436e5e05",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "edd73abc6d39e55067fac446eaf11644a560dc7f2c0c796f372a2feb370c1520",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950924000011/0001759509-24-000011-index.htm"
+    },
+    "systematic-meta-ticker": {
+      "disposition": "link_only",
+      "evidence_sha256": "9d70663a49c575016a8c005a269dc190ef1d62dda83c09542948c1b8780edf55",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "a09e98d1c4130d31d1606d273ee2ad15640c5ffead6c44bc40f5b5211596a2c6",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Platforms-Inc.-to-Change-Ticker-Symbol-to-META-on-June-9-2022.pdf"
+    },
+    "systematic-nvidia-index": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "4f44ca5f7c42c597c6785a157f4a846293d9ff3380266aa40a0a5e8f1ad0cff9",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "c6268eb764c866e88f80ae016176126e65e1dcee5c197a6b9e7bf0e5dfba5d8a",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/0001045810-24-000029-index.htm"
+    },
+    "systematic-sec-time-faq": {
+      "disposition": "eligible_exact_excerpt",
+      "evidence_sha256": "205b8c9730d0ae6e692002825b730c0fd0829290c4021edf9a65f23d411d72e8",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "a6eb755f71ed6198a6d08b7acaea88075b4d0cf3e96c4db3dc2c40e039af10f1",
+      "reason_code": "publisher-policy-and-excerpt-reviewed",
+      "terms_key": "sec",
+      "url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    "vol-occ-48921": {
+      "disposition": "link_only",
+      "evidence_sha256": "b44a0a52f1cf160a9a3cd52be9ba6b949d571e6b24be79ddff9878352f37e316",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "75b140442b36fdf8aaf8c575cf7fdfbcc8d8f627f830725583b4a82c03606456",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=48921"
+    },
+    "vol-occ-49105": {
+      "disposition": "link_only",
+      "evidence_sha256": "2561ddfff04d975f2a0c25ff7e9eebe866e69876091787489b657f5bfd5c7eb1",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "d49cf94b82b2dbf4728d25eddec424915af591a0d24adde9b29a86a734bb7d52",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=49105"
+    },
+    "vol-occ-49146": {
+      "disposition": "link_only",
+      "evidence_sha256": "67d33a5140033cf3f33d844f57882147ec035f0b89b4f01c4d7a2623f42e4dd4",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "84a56dadf8fb6dd26cc36b0a976fcdd358e2c68bab90be6070b2e0ebb5138941",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=49146"
+    },
+    "vol-occ-50944": {
+      "disposition": "link_only",
+      "evidence_sha256": "0809665ccf6330cf934afe1ba6b7eab5ef946b074cbe417a5a502a1d50e80c83",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "f14dec036c7b0acd793fcc4288d4b72c81ef87f00386e0b6283972b9825810f0",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=50944"
+    },
+    "vol-occ-51041": {
+      "disposition": "link_only",
+      "evidence_sha256": "ac4e8362db26ddf1e49a1a677014858e6b9bdbc0ac86185cd86d803096a33034",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "97f26ded71d49dbbcc0b98c4ea0db58e10d6ebb45c5dc0b3b90b7df65d269c07",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=51041"
+    },
+    "vol-occ-54392": {
+      "disposition": "link_only",
+      "evidence_sha256": "a0027f94c30e346f62b8df4472d471e14f9e307e38581ac6972133e8778e50c6",
+      "legacy_restriction_flag": true,
+      "manifest_sha256": "3ed74037f15340d43027be5ff6f8cb2c5562c802c9a2bd6f446f56484589ff01",
+      "reason_code": "item-rights-review-pending",
+      "terms_key": null,
+      "url": "https://infomemo.theocc.com/infomemos?number=54392"
+    }
+  }
+}

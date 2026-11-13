@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financial-portfolio-runtime"
+version = "0.1.0"
+description = "Reproducible portfolio runtime with prompt binding and interruption accounting"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["financial-portfolio-operations==0.1.0", "verifiers==0.4.1"]
+
+[project.scripts]
+financial-portfolio-runtime = "financial_portfolio_runtime.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financial_portfolio_runtime"]

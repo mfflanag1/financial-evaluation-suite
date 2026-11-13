@@ -1,0 +1,389 @@
+{
+  "affected_case_ids": [
+    "equity-002",
+    "h2-001",
+    "h2-002",
+    "h2-005"
+  ],
+  "controls": [
+    {
+      "case_id": "equity-002",
+      "control_name": "reference",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "2f8f9b31e2a13d5b9e569dd52a98da30bd6a0320d88840b49f5286cfc0aa8e60",
+      "duplicate_fields": [
+        "dcai_comparable_growth_2024_pct",
+        "foundry_comparable_growth_2024_pct"
+      ],
+      "frozen_control_file_sha256": "75c0b1cf834e5c1ec7b768db71ea72cdb04a3fdac36c6b970266adec6ed7b228",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/equity-002.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "equity-002",
+      "control_name": "concise_original_and_recast_operands",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "2f8f9b31e2a13d5b9e569dd52a98da30bd6a0320d88840b49f5286cfc0aa8e60",
+      "duplicate_fields": [
+        "dcai_comparable_growth_2024_pct",
+        "foundry_comparable_growth_2024_pct"
+      ],
+      "frozen_control_file_sha256": "75c0b1cf834e5c1ec7b768db71ea72cdb04a3fdac36c6b970266adec6ed7b228",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/equity-002.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "equity-002",
+      "control_name": "contextual_original_and_recast_rows",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "ebb7cf457c00b41a45d5692bdcf57bb5a2264a5f9625d766d95ca2584080da0b",
+      "duplicate_fields": [
+        "dcai_comparable_growth_2024_pct",
+        "foundry_comparable_growth_2024_pct"
+      ],
+      "frozen_control_file_sha256": "75c0b1cf834e5c1ec7b768db71ea72cdb04a3fdac36c6b970266adec6ed7b228",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/equity-002.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "equity-002",
+      "control_name": "component_reconciliation_instead_of_printed_total",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "d3edf62f74c74ffa70f654db4887beb531ff4399d2d16ce4d2abcb760574d104",
+      "duplicate_fields": [
+        "dcai_comparable_growth_2024_pct",
+        "foundry_comparable_growth_2024_pct"
+      ],
+      "frozen_control_file_sha256": "75c0b1cf834e5c1ec7b768db71ea72cdb04a3fdac36c6b970266adec6ed7b228",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/equity-002.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "concise_reference",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "e6fdeb372e6bf212539c67c45aeb31a3066bf5f8cfa750afec280917d0c404ef",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "contextual_primary_pages",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "c923535ea82953734a9cd695b5339a681d986d995e61f7ef6ddaaf80e6671b72",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "alternative_primary_evidence_route",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "f9838b922b8cfdda3dce27b6c1bf2323f3814c4a4abaeeeee0e6c10025e1a07f",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "authorized_upstream_support_reused",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "06653ab55a5a50f03d76a76179b6d39397a65e3ee62aded1648774b3473e7f6a",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "quarter_only_no_annual_cash_figures",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "6a79aa97cf5b48c31849bc1536883d23f67afdb3f682eeef26e7a936a88fb647",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "direct_quarter_timing_row_without_fcf_difference",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "db4b7028e325fd0e9a737e64500c7d65d112640e02dccd382a5e36199a8f6099",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "direct_annual_and_quarter_timing_rows",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "14fa1c34b34eb2d4e9ccbb9f75d25e2390f680a7e0ffe1f2deb387c7c7455223",
+      "duplicate_fields": [
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "direct_timing_row_and_fcf_denominator",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "07cacecb7d4827e11cf06009ff2fe9d429d128399a79892f11e17644744bdf22",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "headline_eps_without_currency_spacing",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "01a67b9a6ddd30696c98722fae5f7722aa2bd1ecaa2097d2a56c0d200043024d",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "reconciliation_eps_with_currency_spacing",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "85d29fd03efca50d04a2e4ec0813df118c253997f5ad0e20583a73184eaf2a02",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-001",
+      "control_name": "new_release_bnpl_timing_definition",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "ffc66ce512e21acd8b8bce958fc27218a8330791e11bdb42a46b3720b837825c",
+      "duplicate_fields": [
+        "first_nine_months_2023_bnpl_timing_contribution",
+        "q42023_timing_share_of_free_cash_flow_pct"
+      ],
+      "frozen_control_file_sha256": "70f1bb8d35d425921e6297d4e016f12a5009cd1f99e380d0b68d84aac1593084",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-001.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-002",
+      "control_name": "alternative_primary_evidence_route",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "49ec046e7aac4b190d9bfec424cf5cb6da5d2ab45e84386e2076a917631866e0",
+      "duplicate_fields": [
+        "revenue_change_vs_2024_splunk_proforma_pct"
+      ],
+      "frozen_control_file_sha256": "0976aa6adde2a8eff10d0682aad6c988b232dd89d0a054f5b386532f904b8a6b",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-002.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "concise_reference",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "31b473a7d27d7da66dbbd2f60f5163d6bfa5943d7ebea1901151ce298b94da8d",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "contextual_primary_pages",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "f7c1595a2d2886b8b5e1e447243b26dae297870b880df9a380f185b37a94d97a",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "alternative_primary_evidence_route",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "094507b958f5f0afdf4c0984396d3184fe4c3abdce0fa51539998ad119654f21",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "depositary_fundamental_table_no_preferred_unit_mapping",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "f6bdb37638aabccaa842afcdd1075d4ca467aa11d4efa828c2cc64cb1f6425e7",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "preferred_unit_route_to_normal_conversion",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "4d45be2f1561dbd2c3155b8af2ceed99e1a4cf31450614e1eeb6cf08ae59bb5c",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "optional_operative_rate_without_heading",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "959aaf37de834472a0974007bc48110625541678e9dbf5a813640e95f437f396",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "pricing_release_optional_conversion",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "d83990ba868c7c8ef45e9f4be821f21a20b6a3752402599f8e5048c022ed001b",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "term_sheet_cash_or_stock_dividends",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "fcf05e0e890333b088ebb3673987e846689f19c42f21e6fa9d79ce093ad484e6",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "pricing_release_dividend_schedule",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "26a83f6edbcf6740afd9bddc3ed0f0c97a8c99129d74fcf6ff006a177351c659",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "fundamental_change_common_share_entitlement_four_decimal_rounding",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "83090b7ee04f6d2c0136d5cc84791c35a9cc203043a7980cd082956e4fc439c5",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    },
+    {
+      "case_id": "h2-005",
+      "control_name": "fundamental_minus_ordinary_optional_shares_four_decimal_rounding",
+      "deduplicated_reference_expected_pass": true,
+      "deduplicated_reference_sha256": "818fa3090c059696a98463752940672ba2031f1860c14f306846dd309e8c60b5",
+      "duplicate_fields": [
+        "normal_minus_optional_marked_value",
+        "fundamental_minus_ordinary_optional_shares"
+      ],
+      "frozen_control_file_sha256": "fe1e3cacc135a796034eb403be5401ed146bb508f02645b41414df1e3d3659fb",
+      "frozen_control_path": "private_evaluator/legacy/source_grounded/controls/h2-005.json",
+      "predecessor_expected_pass": true,
+      "v3_original_response_expected_pass": false
+    }
+  ],
+  "corrected_reference_serialization": "UTF-8 JSON, ensure_ascii=False, allow_nan=False, sort_keys=True, separators=(comma,colon), no terminal newline.",
+  "count": 27,
+  "reason": "These frozen positive controls contain duplicate normalized citations. Original responses are invalid under v3. Explicitly repaired reference copies remove repeated pairs within each field; candidates are never automatically repaired.",
+  "schema_version": 1,
+  "scorer_version": "financial-reasoning-v3.0.0"
+}

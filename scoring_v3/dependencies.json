@@ -1,0 +1,19 @@
+{
+  "files": {
+    "quality/discrete_fields.json": "43aa3b88bdfb1a1c76ea1edef1df54e9e9c688c7099ced0f75f7c28d95ab7a23",
+    "scoring_v2/Dockerfile.workflow": "2b3146005f6517778f85377a09d29a697d531ff937e18c30cb0d5d01a20165c0",
+    "scoring_v2/README.md": "5845edeaca6f92f15fc72ad7edbad3dbcbcdbfb15061d7ffe0ec5a55fc53732c",
+    "scoring_v2/__init__.py": "797862275e0863c8cf5d6792326bceff7eeaee6308d92e6ac15274c9264b1118",
+    "scoring_v2/amendments.py": "4b3110554ea3b7e37d3f1aea4e9db86d8c333909a5a796ad5aa854d1ffe539fc",
+    "scoring_v2/baseline.json": "cb31b70216c40559cd16da4f2c9e89f746cfbdf5af5e3a7282d0e19568909f40",
+    "scoring_v2/common.py": "17c51e91162a6ba97faf77476a8575916aebf113d81207e67392d9dddc3889e2",
+    "scoring_v2/engine.py": "7cc697a9b60b4e7e6f306e336cee8d6d91ac68c050382abd9d42a1d9862c1fa7",
+    "scoring_v2/grade.py": "eb5a4f492790aa8b9a210d50ecc5f62ee91a59cf6094c914c1e8311bf9acafa9",
+    "scoring_v2/research.py": "2044a3ed46b6dbcd2207e56a999b15221646b66eecdc522ed06a621dc2f4f17d",
+    "scoring_v2/sessions.py": "b068b5ec9acbc38e5198b7a6fa03b99aab5ab362a4c5a16483cc9fa35f5c3bd5",
+    "scoring_v2/source.py": "74ddd4f29c5f6b77984a6bb09e63b84fbbc96acebbd896cb121360375d8afa16",
+    "scoring_v2/workflow.py": "901da1f3c1dae02c395d2db27f86d76a1f4ecefa8470e1b175387b7179b97329",
+    "scoring_v2/workflow_worker.py": "acba8f940e079a280d955d7f27e4cd6910dd154775a4c4f0efd8c89bcabd3fca"
+  },
+  "schema_version": 1
+}
