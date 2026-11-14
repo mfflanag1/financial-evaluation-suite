@@ -718,7 +718,7 @@ def checkpoint_load(config_path, plan_path, evidence_dir, checkpoint):
         torch.set_float32_matmul_precision(config.matmul_precision)
         resolve_ep(config.model)
         dims = get_parallel_dims(config.model)
-        model = setup_model(config.model, dims, loading_from_ckpt_later=False)
+        model = setup_model(config.model, dims, loading_from_checkpoint_later=False)
         optimizer, manager = setup_optimizer(config.optim, list(model.named_parameters()), dims,
                                               offload=config.model.offload, model=model)
         require(manager is None, "Unexpected load-only gradient manager")

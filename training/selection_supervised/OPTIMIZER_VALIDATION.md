@@ -14,6 +14,15 @@ aggregation. Unsupported configurations fail instead of being approximated.
 The inference engine may use a separate GPU. The supervisor's resource and
 process limits apply independently of this evidence gate.
 
+Before allocating a GPU, budget local storage for the full retained checkpoint
+and its transfer format. Native `AppState.state_dict()` includes the base model
+even for a LoRA update; adapter size alone is not a checkpoint-size estimate.
+Use the resolved model's optimization dtype and full parameter count, then add
+optimizer state and other evidence. A workflow that retains an uncompressed tar
+and extracts it needs space for both copies, plus working-space headroom. Check
+free space on the actual destination volume before allocation and again before
+execution. If the complete bundle cannot be retained, do not start training.
+
 Run the installed inspector against a private bundle and an independently
 retained prelaunch plan:
 
