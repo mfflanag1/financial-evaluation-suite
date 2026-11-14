@@ -1,6 +1,10 @@
 """Collector control tests with labelled native API doubles; no GPU execution claim."""
 import asyncio
+import ast
+import copy
 from dataclasses import dataclass
+import hashlib
+from importlib.resources import files
 import importlib.util
 import json
 import math
@@ -294,6 +298,44 @@ class CollectorTests(unittest.TestCase):
         scope.close()
         self.assertEqual(observed, [True])
         self.assertEqual(int(optimizer.state[parameter]["step"].item()), 1)
+
+    def test_checkpoint_load_call_matches_exact_pinned_native_setup_model_signature(self):
+        try:
+            native_bytes = files("prime_rl").joinpath("trainer/model.py").read_bytes()
+            pins = json.loads(files("financial_selection_training").joinpath("source_bindings.json").read_text())
+        except ModuleNotFoundError:
+            self.skipTest("Pinned native packages are absent; run this contract check in the training environment")
+        self.assertEqual(hashlib.sha256(native_bytes).hexdigest(), pins["native_sources"]["prime_rl/trainer/model.py"])
+        native = next(node for node in ast.parse(native_bytes).body
+                      if isinstance(node, ast.FunctionDef) and node.name == "setup_model")
+        # Keep the real pinned signature and replace only the GPU-executing body.
+        bound_native = copy.deepcopy(native)
+        bound_native.body = ast.parse("return locals()").body
+        bound_native.decorator_list = []
+        definition = ast.Module(body=[ast.ImportFrom(module="__future__", names=[ast.alias(name="annotations")], level=0),
+                                      bound_native], type_ignores=[])
+        namespace = {}
+        exec(compile(ast.fix_missing_locations(definition), "pinned-native-signature", "exec"), namespace)
+        observer_tree = ast.parse(Path(observer.__file__).read_text())
+        loader = next(node for node in observer_tree.body
+                      if isinstance(node, ast.FunctionDef) and node.name == "checkpoint_load")
+        calls = [node for node in ast.walk(loader) if isinstance(node, ast.Call)
+                 and isinstance(node.func, ast.Name) and node.func.id == "setup_model"]
+        self.assertEqual(len(calls), 1)
+        config, dimensions = object(), object()
+        namespace.update(config=types.SimpleNamespace(model=config), dims=dimensions)
+        actual_call = ast.Expression(body=copy.deepcopy(calls[0]))
+        bound = eval(compile(ast.fix_missing_locations(actual_call), "actual-reload-call", "eval"), namespace)
+        self.assertIs(bound["config"], config)
+        self.assertIs(bound["parallel_dims"], dimensions)
+        self.assertIs(bound["loading_from_checkpoint_later"], False)
+        self.assertIs(bound["init_from_scratch"], False)
+        broken_call = copy.deepcopy(actual_call)
+        for keyword in broken_call.body.keywords:
+            if keyword.arg == "loading_from_checkpoint_later":
+                keyword.arg = "loading_from_ckpt_later"
+        with self.assertRaisesRegex(TypeError, "loading_from_ckpt_later"):
+            eval(compile(ast.fix_missing_locations(broken_call), "regression-wrong-keyword", "eval"), namespace)
 
 
 if __name__ == "__main__":
